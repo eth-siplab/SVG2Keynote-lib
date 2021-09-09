@@ -34,7 +34,7 @@ constexpr DatabaseDataArchive::DatabaseDataArchive(
   : app_relative_path_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , display_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
   , data_(nullptr)
-  , length_(PROTOBUF_ULONGLONG(0))
+  , length_(uint64_t{0u})
   , hash_(0u)
   , sharable_(true){}
 struct DatabaseDataArchiveDefaultTypeInternal {
@@ -188,10 +188,13 @@ void DatabaseData::clear_data() {
   if (data_ != nullptr) data_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-DatabaseData::DatabaseData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DatabaseData::DatabaseData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseData)
 }
 DatabaseData::DatabaseData(const DatabaseData& from)
@@ -206,18 +209,19 @@ DatabaseData::DatabaseData(const DatabaseData& from)
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseData)
 }
 
-void DatabaseData::SharedCtor() {
+inline void DatabaseData::SharedCtor() {
 data_ = nullptr;
 }
 
 DatabaseData::~DatabaseData() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseData)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DatabaseData::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DatabaseData::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete data_;
 }
 
@@ -330,38 +334,29 @@ size_t DatabaseData::ByteSizeLong() const {
   return total_size;
 }
 
-void DatabaseData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSP.DatabaseData)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DatabaseData* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DatabaseData>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSP.DatabaseData)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSP.DatabaseData)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseData::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DatabaseData::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseData::GetClassData() const { return &_class_data_; }
+
+void DatabaseData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<DatabaseData *>(to)->MergeFrom(
+      static_cast<const DatabaseData &>(from));
 }
+
 
 void DatabaseData::MergeFrom(const DatabaseData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_data()) {
     _internal_mutable_data()->::TSP::DataReference::MergeFrom(from._internal_data());
   }
-}
-
-void DatabaseData::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSP.DatabaseData)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseData::CopyFrom(const DatabaseData& from) {
@@ -429,10 +424,13 @@ void DatabaseDataArchive::clear_data() {
   if (data_ != nullptr) data_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-DatabaseDataArchive::DatabaseDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DatabaseDataArchive::DatabaseDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseDataArchive)
 }
 DatabaseDataArchive::DatabaseDataArchive(const DatabaseDataArchive& from)
@@ -442,12 +440,12 @@ DatabaseDataArchive::DatabaseDataArchive(const DatabaseDataArchive& from)
   app_relative_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_app_relative_path()) {
     app_relative_path_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_app_relative_path(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   display_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_display_name()) {
     display_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_display_name(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_data()) {
     data_ = new ::TSP::Reference(*from.data_);
@@ -460,7 +458,7 @@ DatabaseDataArchive::DatabaseDataArchive(const DatabaseDataArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseDataArchive)
 }
 
-void DatabaseDataArchive::SharedCtor() {
+inline void DatabaseDataArchive::SharedCtor() {
 app_relative_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 display_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
@@ -472,12 +470,13 @@ sharable_ = true;
 
 DatabaseDataArchive::~DatabaseDataArchive() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseDataArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DatabaseDataArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DatabaseDataArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   app_relative_path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   display_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete data_;
@@ -745,25 +744,22 @@ size_t DatabaseDataArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void DatabaseDataArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSP.DatabaseDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DatabaseDataArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DatabaseDataArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSP.DatabaseDataArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSP.DatabaseDataArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseDataArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DatabaseDataArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseDataArchive::GetClassData() const { return &_class_data_; }
+
+void DatabaseDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<DatabaseDataArchive *>(to)->MergeFrom(
+      static_cast<const DatabaseDataArchive &>(from));
 }
+
 
 void DatabaseDataArchive::MergeFrom(const DatabaseDataArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseDataArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -789,13 +785,7 @@ void DatabaseDataArchive::MergeFrom(const DatabaseDataArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void DatabaseDataArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSP.DatabaseDataArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseDataArchive::CopyFrom(const DatabaseDataArchive& from) {
@@ -817,8 +807,16 @@ void DatabaseDataArchive::InternalSwap(DatabaseDataArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  app_relative_path_.Swap(&other->app_relative_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  display_name_.Swap(&other->display_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &app_relative_path_, GetArenaForAllocation(),
+      &other->app_relative_path_, other->GetArenaForAllocation()
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &display_name_, GetArenaForAllocation(),
+      &other->display_name_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(DatabaseDataArchive, hash_)
       + sizeof(DatabaseDataArchive::hash_)
@@ -855,10 +853,13 @@ const ::TSP::DatabaseDataArchive&
 DatabaseImageDataArchive::_Internal::super(const DatabaseImageDataArchive* msg) {
   return *msg->super_;
 }
-DatabaseImageDataArchive::DatabaseImageDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DatabaseImageDataArchive::DatabaseImageDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseImageDataArchive)
 }
 DatabaseImageDataArchive::DatabaseImageDataArchive(const DatabaseImageDataArchive& from)
@@ -874,7 +875,7 @@ DatabaseImageDataArchive::DatabaseImageDataArchive(const DatabaseImageDataArchiv
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseImageDataArchive)
 }
 
-void DatabaseImageDataArchive::SharedCtor() {
+inline void DatabaseImageDataArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&type_) -
@@ -883,12 +884,13 @@ void DatabaseImageDataArchive::SharedCtor() {
 
 DatabaseImageDataArchive::~DatabaseImageDataArchive() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseImageDataArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DatabaseImageDataArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DatabaseImageDataArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -1047,25 +1049,22 @@ size_t DatabaseImageDataArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void DatabaseImageDataArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSP.DatabaseImageDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DatabaseImageDataArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DatabaseImageDataArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSP.DatabaseImageDataArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSP.DatabaseImageDataArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseImageDataArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DatabaseImageDataArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseImageDataArchive::GetClassData() const { return &_class_data_; }
+
+void DatabaseImageDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<DatabaseImageDataArchive *>(to)->MergeFrom(
+      static_cast<const DatabaseImageDataArchive &>(from));
 }
+
 
 void DatabaseImageDataArchive::MergeFrom(const DatabaseImageDataArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseImageDataArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1079,13 +1078,7 @@ void DatabaseImageDataArchive::MergeFrom(const DatabaseImageDataArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void DatabaseImageDataArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSP.DatabaseImageDataArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseImageDataArchive::CopyFrom(const DatabaseImageDataArchive& from) {

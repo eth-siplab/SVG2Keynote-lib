@@ -2665,15 +2665,18 @@ void UIStateCommandGroupArchive::clear_selectedslidenodes() {
 void UIStateCommandGroupArchive::clear_restoreselectedslidenodes() {
   restoreselectedslidenodes_.Clear();
 }
-UIStateCommandGroupArchive::UIStateCommandGroupArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+UIStateCommandGroupArchive::UIStateCommandGroupArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   slidenodestoedit_(arena),
   template_slide_nodes_to_apply_(arena),
   thumbnailsizes_(arena),
   selectedslidenodes_(arena),
   restoreselectedslidenodes_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.UIStateCommandGroupArchive)
 }
 UIStateCommandGroupArchive::UIStateCommandGroupArchive(const UIStateCommandGroupArchive& from)
@@ -2688,7 +2691,7 @@ UIStateCommandGroupArchive::UIStateCommandGroupArchive(const UIStateCommandGroup
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandGroupArchive(*from.super_);
@@ -2703,7 +2706,7 @@ UIStateCommandGroupArchive::UIStateCommandGroupArchive(const UIStateCommandGroup
   // @@protoc_insertion_point(copy_constructor:KN.UIStateCommandGroupArchive)
 }
 
-void UIStateCommandGroupArchive::SharedCtor() {
+inline void UIStateCommandGroupArchive::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -2713,12 +2716,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 UIStateCommandGroupArchive::~UIStateCommandGroupArchive() {
   // @@protoc_insertion_point(destructor:KN.UIStateCommandGroupArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void UIStateCommandGroupArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void UIStateCommandGroupArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete uistate_;
@@ -3058,25 +3062,22 @@ size_t UIStateCommandGroupArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void UIStateCommandGroupArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.UIStateCommandGroupArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const UIStateCommandGroupArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<UIStateCommandGroupArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.UIStateCommandGroupArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.UIStateCommandGroupArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UIStateCommandGroupArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    UIStateCommandGroupArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UIStateCommandGroupArchive::GetClassData() const { return &_class_data_; }
+
+void UIStateCommandGroupArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<UIStateCommandGroupArchive *>(to)->MergeFrom(
+      static_cast<const UIStateCommandGroupArchive &>(from));
 }
+
 
 void UIStateCommandGroupArchive::MergeFrom(const UIStateCommandGroupArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.UIStateCommandGroupArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3097,13 +3098,7 @@ void UIStateCommandGroupArchive::MergeFrom(const UIStateCommandGroupArchive& fro
       _internal_mutable_uistate()->::TSP::Reference::MergeFrom(from._internal_uistate());
     }
   }
-}
-
-void UIStateCommandGroupArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.UIStateCommandGroupArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UIStateCommandGroupArchive::CopyFrom(const UIStateCommandGroupArchive& from) {
@@ -3138,7 +3133,11 @@ void UIStateCommandGroupArchive::InternalSwap(UIStateCommandGroupArchive* other)
   thumbnailsizes_.InternalSwap(&other->thumbnailsizes_);
   selectedslidenodes_.InternalSwap(&other->selectedslidenodes_);
   restoreselectedslidenodes_.InternalSwap(&other->restoreselectedslidenodes_);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(UIStateCommandGroupArchive, uistate_)
       + sizeof(UIStateCommandGroupArchive::uistate_)
@@ -3256,8 +3255,9 @@ void CommandSlideInsertDrawablesArchive::clear_geometry_of_object_placeholder_fo
   if (geometry_of_object_placeholder_for_comparison_to_restore_link_ != nullptr) geometry_of_object_placeholder_for_comparison_to_restore_link_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-CommandSlideInsertDrawablesArchive::CommandSlideInsertDrawablesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideInsertDrawablesArchive::CommandSlideInsertDrawablesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   drawables_(arena),
   ids_of_drawables_using_object_placeholder_geometry_(arena),
   sage_placeholder_tags_list_(arena),
@@ -3268,7 +3268,9 @@ CommandSlideInsertDrawablesArchive::CommandSlideInsertDrawablesArchive(::PROTOBU
   working_insert_build_descriptions_(arena),
   instructional_text_list_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideInsertDrawablesArchive)
 }
 CommandSlideInsertDrawablesArchive::CommandSlideInsertDrawablesArchive(const CommandSlideInsertDrawablesArchive& from)
@@ -3315,7 +3317,7 @@ CommandSlideInsertDrawablesArchive::CommandSlideInsertDrawablesArchive(const Com
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideInsertDrawablesArchive)
 }
 
-void CommandSlideInsertDrawablesArchive::SharedCtor() {
+inline void CommandSlideInsertDrawablesArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&saved_next_untitled_resolver_index_) -
@@ -3324,12 +3326,13 @@ void CommandSlideInsertDrawablesArchive::SharedCtor() {
 
 CommandSlideInsertDrawablesArchive::~CommandSlideInsertDrawablesArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideInsertDrawablesArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideInsertDrawablesArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideInsertDrawablesArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete args_list_;
@@ -3931,25 +3934,22 @@ size_t CommandSlideInsertDrawablesArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideInsertDrawablesArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideInsertDrawablesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideInsertDrawablesArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideInsertDrawablesArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideInsertDrawablesArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideInsertDrawablesArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideInsertDrawablesArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideInsertDrawablesArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideInsertDrawablesArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideInsertDrawablesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideInsertDrawablesArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideInsertDrawablesArchive &>(from));
 }
+
 
 void CommandSlideInsertDrawablesArchive::MergeFrom(const CommandSlideInsertDrawablesArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideInsertDrawablesArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3993,13 +3993,7 @@ void CommandSlideInsertDrawablesArchive::MergeFrom(const CommandSlideInsertDrawa
   if (cached_has_bits & 0x00000100u) {
     _internal_set_saved_next_untitled_resolver_index(from._internal_saved_next_untitled_resolver_index());
   }
-}
-
-void CommandSlideInsertDrawablesArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideInsertDrawablesArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideInsertDrawablesArchive::CopyFrom(const CommandSlideInsertDrawablesArchive& from) {
@@ -4103,14 +4097,17 @@ void CommandSlideSetPlaceholdersForTagsArchive::clear_infos() {
 void CommandSlideSetPlaceholdersForTagsArchive::clear_old_infos() {
   old_infos_.Clear();
 }
-CommandSlideSetPlaceholdersForTagsArchive::CommandSlideSetPlaceholdersForTagsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideSetPlaceholdersForTagsArchive::CommandSlideSetPlaceholdersForTagsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   infos_(arena),
   tags_(arena),
   old_tags_(arena),
   old_infos_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideSetPlaceholdersForTagsArchive)
 }
 CommandSlideSetPlaceholdersForTagsArchive::CommandSlideSetPlaceholdersForTagsArchive(const CommandSlideSetPlaceholdersForTagsArchive& from)
@@ -4134,7 +4131,7 @@ CommandSlideSetPlaceholdersForTagsArchive::CommandSlideSetPlaceholdersForTagsArc
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideSetPlaceholdersForTagsArchive)
 }
 
-void CommandSlideSetPlaceholdersForTagsArchive::SharedCtor() {
+inline void CommandSlideSetPlaceholdersForTagsArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&slide_id_) -
@@ -4143,12 +4140,13 @@ void CommandSlideSetPlaceholdersForTagsArchive::SharedCtor() {
 
 CommandSlideSetPlaceholdersForTagsArchive::~CommandSlideSetPlaceholdersForTagsArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideSetPlaceholdersForTagsArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideSetPlaceholdersForTagsArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideSetPlaceholdersForTagsArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
 }
@@ -4437,25 +4435,22 @@ size_t CommandSlideSetPlaceholdersForTagsArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideSetPlaceholdersForTagsArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideSetPlaceholdersForTagsArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideSetPlaceholdersForTagsArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideSetPlaceholdersForTagsArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideSetPlaceholdersForTagsArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideSetPlaceholdersForTagsArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideSetPlaceholdersForTagsArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideSetPlaceholdersForTagsArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideSetPlaceholdersForTagsArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideSetPlaceholdersForTagsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideSetPlaceholdersForTagsArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideSetPlaceholdersForTagsArchive &>(from));
 }
+
 
 void CommandSlideSetPlaceholdersForTagsArchive::MergeFrom(const CommandSlideSetPlaceholdersForTagsArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideSetPlaceholdersForTagsArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4472,13 +4467,7 @@ void CommandSlideSetPlaceholdersForTagsArchive::MergeFrom(const CommandSlideSetP
       _internal_mutable_slide_id()->::TSP::UUID::MergeFrom(from._internal_slide_id());
     }
   }
-}
-
-void CommandSlideSetPlaceholdersForTagsArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideSetPlaceholdersForTagsArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideSetPlaceholdersForTagsArchive::CopyFrom(const CommandSlideSetPlaceholdersForTagsArchive& from) {
@@ -4556,10 +4545,13 @@ void CommandTemplateSlideSetPlaceholderForTagArchive::clear_placeholder_id() {
   if (placeholder_id_ != nullptr) placeholder_id_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandTemplateSlideSetPlaceholderForTagArchive::CommandTemplateSlideSetPlaceholderForTagArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandTemplateSlideSetPlaceholderForTagArchive::CommandTemplateSlideSetPlaceholderForTagArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
 }
 CommandTemplateSlideSetPlaceholderForTagArchive::CommandTemplateSlideSetPlaceholderForTagArchive(const CommandTemplateSlideSetPlaceholderForTagArchive& from)
@@ -4569,7 +4561,7 @@ CommandTemplateSlideSetPlaceholderForTagArchive::CommandTemplateSlideSetPlacehol
   tag_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_tag()) {
     tag_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_tag(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::KN::CommandSlideSetPlaceholdersForTagsArchive(*from.super_);
@@ -4584,7 +4576,7 @@ CommandTemplateSlideSetPlaceholderForTagArchive::CommandTemplateSlideSetPlacehol
   // @@protoc_insertion_point(copy_constructor:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
 }
 
-void CommandTemplateSlideSetPlaceholderForTagArchive::SharedCtor() {
+inline void CommandTemplateSlideSetPlaceholderForTagArchive::SharedCtor() {
 tag_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -4594,12 +4586,13 @@ tag_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyI
 
 CommandTemplateSlideSetPlaceholderForTagArchive::~CommandTemplateSlideSetPlaceholderForTagArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandTemplateSlideSetPlaceholderForTagArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandTemplateSlideSetPlaceholderForTagArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   tag_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete placeholder_id_;
@@ -4795,25 +4788,22 @@ size_t CommandTemplateSlideSetPlaceholderForTagArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandTemplateSlideSetPlaceholderForTagArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandTemplateSlideSetPlaceholderForTagArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandTemplateSlideSetPlaceholderForTagArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandTemplateSlideSetPlaceholderForTagArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandTemplateSlideSetPlaceholderForTagArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandTemplateSlideSetPlaceholderForTagArchive::GetClassData() const { return &_class_data_; }
+
+void CommandTemplateSlideSetPlaceholderForTagArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandTemplateSlideSetPlaceholderForTagArchive *>(to)->MergeFrom(
+      static_cast<const CommandTemplateSlideSetPlaceholderForTagArchive &>(from));
 }
+
 
 void CommandTemplateSlideSetPlaceholderForTagArchive::MergeFrom(const CommandTemplateSlideSetPlaceholderForTagArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4829,13 +4819,7 @@ void CommandTemplateSlideSetPlaceholderForTagArchive::MergeFrom(const CommandTem
       _internal_mutable_placeholder_id()->::TSP::UUID::MergeFrom(from._internal_placeholder_id());
     }
   }
-}
-
-void CommandTemplateSlideSetPlaceholderForTagArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandTemplateSlideSetPlaceholderForTagArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandTemplateSlideSetPlaceholderForTagArchive::CopyFrom(const CommandTemplateSlideSetPlaceholderForTagArchive& from) {
@@ -4860,7 +4844,11 @@ void CommandTemplateSlideSetPlaceholderForTagArchive::InternalSwap(CommandTempla
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  tag_.Swap(&other->tag_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &tag_, GetArenaForAllocation(),
+      &other->tag_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandTemplateSlideSetPlaceholderForTagArchive, placeholder_id_)
       + sizeof(CommandTemplateSlideSetPlaceholderForTagArchive::placeholder_id_)
@@ -4917,10 +4905,13 @@ void CommandSlidePropagateSetPlaceholderForTagArchive::clear_original_id() {
   if (original_id_ != nullptr) original_id_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandSlidePropagateSetPlaceholderForTagArchive::CommandSlidePropagateSetPlaceholderForTagArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlidePropagateSetPlaceholderForTagArchive::CommandSlidePropagateSetPlaceholderForTagArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
 }
 CommandSlidePropagateSetPlaceholderForTagArchive::CommandSlidePropagateSetPlaceholderForTagArchive(const CommandSlidePropagateSetPlaceholderForTagArchive& from)
@@ -4945,7 +4936,7 @@ CommandSlidePropagateSetPlaceholderForTagArchive::CommandSlidePropagateSetPlaceh
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
 }
 
-void CommandSlidePropagateSetPlaceholderForTagArchive::SharedCtor() {
+inline void CommandSlidePropagateSetPlaceholderForTagArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&original_id_) -
@@ -4954,12 +4945,13 @@ void CommandSlidePropagateSetPlaceholderForTagArchive::SharedCtor() {
 
 CommandSlidePropagateSetPlaceholderForTagArchive::~CommandSlidePropagateSetPlaceholderForTagArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlidePropagateSetPlaceholderForTagArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlidePropagateSetPlaceholderForTagArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete placeholder_id_;
   if (this != internal_default_instance()) delete original_id_;
@@ -5154,25 +5146,22 @@ size_t CommandSlidePropagateSetPlaceholderForTagArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlidePropagateSetPlaceholderForTagArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlidePropagateSetPlaceholderForTagArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlidePropagateSetPlaceholderForTagArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlidePropagateSetPlaceholderForTagArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlidePropagateSetPlaceholderForTagArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlidePropagateSetPlaceholderForTagArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlidePropagateSetPlaceholderForTagArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlidePropagateSetPlaceholderForTagArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlidePropagateSetPlaceholderForTagArchive &>(from));
 }
+
 
 void CommandSlidePropagateSetPlaceholderForTagArchive::MergeFrom(const CommandSlidePropagateSetPlaceholderForTagArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5188,13 +5177,7 @@ void CommandSlidePropagateSetPlaceholderForTagArchive::MergeFrom(const CommandSl
       _internal_mutable_original_id()->::TSP::UUID::MergeFrom(from._internal_original_id());
     }
   }
-}
-
-void CommandSlidePropagateSetPlaceholderForTagArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlidePropagateSetPlaceholderForTagArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlidePropagateSetPlaceholderForTagArchive::CopyFrom(const CommandSlidePropagateSetPlaceholderForTagArchive& from) {
@@ -5297,8 +5280,9 @@ void CommandSlideRemoveDrawableArchive::clear_drawables_using_object_placeholder
 void CommandSlideRemoveDrawableArchive::clear_inverse_insert_hyperlink_commands() {
   inverse_insert_hyperlink_commands_.Clear();
 }
-CommandSlideRemoveDrawableArchive::CommandSlideRemoveDrawableArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideRemoveDrawableArchive::CommandSlideRemoveDrawableArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   sorteddrawables_(arena),
   placeholdertags_(arena),
   insert_build_descriptions_(arena),
@@ -5308,7 +5292,9 @@ CommandSlideRemoveDrawableArchive::CommandSlideRemoveDrawableArchive(::PROTOBUF_
   drawable_indexes_for_undo_(arena),
   instructional_text_list_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideRemoveDrawableArchive)
 }
 CommandSlideRemoveDrawableArchive::CommandSlideRemoveDrawableArchive(const CommandSlideRemoveDrawableArchive& from)
@@ -5341,7 +5327,7 @@ CommandSlideRemoveDrawableArchive::CommandSlideRemoveDrawableArchive(const Comma
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideRemoveDrawableArchive)
 }
 
-void CommandSlideRemoveDrawableArchive::SharedCtor() {
+inline void CommandSlideRemoveDrawableArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&args_list_) -
@@ -5350,12 +5336,13 @@ void CommandSlideRemoveDrawableArchive::SharedCtor() {
 
 CommandSlideRemoveDrawableArchive::~CommandSlideRemoveDrawableArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideRemoveDrawableArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideRemoveDrawableArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideRemoveDrawableArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete args_list_;
@@ -5791,25 +5778,22 @@ size_t CommandSlideRemoveDrawableArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideRemoveDrawableArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideRemoveDrawableArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideRemoveDrawableArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideRemoveDrawableArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideRemoveDrawableArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideRemoveDrawableArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideRemoveDrawableArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideRemoveDrawableArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideRemoveDrawableArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideRemoveDrawableArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideRemoveDrawableArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideRemoveDrawableArchive &>(from));
 }
+
 
 void CommandSlideRemoveDrawableArchive::MergeFrom(const CommandSlideRemoveDrawableArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideRemoveDrawableArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5833,13 +5817,7 @@ void CommandSlideRemoveDrawableArchive::MergeFrom(const CommandSlideRemoveDrawab
       _internal_mutable_args_list()->::KN::MixedIdOperationArgs::MergeFrom(from._internal_args_list());
     }
   }
-}
-
-void CommandSlideRemoveDrawableArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideRemoveDrawableArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideRemoveDrawableArchive::CopyFrom(const CommandSlideRemoveDrawableArchive& from) {
@@ -5937,13 +5915,16 @@ void CommandSlideMoveDrawableZOrderArchive::clear_slide_id() {
 void CommandSlideMoveDrawableZOrderArchive::clear_old_ordered_infos_on_slide_for_undo() {
   old_ordered_infos_on_slide_for_undo_.Clear();
 }
-CommandSlideMoveDrawableZOrderArchive::CommandSlideMoveDrawableZOrderArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideMoveDrawableZOrderArchive::CommandSlideMoveDrawableZOrderArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   old_ordered_infos_(arena),
   args_list_(arena),
   old_ordered_infos_on_slide_for_undo_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideMoveDrawableZOrderArchive)
 }
 CommandSlideMoveDrawableZOrderArchive::CommandSlideMoveDrawableZOrderArchive(const CommandSlideMoveDrawableZOrderArchive& from)
@@ -5966,7 +5947,7 @@ CommandSlideMoveDrawableZOrderArchive::CommandSlideMoveDrawableZOrderArchive(con
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideMoveDrawableZOrderArchive)
 }
 
-void CommandSlideMoveDrawableZOrderArchive::SharedCtor() {
+inline void CommandSlideMoveDrawableZOrderArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&slide_id_) -
@@ -5975,12 +5956,13 @@ void CommandSlideMoveDrawableZOrderArchive::SharedCtor() {
 
 CommandSlideMoveDrawableZOrderArchive::~CommandSlideMoveDrawableZOrderArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideMoveDrawableZOrderArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideMoveDrawableZOrderArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideMoveDrawableZOrderArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
 }
@@ -6227,25 +6209,22 @@ size_t CommandSlideMoveDrawableZOrderArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideMoveDrawableZOrderArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideMoveDrawableZOrderArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideMoveDrawableZOrderArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideMoveDrawableZOrderArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideMoveDrawableZOrderArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideMoveDrawableZOrderArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideMoveDrawableZOrderArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideMoveDrawableZOrderArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideMoveDrawableZOrderArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideMoveDrawableZOrderArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideMoveDrawableZOrderArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideMoveDrawableZOrderArchive &>(from));
 }
+
 
 void CommandSlideMoveDrawableZOrderArchive::MergeFrom(const CommandSlideMoveDrawableZOrderArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideMoveDrawableZOrderArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6261,13 +6240,7 @@ void CommandSlideMoveDrawableZOrderArchive::MergeFrom(const CommandSlideMoveDraw
       _internal_mutable_slide_id()->::TSP::UUID::MergeFrom(from._internal_slide_id());
     }
   }
-}
-
-void CommandSlideMoveDrawableZOrderArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideMoveDrawableZOrderArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideMoveDrawableZOrderArchive::CopyFrom(const CommandSlideMoveDrawableZOrderArchive& from) {
@@ -6355,10 +6328,13 @@ void CommandSlideNodeSetPropertyArchive::clear_slide_node_id_path() {
   if (slide_node_id_path_ != nullptr) slide_node_id_path_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandSlideNodeSetPropertyArchive::CommandSlideNodeSetPropertyArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlideNodeSetPropertyArchive::CommandSlideNodeSetPropertyArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideNodeSetPropertyArchive)
 }
 CommandSlideNodeSetPropertyArchive::CommandSlideNodeSetPropertyArchive(const CommandSlideNodeSetPropertyArchive& from)
@@ -6368,7 +6344,7 @@ CommandSlideNodeSetPropertyArchive::CommandSlideNodeSetPropertyArchive(const Com
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -6386,7 +6362,7 @@ CommandSlideNodeSetPropertyArchive::CommandSlideNodeSetPropertyArchive(const Com
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideNodeSetPropertyArchive)
 }
 
-void CommandSlideNodeSetPropertyArchive::SharedCtor() {
+inline void CommandSlideNodeSetPropertyArchive::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -6396,12 +6372,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandSlideNodeSetPropertyArchive::~CommandSlideNodeSetPropertyArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideNodeSetPropertyArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideNodeSetPropertyArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideNodeSetPropertyArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_node_id_path_;
@@ -6648,25 +6625,22 @@ size_t CommandSlideNodeSetPropertyArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideNodeSetPropertyArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideNodeSetPropertyArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideNodeSetPropertyArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideNodeSetPropertyArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideNodeSetPropertyArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideNodeSetPropertyArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideNodeSetPropertyArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideNodeSetPropertyArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideNodeSetPropertyArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideNodeSetPropertyArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideNodeSetPropertyArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideNodeSetPropertyArchive &>(from));
 }
+
 
 void CommandSlideNodeSetPropertyArchive::MergeFrom(const CommandSlideNodeSetPropertyArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideNodeSetPropertyArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6689,13 +6663,7 @@ void CommandSlideNodeSetPropertyArchive::MergeFrom(const CommandSlideNodeSetProp
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSlideNodeSetPropertyArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideNodeSetPropertyArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideNodeSetPropertyArchive::CopyFrom(const CommandSlideNodeSetPropertyArchive& from) {
@@ -6720,7 +6688,11 @@ void CommandSlideNodeSetPropertyArchive::InternalSwap(CommandSlideNodeSetPropert
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandSlideNodeSetPropertyArchive, value_)
       + sizeof(CommandSlideNodeSetPropertyArchive::value_)
@@ -6778,10 +6750,13 @@ void CommandSlideNodeSetViewStatePropertyArchive::clear_slide_node_id_path() {
   if (slide_node_id_path_ != nullptr) slide_node_id_path_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandSlideNodeSetViewStatePropertyArchive::CommandSlideNodeSetViewStatePropertyArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlideNodeSetViewStatePropertyArchive::CommandSlideNodeSetViewStatePropertyArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideNodeSetViewStatePropertyArchive)
 }
 CommandSlideNodeSetViewStatePropertyArchive::CommandSlideNodeSetViewStatePropertyArchive(const CommandSlideNodeSetViewStatePropertyArchive& from)
@@ -6791,7 +6766,7 @@ CommandSlideNodeSetViewStatePropertyArchive::CommandSlideNodeSetViewStatePropert
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -6809,7 +6784,7 @@ CommandSlideNodeSetViewStatePropertyArchive::CommandSlideNodeSetViewStatePropert
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideNodeSetViewStatePropertyArchive)
 }
 
-void CommandSlideNodeSetViewStatePropertyArchive::SharedCtor() {
+inline void CommandSlideNodeSetViewStatePropertyArchive::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -6819,12 +6794,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandSlideNodeSetViewStatePropertyArchive::~CommandSlideNodeSetViewStatePropertyArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideNodeSetViewStatePropertyArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideNodeSetViewStatePropertyArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideNodeSetViewStatePropertyArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_node_id_path_;
@@ -7071,25 +7047,22 @@ size_t CommandSlideNodeSetViewStatePropertyArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideNodeSetViewStatePropertyArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideNodeSetViewStatePropertyArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideNodeSetViewStatePropertyArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideNodeSetViewStatePropertyArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideNodeSetViewStatePropertyArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideNodeSetViewStatePropertyArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideNodeSetViewStatePropertyArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideNodeSetViewStatePropertyArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideNodeSetViewStatePropertyArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideNodeSetViewStatePropertyArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideNodeSetViewStatePropertyArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideNodeSetViewStatePropertyArchive &>(from));
 }
+
 
 void CommandSlideNodeSetViewStatePropertyArchive::MergeFrom(const CommandSlideNodeSetViewStatePropertyArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideNodeSetViewStatePropertyArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7112,13 +7085,7 @@ void CommandSlideNodeSetViewStatePropertyArchive::MergeFrom(const CommandSlideNo
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSlideNodeSetViewStatePropertyArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideNodeSetViewStatePropertyArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideNodeSetViewStatePropertyArchive::CopyFrom(const CommandSlideNodeSetViewStatePropertyArchive& from) {
@@ -7143,7 +7110,11 @@ void CommandSlideNodeSetViewStatePropertyArchive::InternalSwap(CommandSlideNodeS
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandSlideNodeSetViewStatePropertyArchive, value_)
       + sizeof(CommandSlideNodeSetViewStatePropertyArchive::value_)
@@ -7216,10 +7187,13 @@ void CommandSlideSetBackgroundFillArchive::clear_new_fill() {
   if (new_fill_ != nullptr) new_fill_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandSlideSetBackgroundFillArchive::CommandSlideSetBackgroundFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlideSetBackgroundFillArchive::CommandSlideSetBackgroundFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideSetBackgroundFillArchive)
 }
 CommandSlideSetBackgroundFillArchive::CommandSlideSetBackgroundFillArchive(const CommandSlideSetBackgroundFillArchive& from)
@@ -7249,7 +7223,7 @@ CommandSlideSetBackgroundFillArchive::CommandSlideSetBackgroundFillArchive(const
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideSetBackgroundFillArchive)
 }
 
-void CommandSlideSetBackgroundFillArchive::SharedCtor() {
+inline void CommandSlideSetBackgroundFillArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&new_fill_) -
@@ -7258,12 +7232,13 @@ void CommandSlideSetBackgroundFillArchive::SharedCtor() {
 
 CommandSlideSetBackgroundFillArchive::~CommandSlideSetBackgroundFillArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideSetBackgroundFillArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideSetBackgroundFillArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideSetBackgroundFillArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_path_;
   if (this != internal_default_instance()) delete old_fill_;
@@ -7486,25 +7461,22 @@ size_t CommandSlideSetBackgroundFillArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideSetBackgroundFillArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideSetBackgroundFillArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideSetBackgroundFillArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideSetBackgroundFillArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideSetBackgroundFillArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideSetBackgroundFillArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideSetBackgroundFillArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideSetBackgroundFillArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideSetBackgroundFillArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideSetBackgroundFillArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideSetBackgroundFillArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideSetBackgroundFillArchive &>(from));
 }
+
 
 void CommandSlideSetBackgroundFillArchive::MergeFrom(const CommandSlideSetBackgroundFillArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideSetBackgroundFillArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7523,13 +7495,7 @@ void CommandSlideSetBackgroundFillArchive::MergeFrom(const CommandSlideSetBackgr
       _internal_mutable_new_fill()->::TSD::FillArchive::MergeFrom(from._internal_new_fill());
     }
   }
-}
-
-void CommandSlideSetBackgroundFillArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideSetBackgroundFillArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideSetBackgroundFillArchive::CopyFrom(const CommandSlideSetBackgroundFillArchive& from) {
@@ -7632,10 +7598,13 @@ void CommandSlideSetStyleArchive::clear_old_slide_style() {
   if (old_slide_style_ != nullptr) old_slide_style_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandSlideSetStyleArchive::CommandSlideSetStyleArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlideSetStyleArchive::CommandSlideSetStyleArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideSetStyleArchive)
 }
 CommandSlideSetStyleArchive::CommandSlideSetStyleArchive(const CommandSlideSetStyleArchive& from)
@@ -7665,7 +7634,7 @@ CommandSlideSetStyleArchive::CommandSlideSetStyleArchive(const CommandSlideSetSt
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideSetStyleArchive)
 }
 
-void CommandSlideSetStyleArchive::SharedCtor() {
+inline void CommandSlideSetStyleArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_slide_style_) -
@@ -7674,12 +7643,13 @@ void CommandSlideSetStyleArchive::SharedCtor() {
 
 CommandSlideSetStyleArchive::~CommandSlideSetStyleArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideSetStyleArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideSetStyleArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideSetStyleArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_path_;
   if (this != internal_default_instance()) delete slide_style_;
@@ -7902,25 +7872,22 @@ size_t CommandSlideSetStyleArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideSetStyleArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideSetStyleArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideSetStyleArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideSetStyleArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideSetStyleArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideSetStyleArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideSetStyleArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideSetStyleArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideSetStyleArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideSetStyleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideSetStyleArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideSetStyleArchive &>(from));
 }
+
 
 void CommandSlideSetStyleArchive::MergeFrom(const CommandSlideSetStyleArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideSetStyleArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7939,13 +7906,7 @@ void CommandSlideSetStyleArchive::MergeFrom(const CommandSlideSetStyleArchive& f
       _internal_mutable_old_slide_style()->::TSP::Reference::MergeFrom(from._internal_old_slide_style());
     }
   }
-}
-
-void CommandSlideSetStyleArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideSetStyleArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideSetStyleArchive::CopyFrom(const CommandSlideSetStyleArchive& from) {
@@ -8066,10 +8027,13 @@ void CommandShowMarkOutOfSyncRecordingArchive::clear_new_modification_date() {
   if (new_modification_date_ != nullptr) new_modification_date_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-CommandShowMarkOutOfSyncRecordingArchive::CommandShowMarkOutOfSyncRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowMarkOutOfSyncRecordingArchive::CommandShowMarkOutOfSyncRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowMarkOutOfSyncRecordingArchive)
 }
 CommandShowMarkOutOfSyncRecordingArchive::CommandShowMarkOutOfSyncRecordingArchive(const CommandShowMarkOutOfSyncRecordingArchive& from)
@@ -8107,7 +8071,7 @@ CommandShowMarkOutOfSyncRecordingArchive::CommandShowMarkOutOfSyncRecordingArchi
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowMarkOutOfSyncRecordingArchive)
 }
 
-void CommandShowMarkOutOfSyncRecordingArchive::SharedCtor() {
+inline void CommandShowMarkOutOfSyncRecordingArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&new_is_recording_out_of_sync_) -
@@ -8116,12 +8080,13 @@ void CommandShowMarkOutOfSyncRecordingArchive::SharedCtor() {
 
 CommandShowMarkOutOfSyncRecordingArchive::~CommandShowMarkOutOfSyncRecordingArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowMarkOutOfSyncRecordingArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowMarkOutOfSyncRecordingArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowMarkOutOfSyncRecordingArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete show_;
   if (this != internal_default_instance()) delete old_recording_;
@@ -8409,25 +8374,22 @@ size_t CommandShowMarkOutOfSyncRecordingArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowMarkOutOfSyncRecordingArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowMarkOutOfSyncRecordingArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowMarkOutOfSyncRecordingArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowMarkOutOfSyncRecordingArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowMarkOutOfSyncRecordingArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowMarkOutOfSyncRecordingArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowMarkOutOfSyncRecordingArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowMarkOutOfSyncRecordingArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowMarkOutOfSyncRecordingArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowMarkOutOfSyncRecordingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowMarkOutOfSyncRecordingArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowMarkOutOfSyncRecordingArchive &>(from));
 }
+
 
 void CommandShowMarkOutOfSyncRecordingArchive::MergeFrom(const CommandShowMarkOutOfSyncRecordingArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowMarkOutOfSyncRecordingArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8456,13 +8418,7 @@ void CommandShowMarkOutOfSyncRecordingArchive::MergeFrom(const CommandShowMarkOu
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandShowMarkOutOfSyncRecordingArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowMarkOutOfSyncRecordingArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowMarkOutOfSyncRecordingArchive::CopyFrom(const CommandShowMarkOutOfSyncRecordingArchive& from) {
@@ -8544,10 +8500,13 @@ void CommandShowMarkOutOfSyncRecordingIfNeededArchive::clear_out_of_sync_token()
   if (out_of_sync_token_ != nullptr) out_of_sync_token_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-CommandShowMarkOutOfSyncRecordingIfNeededArchive::CommandShowMarkOutOfSyncRecordingIfNeededArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowMarkOutOfSyncRecordingIfNeededArchive::CommandShowMarkOutOfSyncRecordingIfNeededArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
 }
 CommandShowMarkOutOfSyncRecordingIfNeededArchive::CommandShowMarkOutOfSyncRecordingIfNeededArchive(const CommandShowMarkOutOfSyncRecordingIfNeededArchive& from)
@@ -8567,7 +8526,7 @@ CommandShowMarkOutOfSyncRecordingIfNeededArchive::CommandShowMarkOutOfSyncRecord
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
 }
 
-void CommandShowMarkOutOfSyncRecordingIfNeededArchive::SharedCtor() {
+inline void CommandShowMarkOutOfSyncRecordingIfNeededArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&out_of_sync_token_) -
@@ -8576,12 +8535,13 @@ void CommandShowMarkOutOfSyncRecordingIfNeededArchive::SharedCtor() {
 
 CommandShowMarkOutOfSyncRecordingIfNeededArchive::~CommandShowMarkOutOfSyncRecordingIfNeededArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowMarkOutOfSyncRecordingIfNeededArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowMarkOutOfSyncRecordingIfNeededArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete out_of_sync_token_;
 }
@@ -8724,25 +8684,22 @@ size_t CommandShowMarkOutOfSyncRecordingIfNeededArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowMarkOutOfSyncRecordingIfNeededArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowMarkOutOfSyncRecordingIfNeededArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowMarkOutOfSyncRecordingIfNeededArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowMarkOutOfSyncRecordingIfNeededArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowMarkOutOfSyncRecordingIfNeededArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowMarkOutOfSyncRecordingIfNeededArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowMarkOutOfSyncRecordingIfNeededArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowMarkOutOfSyncRecordingIfNeededArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowMarkOutOfSyncRecordingIfNeededArchive &>(from));
 }
+
 
 void CommandShowMarkOutOfSyncRecordingIfNeededArchive::MergeFrom(const CommandShowMarkOutOfSyncRecordingIfNeededArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8755,13 +8712,7 @@ void CommandShowMarkOutOfSyncRecordingIfNeededArchive::MergeFrom(const CommandSh
       _internal_mutable_out_of_sync_token()->::TSP::UUID::MergeFrom(from._internal_out_of_sync_token());
     }
   }
-}
-
-void CommandShowMarkOutOfSyncRecordingIfNeededArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowMarkOutOfSyncRecordingIfNeededArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowMarkOutOfSyncRecordingIfNeededArchive::CopyFrom(const CommandShowMarkOutOfSyncRecordingIfNeededArchive& from) {
@@ -8846,10 +8797,13 @@ void CommandShowRemoveRecordingArchive::clear_old_recording() {
   if (old_recording_ != nullptr) old_recording_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandShowRemoveRecordingArchive::CommandShowRemoveRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowRemoveRecordingArchive::CommandShowRemoveRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowRemoveRecordingArchive)
 }
 CommandShowRemoveRecordingArchive::CommandShowRemoveRecordingArchive(const CommandShowRemoveRecordingArchive& from)
@@ -8874,7 +8828,7 @@ CommandShowRemoveRecordingArchive::CommandShowRemoveRecordingArchive(const Comma
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowRemoveRecordingArchive)
 }
 
-void CommandShowRemoveRecordingArchive::SharedCtor() {
+inline void CommandShowRemoveRecordingArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_recording_) -
@@ -8883,12 +8837,13 @@ void CommandShowRemoveRecordingArchive::SharedCtor() {
 
 CommandShowRemoveRecordingArchive::~CommandShowRemoveRecordingArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowRemoveRecordingArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowRemoveRecordingArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowRemoveRecordingArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete show_;
   if (this != internal_default_instance()) delete old_recording_;
@@ -9079,25 +9034,22 @@ size_t CommandShowRemoveRecordingArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowRemoveRecordingArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowRemoveRecordingArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowRemoveRecordingArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowRemoveRecordingArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowRemoveRecordingArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowRemoveRecordingArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowRemoveRecordingArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowRemoveRecordingArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowRemoveRecordingArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowRemoveRecordingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowRemoveRecordingArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowRemoveRecordingArchive &>(from));
 }
+
 
 void CommandShowRemoveRecordingArchive::MergeFrom(const CommandShowRemoveRecordingArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowRemoveRecordingArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9113,13 +9065,7 @@ void CommandShowRemoveRecordingArchive::MergeFrom(const CommandShowRemoveRecordi
       _internal_mutable_old_recording()->::TSP::Reference::MergeFrom(from._internal_old_recording());
     }
   }
-}
-
-void CommandShowRemoveRecordingArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowRemoveRecordingArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowRemoveRecordingArchive::CopyFrom(const CommandShowRemoveRecordingArchive& from) {
@@ -9219,10 +9165,13 @@ void CommandShowReplaceRecordingArchive::clear_old_recording() {
   if (old_recording_ != nullptr) old_recording_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandShowReplaceRecordingArchive::CommandShowReplaceRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowReplaceRecordingArchive::CommandShowReplaceRecordingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowReplaceRecordingArchive)
 }
 CommandShowReplaceRecordingArchive::CommandShowReplaceRecordingArchive(const CommandShowReplaceRecordingArchive& from)
@@ -9252,7 +9201,7 @@ CommandShowReplaceRecordingArchive::CommandShowReplaceRecordingArchive(const Com
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowReplaceRecordingArchive)
 }
 
-void CommandShowReplaceRecordingArchive::SharedCtor() {
+inline void CommandShowReplaceRecordingArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_recording_) -
@@ -9261,12 +9210,13 @@ void CommandShowReplaceRecordingArchive::SharedCtor() {
 
 CommandShowReplaceRecordingArchive::~CommandShowReplaceRecordingArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowReplaceRecordingArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowReplaceRecordingArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowReplaceRecordingArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete show_;
   if (this != internal_default_instance()) delete replacement_recording_;
@@ -9489,25 +9439,22 @@ size_t CommandShowReplaceRecordingArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowReplaceRecordingArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowReplaceRecordingArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowReplaceRecordingArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowReplaceRecordingArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowReplaceRecordingArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowReplaceRecordingArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowReplaceRecordingArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowReplaceRecordingArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowReplaceRecordingArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowReplaceRecordingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowReplaceRecordingArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowReplaceRecordingArchive &>(from));
 }
+
 
 void CommandShowReplaceRecordingArchive::MergeFrom(const CommandShowReplaceRecordingArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowReplaceRecordingArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9526,13 +9473,7 @@ void CommandShowReplaceRecordingArchive::MergeFrom(const CommandShowReplaceRecor
       _internal_mutable_old_recording()->::TSP::Reference::MergeFrom(from._internal_old_recording());
     }
   }
-}
-
-void CommandShowReplaceRecordingArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowReplaceRecordingArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowReplaceRecordingArchive::CopyFrom(const CommandShowReplaceRecordingArchive& from) {
@@ -9605,10 +9546,13 @@ void CommandShowSetValueArchive_PropertyValue::clear_size_value() {
   if (size_value_ != nullptr) size_value_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-CommandShowSetValueArchive_PropertyValue::CommandShowSetValueArchive_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowSetValueArchive_PropertyValue::CommandShowSetValueArchive_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowSetValueArchive.PropertyValue)
 }
 CommandShowSetValueArchive_PropertyValue::CommandShowSetValueArchive_PropertyValue(const CommandShowSetValueArchive_PropertyValue& from)
@@ -9626,7 +9570,7 @@ CommandShowSetValueArchive_PropertyValue::CommandShowSetValueArchive_PropertyVal
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowSetValueArchive.PropertyValue)
 }
 
-void CommandShowSetValueArchive_PropertyValue::SharedCtor() {
+inline void CommandShowSetValueArchive_PropertyValue::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&size_value_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&show_mode_value_) -
@@ -9635,12 +9579,13 @@ void CommandShowSetValueArchive_PropertyValue::SharedCtor() {
 
 CommandShowSetValueArchive_PropertyValue::~CommandShowSetValueArchive_PropertyValue() {
   // @@protoc_insertion_point(destructor:KN.CommandShowSetValueArchive.PropertyValue)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowSetValueArchive_PropertyValue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowSetValueArchive_PropertyValue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete size_value_;
 }
 
@@ -9825,25 +9770,22 @@ size_t CommandShowSetValueArchive_PropertyValue::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowSetValueArchive_PropertyValue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowSetValueArchive.PropertyValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowSetValueArchive_PropertyValue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowSetValueArchive_PropertyValue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowSetValueArchive.PropertyValue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowSetValueArchive.PropertyValue)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowSetValueArchive_PropertyValue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowSetValueArchive_PropertyValue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowSetValueArchive_PropertyValue::GetClassData() const { return &_class_data_; }
+
+void CommandShowSetValueArchive_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowSetValueArchive_PropertyValue *>(to)->MergeFrom(
+      static_cast<const CommandShowSetValueArchive_PropertyValue &>(from));
 }
+
 
 void CommandShowSetValueArchive_PropertyValue::MergeFrom(const CommandShowSetValueArchive_PropertyValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowSetValueArchive.PropertyValue)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9863,13 +9805,7 @@ void CommandShowSetValueArchive_PropertyValue::MergeFrom(const CommandShowSetVal
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandShowSetValueArchive_PropertyValue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowSetValueArchive.PropertyValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowSetValueArchive_PropertyValue::CopyFrom(const CommandShowSetValueArchive_PropertyValue& from) {
@@ -9957,10 +9893,13 @@ void CommandShowSetValueArchive::clear_show() {
   if (show_ != nullptr) show_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandShowSetValueArchive::CommandShowSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowSetValueArchive::CommandShowSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowSetValueArchive)
 }
 CommandShowSetValueArchive::CommandShowSetValueArchive(const CommandShowSetValueArchive& from)
@@ -9970,7 +9909,7 @@ CommandShowSetValueArchive::CommandShowSetValueArchive(const CommandShowSetValue
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -9995,7 +9934,7 @@ CommandShowSetValueArchive::CommandShowSetValueArchive(const CommandShowSetValue
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowSetValueArchive)
 }
 
-void CommandShowSetValueArchive::SharedCtor() {
+inline void CommandShowSetValueArchive::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -10005,12 +9944,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandShowSetValueArchive::~CommandShowSetValueArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowSetValueArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowSetValueArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowSetValueArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete show_;
@@ -10274,25 +10214,22 @@ size_t CommandShowSetValueArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowSetValueArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowSetValueArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowSetValueArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowSetValueArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowSetValueArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowSetValueArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowSetValueArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowSetValueArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowSetValueArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowSetValueArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowSetValueArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowSetValueArchive &>(from));
 }
+
 
 void CommandShowSetValueArchive::MergeFrom(const CommandShowSetValueArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowSetValueArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -10314,13 +10251,7 @@ void CommandShowSetValueArchive::MergeFrom(const CommandShowSetValueArchive& fro
       _internal_mutable_new_value()->::KN::CommandShowSetValueArchive_PropertyValue::MergeFrom(from._internal_new_value());
     }
   }
-}
-
-void CommandShowSetValueArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowSetValueArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowSetValueArchive::CopyFrom(const CommandShowSetValueArchive& from) {
@@ -10351,7 +10282,11 @@ void CommandShowSetValueArchive::InternalSwap(CommandShowSetValueArchive* other)
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandShowSetValueArchive, new_value_)
       + sizeof(CommandShowSetValueArchive::new_value_)
@@ -10424,8 +10359,9 @@ void CommandShowInsertSlideArchive::clear_undo_archive() {
   if (undo_archive_ != nullptr) undo_archive_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-CommandShowInsertSlideArchive::CommandShowInsertSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandShowInsertSlideArchive::CommandShowInsertSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   slide_nodes_being_inserted_(arena),
   inserted_args_list_(arena),
   ids_of_slide_nodes_with_depth_changes_(arena),
@@ -10439,7 +10375,9 @@ CommandShowInsertSlideArchive::CommandShowInsertSlideArchive(::PROTOBUF_NAMESPAC
   collapsed_state_of_slide_nodes_being_inserted_(arena),
   working_slide_nodes_being_inserted_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowInsertSlideArchive)
 }
 CommandShowInsertSlideArchive::CommandShowInsertSlideArchive(const CommandShowInsertSlideArchive& from)
@@ -10472,7 +10410,7 @@ CommandShowInsertSlideArchive::CommandShowInsertSlideArchive(const CommandShowIn
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowInsertSlideArchive)
 }
 
-void CommandShowInsertSlideArchive::SharedCtor() {
+inline void CommandShowInsertSlideArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&kind_) -
@@ -10481,12 +10419,13 @@ void CommandShowInsertSlideArchive::SharedCtor() {
 
 CommandShowInsertSlideArchive::~CommandShowInsertSlideArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowInsertSlideArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowInsertSlideArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowInsertSlideArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete undo_archive_;
 }
@@ -11008,25 +10947,22 @@ size_t CommandShowInsertSlideArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowInsertSlideArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowInsertSlideArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowInsertSlideArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowInsertSlideArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowInsertSlideArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowInsertSlideArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowInsertSlideArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowInsertSlideArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowInsertSlideArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowInsertSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowInsertSlideArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowInsertSlideArchive &>(from));
 }
+
 
 void CommandShowInsertSlideArchive::MergeFrom(const CommandShowInsertSlideArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowInsertSlideArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11055,13 +10991,7 @@ void CommandShowInsertSlideArchive::MergeFrom(const CommandShowInsertSlideArchiv
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandShowInsertSlideArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowInsertSlideArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowInsertSlideArchive::CopyFrom(const CommandShowInsertSlideArchive& from) {
@@ -11153,8 +11083,9 @@ void CommandShowMoveSlideArchive::clear_ids_of_slide_nodes_with_depth_changes() 
 void CommandShowMoveSlideArchive::clear_slide_nodes_for_depth_fix_up() {
   slide_nodes_for_depth_fix_up_.Clear();
 }
-CommandShowMoveSlideArchive::CommandShowMoveSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandShowMoveSlideArchive::CommandShowMoveSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   slide_nodes_being_moved_linearly_(arena),
   rearranged_args_list_(arena),
   ids_of_slide_nodes_with_depth_changes_(arena),
@@ -11164,7 +11095,9 @@ CommandShowMoveSlideArchive::CommandShowMoveSlideArchive(::PROTOBUF_NAMESPACE_ID
   depths_of_slide_nodes_for_depth_fix_up_(arena),
   old_depths_of_slide_nodes_for_depth_fix_up_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowMoveSlideArchive)
 }
 CommandShowMoveSlideArchive::CommandShowMoveSlideArchive(const CommandShowMoveSlideArchive& from)
@@ -11187,18 +11120,19 @@ CommandShowMoveSlideArchive::CommandShowMoveSlideArchive(const CommandShowMoveSl
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowMoveSlideArchive)
 }
 
-void CommandShowMoveSlideArchive::SharedCtor() {
+inline void CommandShowMoveSlideArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandShowMoveSlideArchive::~CommandShowMoveSlideArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowMoveSlideArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowMoveSlideArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowMoveSlideArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -11547,25 +11481,22 @@ size_t CommandShowMoveSlideArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowMoveSlideArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowMoveSlideArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowMoveSlideArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowMoveSlideArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowMoveSlideArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowMoveSlideArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowMoveSlideArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowMoveSlideArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowMoveSlideArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowMoveSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowMoveSlideArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowMoveSlideArchive &>(from));
 }
+
 
 void CommandShowMoveSlideArchive::MergeFrom(const CommandShowMoveSlideArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowMoveSlideArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11580,13 +11511,7 @@ void CommandShowMoveSlideArchive::MergeFrom(const CommandShowMoveSlideArchive& f
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandShowMoveSlideArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowMoveSlideArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowMoveSlideArchive::CopyFrom(const CommandShowMoveSlideArchive& from) {
@@ -11663,8 +11588,9 @@ void CommandShowRemoveSlideArchive::clear_ids_of_slide_nodes_with_depth_changes(
 void CommandShowRemoveSlideArchive::clear_slide_nodes_for_depth_fix_up() {
   slide_nodes_for_depth_fix_up_.Clear();
 }
-CommandShowRemoveSlideArchive::CommandShowRemoveSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandShowRemoveSlideArchive::CommandShowRemoveSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   slide_nodes_being_removed_(arena),
   removed_args_list_(arena),
   ids_of_slide_nodes_with_depth_changes_(arena),
@@ -11675,7 +11601,9 @@ CommandShowRemoveSlideArchive::CommandShowRemoveSlideArchive(::PROTOBUF_NAMESPAC
   old_depths_of_slide_nodes_for_depth_fix_up_(arena),
   collapsed_state_of_slide_nodes_being_removed_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowRemoveSlideArchive)
 }
 CommandShowRemoveSlideArchive::CommandShowRemoveSlideArchive(const CommandShowRemoveSlideArchive& from)
@@ -11699,18 +11627,19 @@ CommandShowRemoveSlideArchive::CommandShowRemoveSlideArchive(const CommandShowRe
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowRemoveSlideArchive)
 }
 
-void CommandShowRemoveSlideArchive::SharedCtor() {
+inline void CommandShowRemoveSlideArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandShowRemoveSlideArchive::~CommandShowRemoveSlideArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowRemoveSlideArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowRemoveSlideArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowRemoveSlideArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -12090,25 +12019,22 @@ size_t CommandShowRemoveSlideArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowRemoveSlideArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowRemoveSlideArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowRemoveSlideArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowRemoveSlideArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowRemoveSlideArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowRemoveSlideArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowRemoveSlideArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowRemoveSlideArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowRemoveSlideArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowRemoveSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowRemoveSlideArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowRemoveSlideArchive &>(from));
 }
+
 
 void CommandShowRemoveSlideArchive::MergeFrom(const CommandShowRemoveSlideArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowRemoveSlideArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -12124,13 +12050,7 @@ void CommandShowRemoveSlideArchive::MergeFrom(const CommandShowRemoveSlideArchiv
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandShowRemoveSlideArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowRemoveSlideArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowRemoveSlideArchive::CopyFrom(const CommandShowRemoveSlideArchive& from) {
@@ -12183,11 +12103,14 @@ class CommandShowChangeThemeArchive_IdentifierToStyleMap::_Internal {
 void CommandShowChangeThemeArchive_IdentifierToStyleMap::clear_styles() {
   styles_.Clear();
 }
-CommandShowChangeThemeArchive_IdentifierToStyleMap::CommandShowChangeThemeArchive_IdentifierToStyleMap(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandShowChangeThemeArchive_IdentifierToStyleMap::CommandShowChangeThemeArchive_IdentifierToStyleMap(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   styles_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
 }
 CommandShowChangeThemeArchive_IdentifierToStyleMap::CommandShowChangeThemeArchive_IdentifierToStyleMap(const CommandShowChangeThemeArchive_IdentifierToStyleMap& from)
@@ -12197,17 +12120,18 @@ CommandShowChangeThemeArchive_IdentifierToStyleMap::CommandShowChangeThemeArchiv
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
 }
 
-void CommandShowChangeThemeArchive_IdentifierToStyleMap::SharedCtor() {
+inline void CommandShowChangeThemeArchive_IdentifierToStyleMap::SharedCtor() {
 }
 
 CommandShowChangeThemeArchive_IdentifierToStyleMap::~CommandShowChangeThemeArchive_IdentifierToStyleMap() {
   // @@protoc_insertion_point(destructor:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowChangeThemeArchive_IdentifierToStyleMap::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowChangeThemeArchive_IdentifierToStyleMap::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void CommandShowChangeThemeArchive_IdentifierToStyleMap::ArenaDtor(void* object) {
@@ -12317,36 +12241,27 @@ size_t CommandShowChangeThemeArchive_IdentifierToStyleMap::ByteSizeLong() const 
   return total_size;
 }
 
-void CommandShowChangeThemeArchive_IdentifierToStyleMap::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowChangeThemeArchive_IdentifierToStyleMap* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowChangeThemeArchive_IdentifierToStyleMap>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowChangeThemeArchive_IdentifierToStyleMap::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowChangeThemeArchive_IdentifierToStyleMap::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowChangeThemeArchive_IdentifierToStyleMap::GetClassData() const { return &_class_data_; }
+
+void CommandShowChangeThemeArchive_IdentifierToStyleMap::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowChangeThemeArchive_IdentifierToStyleMap *>(to)->MergeFrom(
+      static_cast<const CommandShowChangeThemeArchive_IdentifierToStyleMap &>(from));
 }
+
 
 void CommandShowChangeThemeArchive_IdentifierToStyleMap::MergeFrom(const CommandShowChangeThemeArchive_IdentifierToStyleMap& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   styles_.MergeFrom(from.styles_);
-}
-
-void CommandShowChangeThemeArchive_IdentifierToStyleMap::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowChangeThemeArchive.IdentifierToStyleMap)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowChangeThemeArchive_IdentifierToStyleMap::CopyFrom(const CommandShowChangeThemeArchive_IdentifierToStyleMap& from) {
@@ -12453,10 +12368,13 @@ void CommandShowChangeThemeArchive::clear_old_theme() {
   if (old_theme_ != nullptr) old_theme_->Clear();
   _has_bits_[0] &= ~0x00000020u;
 }
-CommandShowChangeThemeArchive::CommandShowChangeThemeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowChangeThemeArchive::CommandShowChangeThemeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowChangeThemeArchive)
 }
 CommandShowChangeThemeArchive::CommandShowChangeThemeArchive(const CommandShowChangeThemeArchive& from)
@@ -12466,12 +12384,12 @@ CommandShowChangeThemeArchive::CommandShowChangeThemeArchive(const CommandShowCh
   template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_template_identifier()) {
     template_identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_template_identifier(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   old_template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_old_template_identifier()) {
     old_template_identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_old_template_identifier(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -12506,7 +12424,7 @@ CommandShowChangeThemeArchive::CommandShowChangeThemeArchive(const CommandShowCh
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowChangeThemeArchive)
 }
 
-void CommandShowChangeThemeArchive::SharedCtor() {
+inline void CommandShowChangeThemeArchive::SharedCtor() {
 template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 old_template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
@@ -12517,12 +12435,13 @@ old_template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::Ge
 
 CommandShowChangeThemeArchive::~CommandShowChangeThemeArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowChangeThemeArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowChangeThemeArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowChangeThemeArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   template_identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   old_template_identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
@@ -12867,25 +12786,22 @@ size_t CommandShowChangeThemeArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowChangeThemeArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowChangeThemeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowChangeThemeArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowChangeThemeArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowChangeThemeArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowChangeThemeArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowChangeThemeArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowChangeThemeArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowChangeThemeArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowChangeThemeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowChangeThemeArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowChangeThemeArchive &>(from));
 }
+
 
 void CommandShowChangeThemeArchive::MergeFrom(const CommandShowChangeThemeArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowChangeThemeArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -12916,13 +12832,7 @@ void CommandShowChangeThemeArchive::MergeFrom(const CommandShowChangeThemeArchiv
       _internal_mutable_old_identifier_to_style_map()->::KN::CommandShowChangeThemeArchive_IdentifierToStyleMap::MergeFrom(from._internal_old_identifier_to_style_map());
     }
   }
-}
-
-void CommandShowChangeThemeArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowChangeThemeArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowChangeThemeArchive::CopyFrom(const CommandShowChangeThemeArchive& from) {
@@ -12959,8 +12869,16 @@ void CommandShowChangeThemeArchive::InternalSwap(CommandShowChangeThemeArchive* 
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  template_identifier_.Swap(&other->template_identifier_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  old_template_identifier_.Swap(&other->old_template_identifier_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &template_identifier_, GetArenaForAllocation(),
+      &other->template_identifier_, other->GetArenaForAllocation()
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &old_template_identifier_, GetArenaForAllocation(),
+      &other->old_template_identifier_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandShowChangeThemeArchive, old_identifier_to_style_map_)
       + sizeof(CommandShowChangeThemeArchive::old_identifier_to_style_map_)
@@ -13009,10 +12927,13 @@ void CommandShowChangeSlideSizeArchive::clear_size() {
   if (size_ != nullptr) size_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-CommandShowChangeSlideSizeArchive::CommandShowChangeSlideSizeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowChangeSlideSizeArchive::CommandShowChangeSlideSizeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowChangeSlideSizeArchive)
 }
 CommandShowChangeSlideSizeArchive::CommandShowChangeSlideSizeArchive(const CommandShowChangeSlideSizeArchive& from)
@@ -13032,7 +12953,7 @@ CommandShowChangeSlideSizeArchive::CommandShowChangeSlideSizeArchive(const Comma
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowChangeSlideSizeArchive)
 }
 
-void CommandShowChangeSlideSizeArchive::SharedCtor() {
+inline void CommandShowChangeSlideSizeArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&size_) -
@@ -13041,12 +12962,13 @@ void CommandShowChangeSlideSizeArchive::SharedCtor() {
 
 CommandShowChangeSlideSizeArchive::~CommandShowChangeSlideSizeArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowChangeSlideSizeArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowChangeSlideSizeArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowChangeSlideSizeArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete size_;
 }
@@ -13209,25 +13131,22 @@ size_t CommandShowChangeSlideSizeArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowChangeSlideSizeArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowChangeSlideSizeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowChangeSlideSizeArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowChangeSlideSizeArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowChangeSlideSizeArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowChangeSlideSizeArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowChangeSlideSizeArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowChangeSlideSizeArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowChangeSlideSizeArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowChangeSlideSizeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowChangeSlideSizeArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowChangeSlideSizeArchive &>(from));
 }
+
 
 void CommandShowChangeSlideSizeArchive::MergeFrom(const CommandShowChangeSlideSizeArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowChangeSlideSizeArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -13240,13 +13159,7 @@ void CommandShowChangeSlideSizeArchive::MergeFrom(const CommandShowChangeSlideSi
       _internal_mutable_size()->::TSP::Size::MergeFrom(from._internal_size());
     }
   }
-}
-
-void CommandShowChangeSlideSizeArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowChangeSlideSizeArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowChangeSlideSizeArchive::CopyFrom(const CommandShowChangeSlideSizeArchive& from) {
@@ -13334,10 +13247,13 @@ void CommandSetThemeCustomEffectTimingCurveArchive::clear_old_path_source() {
   if (old_path_source_ != nullptr) old_path_source_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandSetThemeCustomEffectTimingCurveArchive::CommandSetThemeCustomEffectTimingCurveArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSetThemeCustomEffectTimingCurveArchive::CommandSetThemeCustomEffectTimingCurveArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSetThemeCustomEffectTimingCurveArchive)
 }
 CommandSetThemeCustomEffectTimingCurveArchive::CommandSetThemeCustomEffectTimingCurveArchive(const CommandSetThemeCustomEffectTimingCurveArchive& from)
@@ -13347,7 +13263,7 @@ CommandSetThemeCustomEffectTimingCurveArchive::CommandSetThemeCustomEffectTiming
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
     name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -13367,7 +13283,7 @@ CommandSetThemeCustomEffectTimingCurveArchive::CommandSetThemeCustomEffectTiming
   // @@protoc_insertion_point(copy_constructor:KN.CommandSetThemeCustomEffectTimingCurveArchive)
 }
 
-void CommandSetThemeCustomEffectTimingCurveArchive::SharedCtor() {
+inline void CommandSetThemeCustomEffectTimingCurveArchive::SharedCtor() {
 name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -13377,12 +13293,13 @@ name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlready
 
 CommandSetThemeCustomEffectTimingCurveArchive::~CommandSetThemeCustomEffectTimingCurveArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSetThemeCustomEffectTimingCurveArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSetThemeCustomEffectTimingCurveArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSetThemeCustomEffectTimingCurveArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete path_source_;
@@ -13586,25 +13503,22 @@ size_t CommandSetThemeCustomEffectTimingCurveArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSetThemeCustomEffectTimingCurveArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSetThemeCustomEffectTimingCurveArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSetThemeCustomEffectTimingCurveArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSetThemeCustomEffectTimingCurveArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSetThemeCustomEffectTimingCurveArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSetThemeCustomEffectTimingCurveArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSetThemeCustomEffectTimingCurveArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSetThemeCustomEffectTimingCurveArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSetThemeCustomEffectTimingCurveArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSetThemeCustomEffectTimingCurveArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSetThemeCustomEffectTimingCurveArchive *>(to)->MergeFrom(
+      static_cast<const CommandSetThemeCustomEffectTimingCurveArchive &>(from));
 }
+
 
 void CommandSetThemeCustomEffectTimingCurveArchive::MergeFrom(const CommandSetThemeCustomEffectTimingCurveArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSetThemeCustomEffectTimingCurveArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -13623,13 +13537,7 @@ void CommandSetThemeCustomEffectTimingCurveArchive::MergeFrom(const CommandSetTh
       _internal_mutable_old_path_source()->::TSD::PathSourceArchive::MergeFrom(from._internal_old_path_source());
     }
   }
-}
-
-void CommandSetThemeCustomEffectTimingCurveArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSetThemeCustomEffectTimingCurveArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSetThemeCustomEffectTimingCurveArchive::CopyFrom(const CommandSetThemeCustomEffectTimingCurveArchive& from) {
@@ -13657,7 +13565,11 @@ void CommandSetThemeCustomEffectTimingCurveArchive::InternalSwap(CommandSetTheme
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &name_, GetArenaForAllocation(),
+      &other->name_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandSetThemeCustomEffectTimingCurveArchive, old_path_source_)
       + sizeof(CommandSetThemeCustomEffectTimingCurveArchive::old_path_source_)
@@ -13703,14 +13615,17 @@ void CommandMoveTemplatesArchive::clear_previous_indexes_keys() {
 void CommandMoveTemplatesArchive::clear_final_template_arrangement() {
   final_template_arrangement_.Clear();
 }
-CommandMoveTemplatesArchive::CommandMoveTemplatesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandMoveTemplatesArchive::CommandMoveTemplatesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   template_slides_(arena),
   previous_indexes_keys_(arena),
   previous_indexes_values_(arena),
   final_template_arrangement_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandMoveTemplatesArchive)
 }
 CommandMoveTemplatesArchive::CommandMoveTemplatesArchive(const CommandMoveTemplatesArchive& from)
@@ -13729,18 +13644,19 @@ CommandMoveTemplatesArchive::CommandMoveTemplatesArchive(const CommandMoveTempla
   // @@protoc_insertion_point(copy_constructor:KN.CommandMoveTemplatesArchive)
 }
 
-void CommandMoveTemplatesArchive::SharedCtor() {
+inline void CommandMoveTemplatesArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandMoveTemplatesArchive::~CommandMoveTemplatesArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandMoveTemplatesArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandMoveTemplatesArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandMoveTemplatesArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -13968,25 +13884,22 @@ size_t CommandMoveTemplatesArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandMoveTemplatesArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandMoveTemplatesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandMoveTemplatesArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandMoveTemplatesArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandMoveTemplatesArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandMoveTemplatesArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandMoveTemplatesArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandMoveTemplatesArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandMoveTemplatesArchive::GetClassData() const { return &_class_data_; }
+
+void CommandMoveTemplatesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandMoveTemplatesArchive *>(to)->MergeFrom(
+      static_cast<const CommandMoveTemplatesArchive &>(from));
 }
+
 
 void CommandMoveTemplatesArchive::MergeFrom(const CommandMoveTemplatesArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandMoveTemplatesArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -13997,13 +13910,7 @@ void CommandMoveTemplatesArchive::MergeFrom(const CommandMoveTemplatesArchive& f
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSD::ContainerReorderChildrenCommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandMoveTemplatesArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandMoveTemplatesArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandMoveTemplatesArchive::CopyFrom(const CommandMoveTemplatesArchive& from) {
@@ -14081,11 +13988,14 @@ void CommandInsertTemplateArchive::clear_undo_replacement_template_slide_node() 
   if (undo_replacement_template_slide_node_ != nullptr) undo_replacement_template_slide_node_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-CommandInsertTemplateArchive::CommandInsertTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandInsertTemplateArchive::CommandInsertTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   undo_template_change_commands_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandInsertTemplateArchive)
 }
 CommandInsertTemplateArchive::CommandInsertTemplateArchive(const CommandInsertTemplateArchive& from)
@@ -14107,7 +14017,7 @@ CommandInsertTemplateArchive::CommandInsertTemplateArchive(const CommandInsertTe
   // @@protoc_insertion_point(copy_constructor:KN.CommandInsertTemplateArchive)
 }
 
-void CommandInsertTemplateArchive::SharedCtor() {
+inline void CommandInsertTemplateArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&set_inserted_slide_as_default_template_slide_) -
@@ -14116,12 +14026,13 @@ void CommandInsertTemplateArchive::SharedCtor() {
 
 CommandInsertTemplateArchive::~CommandInsertTemplateArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandInsertTemplateArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandInsertTemplateArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandInsertTemplateArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete undo_replacement_template_slide_node_;
 }
@@ -14331,25 +14242,22 @@ size_t CommandInsertTemplateArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandInsertTemplateArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandInsertTemplateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandInsertTemplateArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandInsertTemplateArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandInsertTemplateArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandInsertTemplateArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandInsertTemplateArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandInsertTemplateArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandInsertTemplateArchive::GetClassData() const { return &_class_data_; }
+
+void CommandInsertTemplateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandInsertTemplateArchive *>(to)->MergeFrom(
+      static_cast<const CommandInsertTemplateArchive &>(from));
 }
+
 
 void CommandInsertTemplateArchive::MergeFrom(const CommandInsertTemplateArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandInsertTemplateArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14367,13 +14275,7 @@ void CommandInsertTemplateArchive::MergeFrom(const CommandInsertTemplateArchive&
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandInsertTemplateArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandInsertTemplateArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandInsertTemplateArchive::CopyFrom(const CommandInsertTemplateArchive& from) {
@@ -14445,12 +14347,15 @@ void CommandPrimitiveInsertTemplateArchive::clear_custom_format_keys() {
 void CommandPrimitiveInsertTemplateArchive::clear_previous_classic_theme_records() {
   previous_classic_theme_records_.Clear();
 }
-CommandPrimitiveInsertTemplateArchive::CommandPrimitiveInsertTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandPrimitiveInsertTemplateArchive::CommandPrimitiveInsertTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   custom_format_keys_(arena),
   previous_classic_theme_records_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandPrimitiveInsertTemplateArchive)
 }
 CommandPrimitiveInsertTemplateArchive::CommandPrimitiveInsertTemplateArchive(const CommandPrimitiveInsertTemplateArchive& from)
@@ -14468,7 +14373,7 @@ CommandPrimitiveInsertTemplateArchive::CommandPrimitiveInsertTemplateArchive(con
   // @@protoc_insertion_point(copy_constructor:KN.CommandPrimitiveInsertTemplateArchive)
 }
 
-void CommandPrimitiveInsertTemplateArchive::SharedCtor() {
+inline void CommandPrimitiveInsertTemplateArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&was_inserted_with_drop_) -
@@ -14477,12 +14382,13 @@ void CommandPrimitiveInsertTemplateArchive::SharedCtor() {
 
 CommandPrimitiveInsertTemplateArchive::~CommandPrimitiveInsertTemplateArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandPrimitiveInsertTemplateArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandPrimitiveInsertTemplateArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandPrimitiveInsertTemplateArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -14690,25 +14596,22 @@ size_t CommandPrimitiveInsertTemplateArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandPrimitiveInsertTemplateArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandPrimitiveInsertTemplateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandPrimitiveInsertTemplateArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandPrimitiveInsertTemplateArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandPrimitiveInsertTemplateArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandPrimitiveInsertTemplateArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandPrimitiveInsertTemplateArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandPrimitiveInsertTemplateArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandPrimitiveInsertTemplateArchive::GetClassData() const { return &_class_data_; }
+
+void CommandPrimitiveInsertTemplateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandPrimitiveInsertTemplateArchive *>(to)->MergeFrom(
+      static_cast<const CommandPrimitiveInsertTemplateArchive &>(from));
 }
+
 
 void CommandPrimitiveInsertTemplateArchive::MergeFrom(const CommandPrimitiveInsertTemplateArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandPrimitiveInsertTemplateArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14724,13 +14627,7 @@ void CommandPrimitiveInsertTemplateArchive::MergeFrom(const CommandPrimitiveInse
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandPrimitiveInsertTemplateArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandPrimitiveInsertTemplateArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandPrimitiveInsertTemplateArchive::CopyFrom(const CommandPrimitiveInsertTemplateArchive& from) {
@@ -14810,11 +14707,14 @@ void CommandRemoveTemplateArchive::clear_replacement_template_slide_node() {
 void CommandRemoveTemplateArchive::clear_template_change_commands() {
   template_change_commands_.Clear();
 }
-CommandRemoveTemplateArchive::CommandRemoveTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandRemoveTemplateArchive::CommandRemoveTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   template_change_commands_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandRemoveTemplateArchive)
 }
 CommandRemoveTemplateArchive::CommandRemoveTemplateArchive(const CommandRemoveTemplateArchive& from)
@@ -14836,7 +14736,7 @@ CommandRemoveTemplateArchive::CommandRemoveTemplateArchive(const CommandRemoveTe
   // @@protoc_insertion_point(copy_constructor:KN.CommandRemoveTemplateArchive)
 }
 
-void CommandRemoveTemplateArchive::SharedCtor() {
+inline void CommandRemoveTemplateArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&default_template_slide_node_was_replaced_) -
@@ -14845,12 +14745,13 @@ void CommandRemoveTemplateArchive::SharedCtor() {
 
 CommandRemoveTemplateArchive::~CommandRemoveTemplateArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandRemoveTemplateArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandRemoveTemplateArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandRemoveTemplateArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete replacement_template_slide_node_;
 }
@@ -15043,25 +14944,22 @@ size_t CommandRemoveTemplateArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandRemoveTemplateArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandRemoveTemplateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandRemoveTemplateArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandRemoveTemplateArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandRemoveTemplateArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandRemoveTemplateArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandRemoveTemplateArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandRemoveTemplateArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandRemoveTemplateArchive::GetClassData() const { return &_class_data_; }
+
+void CommandRemoveTemplateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandRemoveTemplateArchive *>(to)->MergeFrom(
+      static_cast<const CommandRemoveTemplateArchive &>(from));
 }
+
 
 void CommandRemoveTemplateArchive::MergeFrom(const CommandRemoveTemplateArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandRemoveTemplateArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15079,13 +14977,7 @@ void CommandRemoveTemplateArchive::MergeFrom(const CommandRemoveTemplateArchive&
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandRemoveTemplateArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandRemoveTemplateArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandRemoveTemplateArchive::CopyFrom(const CommandRemoveTemplateArchive& from) {
@@ -15151,11 +15043,14 @@ void CommandPrimitiveRemoveTemplateArchive::clear_super() {
 void CommandPrimitiveRemoveTemplateArchive::clear_previous_classic_theme_records() {
   previous_classic_theme_records_.Clear();
 }
-CommandPrimitiveRemoveTemplateArchive::CommandPrimitiveRemoveTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandPrimitiveRemoveTemplateArchive::CommandPrimitiveRemoveTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   previous_classic_theme_records_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandPrimitiveRemoveTemplateArchive)
 }
 CommandPrimitiveRemoveTemplateArchive::CommandPrimitiveRemoveTemplateArchive(const CommandPrimitiveRemoveTemplateArchive& from)
@@ -15171,18 +15066,19 @@ CommandPrimitiveRemoveTemplateArchive::CommandPrimitiveRemoveTemplateArchive(con
   // @@protoc_insertion_point(copy_constructor:KN.CommandPrimitiveRemoveTemplateArchive)
 }
 
-void CommandPrimitiveRemoveTemplateArchive::SharedCtor() {
+inline void CommandPrimitiveRemoveTemplateArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandPrimitiveRemoveTemplateArchive::~CommandPrimitiveRemoveTemplateArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandPrimitiveRemoveTemplateArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandPrimitiveRemoveTemplateArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandPrimitiveRemoveTemplateArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -15323,25 +15219,22 @@ size_t CommandPrimitiveRemoveTemplateArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandPrimitiveRemoveTemplateArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandPrimitiveRemoveTemplateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandPrimitiveRemoveTemplateArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandPrimitiveRemoveTemplateArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandPrimitiveRemoveTemplateArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandPrimitiveRemoveTemplateArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandPrimitiveRemoveTemplateArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandPrimitiveRemoveTemplateArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandPrimitiveRemoveTemplateArchive::GetClassData() const { return &_class_data_; }
+
+void CommandPrimitiveRemoveTemplateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandPrimitiveRemoveTemplateArchive *>(to)->MergeFrom(
+      static_cast<const CommandPrimitiveRemoveTemplateArchive &>(from));
 }
+
 
 void CommandPrimitiveRemoveTemplateArchive::MergeFrom(const CommandPrimitiveRemoveTemplateArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandPrimitiveRemoveTemplateArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15349,13 +15242,7 @@ void CommandPrimitiveRemoveTemplateArchive::MergeFrom(const CommandPrimitiveRemo
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSD::ContainerRemoveChildrenCommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandPrimitiveRemoveTemplateArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandPrimitiveRemoveTemplateArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandPrimitiveRemoveTemplateArchive::CopyFrom(const CommandPrimitiveRemoveTemplateArchive& from) {
@@ -15446,11 +15333,14 @@ void CommandSlideInsertBuildArchive::clear_identifier_for_chunk_to_insert_after(
 void CommandSlideInsertBuildArchive::clear_old_tuples_to_update() {
   old_tuples_to_update_.Clear();
 }
-CommandSlideInsertBuildArchive::CommandSlideInsertBuildArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideInsertBuildArchive::CommandSlideInsertBuildArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   old_tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideInsertBuildArchive)
 }
 CommandSlideInsertBuildArchive::CommandSlideInsertBuildArchive(const CommandSlideInsertBuildArchive& from)
@@ -15479,7 +15369,7 @@ CommandSlideInsertBuildArchive::CommandSlideInsertBuildArchive(const CommandSlid
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideInsertBuildArchive)
 }
 
-void CommandSlideInsertBuildArchive::SharedCtor() {
+inline void CommandSlideInsertBuildArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&has_been_committed_) -
@@ -15488,12 +15378,13 @@ void CommandSlideInsertBuildArchive::SharedCtor() {
 
 CommandSlideInsertBuildArchive::~CommandSlideInsertBuildArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideInsertBuildArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideInsertBuildArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideInsertBuildArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete insert_build_description_;
   if (this != internal_default_instance()) delete identifier_for_chunk_to_insert_after_;
@@ -15774,25 +15665,22 @@ size_t CommandSlideInsertBuildArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideInsertBuildArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideInsertBuildArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideInsertBuildArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideInsertBuildArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideInsertBuildArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideInsertBuildArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideInsertBuildArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideInsertBuildArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideInsertBuildArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideInsertBuildArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideInsertBuildArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideInsertBuildArchive &>(from));
 }
+
 
 void CommandSlideInsertBuildArchive::MergeFrom(const CommandSlideInsertBuildArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideInsertBuildArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -15819,13 +15707,7 @@ void CommandSlideInsertBuildArchive::MergeFrom(const CommandSlideInsertBuildArch
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSlideInsertBuildArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideInsertBuildArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideInsertBuildArchive::CopyFrom(const CommandSlideInsertBuildArchive& from) {
@@ -15921,14 +15803,17 @@ void InsertBuildDescriptionArchive::clear_tuples_to_update() {
 void InsertBuildDescriptionArchive::clear_fallback_chunk_identifiers() {
   fallback_chunk_identifiers_.Clear();
 }
-InsertBuildDescriptionArchive::InsertBuildDescriptionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+InsertBuildDescriptionArchive::InsertBuildDescriptionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   chunks_to_insert_(arena),
   identifers_for_chunks_to_insert_after_(arena),
   tuples_to_update_(arena),
   fallback_chunk_identifiers_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.InsertBuildDescriptionArchive)
 }
 InsertBuildDescriptionArchive::InsertBuildDescriptionArchive(const InsertBuildDescriptionArchive& from)
@@ -15955,7 +15840,7 @@ InsertBuildDescriptionArchive::InsertBuildDescriptionArchive(const InsertBuildDe
   // @@protoc_insertion_point(copy_constructor:KN.InsertBuildDescriptionArchive)
 }
 
-void InsertBuildDescriptionArchive::SharedCtor() {
+inline void InsertBuildDescriptionArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&slide_id_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&is_for_paste_) -
@@ -15964,12 +15849,13 @@ void InsertBuildDescriptionArchive::SharedCtor() {
 
 InsertBuildDescriptionArchive::~InsertBuildDescriptionArchive() {
   // @@protoc_insertion_point(destructor:KN.InsertBuildDescriptionArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void InsertBuildDescriptionArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void InsertBuildDescriptionArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete build_to_insert_;
 }
@@ -16291,25 +16177,22 @@ size_t InsertBuildDescriptionArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void InsertBuildDescriptionArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.InsertBuildDescriptionArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const InsertBuildDescriptionArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<InsertBuildDescriptionArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.InsertBuildDescriptionArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.InsertBuildDescriptionArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InsertBuildDescriptionArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    InsertBuildDescriptionArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InsertBuildDescriptionArchive::GetClassData() const { return &_class_data_; }
+
+void InsertBuildDescriptionArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<InsertBuildDescriptionArchive *>(to)->MergeFrom(
+      static_cast<const InsertBuildDescriptionArchive &>(from));
 }
+
 
 void InsertBuildDescriptionArchive::MergeFrom(const InsertBuildDescriptionArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.InsertBuildDescriptionArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -16333,13 +16216,7 @@ void InsertBuildDescriptionArchive::MergeFrom(const InsertBuildDescriptionArchiv
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void InsertBuildDescriptionArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.InsertBuildDescriptionArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InsertBuildDescriptionArchive::CopyFrom(const InsertBuildDescriptionArchive& from) {
@@ -16408,10 +16285,13 @@ void UndoObjectArchive::clear_super() {
   if (super_ != nullptr) super_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-UndoObjectArchive::UndoObjectArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+UndoObjectArchive::UndoObjectArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.UndoObjectArchive)
 }
 UndoObjectArchive::UndoObjectArchive(const UndoObjectArchive& from)
@@ -16426,18 +16306,19 @@ UndoObjectArchive::UndoObjectArchive(const UndoObjectArchive& from)
   // @@protoc_insertion_point(copy_constructor:KN.UndoObjectArchive)
 }
 
-void UndoObjectArchive::SharedCtor() {
+inline void UndoObjectArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 UndoObjectArchive::~UndoObjectArchive() {
   // @@protoc_insertion_point(destructor:KN.UndoObjectArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void UndoObjectArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void UndoObjectArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -16550,38 +16431,29 @@ size_t UndoObjectArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void UndoObjectArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.UndoObjectArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const UndoObjectArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<UndoObjectArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.UndoObjectArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.UndoObjectArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UndoObjectArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    UndoObjectArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UndoObjectArchive::GetClassData() const { return &_class_data_; }
+
+void UndoObjectArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<UndoObjectArchive *>(to)->MergeFrom(
+      static_cast<const UndoObjectArchive &>(from));
 }
+
 
 void UndoObjectArchive::MergeFrom(const UndoObjectArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.UndoObjectArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSD::UndoObjectArchive::MergeFrom(from._internal_super());
   }
-}
-
-void UndoObjectArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.UndoObjectArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UndoObjectArchive::CopyFrom(const UndoObjectArchive& from) {
@@ -16670,14 +16542,17 @@ void CommandSlideRemoveBuildArchive::clear_old_tuples_to_update() {
 void CommandSlideRemoveBuildArchive::clear_fallback_chunk_identifiers() {
   fallback_chunk_identifiers_.Clear();
 }
-CommandSlideRemoveBuildArchive::CommandSlideRemoveBuildArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideRemoveBuildArchive::CommandSlideRemoveBuildArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   chunks_to_insert_(arena),
   identifiers_for_chunks_to_insert_after_(arena),
   old_tuples_to_update_(arena),
   fallback_chunk_identifiers_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideRemoveBuildArchive)
 }
 CommandSlideRemoveBuildArchive::CommandSlideRemoveBuildArchive(const CommandSlideRemoveBuildArchive& from)
@@ -16706,7 +16581,7 @@ CommandSlideRemoveBuildArchive::CommandSlideRemoveBuildArchive(const CommandSlid
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideRemoveBuildArchive)
 }
 
-void CommandSlideRemoveBuildArchive::SharedCtor() {
+inline void CommandSlideRemoveBuildArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&build_) -
@@ -16715,12 +16590,13 @@ void CommandSlideRemoveBuildArchive::SharedCtor() {
 
 CommandSlideRemoveBuildArchive::~CommandSlideRemoveBuildArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideRemoveBuildArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideRemoveBuildArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideRemoveBuildArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete remove_build_description_;
   if (this != internal_default_instance()) delete build_;
@@ -17023,25 +16899,22 @@ size_t CommandSlideRemoveBuildArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideRemoveBuildArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideRemoveBuildArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideRemoveBuildArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideRemoveBuildArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideRemoveBuildArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideRemoveBuildArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideRemoveBuildArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideRemoveBuildArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideRemoveBuildArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideRemoveBuildArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideRemoveBuildArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideRemoveBuildArchive &>(from));
 }
+
 
 void CommandSlideRemoveBuildArchive::MergeFrom(const CommandSlideRemoveBuildArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideRemoveBuildArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -17061,13 +16934,7 @@ void CommandSlideRemoveBuildArchive::MergeFrom(const CommandSlideRemoveBuildArch
       _internal_mutable_build()->::TSP::Reference::MergeFrom(from._internal_build());
     }
   }
-}
-
-void CommandSlideRemoveBuildArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideRemoveBuildArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideRemoveBuildArchive::CopyFrom(const CommandSlideRemoveBuildArchive& from) {
@@ -17157,11 +17024,14 @@ void RemoveBuildDescriptionArchive::clear_build_id() {
 void RemoveBuildDescriptionArchive::clear_tuples_to_update() {
   tuples_to_update_.Clear();
 }
-RemoveBuildDescriptionArchive::RemoveBuildDescriptionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+RemoveBuildDescriptionArchive::RemoveBuildDescriptionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.RemoveBuildDescriptionArchive)
 }
 RemoveBuildDescriptionArchive::RemoveBuildDescriptionArchive(const RemoveBuildDescriptionArchive& from)
@@ -17185,7 +17055,7 @@ RemoveBuildDescriptionArchive::RemoveBuildDescriptionArchive(const RemoveBuildDe
   // @@protoc_insertion_point(copy_constructor:KN.RemoveBuildDescriptionArchive)
 }
 
-void RemoveBuildDescriptionArchive::SharedCtor() {
+inline void RemoveBuildDescriptionArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&slide_id_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&should_remove_chunk_identifiers_) -
@@ -17194,12 +17064,13 @@ void RemoveBuildDescriptionArchive::SharedCtor() {
 
 RemoveBuildDescriptionArchive::~RemoveBuildDescriptionArchive() {
   // @@protoc_insertion_point(destructor:KN.RemoveBuildDescriptionArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void RemoveBuildDescriptionArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void RemoveBuildDescriptionArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete build_id_;
 }
@@ -17414,25 +17285,22 @@ size_t RemoveBuildDescriptionArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void RemoveBuildDescriptionArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.RemoveBuildDescriptionArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RemoveBuildDescriptionArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RemoveBuildDescriptionArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.RemoveBuildDescriptionArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.RemoveBuildDescriptionArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RemoveBuildDescriptionArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    RemoveBuildDescriptionArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RemoveBuildDescriptionArchive::GetClassData() const { return &_class_data_; }
+
+void RemoveBuildDescriptionArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<RemoveBuildDescriptionArchive *>(to)->MergeFrom(
+      static_cast<const RemoveBuildDescriptionArchive &>(from));
 }
+
 
 void RemoveBuildDescriptionArchive::MergeFrom(const RemoveBuildDescriptionArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.RemoveBuildDescriptionArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -17453,13 +17321,7 @@ void RemoveBuildDescriptionArchive::MergeFrom(const RemoveBuildDescriptionArchiv
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void RemoveBuildDescriptionArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.RemoveBuildDescriptionArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RemoveBuildDescriptionArchive::CopyFrom(const RemoveBuildDescriptionArchive& from) {
@@ -17569,12 +17431,15 @@ void CommandSlideInsertBuildChunkArchive::clear_tuples_to_update() {
 void CommandSlideInsertBuildChunkArchive::clear_old_tuples_to_update() {
   old_tuples_to_update_.Clear();
 }
-CommandSlideInsertBuildChunkArchive::CommandSlideInsertBuildChunkArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideInsertBuildChunkArchive::CommandSlideInsertBuildChunkArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   tuples_to_update_(arena),
   old_tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideInsertBuildChunkArchive)
 }
 CommandSlideInsertBuildChunkArchive::CommandSlideInsertBuildChunkArchive(const CommandSlideInsertBuildChunkArchive& from)
@@ -17609,7 +17474,7 @@ CommandSlideInsertBuildChunkArchive::CommandSlideInsertBuildChunkArchive(const C
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideInsertBuildChunkArchive)
 }
 
-void CommandSlideInsertBuildChunkArchive::SharedCtor() {
+inline void CommandSlideInsertBuildChunkArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&should_assign_chunk_identifier_) -
@@ -17618,12 +17483,13 @@ void CommandSlideInsertBuildChunkArchive::SharedCtor() {
 
 CommandSlideInsertBuildChunkArchive::~CommandSlideInsertBuildChunkArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideInsertBuildChunkArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideInsertBuildChunkArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideInsertBuildChunkArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete chunk_to_insert_;
@@ -17945,25 +17811,22 @@ size_t CommandSlideInsertBuildChunkArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideInsertBuildChunkArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideInsertBuildChunkArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideInsertBuildChunkArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideInsertBuildChunkArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideInsertBuildChunkArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideInsertBuildChunkArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideInsertBuildChunkArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideInsertBuildChunkArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideInsertBuildChunkArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideInsertBuildChunkArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideInsertBuildChunkArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideInsertBuildChunkArchive &>(from));
 }
+
 
 void CommandSlideInsertBuildChunkArchive::MergeFrom(const CommandSlideInsertBuildChunkArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideInsertBuildChunkArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -17991,13 +17854,7 @@ void CommandSlideInsertBuildChunkArchive::MergeFrom(const CommandSlideInsertBuil
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSlideInsertBuildChunkArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideInsertBuildChunkArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideInsertBuildChunkArchive::CopyFrom(const CommandSlideInsertBuildChunkArchive& from) {
@@ -18125,12 +17982,15 @@ void CommandSlideRemoveBuildChunkArchive::clear_tuples_to_update() {
 void CommandSlideRemoveBuildChunkArchive::clear_old_tuples_to_update() {
   old_tuples_to_update_.Clear();
 }
-CommandSlideRemoveBuildChunkArchive::CommandSlideRemoveBuildChunkArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideRemoveBuildChunkArchive::CommandSlideRemoveBuildChunkArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   tuples_to_update_(arena),
   old_tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideRemoveBuildChunkArchive)
 }
 CommandSlideRemoveBuildChunkArchive::CommandSlideRemoveBuildChunkArchive(const CommandSlideRemoveBuildChunkArchive& from)
@@ -18168,7 +18028,7 @@ CommandSlideRemoveBuildChunkArchive::CommandSlideRemoveBuildChunkArchive(const C
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideRemoveBuildChunkArchive)
 }
 
-void CommandSlideRemoveBuildChunkArchive::SharedCtor() {
+inline void CommandSlideRemoveBuildChunkArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&needs_selection_update_) -
@@ -18177,12 +18037,13 @@ void CommandSlideRemoveBuildChunkArchive::SharedCtor() {
 
 CommandSlideRemoveBuildChunkArchive::~CommandSlideRemoveBuildChunkArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideRemoveBuildChunkArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideRemoveBuildChunkArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideRemoveBuildChunkArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
   if (this != internal_default_instance()) delete removed_chunk_;
@@ -18505,25 +18366,22 @@ size_t CommandSlideRemoveBuildChunkArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideRemoveBuildChunkArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideRemoveBuildChunkArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideRemoveBuildChunkArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideRemoveBuildChunkArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideRemoveBuildChunkArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideRemoveBuildChunkArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideRemoveBuildChunkArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideRemoveBuildChunkArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideRemoveBuildChunkArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideRemoveBuildChunkArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideRemoveBuildChunkArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideRemoveBuildChunkArchive &>(from));
 }
+
 
 void CommandSlideRemoveBuildChunkArchive::MergeFrom(const CommandSlideRemoveBuildChunkArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideRemoveBuildChunkArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -18551,13 +18409,7 @@ void CommandSlideRemoveBuildChunkArchive::MergeFrom(const CommandSlideRemoveBuil
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSlideRemoveBuildChunkArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideRemoveBuildChunkArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideRemoveBuildChunkArchive::CopyFrom(const CommandSlideRemoveBuildChunkArchive& from) {
@@ -18649,8 +18501,9 @@ void CommandSlideMoveBuildChunksArchive::clear_old_tuples_to_update() {
 void CommandSlideMoveBuildChunksArchive::clear_identifiers_for_chunks_to_move_including_clustered_inactive_chunks() {
   identifiers_for_chunks_to_move_including_clustered_inactive_chunks_.Clear();
 }
-CommandSlideMoveBuildChunksArchive::CommandSlideMoveBuildChunksArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideMoveBuildChunksArchive::CommandSlideMoveBuildChunksArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   identifiers_for_chunks_to_move_(arena),
   identifiers_for_chunks_to_move_after_(arena),
   identifiers_for_chunks_to_move_after_for_undo_(arena),
@@ -18658,7 +18511,9 @@ CommandSlideMoveBuildChunksArchive::CommandSlideMoveBuildChunksArchive(::PROTOBU
   old_tuples_to_update_(arena),
   identifiers_for_chunks_to_move_including_clustered_inactive_chunks_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideMoveBuildChunksArchive)
 }
 CommandSlideMoveBuildChunksArchive::CommandSlideMoveBuildChunksArchive(const CommandSlideMoveBuildChunksArchive& from)
@@ -18679,18 +18534,19 @@ CommandSlideMoveBuildChunksArchive::CommandSlideMoveBuildChunksArchive(const Com
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideMoveBuildChunksArchive)
 }
 
-void CommandSlideMoveBuildChunksArchive::SharedCtor() {
+inline void CommandSlideMoveBuildChunksArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandSlideMoveBuildChunksArchive::~CommandSlideMoveBuildChunksArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideMoveBuildChunksArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideMoveBuildChunksArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideMoveBuildChunksArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -18971,25 +18827,22 @@ size_t CommandSlideMoveBuildChunksArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideMoveBuildChunksArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideMoveBuildChunksArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideMoveBuildChunksArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideMoveBuildChunksArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideMoveBuildChunksArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideMoveBuildChunksArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideMoveBuildChunksArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideMoveBuildChunksArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideMoveBuildChunksArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideMoveBuildChunksArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideMoveBuildChunksArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideMoveBuildChunksArchive &>(from));
 }
+
 
 void CommandSlideMoveBuildChunksArchive::MergeFrom(const CommandSlideMoveBuildChunksArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideMoveBuildChunksArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -19002,13 +18855,7 @@ void CommandSlideMoveBuildChunksArchive::MergeFrom(const CommandSlideMoveBuildCh
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandSlideMoveBuildChunksArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideMoveBuildChunksArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideMoveBuildChunksArchive::CopyFrom(const CommandSlideMoveBuildChunksArchive& from) {
@@ -19133,8 +18980,9 @@ void CommandBuildSetValueArchive::clear_old_chunk_identifiers() {
 void CommandBuildSetValueArchive::clear_chunks_removed_during_undo() {
   chunks_removed_during_undo_.Clear();
 }
-CommandBuildSetValueArchive::CommandBuildSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandBuildSetValueArchive::CommandBuildSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   chunks_to_add_(arena),
   identifiers_for_chunks_to_insert_after_(arena),
   identifiers_for_chunks_to_remove_(arena),
@@ -19147,7 +18995,9 @@ CommandBuildSetValueArchive::CommandBuildSetValueArchive(::PROTOBUF_NAMESPACE_ID
   old_chunk_identifiers_(arena),
   chunks_removed_during_undo_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandBuildSetValueArchive)
 }
 CommandBuildSetValueArchive::CommandBuildSetValueArchive(const CommandBuildSetValueArchive& from)
@@ -19184,7 +19034,7 @@ CommandBuildSetValueArchive::CommandBuildSetValueArchive(const CommandBuildSetVa
   // @@protoc_insertion_point(copy_constructor:KN.CommandBuildSetValueArchive)
 }
 
-void CommandBuildSetValueArchive::SharedCtor() {
+inline void CommandBuildSetValueArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_chunk_id_seed_) -
@@ -19193,12 +19043,13 @@ void CommandBuildSetValueArchive::SharedCtor() {
 
 CommandBuildSetValueArchive::~CommandBuildSetValueArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandBuildSetValueArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandBuildSetValueArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandBuildSetValueArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete tuple_;
   if (this != internal_default_instance()) delete old_tuple_for_main_property_;
@@ -19700,25 +19551,22 @@ size_t CommandBuildSetValueArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandBuildSetValueArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandBuildSetValueArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandBuildSetValueArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandBuildSetValueArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandBuildSetValueArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandBuildSetValueArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandBuildSetValueArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandBuildSetValueArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandBuildSetValueArchive::GetClassData() const { return &_class_data_; }
+
+void CommandBuildSetValueArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandBuildSetValueArchive *>(to)->MergeFrom(
+      static_cast<const CommandBuildSetValueArchive &>(from));
 }
+
 
 void CommandBuildSetValueArchive::MergeFrom(const CommandBuildSetValueArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandBuildSetValueArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -19749,13 +19597,7 @@ void CommandBuildSetValueArchive::MergeFrom(const CommandBuildSetValueArchive& f
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandBuildSetValueArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandBuildSetValueArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandBuildSetValueArchive::CopyFrom(const CommandBuildSetValueArchive& from) {
@@ -19859,12 +19701,15 @@ void CommandBuildUpdateChunkReferentsArchive::clear_tuples_to_update() {
 void CommandBuildUpdateChunkReferentsArchive::clear_old_tuples_to_update() {
   old_tuples_to_update_.Clear();
 }
-CommandBuildUpdateChunkReferentsArchive::CommandBuildUpdateChunkReferentsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandBuildUpdateChunkReferentsArchive::CommandBuildUpdateChunkReferentsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   tuples_to_update_(arena),
   old_tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandBuildUpdateChunkReferentsArchive)
 }
 CommandBuildUpdateChunkReferentsArchive::CommandBuildUpdateChunkReferentsArchive(const CommandBuildUpdateChunkReferentsArchive& from)
@@ -19886,7 +19731,7 @@ CommandBuildUpdateChunkReferentsArchive::CommandBuildUpdateChunkReferentsArchive
   // @@protoc_insertion_point(copy_constructor:KN.CommandBuildUpdateChunkReferentsArchive)
 }
 
-void CommandBuildUpdateChunkReferentsArchive::SharedCtor() {
+inline void CommandBuildUpdateChunkReferentsArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&build_id_) -
@@ -19895,12 +19740,13 @@ void CommandBuildUpdateChunkReferentsArchive::SharedCtor() {
 
 CommandBuildUpdateChunkReferentsArchive::~CommandBuildUpdateChunkReferentsArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandBuildUpdateChunkReferentsArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandBuildUpdateChunkReferentsArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandBuildUpdateChunkReferentsArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete build_id_;
 }
@@ -20119,25 +19965,22 @@ size_t CommandBuildUpdateChunkReferentsArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandBuildUpdateChunkReferentsArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandBuildUpdateChunkReferentsArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandBuildUpdateChunkReferentsArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandBuildUpdateChunkReferentsArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandBuildUpdateChunkReferentsArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandBuildUpdateChunkReferentsArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandBuildUpdateChunkReferentsArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandBuildUpdateChunkReferentsArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandBuildUpdateChunkReferentsArchive::GetClassData() const { return &_class_data_; }
+
+void CommandBuildUpdateChunkReferentsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandBuildUpdateChunkReferentsArchive *>(to)->MergeFrom(
+      static_cast<const CommandBuildUpdateChunkReferentsArchive &>(from));
 }
+
 
 void CommandBuildUpdateChunkReferentsArchive::MergeFrom(const CommandBuildUpdateChunkReferentsArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandBuildUpdateChunkReferentsArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -20152,13 +19995,7 @@ void CommandBuildUpdateChunkReferentsArchive::MergeFrom(const CommandBuildUpdate
       _internal_mutable_build_id()->::TSP::UUID::MergeFrom(from._internal_build_id());
     }
   }
-}
-
-void CommandBuildUpdateChunkReferentsArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandBuildUpdateChunkReferentsArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandBuildUpdateChunkReferentsArchive::CopyFrom(const CommandBuildUpdateChunkReferentsArchive& from) {
@@ -20286,8 +20123,9 @@ void CommandBuildUpdateChunkCountArchive::clear_chunks_removed_during_undo() {
 void CommandBuildUpdateChunkCountArchive::clear_chunks_added_during_undo() {
   chunks_added_during_undo_.Clear();
 }
-CommandBuildUpdateChunkCountArchive::CommandBuildUpdateChunkCountArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandBuildUpdateChunkCountArchive::CommandBuildUpdateChunkCountArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   drawable_ids_(arena),
   expected_delivery_style_tuples_(arena),
   chunks_to_add_(arena),
@@ -20306,7 +20144,9 @@ CommandBuildUpdateChunkCountArchive::CommandBuildUpdateChunkCountArchive(::PROTO
   chunks_removed_during_undo_(arena),
   chunks_added_during_undo_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandBuildUpdateChunkCountArchive)
 }
 CommandBuildUpdateChunkCountArchive::CommandBuildUpdateChunkCountArchive(const CommandBuildUpdateChunkCountArchive& from)
@@ -20344,7 +20184,7 @@ CommandBuildUpdateChunkCountArchive::CommandBuildUpdateChunkCountArchive(const C
   // @@protoc_insertion_point(copy_constructor:KN.CommandBuildUpdateChunkCountArchive)
 }
 
-void CommandBuildUpdateChunkCountArchive::SharedCtor() {
+inline void CommandBuildUpdateChunkCountArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&needs_async_process_changes_selection_update_) -
@@ -20353,12 +20193,13 @@ void CommandBuildUpdateChunkCountArchive::SharedCtor() {
 
 CommandBuildUpdateChunkCountArchive::~CommandBuildUpdateChunkCountArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandBuildUpdateChunkCountArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandBuildUpdateChunkCountArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandBuildUpdateChunkCountArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
 }
@@ -21021,25 +20862,22 @@ size_t CommandBuildUpdateChunkCountArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandBuildUpdateChunkCountArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandBuildUpdateChunkCountArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandBuildUpdateChunkCountArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandBuildUpdateChunkCountArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandBuildUpdateChunkCountArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandBuildUpdateChunkCountArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandBuildUpdateChunkCountArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandBuildUpdateChunkCountArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandBuildUpdateChunkCountArchive::GetClassData() const { return &_class_data_; }
+
+void CommandBuildUpdateChunkCountArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandBuildUpdateChunkCountArchive *>(to)->MergeFrom(
+      static_cast<const CommandBuildUpdateChunkCountArchive &>(from));
 }
+
 
 void CommandBuildUpdateChunkCountArchive::MergeFrom(const CommandBuildUpdateChunkCountArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandBuildUpdateChunkCountArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -21073,13 +20911,7 @@ void CommandBuildUpdateChunkCountArchive::MergeFrom(const CommandBuildUpdateChun
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandBuildUpdateChunkCountArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandBuildUpdateChunkCountArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandBuildUpdateChunkCountArchive::CopyFrom(const CommandBuildUpdateChunkCountArchive& from) {
@@ -21179,12 +21011,15 @@ void CommandBuildChunkSetValueArchive::clear_tuples_to_update() {
 void CommandBuildChunkSetValueArchive::clear_old_tuples_to_update() {
   old_tuples_to_update_.Clear();
 }
-CommandBuildChunkSetValueArchive::CommandBuildChunkSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandBuildChunkSetValueArchive::CommandBuildChunkSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   tuples_to_update_(arena),
   old_tuples_to_update_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandBuildChunkSetValueArchive)
 }
 CommandBuildChunkSetValueArchive::CommandBuildChunkSetValueArchive(const CommandBuildChunkSetValueArchive& from)
@@ -21201,18 +21036,19 @@ CommandBuildChunkSetValueArchive::CommandBuildChunkSetValueArchive(const Command
   // @@protoc_insertion_point(copy_constructor:KN.CommandBuildChunkSetValueArchive)
 }
 
-void CommandBuildChunkSetValueArchive::SharedCtor() {
+inline void CommandBuildChunkSetValueArchive::SharedCtor() {
 super_ = nullptr;
 }
 
 CommandBuildChunkSetValueArchive::~CommandBuildChunkSetValueArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandBuildChunkSetValueArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandBuildChunkSetValueArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandBuildChunkSetValueArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -21381,25 +21217,22 @@ size_t CommandBuildChunkSetValueArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandBuildChunkSetValueArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandBuildChunkSetValueArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandBuildChunkSetValueArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandBuildChunkSetValueArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandBuildChunkSetValueArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandBuildChunkSetValueArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandBuildChunkSetValueArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandBuildChunkSetValueArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandBuildChunkSetValueArchive::GetClassData() const { return &_class_data_; }
+
+void CommandBuildChunkSetValueArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandBuildChunkSetValueArchive *>(to)->MergeFrom(
+      static_cast<const CommandBuildChunkSetValueArchive &>(from));
 }
+
 
 void CommandBuildChunkSetValueArchive::MergeFrom(const CommandBuildChunkSetValueArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandBuildChunkSetValueArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -21408,13 +21241,7 @@ void CommandBuildChunkSetValueArchive::MergeFrom(const CommandBuildChunkSetValue
   if (from._internal_has_super()) {
     _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
   }
-}
-
-void CommandBuildChunkSetValueArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandBuildChunkSetValueArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandBuildChunkSetValueArchive::CopyFrom(const CommandBuildChunkSetValueArchive& from) {
@@ -21510,10 +21337,13 @@ void CommandTransitionSetValueArchive::clear_attributes() {
   if (attributes_ != nullptr) attributes_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-CommandTransitionSetValueArchive::CommandTransitionSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandTransitionSetValueArchive::CommandTransitionSetValueArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandTransitionSetValueArchive)
 }
 CommandTransitionSetValueArchive::CommandTransitionSetValueArchive(const CommandTransitionSetValueArchive& from)
@@ -21523,7 +21353,7 @@ CommandTransitionSetValueArchive::CommandTransitionSetValueArchive(const Command
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -21548,7 +21378,7 @@ CommandTransitionSetValueArchive::CommandTransitionSetValueArchive(const Command
   // @@protoc_insertion_point(copy_constructor:KN.CommandTransitionSetValueArchive)
 }
 
-void CommandTransitionSetValueArchive::SharedCtor() {
+inline void CommandTransitionSetValueArchive::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -21558,12 +21388,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandTransitionSetValueArchive::~CommandTransitionSetValueArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandTransitionSetValueArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandTransitionSetValueArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandTransitionSetValueArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_node_id_path_;
@@ -21815,25 +21646,22 @@ size_t CommandTransitionSetValueArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandTransitionSetValueArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandTransitionSetValueArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandTransitionSetValueArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandTransitionSetValueArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandTransitionSetValueArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandTransitionSetValueArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandTransitionSetValueArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandTransitionSetValueArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandTransitionSetValueArchive::GetClassData() const { return &_class_data_; }
+
+void CommandTransitionSetValueArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandTransitionSetValueArchive *>(to)->MergeFrom(
+      static_cast<const CommandTransitionSetValueArchive &>(from));
 }
+
 
 void CommandTransitionSetValueArchive::MergeFrom(const CommandTransitionSetValueArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandTransitionSetValueArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -21855,13 +21683,7 @@ void CommandTransitionSetValueArchive::MergeFrom(const CommandTransitionSetValue
       _internal_mutable_attributes()->::KN::TransitionAttributesArchive::MergeFrom(from._internal_attributes());
     }
   }
-}
-
-void CommandTransitionSetValueArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandTransitionSetValueArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandTransitionSetValueArchive::CopyFrom(const CommandTransitionSetValueArchive& from) {
@@ -21892,7 +21714,11 @@ void CommandTransitionSetValueArchive::InternalSwap(CommandTransitionSetValueArc
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandTransitionSetValueArchive, attributes_)
       + sizeof(CommandTransitionSetValueArchive::attributes_)
@@ -21941,12 +21767,15 @@ void CommandShowSetSlideNumberVisibilityArchive::clear_ids_of_slide_nodes_to_ski
 void CommandShowSetSlideNumberVisibilityArchive::clear_ids_of_slide_nodes_already_correct() {
   ids_of_slide_nodes_already_correct_.Clear();
 }
-CommandShowSetSlideNumberVisibilityArchive::CommandShowSetSlideNumberVisibilityArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandShowSetSlideNumberVisibilityArchive::CommandShowSetSlideNumberVisibilityArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   ids_of_slide_nodes_to_skip_(arena),
   ids_of_slide_nodes_already_correct_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowSetSlideNumberVisibilityArchive)
 }
 CommandShowSetSlideNumberVisibilityArchive::CommandShowSetSlideNumberVisibilityArchive(const CommandShowSetSlideNumberVisibilityArchive& from)
@@ -21966,7 +21795,7 @@ CommandShowSetSlideNumberVisibilityArchive::CommandShowSetSlideNumberVisibilityA
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowSetSlideNumberVisibilityArchive)
 }
 
-void CommandShowSetSlideNumberVisibilityArchive::SharedCtor() {
+inline void CommandShowSetSlideNumberVisibilityArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&is_undo_) -
@@ -21975,12 +21804,13 @@ void CommandShowSetSlideNumberVisibilityArchive::SharedCtor() {
 
 CommandShowSetSlideNumberVisibilityArchive::~CommandShowSetSlideNumberVisibilityArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandShowSetSlideNumberVisibilityArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowSetSlideNumberVisibilityArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowSetSlideNumberVisibilityArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -22212,25 +22042,22 @@ size_t CommandShowSetSlideNumberVisibilityArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowSetSlideNumberVisibilityArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowSetSlideNumberVisibilityArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowSetSlideNumberVisibilityArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowSetSlideNumberVisibilityArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowSetSlideNumberVisibilityArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowSetSlideNumberVisibilityArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowSetSlideNumberVisibilityArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowSetSlideNumberVisibilityArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowSetSlideNumberVisibilityArchive::GetClassData() const { return &_class_data_; }
+
+void CommandShowSetSlideNumberVisibilityArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowSetSlideNumberVisibilityArchive *>(to)->MergeFrom(
+      static_cast<const CommandShowSetSlideNumberVisibilityArchive &>(from));
 }
+
 
 void CommandShowSetSlideNumberVisibilityArchive::MergeFrom(const CommandShowSetSlideNumberVisibilityArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowSetSlideNumberVisibilityArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -22249,13 +22076,7 @@ void CommandShowSetSlideNumberVisibilityArchive::MergeFrom(const CommandShowSetS
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandShowSetSlideNumberVisibilityArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowSetSlideNumberVisibilityArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowSetSlideNumberVisibilityArchive::CopyFrom(const CommandShowSetSlideNumberVisibilityArchive& from) {
@@ -22338,10 +22159,13 @@ void CommandTemplateSetThumbnailTextArchive::clear_template_id() {
   if (template_id_ != nullptr) template_id_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandTemplateSetThumbnailTextArchive::CommandTemplateSetThumbnailTextArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandTemplateSetThumbnailTextArchive::CommandTemplateSetThumbnailTextArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandTemplateSetThumbnailTextArchive)
 }
 CommandTemplateSetThumbnailTextArchive::CommandTemplateSetThumbnailTextArchive(const CommandTemplateSetThumbnailTextArchive& from)
@@ -22351,12 +22175,12 @@ CommandTemplateSetThumbnailTextArchive::CommandTemplateSetThumbnailTextArchive(c
   new_text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_new_text()) {
     new_text_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_new_text(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   old_text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_old_text()) {
     old_text_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_old_text(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -22372,7 +22196,7 @@ CommandTemplateSetThumbnailTextArchive::CommandTemplateSetThumbnailTextArchive(c
   // @@protoc_insertion_point(copy_constructor:KN.CommandTemplateSetThumbnailTextArchive)
 }
 
-void CommandTemplateSetThumbnailTextArchive::SharedCtor() {
+inline void CommandTemplateSetThumbnailTextArchive::SharedCtor() {
 new_text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 old_text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
@@ -22383,12 +22207,13 @@ old_text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandTemplateSetThumbnailTextArchive::~CommandTemplateSetThumbnailTextArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandTemplateSetThumbnailTextArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandTemplateSetThumbnailTextArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandTemplateSetThumbnailTextArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   new_text_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   old_text_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
@@ -22641,25 +22466,22 @@ size_t CommandTemplateSetThumbnailTextArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandTemplateSetThumbnailTextArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandTemplateSetThumbnailTextArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandTemplateSetThumbnailTextArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandTemplateSetThumbnailTextArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandTemplateSetThumbnailTextArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandTemplateSetThumbnailTextArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandTemplateSetThumbnailTextArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandTemplateSetThumbnailTextArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandTemplateSetThumbnailTextArchive::GetClassData() const { return &_class_data_; }
+
+void CommandTemplateSetThumbnailTextArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandTemplateSetThumbnailTextArchive *>(to)->MergeFrom(
+      static_cast<const CommandTemplateSetThumbnailTextArchive &>(from));
 }
+
 
 void CommandTemplateSetThumbnailTextArchive::MergeFrom(const CommandTemplateSetThumbnailTextArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandTemplateSetThumbnailTextArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -22682,13 +22504,7 @@ void CommandTemplateSetThumbnailTextArchive::MergeFrom(const CommandTemplateSetT
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandTemplateSetThumbnailTextArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandTemplateSetThumbnailTextArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandTemplateSetThumbnailTextArchive::CopyFrom(const CommandTemplateSetThumbnailTextArchive& from) {
@@ -22713,8 +22529,16 @@ void CommandTemplateSetThumbnailTextArchive::InternalSwap(CommandTemplateSetThum
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  new_text_.Swap(&other->new_text_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  old_text_.Swap(&other->old_text_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &new_text_, GetArenaForAllocation(),
+      &other->new_text_, other->GetArenaForAllocation()
+  );
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &old_text_, GetArenaForAllocation(),
+      &other->old_text_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandTemplateSetThumbnailTextArchive, is_body_)
       + sizeof(CommandTemplateSetThumbnailTextArchive::is_body_)
@@ -22775,14 +22599,17 @@ void CommandTemplateSetBodyStylesArchive::clear_old_paragraph_styles() {
 void CommandTemplateSetBodyStylesArchive::clear_old_list_styles() {
   old_list_styles_.Clear();
 }
-CommandTemplateSetBodyStylesArchive::CommandTemplateSetBodyStylesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandTemplateSetBodyStylesArchive::CommandTemplateSetBodyStylesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   new_paragraph_styles_(arena),
   new_list_styles_(arena),
   old_paragraph_styles_(arena),
   old_list_styles_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandTemplateSetBodyStylesArchive)
 }
 CommandTemplateSetBodyStylesArchive::CommandTemplateSetBodyStylesArchive(const CommandTemplateSetBodyStylesArchive& from)
@@ -22806,7 +22633,7 @@ CommandTemplateSetBodyStylesArchive::CommandTemplateSetBodyStylesArchive(const C
   // @@protoc_insertion_point(copy_constructor:KN.CommandTemplateSetBodyStylesArchive)
 }
 
-void CommandTemplateSetBodyStylesArchive::SharedCtor() {
+inline void CommandTemplateSetBodyStylesArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&template_id_) -
@@ -22815,12 +22642,13 @@ void CommandTemplateSetBodyStylesArchive::SharedCtor() {
 
 CommandTemplateSetBodyStylesArchive::~CommandTemplateSetBodyStylesArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandTemplateSetBodyStylesArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandTemplateSetBodyStylesArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandTemplateSetBodyStylesArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete template_id_;
 }
@@ -23095,25 +22923,22 @@ size_t CommandTemplateSetBodyStylesArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandTemplateSetBodyStylesArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandTemplateSetBodyStylesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandTemplateSetBodyStylesArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandTemplateSetBodyStylesArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandTemplateSetBodyStylesArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandTemplateSetBodyStylesArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandTemplateSetBodyStylesArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandTemplateSetBodyStylesArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandTemplateSetBodyStylesArchive::GetClassData() const { return &_class_data_; }
+
+void CommandTemplateSetBodyStylesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandTemplateSetBodyStylesArchive *>(to)->MergeFrom(
+      static_cast<const CommandTemplateSetBodyStylesArchive &>(from));
 }
+
 
 void CommandTemplateSetBodyStylesArchive::MergeFrom(const CommandTemplateSetBodyStylesArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandTemplateSetBodyStylesArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -23130,13 +22955,7 @@ void CommandTemplateSetBodyStylesArchive::MergeFrom(const CommandTemplateSetBody
       _internal_mutable_template_id()->::TSP::UUID::MergeFrom(from._internal_template_id());
     }
   }
-}
-
-void CommandTemplateSetBodyStylesArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandTemplateSetBodyStylesArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandTemplateSetBodyStylesArchive::CopyFrom(const CommandTemplateSetBodyStylesArchive& from) {
@@ -23256,10 +23075,13 @@ void CommandChangeTemplateSlideArchive::clear_target_prototype() {
   if (target_prototype_ != nullptr) target_prototype_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-CommandChangeTemplateSlideArchive::CommandChangeTemplateSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandChangeTemplateSlideArchive::CommandChangeTemplateSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandChangeTemplateSlideArchive)
 }
 CommandChangeTemplateSlideArchive::CommandChangeTemplateSlideArchive(const CommandChangeTemplateSlideArchive& from)
@@ -23295,7 +23117,7 @@ CommandChangeTemplateSlideArchive::CommandChangeTemplateSlideArchive(const Comma
   // @@protoc_insertion_point(copy_constructor:KN.CommandChangeTemplateSlideArchive)
 }
 
-void CommandChangeTemplateSlideArchive::SharedCtor() {
+inline void CommandChangeTemplateSlideArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&is_undo_redo_) -
@@ -23304,12 +23126,13 @@ void CommandChangeTemplateSlideArchive::SharedCtor() {
 
 CommandChangeTemplateSlideArchive::~CommandChangeTemplateSlideArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandChangeTemplateSlideArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandChangeTemplateSlideArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandChangeTemplateSlideArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_path_;
   if (this != internal_default_instance()) delete template_slide_node_;
@@ -23584,25 +23407,22 @@ size_t CommandChangeTemplateSlideArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandChangeTemplateSlideArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandChangeTemplateSlideArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandChangeTemplateSlideArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandChangeTemplateSlideArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandChangeTemplateSlideArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandChangeTemplateSlideArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandChangeTemplateSlideArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandChangeTemplateSlideArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandChangeTemplateSlideArchive::GetClassData() const { return &_class_data_; }
+
+void CommandChangeTemplateSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandChangeTemplateSlideArchive *>(to)->MergeFrom(
+      static_cast<const CommandChangeTemplateSlideArchive &>(from));
 }
+
 
 void CommandChangeTemplateSlideArchive::MergeFrom(const CommandChangeTemplateSlideArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandChangeTemplateSlideArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -23628,13 +23448,7 @@ void CommandChangeTemplateSlideArchive::MergeFrom(const CommandChangeTemplateSli
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandChangeTemplateSlideArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandChangeTemplateSlideArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandChangeTemplateSlideArchive::CopyFrom(const CommandChangeTemplateSlideArchive& from) {
@@ -23740,10 +23554,13 @@ void CommandSlidePrimitiveSetTemplateArchive::clear_old_template_slide_node() {
   if (old_template_slide_node_ != nullptr) old_template_slide_node_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandSlidePrimitiveSetTemplateArchive::CommandSlidePrimitiveSetTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlidePrimitiveSetTemplateArchive::CommandSlidePrimitiveSetTemplateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlidePrimitiveSetTemplateArchive)
 }
 CommandSlidePrimitiveSetTemplateArchive::CommandSlidePrimitiveSetTemplateArchive(const CommandSlidePrimitiveSetTemplateArchive& from)
@@ -23773,7 +23590,7 @@ CommandSlidePrimitiveSetTemplateArchive::CommandSlidePrimitiveSetTemplateArchive
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlidePrimitiveSetTemplateArchive)
 }
 
-void CommandSlidePrimitiveSetTemplateArchive::SharedCtor() {
+inline void CommandSlidePrimitiveSetTemplateArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_template_slide_node_) -
@@ -23782,12 +23599,13 @@ void CommandSlidePrimitiveSetTemplateArchive::SharedCtor() {
 
 CommandSlidePrimitiveSetTemplateArchive::~CommandSlidePrimitiveSetTemplateArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlidePrimitiveSetTemplateArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlidePrimitiveSetTemplateArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlidePrimitiveSetTemplateArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_path_;
   if (this != internal_default_instance()) delete template_id_;
@@ -24010,25 +23828,22 @@ size_t CommandSlidePrimitiveSetTemplateArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlidePrimitiveSetTemplateArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlidePrimitiveSetTemplateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlidePrimitiveSetTemplateArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlidePrimitiveSetTemplateArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlidePrimitiveSetTemplateArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlidePrimitiveSetTemplateArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlidePrimitiveSetTemplateArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlidePrimitiveSetTemplateArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlidePrimitiveSetTemplateArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlidePrimitiveSetTemplateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlidePrimitiveSetTemplateArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlidePrimitiveSetTemplateArchive &>(from));
 }
+
 
 void CommandSlidePrimitiveSetTemplateArchive::MergeFrom(const CommandSlidePrimitiveSetTemplateArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlidePrimitiveSetTemplateArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -24047,13 +23862,7 @@ void CommandSlidePrimitiveSetTemplateArchive::MergeFrom(const CommandSlidePrimit
       _internal_mutable_old_template_slide_node()->::TSP::Reference::MergeFrom(from._internal_old_template_slide_node());
     }
   }
-}
-
-void CommandSlidePrimitiveSetTemplateArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlidePrimitiveSetTemplateArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlidePrimitiveSetTemplateArchive::CopyFrom(const CommandSlidePrimitiveSetTemplateArchive& from) {
@@ -24132,10 +23941,13 @@ void CommandSlideResetTemplateBackgroundObjectsArchive::clear_slide_id_path() {
   if (slide_id_path_ != nullptr) slide_id_path_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-CommandSlideResetTemplateBackgroundObjectsArchive::CommandSlideResetTemplateBackgroundObjectsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSlideResetTemplateBackgroundObjectsArchive::CommandSlideResetTemplateBackgroundObjectsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
 }
 CommandSlideResetTemplateBackgroundObjectsArchive::CommandSlideResetTemplateBackgroundObjectsArchive(const CommandSlideResetTemplateBackgroundObjectsArchive& from)
@@ -24155,7 +23967,7 @@ CommandSlideResetTemplateBackgroundObjectsArchive::CommandSlideResetTemplateBack
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
 }
 
-void CommandSlideResetTemplateBackgroundObjectsArchive::SharedCtor() {
+inline void CommandSlideResetTemplateBackgroundObjectsArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&slide_id_path_) -
@@ -24164,12 +23976,13 @@ void CommandSlideResetTemplateBackgroundObjectsArchive::SharedCtor() {
 
 CommandSlideResetTemplateBackgroundObjectsArchive::~CommandSlideResetTemplateBackgroundObjectsArchive() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideResetTemplateBackgroundObjectsArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideResetTemplateBackgroundObjectsArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_path_;
 }
@@ -24312,25 +24125,22 @@ size_t CommandSlideResetTemplateBackgroundObjectsArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideResetTemplateBackgroundObjectsArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideResetTemplateBackgroundObjectsArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideResetTemplateBackgroundObjectsArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideResetTemplateBackgroundObjectsArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideResetTemplateBackgroundObjectsArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideResetTemplateBackgroundObjectsArchive::GetClassData() const { return &_class_data_; }
+
+void CommandSlideResetTemplateBackgroundObjectsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideResetTemplateBackgroundObjectsArchive *>(to)->MergeFrom(
+      static_cast<const CommandSlideResetTemplateBackgroundObjectsArchive &>(from));
 }
+
 
 void CommandSlideResetTemplateBackgroundObjectsArchive::MergeFrom(const CommandSlideResetTemplateBackgroundObjectsArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -24343,13 +24153,7 @@ void CommandSlideResetTemplateBackgroundObjectsArchive::MergeFrom(const CommandS
       _internal_mutable_slide_id_path()->::TSP::UUIDPath::MergeFrom(from._internal_slide_id_path());
     }
   }
-}
-
-void CommandSlideResetTemplateBackgroundObjectsArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideResetTemplateBackgroundObjectsArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideResetTemplateBackgroundObjectsArchive::CopyFrom(const CommandSlideResetTemplateBackgroundObjectsArchive& from) {
@@ -24446,10 +24250,13 @@ void CommandShowSetSoundtrack::clear_old_soundtrack() {
   if (old_soundtrack_ != nullptr) old_soundtrack_->Clear();
   _has_bits_[0] &= ~0x00000008u;
 }
-CommandShowSetSoundtrack::CommandShowSetSoundtrack(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandShowSetSoundtrack::CommandShowSetSoundtrack(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandShowSetSoundtrack)
 }
 CommandShowSetSoundtrack::CommandShowSetSoundtrack(const CommandShowSetSoundtrack& from)
@@ -24479,7 +24286,7 @@ CommandShowSetSoundtrack::CommandShowSetSoundtrack(const CommandShowSetSoundtrac
   // @@protoc_insertion_point(copy_constructor:KN.CommandShowSetSoundtrack)
 }
 
-void CommandShowSetSoundtrack::SharedCtor() {
+inline void CommandShowSetSoundtrack::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&old_soundtrack_) -
@@ -24488,12 +24295,13 @@ void CommandShowSetSoundtrack::SharedCtor() {
 
 CommandShowSetSoundtrack::~CommandShowSetSoundtrack() {
   // @@protoc_insertion_point(destructor:KN.CommandShowSetSoundtrack)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandShowSetSoundtrack::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandShowSetSoundtrack::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete show_;
   if (this != internal_default_instance()) delete soundtrack_;
@@ -24692,25 +24500,22 @@ size_t CommandShowSetSoundtrack::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandShowSetSoundtrack::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandShowSetSoundtrack)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandShowSetSoundtrack* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandShowSetSoundtrack>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandShowSetSoundtrack)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandShowSetSoundtrack)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandShowSetSoundtrack::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandShowSetSoundtrack::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandShowSetSoundtrack::GetClassData() const { return &_class_data_; }
+
+void CommandShowSetSoundtrack::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandShowSetSoundtrack *>(to)->MergeFrom(
+      static_cast<const CommandShowSetSoundtrack &>(from));
 }
+
 
 void CommandShowSetSoundtrack::MergeFrom(const CommandShowSetSoundtrack& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandShowSetSoundtrack)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -24729,13 +24534,7 @@ void CommandShowSetSoundtrack::MergeFrom(const CommandShowSetSoundtrack& from) {
       _internal_mutable_old_soundtrack()->::TSP::Reference::MergeFrom(from._internal_old_soundtrack());
     }
   }
-}
-
-void CommandShowSetSoundtrack::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandShowSetSoundtrack)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandShowSetSoundtrack::CopyFrom(const CommandShowSetSoundtrack& from) {
@@ -24796,11 +24595,14 @@ class CommandSoundtrackSetValue_PropertyValue::_Internal {
 void CommandSoundtrackSetValue_PropertyValue::clear_media_reference_values() {
   media_reference_values_.Clear();
 }
-CommandSoundtrackSetValue_PropertyValue::CommandSoundtrackSetValue_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSoundtrackSetValue_PropertyValue::CommandSoundtrackSetValue_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   media_reference_values_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSoundtrackSetValue.PropertyValue)
 }
 CommandSoundtrackSetValue_PropertyValue::CommandSoundtrackSetValue_PropertyValue(const CommandSoundtrackSetValue_PropertyValue& from)
@@ -24814,7 +24616,7 @@ CommandSoundtrackSetValue_PropertyValue::CommandSoundtrackSetValue_PropertyValue
   // @@protoc_insertion_point(copy_constructor:KN.CommandSoundtrackSetValue.PropertyValue)
 }
 
-void CommandSoundtrackSetValue_PropertyValue::SharedCtor() {
+inline void CommandSoundtrackSetValue_PropertyValue::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&double_value_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&mode_value_) -
@@ -24823,12 +24625,13 @@ void CommandSoundtrackSetValue_PropertyValue::SharedCtor() {
 
 CommandSoundtrackSetValue_PropertyValue::~CommandSoundtrackSetValue_PropertyValue() {
   // @@protoc_insertion_point(destructor:KN.CommandSoundtrackSetValue.PropertyValue)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSoundtrackSetValue_PropertyValue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSoundtrackSetValue_PropertyValue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void CommandSoundtrackSetValue_PropertyValue::ArenaDtor(void* object) {
@@ -24995,25 +24798,22 @@ size_t CommandSoundtrackSetValue_PropertyValue::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSoundtrackSetValue_PropertyValue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSoundtrackSetValue.PropertyValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSoundtrackSetValue_PropertyValue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSoundtrackSetValue_PropertyValue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSoundtrackSetValue.PropertyValue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSoundtrackSetValue.PropertyValue)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSoundtrackSetValue_PropertyValue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSoundtrackSetValue_PropertyValue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSoundtrackSetValue_PropertyValue::GetClassData() const { return &_class_data_; }
+
+void CommandSoundtrackSetValue_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSoundtrackSetValue_PropertyValue *>(to)->MergeFrom(
+      static_cast<const CommandSoundtrackSetValue_PropertyValue &>(from));
 }
+
 
 void CommandSoundtrackSetValue_PropertyValue::MergeFrom(const CommandSoundtrackSetValue_PropertyValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSoundtrackSetValue.PropertyValue)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -25028,13 +24828,7 @@ void CommandSoundtrackSetValue_PropertyValue::MergeFrom(const CommandSoundtrackS
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void CommandSoundtrackSetValue_PropertyValue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSoundtrackSetValue.PropertyValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSoundtrackSetValue_PropertyValue::CopyFrom(const CommandSoundtrackSetValue_PropertyValue& from) {
@@ -25121,10 +24915,13 @@ void CommandSoundtrackSetValue::clear_soundtrack_id() {
   if (soundtrack_id_ != nullptr) soundtrack_id_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-CommandSoundtrackSetValue::CommandSoundtrackSetValue(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+CommandSoundtrackSetValue::CommandSoundtrackSetValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSoundtrackSetValue)
 }
 CommandSoundtrackSetValue::CommandSoundtrackSetValue(const CommandSoundtrackSetValue& from)
@@ -25134,7 +24931,7 @@ CommandSoundtrackSetValue::CommandSoundtrackSetValue(const CommandSoundtrackSetV
   property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_property()) {
     property_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_property(), 
-      GetArena());
+      GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
     super_ = new ::TSK::CommandArchive(*from.super_);
@@ -25159,7 +24956,7 @@ CommandSoundtrackSetValue::CommandSoundtrackSetValue(const CommandSoundtrackSetV
   // @@protoc_insertion_point(copy_constructor:KN.CommandSoundtrackSetValue)
 }
 
-void CommandSoundtrackSetValue::SharedCtor() {
+inline void CommandSoundtrackSetValue::SharedCtor() {
 property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
@@ -25169,12 +24966,13 @@ property_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlr
 
 CommandSoundtrackSetValue::~CommandSoundtrackSetValue() {
   // @@protoc_insertion_point(destructor:KN.CommandSoundtrackSetValue)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSoundtrackSetValue::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSoundtrackSetValue::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   property_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete soundtrack_id_;
@@ -25405,25 +25203,22 @@ size_t CommandSoundtrackSetValue::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSoundtrackSetValue::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSoundtrackSetValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSoundtrackSetValue* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSoundtrackSetValue>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSoundtrackSetValue)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSoundtrackSetValue)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSoundtrackSetValue::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSoundtrackSetValue::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSoundtrackSetValue::GetClassData() const { return &_class_data_; }
+
+void CommandSoundtrackSetValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSoundtrackSetValue *>(to)->MergeFrom(
+      static_cast<const CommandSoundtrackSetValue &>(from));
 }
+
 
 void CommandSoundtrackSetValue::MergeFrom(const CommandSoundtrackSetValue& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSoundtrackSetValue)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -25445,13 +25240,7 @@ void CommandSoundtrackSetValue::MergeFrom(const CommandSoundtrackSetValue& from)
       _internal_mutable_new_value()->::KN::CommandSoundtrackSetValue_PropertyValue::MergeFrom(from._internal_new_value());
     }
   }
-}
-
-void CommandSoundtrackSetValue::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSoundtrackSetValue)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSoundtrackSetValue::CopyFrom(const CommandSoundtrackSetValue& from) {
@@ -25482,7 +25271,11 @@ void CommandSoundtrackSetValue::InternalSwap(CommandSoundtrackSetValue* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  property_.Swap(&other->property_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      &property_, GetArenaForAllocation(),
+      &other->property_, other->GetArenaForAllocation()
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(CommandSoundtrackSetValue, new_value_)
       + sizeof(CommandSoundtrackSetValue::new_value_)
@@ -25537,12 +25330,15 @@ void CommandSlideUpdateTemplateDrawables::clear_id_placement_operation_args() {
 void CommandSlideUpdateTemplateDrawables::clear_old_child_infos_for_undo() {
   old_child_infos_for_undo_.Clear();
 }
-CommandSlideUpdateTemplateDrawables::CommandSlideUpdateTemplateDrawables(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CommandSlideUpdateTemplateDrawables::CommandSlideUpdateTemplateDrawables(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   id_placement_operation_args_(arena),
   old_child_infos_for_undo_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CommandSlideUpdateTemplateDrawables)
 }
 CommandSlideUpdateTemplateDrawables::CommandSlideUpdateTemplateDrawables(const CommandSlideUpdateTemplateDrawables& from)
@@ -25564,7 +25360,7 @@ CommandSlideUpdateTemplateDrawables::CommandSlideUpdateTemplateDrawables(const C
   // @@protoc_insertion_point(copy_constructor:KN.CommandSlideUpdateTemplateDrawables)
 }
 
-void CommandSlideUpdateTemplateDrawables::SharedCtor() {
+inline void CommandSlideUpdateTemplateDrawables::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&slide_id_) -
@@ -25573,12 +25369,13 @@ void CommandSlideUpdateTemplateDrawables::SharedCtor() {
 
 CommandSlideUpdateTemplateDrawables::~CommandSlideUpdateTemplateDrawables() {
   // @@protoc_insertion_point(destructor:KN.CommandSlideUpdateTemplateDrawables)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CommandSlideUpdateTemplateDrawables::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CommandSlideUpdateTemplateDrawables::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete slide_id_;
 }
@@ -25797,25 +25594,22 @@ size_t CommandSlideUpdateTemplateDrawables::ByteSizeLong() const {
   return total_size;
 }
 
-void CommandSlideUpdateTemplateDrawables::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CommandSlideUpdateTemplateDrawables)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CommandSlideUpdateTemplateDrawables* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CommandSlideUpdateTemplateDrawables>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CommandSlideUpdateTemplateDrawables)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CommandSlideUpdateTemplateDrawables)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideUpdateTemplateDrawables::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CommandSlideUpdateTemplateDrawables::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideUpdateTemplateDrawables::GetClassData() const { return &_class_data_; }
+
+void CommandSlideUpdateTemplateDrawables::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CommandSlideUpdateTemplateDrawables *>(to)->MergeFrom(
+      static_cast<const CommandSlideUpdateTemplateDrawables &>(from));
 }
+
 
 void CommandSlideUpdateTemplateDrawables::MergeFrom(const CommandSlideUpdateTemplateDrawables& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CommandSlideUpdateTemplateDrawables)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -25830,13 +25624,7 @@ void CommandSlideUpdateTemplateDrawables::MergeFrom(const CommandSlideUpdateTemp
       _internal_mutable_slide_id()->::TSP::UUID::MergeFrom(from._internal_slide_id());
     }
   }
-}
-
-void CommandSlideUpdateTemplateDrawables::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CommandSlideUpdateTemplateDrawables)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideUpdateTemplateDrawables::CopyFrom(const CommandSlideUpdateTemplateDrawables& from) {
@@ -25949,10 +25737,13 @@ void ChartInfoGeometryCommandArchive::clear_adjusted_legend_size() {
   if (adjusted_legend_size_ != nullptr) adjusted_legend_size_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-ChartInfoGeometryCommandArchive::ChartInfoGeometryCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ChartInfoGeometryCommandArchive::ChartInfoGeometryCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.ChartInfoGeometryCommandArchive)
 }
 ChartInfoGeometryCommandArchive::ChartInfoGeometryCommandArchive(const ChartInfoGeometryCommandArchive& from)
@@ -25987,7 +25778,7 @@ ChartInfoGeometryCommandArchive::ChartInfoGeometryCommandArchive(const ChartInfo
   // @@protoc_insertion_point(copy_constructor:KN.ChartInfoGeometryCommandArchive)
 }
 
-void ChartInfoGeometryCommandArchive::SharedCtor() {
+inline void ChartInfoGeometryCommandArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&adjusted_legend_size_) -
@@ -25996,12 +25787,13 @@ void ChartInfoGeometryCommandArchive::SharedCtor() {
 
 ChartInfoGeometryCommandArchive::~ChartInfoGeometryCommandArchive() {
   // @@protoc_insertion_point(destructor:KN.ChartInfoGeometryCommandArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ChartInfoGeometryCommandArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ChartInfoGeometryCommandArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
   if (this != internal_default_instance()) delete previous_legend_offset_;
   if (this != internal_default_instance()) delete previous_legend_size_;
@@ -26260,25 +26052,22 @@ size_t ChartInfoGeometryCommandArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void ChartInfoGeometryCommandArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.ChartInfoGeometryCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ChartInfoGeometryCommandArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ChartInfoGeometryCommandArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.ChartInfoGeometryCommandArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.ChartInfoGeometryCommandArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ChartInfoGeometryCommandArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ChartInfoGeometryCommandArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ChartInfoGeometryCommandArchive::GetClassData() const { return &_class_data_; }
+
+void ChartInfoGeometryCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ChartInfoGeometryCommandArchive *>(to)->MergeFrom(
+      static_cast<const ChartInfoGeometryCommandArchive &>(from));
 }
+
 
 void ChartInfoGeometryCommandArchive::MergeFrom(const ChartInfoGeometryCommandArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.ChartInfoGeometryCommandArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -26300,13 +26089,7 @@ void ChartInfoGeometryCommandArchive::MergeFrom(const ChartInfoGeometryCommandAr
       _internal_mutable_adjusted_legend_size()->::TSP::Size::MergeFrom(from._internal_adjusted_legend_size());
     }
   }
-}
-
-void ChartInfoGeometryCommandArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.ChartInfoGeometryCommandArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ChartInfoGeometryCommandArchive::CopyFrom(const ChartInfoGeometryCommandArchive& from) {
@@ -26385,13 +26168,16 @@ void CanvasSelectionTransformerArchive::clear_action_build_ids() {
 void CanvasSelectionTransformerArchive::clear_originally_selected_drawable_uuids() {
   originally_selected_drawable_uuids_.Clear();
 }
-CanvasSelectionTransformerArchive::CanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+CanvasSelectionTransformerArchive::CanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   build_chunk_ids_(arena),
   action_build_ids_(arena),
   originally_selected_drawable_uuids_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.CanvasSelectionTransformerArchive)
 }
 CanvasSelectionTransformerArchive::CanvasSelectionTransformerArchive(const CanvasSelectionTransformerArchive& from)
@@ -26409,18 +26195,19 @@ CanvasSelectionTransformerArchive::CanvasSelectionTransformerArchive(const Canva
   // @@protoc_insertion_point(copy_constructor:KN.CanvasSelectionTransformerArchive)
 }
 
-void CanvasSelectionTransformerArchive::SharedCtor() {
+inline void CanvasSelectionTransformerArchive::SharedCtor() {
 transformer_helper_ = nullptr;
 }
 
 CanvasSelectionTransformerArchive::~CanvasSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.CanvasSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void CanvasSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void CanvasSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete transformer_helper_;
 }
 
@@ -26617,25 +26404,22 @@ size_t CanvasSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void CanvasSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.CanvasSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const CanvasSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<CanvasSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.CanvasSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.CanvasSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CanvasSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    CanvasSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CanvasSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void CanvasSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<CanvasSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const CanvasSelectionTransformerArchive &>(from));
 }
+
 
 void CanvasSelectionTransformerArchive::MergeFrom(const CanvasSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.CanvasSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -26645,13 +26429,7 @@ void CanvasSelectionTransformerArchive::MergeFrom(const CanvasSelectionTransform
   if (from._internal_has_transformer_helper()) {
     _internal_mutable_transformer_helper()->::TSD::InfoCollectionSelectionTransformerHelperArchive::MergeFrom(from._internal_transformer_helper());
   }
-}
-
-void CanvasSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.CanvasSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CanvasSelectionTransformerArchive::CopyFrom(const CanvasSelectionTransformerArchive& from) {
@@ -26694,10 +26472,13 @@ class ActionGhostSelectionTransformerArchive::_Internal {
  public:
 };
 
-ActionGhostSelectionTransformerArchive::ActionGhostSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ActionGhostSelectionTransformerArchive::ActionGhostSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.ActionGhostSelectionTransformerArchive)
 }
 ActionGhostSelectionTransformerArchive::ActionGhostSelectionTransformerArchive(const ActionGhostSelectionTransformerArchive& from)
@@ -26706,17 +26487,18 @@ ActionGhostSelectionTransformerArchive::ActionGhostSelectionTransformerArchive(c
   // @@protoc_insertion_point(copy_constructor:KN.ActionGhostSelectionTransformerArchive)
 }
 
-void ActionGhostSelectionTransformerArchive::SharedCtor() {
+inline void ActionGhostSelectionTransformerArchive::SharedCtor() {
 }
 
 ActionGhostSelectionTransformerArchive::~ActionGhostSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.ActionGhostSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void ActionGhostSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void ActionGhostSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void ActionGhostSelectionTransformerArchive::ArenaDtor(void* object) {
@@ -26793,35 +26575,26 @@ size_t ActionGhostSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void ActionGhostSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.ActionGhostSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const ActionGhostSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<ActionGhostSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.ActionGhostSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.ActionGhostSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ActionGhostSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ActionGhostSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ActionGhostSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void ActionGhostSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<ActionGhostSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const ActionGhostSelectionTransformerArchive &>(from));
 }
+
 
 void ActionGhostSelectionTransformerArchive::MergeFrom(const ActionGhostSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.ActionGhostSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-}
-
-void ActionGhostSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.ActionGhostSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ActionGhostSelectionTransformerArchive::CopyFrom(const ActionGhostSelectionTransformerArchive& from) {
@@ -26868,10 +26641,13 @@ void DocumentSelectionTransformerArchive::clear_document_selection() {
   if (document_selection_ != nullptr) document_selection_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-DocumentSelectionTransformerArchive::DocumentSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DocumentSelectionTransformerArchive::DocumentSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.DocumentSelectionTransformerArchive)
 }
 DocumentSelectionTransformerArchive::DocumentSelectionTransformerArchive(const DocumentSelectionTransformerArchive& from)
@@ -26886,18 +26662,19 @@ DocumentSelectionTransformerArchive::DocumentSelectionTransformerArchive(const D
   // @@protoc_insertion_point(copy_constructor:KN.DocumentSelectionTransformerArchive)
 }
 
-void DocumentSelectionTransformerArchive::SharedCtor() {
+inline void DocumentSelectionTransformerArchive::SharedCtor() {
 document_selection_ = nullptr;
 }
 
 DocumentSelectionTransformerArchive::~DocumentSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.DocumentSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DocumentSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DocumentSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete document_selection_;
 }
 
@@ -27010,38 +26787,29 @@ size_t DocumentSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void DocumentSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.DocumentSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DocumentSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DocumentSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.DocumentSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.DocumentSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DocumentSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DocumentSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DocumentSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void DocumentSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<DocumentSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const DocumentSelectionTransformerArchive &>(from));
 }
+
 
 void DocumentSelectionTransformerArchive::MergeFrom(const DocumentSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.DocumentSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_document_selection()) {
     _internal_mutable_document_selection()->::TSP::Reference::MergeFrom(from._internal_document_selection());
   }
-}
-
-void DocumentSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.DocumentSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DocumentSelectionTransformerArchive::CopyFrom(const DocumentSelectionTransformerArchive& from) {
@@ -27094,10 +26862,13 @@ void NoteCanvasSelectionTransformerArchive::clear_transformer_helper() {
   if (transformer_helper_ != nullptr) transformer_helper_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-NoteCanvasSelectionTransformerArchive::NoteCanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+NoteCanvasSelectionTransformerArchive::NoteCanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.NoteCanvasSelectionTransformerArchive)
 }
 NoteCanvasSelectionTransformerArchive::NoteCanvasSelectionTransformerArchive(const NoteCanvasSelectionTransformerArchive& from)
@@ -27112,18 +26883,19 @@ NoteCanvasSelectionTransformerArchive::NoteCanvasSelectionTransformerArchive(con
   // @@protoc_insertion_point(copy_constructor:KN.NoteCanvasSelectionTransformerArchive)
 }
 
-void NoteCanvasSelectionTransformerArchive::SharedCtor() {
+inline void NoteCanvasSelectionTransformerArchive::SharedCtor() {
 transformer_helper_ = nullptr;
 }
 
 NoteCanvasSelectionTransformerArchive::~NoteCanvasSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.NoteCanvasSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void NoteCanvasSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void NoteCanvasSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete transformer_helper_;
 }
 
@@ -27236,38 +27008,29 @@ size_t NoteCanvasSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void NoteCanvasSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.NoteCanvasSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const NoteCanvasSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<NoteCanvasSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.NoteCanvasSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.NoteCanvasSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NoteCanvasSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    NoteCanvasSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NoteCanvasSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void NoteCanvasSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<NoteCanvasSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const NoteCanvasSelectionTransformerArchive &>(from));
 }
+
 
 void NoteCanvasSelectionTransformerArchive::MergeFrom(const NoteCanvasSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.NoteCanvasSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_transformer_helper()) {
     _internal_mutable_transformer_helper()->::TSD::InfoCollectionSelectionTransformerHelperArchive::MergeFrom(from._internal_transformer_helper());
   }
-}
-
-void NoteCanvasSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.NoteCanvasSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void NoteCanvasSelectionTransformerArchive::CopyFrom(const NoteCanvasSelectionTransformerArchive& from) {
@@ -27332,10 +27095,13 @@ void OutlineCanvasSelectionTransformerArchive::clear_storage_uuid_path() {
   if (storage_uuid_path_ != nullptr) storage_uuid_path_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-OutlineCanvasSelectionTransformerArchive::OutlineCanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+OutlineCanvasSelectionTransformerArchive::OutlineCanvasSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.OutlineCanvasSelectionTransformerArchive)
 }
 OutlineCanvasSelectionTransformerArchive::OutlineCanvasSelectionTransformerArchive(const OutlineCanvasSelectionTransformerArchive& from)
@@ -27355,7 +27121,7 @@ OutlineCanvasSelectionTransformerArchive::OutlineCanvasSelectionTransformerArchi
   // @@protoc_insertion_point(copy_constructor:KN.OutlineCanvasSelectionTransformerArchive)
 }
 
-void OutlineCanvasSelectionTransformerArchive::SharedCtor() {
+inline void OutlineCanvasSelectionTransformerArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&canvas_selection_transformer_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&storage_uuid_path_) -
@@ -27364,12 +27130,13 @@ void OutlineCanvasSelectionTransformerArchive::SharedCtor() {
 
 OutlineCanvasSelectionTransformerArchive::~OutlineCanvasSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.OutlineCanvasSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OutlineCanvasSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void OutlineCanvasSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete canvas_selection_transformer_;
   if (this != internal_default_instance()) delete storage_uuid_path_;
 }
@@ -27512,25 +27279,22 @@ size_t OutlineCanvasSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void OutlineCanvasSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.OutlineCanvasSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OutlineCanvasSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OutlineCanvasSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.OutlineCanvasSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.OutlineCanvasSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OutlineCanvasSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    OutlineCanvasSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OutlineCanvasSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void OutlineCanvasSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<OutlineCanvasSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const OutlineCanvasSelectionTransformerArchive &>(from));
 }
+
 
 void OutlineCanvasSelectionTransformerArchive::MergeFrom(const OutlineCanvasSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.OutlineCanvasSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -27543,13 +27307,7 @@ void OutlineCanvasSelectionTransformerArchive::MergeFrom(const OutlineCanvasSele
       _internal_mutable_storage_uuid_path()->::TSP::UUIDPath::MergeFrom(from._internal_storage_uuid_path());
     }
   }
-}
-
-void OutlineCanvasSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.OutlineCanvasSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OutlineCanvasSelectionTransformerArchive::CopyFrom(const OutlineCanvasSelectionTransformerArchive& from) {
@@ -27616,11 +27374,14 @@ void SlideCollectionSelectionTransformerHelperArchive::clear_slide_node_to_edit(
   if (slide_node_to_edit_ != nullptr) slide_node_to_edit_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SlideCollectionSelectionTransformerHelperArchive::SlideCollectionSelectionTransformerHelperArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+SlideCollectionSelectionTransformerHelperArchive::SlideCollectionSelectionTransformerHelperArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   slide_nodes_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.SlideCollectionSelectionTransformerHelperArchive)
 }
 SlideCollectionSelectionTransformerHelperArchive::SlideCollectionSelectionTransformerHelperArchive(const SlideCollectionSelectionTransformerHelperArchive& from)
@@ -27639,7 +27400,7 @@ SlideCollectionSelectionTransformerHelperArchive::SlideCollectionSelectionTransf
   // @@protoc_insertion_point(copy_constructor:KN.SlideCollectionSelectionTransformerHelperArchive)
 }
 
-void SlideCollectionSelectionTransformerHelperArchive::SharedCtor() {
+inline void SlideCollectionSelectionTransformerHelperArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&slide_node_to_edit_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&previous_primary_selected_index_) -
@@ -27648,12 +27409,13 @@ void SlideCollectionSelectionTransformerHelperArchive::SharedCtor() {
 
 SlideCollectionSelectionTransformerHelperArchive::~SlideCollectionSelectionTransformerHelperArchive() {
   // @@protoc_insertion_point(destructor:KN.SlideCollectionSelectionTransformerHelperArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SlideCollectionSelectionTransformerHelperArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SlideCollectionSelectionTransformerHelperArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete slide_node_to_edit_;
 }
 
@@ -27843,25 +27605,22 @@ size_t SlideCollectionSelectionTransformerHelperArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SlideCollectionSelectionTransformerHelperArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.SlideCollectionSelectionTransformerHelperArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SlideCollectionSelectionTransformerHelperArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SlideCollectionSelectionTransformerHelperArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.SlideCollectionSelectionTransformerHelperArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.SlideCollectionSelectionTransformerHelperArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SlideCollectionSelectionTransformerHelperArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SlideCollectionSelectionTransformerHelperArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SlideCollectionSelectionTransformerHelperArchive::GetClassData() const { return &_class_data_; }
+
+void SlideCollectionSelectionTransformerHelperArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SlideCollectionSelectionTransformerHelperArchive *>(to)->MergeFrom(
+      static_cast<const SlideCollectionSelectionTransformerHelperArchive &>(from));
 }
+
 
 void SlideCollectionSelectionTransformerHelperArchive::MergeFrom(const SlideCollectionSelectionTransformerHelperArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.SlideCollectionSelectionTransformerHelperArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -27879,13 +27638,7 @@ void SlideCollectionSelectionTransformerHelperArchive::MergeFrom(const SlideColl
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SlideCollectionSelectionTransformerHelperArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.SlideCollectionSelectionTransformerHelperArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SlideCollectionSelectionTransformerHelperArchive::CopyFrom(const SlideCollectionSelectionTransformerHelperArchive& from) {
@@ -27940,10 +27693,13 @@ const ::KN::SlideCollectionSelectionTransformerHelperArchive&
 SlideCollectionSelectionTransformerArchive::_Internal::transformer_helper(const SlideCollectionSelectionTransformerArchive* msg) {
   return *msg->transformer_helper_;
 }
-SlideCollectionSelectionTransformerArchive::SlideCollectionSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SlideCollectionSelectionTransformerArchive::SlideCollectionSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.SlideCollectionSelectionTransformerArchive)
 }
 SlideCollectionSelectionTransformerArchive::SlideCollectionSelectionTransformerArchive(const SlideCollectionSelectionTransformerArchive& from)
@@ -27958,18 +27714,19 @@ SlideCollectionSelectionTransformerArchive::SlideCollectionSelectionTransformerA
   // @@protoc_insertion_point(copy_constructor:KN.SlideCollectionSelectionTransformerArchive)
 }
 
-void SlideCollectionSelectionTransformerArchive::SharedCtor() {
+inline void SlideCollectionSelectionTransformerArchive::SharedCtor() {
 transformer_helper_ = nullptr;
 }
 
 SlideCollectionSelectionTransformerArchive::~SlideCollectionSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.SlideCollectionSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SlideCollectionSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SlideCollectionSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete transformer_helper_;
 }
 
@@ -28082,38 +27839,29 @@ size_t SlideCollectionSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SlideCollectionSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.SlideCollectionSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SlideCollectionSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SlideCollectionSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.SlideCollectionSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.SlideCollectionSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SlideCollectionSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SlideCollectionSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SlideCollectionSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void SlideCollectionSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SlideCollectionSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const SlideCollectionSelectionTransformerArchive &>(from));
 }
+
 
 void SlideCollectionSelectionTransformerArchive::MergeFrom(const SlideCollectionSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.SlideCollectionSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_transformer_helper()) {
     _internal_mutable_transformer_helper()->::KN::SlideCollectionSelectionTransformerHelperArchive::MergeFrom(from._internal_transformer_helper());
   }
-}
-
-void SlideCollectionSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.SlideCollectionSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SlideCollectionSelectionTransformerArchive::CopyFrom(const SlideCollectionSelectionTransformerArchive& from) {
@@ -28168,11 +27916,14 @@ OutlineSelectionTransformerArchive::_Internal::transformer_helper(const OutlineS
 void OutlineSelectionTransformerArchive::clear_selection_range_addresses() {
   selection_range_addresses_.Clear();
 }
-OutlineSelectionTransformerArchive::OutlineSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+OutlineSelectionTransformerArchive::OutlineSelectionTransformerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   selection_range_addresses_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:KN.OutlineSelectionTransformerArchive)
 }
 OutlineSelectionTransformerArchive::OutlineSelectionTransformerArchive(const OutlineSelectionTransformerArchive& from)
@@ -28189,7 +27940,7 @@ OutlineSelectionTransformerArchive::OutlineSelectionTransformerArchive(const Out
   // @@protoc_insertion_point(copy_constructor:KN.OutlineSelectionTransformerArchive)
 }
 
-void OutlineSelectionTransformerArchive::SharedCtor() {
+inline void OutlineSelectionTransformerArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&transformer_helper_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&can_have_range_in_selected_paragraph_) -
@@ -28198,12 +27949,13 @@ void OutlineSelectionTransformerArchive::SharedCtor() {
 
 OutlineSelectionTransformerArchive::~OutlineSelectionTransformerArchive() {
   // @@protoc_insertion_point(destructor:KN.OutlineSelectionTransformerArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void OutlineSelectionTransformerArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void OutlineSelectionTransformerArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete transformer_helper_;
 }
 
@@ -28365,25 +28117,22 @@ size_t OutlineSelectionTransformerArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void OutlineSelectionTransformerArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:KN.OutlineSelectionTransformerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const OutlineSelectionTransformerArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<OutlineSelectionTransformerArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:KN.OutlineSelectionTransformerArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:KN.OutlineSelectionTransformerArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData OutlineSelectionTransformerArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    OutlineSelectionTransformerArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*OutlineSelectionTransformerArchive::GetClassData() const { return &_class_data_; }
+
+void OutlineSelectionTransformerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<OutlineSelectionTransformerArchive *>(to)->MergeFrom(
+      static_cast<const OutlineSelectionTransformerArchive &>(from));
 }
+
 
 void OutlineSelectionTransformerArchive::MergeFrom(const OutlineSelectionTransformerArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:KN.OutlineSelectionTransformerArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -28398,13 +28147,7 @@ void OutlineSelectionTransformerArchive::MergeFrom(const OutlineSelectionTransfo
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void OutlineSelectionTransformerArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:KN.OutlineSelectionTransformerArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void OutlineSelectionTransformerArchive::CopyFrom(const OutlineSelectionTransformerArchive& from) {

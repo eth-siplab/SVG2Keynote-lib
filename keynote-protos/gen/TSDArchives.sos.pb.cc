@@ -508,10 +508,13 @@ void SpecSetFillArchive::clear_fill() {
   if (fill_ != nullptr) fill_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecSetFillArchive::SpecSetFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecSetFillArchive::SpecSetFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecSetFillArchive)
 }
 SpecSetFillArchive::SpecSetFillArchive(const SpecSetFillArchive& from)
@@ -527,7 +530,7 @@ SpecSetFillArchive::SpecSetFillArchive(const SpecSetFillArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecSetFillArchive)
 }
 
-void SpecSetFillArchive::SharedCtor() {
+inline void SpecSetFillArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&fill_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
@@ -536,12 +539,13 @@ void SpecSetFillArchive::SharedCtor() {
 
 SpecSetFillArchive::~SpecSetFillArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecSetFillArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecSetFillArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecSetFillArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete fill_;
 }
 
@@ -675,25 +679,22 @@ size_t SpecSetFillArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecSetFillArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecSetFillArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecSetFillArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecSetFillArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecSetFillArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecSetFillArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetFillArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecSetFillArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetFillArchive::GetClassData() const { return &_class_data_; }
+
+void SpecSetFillArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecSetFillArchive *>(to)->MergeFrom(
+      static_cast<const SpecSetFillArchive &>(from));
 }
+
 
 void SpecSetFillArchive::MergeFrom(const SpecSetFillArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecSetFillArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -707,13 +708,7 @@ void SpecSetFillArchive::MergeFrom(const SpecSetFillArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SpecSetFillArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecSetFillArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetFillArchive::CopyFrom(const SpecSetFillArchive& from) {
@@ -774,10 +769,13 @@ void SpecSetLineEndArchive::clear_line_end() {
   if (line_end_ != nullptr) line_end_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecSetLineEndArchive::SpecSetLineEndArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecSetLineEndArchive::SpecSetLineEndArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecSetLineEndArchive)
 }
 SpecSetLineEndArchive::SpecSetLineEndArchive(const SpecSetLineEndArchive& from)
@@ -793,7 +791,7 @@ SpecSetLineEndArchive::SpecSetLineEndArchive(const SpecSetLineEndArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecSetLineEndArchive)
 }
 
-void SpecSetLineEndArchive::SharedCtor() {
+inline void SpecSetLineEndArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&line_end_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
@@ -802,12 +800,13 @@ void SpecSetLineEndArchive::SharedCtor() {
 
 SpecSetLineEndArchive::~SpecSetLineEndArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecSetLineEndArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecSetLineEndArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecSetLineEndArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete line_end_;
 }
 
@@ -941,25 +940,22 @@ size_t SpecSetLineEndArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecSetLineEndArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecSetLineEndArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecSetLineEndArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecSetLineEndArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecSetLineEndArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecSetLineEndArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetLineEndArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecSetLineEndArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetLineEndArchive::GetClassData() const { return &_class_data_; }
+
+void SpecSetLineEndArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecSetLineEndArchive *>(to)->MergeFrom(
+      static_cast<const SpecSetLineEndArchive &>(from));
 }
+
 
 void SpecSetLineEndArchive::MergeFrom(const SpecSetLineEndArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecSetLineEndArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -973,13 +969,7 @@ void SpecSetLineEndArchive::MergeFrom(const SpecSetLineEndArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SpecSetLineEndArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecSetLineEndArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetLineEndArchive::CopyFrom(const SpecSetLineEndArchive& from) {
@@ -1040,10 +1030,13 @@ void SpecSetReflectionArchive::clear_reflection() {
   if (reflection_ != nullptr) reflection_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecSetReflectionArchive::SpecSetReflectionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecSetReflectionArchive::SpecSetReflectionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecSetReflectionArchive)
 }
 SpecSetReflectionArchive::SpecSetReflectionArchive(const SpecSetReflectionArchive& from)
@@ -1059,7 +1052,7 @@ SpecSetReflectionArchive::SpecSetReflectionArchive(const SpecSetReflectionArchiv
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecSetReflectionArchive)
 }
 
-void SpecSetReflectionArchive::SharedCtor() {
+inline void SpecSetReflectionArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&reflection_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
@@ -1068,12 +1061,13 @@ void SpecSetReflectionArchive::SharedCtor() {
 
 SpecSetReflectionArchive::~SpecSetReflectionArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecSetReflectionArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecSetReflectionArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecSetReflectionArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete reflection_;
 }
 
@@ -1207,25 +1201,22 @@ size_t SpecSetReflectionArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecSetReflectionArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecSetReflectionArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecSetReflectionArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecSetReflectionArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecSetReflectionArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecSetReflectionArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetReflectionArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecSetReflectionArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetReflectionArchive::GetClassData() const { return &_class_data_; }
+
+void SpecSetReflectionArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecSetReflectionArchive *>(to)->MergeFrom(
+      static_cast<const SpecSetReflectionArchive &>(from));
 }
+
 
 void SpecSetReflectionArchive::MergeFrom(const SpecSetReflectionArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecSetReflectionArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1239,13 +1230,7 @@ void SpecSetReflectionArchive::MergeFrom(const SpecSetReflectionArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SpecSetReflectionArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecSetReflectionArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetReflectionArchive::CopyFrom(const SpecSetReflectionArchive& from) {
@@ -1303,10 +1288,13 @@ void SpecSetShadowArchive::clear_shadow() {
   if (shadow_ != nullptr) shadow_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecSetShadowArchive::SpecSetShadowArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecSetShadowArchive::SpecSetShadowArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecSetShadowArchive)
 }
 SpecSetShadowArchive::SpecSetShadowArchive(const SpecSetShadowArchive& from)
@@ -1322,7 +1310,7 @@ SpecSetShadowArchive::SpecSetShadowArchive(const SpecSetShadowArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecSetShadowArchive)
 }
 
-void SpecSetShadowArchive::SharedCtor() {
+inline void SpecSetShadowArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&shadow_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
@@ -1331,12 +1319,13 @@ void SpecSetShadowArchive::SharedCtor() {
 
 SpecSetShadowArchive::~SpecSetShadowArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecSetShadowArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecSetShadowArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecSetShadowArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete shadow_;
 }
 
@@ -1470,25 +1459,22 @@ size_t SpecSetShadowArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecSetShadowArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecSetShadowArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecSetShadowArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecSetShadowArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecSetShadowArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecSetShadowArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetShadowArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecSetShadowArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetShadowArchive::GetClassData() const { return &_class_data_; }
+
+void SpecSetShadowArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecSetShadowArchive *>(to)->MergeFrom(
+      static_cast<const SpecSetShadowArchive &>(from));
 }
+
 
 void SpecSetShadowArchive::MergeFrom(const SpecSetShadowArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecSetShadowArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1502,13 +1488,7 @@ void SpecSetShadowArchive::MergeFrom(const SpecSetShadowArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SpecSetShadowArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecSetShadowArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetShadowArchive::CopyFrom(const SpecSetShadowArchive& from) {
@@ -1569,10 +1549,13 @@ void SpecSetStrokeArchive::clear_stroke() {
   if (stroke_ != nullptr) stroke_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecSetStrokeArchive::SpecSetStrokeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecSetStrokeArchive::SpecSetStrokeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecSetStrokeArchive)
 }
 SpecSetStrokeArchive::SpecSetStrokeArchive(const SpecSetStrokeArchive& from)
@@ -1588,7 +1571,7 @@ SpecSetStrokeArchive::SpecSetStrokeArchive(const SpecSetStrokeArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecSetStrokeArchive)
 }
 
-void SpecSetStrokeArchive::SharedCtor() {
+inline void SpecSetStrokeArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&stroke_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
@@ -1597,12 +1580,13 @@ void SpecSetStrokeArchive::SharedCtor() {
 
 SpecSetStrokeArchive::~SpecSetStrokeArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecSetStrokeArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecSetStrokeArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecSetStrokeArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete stroke_;
 }
 
@@ -1736,25 +1720,22 @@ size_t SpecSetStrokeArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecSetStrokeArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecSetStrokeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecSetStrokeArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecSetStrokeArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecSetStrokeArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecSetStrokeArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetStrokeArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecSetStrokeArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetStrokeArchive::GetClassData() const { return &_class_data_; }
+
+void SpecSetStrokeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecSetStrokeArchive *>(to)->MergeFrom(
+      static_cast<const SpecSetStrokeArchive &>(from));
 }
+
 
 void SpecSetStrokeArchive::MergeFrom(const SpecSetStrokeArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecSetStrokeArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1768,13 +1749,7 @@ void SpecSetStrokeArchive::MergeFrom(const SpecSetStrokeArchive& from) {
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void SpecSetStrokeArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecSetStrokeArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetStrokeArchive::CopyFrom(const SpecSetStrokeArchive& from) {
@@ -1861,10 +1836,13 @@ void SpecFillArchive::clear_spec_image_fill_set_technique() {
   if (spec_image_fill_set_technique_ != nullptr) spec_image_fill_set_technique_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-SpecFillArchive::SpecFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecFillArchive::SpecFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecFillArchive)
 }
 SpecFillArchive::SpecFillArchive(const SpecFillArchive& from)
@@ -1894,7 +1872,7 @@ SpecFillArchive::SpecFillArchive(const SpecFillArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecFillArchive)
 }
 
-void SpecFillArchive::SharedCtor() {
+inline void SpecFillArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&spec_color_fill_set_color_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&spec_set_fill_) -
@@ -1903,12 +1881,13 @@ void SpecFillArchive::SharedCtor() {
 
 SpecFillArchive::~SpecFillArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecFillArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecFillArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecFillArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete spec_color_fill_set_color_;
   if (this != internal_default_instance()) delete spec_gradient_fill_set_angle_;
   if (this != internal_default_instance()) delete spec_image_fill_set_technique_;
@@ -2108,25 +2087,22 @@ size_t SpecFillArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecFillArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecFillArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecFillArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecFillArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecFillArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecFillArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecFillArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecFillArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecFillArchive::GetClassData() const { return &_class_data_; }
+
+void SpecFillArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecFillArchive *>(to)->MergeFrom(
+      static_cast<const SpecFillArchive &>(from));
 }
+
 
 void SpecFillArchive::MergeFrom(const SpecFillArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecFillArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2145,13 +2121,7 @@ void SpecFillArchive::MergeFrom(const SpecFillArchive& from) {
       _internal_mutable_spec_set_fill()->::TSDSOS::SpecSetFillArchive::MergeFrom(from._internal_spec_set_fill());
     }
   }
-}
-
-void SpecFillArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecFillArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecFillArchive::CopyFrom(const SpecFillArchive& from) {
@@ -2210,10 +2180,13 @@ const ::TSDSOS::SpecSetLineEndArchive&
 SpecLineEndArchive::_Internal::spec_set_line_end(const SpecLineEndArchive* msg) {
   return *msg->spec_set_line_end_;
 }
-SpecLineEndArchive::SpecLineEndArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecLineEndArchive::SpecLineEndArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecLineEndArchive)
 }
 SpecLineEndArchive::SpecLineEndArchive(const SpecLineEndArchive& from)
@@ -2228,18 +2201,19 @@ SpecLineEndArchive::SpecLineEndArchive(const SpecLineEndArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecLineEndArchive)
 }
 
-void SpecLineEndArchive::SharedCtor() {
+inline void SpecLineEndArchive::SharedCtor() {
 spec_set_line_end_ = nullptr;
 }
 
 SpecLineEndArchive::~SpecLineEndArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecLineEndArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecLineEndArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecLineEndArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete spec_set_line_end_;
 }
 
@@ -2354,38 +2328,29 @@ size_t SpecLineEndArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecLineEndArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecLineEndArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecLineEndArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecLineEndArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecLineEndArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecLineEndArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecLineEndArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecLineEndArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecLineEndArchive::GetClassData() const { return &_class_data_; }
+
+void SpecLineEndArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecLineEndArchive *>(to)->MergeFrom(
+      static_cast<const SpecLineEndArchive &>(from));
 }
+
 
 void SpecLineEndArchive::MergeFrom(const SpecLineEndArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecLineEndArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_line_end()) {
     _internal_mutable_spec_set_line_end()->::TSDSOS::SpecSetLineEndArchive::MergeFrom(from._internal_spec_set_line_end());
   }
-}
-
-void SpecLineEndArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecLineEndArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecLineEndArchive::CopyFrom(const SpecLineEndArchive& from) {
@@ -2442,10 +2407,13 @@ void SpecReflectionArchive::clear_spec_reflection_set_opacity() {
   if (spec_reflection_set_opacity_ != nullptr) spec_reflection_set_opacity_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-SpecReflectionArchive::SpecReflectionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecReflectionArchive::SpecReflectionArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecReflectionArchive)
 }
 SpecReflectionArchive::SpecReflectionArchive(const SpecReflectionArchive& from)
@@ -2465,7 +2433,7 @@ SpecReflectionArchive::SpecReflectionArchive(const SpecReflectionArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecReflectionArchive)
 }
 
-void SpecReflectionArchive::SharedCtor() {
+inline void SpecReflectionArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&spec_reflection_set_opacity_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&spec_set_reflection_) -
@@ -2474,12 +2442,13 @@ void SpecReflectionArchive::SharedCtor() {
 
 SpecReflectionArchive::~SpecReflectionArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecReflectionArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecReflectionArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecReflectionArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete spec_reflection_set_opacity_;
   if (this != internal_default_instance()) delete spec_set_reflection_;
 }
@@ -2625,25 +2594,22 @@ size_t SpecReflectionArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecReflectionArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecReflectionArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecReflectionArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecReflectionArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecReflectionArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecReflectionArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecReflectionArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecReflectionArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecReflectionArchive::GetClassData() const { return &_class_data_; }
+
+void SpecReflectionArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecReflectionArchive *>(to)->MergeFrom(
+      static_cast<const SpecReflectionArchive &>(from));
 }
+
 
 void SpecReflectionArchive::MergeFrom(const SpecReflectionArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecReflectionArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2656,13 +2622,7 @@ void SpecReflectionArchive::MergeFrom(const SpecReflectionArchive& from) {
       _internal_mutable_spec_set_reflection()->::TSDSOS::SpecSetReflectionArchive::MergeFrom(from._internal_spec_set_reflection());
     }
   }
-}
-
-void SpecReflectionArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecReflectionArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecReflectionArchive::CopyFrom(const SpecReflectionArchive& from) {
@@ -2775,10 +2735,13 @@ void SpecShadowArchive::clear_spec_shadow_set_radius() {
   if (spec_shadow_set_radius_ != nullptr) spec_shadow_set_radius_->Clear();
   _has_bits_[0] &= ~0x00000020u;
 }
-SpecShadowArchive::SpecShadowArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecShadowArchive::SpecShadowArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecShadowArchive)
 }
 SpecShadowArchive::SpecShadowArchive(const SpecShadowArchive& from)
@@ -2818,7 +2781,7 @@ SpecShadowArchive::SpecShadowArchive(const SpecShadowArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecShadowArchive)
 }
 
-void SpecShadowArchive::SharedCtor() {
+inline void SpecShadowArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&spec_set_shadow_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&spec_shadow_set_radius_) -
@@ -2827,12 +2790,13 @@ void SpecShadowArchive::SharedCtor() {
 
 SpecShadowArchive::~SpecShadowArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecShadowArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecShadowArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecShadowArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete spec_set_shadow_;
   if (this != internal_default_instance()) delete spec_shadow_set_angle_;
   if (this != internal_default_instance()) delete spec_shadow_set_color_;
@@ -3086,25 +3050,22 @@ size_t SpecShadowArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecShadowArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecShadowArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecShadowArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecShadowArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecShadowArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecShadowArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecShadowArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecShadowArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecShadowArchive::GetClassData() const { return &_class_data_; }
+
+void SpecShadowArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecShadowArchive *>(to)->MergeFrom(
+      static_cast<const SpecShadowArchive &>(from));
 }
+
 
 void SpecShadowArchive::MergeFrom(const SpecShadowArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecShadowArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3129,13 +3090,7 @@ void SpecShadowArchive::MergeFrom(const SpecShadowArchive& from) {
       _internal_mutable_spec_shadow_set_radius()->::TSD::SpecShadowSetRadiusArchive::MergeFrom(from._internal_spec_shadow_set_radius());
     }
   }
-}
-
-void SpecShadowArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecShadowArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecShadowArchive::CopyFrom(const SpecShadowArchive& from) {
@@ -3248,10 +3203,13 @@ void SpecStrokeArchive::clear_spec_stroke_set_width() {
   if (spec_stroke_set_width_ != nullptr) spec_stroke_set_width_->Clear();
   _has_bits_[0] &= ~0x00000010u;
 }
-SpecStrokeArchive::SpecStrokeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SpecStrokeArchive::SpecStrokeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.SpecStrokeArchive)
 }
 SpecStrokeArchive::SpecStrokeArchive(const SpecStrokeArchive& from)
@@ -3286,7 +3244,7 @@ SpecStrokeArchive::SpecStrokeArchive(const SpecStrokeArchive& from)
   // @@protoc_insertion_point(copy_constructor:TSDSOS.SpecStrokeArchive)
 }
 
-void SpecStrokeArchive::SharedCtor() {
+inline void SpecStrokeArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&spec_frame_set_asset_scale_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&spec_stroke_set_width_) -
@@ -3295,12 +3253,13 @@ void SpecStrokeArchive::SharedCtor() {
 
 SpecStrokeArchive::~SpecStrokeArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.SpecStrokeArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SpecStrokeArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SpecStrokeArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete spec_frame_set_asset_scale_;
   if (this != internal_default_instance()) delete spec_set_stroke_;
   if (this != internal_default_instance()) delete spec_stroke_set_color_;
@@ -3527,25 +3486,22 @@ size_t SpecStrokeArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void SpecStrokeArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.SpecStrokeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SpecStrokeArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SpecStrokeArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.SpecStrokeArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.SpecStrokeArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecStrokeArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    SpecStrokeArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecStrokeArchive::GetClassData() const { return &_class_data_; }
+
+void SpecStrokeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<SpecStrokeArchive *>(to)->MergeFrom(
+      static_cast<const SpecStrokeArchive &>(from));
 }
+
 
 void SpecStrokeArchive::MergeFrom(const SpecStrokeArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.SpecStrokeArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3567,13 +3523,7 @@ void SpecStrokeArchive::MergeFrom(const SpecStrokeArchive& from) {
       _internal_mutable_spec_stroke_set_width()->::TSD::SpecStrokeSetWidthArchive::MergeFrom(from._internal_spec_stroke_set_width());
     }
   }
-}
-
-void SpecStrokeArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.SpecStrokeArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecStrokeArchive::CopyFrom(const SpecStrokeArchive& from) {
@@ -3708,10 +3658,13 @@ void BaseShapeStylePropertyChangeSetArchive::clear_opacity() {
   if (opacity_ != nullptr) opacity_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-BaseShapeStylePropertyChangeSetArchive::BaseShapeStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+BaseShapeStylePropertyChangeSetArchive::BaseShapeStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
 }
 BaseShapeStylePropertyChangeSetArchive::BaseShapeStylePropertyChangeSetArchive(const BaseShapeStylePropertyChangeSetArchive& from)
@@ -3759,7 +3712,7 @@ BaseShapeStylePropertyChangeSetArchive::BaseShapeStylePropertyChangeSetArchive(c
   // @@protoc_insertion_point(copy_constructor:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
 }
 
-void BaseShapeStylePropertyChangeSetArchive::SharedCtor() {
+inline void BaseShapeStylePropertyChangeSetArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&fill_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&tail_line_end_undefined_) -
@@ -3768,12 +3721,13 @@ void BaseShapeStylePropertyChangeSetArchive::SharedCtor() {
 
 BaseShapeStylePropertyChangeSetArchive::~BaseShapeStylePropertyChangeSetArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void BaseShapeStylePropertyChangeSetArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void BaseShapeStylePropertyChangeSetArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete fill_;
   if (this != internal_default_instance()) delete stroke_;
   if (this != internal_default_instance()) delete opacity_;
@@ -4195,25 +4149,22 @@ size_t BaseShapeStylePropertyChangeSetArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void BaseShapeStylePropertyChangeSetArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const BaseShapeStylePropertyChangeSetArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<BaseShapeStylePropertyChangeSetArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData BaseShapeStylePropertyChangeSetArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    BaseShapeStylePropertyChangeSetArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*BaseShapeStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
+
+void BaseShapeStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<BaseShapeStylePropertyChangeSetArchive *>(to)->MergeFrom(
+      static_cast<const BaseShapeStylePropertyChangeSetArchive &>(from));
 }
+
 
 void BaseShapeStylePropertyChangeSetArchive::MergeFrom(const BaseShapeStylePropertyChangeSetArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4266,13 +4217,7 @@ void BaseShapeStylePropertyChangeSetArchive::MergeFrom(const BaseShapeStylePrope
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void BaseShapeStylePropertyChangeSetArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.BaseShapeStylePropertyChangeSetArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void BaseShapeStylePropertyChangeSetArchive::CopyFrom(const BaseShapeStylePropertyChangeSetArchive& from) {
@@ -4380,10 +4325,13 @@ void MediaStylePropertyChangeSetArchive::clear_opacity() {
   if (opacity_ != nullptr) opacity_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-MediaStylePropertyChangeSetArchive::MediaStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+MediaStylePropertyChangeSetArchive::MediaStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSDSOS.MediaStylePropertyChangeSetArchive)
 }
 MediaStylePropertyChangeSetArchive::MediaStylePropertyChangeSetArchive(const MediaStylePropertyChangeSetArchive& from)
@@ -4416,7 +4364,7 @@ MediaStylePropertyChangeSetArchive::MediaStylePropertyChangeSetArchive(const Med
   // @@protoc_insertion_point(copy_constructor:TSDSOS.MediaStylePropertyChangeSetArchive)
 }
 
-void MediaStylePropertyChangeSetArchive::SharedCtor() {
+inline void MediaStylePropertyChangeSetArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&stroke_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&reflection_undefined_) -
@@ -4425,12 +4373,13 @@ void MediaStylePropertyChangeSetArchive::SharedCtor() {
 
 MediaStylePropertyChangeSetArchive::~MediaStylePropertyChangeSetArchive() {
   // @@protoc_insertion_point(destructor:TSDSOS.MediaStylePropertyChangeSetArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void MediaStylePropertyChangeSetArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void MediaStylePropertyChangeSetArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete stroke_;
   if (this != internal_default_instance()) delete opacity_;
   if (this != internal_default_instance()) delete shadow_;
@@ -4709,25 +4658,22 @@ size_t MediaStylePropertyChangeSetArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void MediaStylePropertyChangeSetArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSDSOS.MediaStylePropertyChangeSetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const MediaStylePropertyChangeSetArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<MediaStylePropertyChangeSetArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSDSOS.MediaStylePropertyChangeSetArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSDSOS.MediaStylePropertyChangeSetArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData MediaStylePropertyChangeSetArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    MediaStylePropertyChangeSetArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*MediaStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
+
+void MediaStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<MediaStylePropertyChangeSetArchive *>(to)->MergeFrom(
+      static_cast<const MediaStylePropertyChangeSetArchive &>(from));
 }
+
 
 void MediaStylePropertyChangeSetArchive::MergeFrom(const MediaStylePropertyChangeSetArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSDSOS.MediaStylePropertyChangeSetArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4759,13 +4705,7 @@ void MediaStylePropertyChangeSetArchive::MergeFrom(const MediaStylePropertyChang
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void MediaStylePropertyChangeSetArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSDSOS.MediaStylePropertyChangeSetArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void MediaStylePropertyChangeSetArchive::CopyFrom(const MediaStylePropertyChangeSetArchive& from) {

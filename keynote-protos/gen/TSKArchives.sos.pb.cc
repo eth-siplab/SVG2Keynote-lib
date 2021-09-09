@@ -107,11 +107,14 @@ void FixCorruptedDataCommandArchive::clear_super() {
   if (super_ != nullptr) super_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   corrupted_digest_list_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSKSOS.FixCorruptedDataCommandArchive)
 }
 FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(const FixCorruptedDataCommandArchive& from)
@@ -128,7 +131,7 @@ FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(const FixCorrupte
   // @@protoc_insertion_point(copy_constructor:TSKSOS.FixCorruptedDataCommandArchive)
 }
 
-void FixCorruptedDataCommandArchive::SharedCtor() {
+inline void FixCorruptedDataCommandArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&corrupted_digest_list_undefined_) -
@@ -137,12 +140,13 @@ void FixCorruptedDataCommandArchive::SharedCtor() {
 
 FixCorruptedDataCommandArchive::~FixCorruptedDataCommandArchive() {
   // @@protoc_insertion_point(destructor:TSKSOS.FixCorruptedDataCommandArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void FixCorruptedDataCommandArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void FixCorruptedDataCommandArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete super_;
 }
 
@@ -311,25 +315,22 @@ size_t FixCorruptedDataCommandArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void FixCorruptedDataCommandArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSKSOS.FixCorruptedDataCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const FixCorruptedDataCommandArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FixCorruptedDataCommandArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSKSOS.FixCorruptedDataCommandArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSKSOS.FixCorruptedDataCommandArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FixCorruptedDataCommandArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    FixCorruptedDataCommandArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FixCorruptedDataCommandArchive::GetClassData() const { return &_class_data_; }
+
+void FixCorruptedDataCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<FixCorruptedDataCommandArchive *>(to)->MergeFrom(
+      static_cast<const FixCorruptedDataCommandArchive &>(from));
 }
+
 
 void FixCorruptedDataCommandArchive::MergeFrom(const FixCorruptedDataCommandArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSKSOS.FixCorruptedDataCommandArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -344,13 +345,7 @@ void FixCorruptedDataCommandArchive::MergeFrom(const FixCorruptedDataCommandArch
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void FixCorruptedDataCommandArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSKSOS.FixCorruptedDataCommandArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FixCorruptedDataCommandArchive::CopyFrom(const FixCorruptedDataCommandArchive& from) {

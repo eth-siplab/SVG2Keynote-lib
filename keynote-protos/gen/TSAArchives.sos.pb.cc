@@ -107,11 +107,14 @@ void DrawableZOrderListArchive::clear_container_id() {
 void DrawableZOrderListArchive::clear_drawable_id_list() {
   drawable_id_list_.Clear();
 }
-DrawableZOrderListArchive::DrawableZOrderListArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+DrawableZOrderListArchive::DrawableZOrderListArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
   drawable_id_list_(arena) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:TSASOS.DrawableZOrderListArchive)
 }
 DrawableZOrderListArchive::DrawableZOrderListArchive(const DrawableZOrderListArchive& from)
@@ -128,7 +131,7 @@ DrawableZOrderListArchive::DrawableZOrderListArchive(const DrawableZOrderListArc
   // @@protoc_insertion_point(copy_constructor:TSASOS.DrawableZOrderListArchive)
 }
 
-void DrawableZOrderListArchive::SharedCtor() {
+inline void DrawableZOrderListArchive::SharedCtor() {
 ::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
     reinterpret_cast<char*>(&container_id_) - reinterpret_cast<char*>(this)),
     0, static_cast<size_t>(reinterpret_cast<char*>(&drawable_id_list_undefined_) -
@@ -137,12 +140,13 @@ void DrawableZOrderListArchive::SharedCtor() {
 
 DrawableZOrderListArchive::~DrawableZOrderListArchive() {
   // @@protoc_insertion_point(destructor:TSASOS.DrawableZOrderListArchive)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void DrawableZOrderListArchive::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void DrawableZOrderListArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete container_id_;
 }
 
@@ -307,25 +311,22 @@ size_t DrawableZOrderListArchive::ByteSizeLong() const {
   return total_size;
 }
 
-void DrawableZOrderListArchive::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TSASOS.DrawableZOrderListArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  const DrawableZOrderListArchive* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<DrawableZOrderListArchive>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TSASOS.DrawableZOrderListArchive)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TSASOS.DrawableZOrderListArchive)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DrawableZOrderListArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    DrawableZOrderListArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DrawableZOrderListArchive::GetClassData() const { return &_class_data_; }
+
+void DrawableZOrderListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
+  static_cast<DrawableZOrderListArchive *>(to)->MergeFrom(
+      static_cast<const DrawableZOrderListArchive &>(from));
 }
+
 
 void DrawableZOrderListArchive::MergeFrom(const DrawableZOrderListArchive& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TSASOS.DrawableZOrderListArchive)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -340,13 +341,7 @@ void DrawableZOrderListArchive::MergeFrom(const DrawableZOrderListArchive& from)
     }
     _has_bits_[0] |= cached_has_bits;
   }
-}
-
-void DrawableZOrderListArchive::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TSASOS.DrawableZOrderListArchive)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DrawableZOrderListArchive::CopyFrom(const DrawableZOrderListArchive& from) {
