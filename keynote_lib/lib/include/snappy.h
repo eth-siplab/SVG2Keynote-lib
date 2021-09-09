@@ -36,12 +36,10 @@
 // using BMDiff and then compressing the output of BMDiff with
 // Snappy.
 
-#ifndef THIRD_PARTY_SNAPPY_SNAPPY_H__
-#define THIRD_PARTY_SNAPPY_SNAPPY_H__
+#ifndef UTIL_SNAPPY_SNAPPY_H__
+#define UTIL_SNAPPY_SNAPPY_H__
 
 #include <stddef.h>
-#include <stdint.h>
-
 #include <string>
 
 #include "snappy-stubs-public.h"
@@ -65,18 +63,17 @@ namespace snappy {
   // Also note that this leaves "*source" in a state that is unsuitable for
   // further operations, such as RawUncompress(). You will need to rewind
   // or recreate the source yourself before attempting any further calls.
-  bool GetUncompressedLength(Source* source, uint32_t* result);
+  bool GetUncompressedLength(Source* source, uint32* result);
 
   // ------------------------------------------------------------------------
   // Higher-level string based routines (should be sufficient for most users)
   // ------------------------------------------------------------------------
 
-  // Sets "*compressed" to the compressed version of "input[0,input_length-1]".
-  // Original contents of *compressed are lost.
+  // Sets "*output" to the compressed version of "input[0,input_length-1]".
+  // Original contents of *output are lost.
   //
-  // REQUIRES: "input[]" is not an alias of "*compressed".
-  size_t Compress(const char* input, size_t input_length,
-                  std::string* compressed);
+  // REQUIRES: "input[]" is not an alias of "*output".
+  size_t Compress(const char* input, size_t input_length, string* output);
 
   // Decompresses "compressed[0,compressed_length-1]" to "*uncompressed".
   // Original contents of "*uncompressed" are lost.
@@ -85,20 +82,8 @@ namespace snappy {
   //
   // returns false if the message is corrupted and could not be decompressed
   bool Uncompress(const char* compressed, size_t compressed_length,
-                  std::string* uncompressed);
+                  string* uncompressed);
 
-  // Decompresses "compressed" to "*uncompressed".
-  //
-  // returns false if the message is corrupted and could not be decompressed
-  bool Uncompress(Source* compressed, Sink* uncompressed);
-
-  // This routine uncompresses as much of the "compressed" as possible
-  // into sink.  It returns the number of valid bytes added to sink
-  // (extra invalid bytes may have been added due to errors; the caller
-  // should ignore those). The emitted data typically has length
-  // GetUncompressedLength(), but may be shorter if an error is
-  // encountered.
-  size_t UncompressAsMuchAsPossible(Source* compressed, Sink* uncompressed);
 
   // ------------------------------------------------------------------------
   // Lower-level character array based routines.  May be useful for
@@ -179,14 +164,6 @@ namespace snappy {
   bool IsValidCompressedBuffer(const char* compressed,
                                size_t compressed_length);
 
-  // Returns true iff the contents of "compressed" can be uncompressed
-  // successfully.  Does not return the uncompressed data.  Takes
-  // time proportional to *compressed length, but is usually at least
-  // a factor of four faster than actual decompression.
-  // On success, consumes all of *compressed.  On failure, consumes an
-  // unspecified prefix of *compressed.
-  bool IsValidCompressed(Source* compressed);
-
   // The size of a compression block. Note that many parts of the compression
   // code assumes that kBlockSize <= 65536; in particular, the hash table
   // can only store 16-bit offsets, and EmitCopy() also assumes the offset
@@ -196,14 +173,12 @@ namespace snappy {
   // Note that there might be older data around that is compressed with larger
   // block sizes, so the decompression code should not rely on the
   // non-existence of long backreferences.
-  static constexpr int kBlockLog = 16;
-  static constexpr size_t kBlockSize = 1 << kBlockLog;
+  static const int kBlockLog = 16;
+  static const size_t kBlockSize = 1 << kBlockLog;
 
-  static constexpr int kMinHashTableBits = 8;
-  static constexpr size_t kMinHashTableSize = 1 << kMinHashTableBits;
-
-  static constexpr int kMaxHashTableBits = 14;
-  static constexpr size_t kMaxHashTableSize = 1 << kMaxHashTableBits;
+  static const int kMaxHashTableBits = 14;
+  static const size_t kMaxHashTableSize = 1 << kMaxHashTableBits;
 }  // end namespace snappy
 
-#endif  // THIRD_PARTY_SNAPPY_SNAPPY_H__
+
+#endif  // UTIL_SNAPPY_SNAPPY_H__
