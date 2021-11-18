@@ -1,10 +1,20 @@
-# Keynote Library Documentation
+# Repository for SVG2Keynote library
+
+[Jonathan Lamperth](https://www.linkedin.com/in/jonathan-lamperth-7059b418a) and [Christian Holz](https://www.christianholz.net)<br/>
+[Sensing, Interaction & Perception Lab](https://siplab.org) <br/>
+Department of Computer Science, ETH Zürich
+
+This is the repository for the software library SVG2Keynote to interface with SVG and Apple Keynote .key documents. The library is used by our [SVG2Keynote GUI](https://github.com/eth-siplab/SVG2Keynote-gui).
+
+[SVG2Keynote project page](https://siplab.org/releases/SVG2Keynote)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 To see documentation of the keynote file format click [here](format_documentation/format_documentation.md).
 
 ## Compilation
 
-### Dependancies
+### Dependencies
 Note in order to compile these tools 2 shared libraries are required: Protobuf and Boost (only required for the command line tool). These can be installed as follows using homebrew:
 
 ```
