@@ -1,0 +1,176 @@
+1. Here’s some code for building the libkeynote library:
+
+File "CMakeLists.txt" is: 
+
+---- START CMakeLists.txt ----
+cmake_minimum_required(VERSION 3.15)
+project(keynote)
+enable_language(OBJC)
+
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(Boost_USE_STATIC_LIBS ON)
+
+find_package(Boost 1.70 COMPONENTS filesystem REQUIRED)
+
+add_subdirectory(zipper)
+add_subdirectory(keynote_lib)
+
+# Add svg2key.m to the list of source files
+add_executable(svg2key svg2key.mm keynote_lib/src/key_to_svg/svg_wrapper.cpp keynote_lib/src/key_to_svg/svg_wrapper.h wrapper.mm)
+target_link_libraries(svg2key Boost::filesystem)
+target_link_libraries(svg2key staticZipper)
+
+target_include_directories(svg2key PUBLIC keynote_lib)
+target_link_directories(svg2key PRIVATE keynote_lib)
+target_link_libraries(svg2key keynote_lib)
+
+# Link Objective-C frameworks
+find_library(COCOA_LIBRARY Cocoa)
+target_link_libraries(svg2key ${COCOA_LIBRARY})
+
+---- END CMakeLists.txt ----
+
+File "keynote_lib/headers/keynote.h" is:
+
+---- START keynote.h ----
+//
+// Created by Jonathan Lampérth on 20.05.21.
+//
+
+#ifndef KEYNOTE_KEYNOTE_H
+#define KEYNOTE_KEYNOTE_H
+
+#include<iostream>
+#include <vector>
+
+struct keynoteIWAFile {
+    std::string name;
+    std::vector<unsigned char> contents;
+};
+
+std::string decodeAndEncode(std::string protobufString);
+std::string decodeAddSquareDecode(std::string protobufString);
+std::string generateTSPNativeDataClipboardFromSVG(std::string filePath);
+std::string generateTSPNativeMetadataClipboard();
+std::string generateSVGFromKeynoteIWAFiles(const std::vector<keynoteIWAFile>& entries);
+
+
+
+
+#endif //KEYNOTE_KEYNOTE_H
+---- END keynote.h ----
+
+2. Here’s some other code that uses the library:
+
+File "keynote.hpp" is:
+
+---- START keynote.hpp ----
+//
+// Created by Jonathan Lampérth on 20.05.21.
+//
+
+#ifndef KEYNOTE_CONCEPT_TEST_H
+#define KEYNOTE_CONCEPT_TEST_H
+
+#include<iostream>
+#include <headers/keynote.h>
+#include "src/key_to_svg/svg_wrapper.h"
+
+std::string decodeAndEncode(std::string protobufString);
+std::string decodeAddSquareDecode(std::string protobufString);
+std::string generateTSPNativeDataClipboardFromSVG(std::string filePath);
+std::string generateTSPNativeMetadataClipboard();
+
+
+
+
+#endif //KEYNOTE_CONCEPT_TEST_H
+
+
+
+
+---- END keynote.hpp ----
+
+
+
+File "svgToKeyRepository.swift" is:
+
+---- START svgToKeyRepository.swift ----
+import Foundation
+import Cocoa
+import SwiftUI
+import WebKit
+
+func svgToClipboard (svgData: String) -> Bool {
+    let clipboard = CPP_Wrapper().generateClipboard(forTSPNativeData: svgData);
+    let metadata = CPP_Wrapper().generateClipboardMetadata();
+    let pasteboard = NSPasteboard.general;
+    
+    // declare pasteboard types
+    let TSPNativeDataType = NSPasteboard.PasteboardType(rawValue: "com.apple.iWork.TSPNativeData");
+    let TSPNativeMetadataType = NSPasteboard.PasteboardType(rawValue: "com.apple.iWork.TSPNativeMetadata");
+    let hasNativeDrawables = NSPasteboard.PasteboardType(rawValue: "com.apple.iWork.pasteboardState.hasNativeDrawables");
+    
+    pasteboard.declareTypes([TSPNativeDataType, TSPNativeMetadataType, hasNativeDrawables], owner: nil);
+    pasteboard.setData(clipboard, forType: NSPasteboard.PasteboardType("com.apple.iWork.TSPNativeData"));
+    pasteboard.setData(metadata, forType: NSPasteboard.PasteboardType("com.apple.iWork.TSPNativeMetadata"));
+    pasteboard.setString("", forType: NSPasteboard.PasteboardType("com.apple.iWork.pasteboardState.hasNativeDrawables"));
+    
+    return true;
+}
+
+func decodeAndEncodeSwift () -> Void {
+    
+    let pasteboard = NSPasteboard.general;
+    let data = pasteboard.data(forType: NSPasteboard.PasteboardType("com.apple.iWork.TSPNativeData"))
+    CPP_Wrapper().decodeAndEncodeClip(data);
+}
+---- END svgToKeyRepository.swift ----
+
+
+File "wrapper.h" is:
+
+---- START wrapper.h ----
+#import <Foundation/Foundation.h>
+
+@interface CPP_Wrapper : NSObject
+- (NSData *) generateClipboardForTSPNativeData: (NSString*)filePath;
+- (NSData *) generateClipboardMetadata;
+- (NSData *) decodeAndEncodeClip: (NSData*) data;
+@end
+---- END wrapper.h ----
+
+File "wrapper.mm" is:
+
+---- START wrapper.mm ----
+#import "wrapper.h"
+#include "keynote.hpp"
+
+@implementation CPP_Wrapper
+
+
+- (NSData *) generateClipboardForTSPNativeData: (NSString*) filePath {
+    std::string stddata([filePath UTF8String]);
+    std::string response = generateTSPNativeDataClipboardFromSVG(stddata);
+    return [[NSData alloc] initWithBytes:response.data() length:response.length()];
+}
+
+- (NSData *) generateClipboardMetadata {
+    std::string response = generateTSPNativeMetadataClipboard();
+    return [[NSData alloc] initWithBytes:response.data() length:response.length()];
+}
+
+
+- (NSData *) decodeAndEncodeClip: (NSData*) data {
+    std::string str = std::string((char* )data.bytes, (int)data.length);
+    std::string response = decodeAndEncode(str);
+    return [[NSData alloc] initWithBytes:response.data() length:response.length()];
+}
+@end
+---- END wrapper.mm ----
+
+I don’t want this mix of Swift, ObjC etc. I want you to write one CLI tool in Objective C that uses the libkeynote, reads the SVG from stdin and copies the Keynote data into the macOS clipboard. 

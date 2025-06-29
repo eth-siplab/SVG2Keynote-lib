@@ -1,8 +1,10 @@
-project(keynote)
 cmake_minimum_required(VERSION 3.15)
+project(keynote)
 
-set(CMAKE_OSX_ARCHITECTURES x86_64)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 find_package(Protobuf REQUIRED)
 find_package(Boost 1.70 COMPONENTS filesystem REQUIRED)
@@ -27,7 +29,18 @@ install(TARGETS keynote_lib DESTINATION lib)
 install(FILES keynote_lib.h DESTINATION include)
 
 target_link_libraries(keynote_lib ${Protobuf_LIBRARIES})
-target_link_libraries(keynote_lib ${CMAKE_CURRENT_SOURCE_DIR}/lib/libsnappy.a)
+#target_link_libraries(keynote_lib ${CMAKE_CURRENT_SOURCE_DIR}/lib/libsnappy.a)
+
+find_library(SNAPPY_LIBRARY
+    NAMES snappy
+    PATHS /usr/local/lib /opt/homebrew/lib
+)
+
+if(NOT SNAPPY_LIBRARY)
+    message(FATAL_ERROR "Snappy library not found")
+endif()
+
+target_link_libraries(keynote_lib ${SNAPPY_LIBRARY})
 
 #set_property(TARGET keynote_lib PROPERTY INTERPROCEDURAL_OPTIMIZATION TRUE)
 #set(CMAKE_STATIC_LINKER_FLAGS "-Wl,-dead_strip -Wl,--gc-sections")

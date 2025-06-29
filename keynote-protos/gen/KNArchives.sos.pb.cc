@@ -16,134 +16,1031 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace KNSOS {
-constexpr SpecSetTransitionAttributesArchive::SpecSetTransitionAttributesArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : transition_attributes_(nullptr)
-  , unset_(false){}
+PROTOBUF_CONSTEXPR SpecSetTransitionAttributesArchive::SpecSetTransitionAttributesArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.transition_attributes_)*/nullptr
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetTransitionAttributesArchiveDefaultTypeInternal {
-  constexpr SpecSetTransitionAttributesArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetTransitionAttributesArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetTransitionAttributesArchiveDefaultTypeInternal() {}
   union {
     SpecSetTransitionAttributesArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetTransitionAttributesArchiveDefaultTypeInternal _SpecSetTransitionAttributesArchive_default_instance_;
-constexpr SpecTransitionAttributesArchive::SpecTransitionAttributesArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_transition_attributes_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetTransitionAttributesArchiveDefaultTypeInternal _SpecSetTransitionAttributesArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecTransitionAttributesArchive::SpecTransitionAttributesArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_transition_attributes_)*/nullptr} {}
 struct SpecTransitionAttributesArchiveDefaultTypeInternal {
-  constexpr SpecTransitionAttributesArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecTransitionAttributesArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecTransitionAttributesArchiveDefaultTypeInternal() {}
   union {
     SpecTransitionAttributesArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecTransitionAttributesArchiveDefaultTypeInternal _SpecTransitionAttributesArchive_default_instance_;
-constexpr SlideStylePropertyChangeSetArchive::SlideStylePropertyChangeSetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : fill_(nullptr)
-  , slide_transition_(nullptr)
-  , fill_undefined_(false)
-  , slide_transition_undefined_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecTransitionAttributesArchiveDefaultTypeInternal _SpecTransitionAttributesArchive_default_instance_;
+PROTOBUF_CONSTEXPR MotionBackgroundStylePropertyChangeSetArchive::MotionBackgroundStylePropertyChangeSetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.name_)*/nullptr
+  , /*decltype(_impl_.variant_)*/nullptr
+  , /*decltype(_impl_.color_gradient_)*/nullptr
+  , /*decltype(_impl_.random_seed_)*/nullptr
+  , /*decltype(_impl_.color_blur_sigma_)*/nullptr
+  , /*decltype(_impl_.color_contrast_)*/nullptr
+  , /*decltype(_impl_.color_gamma_)*/nullptr
+  , /*decltype(_impl_.color_saturation_)*/nullptr
+  , /*decltype(_impl_.color_brightness_)*/nullptr
+  , /*decltype(_impl_.color_hue_)*/nullptr
+  , /*decltype(_impl_.color_vibrance_)*/nullptr
+  , /*decltype(_impl_.noise_amplitude_)*/nullptr
+  , /*decltype(_impl_.noise_movement_)*/nullptr
+  , /*decltype(_impl_.noise_octaves_)*/nullptr
+  , /*decltype(_impl_.noise_scale_)*/nullptr
+  , /*decltype(_impl_.noise_scale_horizontal_)*/nullptr
+  , /*decltype(_impl_.noise_scale_vertical_)*/nullptr
+  , /*decltype(_impl_.noise_gain_)*/nullptr
+  , /*decltype(_impl_.noise_lacunarity_)*/nullptr
+  , /*decltype(_impl_.noise_speed_)*/nullptr
+  , /*decltype(_impl_.color_palette_offset_)*/nullptr
+  , /*decltype(_impl_.zoom_)*/nullptr
+  , /*decltype(_impl_.invert_)*/nullptr
+  , /*decltype(_impl_.blend_mode_)*/nullptr
+  , /*decltype(_impl_.source_blend_factor_)*/nullptr
+  , /*decltype(_impl_.dest_blend_factor_)*/nullptr
+  , /*decltype(_impl_.motion_)*/nullptr
+  , /*decltype(_impl_.background_color_)*/nullptr
+  , /*decltype(_impl_.foreground_color_)*/nullptr
+  , /*decltype(_impl_.line_color_)*/nullptr
+  , /*decltype(_impl_.point_color_)*/nullptr
+  , /*decltype(_impl_.alpha_)*/nullptr
+  , /*decltype(_impl_.border_)*/nullptr
+  , /*decltype(_impl_.blend_)*/nullptr
+  , /*decltype(_impl_.brightness_)*/nullptr
+  , /*decltype(_impl_.border_lightness_)*/nullptr
+  , /*decltype(_impl_.contrast_)*/nullptr
+  , /*decltype(_impl_.damping_)*/nullptr
+  , /*decltype(_impl_.density_)*/nullptr
+  , /*decltype(_impl_.diffuse_power_)*/nullptr
+  , /*decltype(_impl_.distortion_)*/nullptr
+  , /*decltype(_impl_.entropy_)*/nullptr
+  , /*decltype(_impl_.exposure_)*/nullptr
+  , /*decltype(_impl_.filter_)*/nullptr
+  , /*decltype(_impl_.fog_distance_)*/nullptr
+  , /*decltype(_impl_.fog_power_)*/nullptr
+  , /*decltype(_impl_.gamma_)*/nullptr
+  , /*decltype(_impl_.grain_amount_)*/nullptr
+  , /*decltype(_impl_.grain_intensity_)*/nullptr
+  , /*decltype(_impl_.hue_)*/nullptr
+  , /*decltype(_impl_.lightness_)*/nullptr
+  , /*decltype(_impl_.line_alpha_)*/nullptr
+  , /*decltype(_impl_.line_center_)*/nullptr
+  , /*decltype(_impl_.line_fade_)*/nullptr
+  , /*decltype(_impl_.line_fade_power_)*/nullptr
+  , /*decltype(_impl_.line_length_)*/nullptr
+  , /*decltype(_impl_.line_width_)*/nullptr
+  , /*decltype(_impl_.noise_size_scale_)*/nullptr
+  , /*decltype(_impl_.noise_size_weight_)*/nullptr
+  , /*decltype(_impl_.noise_variance_)*/nullptr
+  , /*decltype(_impl_.offset_)*/nullptr
+  , /*decltype(_impl_.motion_background_opacity_)*/nullptr
+  , /*decltype(_impl_.point_depth_alpha_)*/nullptr
+  , /*decltype(_impl_.point_size_)*/nullptr
+  , /*decltype(_impl_.power_)*/nullptr
+  , /*decltype(_impl_.radius_)*/nullptr
+  , /*decltype(_impl_.refraction_)*/nullptr
+  , /*decltype(_impl_.resolution_)*/nullptr
+  , /*decltype(_impl_.saturation_)*/nullptr
+  , /*decltype(_impl_.scale_)*/nullptr
+  , /*decltype(_impl_.shadow_alpha_)*/nullptr
+  , /*decltype(_impl_.shadow_angle_)*/nullptr
+  , /*decltype(_impl_.shadow_offset_)*/nullptr
+  , /*decltype(_impl_.shadow_scale_)*/nullptr
+  , /*decltype(_impl_.shadow_value_)*/nullptr
+  , /*decltype(_impl_.speed_)*/nullptr
+  , /*decltype(_impl_.texture_power_)*/nullptr
+  , /*decltype(_impl_.time_)*/nullptr
+  , /*decltype(_impl_.draw_points_)*/nullptr
+  , /*decltype(_impl_.draw_lines_)*/nullptr
+  , /*decltype(_impl_.draw_shadows_)*/nullptr
+  , /*decltype(_impl_.pixels_per_division_)*/nullptr
+  , /*decltype(_impl_.symmetry_)*/nullptr
+  , /*decltype(_impl_.lock_focus_)*/nullptr
+  , /*decltype(_impl_.amplitude_)*/nullptr
+  , /*decltype(_impl_.envelope_)*/nullptr
+  , /*decltype(_impl_.y_offset_)*/nullptr
+  , /*decltype(_impl_.focus_)*/nullptr
+  , /*decltype(_impl_.blur_)*/nullptr
+  , /*decltype(_impl_.grain_speed_)*/nullptr
+  , /*decltype(_impl_.mesh_color_)*/nullptr
+  , /*decltype(_impl_.angle_)*/nullptr
+  , /*decltype(_impl_.mesh_line_width_)*/nullptr
+  , /*decltype(_impl_.delta_time_)*/nullptr
+  , /*decltype(_impl_.threshold_)*/nullptr
+  , /*decltype(_impl_.time_start_)*/nullptr
+  , /*decltype(_impl_.instance_count_)*/nullptr
+  , /*decltype(_impl_.extrusion_)*/nullptr
+  , /*decltype(_impl_.noise_offset_)*/nullptr
+  , /*decltype(_impl_.color_hue_offset_)*/nullptr
+  , /*decltype(_impl_.shadow_hue_)*/nullptr
+  , /*decltype(_impl_.shadow_hue_offset_)*/nullptr
+  , /*decltype(_impl_.shadow_saturation_)*/nullptr
+  , /*decltype(_impl_.shadow_brightness_)*/nullptr
+  , /*decltype(_impl_.shadow_intensity_)*/nullptr
+  , /*decltype(_impl_.shadow_power_)*/nullptr
+  , /*decltype(_impl_.noise_octaves_iterations_)*/nullptr
+  , /*decltype(_impl_.name_undefined_)*/false
+  , /*decltype(_impl_.variant_undefined_)*/false
+  , /*decltype(_impl_.color_gradient_undefined_)*/false
+  , /*decltype(_impl_.random_seed_undefined_)*/false
+  , /*decltype(_impl_.color_blur_sigma_undefined_)*/false
+  , /*decltype(_impl_.color_contrast_undefined_)*/false
+  , /*decltype(_impl_.color_gamma_undefined_)*/false
+  , /*decltype(_impl_.color_saturation_undefined_)*/false
+  , /*decltype(_impl_.color_brightness_undefined_)*/false
+  , /*decltype(_impl_.color_hue_undefined_)*/false
+  , /*decltype(_impl_.color_vibrance_undefined_)*/false
+  , /*decltype(_impl_.noise_amplitude_undefined_)*/false
+  , /*decltype(_impl_.noise_movement_undefined_)*/false
+  , /*decltype(_impl_.noise_octaves_undefined_)*/false
+  , /*decltype(_impl_.noise_scale_undefined_)*/false
+  , /*decltype(_impl_.noise_scale_horizontal_undefined_)*/false
+  , /*decltype(_impl_.noise_scale_vertical_undefined_)*/false
+  , /*decltype(_impl_.noise_gain_undefined_)*/false
+  , /*decltype(_impl_.noise_lacunarity_undefined_)*/false
+  , /*decltype(_impl_.noise_speed_undefined_)*/false
+  , /*decltype(_impl_.color_palette_offset_undefined_)*/false
+  , /*decltype(_impl_.zoom_undefined_)*/false
+  , /*decltype(_impl_.invert_undefined_)*/false
+  , /*decltype(_impl_.blend_mode_undefined_)*/false
+  , /*decltype(_impl_.source_blend_factor_undefined_)*/false
+  , /*decltype(_impl_.dest_blend_factor_undefined_)*/false
+  , /*decltype(_impl_.motion_undefined_)*/false
+  , /*decltype(_impl_.background_color_undefined_)*/false
+  , /*decltype(_impl_.foreground_color_undefined_)*/false
+  , /*decltype(_impl_.line_color_undefined_)*/false
+  , /*decltype(_impl_.point_color_undefined_)*/false
+  , /*decltype(_impl_.alpha_undefined_)*/false
+  , /*decltype(_impl_.border_undefined_)*/false
+  , /*decltype(_impl_.blend_undefined_)*/false
+  , /*decltype(_impl_.brightness_undefined_)*/false
+  , /*decltype(_impl_.border_lightness_undefined_)*/false
+  , /*decltype(_impl_.contrast_undefined_)*/false
+  , /*decltype(_impl_.damping_undefined_)*/false
+  , /*decltype(_impl_.density_undefined_)*/false
+  , /*decltype(_impl_.diffuse_power_undefined_)*/false
+  , /*decltype(_impl_.distortion_undefined_)*/false
+  , /*decltype(_impl_.entropy_undefined_)*/false
+  , /*decltype(_impl_.exposure_undefined_)*/false
+  , /*decltype(_impl_.filter_undefined_)*/false
+  , /*decltype(_impl_.fog_distance_undefined_)*/false
+  , /*decltype(_impl_.fog_power_undefined_)*/false
+  , /*decltype(_impl_.gamma_undefined_)*/false
+  , /*decltype(_impl_.grain_amount_undefined_)*/false
+  , /*decltype(_impl_.grain_intensity_undefined_)*/false
+  , /*decltype(_impl_.hue_undefined_)*/false
+  , /*decltype(_impl_.lightness_undefined_)*/false
+  , /*decltype(_impl_.line_alpha_undefined_)*/false
+  , /*decltype(_impl_.line_center_undefined_)*/false
+  , /*decltype(_impl_.line_fade_undefined_)*/false
+  , /*decltype(_impl_.line_fade_power_undefined_)*/false
+  , /*decltype(_impl_.line_length_undefined_)*/false
+  , /*decltype(_impl_.line_width_undefined_)*/false
+  , /*decltype(_impl_.noise_size_scale_undefined_)*/false
+  , /*decltype(_impl_.noise_size_weight_undefined_)*/false
+  , /*decltype(_impl_.noise_variance_undefined_)*/false
+  , /*decltype(_impl_.offset_undefined_)*/false
+  , /*decltype(_impl_.motion_background_opacity_undefined_)*/false
+  , /*decltype(_impl_.point_depth_alpha_undefined_)*/false
+  , /*decltype(_impl_.point_size_undefined_)*/false
+  , /*decltype(_impl_.power_undefined_)*/false
+  , /*decltype(_impl_.radius_undefined_)*/false
+  , /*decltype(_impl_.refraction_undefined_)*/false
+  , /*decltype(_impl_.resolution_undefined_)*/false
+  , /*decltype(_impl_.saturation_undefined_)*/false
+  , /*decltype(_impl_.scale_undefined_)*/false
+  , /*decltype(_impl_.shadow_alpha_undefined_)*/false
+  , /*decltype(_impl_.shadow_angle_undefined_)*/false
+  , /*decltype(_impl_.shadow_offset_undefined_)*/false
+  , /*decltype(_impl_.shadow_scale_undefined_)*/false
+  , /*decltype(_impl_.shadow_value_undefined_)*/false
+  , /*decltype(_impl_.speed_undefined_)*/false
+  , /*decltype(_impl_.texture_power_undefined_)*/false
+  , /*decltype(_impl_.time_undefined_)*/false
+  , /*decltype(_impl_.draw_points_undefined_)*/false
+  , /*decltype(_impl_.draw_lines_undefined_)*/false
+  , /*decltype(_impl_.draw_shadows_undefined_)*/false
+  , /*decltype(_impl_.pixels_per_division_undefined_)*/false
+  , /*decltype(_impl_.symmetry_undefined_)*/false
+  , /*decltype(_impl_.lock_focus_undefined_)*/false
+  , /*decltype(_impl_.amplitude_undefined_)*/false
+  , /*decltype(_impl_.envelope_undefined_)*/false
+  , /*decltype(_impl_.y_offset_undefined_)*/false
+  , /*decltype(_impl_.focus_undefined_)*/false
+  , /*decltype(_impl_.blur_undefined_)*/false
+  , /*decltype(_impl_.grain_speed_undefined_)*/false
+  , /*decltype(_impl_.mesh_color_undefined_)*/false
+  , /*decltype(_impl_.angle_undefined_)*/false
+  , /*decltype(_impl_.mesh_line_width_undefined_)*/false
+  , /*decltype(_impl_.delta_time_undefined_)*/false
+  , /*decltype(_impl_.threshold_undefined_)*/false
+  , /*decltype(_impl_.time_start_undefined_)*/false
+  , /*decltype(_impl_.instance_count_undefined_)*/false
+  , /*decltype(_impl_.extrusion_undefined_)*/false
+  , /*decltype(_impl_.noise_offset_undefined_)*/false
+  , /*decltype(_impl_.color_hue_offset_undefined_)*/false
+  , /*decltype(_impl_.shadow_hue_undefined_)*/false
+  , /*decltype(_impl_.shadow_hue_offset_undefined_)*/false
+  , /*decltype(_impl_.shadow_saturation_undefined_)*/false
+  , /*decltype(_impl_.shadow_brightness_undefined_)*/false
+  , /*decltype(_impl_.shadow_intensity_undefined_)*/false
+  , /*decltype(_impl_.shadow_power_undefined_)*/false
+  , /*decltype(_impl_.noise_octaves_iterations_undefined_)*/false} {}
+struct MotionBackgroundStylePropertyChangeSetArchiveDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR MotionBackgroundStylePropertyChangeSetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~MotionBackgroundStylePropertyChangeSetArchiveDefaultTypeInternal() {}
+  union {
+    MotionBackgroundStylePropertyChangeSetArchive _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 MotionBackgroundStylePropertyChangeSetArchiveDefaultTypeInternal _MotionBackgroundStylePropertyChangeSetArchive_default_instance_;
+PROTOBUF_CONSTEXPR SlideStylePropertyChangeSetArchive::SlideStylePropertyChangeSetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.fill_)*/nullptr
+  , /*decltype(_impl_.slide_transition_)*/nullptr
+  , /*decltype(_impl_.fill_undefined_)*/false
+  , /*decltype(_impl_.slide_transition_undefined_)*/false} {}
 struct SlideStylePropertyChangeSetArchiveDefaultTypeInternal {
-  constexpr SlideStylePropertyChangeSetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SlideStylePropertyChangeSetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SlideStylePropertyChangeSetArchiveDefaultTypeInternal() {}
   union {
     SlideStylePropertyChangeSetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SlideStylePropertyChangeSetArchiveDefaultTypeInternal _SlideStylePropertyChangeSetArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SlideStylePropertyChangeSetArchiveDefaultTypeInternal _SlideStylePropertyChangeSetArchive_default_instance_;
 }  // namespace KNSOS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_KNArchives_2esos_2eproto[3];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_KNArchives_2esos_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_KNArchives_2esos_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_KNArchives_2esos_2eproto[4];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_KNArchives_2esos_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_KNArchives_2esos_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_KNArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, _has_bits_),
+const uint32_t TableStruct_KNArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, transition_attributes_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, _impl_.transition_attributes_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecSetTransitionAttributesArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecTransitionAttributesArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecTransitionAttributesArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::SpecTransitionAttributesArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecTransitionAttributesArchive, spec_set_transition_attributes_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SpecTransitionAttributesArchive, _impl_.spec_set_transition_attributes_),
   0,
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.name_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.variant_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.variant_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_gradient_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_gradient_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.random_seed_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.random_seed_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_blur_sigma_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_blur_sigma_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_contrast_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_contrast_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_gamma_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_gamma_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_saturation_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_saturation_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_brightness_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_brightness_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_hue_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_hue_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_vibrance_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_vibrance_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_amplitude_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_amplitude_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_movement_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_movement_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_octaves_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_octaves_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_horizontal_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_horizontal_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_vertical_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_scale_vertical_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_gain_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_gain_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_lacunarity_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_lacunarity_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_speed_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_speed_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_palette_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_palette_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.zoom_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.zoom_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.invert_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.invert_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blend_mode_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blend_mode_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.source_blend_factor_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.source_blend_factor_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.dest_blend_factor_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.dest_blend_factor_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.motion_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.motion_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.background_color_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.background_color_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.foreground_color_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.foreground_color_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_color_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_color_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_color_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_color_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.alpha_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.alpha_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.border_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.border_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blend_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blend_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.brightness_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.brightness_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.border_lightness_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.border_lightness_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.contrast_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.contrast_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.damping_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.damping_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.density_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.density_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.diffuse_power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.diffuse_power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.distortion_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.distortion_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.entropy_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.entropy_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.exposure_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.exposure_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.filter_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.filter_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.fog_distance_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.fog_distance_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.fog_power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.fog_power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.gamma_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.gamma_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_amount_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_amount_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_intensity_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_intensity_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.hue_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.hue_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.lightness_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.lightness_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_alpha_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_alpha_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_center_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_center_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_fade_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_fade_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_fade_power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_fade_power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_length_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_length_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_width_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.line_width_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_size_scale_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_size_scale_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_size_weight_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_size_weight_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_variance_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_variance_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.motion_background_opacity_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.motion_background_opacity_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_depth_alpha_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_depth_alpha_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_size_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.point_size_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.radius_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.radius_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.refraction_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.refraction_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.resolution_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.resolution_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.saturation_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.saturation_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.scale_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.scale_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_alpha_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_alpha_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_angle_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_angle_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_scale_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_scale_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_value_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_value_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.speed_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.speed_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.texture_power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.texture_power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.time_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.time_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_points_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_points_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_lines_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_lines_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_shadows_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.draw_shadows_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.pixels_per_division_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.pixels_per_division_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.symmetry_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.symmetry_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.lock_focus_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.lock_focus_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.amplitude_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.amplitude_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.envelope_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.envelope_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.y_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.y_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.focus_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.focus_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blur_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.blur_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_speed_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.grain_speed_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.mesh_color_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.mesh_color_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.angle_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.angle_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.mesh_line_width_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.mesh_line_width_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.delta_time_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.delta_time_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.threshold_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.threshold_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.time_start_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.time_start_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.instance_count_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.instance_count_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.extrusion_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.extrusion_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_hue_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.color_hue_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_hue_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_hue_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_hue_offset_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_hue_offset_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_saturation_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_saturation_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_brightness_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_brightness_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_intensity_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_intensity_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_power_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.shadow_power_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_octaves_iterations_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_octaves_iterations_undefined_),
+  0,
+  107,
+  1,
+  108,
+  2,
+  109,
+  3,
+  110,
+  4,
+  111,
+  5,
+  112,
+  6,
+  113,
+  7,
+  114,
+  8,
+  115,
+  9,
+  116,
+  10,
+  117,
+  11,
+  118,
+  12,
+  119,
+  13,
+  120,
+  14,
+  121,
+  15,
+  122,
+  16,
+  123,
+  17,
+  124,
+  18,
+  125,
+  19,
+  126,
+  20,
+  127,
+  21,
+  128,
+  22,
+  129,
+  23,
+  130,
+  24,
+  131,
+  25,
+  132,
+  26,
+  133,
+  27,
+  134,
+  28,
+  135,
+  29,
+  136,
+  30,
+  137,
+  31,
+  138,
+  32,
+  139,
+  33,
+  140,
+  34,
+  141,
+  35,
+  142,
+  36,
+  143,
+  37,
+  144,
+  38,
+  145,
+  39,
+  146,
+  40,
+  147,
+  41,
+  148,
+  42,
+  149,
+  43,
+  150,
+  44,
+  151,
+  45,
+  152,
+  46,
+  153,
+  47,
+  154,
+  48,
+  155,
+  49,
+  156,
+  50,
+  157,
+  51,
+  158,
+  52,
+  159,
+  53,
+  160,
+  54,
+  161,
+  55,
+  162,
+  56,
+  163,
+  57,
+  164,
+  58,
+  165,
+  59,
+  166,
+  60,
+  167,
+  61,
+  168,
+  62,
+  169,
+  63,
+  170,
+  64,
+  171,
+  65,
+  172,
+  66,
+  173,
+  67,
+  174,
+  68,
+  175,
+  69,
+  176,
+  70,
+  177,
+  71,
+  178,
+  72,
+  179,
+  73,
+  180,
+  74,
+  181,
+  75,
+  182,
+  76,
+  183,
+  77,
+  184,
+  78,
+  185,
+  79,
+  186,
+  80,
+  187,
+  81,
+  188,
+  82,
+  189,
+  83,
+  190,
+  84,
+  191,
+  85,
+  192,
+  86,
+  193,
+  87,
+  194,
+  88,
+  195,
+  89,
+  196,
+  90,
+  197,
+  91,
+  198,
+  92,
+  199,
+  93,
+  200,
+  94,
+  201,
+  95,
+  202,
+  96,
+  203,
+  97,
+  204,
+  98,
+  205,
+  99,
+  206,
+  100,
+  207,
+  101,
+  208,
+  102,
+  209,
+  103,
+  210,
+  104,
+  211,
+  105,
+  212,
+  106,
+  213,
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, fill_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, fill_undefined_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, slide_transition_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, slide_transition_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _impl_.fill_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _impl_.fill_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _impl_.slide_transition_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::SlideStylePropertyChangeSetArchive, _impl_.slide_transition_undefined_),
   0,
   2,
   1,
   3,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::KNSOS::SpecSetTransitionAttributesArchive)},
-  { 9, 15, sizeof(::KNSOS::SpecTransitionAttributesArchive)},
-  { 16, 25, sizeof(::KNSOS::SlideStylePropertyChangeSetArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 8, -1, sizeof(::KNSOS::SpecSetTransitionAttributesArchive)},
+  { 10, 17, -1, sizeof(::KNSOS::SpecTransitionAttributesArchive)},
+  { 18, 238, -1, sizeof(::KNSOS::MotionBackgroundStylePropertyChangeSetArchive)},
+  { 452, 462, -1, sizeof(::KNSOS::SlideStylePropertyChangeSetArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_SpecSetTransitionAttributesArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_SpecTransitionAttributesArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_SlideStylePropertyChangeSetArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::KNSOS::_SpecSetTransitionAttributesArchive_default_instance_._instance,
+  &::KNSOS::_SpecTransitionAttributesArchive_default_instance_._instance,
+  &::KNSOS::_MotionBackgroundStylePropertyChangeSetArchive_default_instance_._instance,
+  &::KNSOS::_SlideStylePropertyChangeSetArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_KNArchives_2esos_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\024KNArchives.sos.proto\022\005KNSOS\032\020KNArchive"
-  "s.proto\032\025TSDArchives.sos.proto\"s\n\"SpecSe"
-  "tTransitionAttributesArchive\022>\n\025transiti"
-  "on_attributes\030\001 \001(\0132\037.KN.TransitionAttri"
-  "butesArchive\022\r\n\005unset\030\002 \002(\010\"t\n\037SpecTrans"
-  "itionAttributesArchive\022Q\n\036spec_set_trans"
-  "ition_attributes\030\001 \001(\0132).KNSOS.SpecSetTr"
-  "ansitionAttributesArchive\"\311\001\n\"SlideStyle"
-  "PropertyChangeSetArchive\022%\n\004fill\030\001 \001(\0132\027"
-  ".TSDSOS.SpecFillArchive\022\026\n\016fill_undefine"
-  "d\030\002 \001(\010\022@\n\020slide_transition\030\003 \001(\0132&.KNSO"
-  "S.SpecTransitionAttributesArchive\022\"\n\032sli"
-  "de_transition_undefined\030\004 \001(\010"
+  "\n\024KNArchives.sos.proto\022\005KNSOS\032\021TSPMessag"
+  "es.proto\032\020KNArchives.proto\032\025TSDArchives."
+  "sos.proto\032\025TSSArchives.sos.proto\"s\n\"Spec"
+  "SetTransitionAttributesArchive\022>\n\025transi"
+  "tion_attributes\030\001 \001(\0132\037.KN.TransitionAtt"
+  "ributesArchive\022\r\n\005unset\030\002 \002(\010\"t\n\037SpecTra"
+  "nsitionAttributesArchive\022Q\n\036spec_set_tra"
+  "nsition_attributes\030\001 \001(\0132).KNSOS.SpecSet"
+  "TransitionAttributesArchive\"\277C\n-MotionBa"
+  "ckgroundStylePropertyChangeSetArchive\022\'\n"
+  "\004name\030\001 \001(\0132\031.TSSSOS.SpecStringArchive\022\026"
+  "\n\016name_undefined\030\002 \001(\010\022*\n\007variant\030\003 \001(\0132"
+  "\031.TSSSOS.SpecStringArchive\022\031\n\021variant_un"
+  "defined\030\004 \001(\010\022/\n\016color_gradient\030\005 \001(\0132\027."
+  "TSDSOS.SpecFillArchive\022 \n\030color_gradient"
+  "_undefined\030\006 \001(\010\022/\n\013random_seed\030\007 \001(\0132\032."
+  "TSSSOS.SpecIntegerArchive\022\035\n\025random_seed"
+  "_undefined\030\010 \001(\010\0223\n\020color_blur_sigma\030\t \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022\"\n\032color_b"
+  "lur_sigma_undefined\030\n \001(\010\0221\n\016color_contr"
+  "ast\030\013 \001(\0132\031.TSSSOS.SpecDoubleArchive\022 \n\030"
+  "color_contrast_undefined\030\014 \001(\010\022.\n\013color_"
+  "gamma\030\r \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035"
+  "\n\025color_gamma_undefined\030\016 \001(\010\0223\n\020color_s"
+  "aturation\030\017 \001(\0132\031.TSSSOS.SpecDoubleArchi"
+  "ve\022\"\n\032color_saturation_undefined\030\020 \001(\010\0223"
+  "\n\020color_brightness\030\021 \001(\0132\031.TSSSOS.SpecDo"
+  "ubleArchive\022\"\n\032color_brightness_undefine"
+  "d\030\022 \001(\010\022,\n\tcolor_hue\030\023 \001(\0132\031.TSSSOS.Spec"
+  "DoubleArchive\022\033\n\023color_hue_undefined\030\024 \001"
+  "(\010\0221\n\016color_vibrance\030\025 \001(\0132\031.TSSSOS.Spec"
+  "DoubleArchive\022 \n\030color_vibrance_undefine"
+  "d\030\026 \001(\010\0222\n\017noise_amplitude\030\027 \001(\0132\031.TSSSO"
+  "S.SpecDoubleArchive\022!\n\031noise_amplitude_u"
+  "ndefined\030\030 \001(\010\0221\n\016noise_movement\030\031 \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022 \n\030noise_movem"
+  "ent_undefined\030\032 \001(\010\0220\n\rnoise_octaves\030\033 \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022\037\n\027noise_o"
+  "ctaves_undefined\030\034 \001(\010\022.\n\013noise_scale\030\035 "
+  "\001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n\025noise_"
+  "scale_undefined\030\036 \001(\010\0229\n\026noise_scale_hor"
+  "izontal\030\037 \001(\0132\031.TSSSOS.SpecDoubleArchive"
+  "\022(\n noise_scale_horizontal_undefined\030  \001"
+  "(\010\0227\n\024noise_scale_vertical\030! \001(\0132\031.TSSSO"
+  "S.SpecDoubleArchive\022&\n\036noise_scale_verti"
+  "cal_undefined\030\" \001(\010\022-\n\nnoise_gain\030# \001(\0132"
+  "\031.TSSSOS.SpecDoubleArchive\022\034\n\024noise_gain"
+  "_undefined\030$ \001(\010\0223\n\020noise_lacunarity\030% \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022\"\n\032noise_l"
+  "acunarity_undefined\030& \001(\010\022.\n\013noise_speed"
+  "\030\' \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n\025noi"
+  "se_speed_undefined\030( \001(\010\0228\n\024color_palett"
+  "e_offset\030) \001(\0132\032.TSSSOS.SpecIntegerArchi"
+  "ve\022&\n\036color_palette_offset_undefined\030* \001"
+  "(\010\022\'\n\004zoom\030+ \001(\0132\031.TSSSOS.SpecDoubleArch"
+  "ive\022\026\n\016zoom_undefined\030, \001(\010\022\'\n\006invert\030- "
+  "\001(\0132\027.TSSSOS.SpecBoolArchive\022\030\n\020invert_u"
+  "ndefined\030. \001(\010\022-\n\nblend_mode\030/ \001(\0132\031.TSS"
+  "SOS.SpecStringArchive\022\034\n\024blend_mode_unde"
+  "fined\0300 \001(\010\0226\n\023source_blend_factor\0301 \001(\013"
+  "2\031.TSSSOS.SpecStringArchive\022%\n\035source_bl"
+  "end_factor_undefined\0302 \001(\010\0224\n\021dest_blend"
+  "_factor\0303 \001(\0132\031.TSSSOS.SpecStringArchive"
+  "\022#\n\033dest_blend_factor_undefined\0304 \001(\010\022)\n"
+  "\006motion\0305 \001(\0132\031.TSSSOS.SpecStringArchive"
+  "\022\030\n\020motion_undefined\0306 \001(\010\0222\n\020background"
+  "_color\0307 \001(\0132\030.TSSSOS.SpecColorArchive\022\""
+  "\n\032background_color_undefined\0308 \001(\010\0222\n\020fo"
+  "reground_color\0309 \001(\0132\030.TSSSOS.SpecColorA"
+  "rchive\022\"\n\032foreground_color_undefined\030: \001"
+  "(\010\022,\n\nline_color\030; \001(\0132\030.TSSSOS.SpecColo"
+  "rArchive\022\034\n\024line_color_undefined\030< \001(\010\022-"
+  "\n\013point_color\030= \001(\0132\030.TSSSOS.SpecColorAr"
+  "chive\022\035\n\025point_color_undefined\030> \001(\010\022(\n\005"
+  "alpha\030\? \001(\0132\031.TSSSOS.SpecDoubleArchive\022\027"
+  "\n\017alpha_undefined\030@ \001(\010\022)\n\006border\030A \001(\0132"
+  "\031.TSSSOS.SpecDoubleArchive\022\030\n\020border_und"
+  "efined\030B \001(\010\022(\n\005blend\030C \001(\0132\031.TSSSOS.Spe"
+  "cDoubleArchive\022\027\n\017blend_undefined\030D \001(\010\022"
+  "-\n\nbrightness\030E \001(\0132\031.TSSSOS.SpecDoubleA"
+  "rchive\022\034\n\024brightness_undefined\030F \001(\010\0223\n\020"
+  "border_lightness\030G \001(\0132\031.TSSSOS.SpecDoub"
+  "leArchive\022\"\n\032border_lightness_undefined\030"
+  "H \001(\010\022+\n\010contrast\030I \001(\0132\031.TSSSOS.SpecDou"
+  "bleArchive\022\032\n\022contrast_undefined\030J \001(\010\022*"
+  "\n\007damping\030K \001(\0132\031.TSSSOS.SpecDoubleArchi"
+  "ve\022\031\n\021damping_undefined\030L \001(\010\022*\n\007density"
+  "\030M \001(\0132\031.TSSSOS.SpecDoubleArchive\022\031\n\021den"
+  "sity_undefined\030N \001(\010\0220\n\rdiffuse_power\030O "
+  "\001(\0132\031.TSSSOS.SpecDoubleArchive\022\037\n\027diffus"
+  "e_power_undefined\030P \001(\010\022-\n\ndistortion\030Q "
+  "\001(\0132\031.TSSSOS.SpecDoubleArchive\022\034\n\024distor"
+  "tion_undefined\030R \001(\010\022*\n\007entropy\030S \001(\0132\031."
+  "TSSSOS.SpecDoubleArchive\022\031\n\021entropy_unde"
+  "fined\030T \001(\010\022+\n\010exposure\030U \001(\0132\031.TSSSOS.S"
+  "pecDoubleArchive\022\032\n\022exposure_undefined\030V"
+  " \001(\010\022)\n\006filter\030W \001(\0132\031.TSSSOS.SpecDouble"
+  "Archive\022\030\n\020filter_undefined\030X \001(\010\022/\n\014fog"
+  "_distance\030Y \001(\0132\031.TSSSOS.SpecDoubleArchi"
+  "ve\022\036\n\026fog_distance_undefined\030Z \001(\010\022,\n\tfo"
+  "g_power\030[ \001(\0132\031.TSSSOS.SpecDoubleArchive"
+  "\022\033\n\023fog_power_undefined\030\\ \001(\010\022(\n\005gamma\030]"
+  " \001(\0132\031.TSSSOS.SpecDoubleArchive\022\027\n\017gamma"
+  "_undefined\030^ \001(\010\022/\n\014grain_amount\030_ \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022\036\n\026grain_amoun"
+  "t_undefined\030` \001(\010\0222\n\017grain_intensity\030a \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022!\n\031grain_i"
+  "ntensity_undefined\030b \001(\010\022&\n\003hue\030c \001(\0132\031."
+  "TSSSOS.SpecDoubleArchive\022\025\n\rhue_undefine"
+  "d\030d \001(\010\022,\n\tlightness\030e \001(\0132\031.TSSSOS.Spec"
+  "DoubleArchive\022\033\n\023lightness_undefined\030f \001"
+  "(\010\022-\n\nline_alpha\030g \001(\0132\031.TSSSOS.SpecDoub"
+  "leArchive\022\034\n\024line_alpha_undefined\030h \001(\010\022"
+  ".\n\013line_center\030i \001(\0132\031.TSSSOS.SpecDouble"
+  "Archive\022\035\n\025line_center_undefined\030j \001(\010\022,"
+  "\n\tline_fade\030k \001(\0132\031.TSSSOS.SpecDoubleArc"
+  "hive\022\033\n\023line_fade_undefined\030l \001(\010\0222\n\017lin"
+  "e_fade_power\030m \001(\0132\031.TSSSOS.SpecDoubleAr"
+  "chive\022!\n\031line_fade_power_undefined\030n \001(\010"
+  "\022.\n\013line_length\030o \001(\0132\031.TSSSOS.SpecDoubl"
+  "eArchive\022\035\n\025line_length_undefined\030p \001(\010\022"
+  "-\n\nline_width\030q \001(\0132\031.TSSSOS.SpecDoubleA"
+  "rchive\022\034\n\024line_width_undefined\030r \001(\010\0223\n\020"
+  "noise_size_scale\030s \001(\0132\031.TSSSOS.SpecDoub"
+  "leArchive\022\"\n\032noise_size_scale_undefined\030"
+  "t \001(\010\0224\n\021noise_size_weight\030u \001(\0132\031.TSSSO"
+  "S.SpecDoubleArchive\022#\n\033noise_size_weight"
+  "_undefined\030v \001(\010\0221\n\016noise_variance\030w \001(\013"
+  "2\031.TSSSOS.SpecDoubleArchive\022 \n\030noise_var"
+  "iance_undefined\030x \001(\010\022)\n\006offset\030y \001(\0132\031."
+  "TSSSOS.SpecDoubleArchive\022\030\n\020offset_undef"
+  "ined\030z \001(\010\022<\n\031motion_background_opacity\030"
+  "{ \001(\0132\031.TSSSOS.SpecDoubleArchive\022+\n#moti"
+  "on_background_opacity_undefined\030| \001(\010\0224\n"
+  "\021point_depth_alpha\030} \001(\0132\031.TSSSOS.SpecDo"
+  "ubleArchive\022#\n\033point_depth_alpha_undefin"
+  "ed\030~ \001(\010\022-\n\npoint_size\030\177 \001(\0132\031.TSSSOS.Sp"
+  "ecDoubleArchive\022\035\n\024point_size_undefined\030"
+  "\200\001 \001(\010\022)\n\005power\030\201\001 \001(\0132\031.TSSSOS.SpecDoub"
+  "leArchive\022\030\n\017power_undefined\030\202\001 \001(\010\022*\n\006r"
+  "adius\030\203\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022"
+  "\031\n\020radius_undefined\030\204\001 \001(\010\022.\n\nrefraction"
+  "\030\205\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n\024re"
+  "fraction_undefined\030\206\001 \001(\010\022.\n\nresolution\030"
+  "\207\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n\024res"
+  "olution_undefined\030\210\001 \001(\010\022.\n\nsaturation\030\211"
+  "\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n\024satu"
+  "ration_undefined\030\212\001 \001(\010\022)\n\005scale\030\213\001 \001(\0132"
+  "\031.TSSSOS.SpecDoubleArchive\022\030\n\017scale_unde"
+  "fined\030\214\001 \001(\010\0220\n\014shadow_alpha\030\215\001 \001(\0132\031.TS"
+  "SSOS.SpecDoubleArchive\022\037\n\026shadow_alpha_u"
+  "ndefined\030\216\001 \001(\010\0220\n\014shadow_angle\030\217\001 \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022\037\n\026shadow_angl"
+  "e_undefined\030\220\001 \001(\010\0221\n\rshadow_offset\030\221\001 \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022 \n\027shadow_"
+  "offset_undefined\030\222\001 \001(\010\0220\n\014shadow_scale\030"
+  "\223\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\037\n\026sha"
+  "dow_scale_undefined\030\224\001 \001(\010\0220\n\014shadow_val"
+  "ue\030\225\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\037\n\026"
+  "shadow_value_undefined\030\226\001 \001(\010\022)\n\005speed\030\227"
+  "\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\030\n\017spee"
+  "d_undefined\030\230\001 \001(\010\0221\n\rtexture_power\030\231\001 \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022 \n\027texture"
+  "_power_undefined\030\232\001 \001(\010\022(\n\004time\030\233\001 \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022\027\n\016time_undefi"
+  "ned\030\234\001 \001(\010\022-\n\013draw_points\030\235\001 \001(\0132\027.TSSSO"
+  "S.SpecBoolArchive\022\036\n\025draw_points_undefin"
+  "ed\030\236\001 \001(\010\022,\n\ndraw_lines\030\237\001 \001(\0132\027.TSSSOS."
+  "SpecBoolArchive\022\035\n\024draw_lines_undefined\030"
+  "\240\001 \001(\010\022.\n\014draw_shadows\030\241\001 \001(\0132\027.TSSSOS.S"
+  "pecBoolArchive\022\037\n\026draw_shadows_undefined"
+  "\030\242\001 \001(\010\0228\n\023pixels_per_division\030\243\001 \001(\0132\032."
+  "TSSSOS.SpecIntegerArchive\022&\n\035pixels_per_"
+  "division_undefined\030\244\001 \001(\010\022*\n\010symmetry\030\245\001"
+  " \001(\0132\027.TSSSOS.SpecBoolArchive\022\033\n\022symmetr"
+  "y_undefined\030\246\001 \001(\010\022,\n\nlock_focus\030\247\001 \001(\0132"
+  "\027.TSSSOS.SpecBoolArchive\022\035\n\024lock_focus_u"
+  "ndefined\030\250\001 \001(\010\022-\n\tamplitude\030\251\001 \001(\0132\031.TS"
+  "SSOS.SpecDoubleArchive\022\034\n\023amplitude_unde"
+  "fined\030\252\001 \001(\010\022,\n\010envelope\030\253\001 \001(\0132\031.TSSSOS"
+  ".SpecDoubleArchive\022\033\n\022envelope_undefined"
+  "\030\254\001 \001(\010\022,\n\010y_offset\030\255\001 \001(\0132\031.TSSSOS.Spec"
+  "DoubleArchive\022\033\n\022y_offset_undefined\030\256\001 \001"
+  "(\010\022)\n\005focus\030\257\001 \001(\0132\031.TSSSOS.SpecDoubleAr"
+  "chive\022\030\n\017focus_undefined\030\260\001 \001(\010\022(\n\004blur\030"
+  "\261\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\027\n\016blu"
+  "r_undefined\030\262\001 \001(\010\022/\n\013grain_speed\030\263\001 \001(\013"
+  "2\031.TSSSOS.SpecDoubleArchive\022\036\n\025grain_spe"
+  "ed_undefined\030\264\001 \001(\010\022-\n\nmesh_color\030\265\001 \001(\013"
+  "2\030.TSSSOS.SpecColorArchive\022\035\n\024mesh_color"
+  "_undefined\030\266\001 \001(\010\022)\n\005angle\030\267\001 \001(\0132\031.TSSS"
+  "OS.SpecDoubleArchive\022\030\n\017angle_undefined\030"
+  "\270\001 \001(\010\0223\n\017mesh_line_width\030\271\001 \001(\0132\031.TSSSO"
+  "S.SpecDoubleArchive\022\"\n\031mesh_line_width_u"
+  "ndefined\030\272\001 \001(\010\022.\n\ndelta_time\030\273\001 \001(\0132\031.T"
+  "SSSOS.SpecDoubleArchive\022\035\n\024delta_time_un"
+  "defined\030\274\001 \001(\010\022-\n\tthreshold\030\275\001 \001(\0132\031.TSS"
+  "SOS.SpecDoubleArchive\022\034\n\023threshold_undef"
+  "ined\030\276\001 \001(\010\022.\n\ntime_start\030\277\001 \001(\0132\031.TSSSO"
+  "S.SpecDoubleArchive\022\035\n\024time_start_undefi"
+  "ned\030\300\001 \001(\010\0223\n\016instance_count\030\301\001 \001(\0132\032.TS"
+  "SSOS.SpecIntegerArchive\022!\n\030instance_coun"
+  "t_undefined\030\302\001 \001(\010\022-\n\textrusion\030\303\001 \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022\034\n\023extrusion_u"
+  "ndefined\030\304\001 \001(\010\0220\n\014noise_offset\030\305\001 \001(\0132\031"
+  ".TSSSOS.SpecDoubleArchive\022\037\n\026noise_offse"
+  "t_undefined\030\306\001 \001(\010\0224\n\020color_hue_offset\030\307"
+  "\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022#\n\032colo"
+  "r_hue_offset_undefined\030\310\001 \001(\010\022.\n\nshadow_"
+  "hue\030\311\001 \001(\0132\031.TSSSOS.SpecDoubleArchive\022\035\n"
+  "\024shadow_hue_undefined\030\312\001 \001(\010\0225\n\021shadow_h"
+  "ue_offset\030\313\001 \001(\0132\031.TSSSOS.SpecDoubleArch"
+  "ive\022$\n\033shadow_hue_offset_undefined\030\314\001 \001("
+  "\010\0225\n\021shadow_saturation\030\315\001 \001(\0132\031.TSSSOS.S"
+  "pecDoubleArchive\022$\n\033shadow_saturation_un"
+  "defined\030\316\001 \001(\010\0225\n\021shadow_brightness\030\317\001 \001"
+  "(\0132\031.TSSSOS.SpecDoubleArchive\022$\n\033shadow_"
+  "brightness_undefined\030\320\001 \001(\010\0224\n\020shadow_in"
+  "tensity\030\321\001 \001(\0132\031.TSSSOS.SpecDoubleArchiv"
+  "e\022#\n\032shadow_intensity_undefined\030\322\001 \001(\010\0220"
+  "\n\014shadow_power\030\323\001 \001(\0132\031.TSSSOS.SpecDoubl"
+  "eArchive\022\037\n\026shadow_power_undefined\030\324\001 \001("
+  "\010\022=\n\030noise_octaves_iterations\030\325\001 \001(\0132\032.T"
+  "SSSOS.SpecIntegerArchive\022+\n\"noise_octave"
+  "s_iterations_undefined\030\326\001 \001(\010\"\311\001\n\"SlideS"
+  "tylePropertyChangeSetArchive\022%\n\004fill\030\001 \001"
+  "(\0132\027.TSDSOS.SpecFillArchive\022\026\n\016fill_unde"
+  "fined\030\002 \001(\010\022@\n\020slide_transition\030\003 \001(\0132&."
+  "KNSOS.SpecTransitionAttributesArchive\022\"\n"
+  "\032slide_transition_undefined\030\004 \001(\010"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_KNArchives_2esos_2eproto_deps[2] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_KNArchives_2esos_2eproto_deps[4] = {
   &::descriptor_table_KNArchives_2eproto,
   &::descriptor_table_TSDArchives_2esos_2eproto,
+  &::descriptor_table_TSPMessages_2eproto,
+  &::descriptor_table_TSSArchives_2esos_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_KNArchives_2esos_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_KNArchives_2esos_2eproto = {
-  false, false, 509, descriptor_table_protodef_KNArchives_2esos_2eproto, "KNArchives.sos.proto", 
-  &descriptor_table_KNArchives_2esos_2eproto_once, descriptor_table_KNArchives_2esos_2eproto_deps, 2, 3,
-  schemas, file_default_instances, TableStruct_KNArchives_2esos_2eproto::offsets,
-  file_level_metadata_KNArchives_2esos_2eproto, file_level_enum_descriptors_KNArchives_2esos_2eproto, file_level_service_descriptors_KNArchives_2esos_2eproto,
+static ::_pbi::once_flag descriptor_table_KNArchives_2esos_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_KNArchives_2esos_2eproto = {
+    false, false, 9193, descriptor_table_protodef_KNArchives_2esos_2eproto,
+    "KNArchives.sos.proto",
+    &descriptor_table_KNArchives_2esos_2eproto_once, descriptor_table_KNArchives_2esos_2eproto_deps, 4, 4,
+    schemas, file_default_instances, TableStruct_KNArchives_2esos_2eproto::offsets,
+    file_level_metadata_KNArchives_2esos_2eproto, file_level_enum_descriptors_KNArchives_2esos_2eproto,
+    file_level_service_descriptors_KNArchives_2esos_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_KNArchives_2esos_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_KNArchives_2esos_2eproto_getter() {
   return &descriptor_table_KNArchives_2esos_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_KNArchives_2esos_2eproto(&descriptor_table_KNArchives_2esos_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_KNArchives_2esos_2eproto(&descriptor_table_KNArchives_2esos_2eproto);
 namespace KNSOS {
 
 // ===================================================================
 
 class SpecSetTransitionAttributesArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetTransitionAttributesArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetTransitionAttributesArchive>()._impl_._has_bits_);
   static const ::KN::TransitionAttributesArchive& transition_attributes(const SpecSetTransitionAttributesArchive* msg);
   static void set_has_transition_attributes(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -158,148 +1055,151 @@ class SpecSetTransitionAttributesArchive::_Internal {
 
 const ::KN::TransitionAttributesArchive&
 SpecSetTransitionAttributesArchive::_Internal::transition_attributes(const SpecSetTransitionAttributesArchive* msg) {
-  return *msg->transition_attributes_;
+  return *msg->_impl_.transition_attributes_;
 }
 void SpecSetTransitionAttributesArchive::clear_transition_attributes() {
-  if (transition_attributes_ != nullptr) transition_attributes_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.transition_attributes_ != nullptr) _impl_.transition_attributes_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 SpecSetTransitionAttributesArchive::SpecSetTransitionAttributesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.SpecSetTransitionAttributesArchive)
 }
 SpecSetTransitionAttributesArchive::SpecSetTransitionAttributesArchive(const SpecSetTransitionAttributesArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetTransitionAttributesArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.transition_attributes_){nullptr}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_transition_attributes()) {
-    transition_attributes_ = new ::KN::TransitionAttributesArchive(*from.transition_attributes_);
-  } else {
-    transition_attributes_ = nullptr;
+    _this->_impl_.transition_attributes_ = new ::KN::TransitionAttributesArchive(*from._impl_.transition_attributes_);
   }
-  unset_ = from.unset_;
+  _this->_impl_.unset_ = from._impl_.unset_;
   // @@protoc_insertion_point(copy_constructor:KNSOS.SpecSetTransitionAttributesArchive)
 }
 
-inline void SpecSetTransitionAttributesArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&transition_attributes_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&transition_attributes_)) + sizeof(unset_));
+inline void SpecSetTransitionAttributesArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.transition_attributes_){nullptr}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetTransitionAttributesArchive::~SpecSetTransitionAttributesArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.SpecSetTransitionAttributesArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetTransitionAttributesArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete transition_attributes_;
+  if (this != internal_default_instance()) delete _impl_.transition_attributes_;
 }
 
-void SpecSetTransitionAttributesArchive::ArenaDtor(void* object) {
-  SpecSetTransitionAttributesArchive* _this = reinterpret_cast< SpecSetTransitionAttributesArchive* >(object);
-  (void)_this;
-}
-void SpecSetTransitionAttributesArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetTransitionAttributesArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetTransitionAttributesArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.SpecSetTransitionAttributesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(transition_attributes_ != nullptr);
-    transition_attributes_->Clear();
+    GOOGLE_DCHECK(_impl_.transition_attributes_ != nullptr);
+    _impl_.transition_attributes_->Clear();
   }
-  unset_ = false;
-  _has_bits_.Clear();
+  _impl_.unset_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetTransitionAttributesArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetTransitionAttributesArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .KN.TransitionAttributesArchive transition_attributes = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_transition_attributes(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetTransitionAttributesArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetTransitionAttributesArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.SpecSetTransitionAttributesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .KN.TransitionAttributesArchive transition_attributes = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::transition_attributes(this), target, stream);
+      InternalWriteMessage(1, _Internal::transition_attributes(this),
+        _Internal::transition_attributes(this).GetCachedSize(), target, stream);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.SpecSetTransitionAttributesArchive)
@@ -314,57 +1214,48 @@ size_t SpecSetTransitionAttributesArchive::ByteSizeLong() const {
   if (_internal_has_unset()) {
     total_size += 1 + 1;
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .KN.TransitionAttributesArchive transition_attributes = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *transition_attributes_);
+        *_impl_.transition_attributes_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetTransitionAttributesArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetTransitionAttributesArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetTransitionAttributesArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetTransitionAttributesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetTransitionAttributesArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetTransitionAttributesArchive &>(from));
-}
 
-
-void SpecSetTransitionAttributesArchive::MergeFrom(const SpecSetTransitionAttributesArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SpecSetTransitionAttributesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetTransitionAttributesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetTransitionAttributesArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetTransitionAttributesArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SpecSetTransitionAttributesArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_transition_attributes()->::KN::TransitionAttributesArchive::MergeFrom(from._internal_transition_attributes());
+      _this->_internal_mutable_transition_attributes()->::KN::TransitionAttributesArchive::MergeFrom(
+          from._internal_transition_attributes());
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetTransitionAttributesArchive::CopyFrom(const SpecSetTransitionAttributesArchive& from) {
@@ -375,9 +1266,9 @@ void SpecSetTransitionAttributesArchive::CopyFrom(const SpecSetTransitionAttribu
 }
 
 bool SpecSetTransitionAttributesArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_transition_attributes()) {
-    if (!transition_attributes_->IsInitialized()) return false;
+    if (!_impl_.transition_attributes_->IsInitialized()) return false;
   }
   return true;
 }
@@ -385,17 +1276,17 @@ bool SpecSetTransitionAttributesArchive::IsInitialized() const {
 void SpecSetTransitionAttributesArchive::InternalSwap(SpecSetTransitionAttributesArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetTransitionAttributesArchive, unset_)
-      + sizeof(SpecSetTransitionAttributesArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetTransitionAttributesArchive, transition_attributes_)>(
-          reinterpret_cast<char*>(&transition_attributes_),
-          reinterpret_cast<char*>(&other->transition_attributes_));
+      PROTOBUF_FIELD_OFFSET(SpecSetTransitionAttributesArchive, _impl_.unset_)
+      + sizeof(SpecSetTransitionAttributesArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetTransitionAttributesArchive, _impl_.transition_attributes_)>(
+          reinterpret_cast<char*>(&_impl_.transition_attributes_),
+          reinterpret_cast<char*>(&other->_impl_.transition_attributes_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetTransitionAttributesArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNArchives_2esos_2eproto_getter, &descriptor_table_KNArchives_2esos_2eproto_once,
       file_level_metadata_KNArchives_2esos_2eproto[0]);
 }
@@ -404,7 +1295,7 @@ void SpecSetTransitionAttributesArchive::InternalSwap(SpecSetTransitionAttribute
 
 class SpecTransitionAttributesArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecTransitionAttributesArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecTransitionAttributesArchive>()._impl_._has_bits_);
   static const ::KNSOS::SpecSetTransitionAttributesArchive& spec_set_transition_attributes(const SpecTransitionAttributesArchive* msg);
   static void set_has_spec_set_transition_attributes(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -413,125 +1304,128 @@ class SpecTransitionAttributesArchive::_Internal {
 
 const ::KNSOS::SpecSetTransitionAttributesArchive&
 SpecTransitionAttributesArchive::_Internal::spec_set_transition_attributes(const SpecTransitionAttributesArchive* msg) {
-  return *msg->spec_set_transition_attributes_;
+  return *msg->_impl_.spec_set_transition_attributes_;
 }
 SpecTransitionAttributesArchive::SpecTransitionAttributesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.SpecTransitionAttributesArchive)
 }
 SpecTransitionAttributesArchive::SpecTransitionAttributesArchive(const SpecTransitionAttributesArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecTransitionAttributesArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_transition_attributes_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_transition_attributes()) {
-    spec_set_transition_attributes_ = new ::KNSOS::SpecSetTransitionAttributesArchive(*from.spec_set_transition_attributes_);
-  } else {
-    spec_set_transition_attributes_ = nullptr;
+    _this->_impl_.spec_set_transition_attributes_ = new ::KNSOS::SpecSetTransitionAttributesArchive(*from._impl_.spec_set_transition_attributes_);
   }
   // @@protoc_insertion_point(copy_constructor:KNSOS.SpecTransitionAttributesArchive)
 }
 
-inline void SpecTransitionAttributesArchive::SharedCtor() {
-spec_set_transition_attributes_ = nullptr;
+inline void SpecTransitionAttributesArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_transition_attributes_){nullptr}
+  };
 }
 
 SpecTransitionAttributesArchive::~SpecTransitionAttributesArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.SpecTransitionAttributesArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecTransitionAttributesArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_transition_attributes_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_transition_attributes_;
 }
 
-void SpecTransitionAttributesArchive::ArenaDtor(void* object) {
-  SpecTransitionAttributesArchive* _this = reinterpret_cast< SpecTransitionAttributesArchive* >(object);
-  (void)_this;
-}
-void SpecTransitionAttributesArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecTransitionAttributesArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecTransitionAttributesArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.SpecTransitionAttributesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_transition_attributes_ != nullptr);
-    spec_set_transition_attributes_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_transition_attributes_ != nullptr);
+    _impl_.spec_set_transition_attributes_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecTransitionAttributesArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecTransitionAttributesArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .KNSOS.SpecSetTransitionAttributesArchive spec_set_transition_attributes = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_transition_attributes(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecTransitionAttributesArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecTransitionAttributesArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.SpecTransitionAttributesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .KNSOS.SpecSetTransitionAttributesArchive spec_set_transition_attributes = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_transition_attributes(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_transition_attributes(this),
+        _Internal::spec_set_transition_attributes(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.SpecTransitionAttributesArchive)
@@ -542,50 +1436,41 @@ size_t SpecTransitionAttributesArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:KNSOS.SpecTransitionAttributesArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .KNSOS.SpecSetTransitionAttributesArchive spec_set_transition_attributes = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_transition_attributes_);
+        *_impl_.spec_set_transition_attributes_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecTransitionAttributesArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecTransitionAttributesArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecTransitionAttributesArchive::GetClassData() const { return &_class_data_; }
 
-void SpecTransitionAttributesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecTransitionAttributesArchive *>(to)->MergeFrom(
-      static_cast<const SpecTransitionAttributesArchive &>(from));
-}
 
-
-void SpecTransitionAttributesArchive::MergeFrom(const SpecTransitionAttributesArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SpecTransitionAttributesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecTransitionAttributesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecTransitionAttributesArchive*>(&to_msg);
+  auto& from = static_cast<const SpecTransitionAttributesArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SpecTransitionAttributesArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_transition_attributes()) {
-    _internal_mutable_spec_set_transition_attributes()->::KNSOS::SpecSetTransitionAttributesArchive::MergeFrom(from._internal_spec_set_transition_attributes());
+    _this->_internal_mutable_spec_set_transition_attributes()->::KNSOS::SpecSetTransitionAttributesArchive::MergeFrom(
+        from._internal_spec_set_transition_attributes());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecTransitionAttributesArchive::CopyFrom(const SpecTransitionAttributesArchive& from) {
@@ -597,7 +1482,7 @@ void SpecTransitionAttributesArchive::CopyFrom(const SpecTransitionAttributesArc
 
 bool SpecTransitionAttributesArchive::IsInitialized() const {
   if (_internal_has_spec_set_transition_attributes()) {
-    if (!spec_set_transition_attributes_->IsInitialized()) return false;
+    if (!_impl_.spec_set_transition_attributes_->IsInitialized()) return false;
   }
   return true;
 }
@@ -605,21 +1490,9100 @@ bool SpecTransitionAttributesArchive::IsInitialized() const {
 void SpecTransitionAttributesArchive::InternalSwap(SpecTransitionAttributesArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_transition_attributes_, other->spec_set_transition_attributes_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_transition_attributes_, other->_impl_.spec_set_transition_attributes_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecTransitionAttributesArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNArchives_2esos_2eproto_getter, &descriptor_table_KNArchives_2esos_2eproto_once,
       file_level_metadata_KNArchives_2esos_2eproto[1]);
 }
 
 // ===================================================================
 
+class MotionBackgroundStylePropertyChangeSetArchive::_Internal {
+ public:
+  using HasBits = decltype(std::declval<MotionBackgroundStylePropertyChangeSetArchive>()._impl_._has_bits_);
+  static const ::TSSSOS::SpecStringArchive& name(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_name(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_name_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 2048u;
+  }
+  static const ::TSSSOS::SpecStringArchive& variant(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_variant(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static void set_has_variant_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 4096u;
+  }
+  static const ::TSDSOS::SpecFillArchive& color_gradient(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_gradient(HasBits* has_bits) {
+    (*has_bits)[0] |= 4u;
+  }
+  static void set_has_color_gradient_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 8192u;
+  }
+  static const ::TSSSOS::SpecIntegerArchive& random_seed(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_random_seed(HasBits* has_bits) {
+    (*has_bits)[0] |= 8u;
+  }
+  static void set_has_random_seed_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 16384u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_blur_sigma(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_blur_sigma(HasBits* has_bits) {
+    (*has_bits)[0] |= 16u;
+  }
+  static void set_has_color_blur_sigma_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 32768u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_contrast(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_contrast(HasBits* has_bits) {
+    (*has_bits)[0] |= 32u;
+  }
+  static void set_has_color_contrast_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 65536u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_gamma(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_gamma(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static void set_has_color_gamma_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 131072u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_saturation(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static void set_has_color_saturation_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 262144u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_brightness(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static void set_has_color_brightness_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 524288u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_hue(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_hue(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
+  static void set_has_color_hue_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 1048576u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_vibrance(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_vibrance(HasBits* has_bits) {
+    (*has_bits)[0] |= 1024u;
+  }
+  static void set_has_color_vibrance_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 2097152u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_amplitude(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_amplitude(HasBits* has_bits) {
+    (*has_bits)[0] |= 2048u;
+  }
+  static void set_has_noise_amplitude_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 4194304u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_movement(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_movement(HasBits* has_bits) {
+    (*has_bits)[0] |= 4096u;
+  }
+  static void set_has_noise_movement_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 8388608u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_octaves(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_octaves(HasBits* has_bits) {
+    (*has_bits)[0] |= 8192u;
+  }
+  static void set_has_noise_octaves_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 16777216u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_scale(HasBits* has_bits) {
+    (*has_bits)[0] |= 16384u;
+  }
+  static void set_has_noise_scale_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 33554432u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_scale_horizontal(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_scale_horizontal(HasBits* has_bits) {
+    (*has_bits)[0] |= 32768u;
+  }
+  static void set_has_noise_scale_horizontal_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 67108864u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_scale_vertical(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_scale_vertical(HasBits* has_bits) {
+    (*has_bits)[0] |= 65536u;
+  }
+  static void set_has_noise_scale_vertical_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 134217728u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_gain(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_gain(HasBits* has_bits) {
+    (*has_bits)[0] |= 131072u;
+  }
+  static void set_has_noise_gain_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 268435456u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_lacunarity(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_lacunarity(HasBits* has_bits) {
+    (*has_bits)[0] |= 262144u;
+  }
+  static void set_has_noise_lacunarity_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 536870912u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_speed(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_speed(HasBits* has_bits) {
+    (*has_bits)[0] |= 524288u;
+  }
+  static void set_has_noise_speed_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 1073741824u;
+  }
+  static const ::TSSSOS::SpecIntegerArchive& color_palette_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_palette_offset(HasBits* has_bits) {
+    (*has_bits)[0] |= 1048576u;
+  }
+  static void set_has_color_palette_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 2147483648u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& zoom(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_zoom(HasBits* has_bits) {
+    (*has_bits)[0] |= 2097152u;
+  }
+  static void set_has_zoom_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 1u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& invert(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_invert(HasBits* has_bits) {
+    (*has_bits)[0] |= 4194304u;
+  }
+  static void set_has_invert_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 2u;
+  }
+  static const ::TSSSOS::SpecStringArchive& blend_mode(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_blend_mode(HasBits* has_bits) {
+    (*has_bits)[0] |= 8388608u;
+  }
+  static void set_has_blend_mode_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 4u;
+  }
+  static const ::TSSSOS::SpecStringArchive& source_blend_factor(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_source_blend_factor(HasBits* has_bits) {
+    (*has_bits)[0] |= 16777216u;
+  }
+  static void set_has_source_blend_factor_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 8u;
+  }
+  static const ::TSSSOS::SpecStringArchive& dest_blend_factor(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_dest_blend_factor(HasBits* has_bits) {
+    (*has_bits)[0] |= 33554432u;
+  }
+  static void set_has_dest_blend_factor_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 16u;
+  }
+  static const ::TSSSOS::SpecStringArchive& motion(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_motion(HasBits* has_bits) {
+    (*has_bits)[0] |= 67108864u;
+  }
+  static void set_has_motion_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 32u;
+  }
+  static const ::TSSSOS::SpecColorArchive& background_color(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_background_color(HasBits* has_bits) {
+    (*has_bits)[0] |= 134217728u;
+  }
+  static void set_has_background_color_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 64u;
+  }
+  static const ::TSSSOS::SpecColorArchive& foreground_color(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_foreground_color(HasBits* has_bits) {
+    (*has_bits)[0] |= 268435456u;
+  }
+  static void set_has_foreground_color_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 128u;
+  }
+  static const ::TSSSOS::SpecColorArchive& line_color(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_color(HasBits* has_bits) {
+    (*has_bits)[0] |= 536870912u;
+  }
+  static void set_has_line_color_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 256u;
+  }
+  static const ::TSSSOS::SpecColorArchive& point_color(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_point_color(HasBits* has_bits) {
+    (*has_bits)[0] |= 1073741824u;
+  }
+  static void set_has_point_color_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 512u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_alpha(HasBits* has_bits) {
+    (*has_bits)[0] |= 2147483648u;
+  }
+  static void set_has_alpha_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 1024u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& border(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_border(HasBits* has_bits) {
+    (*has_bits)[1] |= 1u;
+  }
+  static void set_has_border_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 2048u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& blend(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_blend(HasBits* has_bits) {
+    (*has_bits)[1] |= 2u;
+  }
+  static void set_has_blend_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 4096u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_brightness(HasBits* has_bits) {
+    (*has_bits)[1] |= 4u;
+  }
+  static void set_has_brightness_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 8192u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& border_lightness(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_border_lightness(HasBits* has_bits) {
+    (*has_bits)[1] |= 8u;
+  }
+  static void set_has_border_lightness_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 16384u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& contrast(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_contrast(HasBits* has_bits) {
+    (*has_bits)[1] |= 16u;
+  }
+  static void set_has_contrast_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 32768u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& damping(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_damping(HasBits* has_bits) {
+    (*has_bits)[1] |= 32u;
+  }
+  static void set_has_damping_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 65536u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& density(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_density(HasBits* has_bits) {
+    (*has_bits)[1] |= 64u;
+  }
+  static void set_has_density_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 131072u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& diffuse_power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_diffuse_power(HasBits* has_bits) {
+    (*has_bits)[1] |= 128u;
+  }
+  static void set_has_diffuse_power_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 262144u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& distortion(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_distortion(HasBits* has_bits) {
+    (*has_bits)[1] |= 256u;
+  }
+  static void set_has_distortion_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 524288u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& entropy(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_entropy(HasBits* has_bits) {
+    (*has_bits)[1] |= 512u;
+  }
+  static void set_has_entropy_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 1048576u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& exposure(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_exposure(HasBits* has_bits) {
+    (*has_bits)[1] |= 1024u;
+  }
+  static void set_has_exposure_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 2097152u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& filter(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_filter(HasBits* has_bits) {
+    (*has_bits)[1] |= 2048u;
+  }
+  static void set_has_filter_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 4194304u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& fog_distance(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_fog_distance(HasBits* has_bits) {
+    (*has_bits)[1] |= 4096u;
+  }
+  static void set_has_fog_distance_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 8388608u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& fog_power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_fog_power(HasBits* has_bits) {
+    (*has_bits)[1] |= 8192u;
+  }
+  static void set_has_fog_power_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 16777216u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& gamma(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_gamma(HasBits* has_bits) {
+    (*has_bits)[1] |= 16384u;
+  }
+  static void set_has_gamma_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 33554432u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& grain_amount(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_grain_amount(HasBits* has_bits) {
+    (*has_bits)[1] |= 32768u;
+  }
+  static void set_has_grain_amount_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 67108864u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& grain_intensity(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_grain_intensity(HasBits* has_bits) {
+    (*has_bits)[1] |= 65536u;
+  }
+  static void set_has_grain_intensity_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 134217728u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& hue(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_hue(HasBits* has_bits) {
+    (*has_bits)[1] |= 131072u;
+  }
+  static void set_has_hue_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 268435456u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& lightness(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_lightness(HasBits* has_bits) {
+    (*has_bits)[1] |= 262144u;
+  }
+  static void set_has_lightness_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 536870912u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_alpha(HasBits* has_bits) {
+    (*has_bits)[1] |= 524288u;
+  }
+  static void set_has_line_alpha_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 1073741824u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_center(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_center(HasBits* has_bits) {
+    (*has_bits)[1] |= 1048576u;
+  }
+  static void set_has_line_center_undefined(HasBits* has_bits) {
+    (*has_bits)[4] |= 2147483648u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_fade(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_fade(HasBits* has_bits) {
+    (*has_bits)[1] |= 2097152u;
+  }
+  static void set_has_line_fade_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 1u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_fade_power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_fade_power(HasBits* has_bits) {
+    (*has_bits)[1] |= 4194304u;
+  }
+  static void set_has_line_fade_power_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 2u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_length(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_length(HasBits* has_bits) {
+    (*has_bits)[1] |= 8388608u;
+  }
+  static void set_has_line_length_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 4u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& line_width(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_line_width(HasBits* has_bits) {
+    (*has_bits)[1] |= 16777216u;
+  }
+  static void set_has_line_width_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 8u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_size_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_size_scale(HasBits* has_bits) {
+    (*has_bits)[1] |= 33554432u;
+  }
+  static void set_has_noise_size_scale_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 16u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_size_weight(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_size_weight(HasBits* has_bits) {
+    (*has_bits)[1] |= 67108864u;
+  }
+  static void set_has_noise_size_weight_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 32u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_variance(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_variance(HasBits* has_bits) {
+    (*has_bits)[1] |= 134217728u;
+  }
+  static void set_has_noise_variance_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 64u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_offset(HasBits* has_bits) {
+    (*has_bits)[1] |= 268435456u;
+  }
+  static void set_has_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 128u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& motion_background_opacity(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_motion_background_opacity(HasBits* has_bits) {
+    (*has_bits)[1] |= 536870912u;
+  }
+  static void set_has_motion_background_opacity_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 256u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& point_depth_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_point_depth_alpha(HasBits* has_bits) {
+    (*has_bits)[1] |= 1073741824u;
+  }
+  static void set_has_point_depth_alpha_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 512u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& point_size(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_point_size(HasBits* has_bits) {
+    (*has_bits)[1] |= 2147483648u;
+  }
+  static void set_has_point_size_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 1024u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_power(HasBits* has_bits) {
+    (*has_bits)[2] |= 1u;
+  }
+  static void set_has_power_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 2048u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& radius(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_radius(HasBits* has_bits) {
+    (*has_bits)[2] |= 2u;
+  }
+  static void set_has_radius_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 4096u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& refraction(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_refraction(HasBits* has_bits) {
+    (*has_bits)[2] |= 4u;
+  }
+  static void set_has_refraction_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 8192u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& resolution(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_resolution(HasBits* has_bits) {
+    (*has_bits)[2] |= 8u;
+  }
+  static void set_has_resolution_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 16384u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_saturation(HasBits* has_bits) {
+    (*has_bits)[2] |= 16u;
+  }
+  static void set_has_saturation_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 32768u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& scale(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_scale(HasBits* has_bits) {
+    (*has_bits)[2] |= 32u;
+  }
+  static void set_has_scale_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 65536u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_alpha(HasBits* has_bits) {
+    (*has_bits)[2] |= 64u;
+  }
+  static void set_has_shadow_alpha_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 131072u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_angle(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_angle(HasBits* has_bits) {
+    (*has_bits)[2] |= 128u;
+  }
+  static void set_has_shadow_angle_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 262144u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_offset(HasBits* has_bits) {
+    (*has_bits)[2] |= 256u;
+  }
+  static void set_has_shadow_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 524288u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_scale(HasBits* has_bits) {
+    (*has_bits)[2] |= 512u;
+  }
+  static void set_has_shadow_scale_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 1048576u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_value(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_value(HasBits* has_bits) {
+    (*has_bits)[2] |= 1024u;
+  }
+  static void set_has_shadow_value_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 2097152u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& speed(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_speed(HasBits* has_bits) {
+    (*has_bits)[2] |= 2048u;
+  }
+  static void set_has_speed_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 4194304u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& texture_power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_texture_power(HasBits* has_bits) {
+    (*has_bits)[2] |= 4096u;
+  }
+  static void set_has_texture_power_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 8388608u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& time(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_time(HasBits* has_bits) {
+    (*has_bits)[2] |= 8192u;
+  }
+  static void set_has_time_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 16777216u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& draw_points(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_draw_points(HasBits* has_bits) {
+    (*has_bits)[2] |= 16384u;
+  }
+  static void set_has_draw_points_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 33554432u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& draw_lines(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_draw_lines(HasBits* has_bits) {
+    (*has_bits)[2] |= 32768u;
+  }
+  static void set_has_draw_lines_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 67108864u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& draw_shadows(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_draw_shadows(HasBits* has_bits) {
+    (*has_bits)[2] |= 65536u;
+  }
+  static void set_has_draw_shadows_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 134217728u;
+  }
+  static const ::TSSSOS::SpecIntegerArchive& pixels_per_division(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_pixels_per_division(HasBits* has_bits) {
+    (*has_bits)[2] |= 131072u;
+  }
+  static void set_has_pixels_per_division_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 268435456u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& symmetry(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_symmetry(HasBits* has_bits) {
+    (*has_bits)[2] |= 262144u;
+  }
+  static void set_has_symmetry_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 536870912u;
+  }
+  static const ::TSSSOS::SpecBoolArchive& lock_focus(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_lock_focus(HasBits* has_bits) {
+    (*has_bits)[2] |= 524288u;
+  }
+  static void set_has_lock_focus_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 1073741824u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& amplitude(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_amplitude(HasBits* has_bits) {
+    (*has_bits)[2] |= 1048576u;
+  }
+  static void set_has_amplitude_undefined(HasBits* has_bits) {
+    (*has_bits)[5] |= 2147483648u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& envelope(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_envelope(HasBits* has_bits) {
+    (*has_bits)[2] |= 2097152u;
+  }
+  static void set_has_envelope_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 1u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& y_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_y_offset(HasBits* has_bits) {
+    (*has_bits)[2] |= 4194304u;
+  }
+  static void set_has_y_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 2u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& focus(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_focus(HasBits* has_bits) {
+    (*has_bits)[2] |= 8388608u;
+  }
+  static void set_has_focus_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 4u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& blur(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_blur(HasBits* has_bits) {
+    (*has_bits)[2] |= 16777216u;
+  }
+  static void set_has_blur_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 8u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& grain_speed(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_grain_speed(HasBits* has_bits) {
+    (*has_bits)[2] |= 33554432u;
+  }
+  static void set_has_grain_speed_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 16u;
+  }
+  static const ::TSSSOS::SpecColorArchive& mesh_color(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_mesh_color(HasBits* has_bits) {
+    (*has_bits)[2] |= 67108864u;
+  }
+  static void set_has_mesh_color_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 32u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& angle(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_angle(HasBits* has_bits) {
+    (*has_bits)[2] |= 134217728u;
+  }
+  static void set_has_angle_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 64u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& mesh_line_width(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_mesh_line_width(HasBits* has_bits) {
+    (*has_bits)[2] |= 268435456u;
+  }
+  static void set_has_mesh_line_width_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 128u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& delta_time(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_delta_time(HasBits* has_bits) {
+    (*has_bits)[2] |= 536870912u;
+  }
+  static void set_has_delta_time_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 256u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& threshold(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_threshold(HasBits* has_bits) {
+    (*has_bits)[2] |= 1073741824u;
+  }
+  static void set_has_threshold_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 512u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& time_start(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_time_start(HasBits* has_bits) {
+    (*has_bits)[2] |= 2147483648u;
+  }
+  static void set_has_time_start_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 1024u;
+  }
+  static const ::TSSSOS::SpecIntegerArchive& instance_count(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_instance_count(HasBits* has_bits) {
+    (*has_bits)[3] |= 1u;
+  }
+  static void set_has_instance_count_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 2048u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& extrusion(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_extrusion(HasBits* has_bits) {
+    (*has_bits)[3] |= 2u;
+  }
+  static void set_has_extrusion_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 4096u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& noise_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_offset(HasBits* has_bits) {
+    (*has_bits)[3] |= 4u;
+  }
+  static void set_has_noise_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 8192u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& color_hue_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_color_hue_offset(HasBits* has_bits) {
+    (*has_bits)[3] |= 8u;
+  }
+  static void set_has_color_hue_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 16384u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_hue(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_hue(HasBits* has_bits) {
+    (*has_bits)[3] |= 16u;
+  }
+  static void set_has_shadow_hue_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 32768u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_hue_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_hue_offset(HasBits* has_bits) {
+    (*has_bits)[3] |= 32u;
+  }
+  static void set_has_shadow_hue_offset_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 65536u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_saturation(HasBits* has_bits) {
+    (*has_bits)[3] |= 64u;
+  }
+  static void set_has_shadow_saturation_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 131072u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_brightness(HasBits* has_bits) {
+    (*has_bits)[3] |= 128u;
+  }
+  static void set_has_shadow_brightness_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 262144u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_intensity(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_intensity(HasBits* has_bits) {
+    (*has_bits)[3] |= 256u;
+  }
+  static void set_has_shadow_intensity_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 524288u;
+  }
+  static const ::TSSSOS::SpecDoubleArchive& shadow_power(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_shadow_power(HasBits* has_bits) {
+    (*has_bits)[3] |= 512u;
+  }
+  static void set_has_shadow_power_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 1048576u;
+  }
+  static const ::TSSSOS::SpecIntegerArchive& noise_octaves_iterations(const MotionBackgroundStylePropertyChangeSetArchive* msg);
+  static void set_has_noise_octaves_iterations(HasBits* has_bits) {
+    (*has_bits)[3] |= 1024u;
+  }
+  static void set_has_noise_octaves_iterations_undefined(HasBits* has_bits) {
+    (*has_bits)[6] |= 2097152u;
+  }
+};
+
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::name(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.name_;
+}
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::variant(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.variant_;
+}
+const ::TSDSOS::SpecFillArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_gradient(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_gradient_;
+}
+const ::TSSSOS::SpecIntegerArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::random_seed(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.random_seed_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_blur_sigma(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_blur_sigma_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_contrast(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_contrast_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_gamma(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_gamma_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_saturation_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_brightness_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_hue(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_hue_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_vibrance(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_vibrance_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_amplitude(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_amplitude_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_movement(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_movement_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_octaves(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_octaves_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_scale_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_scale_horizontal(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_scale_horizontal_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_scale_vertical(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_scale_vertical_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_gain(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_gain_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_lacunarity(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_lacunarity_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_speed(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_speed_;
+}
+const ::TSSSOS::SpecIntegerArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_palette_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_palette_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::zoom(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.zoom_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::invert(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.invert_;
+}
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::blend_mode(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.blend_mode_;
+}
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::source_blend_factor(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.source_blend_factor_;
+}
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::dest_blend_factor(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.dest_blend_factor_;
+}
+const ::TSSSOS::SpecStringArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::motion(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.motion_;
+}
+const ::TSSSOS::SpecColorArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::background_color(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.background_color_;
+}
+const ::TSSSOS::SpecColorArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::foreground_color(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.foreground_color_;
+}
+const ::TSSSOS::SpecColorArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_color(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_color_;
+}
+const ::TSSSOS::SpecColorArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::point_color(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.point_color_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.alpha_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::border(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.border_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::blend(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.blend_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.brightness_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::border_lightness(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.border_lightness_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::contrast(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.contrast_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::damping(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.damping_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::density(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.density_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::diffuse_power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.diffuse_power_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::distortion(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.distortion_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::entropy(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.entropy_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::exposure(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.exposure_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::filter(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.filter_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::fog_distance(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.fog_distance_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::fog_power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.fog_power_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::gamma(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.gamma_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::grain_amount(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.grain_amount_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::grain_intensity(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.grain_intensity_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::hue(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.hue_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::lightness(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.lightness_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_alpha_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_center(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_center_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_fade(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_fade_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_fade_power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_fade_power_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_length(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_length_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::line_width(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.line_width_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_size_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_size_scale_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_size_weight(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_size_weight_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_variance(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_variance_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::motion_background_opacity(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.motion_background_opacity_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::point_depth_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.point_depth_alpha_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::point_size(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.point_size_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.power_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::radius(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.radius_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::refraction(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.refraction_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::resolution(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.resolution_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.saturation_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::scale(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.scale_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_alpha(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_alpha_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_angle(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_angle_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_scale(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_scale_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_value(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_value_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::speed(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.speed_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::texture_power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.texture_power_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::time(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.time_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::draw_points(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.draw_points_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::draw_lines(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.draw_lines_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::draw_shadows(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.draw_shadows_;
+}
+const ::TSSSOS::SpecIntegerArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::pixels_per_division(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.pixels_per_division_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::symmetry(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.symmetry_;
+}
+const ::TSSSOS::SpecBoolArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::lock_focus(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.lock_focus_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::amplitude(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.amplitude_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::envelope(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.envelope_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::y_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.y_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::focus(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.focus_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::blur(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.blur_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::grain_speed(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.grain_speed_;
+}
+const ::TSSSOS::SpecColorArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::mesh_color(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.mesh_color_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::angle(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.angle_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::mesh_line_width(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.mesh_line_width_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::delta_time(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.delta_time_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::threshold(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.threshold_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::time_start(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.time_start_;
+}
+const ::TSSSOS::SpecIntegerArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::instance_count(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.instance_count_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::extrusion(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.extrusion_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::color_hue_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.color_hue_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_hue(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_hue_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_hue_offset(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_hue_offset_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_saturation(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_saturation_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_brightness(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_brightness_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_intensity(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_intensity_;
+}
+const ::TSSSOS::SpecDoubleArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::shadow_power(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.shadow_power_;
+}
+const ::TSSSOS::SpecIntegerArchive&
+MotionBackgroundStylePropertyChangeSetArchive::_Internal::noise_octaves_iterations(const MotionBackgroundStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.noise_octaves_iterations_;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_name() {
+  if (_impl_.name_ != nullptr) _impl_.name_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_variant() {
+  if (_impl_.variant_ != nullptr) _impl_.variant_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_gradient() {
+  if (_impl_.color_gradient_ != nullptr) _impl_.color_gradient_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_random_seed() {
+  if (_impl_.random_seed_ != nullptr) _impl_.random_seed_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_blur_sigma() {
+  if (_impl_.color_blur_sigma_ != nullptr) _impl_.color_blur_sigma_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_contrast() {
+  if (_impl_.color_contrast_ != nullptr) _impl_.color_contrast_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_gamma() {
+  if (_impl_.color_gamma_ != nullptr) _impl_.color_gamma_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000040u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_saturation() {
+  if (_impl_.color_saturation_ != nullptr) _impl_.color_saturation_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000080u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_brightness() {
+  if (_impl_.color_brightness_ != nullptr) _impl_.color_brightness_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000100u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_hue() {
+  if (_impl_.color_hue_ != nullptr) _impl_.color_hue_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000200u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_vibrance() {
+  if (_impl_.color_vibrance_ != nullptr) _impl_.color_vibrance_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000400u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_amplitude() {
+  if (_impl_.noise_amplitude_ != nullptr) _impl_.noise_amplitude_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000800u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_movement() {
+  if (_impl_.noise_movement_ != nullptr) _impl_.noise_movement_->Clear();
+  _impl_._has_bits_[0] &= ~0x00001000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_octaves() {
+  if (_impl_.noise_octaves_ != nullptr) _impl_.noise_octaves_->Clear();
+  _impl_._has_bits_[0] &= ~0x00002000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_scale() {
+  if (_impl_.noise_scale_ != nullptr) _impl_.noise_scale_->Clear();
+  _impl_._has_bits_[0] &= ~0x00004000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_scale_horizontal() {
+  if (_impl_.noise_scale_horizontal_ != nullptr) _impl_.noise_scale_horizontal_->Clear();
+  _impl_._has_bits_[0] &= ~0x00008000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_scale_vertical() {
+  if (_impl_.noise_scale_vertical_ != nullptr) _impl_.noise_scale_vertical_->Clear();
+  _impl_._has_bits_[0] &= ~0x00010000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_gain() {
+  if (_impl_.noise_gain_ != nullptr) _impl_.noise_gain_->Clear();
+  _impl_._has_bits_[0] &= ~0x00020000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_lacunarity() {
+  if (_impl_.noise_lacunarity_ != nullptr) _impl_.noise_lacunarity_->Clear();
+  _impl_._has_bits_[0] &= ~0x00040000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_speed() {
+  if (_impl_.noise_speed_ != nullptr) _impl_.noise_speed_->Clear();
+  _impl_._has_bits_[0] &= ~0x00080000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_palette_offset() {
+  if (_impl_.color_palette_offset_ != nullptr) _impl_.color_palette_offset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00100000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_zoom() {
+  if (_impl_.zoom_ != nullptr) _impl_.zoom_->Clear();
+  _impl_._has_bits_[0] &= ~0x00200000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_invert() {
+  if (_impl_.invert_ != nullptr) _impl_.invert_->Clear();
+  _impl_._has_bits_[0] &= ~0x00400000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_blend_mode() {
+  if (_impl_.blend_mode_ != nullptr) _impl_.blend_mode_->Clear();
+  _impl_._has_bits_[0] &= ~0x00800000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_source_blend_factor() {
+  if (_impl_.source_blend_factor_ != nullptr) _impl_.source_blend_factor_->Clear();
+  _impl_._has_bits_[0] &= ~0x01000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_dest_blend_factor() {
+  if (_impl_.dest_blend_factor_ != nullptr) _impl_.dest_blend_factor_->Clear();
+  _impl_._has_bits_[0] &= ~0x02000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_motion() {
+  if (_impl_.motion_ != nullptr) _impl_.motion_->Clear();
+  _impl_._has_bits_[0] &= ~0x04000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_background_color() {
+  if (_impl_.background_color_ != nullptr) _impl_.background_color_->Clear();
+  _impl_._has_bits_[0] &= ~0x08000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_foreground_color() {
+  if (_impl_.foreground_color_ != nullptr) _impl_.foreground_color_->Clear();
+  _impl_._has_bits_[0] &= ~0x10000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_color() {
+  if (_impl_.line_color_ != nullptr) _impl_.line_color_->Clear();
+  _impl_._has_bits_[0] &= ~0x20000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_point_color() {
+  if (_impl_.point_color_ != nullptr) _impl_.point_color_->Clear();
+  _impl_._has_bits_[0] &= ~0x40000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_alpha() {
+  if (_impl_.alpha_ != nullptr) _impl_.alpha_->Clear();
+  _impl_._has_bits_[0] &= ~0x80000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_border() {
+  if (_impl_.border_ != nullptr) _impl_.border_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000001u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_blend() {
+  if (_impl_.blend_ != nullptr) _impl_.blend_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000002u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_brightness() {
+  if (_impl_.brightness_ != nullptr) _impl_.brightness_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000004u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_border_lightness() {
+  if (_impl_.border_lightness_ != nullptr) _impl_.border_lightness_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000008u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_contrast() {
+  if (_impl_.contrast_ != nullptr) _impl_.contrast_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000010u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_damping() {
+  if (_impl_.damping_ != nullptr) _impl_.damping_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000020u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_density() {
+  if (_impl_.density_ != nullptr) _impl_.density_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000040u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_diffuse_power() {
+  if (_impl_.diffuse_power_ != nullptr) _impl_.diffuse_power_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000080u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_distortion() {
+  if (_impl_.distortion_ != nullptr) _impl_.distortion_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000100u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_entropy() {
+  if (_impl_.entropy_ != nullptr) _impl_.entropy_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000200u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_exposure() {
+  if (_impl_.exposure_ != nullptr) _impl_.exposure_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000400u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_filter() {
+  if (_impl_.filter_ != nullptr) _impl_.filter_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000800u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_fog_distance() {
+  if (_impl_.fog_distance_ != nullptr) _impl_.fog_distance_->Clear();
+  _impl_._has_bits_[1] &= ~0x00001000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_fog_power() {
+  if (_impl_.fog_power_ != nullptr) _impl_.fog_power_->Clear();
+  _impl_._has_bits_[1] &= ~0x00002000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_gamma() {
+  if (_impl_.gamma_ != nullptr) _impl_.gamma_->Clear();
+  _impl_._has_bits_[1] &= ~0x00004000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_grain_amount() {
+  if (_impl_.grain_amount_ != nullptr) _impl_.grain_amount_->Clear();
+  _impl_._has_bits_[1] &= ~0x00008000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_grain_intensity() {
+  if (_impl_.grain_intensity_ != nullptr) _impl_.grain_intensity_->Clear();
+  _impl_._has_bits_[1] &= ~0x00010000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_hue() {
+  if (_impl_.hue_ != nullptr) _impl_.hue_->Clear();
+  _impl_._has_bits_[1] &= ~0x00020000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_lightness() {
+  if (_impl_.lightness_ != nullptr) _impl_.lightness_->Clear();
+  _impl_._has_bits_[1] &= ~0x00040000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_alpha() {
+  if (_impl_.line_alpha_ != nullptr) _impl_.line_alpha_->Clear();
+  _impl_._has_bits_[1] &= ~0x00080000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_center() {
+  if (_impl_.line_center_ != nullptr) _impl_.line_center_->Clear();
+  _impl_._has_bits_[1] &= ~0x00100000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_fade() {
+  if (_impl_.line_fade_ != nullptr) _impl_.line_fade_->Clear();
+  _impl_._has_bits_[1] &= ~0x00200000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_fade_power() {
+  if (_impl_.line_fade_power_ != nullptr) _impl_.line_fade_power_->Clear();
+  _impl_._has_bits_[1] &= ~0x00400000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_length() {
+  if (_impl_.line_length_ != nullptr) _impl_.line_length_->Clear();
+  _impl_._has_bits_[1] &= ~0x00800000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_line_width() {
+  if (_impl_.line_width_ != nullptr) _impl_.line_width_->Clear();
+  _impl_._has_bits_[1] &= ~0x01000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_size_scale() {
+  if (_impl_.noise_size_scale_ != nullptr) _impl_.noise_size_scale_->Clear();
+  _impl_._has_bits_[1] &= ~0x02000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_size_weight() {
+  if (_impl_.noise_size_weight_ != nullptr) _impl_.noise_size_weight_->Clear();
+  _impl_._has_bits_[1] &= ~0x04000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_variance() {
+  if (_impl_.noise_variance_ != nullptr) _impl_.noise_variance_->Clear();
+  _impl_._has_bits_[1] &= ~0x08000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_offset() {
+  if (_impl_.offset_ != nullptr) _impl_.offset_->Clear();
+  _impl_._has_bits_[1] &= ~0x10000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_motion_background_opacity() {
+  if (_impl_.motion_background_opacity_ != nullptr) _impl_.motion_background_opacity_->Clear();
+  _impl_._has_bits_[1] &= ~0x20000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_point_depth_alpha() {
+  if (_impl_.point_depth_alpha_ != nullptr) _impl_.point_depth_alpha_->Clear();
+  _impl_._has_bits_[1] &= ~0x40000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_point_size() {
+  if (_impl_.point_size_ != nullptr) _impl_.point_size_->Clear();
+  _impl_._has_bits_[1] &= ~0x80000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_power() {
+  if (_impl_.power_ != nullptr) _impl_.power_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000001u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_radius() {
+  if (_impl_.radius_ != nullptr) _impl_.radius_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000002u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_refraction() {
+  if (_impl_.refraction_ != nullptr) _impl_.refraction_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000004u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_resolution() {
+  if (_impl_.resolution_ != nullptr) _impl_.resolution_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000008u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_saturation() {
+  if (_impl_.saturation_ != nullptr) _impl_.saturation_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000010u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_scale() {
+  if (_impl_.scale_ != nullptr) _impl_.scale_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000020u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_alpha() {
+  if (_impl_.shadow_alpha_ != nullptr) _impl_.shadow_alpha_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000040u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_angle() {
+  if (_impl_.shadow_angle_ != nullptr) _impl_.shadow_angle_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000080u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_offset() {
+  if (_impl_.shadow_offset_ != nullptr) _impl_.shadow_offset_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000100u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_scale() {
+  if (_impl_.shadow_scale_ != nullptr) _impl_.shadow_scale_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000200u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_value() {
+  if (_impl_.shadow_value_ != nullptr) _impl_.shadow_value_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000400u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_speed() {
+  if (_impl_.speed_ != nullptr) _impl_.speed_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000800u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_texture_power() {
+  if (_impl_.texture_power_ != nullptr) _impl_.texture_power_->Clear();
+  _impl_._has_bits_[2] &= ~0x00001000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_time() {
+  if (_impl_.time_ != nullptr) _impl_.time_->Clear();
+  _impl_._has_bits_[2] &= ~0x00002000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_draw_points() {
+  if (_impl_.draw_points_ != nullptr) _impl_.draw_points_->Clear();
+  _impl_._has_bits_[2] &= ~0x00004000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_draw_lines() {
+  if (_impl_.draw_lines_ != nullptr) _impl_.draw_lines_->Clear();
+  _impl_._has_bits_[2] &= ~0x00008000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_draw_shadows() {
+  if (_impl_.draw_shadows_ != nullptr) _impl_.draw_shadows_->Clear();
+  _impl_._has_bits_[2] &= ~0x00010000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_pixels_per_division() {
+  if (_impl_.pixels_per_division_ != nullptr) _impl_.pixels_per_division_->Clear();
+  _impl_._has_bits_[2] &= ~0x00020000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_symmetry() {
+  if (_impl_.symmetry_ != nullptr) _impl_.symmetry_->Clear();
+  _impl_._has_bits_[2] &= ~0x00040000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_lock_focus() {
+  if (_impl_.lock_focus_ != nullptr) _impl_.lock_focus_->Clear();
+  _impl_._has_bits_[2] &= ~0x00080000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_amplitude() {
+  if (_impl_.amplitude_ != nullptr) _impl_.amplitude_->Clear();
+  _impl_._has_bits_[2] &= ~0x00100000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_envelope() {
+  if (_impl_.envelope_ != nullptr) _impl_.envelope_->Clear();
+  _impl_._has_bits_[2] &= ~0x00200000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_y_offset() {
+  if (_impl_.y_offset_ != nullptr) _impl_.y_offset_->Clear();
+  _impl_._has_bits_[2] &= ~0x00400000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_focus() {
+  if (_impl_.focus_ != nullptr) _impl_.focus_->Clear();
+  _impl_._has_bits_[2] &= ~0x00800000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_blur() {
+  if (_impl_.blur_ != nullptr) _impl_.blur_->Clear();
+  _impl_._has_bits_[2] &= ~0x01000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_grain_speed() {
+  if (_impl_.grain_speed_ != nullptr) _impl_.grain_speed_->Clear();
+  _impl_._has_bits_[2] &= ~0x02000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_mesh_color() {
+  if (_impl_.mesh_color_ != nullptr) _impl_.mesh_color_->Clear();
+  _impl_._has_bits_[2] &= ~0x04000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_angle() {
+  if (_impl_.angle_ != nullptr) _impl_.angle_->Clear();
+  _impl_._has_bits_[2] &= ~0x08000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_mesh_line_width() {
+  if (_impl_.mesh_line_width_ != nullptr) _impl_.mesh_line_width_->Clear();
+  _impl_._has_bits_[2] &= ~0x10000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_delta_time() {
+  if (_impl_.delta_time_ != nullptr) _impl_.delta_time_->Clear();
+  _impl_._has_bits_[2] &= ~0x20000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_threshold() {
+  if (_impl_.threshold_ != nullptr) _impl_.threshold_->Clear();
+  _impl_._has_bits_[2] &= ~0x40000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_time_start() {
+  if (_impl_.time_start_ != nullptr) _impl_.time_start_->Clear();
+  _impl_._has_bits_[2] &= ~0x80000000u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_instance_count() {
+  if (_impl_.instance_count_ != nullptr) _impl_.instance_count_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000001u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_extrusion() {
+  if (_impl_.extrusion_ != nullptr) _impl_.extrusion_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000002u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_offset() {
+  if (_impl_.noise_offset_ != nullptr) _impl_.noise_offset_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000004u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_color_hue_offset() {
+  if (_impl_.color_hue_offset_ != nullptr) _impl_.color_hue_offset_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000008u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_hue() {
+  if (_impl_.shadow_hue_ != nullptr) _impl_.shadow_hue_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000010u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_hue_offset() {
+  if (_impl_.shadow_hue_offset_ != nullptr) _impl_.shadow_hue_offset_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000020u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_saturation() {
+  if (_impl_.shadow_saturation_ != nullptr) _impl_.shadow_saturation_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000040u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_brightness() {
+  if (_impl_.shadow_brightness_ != nullptr) _impl_.shadow_brightness_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000080u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_intensity() {
+  if (_impl_.shadow_intensity_ != nullptr) _impl_.shadow_intensity_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000100u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_shadow_power() {
+  if (_impl_.shadow_power_ != nullptr) _impl_.shadow_power_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000200u;
+}
+void MotionBackgroundStylePropertyChangeSetArchive::clear_noise_octaves_iterations() {
+  if (_impl_.noise_octaves_iterations_ != nullptr) _impl_.noise_octaves_iterations_->Clear();
+  _impl_._has_bits_[3] &= ~0x00000400u;
+}
+MotionBackgroundStylePropertyChangeSetArchive::MotionBackgroundStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+}
+MotionBackgroundStylePropertyChangeSetArchive::MotionBackgroundStylePropertyChangeSetArchive(const MotionBackgroundStylePropertyChangeSetArchive& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  MotionBackgroundStylePropertyChangeSetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){nullptr}
+    , decltype(_impl_.variant_){nullptr}
+    , decltype(_impl_.color_gradient_){nullptr}
+    , decltype(_impl_.random_seed_){nullptr}
+    , decltype(_impl_.color_blur_sigma_){nullptr}
+    , decltype(_impl_.color_contrast_){nullptr}
+    , decltype(_impl_.color_gamma_){nullptr}
+    , decltype(_impl_.color_saturation_){nullptr}
+    , decltype(_impl_.color_brightness_){nullptr}
+    , decltype(_impl_.color_hue_){nullptr}
+    , decltype(_impl_.color_vibrance_){nullptr}
+    , decltype(_impl_.noise_amplitude_){nullptr}
+    , decltype(_impl_.noise_movement_){nullptr}
+    , decltype(_impl_.noise_octaves_){nullptr}
+    , decltype(_impl_.noise_scale_){nullptr}
+    , decltype(_impl_.noise_scale_horizontal_){nullptr}
+    , decltype(_impl_.noise_scale_vertical_){nullptr}
+    , decltype(_impl_.noise_gain_){nullptr}
+    , decltype(_impl_.noise_lacunarity_){nullptr}
+    , decltype(_impl_.noise_speed_){nullptr}
+    , decltype(_impl_.color_palette_offset_){nullptr}
+    , decltype(_impl_.zoom_){nullptr}
+    , decltype(_impl_.invert_){nullptr}
+    , decltype(_impl_.blend_mode_){nullptr}
+    , decltype(_impl_.source_blend_factor_){nullptr}
+    , decltype(_impl_.dest_blend_factor_){nullptr}
+    , decltype(_impl_.motion_){nullptr}
+    , decltype(_impl_.background_color_){nullptr}
+    , decltype(_impl_.foreground_color_){nullptr}
+    , decltype(_impl_.line_color_){nullptr}
+    , decltype(_impl_.point_color_){nullptr}
+    , decltype(_impl_.alpha_){nullptr}
+    , decltype(_impl_.border_){nullptr}
+    , decltype(_impl_.blend_){nullptr}
+    , decltype(_impl_.brightness_){nullptr}
+    , decltype(_impl_.border_lightness_){nullptr}
+    , decltype(_impl_.contrast_){nullptr}
+    , decltype(_impl_.damping_){nullptr}
+    , decltype(_impl_.density_){nullptr}
+    , decltype(_impl_.diffuse_power_){nullptr}
+    , decltype(_impl_.distortion_){nullptr}
+    , decltype(_impl_.entropy_){nullptr}
+    , decltype(_impl_.exposure_){nullptr}
+    , decltype(_impl_.filter_){nullptr}
+    , decltype(_impl_.fog_distance_){nullptr}
+    , decltype(_impl_.fog_power_){nullptr}
+    , decltype(_impl_.gamma_){nullptr}
+    , decltype(_impl_.grain_amount_){nullptr}
+    , decltype(_impl_.grain_intensity_){nullptr}
+    , decltype(_impl_.hue_){nullptr}
+    , decltype(_impl_.lightness_){nullptr}
+    , decltype(_impl_.line_alpha_){nullptr}
+    , decltype(_impl_.line_center_){nullptr}
+    , decltype(_impl_.line_fade_){nullptr}
+    , decltype(_impl_.line_fade_power_){nullptr}
+    , decltype(_impl_.line_length_){nullptr}
+    , decltype(_impl_.line_width_){nullptr}
+    , decltype(_impl_.noise_size_scale_){nullptr}
+    , decltype(_impl_.noise_size_weight_){nullptr}
+    , decltype(_impl_.noise_variance_){nullptr}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.motion_background_opacity_){nullptr}
+    , decltype(_impl_.point_depth_alpha_){nullptr}
+    , decltype(_impl_.point_size_){nullptr}
+    , decltype(_impl_.power_){nullptr}
+    , decltype(_impl_.radius_){nullptr}
+    , decltype(_impl_.refraction_){nullptr}
+    , decltype(_impl_.resolution_){nullptr}
+    , decltype(_impl_.saturation_){nullptr}
+    , decltype(_impl_.scale_){nullptr}
+    , decltype(_impl_.shadow_alpha_){nullptr}
+    , decltype(_impl_.shadow_angle_){nullptr}
+    , decltype(_impl_.shadow_offset_){nullptr}
+    , decltype(_impl_.shadow_scale_){nullptr}
+    , decltype(_impl_.shadow_value_){nullptr}
+    , decltype(_impl_.speed_){nullptr}
+    , decltype(_impl_.texture_power_){nullptr}
+    , decltype(_impl_.time_){nullptr}
+    , decltype(_impl_.draw_points_){nullptr}
+    , decltype(_impl_.draw_lines_){nullptr}
+    , decltype(_impl_.draw_shadows_){nullptr}
+    , decltype(_impl_.pixels_per_division_){nullptr}
+    , decltype(_impl_.symmetry_){nullptr}
+    , decltype(_impl_.lock_focus_){nullptr}
+    , decltype(_impl_.amplitude_){nullptr}
+    , decltype(_impl_.envelope_){nullptr}
+    , decltype(_impl_.y_offset_){nullptr}
+    , decltype(_impl_.focus_){nullptr}
+    , decltype(_impl_.blur_){nullptr}
+    , decltype(_impl_.grain_speed_){nullptr}
+    , decltype(_impl_.mesh_color_){nullptr}
+    , decltype(_impl_.angle_){nullptr}
+    , decltype(_impl_.mesh_line_width_){nullptr}
+    , decltype(_impl_.delta_time_){nullptr}
+    , decltype(_impl_.threshold_){nullptr}
+    , decltype(_impl_.time_start_){nullptr}
+    , decltype(_impl_.instance_count_){nullptr}
+    , decltype(_impl_.extrusion_){nullptr}
+    , decltype(_impl_.noise_offset_){nullptr}
+    , decltype(_impl_.color_hue_offset_){nullptr}
+    , decltype(_impl_.shadow_hue_){nullptr}
+    , decltype(_impl_.shadow_hue_offset_){nullptr}
+    , decltype(_impl_.shadow_saturation_){nullptr}
+    , decltype(_impl_.shadow_brightness_){nullptr}
+    , decltype(_impl_.shadow_intensity_){nullptr}
+    , decltype(_impl_.shadow_power_){nullptr}
+    , decltype(_impl_.noise_octaves_iterations_){nullptr}
+    , decltype(_impl_.name_undefined_){}
+    , decltype(_impl_.variant_undefined_){}
+    , decltype(_impl_.color_gradient_undefined_){}
+    , decltype(_impl_.random_seed_undefined_){}
+    , decltype(_impl_.color_blur_sigma_undefined_){}
+    , decltype(_impl_.color_contrast_undefined_){}
+    , decltype(_impl_.color_gamma_undefined_){}
+    , decltype(_impl_.color_saturation_undefined_){}
+    , decltype(_impl_.color_brightness_undefined_){}
+    , decltype(_impl_.color_hue_undefined_){}
+    , decltype(_impl_.color_vibrance_undefined_){}
+    , decltype(_impl_.noise_amplitude_undefined_){}
+    , decltype(_impl_.noise_movement_undefined_){}
+    , decltype(_impl_.noise_octaves_undefined_){}
+    , decltype(_impl_.noise_scale_undefined_){}
+    , decltype(_impl_.noise_scale_horizontal_undefined_){}
+    , decltype(_impl_.noise_scale_vertical_undefined_){}
+    , decltype(_impl_.noise_gain_undefined_){}
+    , decltype(_impl_.noise_lacunarity_undefined_){}
+    , decltype(_impl_.noise_speed_undefined_){}
+    , decltype(_impl_.color_palette_offset_undefined_){}
+    , decltype(_impl_.zoom_undefined_){}
+    , decltype(_impl_.invert_undefined_){}
+    , decltype(_impl_.blend_mode_undefined_){}
+    , decltype(_impl_.source_blend_factor_undefined_){}
+    , decltype(_impl_.dest_blend_factor_undefined_){}
+    , decltype(_impl_.motion_undefined_){}
+    , decltype(_impl_.background_color_undefined_){}
+    , decltype(_impl_.foreground_color_undefined_){}
+    , decltype(_impl_.line_color_undefined_){}
+    , decltype(_impl_.point_color_undefined_){}
+    , decltype(_impl_.alpha_undefined_){}
+    , decltype(_impl_.border_undefined_){}
+    , decltype(_impl_.blend_undefined_){}
+    , decltype(_impl_.brightness_undefined_){}
+    , decltype(_impl_.border_lightness_undefined_){}
+    , decltype(_impl_.contrast_undefined_){}
+    , decltype(_impl_.damping_undefined_){}
+    , decltype(_impl_.density_undefined_){}
+    , decltype(_impl_.diffuse_power_undefined_){}
+    , decltype(_impl_.distortion_undefined_){}
+    , decltype(_impl_.entropy_undefined_){}
+    , decltype(_impl_.exposure_undefined_){}
+    , decltype(_impl_.filter_undefined_){}
+    , decltype(_impl_.fog_distance_undefined_){}
+    , decltype(_impl_.fog_power_undefined_){}
+    , decltype(_impl_.gamma_undefined_){}
+    , decltype(_impl_.grain_amount_undefined_){}
+    , decltype(_impl_.grain_intensity_undefined_){}
+    , decltype(_impl_.hue_undefined_){}
+    , decltype(_impl_.lightness_undefined_){}
+    , decltype(_impl_.line_alpha_undefined_){}
+    , decltype(_impl_.line_center_undefined_){}
+    , decltype(_impl_.line_fade_undefined_){}
+    , decltype(_impl_.line_fade_power_undefined_){}
+    , decltype(_impl_.line_length_undefined_){}
+    , decltype(_impl_.line_width_undefined_){}
+    , decltype(_impl_.noise_size_scale_undefined_){}
+    , decltype(_impl_.noise_size_weight_undefined_){}
+    , decltype(_impl_.noise_variance_undefined_){}
+    , decltype(_impl_.offset_undefined_){}
+    , decltype(_impl_.motion_background_opacity_undefined_){}
+    , decltype(_impl_.point_depth_alpha_undefined_){}
+    , decltype(_impl_.point_size_undefined_){}
+    , decltype(_impl_.power_undefined_){}
+    , decltype(_impl_.radius_undefined_){}
+    , decltype(_impl_.refraction_undefined_){}
+    , decltype(_impl_.resolution_undefined_){}
+    , decltype(_impl_.saturation_undefined_){}
+    , decltype(_impl_.scale_undefined_){}
+    , decltype(_impl_.shadow_alpha_undefined_){}
+    , decltype(_impl_.shadow_angle_undefined_){}
+    , decltype(_impl_.shadow_offset_undefined_){}
+    , decltype(_impl_.shadow_scale_undefined_){}
+    , decltype(_impl_.shadow_value_undefined_){}
+    , decltype(_impl_.speed_undefined_){}
+    , decltype(_impl_.texture_power_undefined_){}
+    , decltype(_impl_.time_undefined_){}
+    , decltype(_impl_.draw_points_undefined_){}
+    , decltype(_impl_.draw_lines_undefined_){}
+    , decltype(_impl_.draw_shadows_undefined_){}
+    , decltype(_impl_.pixels_per_division_undefined_){}
+    , decltype(_impl_.symmetry_undefined_){}
+    , decltype(_impl_.lock_focus_undefined_){}
+    , decltype(_impl_.amplitude_undefined_){}
+    , decltype(_impl_.envelope_undefined_){}
+    , decltype(_impl_.y_offset_undefined_){}
+    , decltype(_impl_.focus_undefined_){}
+    , decltype(_impl_.blur_undefined_){}
+    , decltype(_impl_.grain_speed_undefined_){}
+    , decltype(_impl_.mesh_color_undefined_){}
+    , decltype(_impl_.angle_undefined_){}
+    , decltype(_impl_.mesh_line_width_undefined_){}
+    , decltype(_impl_.delta_time_undefined_){}
+    , decltype(_impl_.threshold_undefined_){}
+    , decltype(_impl_.time_start_undefined_){}
+    , decltype(_impl_.instance_count_undefined_){}
+    , decltype(_impl_.extrusion_undefined_){}
+    , decltype(_impl_.noise_offset_undefined_){}
+    , decltype(_impl_.color_hue_offset_undefined_){}
+    , decltype(_impl_.shadow_hue_undefined_){}
+    , decltype(_impl_.shadow_hue_offset_undefined_){}
+    , decltype(_impl_.shadow_saturation_undefined_){}
+    , decltype(_impl_.shadow_brightness_undefined_){}
+    , decltype(_impl_.shadow_intensity_undefined_){}
+    , decltype(_impl_.shadow_power_undefined_){}
+    , decltype(_impl_.noise_octaves_iterations_undefined_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_name()) {
+    _this->_impl_.name_ = new ::TSSSOS::SpecStringArchive(*from._impl_.name_);
+  }
+  if (from._internal_has_variant()) {
+    _this->_impl_.variant_ = new ::TSSSOS::SpecStringArchive(*from._impl_.variant_);
+  }
+  if (from._internal_has_color_gradient()) {
+    _this->_impl_.color_gradient_ = new ::TSDSOS::SpecFillArchive(*from._impl_.color_gradient_);
+  }
+  if (from._internal_has_random_seed()) {
+    _this->_impl_.random_seed_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.random_seed_);
+  }
+  if (from._internal_has_color_blur_sigma()) {
+    _this->_impl_.color_blur_sigma_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_blur_sigma_);
+  }
+  if (from._internal_has_color_contrast()) {
+    _this->_impl_.color_contrast_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_contrast_);
+  }
+  if (from._internal_has_color_gamma()) {
+    _this->_impl_.color_gamma_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_gamma_);
+  }
+  if (from._internal_has_color_saturation()) {
+    _this->_impl_.color_saturation_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_saturation_);
+  }
+  if (from._internal_has_color_brightness()) {
+    _this->_impl_.color_brightness_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_brightness_);
+  }
+  if (from._internal_has_color_hue()) {
+    _this->_impl_.color_hue_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_hue_);
+  }
+  if (from._internal_has_color_vibrance()) {
+    _this->_impl_.color_vibrance_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_vibrance_);
+  }
+  if (from._internal_has_noise_amplitude()) {
+    _this->_impl_.noise_amplitude_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_amplitude_);
+  }
+  if (from._internal_has_noise_movement()) {
+    _this->_impl_.noise_movement_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_movement_);
+  }
+  if (from._internal_has_noise_octaves()) {
+    _this->_impl_.noise_octaves_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_octaves_);
+  }
+  if (from._internal_has_noise_scale()) {
+    _this->_impl_.noise_scale_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_scale_);
+  }
+  if (from._internal_has_noise_scale_horizontal()) {
+    _this->_impl_.noise_scale_horizontal_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_scale_horizontal_);
+  }
+  if (from._internal_has_noise_scale_vertical()) {
+    _this->_impl_.noise_scale_vertical_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_scale_vertical_);
+  }
+  if (from._internal_has_noise_gain()) {
+    _this->_impl_.noise_gain_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_gain_);
+  }
+  if (from._internal_has_noise_lacunarity()) {
+    _this->_impl_.noise_lacunarity_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_lacunarity_);
+  }
+  if (from._internal_has_noise_speed()) {
+    _this->_impl_.noise_speed_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_speed_);
+  }
+  if (from._internal_has_color_palette_offset()) {
+    _this->_impl_.color_palette_offset_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.color_palette_offset_);
+  }
+  if (from._internal_has_zoom()) {
+    _this->_impl_.zoom_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.zoom_);
+  }
+  if (from._internal_has_invert()) {
+    _this->_impl_.invert_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.invert_);
+  }
+  if (from._internal_has_blend_mode()) {
+    _this->_impl_.blend_mode_ = new ::TSSSOS::SpecStringArchive(*from._impl_.blend_mode_);
+  }
+  if (from._internal_has_source_blend_factor()) {
+    _this->_impl_.source_blend_factor_ = new ::TSSSOS::SpecStringArchive(*from._impl_.source_blend_factor_);
+  }
+  if (from._internal_has_dest_blend_factor()) {
+    _this->_impl_.dest_blend_factor_ = new ::TSSSOS::SpecStringArchive(*from._impl_.dest_blend_factor_);
+  }
+  if (from._internal_has_motion()) {
+    _this->_impl_.motion_ = new ::TSSSOS::SpecStringArchive(*from._impl_.motion_);
+  }
+  if (from._internal_has_background_color()) {
+    _this->_impl_.background_color_ = new ::TSSSOS::SpecColorArchive(*from._impl_.background_color_);
+  }
+  if (from._internal_has_foreground_color()) {
+    _this->_impl_.foreground_color_ = new ::TSSSOS::SpecColorArchive(*from._impl_.foreground_color_);
+  }
+  if (from._internal_has_line_color()) {
+    _this->_impl_.line_color_ = new ::TSSSOS::SpecColorArchive(*from._impl_.line_color_);
+  }
+  if (from._internal_has_point_color()) {
+    _this->_impl_.point_color_ = new ::TSSSOS::SpecColorArchive(*from._impl_.point_color_);
+  }
+  if (from._internal_has_alpha()) {
+    _this->_impl_.alpha_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.alpha_);
+  }
+  if (from._internal_has_border()) {
+    _this->_impl_.border_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.border_);
+  }
+  if (from._internal_has_blend()) {
+    _this->_impl_.blend_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.blend_);
+  }
+  if (from._internal_has_brightness()) {
+    _this->_impl_.brightness_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.brightness_);
+  }
+  if (from._internal_has_border_lightness()) {
+    _this->_impl_.border_lightness_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.border_lightness_);
+  }
+  if (from._internal_has_contrast()) {
+    _this->_impl_.contrast_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.contrast_);
+  }
+  if (from._internal_has_damping()) {
+    _this->_impl_.damping_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.damping_);
+  }
+  if (from._internal_has_density()) {
+    _this->_impl_.density_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.density_);
+  }
+  if (from._internal_has_diffuse_power()) {
+    _this->_impl_.diffuse_power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.diffuse_power_);
+  }
+  if (from._internal_has_distortion()) {
+    _this->_impl_.distortion_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.distortion_);
+  }
+  if (from._internal_has_entropy()) {
+    _this->_impl_.entropy_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.entropy_);
+  }
+  if (from._internal_has_exposure()) {
+    _this->_impl_.exposure_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.exposure_);
+  }
+  if (from._internal_has_filter()) {
+    _this->_impl_.filter_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.filter_);
+  }
+  if (from._internal_has_fog_distance()) {
+    _this->_impl_.fog_distance_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.fog_distance_);
+  }
+  if (from._internal_has_fog_power()) {
+    _this->_impl_.fog_power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.fog_power_);
+  }
+  if (from._internal_has_gamma()) {
+    _this->_impl_.gamma_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.gamma_);
+  }
+  if (from._internal_has_grain_amount()) {
+    _this->_impl_.grain_amount_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.grain_amount_);
+  }
+  if (from._internal_has_grain_intensity()) {
+    _this->_impl_.grain_intensity_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.grain_intensity_);
+  }
+  if (from._internal_has_hue()) {
+    _this->_impl_.hue_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.hue_);
+  }
+  if (from._internal_has_lightness()) {
+    _this->_impl_.lightness_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.lightness_);
+  }
+  if (from._internal_has_line_alpha()) {
+    _this->_impl_.line_alpha_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_alpha_);
+  }
+  if (from._internal_has_line_center()) {
+    _this->_impl_.line_center_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_center_);
+  }
+  if (from._internal_has_line_fade()) {
+    _this->_impl_.line_fade_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_fade_);
+  }
+  if (from._internal_has_line_fade_power()) {
+    _this->_impl_.line_fade_power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_fade_power_);
+  }
+  if (from._internal_has_line_length()) {
+    _this->_impl_.line_length_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_length_);
+  }
+  if (from._internal_has_line_width()) {
+    _this->_impl_.line_width_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.line_width_);
+  }
+  if (from._internal_has_noise_size_scale()) {
+    _this->_impl_.noise_size_scale_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_size_scale_);
+  }
+  if (from._internal_has_noise_size_weight()) {
+    _this->_impl_.noise_size_weight_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_size_weight_);
+  }
+  if (from._internal_has_noise_variance()) {
+    _this->_impl_.noise_variance_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_variance_);
+  }
+  if (from._internal_has_offset()) {
+    _this->_impl_.offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.offset_);
+  }
+  if (from._internal_has_motion_background_opacity()) {
+    _this->_impl_.motion_background_opacity_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.motion_background_opacity_);
+  }
+  if (from._internal_has_point_depth_alpha()) {
+    _this->_impl_.point_depth_alpha_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.point_depth_alpha_);
+  }
+  if (from._internal_has_point_size()) {
+    _this->_impl_.point_size_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.point_size_);
+  }
+  if (from._internal_has_power()) {
+    _this->_impl_.power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.power_);
+  }
+  if (from._internal_has_radius()) {
+    _this->_impl_.radius_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.radius_);
+  }
+  if (from._internal_has_refraction()) {
+    _this->_impl_.refraction_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.refraction_);
+  }
+  if (from._internal_has_resolution()) {
+    _this->_impl_.resolution_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.resolution_);
+  }
+  if (from._internal_has_saturation()) {
+    _this->_impl_.saturation_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.saturation_);
+  }
+  if (from._internal_has_scale()) {
+    _this->_impl_.scale_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.scale_);
+  }
+  if (from._internal_has_shadow_alpha()) {
+    _this->_impl_.shadow_alpha_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_alpha_);
+  }
+  if (from._internal_has_shadow_angle()) {
+    _this->_impl_.shadow_angle_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_angle_);
+  }
+  if (from._internal_has_shadow_offset()) {
+    _this->_impl_.shadow_offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_offset_);
+  }
+  if (from._internal_has_shadow_scale()) {
+    _this->_impl_.shadow_scale_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_scale_);
+  }
+  if (from._internal_has_shadow_value()) {
+    _this->_impl_.shadow_value_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_value_);
+  }
+  if (from._internal_has_speed()) {
+    _this->_impl_.speed_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.speed_);
+  }
+  if (from._internal_has_texture_power()) {
+    _this->_impl_.texture_power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.texture_power_);
+  }
+  if (from._internal_has_time()) {
+    _this->_impl_.time_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.time_);
+  }
+  if (from._internal_has_draw_points()) {
+    _this->_impl_.draw_points_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.draw_points_);
+  }
+  if (from._internal_has_draw_lines()) {
+    _this->_impl_.draw_lines_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.draw_lines_);
+  }
+  if (from._internal_has_draw_shadows()) {
+    _this->_impl_.draw_shadows_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.draw_shadows_);
+  }
+  if (from._internal_has_pixels_per_division()) {
+    _this->_impl_.pixels_per_division_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.pixels_per_division_);
+  }
+  if (from._internal_has_symmetry()) {
+    _this->_impl_.symmetry_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.symmetry_);
+  }
+  if (from._internal_has_lock_focus()) {
+    _this->_impl_.lock_focus_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.lock_focus_);
+  }
+  if (from._internal_has_amplitude()) {
+    _this->_impl_.amplitude_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.amplitude_);
+  }
+  if (from._internal_has_envelope()) {
+    _this->_impl_.envelope_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.envelope_);
+  }
+  if (from._internal_has_y_offset()) {
+    _this->_impl_.y_offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.y_offset_);
+  }
+  if (from._internal_has_focus()) {
+    _this->_impl_.focus_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.focus_);
+  }
+  if (from._internal_has_blur()) {
+    _this->_impl_.blur_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.blur_);
+  }
+  if (from._internal_has_grain_speed()) {
+    _this->_impl_.grain_speed_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.grain_speed_);
+  }
+  if (from._internal_has_mesh_color()) {
+    _this->_impl_.mesh_color_ = new ::TSSSOS::SpecColorArchive(*from._impl_.mesh_color_);
+  }
+  if (from._internal_has_angle()) {
+    _this->_impl_.angle_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.angle_);
+  }
+  if (from._internal_has_mesh_line_width()) {
+    _this->_impl_.mesh_line_width_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.mesh_line_width_);
+  }
+  if (from._internal_has_delta_time()) {
+    _this->_impl_.delta_time_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.delta_time_);
+  }
+  if (from._internal_has_threshold()) {
+    _this->_impl_.threshold_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.threshold_);
+  }
+  if (from._internal_has_time_start()) {
+    _this->_impl_.time_start_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.time_start_);
+  }
+  if (from._internal_has_instance_count()) {
+    _this->_impl_.instance_count_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.instance_count_);
+  }
+  if (from._internal_has_extrusion()) {
+    _this->_impl_.extrusion_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.extrusion_);
+  }
+  if (from._internal_has_noise_offset()) {
+    _this->_impl_.noise_offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.noise_offset_);
+  }
+  if (from._internal_has_color_hue_offset()) {
+    _this->_impl_.color_hue_offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.color_hue_offset_);
+  }
+  if (from._internal_has_shadow_hue()) {
+    _this->_impl_.shadow_hue_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_hue_);
+  }
+  if (from._internal_has_shadow_hue_offset()) {
+    _this->_impl_.shadow_hue_offset_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_hue_offset_);
+  }
+  if (from._internal_has_shadow_saturation()) {
+    _this->_impl_.shadow_saturation_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_saturation_);
+  }
+  if (from._internal_has_shadow_brightness()) {
+    _this->_impl_.shadow_brightness_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_brightness_);
+  }
+  if (from._internal_has_shadow_intensity()) {
+    _this->_impl_.shadow_intensity_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_intensity_);
+  }
+  if (from._internal_has_shadow_power()) {
+    _this->_impl_.shadow_power_ = new ::TSSSOS::SpecDoubleArchive(*from._impl_.shadow_power_);
+  }
+  if (from._internal_has_noise_octaves_iterations()) {
+    _this->_impl_.noise_octaves_iterations_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.noise_octaves_iterations_);
+  }
+  ::memcpy(&_impl_.name_undefined_, &from._impl_.name_undefined_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.noise_octaves_iterations_undefined_) -
+    reinterpret_cast<char*>(&_impl_.name_undefined_)) + sizeof(_impl_.noise_octaves_iterations_undefined_));
+  // @@protoc_insertion_point(copy_constructor:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+}
+
+inline void MotionBackgroundStylePropertyChangeSetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){nullptr}
+    , decltype(_impl_.variant_){nullptr}
+    , decltype(_impl_.color_gradient_){nullptr}
+    , decltype(_impl_.random_seed_){nullptr}
+    , decltype(_impl_.color_blur_sigma_){nullptr}
+    , decltype(_impl_.color_contrast_){nullptr}
+    , decltype(_impl_.color_gamma_){nullptr}
+    , decltype(_impl_.color_saturation_){nullptr}
+    , decltype(_impl_.color_brightness_){nullptr}
+    , decltype(_impl_.color_hue_){nullptr}
+    , decltype(_impl_.color_vibrance_){nullptr}
+    , decltype(_impl_.noise_amplitude_){nullptr}
+    , decltype(_impl_.noise_movement_){nullptr}
+    , decltype(_impl_.noise_octaves_){nullptr}
+    , decltype(_impl_.noise_scale_){nullptr}
+    , decltype(_impl_.noise_scale_horizontal_){nullptr}
+    , decltype(_impl_.noise_scale_vertical_){nullptr}
+    , decltype(_impl_.noise_gain_){nullptr}
+    , decltype(_impl_.noise_lacunarity_){nullptr}
+    , decltype(_impl_.noise_speed_){nullptr}
+    , decltype(_impl_.color_palette_offset_){nullptr}
+    , decltype(_impl_.zoom_){nullptr}
+    , decltype(_impl_.invert_){nullptr}
+    , decltype(_impl_.blend_mode_){nullptr}
+    , decltype(_impl_.source_blend_factor_){nullptr}
+    , decltype(_impl_.dest_blend_factor_){nullptr}
+    , decltype(_impl_.motion_){nullptr}
+    , decltype(_impl_.background_color_){nullptr}
+    , decltype(_impl_.foreground_color_){nullptr}
+    , decltype(_impl_.line_color_){nullptr}
+    , decltype(_impl_.point_color_){nullptr}
+    , decltype(_impl_.alpha_){nullptr}
+    , decltype(_impl_.border_){nullptr}
+    , decltype(_impl_.blend_){nullptr}
+    , decltype(_impl_.brightness_){nullptr}
+    , decltype(_impl_.border_lightness_){nullptr}
+    , decltype(_impl_.contrast_){nullptr}
+    , decltype(_impl_.damping_){nullptr}
+    , decltype(_impl_.density_){nullptr}
+    , decltype(_impl_.diffuse_power_){nullptr}
+    , decltype(_impl_.distortion_){nullptr}
+    , decltype(_impl_.entropy_){nullptr}
+    , decltype(_impl_.exposure_){nullptr}
+    , decltype(_impl_.filter_){nullptr}
+    , decltype(_impl_.fog_distance_){nullptr}
+    , decltype(_impl_.fog_power_){nullptr}
+    , decltype(_impl_.gamma_){nullptr}
+    , decltype(_impl_.grain_amount_){nullptr}
+    , decltype(_impl_.grain_intensity_){nullptr}
+    , decltype(_impl_.hue_){nullptr}
+    , decltype(_impl_.lightness_){nullptr}
+    , decltype(_impl_.line_alpha_){nullptr}
+    , decltype(_impl_.line_center_){nullptr}
+    , decltype(_impl_.line_fade_){nullptr}
+    , decltype(_impl_.line_fade_power_){nullptr}
+    , decltype(_impl_.line_length_){nullptr}
+    , decltype(_impl_.line_width_){nullptr}
+    , decltype(_impl_.noise_size_scale_){nullptr}
+    , decltype(_impl_.noise_size_weight_){nullptr}
+    , decltype(_impl_.noise_variance_){nullptr}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.motion_background_opacity_){nullptr}
+    , decltype(_impl_.point_depth_alpha_){nullptr}
+    , decltype(_impl_.point_size_){nullptr}
+    , decltype(_impl_.power_){nullptr}
+    , decltype(_impl_.radius_){nullptr}
+    , decltype(_impl_.refraction_){nullptr}
+    , decltype(_impl_.resolution_){nullptr}
+    , decltype(_impl_.saturation_){nullptr}
+    , decltype(_impl_.scale_){nullptr}
+    , decltype(_impl_.shadow_alpha_){nullptr}
+    , decltype(_impl_.shadow_angle_){nullptr}
+    , decltype(_impl_.shadow_offset_){nullptr}
+    , decltype(_impl_.shadow_scale_){nullptr}
+    , decltype(_impl_.shadow_value_){nullptr}
+    , decltype(_impl_.speed_){nullptr}
+    , decltype(_impl_.texture_power_){nullptr}
+    , decltype(_impl_.time_){nullptr}
+    , decltype(_impl_.draw_points_){nullptr}
+    , decltype(_impl_.draw_lines_){nullptr}
+    , decltype(_impl_.draw_shadows_){nullptr}
+    , decltype(_impl_.pixels_per_division_){nullptr}
+    , decltype(_impl_.symmetry_){nullptr}
+    , decltype(_impl_.lock_focus_){nullptr}
+    , decltype(_impl_.amplitude_){nullptr}
+    , decltype(_impl_.envelope_){nullptr}
+    , decltype(_impl_.y_offset_){nullptr}
+    , decltype(_impl_.focus_){nullptr}
+    , decltype(_impl_.blur_){nullptr}
+    , decltype(_impl_.grain_speed_){nullptr}
+    , decltype(_impl_.mesh_color_){nullptr}
+    , decltype(_impl_.angle_){nullptr}
+    , decltype(_impl_.mesh_line_width_){nullptr}
+    , decltype(_impl_.delta_time_){nullptr}
+    , decltype(_impl_.threshold_){nullptr}
+    , decltype(_impl_.time_start_){nullptr}
+    , decltype(_impl_.instance_count_){nullptr}
+    , decltype(_impl_.extrusion_){nullptr}
+    , decltype(_impl_.noise_offset_){nullptr}
+    , decltype(_impl_.color_hue_offset_){nullptr}
+    , decltype(_impl_.shadow_hue_){nullptr}
+    , decltype(_impl_.shadow_hue_offset_){nullptr}
+    , decltype(_impl_.shadow_saturation_){nullptr}
+    , decltype(_impl_.shadow_brightness_){nullptr}
+    , decltype(_impl_.shadow_intensity_){nullptr}
+    , decltype(_impl_.shadow_power_){nullptr}
+    , decltype(_impl_.noise_octaves_iterations_){nullptr}
+    , decltype(_impl_.name_undefined_){false}
+    , decltype(_impl_.variant_undefined_){false}
+    , decltype(_impl_.color_gradient_undefined_){false}
+    , decltype(_impl_.random_seed_undefined_){false}
+    , decltype(_impl_.color_blur_sigma_undefined_){false}
+    , decltype(_impl_.color_contrast_undefined_){false}
+    , decltype(_impl_.color_gamma_undefined_){false}
+    , decltype(_impl_.color_saturation_undefined_){false}
+    , decltype(_impl_.color_brightness_undefined_){false}
+    , decltype(_impl_.color_hue_undefined_){false}
+    , decltype(_impl_.color_vibrance_undefined_){false}
+    , decltype(_impl_.noise_amplitude_undefined_){false}
+    , decltype(_impl_.noise_movement_undefined_){false}
+    , decltype(_impl_.noise_octaves_undefined_){false}
+    , decltype(_impl_.noise_scale_undefined_){false}
+    , decltype(_impl_.noise_scale_horizontal_undefined_){false}
+    , decltype(_impl_.noise_scale_vertical_undefined_){false}
+    , decltype(_impl_.noise_gain_undefined_){false}
+    , decltype(_impl_.noise_lacunarity_undefined_){false}
+    , decltype(_impl_.noise_speed_undefined_){false}
+    , decltype(_impl_.color_palette_offset_undefined_){false}
+    , decltype(_impl_.zoom_undefined_){false}
+    , decltype(_impl_.invert_undefined_){false}
+    , decltype(_impl_.blend_mode_undefined_){false}
+    , decltype(_impl_.source_blend_factor_undefined_){false}
+    , decltype(_impl_.dest_blend_factor_undefined_){false}
+    , decltype(_impl_.motion_undefined_){false}
+    , decltype(_impl_.background_color_undefined_){false}
+    , decltype(_impl_.foreground_color_undefined_){false}
+    , decltype(_impl_.line_color_undefined_){false}
+    , decltype(_impl_.point_color_undefined_){false}
+    , decltype(_impl_.alpha_undefined_){false}
+    , decltype(_impl_.border_undefined_){false}
+    , decltype(_impl_.blend_undefined_){false}
+    , decltype(_impl_.brightness_undefined_){false}
+    , decltype(_impl_.border_lightness_undefined_){false}
+    , decltype(_impl_.contrast_undefined_){false}
+    , decltype(_impl_.damping_undefined_){false}
+    , decltype(_impl_.density_undefined_){false}
+    , decltype(_impl_.diffuse_power_undefined_){false}
+    , decltype(_impl_.distortion_undefined_){false}
+    , decltype(_impl_.entropy_undefined_){false}
+    , decltype(_impl_.exposure_undefined_){false}
+    , decltype(_impl_.filter_undefined_){false}
+    , decltype(_impl_.fog_distance_undefined_){false}
+    , decltype(_impl_.fog_power_undefined_){false}
+    , decltype(_impl_.gamma_undefined_){false}
+    , decltype(_impl_.grain_amount_undefined_){false}
+    , decltype(_impl_.grain_intensity_undefined_){false}
+    , decltype(_impl_.hue_undefined_){false}
+    , decltype(_impl_.lightness_undefined_){false}
+    , decltype(_impl_.line_alpha_undefined_){false}
+    , decltype(_impl_.line_center_undefined_){false}
+    , decltype(_impl_.line_fade_undefined_){false}
+    , decltype(_impl_.line_fade_power_undefined_){false}
+    , decltype(_impl_.line_length_undefined_){false}
+    , decltype(_impl_.line_width_undefined_){false}
+    , decltype(_impl_.noise_size_scale_undefined_){false}
+    , decltype(_impl_.noise_size_weight_undefined_){false}
+    , decltype(_impl_.noise_variance_undefined_){false}
+    , decltype(_impl_.offset_undefined_){false}
+    , decltype(_impl_.motion_background_opacity_undefined_){false}
+    , decltype(_impl_.point_depth_alpha_undefined_){false}
+    , decltype(_impl_.point_size_undefined_){false}
+    , decltype(_impl_.power_undefined_){false}
+    , decltype(_impl_.radius_undefined_){false}
+    , decltype(_impl_.refraction_undefined_){false}
+    , decltype(_impl_.resolution_undefined_){false}
+    , decltype(_impl_.saturation_undefined_){false}
+    , decltype(_impl_.scale_undefined_){false}
+    , decltype(_impl_.shadow_alpha_undefined_){false}
+    , decltype(_impl_.shadow_angle_undefined_){false}
+    , decltype(_impl_.shadow_offset_undefined_){false}
+    , decltype(_impl_.shadow_scale_undefined_){false}
+    , decltype(_impl_.shadow_value_undefined_){false}
+    , decltype(_impl_.speed_undefined_){false}
+    , decltype(_impl_.texture_power_undefined_){false}
+    , decltype(_impl_.time_undefined_){false}
+    , decltype(_impl_.draw_points_undefined_){false}
+    , decltype(_impl_.draw_lines_undefined_){false}
+    , decltype(_impl_.draw_shadows_undefined_){false}
+    , decltype(_impl_.pixels_per_division_undefined_){false}
+    , decltype(_impl_.symmetry_undefined_){false}
+    , decltype(_impl_.lock_focus_undefined_){false}
+    , decltype(_impl_.amplitude_undefined_){false}
+    , decltype(_impl_.envelope_undefined_){false}
+    , decltype(_impl_.y_offset_undefined_){false}
+    , decltype(_impl_.focus_undefined_){false}
+    , decltype(_impl_.blur_undefined_){false}
+    , decltype(_impl_.grain_speed_undefined_){false}
+    , decltype(_impl_.mesh_color_undefined_){false}
+    , decltype(_impl_.angle_undefined_){false}
+    , decltype(_impl_.mesh_line_width_undefined_){false}
+    , decltype(_impl_.delta_time_undefined_){false}
+    , decltype(_impl_.threshold_undefined_){false}
+    , decltype(_impl_.time_start_undefined_){false}
+    , decltype(_impl_.instance_count_undefined_){false}
+    , decltype(_impl_.extrusion_undefined_){false}
+    , decltype(_impl_.noise_offset_undefined_){false}
+    , decltype(_impl_.color_hue_offset_undefined_){false}
+    , decltype(_impl_.shadow_hue_undefined_){false}
+    , decltype(_impl_.shadow_hue_offset_undefined_){false}
+    , decltype(_impl_.shadow_saturation_undefined_){false}
+    , decltype(_impl_.shadow_brightness_undefined_){false}
+    , decltype(_impl_.shadow_intensity_undefined_){false}
+    , decltype(_impl_.shadow_power_undefined_){false}
+    , decltype(_impl_.noise_octaves_iterations_undefined_){false}
+  };
+}
+
+MotionBackgroundStylePropertyChangeSetArchive::~MotionBackgroundStylePropertyChangeSetArchive() {
+  // @@protoc_insertion_point(destructor:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void MotionBackgroundStylePropertyChangeSetArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.name_;
+  if (this != internal_default_instance()) delete _impl_.variant_;
+  if (this != internal_default_instance()) delete _impl_.color_gradient_;
+  if (this != internal_default_instance()) delete _impl_.random_seed_;
+  if (this != internal_default_instance()) delete _impl_.color_blur_sigma_;
+  if (this != internal_default_instance()) delete _impl_.color_contrast_;
+  if (this != internal_default_instance()) delete _impl_.color_gamma_;
+  if (this != internal_default_instance()) delete _impl_.color_saturation_;
+  if (this != internal_default_instance()) delete _impl_.color_brightness_;
+  if (this != internal_default_instance()) delete _impl_.color_hue_;
+  if (this != internal_default_instance()) delete _impl_.color_vibrance_;
+  if (this != internal_default_instance()) delete _impl_.noise_amplitude_;
+  if (this != internal_default_instance()) delete _impl_.noise_movement_;
+  if (this != internal_default_instance()) delete _impl_.noise_octaves_;
+  if (this != internal_default_instance()) delete _impl_.noise_scale_;
+  if (this != internal_default_instance()) delete _impl_.noise_scale_horizontal_;
+  if (this != internal_default_instance()) delete _impl_.noise_scale_vertical_;
+  if (this != internal_default_instance()) delete _impl_.noise_gain_;
+  if (this != internal_default_instance()) delete _impl_.noise_lacunarity_;
+  if (this != internal_default_instance()) delete _impl_.noise_speed_;
+  if (this != internal_default_instance()) delete _impl_.color_palette_offset_;
+  if (this != internal_default_instance()) delete _impl_.zoom_;
+  if (this != internal_default_instance()) delete _impl_.invert_;
+  if (this != internal_default_instance()) delete _impl_.blend_mode_;
+  if (this != internal_default_instance()) delete _impl_.source_blend_factor_;
+  if (this != internal_default_instance()) delete _impl_.dest_blend_factor_;
+  if (this != internal_default_instance()) delete _impl_.motion_;
+  if (this != internal_default_instance()) delete _impl_.background_color_;
+  if (this != internal_default_instance()) delete _impl_.foreground_color_;
+  if (this != internal_default_instance()) delete _impl_.line_color_;
+  if (this != internal_default_instance()) delete _impl_.point_color_;
+  if (this != internal_default_instance()) delete _impl_.alpha_;
+  if (this != internal_default_instance()) delete _impl_.border_;
+  if (this != internal_default_instance()) delete _impl_.blend_;
+  if (this != internal_default_instance()) delete _impl_.brightness_;
+  if (this != internal_default_instance()) delete _impl_.border_lightness_;
+  if (this != internal_default_instance()) delete _impl_.contrast_;
+  if (this != internal_default_instance()) delete _impl_.damping_;
+  if (this != internal_default_instance()) delete _impl_.density_;
+  if (this != internal_default_instance()) delete _impl_.diffuse_power_;
+  if (this != internal_default_instance()) delete _impl_.distortion_;
+  if (this != internal_default_instance()) delete _impl_.entropy_;
+  if (this != internal_default_instance()) delete _impl_.exposure_;
+  if (this != internal_default_instance()) delete _impl_.filter_;
+  if (this != internal_default_instance()) delete _impl_.fog_distance_;
+  if (this != internal_default_instance()) delete _impl_.fog_power_;
+  if (this != internal_default_instance()) delete _impl_.gamma_;
+  if (this != internal_default_instance()) delete _impl_.grain_amount_;
+  if (this != internal_default_instance()) delete _impl_.grain_intensity_;
+  if (this != internal_default_instance()) delete _impl_.hue_;
+  if (this != internal_default_instance()) delete _impl_.lightness_;
+  if (this != internal_default_instance()) delete _impl_.line_alpha_;
+  if (this != internal_default_instance()) delete _impl_.line_center_;
+  if (this != internal_default_instance()) delete _impl_.line_fade_;
+  if (this != internal_default_instance()) delete _impl_.line_fade_power_;
+  if (this != internal_default_instance()) delete _impl_.line_length_;
+  if (this != internal_default_instance()) delete _impl_.line_width_;
+  if (this != internal_default_instance()) delete _impl_.noise_size_scale_;
+  if (this != internal_default_instance()) delete _impl_.noise_size_weight_;
+  if (this != internal_default_instance()) delete _impl_.noise_variance_;
+  if (this != internal_default_instance()) delete _impl_.offset_;
+  if (this != internal_default_instance()) delete _impl_.motion_background_opacity_;
+  if (this != internal_default_instance()) delete _impl_.point_depth_alpha_;
+  if (this != internal_default_instance()) delete _impl_.point_size_;
+  if (this != internal_default_instance()) delete _impl_.power_;
+  if (this != internal_default_instance()) delete _impl_.radius_;
+  if (this != internal_default_instance()) delete _impl_.refraction_;
+  if (this != internal_default_instance()) delete _impl_.resolution_;
+  if (this != internal_default_instance()) delete _impl_.saturation_;
+  if (this != internal_default_instance()) delete _impl_.scale_;
+  if (this != internal_default_instance()) delete _impl_.shadow_alpha_;
+  if (this != internal_default_instance()) delete _impl_.shadow_angle_;
+  if (this != internal_default_instance()) delete _impl_.shadow_offset_;
+  if (this != internal_default_instance()) delete _impl_.shadow_scale_;
+  if (this != internal_default_instance()) delete _impl_.shadow_value_;
+  if (this != internal_default_instance()) delete _impl_.speed_;
+  if (this != internal_default_instance()) delete _impl_.texture_power_;
+  if (this != internal_default_instance()) delete _impl_.time_;
+  if (this != internal_default_instance()) delete _impl_.draw_points_;
+  if (this != internal_default_instance()) delete _impl_.draw_lines_;
+  if (this != internal_default_instance()) delete _impl_.draw_shadows_;
+  if (this != internal_default_instance()) delete _impl_.pixels_per_division_;
+  if (this != internal_default_instance()) delete _impl_.symmetry_;
+  if (this != internal_default_instance()) delete _impl_.lock_focus_;
+  if (this != internal_default_instance()) delete _impl_.amplitude_;
+  if (this != internal_default_instance()) delete _impl_.envelope_;
+  if (this != internal_default_instance()) delete _impl_.y_offset_;
+  if (this != internal_default_instance()) delete _impl_.focus_;
+  if (this != internal_default_instance()) delete _impl_.blur_;
+  if (this != internal_default_instance()) delete _impl_.grain_speed_;
+  if (this != internal_default_instance()) delete _impl_.mesh_color_;
+  if (this != internal_default_instance()) delete _impl_.angle_;
+  if (this != internal_default_instance()) delete _impl_.mesh_line_width_;
+  if (this != internal_default_instance()) delete _impl_.delta_time_;
+  if (this != internal_default_instance()) delete _impl_.threshold_;
+  if (this != internal_default_instance()) delete _impl_.time_start_;
+  if (this != internal_default_instance()) delete _impl_.instance_count_;
+  if (this != internal_default_instance()) delete _impl_.extrusion_;
+  if (this != internal_default_instance()) delete _impl_.noise_offset_;
+  if (this != internal_default_instance()) delete _impl_.color_hue_offset_;
+  if (this != internal_default_instance()) delete _impl_.shadow_hue_;
+  if (this != internal_default_instance()) delete _impl_.shadow_hue_offset_;
+  if (this != internal_default_instance()) delete _impl_.shadow_saturation_;
+  if (this != internal_default_instance()) delete _impl_.shadow_brightness_;
+  if (this != internal_default_instance()) delete _impl_.shadow_intensity_;
+  if (this != internal_default_instance()) delete _impl_.shadow_power_;
+  if (this != internal_default_instance()) delete _impl_.noise_octaves_iterations_;
+}
+
+void MotionBackgroundStylePropertyChangeSetArchive::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void MotionBackgroundStylePropertyChangeSetArchive::Clear() {
+// @@protoc_insertion_point(message_clear_start:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.name_ != nullptr);
+      _impl_.name_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.variant_ != nullptr);
+      _impl_.variant_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(_impl_.color_gradient_ != nullptr);
+      _impl_.color_gradient_->Clear();
+    }
+    if (cached_has_bits & 0x00000008u) {
+      GOOGLE_DCHECK(_impl_.random_seed_ != nullptr);
+      _impl_.random_seed_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(_impl_.color_blur_sigma_ != nullptr);
+      _impl_.color_blur_sigma_->Clear();
+    }
+    if (cached_has_bits & 0x00000020u) {
+      GOOGLE_DCHECK(_impl_.color_contrast_ != nullptr);
+      _impl_.color_contrast_->Clear();
+    }
+    if (cached_has_bits & 0x00000040u) {
+      GOOGLE_DCHECK(_impl_.color_gamma_ != nullptr);
+      _impl_.color_gamma_->Clear();
+    }
+    if (cached_has_bits & 0x00000080u) {
+      GOOGLE_DCHECK(_impl_.color_saturation_ != nullptr);
+      _impl_.color_saturation_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      GOOGLE_DCHECK(_impl_.color_brightness_ != nullptr);
+      _impl_.color_brightness_->Clear();
+    }
+    if (cached_has_bits & 0x00000200u) {
+      GOOGLE_DCHECK(_impl_.color_hue_ != nullptr);
+      _impl_.color_hue_->Clear();
+    }
+    if (cached_has_bits & 0x00000400u) {
+      GOOGLE_DCHECK(_impl_.color_vibrance_ != nullptr);
+      _impl_.color_vibrance_->Clear();
+    }
+    if (cached_has_bits & 0x00000800u) {
+      GOOGLE_DCHECK(_impl_.noise_amplitude_ != nullptr);
+      _impl_.noise_amplitude_->Clear();
+    }
+    if (cached_has_bits & 0x00001000u) {
+      GOOGLE_DCHECK(_impl_.noise_movement_ != nullptr);
+      _impl_.noise_movement_->Clear();
+    }
+    if (cached_has_bits & 0x00002000u) {
+      GOOGLE_DCHECK(_impl_.noise_octaves_ != nullptr);
+      _impl_.noise_octaves_->Clear();
+    }
+    if (cached_has_bits & 0x00004000u) {
+      GOOGLE_DCHECK(_impl_.noise_scale_ != nullptr);
+      _impl_.noise_scale_->Clear();
+    }
+    if (cached_has_bits & 0x00008000u) {
+      GOOGLE_DCHECK(_impl_.noise_scale_horizontal_ != nullptr);
+      _impl_.noise_scale_horizontal_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      GOOGLE_DCHECK(_impl_.noise_scale_vertical_ != nullptr);
+      _impl_.noise_scale_vertical_->Clear();
+    }
+    if (cached_has_bits & 0x00020000u) {
+      GOOGLE_DCHECK(_impl_.noise_gain_ != nullptr);
+      _impl_.noise_gain_->Clear();
+    }
+    if (cached_has_bits & 0x00040000u) {
+      GOOGLE_DCHECK(_impl_.noise_lacunarity_ != nullptr);
+      _impl_.noise_lacunarity_->Clear();
+    }
+    if (cached_has_bits & 0x00080000u) {
+      GOOGLE_DCHECK(_impl_.noise_speed_ != nullptr);
+      _impl_.noise_speed_->Clear();
+    }
+    if (cached_has_bits & 0x00100000u) {
+      GOOGLE_DCHECK(_impl_.color_palette_offset_ != nullptr);
+      _impl_.color_palette_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00200000u) {
+      GOOGLE_DCHECK(_impl_.zoom_ != nullptr);
+      _impl_.zoom_->Clear();
+    }
+    if (cached_has_bits & 0x00400000u) {
+      GOOGLE_DCHECK(_impl_.invert_ != nullptr);
+      _impl_.invert_->Clear();
+    }
+    if (cached_has_bits & 0x00800000u) {
+      GOOGLE_DCHECK(_impl_.blend_mode_ != nullptr);
+      _impl_.blend_mode_->Clear();
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      GOOGLE_DCHECK(_impl_.source_blend_factor_ != nullptr);
+      _impl_.source_blend_factor_->Clear();
+    }
+    if (cached_has_bits & 0x02000000u) {
+      GOOGLE_DCHECK(_impl_.dest_blend_factor_ != nullptr);
+      _impl_.dest_blend_factor_->Clear();
+    }
+    if (cached_has_bits & 0x04000000u) {
+      GOOGLE_DCHECK(_impl_.motion_ != nullptr);
+      _impl_.motion_->Clear();
+    }
+    if (cached_has_bits & 0x08000000u) {
+      GOOGLE_DCHECK(_impl_.background_color_ != nullptr);
+      _impl_.background_color_->Clear();
+    }
+    if (cached_has_bits & 0x10000000u) {
+      GOOGLE_DCHECK(_impl_.foreground_color_ != nullptr);
+      _impl_.foreground_color_->Clear();
+    }
+    if (cached_has_bits & 0x20000000u) {
+      GOOGLE_DCHECK(_impl_.line_color_ != nullptr);
+      _impl_.line_color_->Clear();
+    }
+    if (cached_has_bits & 0x40000000u) {
+      GOOGLE_DCHECK(_impl_.point_color_ != nullptr);
+      _impl_.point_color_->Clear();
+    }
+    if (cached_has_bits & 0x80000000u) {
+      GOOGLE_DCHECK(_impl_.alpha_ != nullptr);
+      _impl_.alpha_->Clear();
+    }
+  }
+  cached_has_bits = _impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.border_ != nullptr);
+      _impl_.border_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.blend_ != nullptr);
+      _impl_.blend_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(_impl_.brightness_ != nullptr);
+      _impl_.brightness_->Clear();
+    }
+    if (cached_has_bits & 0x00000008u) {
+      GOOGLE_DCHECK(_impl_.border_lightness_ != nullptr);
+      _impl_.border_lightness_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(_impl_.contrast_ != nullptr);
+      _impl_.contrast_->Clear();
+    }
+    if (cached_has_bits & 0x00000020u) {
+      GOOGLE_DCHECK(_impl_.damping_ != nullptr);
+      _impl_.damping_->Clear();
+    }
+    if (cached_has_bits & 0x00000040u) {
+      GOOGLE_DCHECK(_impl_.density_ != nullptr);
+      _impl_.density_->Clear();
+    }
+    if (cached_has_bits & 0x00000080u) {
+      GOOGLE_DCHECK(_impl_.diffuse_power_ != nullptr);
+      _impl_.diffuse_power_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      GOOGLE_DCHECK(_impl_.distortion_ != nullptr);
+      _impl_.distortion_->Clear();
+    }
+    if (cached_has_bits & 0x00000200u) {
+      GOOGLE_DCHECK(_impl_.entropy_ != nullptr);
+      _impl_.entropy_->Clear();
+    }
+    if (cached_has_bits & 0x00000400u) {
+      GOOGLE_DCHECK(_impl_.exposure_ != nullptr);
+      _impl_.exposure_->Clear();
+    }
+    if (cached_has_bits & 0x00000800u) {
+      GOOGLE_DCHECK(_impl_.filter_ != nullptr);
+      _impl_.filter_->Clear();
+    }
+    if (cached_has_bits & 0x00001000u) {
+      GOOGLE_DCHECK(_impl_.fog_distance_ != nullptr);
+      _impl_.fog_distance_->Clear();
+    }
+    if (cached_has_bits & 0x00002000u) {
+      GOOGLE_DCHECK(_impl_.fog_power_ != nullptr);
+      _impl_.fog_power_->Clear();
+    }
+    if (cached_has_bits & 0x00004000u) {
+      GOOGLE_DCHECK(_impl_.gamma_ != nullptr);
+      _impl_.gamma_->Clear();
+    }
+    if (cached_has_bits & 0x00008000u) {
+      GOOGLE_DCHECK(_impl_.grain_amount_ != nullptr);
+      _impl_.grain_amount_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      GOOGLE_DCHECK(_impl_.grain_intensity_ != nullptr);
+      _impl_.grain_intensity_->Clear();
+    }
+    if (cached_has_bits & 0x00020000u) {
+      GOOGLE_DCHECK(_impl_.hue_ != nullptr);
+      _impl_.hue_->Clear();
+    }
+    if (cached_has_bits & 0x00040000u) {
+      GOOGLE_DCHECK(_impl_.lightness_ != nullptr);
+      _impl_.lightness_->Clear();
+    }
+    if (cached_has_bits & 0x00080000u) {
+      GOOGLE_DCHECK(_impl_.line_alpha_ != nullptr);
+      _impl_.line_alpha_->Clear();
+    }
+    if (cached_has_bits & 0x00100000u) {
+      GOOGLE_DCHECK(_impl_.line_center_ != nullptr);
+      _impl_.line_center_->Clear();
+    }
+    if (cached_has_bits & 0x00200000u) {
+      GOOGLE_DCHECK(_impl_.line_fade_ != nullptr);
+      _impl_.line_fade_->Clear();
+    }
+    if (cached_has_bits & 0x00400000u) {
+      GOOGLE_DCHECK(_impl_.line_fade_power_ != nullptr);
+      _impl_.line_fade_power_->Clear();
+    }
+    if (cached_has_bits & 0x00800000u) {
+      GOOGLE_DCHECK(_impl_.line_length_ != nullptr);
+      _impl_.line_length_->Clear();
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      GOOGLE_DCHECK(_impl_.line_width_ != nullptr);
+      _impl_.line_width_->Clear();
+    }
+    if (cached_has_bits & 0x02000000u) {
+      GOOGLE_DCHECK(_impl_.noise_size_scale_ != nullptr);
+      _impl_.noise_size_scale_->Clear();
+    }
+    if (cached_has_bits & 0x04000000u) {
+      GOOGLE_DCHECK(_impl_.noise_size_weight_ != nullptr);
+      _impl_.noise_size_weight_->Clear();
+    }
+    if (cached_has_bits & 0x08000000u) {
+      GOOGLE_DCHECK(_impl_.noise_variance_ != nullptr);
+      _impl_.noise_variance_->Clear();
+    }
+    if (cached_has_bits & 0x10000000u) {
+      GOOGLE_DCHECK(_impl_.offset_ != nullptr);
+      _impl_.offset_->Clear();
+    }
+    if (cached_has_bits & 0x20000000u) {
+      GOOGLE_DCHECK(_impl_.motion_background_opacity_ != nullptr);
+      _impl_.motion_background_opacity_->Clear();
+    }
+    if (cached_has_bits & 0x40000000u) {
+      GOOGLE_DCHECK(_impl_.point_depth_alpha_ != nullptr);
+      _impl_.point_depth_alpha_->Clear();
+    }
+    if (cached_has_bits & 0x80000000u) {
+      GOOGLE_DCHECK(_impl_.point_size_ != nullptr);
+      _impl_.point_size_->Clear();
+    }
+  }
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.power_ != nullptr);
+      _impl_.power_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.radius_ != nullptr);
+      _impl_.radius_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(_impl_.refraction_ != nullptr);
+      _impl_.refraction_->Clear();
+    }
+    if (cached_has_bits & 0x00000008u) {
+      GOOGLE_DCHECK(_impl_.resolution_ != nullptr);
+      _impl_.resolution_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(_impl_.saturation_ != nullptr);
+      _impl_.saturation_->Clear();
+    }
+    if (cached_has_bits & 0x00000020u) {
+      GOOGLE_DCHECK(_impl_.scale_ != nullptr);
+      _impl_.scale_->Clear();
+    }
+    if (cached_has_bits & 0x00000040u) {
+      GOOGLE_DCHECK(_impl_.shadow_alpha_ != nullptr);
+      _impl_.shadow_alpha_->Clear();
+    }
+    if (cached_has_bits & 0x00000080u) {
+      GOOGLE_DCHECK(_impl_.shadow_angle_ != nullptr);
+      _impl_.shadow_angle_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      GOOGLE_DCHECK(_impl_.shadow_offset_ != nullptr);
+      _impl_.shadow_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00000200u) {
+      GOOGLE_DCHECK(_impl_.shadow_scale_ != nullptr);
+      _impl_.shadow_scale_->Clear();
+    }
+    if (cached_has_bits & 0x00000400u) {
+      GOOGLE_DCHECK(_impl_.shadow_value_ != nullptr);
+      _impl_.shadow_value_->Clear();
+    }
+    if (cached_has_bits & 0x00000800u) {
+      GOOGLE_DCHECK(_impl_.speed_ != nullptr);
+      _impl_.speed_->Clear();
+    }
+    if (cached_has_bits & 0x00001000u) {
+      GOOGLE_DCHECK(_impl_.texture_power_ != nullptr);
+      _impl_.texture_power_->Clear();
+    }
+    if (cached_has_bits & 0x00002000u) {
+      GOOGLE_DCHECK(_impl_.time_ != nullptr);
+      _impl_.time_->Clear();
+    }
+    if (cached_has_bits & 0x00004000u) {
+      GOOGLE_DCHECK(_impl_.draw_points_ != nullptr);
+      _impl_.draw_points_->Clear();
+    }
+    if (cached_has_bits & 0x00008000u) {
+      GOOGLE_DCHECK(_impl_.draw_lines_ != nullptr);
+      _impl_.draw_lines_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      GOOGLE_DCHECK(_impl_.draw_shadows_ != nullptr);
+      _impl_.draw_shadows_->Clear();
+    }
+    if (cached_has_bits & 0x00020000u) {
+      GOOGLE_DCHECK(_impl_.pixels_per_division_ != nullptr);
+      _impl_.pixels_per_division_->Clear();
+    }
+    if (cached_has_bits & 0x00040000u) {
+      GOOGLE_DCHECK(_impl_.symmetry_ != nullptr);
+      _impl_.symmetry_->Clear();
+    }
+    if (cached_has_bits & 0x00080000u) {
+      GOOGLE_DCHECK(_impl_.lock_focus_ != nullptr);
+      _impl_.lock_focus_->Clear();
+    }
+    if (cached_has_bits & 0x00100000u) {
+      GOOGLE_DCHECK(_impl_.amplitude_ != nullptr);
+      _impl_.amplitude_->Clear();
+    }
+    if (cached_has_bits & 0x00200000u) {
+      GOOGLE_DCHECK(_impl_.envelope_ != nullptr);
+      _impl_.envelope_->Clear();
+    }
+    if (cached_has_bits & 0x00400000u) {
+      GOOGLE_DCHECK(_impl_.y_offset_ != nullptr);
+      _impl_.y_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00800000u) {
+      GOOGLE_DCHECK(_impl_.focus_ != nullptr);
+      _impl_.focus_->Clear();
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      GOOGLE_DCHECK(_impl_.blur_ != nullptr);
+      _impl_.blur_->Clear();
+    }
+    if (cached_has_bits & 0x02000000u) {
+      GOOGLE_DCHECK(_impl_.grain_speed_ != nullptr);
+      _impl_.grain_speed_->Clear();
+    }
+    if (cached_has_bits & 0x04000000u) {
+      GOOGLE_DCHECK(_impl_.mesh_color_ != nullptr);
+      _impl_.mesh_color_->Clear();
+    }
+    if (cached_has_bits & 0x08000000u) {
+      GOOGLE_DCHECK(_impl_.angle_ != nullptr);
+      _impl_.angle_->Clear();
+    }
+    if (cached_has_bits & 0x10000000u) {
+      GOOGLE_DCHECK(_impl_.mesh_line_width_ != nullptr);
+      _impl_.mesh_line_width_->Clear();
+    }
+    if (cached_has_bits & 0x20000000u) {
+      GOOGLE_DCHECK(_impl_.delta_time_ != nullptr);
+      _impl_.delta_time_->Clear();
+    }
+    if (cached_has_bits & 0x40000000u) {
+      GOOGLE_DCHECK(_impl_.threshold_ != nullptr);
+      _impl_.threshold_->Clear();
+    }
+    if (cached_has_bits & 0x80000000u) {
+      GOOGLE_DCHECK(_impl_.time_start_ != nullptr);
+      _impl_.time_start_->Clear();
+    }
+  }
+  cached_has_bits = _impl_._has_bits_[3];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.instance_count_ != nullptr);
+      _impl_.instance_count_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.extrusion_ != nullptr);
+      _impl_.extrusion_->Clear();
+    }
+    if (cached_has_bits & 0x00000004u) {
+      GOOGLE_DCHECK(_impl_.noise_offset_ != nullptr);
+      _impl_.noise_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00000008u) {
+      GOOGLE_DCHECK(_impl_.color_hue_offset_ != nullptr);
+      _impl_.color_hue_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00000010u) {
+      GOOGLE_DCHECK(_impl_.shadow_hue_ != nullptr);
+      _impl_.shadow_hue_->Clear();
+    }
+    if (cached_has_bits & 0x00000020u) {
+      GOOGLE_DCHECK(_impl_.shadow_hue_offset_ != nullptr);
+      _impl_.shadow_hue_offset_->Clear();
+    }
+    if (cached_has_bits & 0x00000040u) {
+      GOOGLE_DCHECK(_impl_.shadow_saturation_ != nullptr);
+      _impl_.shadow_saturation_->Clear();
+    }
+    if (cached_has_bits & 0x00000080u) {
+      GOOGLE_DCHECK(_impl_.shadow_brightness_ != nullptr);
+      _impl_.shadow_brightness_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x00000700u) {
+    if (cached_has_bits & 0x00000100u) {
+      GOOGLE_DCHECK(_impl_.shadow_intensity_ != nullptr);
+      _impl_.shadow_intensity_->Clear();
+    }
+    if (cached_has_bits & 0x00000200u) {
+      GOOGLE_DCHECK(_impl_.shadow_power_ != nullptr);
+      _impl_.shadow_power_->Clear();
+    }
+    if (cached_has_bits & 0x00000400u) {
+      GOOGLE_DCHECK(_impl_.noise_octaves_iterations_ != nullptr);
+      _impl_.noise_octaves_iterations_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x0000f800u) {
+    ::memset(&_impl_.name_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.color_blur_sigma_undefined_) -
+        reinterpret_cast<char*>(&_impl_.name_undefined_)) + sizeof(_impl_.color_blur_sigma_undefined_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.color_contrast_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.noise_movement_undefined_) -
+        reinterpret_cast<char*>(&_impl_.color_contrast_undefined_)) + sizeof(_impl_.noise_movement_undefined_));
+  }
+  if (cached_has_bits & 0xff000000u) {
+    ::memset(&_impl_.noise_octaves_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.color_palette_offset_undefined_) -
+        reinterpret_cast<char*>(&_impl_.noise_octaves_undefined_)) + sizeof(_impl_.color_palette_offset_undefined_));
+  }
+  cached_has_bits = _impl_._has_bits_[4];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.zoom_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.foreground_color_undefined_) -
+        reinterpret_cast<char*>(&_impl_.zoom_undefined_)) + sizeof(_impl_.foreground_color_undefined_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.line_color_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.contrast_undefined_) -
+        reinterpret_cast<char*>(&_impl_.line_color_undefined_)) + sizeof(_impl_.contrast_undefined_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.damping_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.fog_distance_undefined_) -
+        reinterpret_cast<char*>(&_impl_.damping_undefined_)) + sizeof(_impl_.fog_distance_undefined_));
+  }
+  if (cached_has_bits & 0xff000000u) {
+    ::memset(&_impl_.fog_power_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.line_center_undefined_) -
+        reinterpret_cast<char*>(&_impl_.fog_power_undefined_)) + sizeof(_impl_.line_center_undefined_));
+  }
+  cached_has_bits = _impl_._has_bits_[5];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.line_fade_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.offset_undefined_) -
+        reinterpret_cast<char*>(&_impl_.line_fade_undefined_)) + sizeof(_impl_.offset_undefined_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.motion_background_opacity_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.saturation_undefined_) -
+        reinterpret_cast<char*>(&_impl_.motion_background_opacity_undefined_)) + sizeof(_impl_.saturation_undefined_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.scale_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.texture_power_undefined_) -
+        reinterpret_cast<char*>(&_impl_.scale_undefined_)) + sizeof(_impl_.texture_power_undefined_));
+  }
+  if (cached_has_bits & 0xff000000u) {
+    ::memset(&_impl_.time_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.amplitude_undefined_) -
+        reinterpret_cast<char*>(&_impl_.time_undefined_)) + sizeof(_impl_.amplitude_undefined_));
+  }
+  cached_has_bits = _impl_._has_bits_[6];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.envelope_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.mesh_line_width_undefined_) -
+        reinterpret_cast<char*>(&_impl_.envelope_undefined_)) + sizeof(_impl_.mesh_line_width_undefined_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.delta_time_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.shadow_hue_undefined_) -
+        reinterpret_cast<char*>(&_impl_.delta_time_undefined_)) + sizeof(_impl_.shadow_hue_undefined_));
+  }
+  if (cached_has_bits & 0x003f0000u) {
+    ::memset(&_impl_.shadow_hue_offset_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.noise_octaves_iterations_undefined_) -
+        reinterpret_cast<char*>(&_impl_.shadow_hue_offset_undefined_)) + sizeof(_impl_.noise_octaves_iterations_undefined_));
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* MotionBackgroundStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .TSSSOS.SpecStringArchive name = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_name(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool name_undefined = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_name_undefined(&_impl_._has_bits_);
+          _impl_.name_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecStringArchive variant = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_variant(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool variant_undefined = 4;
+      case 4:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_variant_undefined(&_impl_._has_bits_);
+          _impl_.variant_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecFillArchive color_gradient = 5;
+      case 5:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_gradient(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_gradient_undefined = 6;
+      case 6:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_color_gradient_undefined(&_impl_._has_bits_);
+          _impl_.color_gradient_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecIntegerArchive random_seed = 7;
+      case 7:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_random_seed(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool random_seed_undefined = 8;
+      case 8:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_random_seed_undefined(&_impl_._has_bits_);
+          _impl_.random_seed_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_blur_sigma = 9;
+      case 9:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_blur_sigma(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_blur_sigma_undefined = 10;
+      case 10:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_color_blur_sigma_undefined(&_impl_._has_bits_);
+          _impl_.color_blur_sigma_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_contrast = 11;
+      case 11:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_contrast(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_contrast_undefined = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_color_contrast_undefined(&_impl_._has_bits_);
+          _impl_.color_contrast_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_gamma = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_gamma(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_gamma_undefined = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_color_gamma_undefined(&_impl_._has_bits_);
+          _impl_.color_gamma_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_saturation = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_saturation(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_saturation_undefined = 16;
+      case 16:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_color_saturation_undefined(&_impl_._has_bits_);
+          _impl_.color_saturation_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_brightness = 17;
+      case 17:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_brightness(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_brightness_undefined = 18;
+      case 18:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_color_brightness_undefined(&_impl_._has_bits_);
+          _impl_.color_brightness_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_hue = 19;
+      case 19:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_hue(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_hue_undefined = 20;
+      case 20:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_color_hue_undefined(&_impl_._has_bits_);
+          _impl_.color_hue_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_vibrance = 21;
+      case 21:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_vibrance(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_vibrance_undefined = 22;
+      case 22:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_color_vibrance_undefined(&_impl_._has_bits_);
+          _impl_.color_vibrance_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_amplitude = 23;
+      case 23:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_amplitude(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_amplitude_undefined = 24;
+      case 24:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_noise_amplitude_undefined(&_impl_._has_bits_);
+          _impl_.noise_amplitude_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_movement = 25;
+      case 25:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_movement(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_movement_undefined = 26;
+      case 26:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_noise_movement_undefined(&_impl_._has_bits_);
+          _impl_.noise_movement_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_octaves = 27;
+      case 27:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_octaves(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_octaves_undefined = 28;
+      case 28:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_noise_octaves_undefined(&_impl_._has_bits_);
+          _impl_.noise_octaves_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_scale = 29;
+      case 29:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_scale(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_scale_undefined = 30;
+      case 30:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_noise_scale_undefined(&_impl_._has_bits_);
+          _impl_.noise_scale_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_scale_horizontal = 31;
+      case 31:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_scale_horizontal(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_scale_horizontal_undefined = 32;
+      case 32:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_noise_scale_horizontal_undefined(&_impl_._has_bits_);
+          _impl_.noise_scale_horizontal_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_scale_vertical = 33;
+      case 33:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_scale_vertical(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_scale_vertical_undefined = 34;
+      case 34:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_noise_scale_vertical_undefined(&_impl_._has_bits_);
+          _impl_.noise_scale_vertical_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_gain = 35;
+      case 35:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_gain(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_gain_undefined = 36;
+      case 36:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_noise_gain_undefined(&_impl_._has_bits_);
+          _impl_.noise_gain_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_lacunarity = 37;
+      case 37:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_lacunarity(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_lacunarity_undefined = 38;
+      case 38:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_noise_lacunarity_undefined(&_impl_._has_bits_);
+          _impl_.noise_lacunarity_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_speed = 39;
+      case 39:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_speed(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_speed_undefined = 40;
+      case 40:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_noise_speed_undefined(&_impl_._has_bits_);
+          _impl_.noise_speed_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecIntegerArchive color_palette_offset = 41;
+      case 41:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_palette_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_palette_offset_undefined = 42;
+      case 42:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_color_palette_offset_undefined(&_impl_._has_bits_);
+          _impl_.color_palette_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive zoom = 43;
+      case 43:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_zoom(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool zoom_undefined = 44;
+      case 44:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_zoom_undefined(&_impl_._has_bits_);
+          _impl_.zoom_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive invert = 45;
+      case 45:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_invert(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool invert_undefined = 46;
+      case 46:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_invert_undefined(&_impl_._has_bits_);
+          _impl_.invert_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecStringArchive blend_mode = 47;
+      case 47:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_blend_mode(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool blend_mode_undefined = 48;
+      case 48:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_blend_mode_undefined(&_impl_._has_bits_);
+          _impl_.blend_mode_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecStringArchive source_blend_factor = 49;
+      case 49:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_source_blend_factor(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool source_blend_factor_undefined = 50;
+      case 50:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_source_blend_factor_undefined(&_impl_._has_bits_);
+          _impl_.source_blend_factor_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecStringArchive dest_blend_factor = 51;
+      case 51:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_dest_blend_factor(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool dest_blend_factor_undefined = 52;
+      case 52:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_dest_blend_factor_undefined(&_impl_._has_bits_);
+          _impl_.dest_blend_factor_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecStringArchive motion = 53;
+      case 53:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_motion(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool motion_undefined = 54;
+      case 54:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_motion_undefined(&_impl_._has_bits_);
+          _impl_.motion_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecColorArchive background_color = 55;
+      case 55:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_background_color(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool background_color_undefined = 56;
+      case 56:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_background_color_undefined(&_impl_._has_bits_);
+          _impl_.background_color_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecColorArchive foreground_color = 57;
+      case 57:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_foreground_color(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool foreground_color_undefined = 58;
+      case 58:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_foreground_color_undefined(&_impl_._has_bits_);
+          _impl_.foreground_color_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecColorArchive line_color = 59;
+      case 59:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_color(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_color_undefined = 60;
+      case 60:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_line_color_undefined(&_impl_._has_bits_);
+          _impl_.line_color_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecColorArchive point_color = 61;
+      case 61:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_point_color(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool point_color_undefined = 62;
+      case 62:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_point_color_undefined(&_impl_._has_bits_);
+          _impl_.point_color_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive alpha = 63;
+      case 63:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_alpha(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool alpha_undefined = 64;
+      case 64:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_alpha_undefined(&_impl_._has_bits_);
+          _impl_.alpha_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive border = 65;
+      case 65:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_border(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool border_undefined = 66;
+      case 66:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_border_undefined(&_impl_._has_bits_);
+          _impl_.border_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive blend = 67;
+      case 67:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_blend(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool blend_undefined = 68;
+      case 68:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_blend_undefined(&_impl_._has_bits_);
+          _impl_.blend_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive brightness = 69;
+      case 69:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_brightness(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool brightness_undefined = 70;
+      case 70:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_brightness_undefined(&_impl_._has_bits_);
+          _impl_.brightness_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive border_lightness = 71;
+      case 71:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_border_lightness(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool border_lightness_undefined = 72;
+      case 72:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_border_lightness_undefined(&_impl_._has_bits_);
+          _impl_.border_lightness_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive contrast = 73;
+      case 73:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_contrast(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool contrast_undefined = 74;
+      case 74:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_contrast_undefined(&_impl_._has_bits_);
+          _impl_.contrast_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive damping = 75;
+      case 75:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_damping(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool damping_undefined = 76;
+      case 76:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_damping_undefined(&_impl_._has_bits_);
+          _impl_.damping_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive density = 77;
+      case 77:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_density(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool density_undefined = 78;
+      case 78:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_density_undefined(&_impl_._has_bits_);
+          _impl_.density_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive diffuse_power = 79;
+      case 79:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_diffuse_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool diffuse_power_undefined = 80;
+      case 80:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_diffuse_power_undefined(&_impl_._has_bits_);
+          _impl_.diffuse_power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive distortion = 81;
+      case 81:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_distortion(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool distortion_undefined = 82;
+      case 82:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_distortion_undefined(&_impl_._has_bits_);
+          _impl_.distortion_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive entropy = 83;
+      case 83:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_entropy(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool entropy_undefined = 84;
+      case 84:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_entropy_undefined(&_impl_._has_bits_);
+          _impl_.entropy_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive exposure = 85;
+      case 85:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_exposure(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool exposure_undefined = 86;
+      case 86:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_exposure_undefined(&_impl_._has_bits_);
+          _impl_.exposure_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive filter = 87;
+      case 87:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_filter(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool filter_undefined = 88;
+      case 88:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_filter_undefined(&_impl_._has_bits_);
+          _impl_.filter_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive fog_distance = 89;
+      case 89:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_fog_distance(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool fog_distance_undefined = 90;
+      case 90:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_fog_distance_undefined(&_impl_._has_bits_);
+          _impl_.fog_distance_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive fog_power = 91;
+      case 91:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_fog_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool fog_power_undefined = 92;
+      case 92:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_fog_power_undefined(&_impl_._has_bits_);
+          _impl_.fog_power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive gamma = 93;
+      case 93:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_gamma(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool gamma_undefined = 94;
+      case 94:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_gamma_undefined(&_impl_._has_bits_);
+          _impl_.gamma_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive grain_amount = 95;
+      case 95:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_grain_amount(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool grain_amount_undefined = 96;
+      case 96:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_grain_amount_undefined(&_impl_._has_bits_);
+          _impl_.grain_amount_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive grain_intensity = 97;
+      case 97:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_grain_intensity(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool grain_intensity_undefined = 98;
+      case 98:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_grain_intensity_undefined(&_impl_._has_bits_);
+          _impl_.grain_intensity_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive hue = 99;
+      case 99:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_hue(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool hue_undefined = 100;
+      case 100:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_hue_undefined(&_impl_._has_bits_);
+          _impl_.hue_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive lightness = 101;
+      case 101:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_lightness(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool lightness_undefined = 102;
+      case 102:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_lightness_undefined(&_impl_._has_bits_);
+          _impl_.lightness_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_alpha = 103;
+      case 103:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_alpha(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_alpha_undefined = 104;
+      case 104:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_line_alpha_undefined(&_impl_._has_bits_);
+          _impl_.line_alpha_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_center = 105;
+      case 105:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_center(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_center_undefined = 106;
+      case 106:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_line_center_undefined(&_impl_._has_bits_);
+          _impl_.line_center_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_fade = 107;
+      case 107:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_fade(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_fade_undefined = 108;
+      case 108:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_line_fade_undefined(&_impl_._has_bits_);
+          _impl_.line_fade_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_fade_power = 109;
+      case 109:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_fade_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_fade_power_undefined = 110;
+      case 110:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_line_fade_power_undefined(&_impl_._has_bits_);
+          _impl_.line_fade_power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_length = 111;
+      case 111:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_length(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_length_undefined = 112;
+      case 112:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_line_length_undefined(&_impl_._has_bits_);
+          _impl_.line_length_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive line_width = 113;
+      case 113:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_line_width(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool line_width_undefined = 114;
+      case 114:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_line_width_undefined(&_impl_._has_bits_);
+          _impl_.line_width_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_size_scale = 115;
+      case 115:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_size_scale(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_size_scale_undefined = 116;
+      case 116:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_noise_size_scale_undefined(&_impl_._has_bits_);
+          _impl_.noise_size_scale_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_size_weight = 117;
+      case 117:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_size_weight(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_size_weight_undefined = 118;
+      case 118:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_noise_size_weight_undefined(&_impl_._has_bits_);
+          _impl_.noise_size_weight_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_variance = 119;
+      case 119:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_variance(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_variance_undefined = 120;
+      case 120:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_noise_variance_undefined(&_impl_._has_bits_);
+          _impl_.noise_variance_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive offset = 121;
+      case 121:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool offset_undefined = 122;
+      case 122:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_offset_undefined(&_impl_._has_bits_);
+          _impl_.offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive motion_background_opacity = 123;
+      case 123:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_motion_background_opacity(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool motion_background_opacity_undefined = 124;
+      case 124:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_motion_background_opacity_undefined(&_impl_._has_bits_);
+          _impl_.motion_background_opacity_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive point_depth_alpha = 125;
+      case 125:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_point_depth_alpha(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool point_depth_alpha_undefined = 126;
+      case 126:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_point_depth_alpha_undefined(&_impl_._has_bits_);
+          _impl_.point_depth_alpha_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive point_size = 127;
+      case 127:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_point_size(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool point_size_undefined = 128;
+      case 128:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_point_size_undefined(&_impl_._has_bits_);
+          _impl_.point_size_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive power = 129;
+      case 129:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool power_undefined = 130;
+      case 130:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_power_undefined(&_impl_._has_bits_);
+          _impl_.power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive radius = 131;
+      case 131:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_radius(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool radius_undefined = 132;
+      case 132:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_radius_undefined(&_impl_._has_bits_);
+          _impl_.radius_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive refraction = 133;
+      case 133:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_refraction(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool refraction_undefined = 134;
+      case 134:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_refraction_undefined(&_impl_._has_bits_);
+          _impl_.refraction_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive resolution = 135;
+      case 135:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_resolution(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool resolution_undefined = 136;
+      case 136:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_resolution_undefined(&_impl_._has_bits_);
+          _impl_.resolution_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive saturation = 137;
+      case 137:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_saturation(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool saturation_undefined = 138;
+      case 138:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_saturation_undefined(&_impl_._has_bits_);
+          _impl_.saturation_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive scale = 139;
+      case 139:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_scale(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool scale_undefined = 140;
+      case 140:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_scale_undefined(&_impl_._has_bits_);
+          _impl_.scale_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_alpha = 141;
+      case 141:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_alpha(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_alpha_undefined = 142;
+      case 142:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_shadow_alpha_undefined(&_impl_._has_bits_);
+          _impl_.shadow_alpha_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_angle = 143;
+      case 143:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_angle(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_angle_undefined = 144;
+      case 144:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_shadow_angle_undefined(&_impl_._has_bits_);
+          _impl_.shadow_angle_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_offset = 145;
+      case 145:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_offset_undefined = 146;
+      case 146:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_shadow_offset_undefined(&_impl_._has_bits_);
+          _impl_.shadow_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_scale = 147;
+      case 147:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_scale(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_scale_undefined = 148;
+      case 148:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_shadow_scale_undefined(&_impl_._has_bits_);
+          _impl_.shadow_scale_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_value = 149;
+      case 149:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_value(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_value_undefined = 150;
+      case 150:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_shadow_value_undefined(&_impl_._has_bits_);
+          _impl_.shadow_value_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive speed = 151;
+      case 151:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_speed(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool speed_undefined = 152;
+      case 152:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_speed_undefined(&_impl_._has_bits_);
+          _impl_.speed_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive texture_power = 153;
+      case 153:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_texture_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool texture_power_undefined = 154;
+      case 154:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_texture_power_undefined(&_impl_._has_bits_);
+          _impl_.texture_power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive time = 155;
+      case 155:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_time(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool time_undefined = 156;
+      case 156:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_time_undefined(&_impl_._has_bits_);
+          _impl_.time_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive draw_points = 157;
+      case 157:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_draw_points(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool draw_points_undefined = 158;
+      case 158:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_draw_points_undefined(&_impl_._has_bits_);
+          _impl_.draw_points_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive draw_lines = 159;
+      case 159:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_draw_lines(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool draw_lines_undefined = 160;
+      case 160:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_draw_lines_undefined(&_impl_._has_bits_);
+          _impl_.draw_lines_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive draw_shadows = 161;
+      case 161:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_draw_shadows(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool draw_shadows_undefined = 162;
+      case 162:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_draw_shadows_undefined(&_impl_._has_bits_);
+          _impl_.draw_shadows_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecIntegerArchive pixels_per_division = 163;
+      case 163:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_pixels_per_division(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool pixels_per_division_undefined = 164;
+      case 164:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_pixels_per_division_undefined(&_impl_._has_bits_);
+          _impl_.pixels_per_division_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive symmetry = 165;
+      case 165:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_symmetry(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool symmetry_undefined = 166;
+      case 166:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_symmetry_undefined(&_impl_._has_bits_);
+          _impl_.symmetry_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecBoolArchive lock_focus = 167;
+      case 167:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_lock_focus(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool lock_focus_undefined = 168;
+      case 168:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_lock_focus_undefined(&_impl_._has_bits_);
+          _impl_.lock_focus_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive amplitude = 169;
+      case 169:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_amplitude(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool amplitude_undefined = 170;
+      case 170:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_amplitude_undefined(&_impl_._has_bits_);
+          _impl_.amplitude_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive envelope = 171;
+      case 171:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_envelope(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool envelope_undefined = 172;
+      case 172:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_envelope_undefined(&_impl_._has_bits_);
+          _impl_.envelope_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive y_offset = 173;
+      case 173:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_y_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool y_offset_undefined = 174;
+      case 174:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_y_offset_undefined(&_impl_._has_bits_);
+          _impl_.y_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive focus = 175;
+      case 175:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_focus(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool focus_undefined = 176;
+      case 176:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_focus_undefined(&_impl_._has_bits_);
+          _impl_.focus_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive blur = 177;
+      case 177:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_blur(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool blur_undefined = 178;
+      case 178:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_blur_undefined(&_impl_._has_bits_);
+          _impl_.blur_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive grain_speed = 179;
+      case 179:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_grain_speed(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool grain_speed_undefined = 180;
+      case 180:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_grain_speed_undefined(&_impl_._has_bits_);
+          _impl_.grain_speed_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecColorArchive mesh_color = 181;
+      case 181:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_mesh_color(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool mesh_color_undefined = 182;
+      case 182:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_mesh_color_undefined(&_impl_._has_bits_);
+          _impl_.mesh_color_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive angle = 183;
+      case 183:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_angle(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool angle_undefined = 184;
+      case 184:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_angle_undefined(&_impl_._has_bits_);
+          _impl_.angle_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive mesh_line_width = 185;
+      case 185:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_mesh_line_width(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool mesh_line_width_undefined = 186;
+      case 186:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_mesh_line_width_undefined(&_impl_._has_bits_);
+          _impl_.mesh_line_width_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive delta_time = 187;
+      case 187:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_delta_time(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool delta_time_undefined = 188;
+      case 188:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_delta_time_undefined(&_impl_._has_bits_);
+          _impl_.delta_time_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive threshold = 189;
+      case 189:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_threshold(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool threshold_undefined = 190;
+      case 190:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_threshold_undefined(&_impl_._has_bits_);
+          _impl_.threshold_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive time_start = 191;
+      case 191:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
+          ptr = ctx->ParseMessage(_internal_mutable_time_start(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool time_start_undefined = 192;
+      case 192:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_time_start_undefined(&_impl_._has_bits_);
+          _impl_.time_start_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecIntegerArchive instance_count = 193;
+      case 193:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_instance_count(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool instance_count_undefined = 194;
+      case 194:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_instance_count_undefined(&_impl_._has_bits_);
+          _impl_.instance_count_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive extrusion = 195;
+      case 195:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
+          ptr = ctx->ParseMessage(_internal_mutable_extrusion(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool extrusion_undefined = 196;
+      case 196:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_extrusion_undefined(&_impl_._has_bits_);
+          _impl_.extrusion_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive noise_offset = 197;
+      case 197:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_offset_undefined = 198;
+      case 198:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_noise_offset_undefined(&_impl_._has_bits_);
+          _impl_.noise_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive color_hue_offset = 199;
+      case 199:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
+          ptr = ctx->ParseMessage(_internal_mutable_color_hue_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool color_hue_offset_undefined = 200;
+      case 200:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_color_hue_offset_undefined(&_impl_._has_bits_);
+          _impl_.color_hue_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_hue = 201;
+      case 201:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_hue(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_hue_undefined = 202;
+      case 202:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_shadow_hue_undefined(&_impl_._has_bits_);
+          _impl_.shadow_hue_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_hue_offset = 203;
+      case 203:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_hue_offset(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_hue_offset_undefined = 204;
+      case 204:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_shadow_hue_offset_undefined(&_impl_._has_bits_);
+          _impl_.shadow_hue_offset_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_saturation = 205;
+      case 205:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_saturation(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_saturation_undefined = 206;
+      case 206:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_shadow_saturation_undefined(&_impl_._has_bits_);
+          _impl_.shadow_saturation_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_brightness = 207;
+      case 207:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_brightness(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_brightness_undefined = 208;
+      case 208:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_shadow_brightness_undefined(&_impl_._has_bits_);
+          _impl_.shadow_brightness_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_intensity = 209;
+      case 209:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_intensity(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_intensity_undefined = 210;
+      case 210:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_shadow_intensity_undefined(&_impl_._has_bits_);
+          _impl_.shadow_intensity_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecDoubleArchive shadow_power = 211;
+      case 211:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_shadow_power(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool shadow_power_undefined = 212;
+      case 212:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_shadow_power_undefined(&_impl_._has_bits_);
+          _impl_.shadow_power_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSSSOS.SpecIntegerArchive noise_octaves_iterations = 213;
+      case 213:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_noise_octaves_iterations(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool noise_octaves_iterations_undefined = 214;
+      case 214:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_noise_octaves_iterations_undefined(&_impl_._has_bits_);
+          _impl_.noise_octaves_iterations_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* MotionBackgroundStylePropertyChangeSetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive name = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, _Internal::name(this),
+        _Internal::name(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool name_undefined = 2;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_name_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive variant = 3;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(3, _Internal::variant(this),
+        _Internal::variant(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool variant_undefined = 4;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_variant_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSDSOS.SpecFillArchive color_gradient = 5;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(5, _Internal::color_gradient(this),
+        _Internal::color_gradient(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_gradient_undefined = 6;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_color_gradient_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecIntegerArchive random_seed = 7;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(7, _Internal::random_seed(this),
+        _Internal::random_seed(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool random_seed_undefined = 8;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_random_seed_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_blur_sigma = 9;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(9, _Internal::color_blur_sigma(this),
+        _Internal::color_blur_sigma(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_blur_sigma_undefined = 10;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(10, this->_internal_color_blur_sigma_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_contrast = 11;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(11, _Internal::color_contrast(this),
+        _Internal::color_contrast(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_contrast_undefined = 12;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(12, this->_internal_color_contrast_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_gamma = 13;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(13, _Internal::color_gamma(this),
+        _Internal::color_gamma(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_gamma_undefined = 14;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(14, this->_internal_color_gamma_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_saturation = 15;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(15, _Internal::color_saturation(this),
+        _Internal::color_saturation(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_saturation_undefined = 16;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(16, this->_internal_color_saturation_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_brightness = 17;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(17, _Internal::color_brightness(this),
+        _Internal::color_brightness(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_brightness_undefined = 18;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(18, this->_internal_color_brightness_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_hue = 19;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(19, _Internal::color_hue(this),
+        _Internal::color_hue(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_hue_undefined = 20;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(20, this->_internal_color_hue_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive color_vibrance = 21;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(21, _Internal::color_vibrance(this),
+        _Internal::color_vibrance(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_vibrance_undefined = 22;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(22, this->_internal_color_vibrance_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_amplitude = 23;
+  if (cached_has_bits & 0x00000800u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(23, _Internal::noise_amplitude(this),
+        _Internal::noise_amplitude(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_amplitude_undefined = 24;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(24, this->_internal_noise_amplitude_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_movement = 25;
+  if (cached_has_bits & 0x00001000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(25, _Internal::noise_movement(this),
+        _Internal::noise_movement(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_movement_undefined = 26;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(26, this->_internal_noise_movement_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_octaves = 27;
+  if (cached_has_bits & 0x00002000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(27, _Internal::noise_octaves(this),
+        _Internal::noise_octaves(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_octaves_undefined = 28;
+  if (cached_has_bits & 0x01000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(28, this->_internal_noise_octaves_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_scale = 29;
+  if (cached_has_bits & 0x00004000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(29, _Internal::noise_scale(this),
+        _Internal::noise_scale(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_scale_undefined = 30;
+  if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(30, this->_internal_noise_scale_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_scale_horizontal = 31;
+  if (cached_has_bits & 0x00008000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(31, _Internal::noise_scale_horizontal(this),
+        _Internal::noise_scale_horizontal(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_scale_horizontal_undefined = 32;
+  if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(32, this->_internal_noise_scale_horizontal_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_scale_vertical = 33;
+  if (cached_has_bits & 0x00010000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(33, _Internal::noise_scale_vertical(this),
+        _Internal::noise_scale_vertical(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_scale_vertical_undefined = 34;
+  if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(34, this->_internal_noise_scale_vertical_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_gain = 35;
+  if (cached_has_bits & 0x00020000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(35, _Internal::noise_gain(this),
+        _Internal::noise_gain(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_gain_undefined = 36;
+  if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(36, this->_internal_noise_gain_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_lacunarity = 37;
+  if (cached_has_bits & 0x00040000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(37, _Internal::noise_lacunarity(this),
+        _Internal::noise_lacunarity(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_lacunarity_undefined = 38;
+  if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(38, this->_internal_noise_lacunarity_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive noise_speed = 39;
+  if (cached_has_bits & 0x00080000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(39, _Internal::noise_speed(this),
+        _Internal::noise_speed(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool noise_speed_undefined = 40;
+  if (cached_has_bits & 0x40000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(40, this->_internal_noise_speed_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecIntegerArchive color_palette_offset = 41;
+  if (cached_has_bits & 0x00100000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(41, _Internal::color_palette_offset(this),
+        _Internal::color_palette_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool color_palette_offset_undefined = 42;
+  if (cached_has_bits & 0x80000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(42, this->_internal_color_palette_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive zoom = 43;
+  if (cached_has_bits & 0x00200000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(43, _Internal::zoom(this),
+        _Internal::zoom(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool zoom_undefined = 44;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(44, this->_internal_zoom_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive invert = 45;
+  if (cached_has_bits & 0x00400000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(45, _Internal::invert(this),
+        _Internal::invert(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool invert_undefined = 46;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(46, this->_internal_invert_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive blend_mode = 47;
+  if (cached_has_bits & 0x00800000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(47, _Internal::blend_mode(this),
+        _Internal::blend_mode(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool blend_mode_undefined = 48;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(48, this->_internal_blend_mode_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive source_blend_factor = 49;
+  if (cached_has_bits & 0x01000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(49, _Internal::source_blend_factor(this),
+        _Internal::source_blend_factor(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool source_blend_factor_undefined = 50;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(50, this->_internal_source_blend_factor_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive dest_blend_factor = 51;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(51, _Internal::dest_blend_factor(this),
+        _Internal::dest_blend_factor(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool dest_blend_factor_undefined = 52;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(52, this->_internal_dest_blend_factor_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive motion = 53;
+  if (cached_has_bits & 0x04000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(53, _Internal::motion(this),
+        _Internal::motion(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool motion_undefined = 54;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(54, this->_internal_motion_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecColorArchive background_color = 55;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(55, _Internal::background_color(this),
+        _Internal::background_color(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool background_color_undefined = 56;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(56, this->_internal_background_color_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecColorArchive foreground_color = 57;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(57, _Internal::foreground_color(this),
+        _Internal::foreground_color(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool foreground_color_undefined = 58;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(58, this->_internal_foreground_color_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecColorArchive line_color = 59;
+  if (cached_has_bits & 0x20000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(59, _Internal::line_color(this),
+        _Internal::line_color(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool line_color_undefined = 60;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(60, this->_internal_line_color_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecColorArchive point_color = 61;
+  if (cached_has_bits & 0x40000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(61, _Internal::point_color(this),
+        _Internal::point_color(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool point_color_undefined = 62;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(62, this->_internal_point_color_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecDoubleArchive alpha = 63;
+  if (cached_has_bits & 0x80000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(63, _Internal::alpha(this),
+        _Internal::alpha(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool alpha_undefined = 64;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(64, this->_internal_alpha_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive border = 65;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(65, _Internal::border(this),
+        _Internal::border(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool border_undefined = 66;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(66, this->_internal_border_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive blend = 67;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(67, _Internal::blend(this),
+        _Internal::blend(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool blend_undefined = 68;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(68, this->_internal_blend_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive brightness = 69;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(69, _Internal::brightness(this),
+        _Internal::brightness(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool brightness_undefined = 70;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(70, this->_internal_brightness_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive border_lightness = 71;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(71, _Internal::border_lightness(this),
+        _Internal::border_lightness(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool border_lightness_undefined = 72;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(72, this->_internal_border_lightness_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive contrast = 73;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(73, _Internal::contrast(this),
+        _Internal::contrast(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool contrast_undefined = 74;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(74, this->_internal_contrast_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive damping = 75;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(75, _Internal::damping(this),
+        _Internal::damping(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool damping_undefined = 76;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(76, this->_internal_damping_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive density = 77;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(77, _Internal::density(this),
+        _Internal::density(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool density_undefined = 78;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(78, this->_internal_density_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive diffuse_power = 79;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(79, _Internal::diffuse_power(this),
+        _Internal::diffuse_power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool diffuse_power_undefined = 80;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(80, this->_internal_diffuse_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive distortion = 81;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(81, _Internal::distortion(this),
+        _Internal::distortion(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool distortion_undefined = 82;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(82, this->_internal_distortion_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive entropy = 83;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(83, _Internal::entropy(this),
+        _Internal::entropy(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool entropy_undefined = 84;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(84, this->_internal_entropy_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive exposure = 85;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(85, _Internal::exposure(this),
+        _Internal::exposure(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool exposure_undefined = 86;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(86, this->_internal_exposure_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive filter = 87;
+  if (cached_has_bits & 0x00000800u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(87, _Internal::filter(this),
+        _Internal::filter(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool filter_undefined = 88;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(88, this->_internal_filter_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive fog_distance = 89;
+  if (cached_has_bits & 0x00001000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(89, _Internal::fog_distance(this),
+        _Internal::fog_distance(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool fog_distance_undefined = 90;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(90, this->_internal_fog_distance_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive fog_power = 91;
+  if (cached_has_bits & 0x00002000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(91, _Internal::fog_power(this),
+        _Internal::fog_power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool fog_power_undefined = 92;
+  if (cached_has_bits & 0x01000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(92, this->_internal_fog_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive gamma = 93;
+  if (cached_has_bits & 0x00004000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(93, _Internal::gamma(this),
+        _Internal::gamma(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool gamma_undefined = 94;
+  if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(94, this->_internal_gamma_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive grain_amount = 95;
+  if (cached_has_bits & 0x00008000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(95, _Internal::grain_amount(this),
+        _Internal::grain_amount(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool grain_amount_undefined = 96;
+  if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(96, this->_internal_grain_amount_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive grain_intensity = 97;
+  if (cached_has_bits & 0x00010000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(97, _Internal::grain_intensity(this),
+        _Internal::grain_intensity(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool grain_intensity_undefined = 98;
+  if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(98, this->_internal_grain_intensity_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive hue = 99;
+  if (cached_has_bits & 0x00020000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(99, _Internal::hue(this),
+        _Internal::hue(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool hue_undefined = 100;
+  if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(100, this->_internal_hue_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive lightness = 101;
+  if (cached_has_bits & 0x00040000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(101, _Internal::lightness(this),
+        _Internal::lightness(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool lightness_undefined = 102;
+  if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(102, this->_internal_lightness_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_alpha = 103;
+  if (cached_has_bits & 0x00080000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(103, _Internal::line_alpha(this),
+        _Internal::line_alpha(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool line_alpha_undefined = 104;
+  if (cached_has_bits & 0x40000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(104, this->_internal_line_alpha_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_center = 105;
+  if (cached_has_bits & 0x00100000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(105, _Internal::line_center(this),
+        _Internal::line_center(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[4];
+  // optional bool line_center_undefined = 106;
+  if (cached_has_bits & 0x80000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(106, this->_internal_line_center_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_fade = 107;
+  if (cached_has_bits & 0x00200000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(107, _Internal::line_fade(this),
+        _Internal::line_fade(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool line_fade_undefined = 108;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(108, this->_internal_line_fade_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_fade_power = 109;
+  if (cached_has_bits & 0x00400000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(109, _Internal::line_fade_power(this),
+        _Internal::line_fade_power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool line_fade_power_undefined = 110;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(110, this->_internal_line_fade_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_length = 111;
+  if (cached_has_bits & 0x00800000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(111, _Internal::line_length(this),
+        _Internal::line_length(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool line_length_undefined = 112;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(112, this->_internal_line_length_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive line_width = 113;
+  if (cached_has_bits & 0x01000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(113, _Internal::line_width(this),
+        _Internal::line_width(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool line_width_undefined = 114;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(114, this->_internal_line_width_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive noise_size_scale = 115;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(115, _Internal::noise_size_scale(this),
+        _Internal::noise_size_scale(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool noise_size_scale_undefined = 116;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(116, this->_internal_noise_size_scale_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive noise_size_weight = 117;
+  if (cached_has_bits & 0x04000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(117, _Internal::noise_size_weight(this),
+        _Internal::noise_size_weight(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool noise_size_weight_undefined = 118;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(118, this->_internal_noise_size_weight_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive noise_variance = 119;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(119, _Internal::noise_variance(this),
+        _Internal::noise_variance(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool noise_variance_undefined = 120;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(120, this->_internal_noise_variance_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive offset = 121;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(121, _Internal::offset(this),
+        _Internal::offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool offset_undefined = 122;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(122, this->_internal_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive motion_background_opacity = 123;
+  if (cached_has_bits & 0x20000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(123, _Internal::motion_background_opacity(this),
+        _Internal::motion_background_opacity(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool motion_background_opacity_undefined = 124;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(124, this->_internal_motion_background_opacity_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive point_depth_alpha = 125;
+  if (cached_has_bits & 0x40000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(125, _Internal::point_depth_alpha(this),
+        _Internal::point_depth_alpha(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool point_depth_alpha_undefined = 126;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(126, this->_internal_point_depth_alpha_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSSSOS.SpecDoubleArchive point_size = 127;
+  if (cached_has_bits & 0x80000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(127, _Internal::point_size(this),
+        _Internal::point_size(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool point_size_undefined = 128;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(128, this->_internal_point_size_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive power = 129;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(129, _Internal::power(this),
+        _Internal::power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool power_undefined = 130;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(130, this->_internal_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive radius = 131;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(131, _Internal::radius(this),
+        _Internal::radius(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool radius_undefined = 132;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(132, this->_internal_radius_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive refraction = 133;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(133, _Internal::refraction(this),
+        _Internal::refraction(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool refraction_undefined = 134;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(134, this->_internal_refraction_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive resolution = 135;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(135, _Internal::resolution(this),
+        _Internal::resolution(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool resolution_undefined = 136;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(136, this->_internal_resolution_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive saturation = 137;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(137, _Internal::saturation(this),
+        _Internal::saturation(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool saturation_undefined = 138;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(138, this->_internal_saturation_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive scale = 139;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(139, _Internal::scale(this),
+        _Internal::scale(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool scale_undefined = 140;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(140, this->_internal_scale_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive shadow_alpha = 141;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(141, _Internal::shadow_alpha(this),
+        _Internal::shadow_alpha(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool shadow_alpha_undefined = 142;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(142, this->_internal_shadow_alpha_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive shadow_angle = 143;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(143, _Internal::shadow_angle(this),
+        _Internal::shadow_angle(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool shadow_angle_undefined = 144;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(144, this->_internal_shadow_angle_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive shadow_offset = 145;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(145, _Internal::shadow_offset(this),
+        _Internal::shadow_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool shadow_offset_undefined = 146;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(146, this->_internal_shadow_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive shadow_scale = 147;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(147, _Internal::shadow_scale(this),
+        _Internal::shadow_scale(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool shadow_scale_undefined = 148;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(148, this->_internal_shadow_scale_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive shadow_value = 149;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(149, _Internal::shadow_value(this),
+        _Internal::shadow_value(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool shadow_value_undefined = 150;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(150, this->_internal_shadow_value_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive speed = 151;
+  if (cached_has_bits & 0x00000800u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(151, _Internal::speed(this),
+        _Internal::speed(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool speed_undefined = 152;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(152, this->_internal_speed_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive texture_power = 153;
+  if (cached_has_bits & 0x00001000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(153, _Internal::texture_power(this),
+        _Internal::texture_power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool texture_power_undefined = 154;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(154, this->_internal_texture_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive time = 155;
+  if (cached_has_bits & 0x00002000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(155, _Internal::time(this),
+        _Internal::time(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool time_undefined = 156;
+  if (cached_has_bits & 0x01000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(156, this->_internal_time_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecBoolArchive draw_points = 157;
+  if (cached_has_bits & 0x00004000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(157, _Internal::draw_points(this),
+        _Internal::draw_points(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool draw_points_undefined = 158;
+  if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(158, this->_internal_draw_points_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecBoolArchive draw_lines = 159;
+  if (cached_has_bits & 0x00008000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(159, _Internal::draw_lines(this),
+        _Internal::draw_lines(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool draw_lines_undefined = 160;
+  if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(160, this->_internal_draw_lines_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecBoolArchive draw_shadows = 161;
+  if (cached_has_bits & 0x00010000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(161, _Internal::draw_shadows(this),
+        _Internal::draw_shadows(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool draw_shadows_undefined = 162;
+  if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(162, this->_internal_draw_shadows_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecIntegerArchive pixels_per_division = 163;
+  if (cached_has_bits & 0x00020000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(163, _Internal::pixels_per_division(this),
+        _Internal::pixels_per_division(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool pixels_per_division_undefined = 164;
+  if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(164, this->_internal_pixels_per_division_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecBoolArchive symmetry = 165;
+  if (cached_has_bits & 0x00040000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(165, _Internal::symmetry(this),
+        _Internal::symmetry(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool symmetry_undefined = 166;
+  if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(166, this->_internal_symmetry_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecBoolArchive lock_focus = 167;
+  if (cached_has_bits & 0x00080000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(167, _Internal::lock_focus(this),
+        _Internal::lock_focus(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool lock_focus_undefined = 168;
+  if (cached_has_bits & 0x40000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(168, this->_internal_lock_focus_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive amplitude = 169;
+  if (cached_has_bits & 0x00100000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(169, _Internal::amplitude(this),
+        _Internal::amplitude(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[5];
+  // optional bool amplitude_undefined = 170;
+  if (cached_has_bits & 0x80000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(170, this->_internal_amplitude_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive envelope = 171;
+  if (cached_has_bits & 0x00200000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(171, _Internal::envelope(this),
+        _Internal::envelope(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool envelope_undefined = 172;
+  if (cached_has_bits & 0x00000001u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(172, this->_internal_envelope_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive y_offset = 173;
+  if (cached_has_bits & 0x00400000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(173, _Internal::y_offset(this),
+        _Internal::y_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool y_offset_undefined = 174;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(174, this->_internal_y_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive focus = 175;
+  if (cached_has_bits & 0x00800000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(175, _Internal::focus(this),
+        _Internal::focus(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool focus_undefined = 176;
+  if (cached_has_bits & 0x00000004u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(176, this->_internal_focus_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive blur = 177;
+  if (cached_has_bits & 0x01000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(177, _Internal::blur(this),
+        _Internal::blur(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool blur_undefined = 178;
+  if (cached_has_bits & 0x00000008u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(178, this->_internal_blur_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive grain_speed = 179;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(179, _Internal::grain_speed(this),
+        _Internal::grain_speed(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool grain_speed_undefined = 180;
+  if (cached_has_bits & 0x00000010u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(180, this->_internal_grain_speed_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecColorArchive mesh_color = 181;
+  if (cached_has_bits & 0x04000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(181, _Internal::mesh_color(this),
+        _Internal::mesh_color(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool mesh_color_undefined = 182;
+  if (cached_has_bits & 0x00000020u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(182, this->_internal_mesh_color_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive angle = 183;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(183, _Internal::angle(this),
+        _Internal::angle(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool angle_undefined = 184;
+  if (cached_has_bits & 0x00000040u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(184, this->_internal_angle_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive mesh_line_width = 185;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(185, _Internal::mesh_line_width(this),
+        _Internal::mesh_line_width(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool mesh_line_width_undefined = 186;
+  if (cached_has_bits & 0x00000080u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(186, this->_internal_mesh_line_width_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive delta_time = 187;
+  if (cached_has_bits & 0x20000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(187, _Internal::delta_time(this),
+        _Internal::delta_time(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool delta_time_undefined = 188;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(188, this->_internal_delta_time_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive threshold = 189;
+  if (cached_has_bits & 0x40000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(189, _Internal::threshold(this),
+        _Internal::threshold(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool threshold_undefined = 190;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(190, this->_internal_threshold_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSSSOS.SpecDoubleArchive time_start = 191;
+  if (cached_has_bits & 0x80000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(191, _Internal::time_start(this),
+        _Internal::time_start(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool time_start_undefined = 192;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(192, this->_internal_time_start_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecIntegerArchive instance_count = 193;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(193, _Internal::instance_count(this),
+        _Internal::instance_count(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool instance_count_undefined = 194;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(194, this->_internal_instance_count_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive extrusion = 195;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(195, _Internal::extrusion(this),
+        _Internal::extrusion(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool extrusion_undefined = 196;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(196, this->_internal_extrusion_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive noise_offset = 197;
+  if (cached_has_bits & 0x00000004u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(197, _Internal::noise_offset(this),
+        _Internal::noise_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool noise_offset_undefined = 198;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(198, this->_internal_noise_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive color_hue_offset = 199;
+  if (cached_has_bits & 0x00000008u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(199, _Internal::color_hue_offset(this),
+        _Internal::color_hue_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool color_hue_offset_undefined = 200;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(200, this->_internal_color_hue_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_hue = 201;
+  if (cached_has_bits & 0x00000010u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(201, _Internal::shadow_hue(this),
+        _Internal::shadow_hue(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_hue_undefined = 202;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(202, this->_internal_shadow_hue_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_hue_offset = 203;
+  if (cached_has_bits & 0x00000020u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(203, _Internal::shadow_hue_offset(this),
+        _Internal::shadow_hue_offset(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_hue_offset_undefined = 204;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(204, this->_internal_shadow_hue_offset_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_saturation = 205;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(205, _Internal::shadow_saturation(this),
+        _Internal::shadow_saturation(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_saturation_undefined = 206;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(206, this->_internal_shadow_saturation_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_brightness = 207;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(207, _Internal::shadow_brightness(this),
+        _Internal::shadow_brightness(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_brightness_undefined = 208;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(208, this->_internal_shadow_brightness_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_intensity = 209;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(209, _Internal::shadow_intensity(this),
+        _Internal::shadow_intensity(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_intensity_undefined = 210;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(210, this->_internal_shadow_intensity_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecDoubleArchive shadow_power = 211;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(211, _Internal::shadow_power(this),
+        _Internal::shadow_power(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool shadow_power_undefined = 212;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(212, this->_internal_shadow_power_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional .TSSSOS.SpecIntegerArchive noise_octaves_iterations = 213;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(213, _Internal::noise_octaves_iterations(this),
+        _Internal::noise_octaves_iterations(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[6];
+  // optional bool noise_octaves_iterations_undefined = 214;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(214, this->_internal_noise_octaves_iterations_undefined(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  return target;
+}
+
+size_t MotionBackgroundStylePropertyChangeSetArchive::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional .TSSSOS.SpecStringArchive name = 1;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.name_);
+    }
+
+    // optional .TSSSOS.SpecStringArchive variant = 3;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.variant_);
+    }
+
+    // optional .TSDSOS.SpecFillArchive color_gradient = 5;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_gradient_);
+    }
+
+    // optional .TSSSOS.SpecIntegerArchive random_seed = 7;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.random_seed_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_blur_sigma = 9;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_blur_sigma_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_contrast = 11;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_contrast_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_gamma = 13;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_gamma_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_saturation = 15;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_saturation_);
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional .TSSSOS.SpecDoubleArchive color_brightness = 17;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_brightness_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_hue = 19;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_hue_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_vibrance = 21;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_vibrance_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_amplitude = 23;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_amplitude_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_movement = 25;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_movement_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_octaves = 27;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_octaves_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_scale = 29;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_scale_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_scale_horizontal = 31;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_scale_horizontal_);
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional .TSSSOS.SpecDoubleArchive noise_scale_vertical = 33;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_scale_vertical_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_gain = 35;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_gain_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_lacunarity = 37;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_lacunarity_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_speed = 39;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_speed_);
+    }
+
+    // optional .TSSSOS.SpecIntegerArchive color_palette_offset = 41;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_palette_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive zoom = 43;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.zoom_);
+    }
+
+    // optional .TSSSOS.SpecBoolArchive invert = 45;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.invert_);
+    }
+
+    // optional .TSSSOS.SpecStringArchive blend_mode = 47;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.blend_mode_);
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional .TSSSOS.SpecStringArchive source_blend_factor = 49;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.source_blend_factor_);
+    }
+
+    // optional .TSSSOS.SpecStringArchive dest_blend_factor = 51;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.dest_blend_factor_);
+    }
+
+    // optional .TSSSOS.SpecStringArchive motion = 53;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.motion_);
+    }
+
+    // optional .TSSSOS.SpecColorArchive background_color = 55;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.background_color_);
+    }
+
+    // optional .TSSSOS.SpecColorArchive foreground_color = 57;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.foreground_color_);
+    }
+
+    // optional .TSSSOS.SpecColorArchive line_color = 59;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_color_);
+    }
+
+    // optional .TSSSOS.SpecColorArchive point_color = 61;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.point_color_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive alpha = 63;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.alpha_);
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional .TSSSOS.SpecDoubleArchive border = 65;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.border_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive blend = 67;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.blend_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive brightness = 69;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.brightness_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive border_lightness = 71;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.border_lightness_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive contrast = 73;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.contrast_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive damping = 75;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.damping_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive density = 77;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.density_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive diffuse_power = 79;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.diffuse_power_);
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional .TSSSOS.SpecDoubleArchive distortion = 81;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.distortion_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive entropy = 83;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.entropy_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive exposure = 85;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.exposure_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive filter = 87;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.filter_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive fog_distance = 89;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.fog_distance_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive fog_power = 91;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.fog_power_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive gamma = 93;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.gamma_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive grain_amount = 95;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.grain_amount_);
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional .TSSSOS.SpecDoubleArchive grain_intensity = 97;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.grain_intensity_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive hue = 99;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.hue_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive lightness = 101;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.lightness_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive line_alpha = 103;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_alpha_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive line_center = 105;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_center_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive line_fade = 107;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_fade_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive line_fade_power = 109;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_fade_power_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive line_length = 111;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_length_);
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional .TSSSOS.SpecDoubleArchive line_width = 113;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.line_width_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_size_scale = 115;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_size_scale_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_size_weight = 117;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_size_weight_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_variance = 119;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_variance_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive offset = 121;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive motion_background_opacity = 123;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.motion_background_opacity_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive point_depth_alpha = 125;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.point_depth_alpha_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive point_size = 127;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.point_size_);
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional .TSSSOS.SpecDoubleArchive power = 129;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.power_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive radius = 131;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.radius_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive refraction = 133;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.refraction_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive resolution = 135;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.resolution_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive saturation = 137;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.saturation_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive scale = 139;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.scale_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_alpha = 141;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_alpha_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_angle = 143;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_angle_);
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional .TSSSOS.SpecDoubleArchive shadow_offset = 145;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_scale = 147;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_scale_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_value = 149;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_value_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive speed = 151;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.speed_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive texture_power = 153;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.texture_power_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive time = 155;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.time_);
+    }
+
+    // optional .TSSSOS.SpecBoolArchive draw_points = 157;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.draw_points_);
+    }
+
+    // optional .TSSSOS.SpecBoolArchive draw_lines = 159;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.draw_lines_);
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional .TSSSOS.SpecBoolArchive draw_shadows = 161;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.draw_shadows_);
+    }
+
+    // optional .TSSSOS.SpecIntegerArchive pixels_per_division = 163;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.pixels_per_division_);
+    }
+
+    // optional .TSSSOS.SpecBoolArchive symmetry = 165;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.symmetry_);
+    }
+
+    // optional .TSSSOS.SpecBoolArchive lock_focus = 167;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.lock_focus_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive amplitude = 169;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.amplitude_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive envelope = 171;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.envelope_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive y_offset = 173;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.y_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive focus = 175;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.focus_);
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional .TSSSOS.SpecDoubleArchive blur = 177;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.blur_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive grain_speed = 179;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.grain_speed_);
+    }
+
+    // optional .TSSSOS.SpecColorArchive mesh_color = 181;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.mesh_color_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive angle = 183;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.angle_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive mesh_line_width = 185;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.mesh_line_width_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive delta_time = 187;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.delta_time_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive threshold = 189;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.threshold_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive time_start = 191;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.time_start_);
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[3];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional .TSSSOS.SpecIntegerArchive instance_count = 193;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.instance_count_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive extrusion = 195;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.extrusion_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive noise_offset = 197;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive color_hue_offset = 199;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.color_hue_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_hue = 201;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_hue_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_hue_offset = 203;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_hue_offset_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_saturation = 205;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_saturation_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_brightness = 207;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_brightness_);
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional .TSSSOS.SpecDoubleArchive shadow_intensity = 209;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_intensity_);
+    }
+
+    // optional .TSSSOS.SpecDoubleArchive shadow_power = 211;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.shadow_power_);
+    }
+
+    // optional .TSSSOS.SpecIntegerArchive noise_octaves_iterations = 213;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.noise_octaves_iterations_);
+    }
+
+    // optional bool name_undefined = 2;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool variant_undefined = 4;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool color_gradient_undefined = 6;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool random_seed_undefined = 8;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool color_blur_sigma_undefined = 10;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 1 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional bool color_contrast_undefined = 12;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool color_gamma_undefined = 14;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool color_saturation_undefined = 16;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool color_brightness_undefined = 18;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool color_hue_undefined = 20;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool color_vibrance_undefined = 22;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_amplitude_undefined = 24;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_movement_undefined = 26;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional bool noise_octaves_undefined = 28;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_scale_undefined = 30;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_scale_horizontal_undefined = 32;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_scale_vertical_undefined = 34;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_gain_undefined = 36;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_lacunarity_undefined = 38;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_speed_undefined = 40;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool color_palette_offset_undefined = 42;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[4];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional bool zoom_undefined = 44;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool invert_undefined = 46;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool blend_mode_undefined = 48;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool source_blend_factor_undefined = 50;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool dest_blend_factor_undefined = 52;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool motion_undefined = 54;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool background_color_undefined = 56;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool foreground_color_undefined = 58;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional bool line_color_undefined = 60;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool point_color_undefined = 62;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool alpha_undefined = 64;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool border_undefined = 66;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool blend_undefined = 68;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool brightness_undefined = 70;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool border_lightness_undefined = 72;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool contrast_undefined = 74;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional bool damping_undefined = 76;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool density_undefined = 78;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool diffuse_power_undefined = 80;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool distortion_undefined = 82;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool entropy_undefined = 84;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool exposure_undefined = 86;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool filter_undefined = 88;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool fog_distance_undefined = 90;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional bool fog_power_undefined = 92;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool gamma_undefined = 94;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool grain_amount_undefined = 96;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool grain_intensity_undefined = 98;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool hue_undefined = 100;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool lightness_undefined = 102;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool line_alpha_undefined = 104;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool line_center_undefined = 106;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[5];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional bool line_fade_undefined = 108;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool line_fade_power_undefined = 110;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool line_length_undefined = 112;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool line_width_undefined = 114;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_size_scale_undefined = 116;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_size_weight_undefined = 118;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_variance_undefined = 120;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool offset_undefined = 122;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional bool motion_background_opacity_undefined = 124;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool point_depth_alpha_undefined = 126;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool point_size_undefined = 128;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool power_undefined = 130;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool radius_undefined = 132;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool refraction_undefined = 134;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool resolution_undefined = 136;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool saturation_undefined = 138;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    // optional bool scale_undefined = 140;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_alpha_undefined = 142;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_angle_undefined = 144;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_offset_undefined = 146;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_scale_undefined = 148;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_value_undefined = 150;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool speed_undefined = 152;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool texture_power_undefined = 154;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional bool time_undefined = 156;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool draw_points_undefined = 158;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool draw_lines_undefined = 160;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool draw_shadows_undefined = 162;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool pixels_per_division_undefined = 164;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool symmetry_undefined = 166;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool lock_focus_undefined = 168;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool amplitude_undefined = 170;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[6];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional bool envelope_undefined = 172;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool y_offset_undefined = 174;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool focus_undefined = 176;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool blur_undefined = 178;
+    if (cached_has_bits & 0x00000008u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool grain_speed_undefined = 180;
+    if (cached_has_bits & 0x00000010u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool mesh_color_undefined = 182;
+    if (cached_has_bits & 0x00000020u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool angle_undefined = 184;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool mesh_line_width_undefined = 186;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    // optional bool delta_time_undefined = 188;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool threshold_undefined = 190;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool time_start_undefined = 192;
+    if (cached_has_bits & 0x00000400u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool instance_count_undefined = 194;
+    if (cached_has_bits & 0x00000800u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool extrusion_undefined = 196;
+    if (cached_has_bits & 0x00001000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_offset_undefined = 198;
+    if (cached_has_bits & 0x00002000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool color_hue_offset_undefined = 200;
+    if (cached_has_bits & 0x00004000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_hue_undefined = 202;
+    if (cached_has_bits & 0x00008000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  if (cached_has_bits & 0x003f0000u) {
+    // optional bool shadow_hue_offset_undefined = 204;
+    if (cached_has_bits & 0x00010000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_saturation_undefined = 206;
+    if (cached_has_bits & 0x00020000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_brightness_undefined = 208;
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_intensity_undefined = 210;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool shadow_power_undefined = 212;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool noise_octaves_iterations_undefined = 214;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData MotionBackgroundStylePropertyChangeSetArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    MotionBackgroundStylePropertyChangeSetArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*MotionBackgroundStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
+
+
+void MotionBackgroundStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<MotionBackgroundStylePropertyChangeSetArchive*>(&to_msg);
+  auto& from = static_cast<const MotionBackgroundStylePropertyChangeSetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_name()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_name());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_internal_mutable_variant()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_variant());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_internal_mutable_color_gradient()->::TSDSOS::SpecFillArchive::MergeFrom(
+          from._internal_color_gradient());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_internal_mutable_random_seed()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_random_seed());
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_internal_mutable_color_blur_sigma()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_blur_sigma());
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_internal_mutable_color_contrast()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_contrast());
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_internal_mutable_color_gamma()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_gamma());
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_internal_mutable_color_saturation()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_saturation());
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_internal_mutable_color_brightness()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_brightness());
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_internal_mutable_color_hue()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_hue());
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_internal_mutable_color_vibrance()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_vibrance());
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_internal_mutable_noise_amplitude()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_amplitude());
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_internal_mutable_noise_movement()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_movement());
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_internal_mutable_noise_octaves()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_octaves());
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_internal_mutable_noise_scale()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_scale());
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_internal_mutable_noise_scale_horizontal()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_scale_horizontal());
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_internal_mutable_noise_scale_vertical()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_scale_vertical());
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_internal_mutable_noise_gain()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_gain());
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_internal_mutable_noise_lacunarity()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_lacunarity());
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_internal_mutable_noise_speed()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_speed());
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_internal_mutable_color_palette_offset()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_color_palette_offset());
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_internal_mutable_zoom()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_zoom());
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_internal_mutable_invert()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_invert());
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_internal_mutable_blend_mode()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_blend_mode());
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_internal_mutable_source_blend_factor()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_source_blend_factor());
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_internal_mutable_dest_blend_factor()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_dest_blend_factor());
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_internal_mutable_motion()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_motion());
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_internal_mutable_background_color()->::TSSSOS::SpecColorArchive::MergeFrom(
+          from._internal_background_color());
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_internal_mutable_foreground_color()->::TSSSOS::SpecColorArchive::MergeFrom(
+          from._internal_foreground_color());
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_internal_mutable_line_color()->::TSSSOS::SpecColorArchive::MergeFrom(
+          from._internal_line_color());
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_internal_mutable_point_color()->::TSSSOS::SpecColorArchive::MergeFrom(
+          from._internal_point_color());
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_internal_mutable_alpha()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_alpha());
+    }
+  }
+  cached_has_bits = from._impl_._has_bits_[1];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_border()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_border());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_internal_mutable_blend()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_blend());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_internal_mutable_brightness()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_brightness());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_internal_mutable_border_lightness()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_border_lightness());
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_internal_mutable_contrast()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_contrast());
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_internal_mutable_damping()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_damping());
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_internal_mutable_density()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_density());
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_internal_mutable_diffuse_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_diffuse_power());
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_internal_mutable_distortion()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_distortion());
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_internal_mutable_entropy()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_entropy());
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_internal_mutable_exposure()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_exposure());
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_internal_mutable_filter()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_filter());
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_internal_mutable_fog_distance()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_fog_distance());
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_internal_mutable_fog_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_fog_power());
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_internal_mutable_gamma()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_gamma());
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_internal_mutable_grain_amount()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_grain_amount());
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_internal_mutable_grain_intensity()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_grain_intensity());
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_internal_mutable_hue()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_hue());
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_internal_mutable_lightness()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_lightness());
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_internal_mutable_line_alpha()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_alpha());
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_internal_mutable_line_center()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_center());
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_internal_mutable_line_fade()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_fade());
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_internal_mutable_line_fade_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_fade_power());
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_internal_mutable_line_length()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_length());
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_internal_mutable_line_width()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_line_width());
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_internal_mutable_noise_size_scale()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_size_scale());
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_internal_mutable_noise_size_weight()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_size_weight());
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_internal_mutable_noise_variance()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_variance());
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_internal_mutable_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_offset());
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_internal_mutable_motion_background_opacity()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_motion_background_opacity());
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_internal_mutable_point_depth_alpha()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_point_depth_alpha());
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_internal_mutable_point_size()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_point_size());
+    }
+  }
+  cached_has_bits = from._impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_power());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_internal_mutable_radius()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_radius());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_internal_mutable_refraction()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_refraction());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_internal_mutable_resolution()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_resolution());
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_internal_mutable_saturation()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_saturation());
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_internal_mutable_scale()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_scale());
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_internal_mutable_shadow_alpha()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_alpha());
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_internal_mutable_shadow_angle()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_angle());
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_internal_mutable_shadow_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_offset());
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_internal_mutable_shadow_scale()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_scale());
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_internal_mutable_shadow_value()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_value());
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_internal_mutable_speed()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_speed());
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_internal_mutable_texture_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_texture_power());
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_internal_mutable_time()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_time());
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_internal_mutable_draw_points()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_draw_points());
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_internal_mutable_draw_lines()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_draw_lines());
+    }
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_internal_mutable_draw_shadows()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_draw_shadows());
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_internal_mutable_pixels_per_division()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_pixels_per_division());
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_internal_mutable_symmetry()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_symmetry());
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_internal_mutable_lock_focus()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_lock_focus());
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_internal_mutable_amplitude()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_amplitude());
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_internal_mutable_envelope()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_envelope());
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_internal_mutable_y_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_y_offset());
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_internal_mutable_focus()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_focus());
+    }
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_internal_mutable_blur()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_blur());
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_internal_mutable_grain_speed()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_grain_speed());
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_internal_mutable_mesh_color()->::TSSSOS::SpecColorArchive::MergeFrom(
+          from._internal_mesh_color());
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_internal_mutable_angle()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_angle());
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_internal_mutable_mesh_line_width()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_mesh_line_width());
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_internal_mutable_delta_time()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_delta_time());
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_internal_mutable_threshold()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_threshold());
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_internal_mutable_time_start()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_time_start());
+    }
+  }
+  cached_has_bits = from._impl_._has_bits_[3];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_instance_count()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_instance_count());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_internal_mutable_extrusion()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_extrusion());
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_internal_mutable_noise_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_noise_offset());
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_internal_mutable_color_hue_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_color_hue_offset());
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_internal_mutable_shadow_hue()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_hue());
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_internal_mutable_shadow_hue_offset()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_hue_offset());
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_internal_mutable_shadow_saturation()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_saturation());
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_internal_mutable_shadow_brightness()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_brightness());
+    }
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_internal_mutable_shadow_intensity()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_intensity());
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_internal_mutable_shadow_power()->::TSSSOS::SpecDoubleArchive::MergeFrom(
+          from._internal_shadow_power());
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_internal_mutable_noise_octaves_iterations()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_noise_octaves_iterations());
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.name_undefined_ = from._impl_.name_undefined_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.variant_undefined_ = from._impl_.variant_undefined_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.color_gradient_undefined_ = from._impl_.color_gradient_undefined_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.random_seed_undefined_ = from._impl_.random_seed_undefined_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.color_blur_sigma_undefined_ = from._impl_.color_blur_sigma_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.color_contrast_undefined_ = from._impl_.color_contrast_undefined_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.color_gamma_undefined_ = from._impl_.color_gamma_undefined_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.color_saturation_undefined_ = from._impl_.color_saturation_undefined_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.color_brightness_undefined_ = from._impl_.color_brightness_undefined_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.color_hue_undefined_ = from._impl_.color_hue_undefined_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.color_vibrance_undefined_ = from._impl_.color_vibrance_undefined_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.noise_amplitude_undefined_ = from._impl_.noise_amplitude_undefined_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.noise_movement_undefined_ = from._impl_.noise_movement_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_impl_.noise_octaves_undefined_ = from._impl_.noise_octaves_undefined_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_impl_.noise_scale_undefined_ = from._impl_.noise_scale_undefined_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_impl_.noise_scale_horizontal_undefined_ = from._impl_.noise_scale_horizontal_undefined_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_impl_.noise_scale_vertical_undefined_ = from._impl_.noise_scale_vertical_undefined_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_impl_.noise_gain_undefined_ = from._impl_.noise_gain_undefined_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_impl_.noise_lacunarity_undefined_ = from._impl_.noise_lacunarity_undefined_;
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_impl_.noise_speed_undefined_ = from._impl_.noise_speed_undefined_;
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_impl_.color_palette_offset_undefined_ = from._impl_.color_palette_offset_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  cached_has_bits = from._impl_._has_bits_[4];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.zoom_undefined_ = from._impl_.zoom_undefined_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.invert_undefined_ = from._impl_.invert_undefined_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.blend_mode_undefined_ = from._impl_.blend_mode_undefined_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.source_blend_factor_undefined_ = from._impl_.source_blend_factor_undefined_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.dest_blend_factor_undefined_ = from._impl_.dest_blend_factor_undefined_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.motion_undefined_ = from._impl_.motion_undefined_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.background_color_undefined_ = from._impl_.background_color_undefined_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.foreground_color_undefined_ = from._impl_.foreground_color_undefined_;
+    }
+    _this->_impl_._has_bits_[4] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.line_color_undefined_ = from._impl_.line_color_undefined_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.point_color_undefined_ = from._impl_.point_color_undefined_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.alpha_undefined_ = from._impl_.alpha_undefined_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.border_undefined_ = from._impl_.border_undefined_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.blend_undefined_ = from._impl_.blend_undefined_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.brightness_undefined_ = from._impl_.brightness_undefined_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.border_lightness_undefined_ = from._impl_.border_lightness_undefined_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.contrast_undefined_ = from._impl_.contrast_undefined_;
+    }
+    _this->_impl_._has_bits_[4] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.damping_undefined_ = from._impl_.damping_undefined_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.density_undefined_ = from._impl_.density_undefined_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.diffuse_power_undefined_ = from._impl_.diffuse_power_undefined_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.distortion_undefined_ = from._impl_.distortion_undefined_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.entropy_undefined_ = from._impl_.entropy_undefined_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.exposure_undefined_ = from._impl_.exposure_undefined_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.filter_undefined_ = from._impl_.filter_undefined_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.fog_distance_undefined_ = from._impl_.fog_distance_undefined_;
+    }
+    _this->_impl_._has_bits_[4] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_impl_.fog_power_undefined_ = from._impl_.fog_power_undefined_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_impl_.gamma_undefined_ = from._impl_.gamma_undefined_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_impl_.grain_amount_undefined_ = from._impl_.grain_amount_undefined_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_impl_.grain_intensity_undefined_ = from._impl_.grain_intensity_undefined_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_impl_.hue_undefined_ = from._impl_.hue_undefined_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_impl_.lightness_undefined_ = from._impl_.lightness_undefined_;
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_impl_.line_alpha_undefined_ = from._impl_.line_alpha_undefined_;
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_impl_.line_center_undefined_ = from._impl_.line_center_undefined_;
+    }
+    _this->_impl_._has_bits_[4] |= cached_has_bits;
+  }
+  cached_has_bits = from._impl_._has_bits_[5];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.line_fade_undefined_ = from._impl_.line_fade_undefined_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.line_fade_power_undefined_ = from._impl_.line_fade_power_undefined_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.line_length_undefined_ = from._impl_.line_length_undefined_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.line_width_undefined_ = from._impl_.line_width_undefined_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.noise_size_scale_undefined_ = from._impl_.noise_size_scale_undefined_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.noise_size_weight_undefined_ = from._impl_.noise_size_weight_undefined_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.noise_variance_undefined_ = from._impl_.noise_variance_undefined_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.offset_undefined_ = from._impl_.offset_undefined_;
+    }
+    _this->_impl_._has_bits_[5] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.motion_background_opacity_undefined_ = from._impl_.motion_background_opacity_undefined_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.point_depth_alpha_undefined_ = from._impl_.point_depth_alpha_undefined_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.point_size_undefined_ = from._impl_.point_size_undefined_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.power_undefined_ = from._impl_.power_undefined_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.radius_undefined_ = from._impl_.radius_undefined_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.refraction_undefined_ = from._impl_.refraction_undefined_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.resolution_undefined_ = from._impl_.resolution_undefined_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.saturation_undefined_ = from._impl_.saturation_undefined_;
+    }
+    _this->_impl_._has_bits_[5] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.scale_undefined_ = from._impl_.scale_undefined_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.shadow_alpha_undefined_ = from._impl_.shadow_alpha_undefined_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.shadow_angle_undefined_ = from._impl_.shadow_angle_undefined_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.shadow_offset_undefined_ = from._impl_.shadow_offset_undefined_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.shadow_scale_undefined_ = from._impl_.shadow_scale_undefined_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.shadow_value_undefined_ = from._impl_.shadow_value_undefined_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.speed_undefined_ = from._impl_.speed_undefined_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.texture_power_undefined_ = from._impl_.texture_power_undefined_;
+    }
+    _this->_impl_._has_bits_[5] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0xff000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_impl_.time_undefined_ = from._impl_.time_undefined_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_impl_.draw_points_undefined_ = from._impl_.draw_points_undefined_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_impl_.draw_lines_undefined_ = from._impl_.draw_lines_undefined_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_impl_.draw_shadows_undefined_ = from._impl_.draw_shadows_undefined_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_impl_.pixels_per_division_undefined_ = from._impl_.pixels_per_division_undefined_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_impl_.symmetry_undefined_ = from._impl_.symmetry_undefined_;
+    }
+    if (cached_has_bits & 0x40000000u) {
+      _this->_impl_.lock_focus_undefined_ = from._impl_.lock_focus_undefined_;
+    }
+    if (cached_has_bits & 0x80000000u) {
+      _this->_impl_.amplitude_undefined_ = from._impl_.amplitude_undefined_;
+    }
+    _this->_impl_._has_bits_[5] |= cached_has_bits;
+  }
+  cached_has_bits = from._impl_._has_bits_[6];
+  if (cached_has_bits & 0x000000ffu) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_impl_.envelope_undefined_ = from._impl_.envelope_undefined_;
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.y_offset_undefined_ = from._impl_.y_offset_undefined_;
+    }
+    if (cached_has_bits & 0x00000004u) {
+      _this->_impl_.focus_undefined_ = from._impl_.focus_undefined_;
+    }
+    if (cached_has_bits & 0x00000008u) {
+      _this->_impl_.blur_undefined_ = from._impl_.blur_undefined_;
+    }
+    if (cached_has_bits & 0x00000010u) {
+      _this->_impl_.grain_speed_undefined_ = from._impl_.grain_speed_undefined_;
+    }
+    if (cached_has_bits & 0x00000020u) {
+      _this->_impl_.mesh_color_undefined_ = from._impl_.mesh_color_undefined_;
+    }
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.angle_undefined_ = from._impl_.angle_undefined_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.mesh_line_width_undefined_ = from._impl_.mesh_line_width_undefined_;
+    }
+    _this->_impl_._has_bits_[6] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.delta_time_undefined_ = from._impl_.delta_time_undefined_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.threshold_undefined_ = from._impl_.threshold_undefined_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.time_start_undefined_ = from._impl_.time_start_undefined_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.instance_count_undefined_ = from._impl_.instance_count_undefined_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.extrusion_undefined_ = from._impl_.extrusion_undefined_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.noise_offset_undefined_ = from._impl_.noise_offset_undefined_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.color_hue_offset_undefined_ = from._impl_.color_hue_offset_undefined_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.shadow_hue_undefined_ = from._impl_.shadow_hue_undefined_;
+    }
+    _this->_impl_._has_bits_[6] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x003f0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.shadow_hue_offset_undefined_ = from._impl_.shadow_hue_offset_undefined_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.shadow_saturation_undefined_ = from._impl_.shadow_saturation_undefined_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.shadow_brightness_undefined_ = from._impl_.shadow_brightness_undefined_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.shadow_intensity_undefined_ = from._impl_.shadow_intensity_undefined_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.shadow_power_undefined_ = from._impl_.shadow_power_undefined_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.noise_octaves_iterations_undefined_ = from._impl_.noise_octaves_iterations_undefined_;
+    }
+    _this->_impl_._has_bits_[6] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void MotionBackgroundStylePropertyChangeSetArchive::CopyFrom(const MotionBackgroundStylePropertyChangeSetArchive& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:KNSOS.MotionBackgroundStylePropertyChangeSetArchive)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool MotionBackgroundStylePropertyChangeSetArchive::IsInitialized() const {
+  if (_internal_has_name()) {
+    if (!_impl_.name_->IsInitialized()) return false;
+  }
+  if (_internal_has_variant()) {
+    if (!_impl_.variant_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_gradient()) {
+    if (!_impl_.color_gradient_->IsInitialized()) return false;
+  }
+  if (_internal_has_random_seed()) {
+    if (!_impl_.random_seed_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_blur_sigma()) {
+    if (!_impl_.color_blur_sigma_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_contrast()) {
+    if (!_impl_.color_contrast_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_gamma()) {
+    if (!_impl_.color_gamma_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_saturation()) {
+    if (!_impl_.color_saturation_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_brightness()) {
+    if (!_impl_.color_brightness_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_hue()) {
+    if (!_impl_.color_hue_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_vibrance()) {
+    if (!_impl_.color_vibrance_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_amplitude()) {
+    if (!_impl_.noise_amplitude_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_movement()) {
+    if (!_impl_.noise_movement_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_octaves()) {
+    if (!_impl_.noise_octaves_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_scale()) {
+    if (!_impl_.noise_scale_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_scale_horizontal()) {
+    if (!_impl_.noise_scale_horizontal_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_scale_vertical()) {
+    if (!_impl_.noise_scale_vertical_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_gain()) {
+    if (!_impl_.noise_gain_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_lacunarity()) {
+    if (!_impl_.noise_lacunarity_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_speed()) {
+    if (!_impl_.noise_speed_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_palette_offset()) {
+    if (!_impl_.color_palette_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_zoom()) {
+    if (!_impl_.zoom_->IsInitialized()) return false;
+  }
+  if (_internal_has_invert()) {
+    if (!_impl_.invert_->IsInitialized()) return false;
+  }
+  if (_internal_has_blend_mode()) {
+    if (!_impl_.blend_mode_->IsInitialized()) return false;
+  }
+  if (_internal_has_source_blend_factor()) {
+    if (!_impl_.source_blend_factor_->IsInitialized()) return false;
+  }
+  if (_internal_has_dest_blend_factor()) {
+    if (!_impl_.dest_blend_factor_->IsInitialized()) return false;
+  }
+  if (_internal_has_motion()) {
+    if (!_impl_.motion_->IsInitialized()) return false;
+  }
+  if (_internal_has_background_color()) {
+    if (!_impl_.background_color_->IsInitialized()) return false;
+  }
+  if (_internal_has_foreground_color()) {
+    if (!_impl_.foreground_color_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_color()) {
+    if (!_impl_.line_color_->IsInitialized()) return false;
+  }
+  if (_internal_has_point_color()) {
+    if (!_impl_.point_color_->IsInitialized()) return false;
+  }
+  if (_internal_has_alpha()) {
+    if (!_impl_.alpha_->IsInitialized()) return false;
+  }
+  if (_internal_has_border()) {
+    if (!_impl_.border_->IsInitialized()) return false;
+  }
+  if (_internal_has_blend()) {
+    if (!_impl_.blend_->IsInitialized()) return false;
+  }
+  if (_internal_has_brightness()) {
+    if (!_impl_.brightness_->IsInitialized()) return false;
+  }
+  if (_internal_has_border_lightness()) {
+    if (!_impl_.border_lightness_->IsInitialized()) return false;
+  }
+  if (_internal_has_contrast()) {
+    if (!_impl_.contrast_->IsInitialized()) return false;
+  }
+  if (_internal_has_damping()) {
+    if (!_impl_.damping_->IsInitialized()) return false;
+  }
+  if (_internal_has_density()) {
+    if (!_impl_.density_->IsInitialized()) return false;
+  }
+  if (_internal_has_diffuse_power()) {
+    if (!_impl_.diffuse_power_->IsInitialized()) return false;
+  }
+  if (_internal_has_distortion()) {
+    if (!_impl_.distortion_->IsInitialized()) return false;
+  }
+  if (_internal_has_entropy()) {
+    if (!_impl_.entropy_->IsInitialized()) return false;
+  }
+  if (_internal_has_exposure()) {
+    if (!_impl_.exposure_->IsInitialized()) return false;
+  }
+  if (_internal_has_filter()) {
+    if (!_impl_.filter_->IsInitialized()) return false;
+  }
+  if (_internal_has_fog_distance()) {
+    if (!_impl_.fog_distance_->IsInitialized()) return false;
+  }
+  if (_internal_has_fog_power()) {
+    if (!_impl_.fog_power_->IsInitialized()) return false;
+  }
+  if (_internal_has_gamma()) {
+    if (!_impl_.gamma_->IsInitialized()) return false;
+  }
+  if (_internal_has_grain_amount()) {
+    if (!_impl_.grain_amount_->IsInitialized()) return false;
+  }
+  if (_internal_has_grain_intensity()) {
+    if (!_impl_.grain_intensity_->IsInitialized()) return false;
+  }
+  if (_internal_has_hue()) {
+    if (!_impl_.hue_->IsInitialized()) return false;
+  }
+  if (_internal_has_lightness()) {
+    if (!_impl_.lightness_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_alpha()) {
+    if (!_impl_.line_alpha_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_center()) {
+    if (!_impl_.line_center_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_fade()) {
+    if (!_impl_.line_fade_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_fade_power()) {
+    if (!_impl_.line_fade_power_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_length()) {
+    if (!_impl_.line_length_->IsInitialized()) return false;
+  }
+  if (_internal_has_line_width()) {
+    if (!_impl_.line_width_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_size_scale()) {
+    if (!_impl_.noise_size_scale_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_size_weight()) {
+    if (!_impl_.noise_size_weight_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_variance()) {
+    if (!_impl_.noise_variance_->IsInitialized()) return false;
+  }
+  if (_internal_has_offset()) {
+    if (!_impl_.offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_motion_background_opacity()) {
+    if (!_impl_.motion_background_opacity_->IsInitialized()) return false;
+  }
+  if (_internal_has_point_depth_alpha()) {
+    if (!_impl_.point_depth_alpha_->IsInitialized()) return false;
+  }
+  if (_internal_has_point_size()) {
+    if (!_impl_.point_size_->IsInitialized()) return false;
+  }
+  if (_internal_has_power()) {
+    if (!_impl_.power_->IsInitialized()) return false;
+  }
+  if (_internal_has_radius()) {
+    if (!_impl_.radius_->IsInitialized()) return false;
+  }
+  if (_internal_has_refraction()) {
+    if (!_impl_.refraction_->IsInitialized()) return false;
+  }
+  if (_internal_has_resolution()) {
+    if (!_impl_.resolution_->IsInitialized()) return false;
+  }
+  if (_internal_has_saturation()) {
+    if (!_impl_.saturation_->IsInitialized()) return false;
+  }
+  if (_internal_has_scale()) {
+    if (!_impl_.scale_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_alpha()) {
+    if (!_impl_.shadow_alpha_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_angle()) {
+    if (!_impl_.shadow_angle_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_offset()) {
+    if (!_impl_.shadow_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_scale()) {
+    if (!_impl_.shadow_scale_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_value()) {
+    if (!_impl_.shadow_value_->IsInitialized()) return false;
+  }
+  if (_internal_has_speed()) {
+    if (!_impl_.speed_->IsInitialized()) return false;
+  }
+  if (_internal_has_texture_power()) {
+    if (!_impl_.texture_power_->IsInitialized()) return false;
+  }
+  if (_internal_has_time()) {
+    if (!_impl_.time_->IsInitialized()) return false;
+  }
+  if (_internal_has_draw_points()) {
+    if (!_impl_.draw_points_->IsInitialized()) return false;
+  }
+  if (_internal_has_draw_lines()) {
+    if (!_impl_.draw_lines_->IsInitialized()) return false;
+  }
+  if (_internal_has_draw_shadows()) {
+    if (!_impl_.draw_shadows_->IsInitialized()) return false;
+  }
+  if (_internal_has_pixels_per_division()) {
+    if (!_impl_.pixels_per_division_->IsInitialized()) return false;
+  }
+  if (_internal_has_symmetry()) {
+    if (!_impl_.symmetry_->IsInitialized()) return false;
+  }
+  if (_internal_has_lock_focus()) {
+    if (!_impl_.lock_focus_->IsInitialized()) return false;
+  }
+  if (_internal_has_amplitude()) {
+    if (!_impl_.amplitude_->IsInitialized()) return false;
+  }
+  if (_internal_has_envelope()) {
+    if (!_impl_.envelope_->IsInitialized()) return false;
+  }
+  if (_internal_has_y_offset()) {
+    if (!_impl_.y_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_focus()) {
+    if (!_impl_.focus_->IsInitialized()) return false;
+  }
+  if (_internal_has_blur()) {
+    if (!_impl_.blur_->IsInitialized()) return false;
+  }
+  if (_internal_has_grain_speed()) {
+    if (!_impl_.grain_speed_->IsInitialized()) return false;
+  }
+  if (_internal_has_mesh_color()) {
+    if (!_impl_.mesh_color_->IsInitialized()) return false;
+  }
+  if (_internal_has_angle()) {
+    if (!_impl_.angle_->IsInitialized()) return false;
+  }
+  if (_internal_has_mesh_line_width()) {
+    if (!_impl_.mesh_line_width_->IsInitialized()) return false;
+  }
+  if (_internal_has_delta_time()) {
+    if (!_impl_.delta_time_->IsInitialized()) return false;
+  }
+  if (_internal_has_threshold()) {
+    if (!_impl_.threshold_->IsInitialized()) return false;
+  }
+  if (_internal_has_time_start()) {
+    if (!_impl_.time_start_->IsInitialized()) return false;
+  }
+  if (_internal_has_instance_count()) {
+    if (!_impl_.instance_count_->IsInitialized()) return false;
+  }
+  if (_internal_has_extrusion()) {
+    if (!_impl_.extrusion_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_offset()) {
+    if (!_impl_.noise_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_color_hue_offset()) {
+    if (!_impl_.color_hue_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_hue()) {
+    if (!_impl_.shadow_hue_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_hue_offset()) {
+    if (!_impl_.shadow_hue_offset_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_saturation()) {
+    if (!_impl_.shadow_saturation_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_brightness()) {
+    if (!_impl_.shadow_brightness_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_intensity()) {
+    if (!_impl_.shadow_intensity_->IsInitialized()) return false;
+  }
+  if (_internal_has_shadow_power()) {
+    if (!_impl_.shadow_power_->IsInitialized()) return false;
+  }
+  if (_internal_has_noise_octaves_iterations()) {
+    if (!_impl_.noise_octaves_iterations_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void MotionBackgroundStylePropertyChangeSetArchive::InternalSwap(MotionBackgroundStylePropertyChangeSetArchive* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_._has_bits_[1], other->_impl_._has_bits_[1]);
+  swap(_impl_._has_bits_[2], other->_impl_._has_bits_[2]);
+  swap(_impl_._has_bits_[3], other->_impl_._has_bits_[3]);
+  swap(_impl_._has_bits_[4], other->_impl_._has_bits_[4]);
+  swap(_impl_._has_bits_[5], other->_impl_._has_bits_[5]);
+  swap(_impl_._has_bits_[6], other->_impl_._has_bits_[6]);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MotionBackgroundStylePropertyChangeSetArchive, _impl_.noise_octaves_iterations_undefined_)
+      + sizeof(MotionBackgroundStylePropertyChangeSetArchive::_impl_.noise_octaves_iterations_undefined_)
+      - PROTOBUF_FIELD_OFFSET(MotionBackgroundStylePropertyChangeSetArchive, _impl_.name_)>(
+          reinterpret_cast<char*>(&_impl_.name_),
+          reinterpret_cast<char*>(&other->_impl_.name_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata MotionBackgroundStylePropertyChangeSetArchive::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_KNArchives_2esos_2eproto_getter, &descriptor_table_KNArchives_2esos_2eproto_once,
+      file_level_metadata_KNArchives_2esos_2eproto[2]);
+}
+
+// ===================================================================
+
 class SlideStylePropertyChangeSetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SlideStylePropertyChangeSetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SlideStylePropertyChangeSetArchive>()._impl_._has_bits_);
   static const ::TSDSOS::SpecFillArchive& fill(const SlideStylePropertyChangeSetArchive* msg);
   static void set_has_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -638,197 +10602,203 @@ class SlideStylePropertyChangeSetArchive::_Internal {
 
 const ::TSDSOS::SpecFillArchive&
 SlideStylePropertyChangeSetArchive::_Internal::fill(const SlideStylePropertyChangeSetArchive* msg) {
-  return *msg->fill_;
+  return *msg->_impl_.fill_;
 }
 const ::KNSOS::SpecTransitionAttributesArchive&
 SlideStylePropertyChangeSetArchive::_Internal::slide_transition(const SlideStylePropertyChangeSetArchive* msg) {
-  return *msg->slide_transition_;
+  return *msg->_impl_.slide_transition_;
 }
 void SlideStylePropertyChangeSetArchive::clear_fill() {
-  if (fill_ != nullptr) fill_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.fill_ != nullptr) _impl_.fill_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 SlideStylePropertyChangeSetArchive::SlideStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.SlideStylePropertyChangeSetArchive)
 }
 SlideStylePropertyChangeSetArchive::SlideStylePropertyChangeSetArchive(const SlideStylePropertyChangeSetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SlideStylePropertyChangeSetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.fill_){nullptr}
+    , decltype(_impl_.slide_transition_){nullptr}
+    , decltype(_impl_.fill_undefined_){}
+    , decltype(_impl_.slide_transition_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_fill()) {
-    fill_ = new ::TSDSOS::SpecFillArchive(*from.fill_);
-  } else {
-    fill_ = nullptr;
+    _this->_impl_.fill_ = new ::TSDSOS::SpecFillArchive(*from._impl_.fill_);
   }
   if (from._internal_has_slide_transition()) {
-    slide_transition_ = new ::KNSOS::SpecTransitionAttributesArchive(*from.slide_transition_);
-  } else {
-    slide_transition_ = nullptr;
+    _this->_impl_.slide_transition_ = new ::KNSOS::SpecTransitionAttributesArchive(*from._impl_.slide_transition_);
   }
-  ::memcpy(&fill_undefined_, &from.fill_undefined_,
-    static_cast<size_t>(reinterpret_cast<char*>(&slide_transition_undefined_) -
-    reinterpret_cast<char*>(&fill_undefined_)) + sizeof(slide_transition_undefined_));
+  ::memcpy(&_impl_.fill_undefined_, &from._impl_.fill_undefined_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.slide_transition_undefined_) -
+    reinterpret_cast<char*>(&_impl_.fill_undefined_)) + sizeof(_impl_.slide_transition_undefined_));
   // @@protoc_insertion_point(copy_constructor:KNSOS.SlideStylePropertyChangeSetArchive)
 }
 
-inline void SlideStylePropertyChangeSetArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&fill_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&slide_transition_undefined_) -
-    reinterpret_cast<char*>(&fill_)) + sizeof(slide_transition_undefined_));
+inline void SlideStylePropertyChangeSetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.fill_){nullptr}
+    , decltype(_impl_.slide_transition_){nullptr}
+    , decltype(_impl_.fill_undefined_){false}
+    , decltype(_impl_.slide_transition_undefined_){false}
+  };
 }
 
 SlideStylePropertyChangeSetArchive::~SlideStylePropertyChangeSetArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.SlideStylePropertyChangeSetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SlideStylePropertyChangeSetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete fill_;
-  if (this != internal_default_instance()) delete slide_transition_;
+  if (this != internal_default_instance()) delete _impl_.fill_;
+  if (this != internal_default_instance()) delete _impl_.slide_transition_;
 }
 
-void SlideStylePropertyChangeSetArchive::ArenaDtor(void* object) {
-  SlideStylePropertyChangeSetArchive* _this = reinterpret_cast< SlideStylePropertyChangeSetArchive* >(object);
-  (void)_this;
-}
-void SlideStylePropertyChangeSetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SlideStylePropertyChangeSetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SlideStylePropertyChangeSetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.SlideStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(fill_ != nullptr);
-      fill_->Clear();
+      GOOGLE_DCHECK(_impl_.fill_ != nullptr);
+      _impl_.fill_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(slide_transition_ != nullptr);
-      slide_transition_->Clear();
+      GOOGLE_DCHECK(_impl_.slide_transition_ != nullptr);
+      _impl_.slide_transition_->Clear();
     }
   }
-  ::memset(&fill_undefined_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&slide_transition_undefined_) -
-      reinterpret_cast<char*>(&fill_undefined_)) + sizeof(slide_transition_undefined_));
-  _has_bits_.Clear();
+  ::memset(&_impl_.fill_undefined_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.slide_transition_undefined_) -
+      reinterpret_cast<char*>(&_impl_.fill_undefined_)) + sizeof(_impl_.slide_transition_undefined_));
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SlideStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SlideStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSDSOS.SpecFillArchive fill = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_fill(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool fill_undefined = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_fill_undefined(&has_bits);
-          fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .KNSOS.SpecTransitionAttributesArchive slide_transition = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_slide_transition(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool slide_transition_undefined = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_slide_transition_undefined(&has_bits);
-          slide_transition_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.slide_transition_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SlideStylePropertyChangeSetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SlideStylePropertyChangeSetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.SlideStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecFillArchive fill = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::fill(this), target, stream);
+      InternalWriteMessage(1, _Internal::fill(this),
+        _Internal::fill(this).GetCachedSize(), target, stream);
   }
 
   // optional bool fill_undefined = 2;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_fill_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_fill_undefined(), target);
   }
 
   // optional .KNSOS.SpecTransitionAttributesArchive slide_transition = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::slide_transition(this), target, stream);
+      InternalWriteMessage(3, _Internal::slide_transition(this),
+        _Internal::slide_transition(this).GetCachedSize(), target, stream);
   }
 
   // optional bool slide_transition_undefined = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_slide_transition_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_slide_transition_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.SlideStylePropertyChangeSetArchive)
@@ -839,24 +10809,24 @@ size_t SlideStylePropertyChangeSetArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:KNSOS.SlideStylePropertyChangeSetArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSDSOS.SpecFillArchive fill = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *fill_);
+          *_impl_.fill_);
     }
 
     // optional .KNSOS.SpecTransitionAttributesArchive slide_transition = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *slide_transition_);
+          *_impl_.slide_transition_);
     }
 
     // optional bool fill_undefined = 2;
@@ -870,51 +10840,43 @@ size_t SlideStylePropertyChangeSetArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SlideStylePropertyChangeSetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SlideStylePropertyChangeSetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SlideStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
 
-void SlideStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SlideStylePropertyChangeSetArchive *>(to)->MergeFrom(
-      static_cast<const SlideStylePropertyChangeSetArchive &>(from));
-}
 
-
-void SlideStylePropertyChangeSetArchive::MergeFrom(const SlideStylePropertyChangeSetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SlideStylePropertyChangeSetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SlideStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SlideStylePropertyChangeSetArchive*>(&to_msg);
+  auto& from = static_cast<const SlideStylePropertyChangeSetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.SlideStylePropertyChangeSetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_fill()->::TSDSOS::SpecFillArchive::MergeFrom(from._internal_fill());
+      _this->_internal_mutable_fill()->::TSDSOS::SpecFillArchive::MergeFrom(
+          from._internal_fill());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_slide_transition()->::KNSOS::SpecTransitionAttributesArchive::MergeFrom(from._internal_slide_transition());
+      _this->_internal_mutable_slide_transition()->::KNSOS::SpecTransitionAttributesArchive::MergeFrom(
+          from._internal_slide_transition());
     }
     if (cached_has_bits & 0x00000004u) {
-      fill_undefined_ = from.fill_undefined_;
+      _this->_impl_.fill_undefined_ = from._impl_.fill_undefined_;
     }
     if (cached_has_bits & 0x00000008u) {
-      slide_transition_undefined_ = from.slide_transition_undefined_;
+      _this->_impl_.slide_transition_undefined_ = from._impl_.slide_transition_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SlideStylePropertyChangeSetArchive::CopyFrom(const SlideStylePropertyChangeSetArchive& from) {
@@ -926,10 +10888,10 @@ void SlideStylePropertyChangeSetArchive::CopyFrom(const SlideStylePropertyChange
 
 bool SlideStylePropertyChangeSetArchive::IsInitialized() const {
   if (_internal_has_fill()) {
-    if (!fill_->IsInitialized()) return false;
+    if (!_impl_.fill_->IsInitialized()) return false;
   }
   if (_internal_has_slide_transition()) {
-    if (!slide_transition_->IsInitialized()) return false;
+    if (!_impl_.slide_transition_->IsInitialized()) return false;
   }
   return true;
 }
@@ -937,31 +10899,38 @@ bool SlideStylePropertyChangeSetArchive::IsInitialized() const {
 void SlideStylePropertyChangeSetArchive::InternalSwap(SlideStylePropertyChangeSetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SlideStylePropertyChangeSetArchive, slide_transition_undefined_)
-      + sizeof(SlideStylePropertyChangeSetArchive::slide_transition_undefined_)
-      - PROTOBUF_FIELD_OFFSET(SlideStylePropertyChangeSetArchive, fill_)>(
-          reinterpret_cast<char*>(&fill_),
-          reinterpret_cast<char*>(&other->fill_));
+      PROTOBUF_FIELD_OFFSET(SlideStylePropertyChangeSetArchive, _impl_.slide_transition_undefined_)
+      + sizeof(SlideStylePropertyChangeSetArchive::_impl_.slide_transition_undefined_)
+      - PROTOBUF_FIELD_OFFSET(SlideStylePropertyChangeSetArchive, _impl_.fill_)>(
+          reinterpret_cast<char*>(&_impl_.fill_),
+          reinterpret_cast<char*>(&other->_impl_.fill_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SlideStylePropertyChangeSetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNArchives_2esos_2eproto_getter, &descriptor_table_KNArchives_2esos_2eproto_once,
-      file_level_metadata_KNArchives_2esos_2eproto[2]);
+      file_level_metadata_KNArchives_2esos_2eproto[3]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace KNSOS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::KNSOS::SpecSetTransitionAttributesArchive* Arena::CreateMaybeMessage< ::KNSOS::SpecSetTransitionAttributesArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::SpecSetTransitionAttributesArchive*
+Arena::CreateMaybeMessage< ::KNSOS::SpecSetTransitionAttributesArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::SpecSetTransitionAttributesArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::KNSOS::SpecTransitionAttributesArchive* Arena::CreateMaybeMessage< ::KNSOS::SpecTransitionAttributesArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::SpecTransitionAttributesArchive*
+Arena::CreateMaybeMessage< ::KNSOS::SpecTransitionAttributesArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::SpecTransitionAttributesArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::KNSOS::SlideStylePropertyChangeSetArchive* Arena::CreateMaybeMessage< ::KNSOS::SlideStylePropertyChangeSetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::MotionBackgroundStylePropertyChangeSetArchive*
+Arena::CreateMaybeMessage< ::KNSOS::MotionBackgroundStylePropertyChangeSetArchive >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::KNSOS::MotionBackgroundStylePropertyChangeSetArchive >(arena);
+}
+template<> PROTOBUF_NOINLINE ::KNSOS::SlideStylePropertyChangeSetArchive*
+Arena::CreateMaybeMessage< ::KNSOS::SlideStylePropertyChangeSetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::SlideStylePropertyChangeSetArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

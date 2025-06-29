@@ -35,7 +35,7 @@ void addEditablePathFromSVGToPasteboard(std::vector<MessageWrapper *> *messageLi
             auto* bez_path = new TSP::Path;
 
             addPathElement(bez_path, path->pts[0], path->pts[1], TSP::Path_ElementType_moveTo);
-            std::cout << "Path Instance: ";
+            // std::cout << "Path Instance: ";
             for (int i = 0; i < path->npts-1; i += 3) {
                 float* p = &path->pts[i*2];
                 addBezierPathElement(bez_path, p[2], p[3],p[4], p[5],p[6], p[7]);
@@ -78,9 +78,9 @@ std::tuple<unsigned int, unsigned int, unsigned int, unsigned int> convertColorT
 }
 
 
-std::vector<MessageWrapper *>* convertSVGFileToKeynoteClipboard(std::string fileContents) {
+std::vector<MessageWrapper *> convertSVGFileToKeynoteClipboard(std::string fileContents) { // Return by value
     google::protobuf::uint64 currentIdentifier = 2643663;
-    std::vector<MessageWrapper*>* messageList;
+    std::vector<MessageWrapper*> messageList; // Local variable
     struct NSVGimage* image;
 
     image = nsvgParse((char *) fileContents.c_str(), "px", 1);
@@ -90,19 +90,19 @@ std::vector<MessageWrapper *>* convertSVGFileToKeynoteClipboard(std::string file
     google::protobuf::uint64 pasteboardObjectIdentifier = currentIdentifier++;
 
     // Create empty initial clipboard
-    messageList = createInitialClipboardMessages(pasteboardNativeStorageArchiveIdentifier, pasteboardObjectIdentifier, stylesheetIdentifier);
+    messageList = createInitialClipboardMessages(pasteboardNativeStorageArchiveIdentifier, pasteboardObjectIdentifier, stylesheetIdentifier); // createInitialClipboardMessages will now return by value
 
     auto * styleSheetArchiveWrapper = createMessageWrapper(new TSS::StylesheetArchive, 401, stylesheetIdentifier);
-    messageList->push_back(styleSheetArchiveWrapper);
+    messageList.push_back(styleSheetArchiveWrapper); // Use . for local vector
 
     // Add shapes to the clipboard
-    addEditablePathFromSVGToPasteboard(messageList, image, currentIdentifier);
+    addEditablePathFromSVGToPasteboard(&messageList, image, currentIdentifier); // Pass address for functions expecting pointer
 
     // move PasteboardNativeStorage to End
-    messageList->push_back((*messageList)[1]);
-    messageList->erase(messageList->begin() + 1);
+    messageList.push_back(messageList[1]); // Use . for local vector
+    messageList.erase(messageList.begin() + 1); // Use . for local vector
 
-    return messageList;
+    return messageList; // Return local vector by value
 }
 
 void addDrawableReferenceToPasteboard(std::vector<MessageWrapper *>* vector, google::protobuf::uint64 identifier, float x, float y, float width, float height) {
@@ -172,14 +172,14 @@ MessageWrapper* createShapeInfoArchive(TSD::EditableBezierPathSourceArchive *edi
 
 
 
-std::vector<MessageWrapper *>* createInitialClipboardMessages(google::protobuf::uint64 pasteboardNativeStorageArchiveIdentifier, google::protobuf::uint64 pasteboardObjectIdentifier, google::protobuf::uint64 stylesheetIdentifier) {
-    auto* returnVector = new std::vector<MessageWrapper *>;
+std::vector<MessageWrapper *> createInitialClipboardMessages(google::protobuf::uint64 pasteboardNativeStorageArchiveIdentifier, google::protobuf::uint64 pasteboardObjectIdentifier, google::protobuf::uint64 stylesheetIdentifier) { // Return by value
+    std::vector<MessageWrapper *> returnVector; // Local variable
     MessageWrapper* pasteboardObjectMessageWrapper = createPasteboardObjectMessageWrapper(pasteboardObjectIdentifier, pasteboardNativeStorageArchiveIdentifier, stylesheetIdentifier);
     MessageWrapper* pasteboardNativeStorageArchiveMessageWrapper = createPasteboardNativeStorageArchiveMessageWrapper(pasteboardNativeStorageArchiveIdentifier);
-    returnVector->push_back(pasteboardObjectMessageWrapper);
-    returnVector->push_back(pasteboardNativeStorageArchiveMessageWrapper);
+    returnVector.push_back(pasteboardObjectMessageWrapper); // Use . for local vector
+    returnVector.push_back(pasteboardNativeStorageArchiveMessageWrapper); // Use . for local vector
 
-    return returnVector;
+    return returnVector; // Return local vector by value
 }
 
 

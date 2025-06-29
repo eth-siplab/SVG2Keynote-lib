@@ -338,11 +338,11 @@ void ProtoMapping::registerCommonMessageTypes() {
 	_messageTypeToPrototypeMap[3098]= new TSD::SetCaptionOrTitleVisibilityCommandArchive();
 	_messageTypeToPrototypeMap[4000]= new TSCE::CalculationEngineArchive();
 	_messageTypeToPrototypeMap[4001]= new TSCE::FormulaRewriteCommandArchive();
-	_messageTypeToPrototypeMap[4002]= new TSCE::TrackedReferencesRewriteCommandArchive();
+	// _messageTypeToPrototypeMap[4002]= new TSCE::TrackedReferencesRewriteCommandArchive();
 	_messageTypeToPrototypeMap[4003]= new TSCE::NamedReferenceManagerArchive();
-	_messageTypeToPrototypeMap[4004]= new TSCE::ReferenceTrackerArchive();
+	// _messageTypeToPrototypeMap[4004]= new TSCE::ReferenceTrackerArchive();
 	_messageTypeToPrototypeMap[4005]= new TSCE::TrackedReferenceArchive();
-	_messageTypeToPrototypeMap[4006]= new TSCE::ExtendTableIDHistoryCommandArchive();
+	// _messageTypeToPrototypeMap[4006]= new TSCE::ExtendTableIDHistoryCommandArchive();
 	_messageTypeToPrototypeMap[4007]= new TSCE::RemoteDataStoreArchive();
 	_messageTypeToPrototypeMap[4008]= new TSCE::FormulaOwnerDependenciesArchive();
 	_messageTypeToPrototypeMap[4009]= new TSCE::CellRecordTileArchive();

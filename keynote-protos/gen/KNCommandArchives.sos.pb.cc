@@ -16,93 +16,106 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace KNSOS {
-constexpr InducedVerifyDocumentWithServerCommandArchive::InducedVerifyDocumentWithServerCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : slide_node_id_list_()
-  , template_slide_node_id_list_()
-  , super_(nullptr)
-  , slide_node_id_list_undefined_(false)
-  , template_slide_node_id_list_undefined_(false){}
+PROTOBUF_CONSTEXPR InducedVerifyDocumentWithServerCommandArchive::InducedVerifyDocumentWithServerCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.slide_node_id_list_)*/{}
+  , /*decltype(_impl_.template_slide_node_id_list_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.slide_node_id_list_undefined_)*/false
+  , /*decltype(_impl_.template_slide_node_id_list_undefined_)*/false} {}
 struct InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal {
-  constexpr InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal() {}
   union {
     InducedVerifyDocumentWithServerCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal _InducedVerifyDocumentWithServerCommandArchive_default_instance_;
-constexpr InducedVerifyDrawableZOrdersWithServerCommandArchive::InducedVerifyDrawableZOrdersWithServerCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InducedVerifyDocumentWithServerCommandArchiveDefaultTypeInternal _InducedVerifyDocumentWithServerCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR InducedVerifyDrawableZOrdersWithServerCommandArchive::InducedVerifyDrawableZOrdersWithServerCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal {
-  constexpr InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal() {}
   union {
     InducedVerifyDrawableZOrdersWithServerCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal _InducedVerifyDrawableZOrdersWithServerCommandArchive_default_instance_;
-constexpr CommandSlideReapplyTemplateSlideArchive::CommandSlideReapplyTemplateSlideArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InducedVerifyDrawableZOrdersWithServerCommandArchiveDefaultTypeInternal _InducedVerifyDrawableZOrdersWithServerCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR CommandSlideReapplyTemplateSlideArchive::CommandSlideReapplyTemplateSlideArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal {
-  constexpr CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal() {}
   union {
     CommandSlideReapplyTemplateSlideArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal _CommandSlideReapplyTemplateSlideArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CommandSlideReapplyTemplateSlideArchiveDefaultTypeInternal _CommandSlideReapplyTemplateSlideArchive_default_instance_;
 }  // namespace KNSOS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_KNCommandArchives_2esos_2eproto[3];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_KNCommandArchives_2esos_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_KNCommandArchives_2esos_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_KNCommandArchives_2esos_2eproto[3];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_KNCommandArchives_2esos_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_KNCommandArchives_2esos_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_KNCommandArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _has_bits_),
+const uint32_t TableStruct_KNCommandArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, slide_node_id_list_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, slide_node_id_list_undefined_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, template_slide_node_id_list_),
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, template_slide_node_id_list_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_.slide_node_id_list_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_.slide_node_id_list_undefined_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_.template_slide_node_id_list_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDocumentWithServerCommandArchive, _impl_.template_slide_node_id_list_undefined_),
   0,
   ~0u,
   1,
   ~0u,
   2,
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive, super_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive, _impl_.super_),
   0,
-  PROTOBUF_FIELD_OFFSET(::KNSOS::CommandSlideReapplyTemplateSlideArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::KNSOS::CommandSlideReapplyTemplateSlideArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::KNSOS::CommandSlideReapplyTemplateSlideArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::KNSOS::CommandSlideReapplyTemplateSlideArchive, super_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::KNSOS::CommandSlideReapplyTemplateSlideArchive, _impl_.super_),
   0,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 10, sizeof(::KNSOS::InducedVerifyDocumentWithServerCommandArchive)},
-  { 15, 21, sizeof(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive)},
-  { 22, 28, sizeof(::KNSOS::CommandSlideReapplyTemplateSlideArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 11, -1, sizeof(::KNSOS::InducedVerifyDocumentWithServerCommandArchive)},
+  { 16, 23, -1, sizeof(::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive)},
+  { 24, 31, -1, sizeof(::KNSOS::CommandSlideReapplyTemplateSlideArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_InducedVerifyDocumentWithServerCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_InducedVerifyDrawableZOrdersWithServerCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::KNSOS::_CommandSlideReapplyTemplateSlideArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::KNSOS::_InducedVerifyDocumentWithServerCommandArchive_default_instance_._instance,
+  &::KNSOS::_InducedVerifyDrawableZOrdersWithServerCommandArchive_default_instance_._instance,
+  &::KNSOS::_CommandSlideReapplyTemplateSlideArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_KNCommandArchives_2esos_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -122,31 +135,33 @@ const char descriptor_table_protodef_KNCommandArchives_2esos_2eproto[] PROTOBUF_
   "emplateSlideArchive\0222\n\005super\030\001 \002(\0132#.TSA"
   "SOS.CommandReapplyMasterArchive"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_KNCommandArchives_2esos_2eproto_deps[3] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_KNCommandArchives_2esos_2eproto_deps[3] = {
   &::descriptor_table_TSACommandArchives_2esos_2eproto,
   &::descriptor_table_TSKArchives_2eproto,
   &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_KNCommandArchives_2esos_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_KNCommandArchives_2esos_2eproto = {
-  false, false, 591, descriptor_table_protodef_KNCommandArchives_2esos_2eproto, "KNCommandArchives.sos.proto", 
-  &descriptor_table_KNCommandArchives_2esos_2eproto_once, descriptor_table_KNCommandArchives_2esos_2eproto_deps, 3, 3,
-  schemas, file_default_instances, TableStruct_KNCommandArchives_2esos_2eproto::offsets,
-  file_level_metadata_KNCommandArchives_2esos_2eproto, file_level_enum_descriptors_KNCommandArchives_2esos_2eproto, file_level_service_descriptors_KNCommandArchives_2esos_2eproto,
+static ::_pbi::once_flag descriptor_table_KNCommandArchives_2esos_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_KNCommandArchives_2esos_2eproto = {
+    false, false, 591, descriptor_table_protodef_KNCommandArchives_2esos_2eproto,
+    "KNCommandArchives.sos.proto",
+    &descriptor_table_KNCommandArchives_2esos_2eproto_once, descriptor_table_KNCommandArchives_2esos_2eproto_deps, 3, 3,
+    schemas, file_default_instances, TableStruct_KNCommandArchives_2esos_2eproto::offsets,
+    file_level_metadata_KNCommandArchives_2esos_2eproto, file_level_enum_descriptors_KNCommandArchives_2esos_2eproto,
+    file_level_service_descriptors_KNCommandArchives_2esos_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_KNCommandArchives_2esos_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_KNCommandArchives_2esos_2eproto_getter() {
   return &descriptor_table_KNCommandArchives_2esos_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_KNCommandArchives_2esos_2eproto(&descriptor_table_KNCommandArchives_2esos_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_KNCommandArchives_2esos_2eproto(&descriptor_table_KNCommandArchives_2esos_2eproto);
 namespace KNSOS {
 
 // ===================================================================
 
 class InducedVerifyDocumentWithServerCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<InducedVerifyDocumentWithServerCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<InducedVerifyDocumentWithServerCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const InducedVerifyDocumentWithServerCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -164,112 +179,119 @@ class InducedVerifyDocumentWithServerCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 InducedVerifyDocumentWithServerCommandArchive::_Internal::super(const InducedVerifyDocumentWithServerCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void InducedVerifyDocumentWithServerCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void InducedVerifyDocumentWithServerCommandArchive::clear_slide_node_id_list() {
-  slide_node_id_list_.Clear();
+  _impl_.slide_node_id_list_.Clear();
 }
 void InducedVerifyDocumentWithServerCommandArchive::clear_template_slide_node_id_list() {
-  template_slide_node_id_list_.Clear();
+  _impl_.template_slide_node_id_list_.Clear();
 }
 InducedVerifyDocumentWithServerCommandArchive::InducedVerifyDocumentWithServerCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  slide_node_id_list_(arena),
-  template_slide_node_id_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
 }
 InducedVerifyDocumentWithServerCommandArchive::InducedVerifyDocumentWithServerCommandArchive(const InducedVerifyDocumentWithServerCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      slide_node_id_list_(from.slide_node_id_list_),
-      template_slide_node_id_list_(from.template_slide_node_id_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InducedVerifyDocumentWithServerCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.slide_node_id_list_){from._impl_.slide_node_id_list_}
+    , decltype(_impl_.template_slide_node_id_list_){from._impl_.template_slide_node_id_list_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.slide_node_id_list_undefined_){}
+    , decltype(_impl_.template_slide_node_id_list_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
-  ::memcpy(&slide_node_id_list_undefined_, &from.slide_node_id_list_undefined_,
-    static_cast<size_t>(reinterpret_cast<char*>(&template_slide_node_id_list_undefined_) -
-    reinterpret_cast<char*>(&slide_node_id_list_undefined_)) + sizeof(template_slide_node_id_list_undefined_));
+  ::memcpy(&_impl_.slide_node_id_list_undefined_, &from._impl_.slide_node_id_list_undefined_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.template_slide_node_id_list_undefined_) -
+    reinterpret_cast<char*>(&_impl_.slide_node_id_list_undefined_)) + sizeof(_impl_.template_slide_node_id_list_undefined_));
   // @@protoc_insertion_point(copy_constructor:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
 }
 
-inline void InducedVerifyDocumentWithServerCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&template_slide_node_id_list_undefined_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(template_slide_node_id_list_undefined_));
+inline void InducedVerifyDocumentWithServerCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.slide_node_id_list_){arena}
+    , decltype(_impl_.template_slide_node_id_list_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.slide_node_id_list_undefined_){false}
+    , decltype(_impl_.template_slide_node_id_list_undefined_){false}
+  };
 }
 
 InducedVerifyDocumentWithServerCommandArchive::~InducedVerifyDocumentWithServerCommandArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void InducedVerifyDocumentWithServerCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.slide_node_id_list_.~RepeatedPtrField();
+  _impl_.template_slide_node_id_list_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void InducedVerifyDocumentWithServerCommandArchive::ArenaDtor(void* object) {
-  InducedVerifyDocumentWithServerCommandArchive* _this = reinterpret_cast< InducedVerifyDocumentWithServerCommandArchive* >(object);
-  (void)_this;
-}
-void InducedVerifyDocumentWithServerCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InducedVerifyDocumentWithServerCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void InducedVerifyDocumentWithServerCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  slide_node_id_list_.Clear();
-  template_slide_node_id_list_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.slide_node_id_list_.Clear();
+  _impl_.template_slide_node_id_list_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  ::memset(&slide_node_id_list_undefined_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&template_slide_node_id_list_undefined_) -
-      reinterpret_cast<char*>(&slide_node_id_list_undefined_)) + sizeof(template_slide_node_id_list_undefined_));
-  _has_bits_.Clear();
+  ::memset(&_impl_.slide_node_id_list_undefined_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.template_slide_node_id_list_undefined_) -
+      reinterpret_cast<char*>(&_impl_.slide_node_id_list_undefined_)) + sizeof(_impl_.template_slide_node_id_list_undefined_));
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InducedVerifyDocumentWithServerCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InducedVerifyDocumentWithServerCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUID slide_node_id_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -277,19 +299,21 @@ const char* InducedVerifyDocumentWithServerCommandArchive::_InternalParse(const 
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool slide_node_id_list_undefined = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_slide_node_id_list_undefined(&has_bits);
-          slide_node_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.slide_node_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUID template_slide_node_id_list = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -297,85 +321,86 @@ const char* InducedVerifyDocumentWithServerCommandArchive::_InternalParse(const 
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool template_slide_node_id_list_undefined = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_template_slide_node_id_list_undefined(&has_bits);
-          template_slide_node_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.template_slide_node_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InducedVerifyDocumentWithServerCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InducedVerifyDocumentWithServerCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.UUID slide_node_id_list = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_slide_node_id_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_slide_node_id_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_slide_node_id_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_slide_node_id_list(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool slide_node_id_list_undefined = 3;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_slide_node_id_list_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_slide_node_id_list_undefined(), target);
   }
 
   // repeated .TSP.UUID template_slide_node_id_list = 4;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_template_slide_node_id_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_template_slide_node_id_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_template_slide_node_id_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_template_slide_node_id_list(i), target, stream);
+        InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool template_slide_node_id_list_undefined = 5;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_template_slide_node_id_list_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(5, this->_internal_template_slide_node_id_list_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
@@ -390,27 +415,27 @@ size_t InducedVerifyDocumentWithServerCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.UUID slide_node_id_list = 2;
   total_size += 1UL * this->_internal_slide_node_id_list_size();
-  for (const auto& msg : this->slide_node_id_list_) {
+  for (const auto& msg : this->_impl_.slide_node_id_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSP.UUID template_slide_node_id_list = 4;
   total_size += 1UL * this->_internal_template_slide_node_id_list_size();
-  for (const auto& msg : this->template_slide_node_id_list_) {
+  for (const auto& msg : this->_impl_.template_slide_node_id_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000006u) {
     // optional bool slide_node_id_list_undefined = 3;
     if (cached_has_bits & 0x00000002u) {
@@ -423,50 +448,41 @@ size_t InducedVerifyDocumentWithServerCommandArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InducedVerifyDocumentWithServerCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     InducedVerifyDocumentWithServerCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InducedVerifyDocumentWithServerCommandArchive::GetClassData() const { return &_class_data_; }
 
-void InducedVerifyDocumentWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<InducedVerifyDocumentWithServerCommandArchive *>(to)->MergeFrom(
-      static_cast<const InducedVerifyDocumentWithServerCommandArchive &>(from));
-}
 
-
-void InducedVerifyDocumentWithServerCommandArchive::MergeFrom(const InducedVerifyDocumentWithServerCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void InducedVerifyDocumentWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InducedVerifyDocumentWithServerCommandArchive*>(&to_msg);
+  auto& from = static_cast<const InducedVerifyDocumentWithServerCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.InducedVerifyDocumentWithServerCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  slide_node_id_list_.MergeFrom(from.slide_node_id_list_);
-  template_slide_node_id_list_.MergeFrom(from.template_slide_node_id_list_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.slide_node_id_list_.MergeFrom(from._impl_.slide_node_id_list_);
+  _this->_impl_.template_slide_node_id_list_.MergeFrom(from._impl_.template_slide_node_id_list_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      slide_node_id_list_undefined_ = from.slide_node_id_list_undefined_;
+      _this->_impl_.slide_node_id_list_undefined_ = from._impl_.slide_node_id_list_undefined_;
     }
     if (cached_has_bits & 0x00000004u) {
-      template_slide_node_id_list_undefined_ = from.template_slide_node_id_list_undefined_;
+      _this->_impl_.template_slide_node_id_list_undefined_ = from._impl_.template_slide_node_id_list_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InducedVerifyDocumentWithServerCommandArchive::CopyFrom(const InducedVerifyDocumentWithServerCommandArchive& from) {
@@ -477,11 +493,13 @@ void InducedVerifyDocumentWithServerCommandArchive::CopyFrom(const InducedVerify
 }
 
 bool InducedVerifyDocumentWithServerCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(slide_node_id_list_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(template_slide_node_id_list_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.slide_node_id_list_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.template_slide_node_id_list_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -489,19 +507,19 @@ bool InducedVerifyDocumentWithServerCommandArchive::IsInitialized() const {
 void InducedVerifyDocumentWithServerCommandArchive::InternalSwap(InducedVerifyDocumentWithServerCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  slide_node_id_list_.InternalSwap(&other->slide_node_id_list_);
-  template_slide_node_id_list_.InternalSwap(&other->template_slide_node_id_list_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.slide_node_id_list_.InternalSwap(&other->_impl_.slide_node_id_list_);
+  _impl_.template_slide_node_id_list_.InternalSwap(&other->_impl_.template_slide_node_id_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InducedVerifyDocumentWithServerCommandArchive, template_slide_node_id_list_undefined_)
-      + sizeof(InducedVerifyDocumentWithServerCommandArchive::template_slide_node_id_list_undefined_)
-      - PROTOBUF_FIELD_OFFSET(InducedVerifyDocumentWithServerCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(InducedVerifyDocumentWithServerCommandArchive, _impl_.template_slide_node_id_list_undefined_)
+      + sizeof(InducedVerifyDocumentWithServerCommandArchive::_impl_.template_slide_node_id_list_undefined_)
+      - PROTOBUF_FIELD_OFFSET(InducedVerifyDocumentWithServerCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InducedVerifyDocumentWithServerCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNCommandArchives_2esos_2eproto_getter, &descriptor_table_KNCommandArchives_2esos_2eproto_once,
       file_level_metadata_KNCommandArchives_2esos_2eproto[0]);
 }
@@ -510,7 +528,7 @@ void InducedVerifyDocumentWithServerCommandArchive::InternalSwap(InducedVerifyDo
 
 class InducedVerifyDrawableZOrdersWithServerCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<InducedVerifyDrawableZOrdersWithServerCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<InducedVerifyDrawableZOrdersWithServerCommandArchive>()._impl_._has_bits_);
   static const ::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive& super(const InducedVerifyDrawableZOrdersWithServerCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -522,129 +540,132 @@ class InducedVerifyDrawableZOrdersWithServerCommandArchive::_Internal {
 
 const ::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive&
 InducedVerifyDrawableZOrdersWithServerCommandArchive::_Internal::super(const InducedVerifyDrawableZOrdersWithServerCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void InducedVerifyDrawableZOrdersWithServerCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 InducedVerifyDrawableZOrdersWithServerCommandArchive::InducedVerifyDrawableZOrdersWithServerCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
 }
 InducedVerifyDrawableZOrdersWithServerCommandArchive::InducedVerifyDrawableZOrdersWithServerCommandArchive(const InducedVerifyDrawableZOrdersWithServerCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InducedVerifyDrawableZOrdersWithServerCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
 }
 
-inline void InducedVerifyDrawableZOrdersWithServerCommandArchive::SharedCtor() {
-super_ = nullptr;
+inline void InducedVerifyDrawableZOrdersWithServerCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 InducedVerifyDrawableZOrdersWithServerCommandArchive::~InducedVerifyDrawableZOrdersWithServerCommandArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void InducedVerifyDrawableZOrdersWithServerCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void InducedVerifyDrawableZOrdersWithServerCommandArchive::ArenaDtor(void* object) {
-  InducedVerifyDrawableZOrdersWithServerCommandArchive* _this = reinterpret_cast< InducedVerifyDrawableZOrdersWithServerCommandArchive* >(object);
-  (void)_this;
-}
-void InducedVerifyDrawableZOrdersWithServerCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InducedVerifyDrawableZOrdersWithServerCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void InducedVerifyDrawableZOrdersWithServerCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InducedVerifyDrawableZOrdersWithServerCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InducedVerifyDrawableZOrdersWithServerCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSASOS.InducedVerifyDrawableZOrdersWithServerCommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InducedVerifyDrawableZOrdersWithServerCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InducedVerifyDrawableZOrdersWithServerCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSASOS.InducedVerifyDrawableZOrdersWithServerCommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
@@ -659,44 +680,35 @@ size_t InducedVerifyDrawableZOrdersWithServerCommandArchive::ByteSizeLong() cons
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InducedVerifyDrawableZOrdersWithServerCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InducedVerifyDrawableZOrdersWithServerCommandArchive::GetClassData() const { return &_class_data_; }
 
-void InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<InducedVerifyDrawableZOrdersWithServerCommandArchive *>(to)->MergeFrom(
-      static_cast<const InducedVerifyDrawableZOrdersWithServerCommandArchive &>(from));
-}
 
-
-void InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeFrom(const InducedVerifyDrawableZOrdersWithServerCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InducedVerifyDrawableZOrdersWithServerCommandArchive*>(&to_msg);
+  auto& from = static_cast<const InducedVerifyDrawableZOrdersWithServerCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.InducedVerifyDrawableZOrdersWithServerCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSASOS::InducedVerifyDrawableZOrdersWithServerCommandArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InducedVerifyDrawableZOrdersWithServerCommandArchive::CopyFrom(const InducedVerifyDrawableZOrdersWithServerCommandArchive& from) {
@@ -707,9 +719,9 @@ void InducedVerifyDrawableZOrdersWithServerCommandArchive::CopyFrom(const Induce
 }
 
 bool InducedVerifyDrawableZOrdersWithServerCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -717,12 +729,12 @@ bool InducedVerifyDrawableZOrdersWithServerCommandArchive::IsInitialized() const
 void InducedVerifyDrawableZOrdersWithServerCommandArchive::InternalSwap(InducedVerifyDrawableZOrdersWithServerCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InducedVerifyDrawableZOrdersWithServerCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNCommandArchives_2esos_2eproto_getter, &descriptor_table_KNCommandArchives_2esos_2eproto_once,
       file_level_metadata_KNCommandArchives_2esos_2eproto[1]);
 }
@@ -731,7 +743,7 @@ void InducedVerifyDrawableZOrdersWithServerCommandArchive::InternalSwap(InducedV
 
 class CommandSlideReapplyTemplateSlideArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<CommandSlideReapplyTemplateSlideArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<CommandSlideReapplyTemplateSlideArchive>()._impl_._has_bits_);
   static const ::TSASOS::CommandReapplyMasterArchive& super(const CommandSlideReapplyTemplateSlideArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -743,129 +755,132 @@ class CommandSlideReapplyTemplateSlideArchive::_Internal {
 
 const ::TSASOS::CommandReapplyMasterArchive&
 CommandSlideReapplyTemplateSlideArchive::_Internal::super(const CommandSlideReapplyTemplateSlideArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void CommandSlideReapplyTemplateSlideArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 CommandSlideReapplyTemplateSlideArchive::CommandSlideReapplyTemplateSlideArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:KNSOS.CommandSlideReapplyTemplateSlideArchive)
 }
 CommandSlideReapplyTemplateSlideArchive::CommandSlideReapplyTemplateSlideArchive(const CommandSlideReapplyTemplateSlideArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CommandSlideReapplyTemplateSlideArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSASOS::CommandReapplyMasterArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSASOS::CommandReapplyMasterArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:KNSOS.CommandSlideReapplyTemplateSlideArchive)
 }
 
-inline void CommandSlideReapplyTemplateSlideArchive::SharedCtor() {
-super_ = nullptr;
+inline void CommandSlideReapplyTemplateSlideArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 CommandSlideReapplyTemplateSlideArchive::~CommandSlideReapplyTemplateSlideArchive() {
   // @@protoc_insertion_point(destructor:KNSOS.CommandSlideReapplyTemplateSlideArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CommandSlideReapplyTemplateSlideArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void CommandSlideReapplyTemplateSlideArchive::ArenaDtor(void* object) {
-  CommandSlideReapplyTemplateSlideArchive* _this = reinterpret_cast< CommandSlideReapplyTemplateSlideArchive* >(object);
-  (void)_this;
-}
-void CommandSlideReapplyTemplateSlideArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CommandSlideReapplyTemplateSlideArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CommandSlideReapplyTemplateSlideArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:KNSOS.CommandSlideReapplyTemplateSlideArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CommandSlideReapplyTemplateSlideArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CommandSlideReapplyTemplateSlideArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSASOS.CommandReapplyMasterArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CommandSlideReapplyTemplateSlideArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CommandSlideReapplyTemplateSlideArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:KNSOS.CommandSlideReapplyTemplateSlideArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSASOS.CommandReapplyMasterArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:KNSOS.CommandSlideReapplyTemplateSlideArchive)
@@ -880,44 +895,35 @@ size_t CommandSlideReapplyTemplateSlideArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandSlideReapplyTemplateSlideArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CommandSlideReapplyTemplateSlideArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandSlideReapplyTemplateSlideArchive::GetClassData() const { return &_class_data_; }
 
-void CommandSlideReapplyTemplateSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CommandSlideReapplyTemplateSlideArchive *>(to)->MergeFrom(
-      static_cast<const CommandSlideReapplyTemplateSlideArchive &>(from));
-}
 
-
-void CommandSlideReapplyTemplateSlideArchive::MergeFrom(const CommandSlideReapplyTemplateSlideArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.CommandSlideReapplyTemplateSlideArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CommandSlideReapplyTemplateSlideArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CommandSlideReapplyTemplateSlideArchive*>(&to_msg);
+  auto& from = static_cast<const CommandSlideReapplyTemplateSlideArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:KNSOS.CommandSlideReapplyTemplateSlideArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSASOS::CommandReapplyMasterArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSASOS::CommandReapplyMasterArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandSlideReapplyTemplateSlideArchive::CopyFrom(const CommandSlideReapplyTemplateSlideArchive& from) {
@@ -928,9 +934,9 @@ void CommandSlideReapplyTemplateSlideArchive::CopyFrom(const CommandSlideReapply
 }
 
 bool CommandSlideReapplyTemplateSlideArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -938,12 +944,12 @@ bool CommandSlideReapplyTemplateSlideArchive::IsInitialized() const {
 void CommandSlideReapplyTemplateSlideArchive::InternalSwap(CommandSlideReapplyTemplateSlideArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CommandSlideReapplyTemplateSlideArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_KNCommandArchives_2esos_2eproto_getter, &descriptor_table_KNCommandArchives_2esos_2eproto_once,
       file_level_metadata_KNCommandArchives_2esos_2eproto[2]);
 }
@@ -951,13 +957,16 @@ void CommandSlideReapplyTemplateSlideArchive::InternalSwap(CommandSlideReapplyTe
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace KNSOS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::KNSOS::InducedVerifyDocumentWithServerCommandArchive* Arena::CreateMaybeMessage< ::KNSOS::InducedVerifyDocumentWithServerCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::InducedVerifyDocumentWithServerCommandArchive*
+Arena::CreateMaybeMessage< ::KNSOS::InducedVerifyDocumentWithServerCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::InducedVerifyDocumentWithServerCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive* Arena::CreateMaybeMessage< ::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive*
+Arena::CreateMaybeMessage< ::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::InducedVerifyDrawableZOrdersWithServerCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::KNSOS::CommandSlideReapplyTemplateSlideArchive* Arena::CreateMaybeMessage< ::KNSOS::CommandSlideReapplyTemplateSlideArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::KNSOS::CommandSlideReapplyTemplateSlideArchive*
+Arena::CreateMaybeMessage< ::KNSOS::CommandSlideReapplyTemplateSlideArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::KNSOS::CommandSlideReapplyTemplateSlideArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

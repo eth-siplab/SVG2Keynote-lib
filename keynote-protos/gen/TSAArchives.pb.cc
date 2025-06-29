@@ -16,528 +16,606 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSA {
-constexpr DocumentArchive::DocumentArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : text_preset_display_items_()
-  , document_language_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , template_identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , super_(nullptr)
-  , calculation_engine_(nullptr)
-  , view_state_(nullptr)
-  , function_browser_state_(nullptr)
-  , tables_custom_format_list_(nullptr)
-  , shortcut_controller_(nullptr)
-  , annotation_cache_deprecated_(nullptr)
-  , custom_format_list_(nullptr)
-  , annotation_cache_deprecated_2_(nullptr)
-  , needs_media_compatibility_upgrade_(false)
-  , collaborative_media_compatibility_upgrade_did_fail_(false)
-  , can_use_hevc_(false)
-  , is_content_master_(false){}
+PROTOBUF_CONSTEXPR DocumentArchive::DocumentArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.text_preset_display_items_)*/{}
+  , /*decltype(_impl_.document_language_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.template_identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.calculation_engine_)*/nullptr
+  , /*decltype(_impl_.view_state_)*/nullptr
+  , /*decltype(_impl_.function_browser_state_)*/nullptr
+  , /*decltype(_impl_.tables_custom_format_list_)*/nullptr
+  , /*decltype(_impl_.shortcut_controller_)*/nullptr
+  , /*decltype(_impl_.annotation_cache_deprecated_)*/nullptr
+  , /*decltype(_impl_.custom_format_list_)*/nullptr
+  , /*decltype(_impl_.annotation_cache_deprecated_2_)*/nullptr
+  , /*decltype(_impl_.needs_media_compatibility_upgrade_)*/false
+  , /*decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_)*/false
+  , /*decltype(_impl_.can_use_hevc_)*/false
+  , /*decltype(_impl_.is_content_source_)*/false} {}
 struct DocumentArchiveDefaultTypeInternal {
-  constexpr DocumentArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR DocumentArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~DocumentArchiveDefaultTypeInternal() {}
   union {
     DocumentArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DocumentArchiveDefaultTypeInternal _DocumentArchive_default_instance_;
-constexpr FunctionBrowserStateArchive::FunctionBrowserStateArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : recent_functions_()
-  , back_functions_()
-  , forward_functions_()
-  , current_function_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DocumentArchiveDefaultTypeInternal _DocumentArchive_default_instance_;
+PROTOBUF_CONSTEXPR FunctionBrowserStateArchive::FunctionBrowserStateArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.recent_functions_)*/{}
+  , /*decltype(_impl_.back_functions_)*/{}
+  , /*decltype(_impl_.forward_functions_)*/{}
+  , /*decltype(_impl_.current_function_)*/0u} {}
 struct FunctionBrowserStateArchiveDefaultTypeInternal {
-  constexpr FunctionBrowserStateArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR FunctionBrowserStateArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~FunctionBrowserStateArchiveDefaultTypeInternal() {}
   union {
     FunctionBrowserStateArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT FunctionBrowserStateArchiveDefaultTypeInternal _FunctionBrowserStateArchive_default_instance_;
-constexpr ThemePresetsArchive::ThemePresetsArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : caption_style_presets_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FunctionBrowserStateArchiveDefaultTypeInternal _FunctionBrowserStateArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemePresetsArchive::ThemePresetsArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.caption_style_presets_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ThemePresetsArchiveDefaultTypeInternal {
-  constexpr ThemePresetsArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemePresetsArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemePresetsArchiveDefaultTypeInternal() {}
   union {
     ThemePresetsArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemePresetsArchiveDefaultTypeInternal _ThemePresetsArchive_default_instance_;
-constexpr ShortcutControllerArchive_ShortcutMapEntry::ShortcutControllerArchive_ShortcutMapEntry(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : shortcut_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , style_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemePresetsArchiveDefaultTypeInternal _ThemePresetsArchive_default_instance_;
+PROTOBUF_CONSTEXPR ShortcutControllerArchive_ShortcutMapEntry::ShortcutControllerArchive_ShortcutMapEntry(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.shortcut_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.style_)*/nullptr} {}
 struct ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal {
-  constexpr ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal() {}
   union {
     ShortcutControllerArchive_ShortcutMapEntry _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal _ShortcutControllerArchive_ShortcutMapEntry_default_instance_;
-constexpr ShortcutControllerArchive::ShortcutControllerArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : entries_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ShortcutControllerArchive_ShortcutMapEntryDefaultTypeInternal _ShortcutControllerArchive_ShortcutMapEntry_default_instance_;
+PROTOBUF_CONSTEXPR ShortcutControllerArchive::ShortcutControllerArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.entries_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ShortcutControllerArchiveDefaultTypeInternal {
-  constexpr ShortcutControllerArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ShortcutControllerArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ShortcutControllerArchiveDefaultTypeInternal() {}
   union {
     ShortcutControllerArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ShortcutControllerArchiveDefaultTypeInternal _ShortcutControllerArchive_default_instance_;
-constexpr PropagatePresetCommandArchive::PropagatePresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , preset_change_command_(nullptr)
-  , always_preserve_appearance_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ShortcutControllerArchiveDefaultTypeInternal _ShortcutControllerArchive_default_instance_;
+PROTOBUF_CONSTEXPR PropagatePresetCommandArchive::PropagatePresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.preset_change_command_)*/nullptr
+  , /*decltype(_impl_.always_preserve_appearance_)*/false} {}
 struct PropagatePresetCommandArchiveDefaultTypeInternal {
-  constexpr PropagatePresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR PropagatePresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~PropagatePresetCommandArchiveDefaultTypeInternal() {}
   union {
     PropagatePresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PropagatePresetCommandArchiveDefaultTypeInternal _PropagatePresetCommandArchive_default_instance_;
-constexpr ShortcutCommandArchive::ShortcutCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : old_shortcut_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , new_shortcut_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , super_(nullptr)
-  , old_style_(nullptr)
-  , new_style_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PropagatePresetCommandArchiveDefaultTypeInternal _PropagatePresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ShortcutCommandArchive::ShortcutCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.old_shortcut_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.new_shortcut_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.old_style_)*/nullptr
+  , /*decltype(_impl_.new_style_)*/nullptr} {}
 struct ShortcutCommandArchiveDefaultTypeInternal {
-  constexpr ShortcutCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ShortcutCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ShortcutCommandArchiveDefaultTypeInternal() {}
   union {
     ShortcutCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ShortcutCommandArchiveDefaultTypeInternal _ShortcutCommandArchive_default_instance_;
-constexpr AddCustomFormatCommandArchive::AddCustomFormatCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , custom_format_(nullptr)
-  , custom_format_key_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ShortcutCommandArchiveDefaultTypeInternal _ShortcutCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR AddCustomFormatCommandArchive::AddCustomFormatCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.custom_format_)*/nullptr
+  , /*decltype(_impl_.custom_format_key_)*/nullptr} {}
 struct AddCustomFormatCommandArchiveDefaultTypeInternal {
-  constexpr AddCustomFormatCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR AddCustomFormatCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~AddCustomFormatCommandArchiveDefaultTypeInternal() {}
   union {
     AddCustomFormatCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AddCustomFormatCommandArchiveDefaultTypeInternal _AddCustomFormatCommandArchive_default_instance_;
-constexpr UpdateCustomFormatCommandArchive::UpdateCustomFormatCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , custom_format_(nullptr)
-  , old_custom_format_(nullptr)
-  , custom_format_key_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 AddCustomFormatCommandArchiveDefaultTypeInternal _AddCustomFormatCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR UpdateCustomFormatCommandArchive::UpdateCustomFormatCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.custom_format_)*/nullptr
+  , /*decltype(_impl_.old_custom_format_)*/nullptr
+  , /*decltype(_impl_.custom_format_key_)*/nullptr} {}
 struct UpdateCustomFormatCommandArchiveDefaultTypeInternal {
-  constexpr UpdateCustomFormatCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR UpdateCustomFormatCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~UpdateCustomFormatCommandArchiveDefaultTypeInternal() {}
   union {
     UpdateCustomFormatCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT UpdateCustomFormatCommandArchiveDefaultTypeInternal _UpdateCustomFormatCommandArchive_default_instance_;
-constexpr ReplaceCustomFormatCommandArchive::ReplaceCustomFormatCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , custom_format_(nullptr)
-  , custom_format_key_(nullptr)
-  , replacement_format_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 UpdateCustomFormatCommandArchiveDefaultTypeInternal _UpdateCustomFormatCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ReplaceCustomFormatCommandArchive::ReplaceCustomFormatCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.custom_format_)*/nullptr
+  , /*decltype(_impl_.custom_format_key_)*/nullptr
+  , /*decltype(_impl_.replacement_format_)*/nullptr} {}
 struct ReplaceCustomFormatCommandArchiveDefaultTypeInternal {
-  constexpr ReplaceCustomFormatCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ReplaceCustomFormatCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ReplaceCustomFormatCommandArchiveDefaultTypeInternal() {}
   union {
     ReplaceCustomFormatCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ReplaceCustomFormatCommandArchiveDefaultTypeInternal _ReplaceCustomFormatCommandArchive_default_instance_;
-constexpr NeedsMediaCompatibilityUpgradeCommandArchive::NeedsMediaCompatibilityUpgradeCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , needs_media_compatibility_upgrade_(false)
-  , old_needs_media_compatibility_upgrade_(false)
-  , collaborative_media_compatibility_upgrade_did_fail_(false)
-  , old_collaborative_media_compatibility_upgrade_did_fail_(false)
-  , can_use_hevc_(false)
-  , old_can_use_hevc_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ReplaceCustomFormatCommandArchiveDefaultTypeInternal _ReplaceCustomFormatCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR NeedsMediaCompatibilityUpgradeCommandArchive::NeedsMediaCompatibilityUpgradeCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.needs_media_compatibility_upgrade_)*/false
+  , /*decltype(_impl_.old_needs_media_compatibility_upgrade_)*/false
+  , /*decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_)*/false
+  , /*decltype(_impl_.old_collaborative_media_compatibility_upgrade_did_fail_)*/false
+  , /*decltype(_impl_.can_use_hevc_)*/false
+  , /*decltype(_impl_.old_can_use_hevc_)*/false} {}
 struct NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal {
-  constexpr NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal() {}
   union {
     NeedsMediaCompatibilityUpgradeCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal _NeedsMediaCompatibilityUpgradeCommandArchive_default_instance_;
-constexpr ChangeDocumentLocaleCommandArchive::ChangeDocumentLocaleCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : old_locale_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , new_locale_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , super_(nullptr)
-  , old_formatting_symbols_(nullptr)
-  , new_formatting_symbols_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 NeedsMediaCompatibilityUpgradeCommandArchiveDefaultTypeInternal _NeedsMediaCompatibilityUpgradeCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ChangeDocumentLocaleCommandArchive::ChangeDocumentLocaleCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.old_locale_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.new_locale_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.old_formatting_symbols_)*/nullptr
+  , /*decltype(_impl_.new_formatting_symbols_)*/nullptr} {}
 struct ChangeDocumentLocaleCommandArchiveDefaultTypeInternal {
-  constexpr ChangeDocumentLocaleCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ChangeDocumentLocaleCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ChangeDocumentLocaleCommandArchiveDefaultTypeInternal() {}
   union {
     ChangeDocumentLocaleCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ChangeDocumentLocaleCommandArchiveDefaultTypeInternal _ChangeDocumentLocaleCommandArchive_default_instance_;
-constexpr InducedVerifyObjectsWithServerCommandArchive::InducedVerifyObjectsWithServerCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : object_id_list_()
-  , server_object_s_o_s_string_list_()
-  , super_(nullptr)
-  , remote_data_sync_key_(0)
-  , object_id_list_undefined_(false)
-  , server_object_s_o_s_string_list_undefined_(false)
-  , pending_recalc_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ChangeDocumentLocaleCommandArchiveDefaultTypeInternal _ChangeDocumentLocaleCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR InducedVerifyObjectsWithServerCommandArchive::InducedVerifyObjectsWithServerCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.object_id_list_)*/{}
+  , /*decltype(_impl_.server_object_s_o_s_string_list_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.remote_data_sync_key_)*/0
+  , /*decltype(_impl_.object_id_list_undefined_)*/false
+  , /*decltype(_impl_.server_object_s_o_s_string_list_undefined_)*/false
+  , /*decltype(_impl_.pending_recalc_)*/false} {}
 struct InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal {
-  constexpr InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal() {}
   union {
     InducedVerifyObjectsWithServerCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal _InducedVerifyObjectsWithServerCommandArchive_default_instance_;
-constexpr InducedVerifyTransformHistoryWithServerCommandArchive::InducedVerifyTransformHistoryWithServerCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : server_operation_storage_entries_()
-  , super_(nullptr)
-  , server_operation_storage_entries_undefined_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InducedVerifyObjectsWithServerCommandArchiveDefaultTypeInternal _InducedVerifyObjectsWithServerCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR InducedVerifyTransformHistoryWithServerCommandArchive::InducedVerifyTransformHistoryWithServerCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.server_operation_storage_entries_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.server_operation_storage_entries_undefined_)*/false} {}
 struct InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal {
-  constexpr InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal() {}
   union {
     InducedVerifyTransformHistoryWithServerCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal _InducedVerifyTransformHistoryWithServerCommandArchive_default_instance_;
-constexpr StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 InducedVerifyTransformHistoryWithServerCommandArchiveDefaultTypeInternal _InducedVerifyTransformHistoryWithServerCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal {
-  constexpr StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal() {}
   union {
     StyleUpdatePropertyMapCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal _StyleUpdatePropertyMapCommandArchive_default_instance_;
-constexpr RemoteDataChangeCommandArchive::RemoteDataChangeCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : quotes_()
-  , super_(nullptr)
-  , value_map_(nullptr)
-  , remote_data_sync_key_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal _StyleUpdatePropertyMapCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR RemoteDataChangeCommandArchive::RemoteDataChangeCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.quotes_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.value_map_)*/nullptr
+  , /*decltype(_impl_.remote_data_sync_key_)*/0} {}
 struct RemoteDataChangeCommandArchiveDefaultTypeInternal {
-  constexpr RemoteDataChangeCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR RemoteDataChangeCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~RemoteDataChangeCommandArchiveDefaultTypeInternal() {}
   union {
     RemoteDataChangeCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RemoteDataChangeCommandArchiveDefaultTypeInternal _RemoteDataChangeCommandArchive_default_instance_;
-constexpr GalleryInfoSetValueCommandArchive_PropertyValue::GalleryInfoSetValueCommandArchive_PropertyValue(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : caption_mode_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RemoteDataChangeCommandArchiveDefaultTypeInternal _RemoteDataChangeCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR GalleryInfoSetValueCommandArchive_PropertyValue::GalleryInfoSetValueCommandArchive_PropertyValue(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.caption_mode_)*/0} {}
 struct GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal {
-  constexpr GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal() {}
   union {
     GalleryInfoSetValueCommandArchive_PropertyValue _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal _GalleryInfoSetValueCommandArchive_PropertyValue_default_instance_;
-constexpr GalleryInfoSetValueCommandArchive::GalleryInfoSetValueCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , info_id_path_(nullptr)
-  , value_(nullptr)
-  , old_value_(nullptr)
-  , property_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryInfoSetValueCommandArchive_PropertyValueDefaultTypeInternal _GalleryInfoSetValueCommandArchive_PropertyValue_default_instance_;
+PROTOBUF_CONSTEXPR GalleryInfoSetValueCommandArchive::GalleryInfoSetValueCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.info_id_path_)*/nullptr
+  , /*decltype(_impl_.value_)*/nullptr
+  , /*decltype(_impl_.old_value_)*/nullptr
+  , /*decltype(_impl_.property_)*/0} {}
 struct GalleryInfoSetValueCommandArchiveDefaultTypeInternal {
-  constexpr GalleryInfoSetValueCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryInfoSetValueCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryInfoSetValueCommandArchiveDefaultTypeInternal() {}
   union {
     GalleryInfoSetValueCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryInfoSetValueCommandArchiveDefaultTypeInternal _GalleryInfoSetValueCommandArchive_default_instance_;
-constexpr GalleryInfoInsertItemsCommandArchive::GalleryInfoInsertItemsCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : items_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryInfoSetValueCommandArchiveDefaultTypeInternal _GalleryInfoSetValueCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR GalleryInfoInsertItemsCommandArchive::GalleryInfoInsertItemsCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.items_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal {
-  constexpr GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal() {}
   union {
     GalleryInfoInsertItemsCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal _GalleryInfoInsertItemsCommandArchive_default_instance_;
-constexpr GalleryInfoRemoveItemsCommandArchive::GalleryInfoRemoveItemsCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryInfoInsertItemsCommandArchiveDefaultTypeInternal _GalleryInfoInsertItemsCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR GalleryInfoRemoveItemsCommandArchive::GalleryInfoRemoveItemsCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal {
-  constexpr GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal() {}
   union {
     GalleryInfoRemoveItemsCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal _GalleryInfoRemoveItemsCommandArchive_default_instance_;
-constexpr GalleryItemSetGeometryCommand::GalleryItemSetGeometryCommand(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , item_id_path_(nullptr)
-  , offset_(nullptr)
-  , old_offset_(nullptr)
-  , old_scale_(0)
-  , scale_(1){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryInfoRemoveItemsCommandArchiveDefaultTypeInternal _GalleryInfoRemoveItemsCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSetGeometryCommand::GalleryItemSetGeometryCommand(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.item_id_path_)*/nullptr
+  , /*decltype(_impl_.offset_)*/nullptr
+  , /*decltype(_impl_.old_offset_)*/nullptr
+  , /*decltype(_impl_.old_scale_)*/0
+  , /*decltype(_impl_.scale_)*/1} {}
 struct GalleryItemSetGeometryCommandDefaultTypeInternal {
-  constexpr GalleryItemSetGeometryCommandDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSetGeometryCommandDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSetGeometryCommandDefaultTypeInternal() {}
   union {
     GalleryItemSetGeometryCommand _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSetGeometryCommandDefaultTypeInternal _GalleryItemSetGeometryCommand_default_instance_;
-constexpr GalleryItem::GalleryItem(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : accessibility_description_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , offset_(nullptr)
-  , image_data_(nullptr)
-  , thumbnail_image_data_(nullptr)
-  , image_adjustments_(nullptr)
-  , adjusted_image_data_(nullptr)
-  , thumbnail_adjusted_image_data_(nullptr)
-  , caption_storage_(nullptr)
-  , scale_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSetGeometryCommandDefaultTypeInternal _GalleryItemSetGeometryCommand_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItem::GalleryItem(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.accessibility_description_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.offset_)*/nullptr
+  , /*decltype(_impl_.image_data_)*/nullptr
+  , /*decltype(_impl_.thumbnail_image_data_)*/nullptr
+  , /*decltype(_impl_.image_adjustments_)*/nullptr
+  , /*decltype(_impl_.adjusted_image_data_)*/nullptr
+  , /*decltype(_impl_.thumbnail_adjusted_image_data_)*/nullptr
+  , /*decltype(_impl_.caption_storage_)*/nullptr
+  , /*decltype(_impl_.scale_)*/0} {}
 struct GalleryItemDefaultTypeInternal {
-  constexpr GalleryItemDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemDefaultTypeInternal() {}
   union {
     GalleryItem _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemDefaultTypeInternal _GalleryItem_default_instance_;
-constexpr GalleryInfo::GalleryInfo(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : items_()
-  , caption_storage_(nullptr)
-  , caption_mode_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemDefaultTypeInternal _GalleryItem_default_instance_;
+PROTOBUF_CONSTEXPR GalleryInfo::GalleryInfo(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.items_)*/{}
+  , /*decltype(_impl_.caption_storage_)*/nullptr
+  , /*decltype(_impl_.caption_mode_)*/0} {}
 struct GalleryInfoDefaultTypeInternal {
-  constexpr GalleryInfoDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryInfoDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryInfoDefaultTypeInternal() {}
   union {
     GalleryInfo _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryInfoDefaultTypeInternal _GalleryInfo_default_instance_;
-constexpr GallerySelectionTransformer::GallerySelectionTransformer(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , gallery_uuid_path_(nullptr)
-  , caption_storage_uuid_path_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryInfoDefaultTypeInternal _GalleryInfo_default_instance_;
+PROTOBUF_CONSTEXPR GallerySelectionTransformer::GallerySelectionTransformer(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.gallery_uuid_path_)*/nullptr
+  , /*decltype(_impl_.caption_storage_uuid_path_)*/nullptr} {}
 struct GallerySelectionTransformerDefaultTypeInternal {
-  constexpr GallerySelectionTransformerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GallerySelectionTransformerDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GallerySelectionTransformerDefaultTypeInternal() {}
   union {
     GallerySelectionTransformer _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GallerySelectionTransformerDefaultTypeInternal _GallerySelectionTransformer_default_instance_;
-constexpr GalleryItemSelection::GalleryItemSelection(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : items_()
-  , displayed_item_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GallerySelectionTransformerDefaultTypeInternal _GallerySelectionTransformer_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSelection::GalleryItemSelection(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.items_)*/{}
+  , /*decltype(_impl_.displayed_item_)*/nullptr} {}
 struct GalleryItemSelectionDefaultTypeInternal {
-  constexpr GalleryItemSelectionDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSelectionDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSelectionDefaultTypeInternal() {}
   union {
     GalleryItemSelection _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSelectionDefaultTypeInternal _GalleryItemSelection_default_instance_;
-constexpr GalleryItemSelectionTransformer::GalleryItemSelectionTransformer(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : transformer_helper_(nullptr)
-  , caption_storage_uuid_path_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSelectionDefaultTypeInternal _GalleryItemSelection_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSelectionTransformer::GalleryItemSelectionTransformer(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.transformer_helper_)*/nullptr
+  , /*decltype(_impl_.caption_storage_uuid_path_)*/nullptr} {}
 struct GalleryItemSelectionTransformerDefaultTypeInternal {
-  constexpr GalleryItemSelectionTransformerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSelectionTransformerDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSelectionTransformerDefaultTypeInternal() {}
   union {
     GalleryItemSelectionTransformer _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSelectionTransformerDefaultTypeInternal _GalleryItemSelectionTransformer_default_instance_;
-constexpr GalleryItemSelectionTransformerHelper::GalleryItemSelectionTransformerHelper(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : item_uuid_paths_()
-  , displayed_item_uuid_path_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSelectionTransformerDefaultTypeInternal _GalleryItemSelectionTransformer_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSelectionTransformerHelper::GalleryItemSelectionTransformerHelper(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.item_uuid_paths_)*/{}
+  , /*decltype(_impl_.displayed_item_uuid_path_)*/nullptr} {}
 struct GalleryItemSelectionTransformerHelperDefaultTypeInternal {
-  constexpr GalleryItemSelectionTransformerHelperDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSelectionTransformerHelperDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSelectionTransformerHelperDefaultTypeInternal() {}
   union {
     GalleryItemSelectionTransformerHelper _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSelectionTransformerHelperDefaultTypeInternal _GalleryItemSelectionTransformerHelper_default_instance_;
-constexpr GalleryItemSetValueCommand_PropertyValue::GalleryItemSetValueCommand_PropertyValue(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : accessibility_description_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , image_data_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSelectionTransformerHelperDefaultTypeInternal _GalleryItemSelectionTransformerHelper_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSetValueCommand_PropertyValue::GalleryItemSetValueCommand_PropertyValue(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.accessibility_description_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.image_data_)*/nullptr} {}
 struct GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal {
-  constexpr GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal() {}
   union {
     GalleryItemSetValueCommand_PropertyValue _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal _GalleryItemSetValueCommand_PropertyValue_default_instance_;
-constexpr GalleryItemSetValueCommand::GalleryItemSetValueCommand(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , item_id_path_(nullptr)
-  , value_(nullptr)
-  , old_value_(nullptr)
-  , property_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSetValueCommand_PropertyValueDefaultTypeInternal _GalleryItemSetValueCommand_PropertyValue_default_instance_;
+PROTOBUF_CONSTEXPR GalleryItemSetValueCommand::GalleryItemSetValueCommand(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.item_id_path_)*/nullptr
+  , /*decltype(_impl_.value_)*/nullptr
+  , /*decltype(_impl_.old_value_)*/nullptr
+  , /*decltype(_impl_.property_)*/0} {}
 struct GalleryItemSetValueCommandDefaultTypeInternal {
-  constexpr GalleryItemSetValueCommandDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR GalleryItemSetValueCommandDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~GalleryItemSetValueCommandDefaultTypeInternal() {}
   union {
     GalleryItemSetValueCommand _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GalleryItemSetValueCommandDefaultTypeInternal _GalleryItemSetValueCommand_default_instance_;
-constexpr WebVideoInfo::WebVideoInfo(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : url_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , poster_image_data_(nullptr)
-  , attribution_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GalleryItemSetValueCommandDefaultTypeInternal _GalleryItemSetValueCommand_default_instance_;
+PROTOBUF_CONSTEXPR CollaboratorGalleryItemCursor::CollaboratorGalleryItemCursor(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.item_ids_)*/{}
+  , /*decltype(_impl_.displayed_item_id_)*/nullptr} {}
+struct CollaboratorGalleryItemCursorDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CollaboratorGalleryItemCursorDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CollaboratorGalleryItemCursorDefaultTypeInternal() {}
+  union {
+    CollaboratorGalleryItemCursor _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CollaboratorGalleryItemCursorDefaultTypeInternal _CollaboratorGalleryItemCursor_default_instance_;
+PROTOBUF_CONSTEXPR WebVideoInfo::WebVideoInfo(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.url_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.poster_image_data_)*/nullptr
+  , /*decltype(_impl_.attribution_)*/nullptr} {}
 struct WebVideoInfoDefaultTypeInternal {
-  constexpr WebVideoInfoDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR WebVideoInfoDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~WebVideoInfoDefaultTypeInternal() {}
   union {
     WebVideoInfo _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT WebVideoInfoDefaultTypeInternal _WebVideoInfo_default_instance_;
-constexpr CaptionPlacementArchive::CaptionPlacementArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : caption_anchor_location_(0)
-  , drawable_anchor_location_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WebVideoInfoDefaultTypeInternal _WebVideoInfo_default_instance_;
+PROTOBUF_CONSTEXPR CaptionPlacementArchive::CaptionPlacementArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.caption_anchor_location_)*/0
+  , /*decltype(_impl_.drawable_anchor_location_)*/0} {}
 struct CaptionPlacementArchiveDefaultTypeInternal {
-  constexpr CaptionPlacementArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CaptionPlacementArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CaptionPlacementArchiveDefaultTypeInternal() {}
   union {
     CaptionPlacementArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CaptionPlacementArchiveDefaultTypeInternal _CaptionPlacementArchive_default_instance_;
-constexpr CaptionInfoArchive::CaptionInfoArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , placement_(nullptr)
-  , childinfokind_(1)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CaptionPlacementArchiveDefaultTypeInternal _CaptionPlacementArchive_default_instance_;
+PROTOBUF_CONSTEXPR CaptionInfoArchive::CaptionInfoArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.placement_)*/nullptr
+  , /*decltype(_impl_.childinfokind_)*/1} {}
 struct CaptionInfoArchiveDefaultTypeInternal {
-  constexpr CaptionInfoArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CaptionInfoArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CaptionInfoArchiveDefaultTypeInternal() {}
   union {
     CaptionInfoArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CaptionInfoArchiveDefaultTypeInternal _CaptionInfoArchive_default_instance_;
-constexpr TitlePlacementCommandArchive::TitlePlacementCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , placement_(nullptr)
-  , old_placement_(nullptr)
-  , placing_child_info_kind_(1)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CaptionInfoArchiveDefaultTypeInternal _CaptionInfoArchive_default_instance_;
+PROTOBUF_CONSTEXPR TitlePlacementCommandArchive::TitlePlacementCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.placement_)*/nullptr
+  , /*decltype(_impl_.old_placement_)*/nullptr
+  , /*decltype(_impl_.placing_child_info_kind_)*/1} {}
 struct TitlePlacementCommandArchiveDefaultTypeInternal {
-  constexpr TitlePlacementCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TitlePlacementCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TitlePlacementCommandArchiveDefaultTypeInternal() {}
   union {
     TitlePlacementCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TitlePlacementCommandArchiveDefaultTypeInternal _TitlePlacementCommandArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TitlePlacementCommandArchiveDefaultTypeInternal _TitlePlacementCommandArchive_default_instance_;
 }  // namespace TSA
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSAArchives_2eproto[33];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_TSAArchives_2eproto[4];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSAArchives_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSAArchives_2eproto[34];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_TSAArchives_2eproto[4];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSAArchives_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _has_bits_),
+const uint32_t TableStruct_TSAArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, text_preset_display_items_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, document_language_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, calculation_engine_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, view_state_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, function_browser_state_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, tables_custom_format_list_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, needs_media_compatibility_upgrade_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, template_identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, shortcut_controller_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, annotation_cache_deprecated_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, custom_format_list_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, annotation_cache_deprecated_2_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, collaborative_media_compatibility_upgrade_did_fail_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, can_use_hevc_),
-  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, is_content_master_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.text_preset_display_items_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.document_language_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.calculation_engine_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.view_state_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.function_browser_state_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.tables_custom_format_list_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.needs_media_compatibility_upgrade_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.template_identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.shortcut_controller_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.annotation_cache_deprecated_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.custom_format_list_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.annotation_cache_deprecated_2_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.collaborative_media_compatibility_upgrade_did_fail_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.can_use_hevc_),
+  PROTOBUF_FIELD_OFFSET(::TSA::DocumentArchive, _impl_.is_content_source_),
   2,
   ~0u,
   0,
@@ -554,15 +632,16 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   12,
   13,
   14,
-  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, recent_functions_),
-  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, back_functions_),
-  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, forward_functions_),
-  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, current_function_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _impl_.recent_functions_),
+  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _impl_.back_functions_),
+  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _impl_.forward_functions_),
+  PROTOBUF_FIELD_OFFSET(::TSA::FunctionBrowserStateArchive, _impl_.current_function_),
   ~0u,
   ~0u,
   ~0u,
@@ -572,14 +651,16 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ThemePresetsArchive, caption_style_presets_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ThemePresetsArchive, _impl_.caption_style_presets_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, shortcut_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, style_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, _impl_.shortcut_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive_ShortcutMapEntry, _impl_.style_),
   0,
   1,
   ~0u,  // no _has_bits_
@@ -587,82 +668,89 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive, entries_),
-  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutControllerArchive, _impl_.entries_),
+  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, preset_change_command_),
-  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, always_preserve_appearance_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _impl_.preset_change_command_),
+  PROTOBUF_FIELD_OFFSET(::TSA::PropagatePresetCommandArchive, _impl_.always_preserve_appearance_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, old_style_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, new_style_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, old_shortcut_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, new_shortcut_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_.old_style_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_.new_style_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_.old_shortcut_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ShortcutCommandArchive, _impl_.new_shortcut_),
   2,
   3,
   4,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, custom_format_),
-  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, custom_format_key_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _impl_.custom_format_),
+  PROTOBUF_FIELD_OFFSET(::TSA::AddCustomFormatCommandArchive, _impl_.custom_format_key_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, custom_format_),
-  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, old_custom_format_),
-  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, custom_format_key_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _impl_.custom_format_),
+  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _impl_.old_custom_format_),
+  PROTOBUF_FIELD_OFFSET(::TSA::UpdateCustomFormatCommandArchive, _impl_.custom_format_key_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, custom_format_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, custom_format_key_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, replacement_format_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _impl_.custom_format_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _impl_.custom_format_key_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ReplaceCustomFormatCommandArchive, _impl_.replacement_format_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, needs_media_compatibility_upgrade_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, old_needs_media_compatibility_upgrade_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, collaborative_media_compatibility_upgrade_did_fail_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, old_collaborative_media_compatibility_upgrade_did_fail_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, can_use_hevc_),
-  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, old_can_use_hevc_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.needs_media_compatibility_upgrade_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.old_needs_media_compatibility_upgrade_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.collaborative_media_compatibility_upgrade_did_fail_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.old_collaborative_media_compatibility_upgrade_did_fail_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.can_use_hevc_),
+  PROTOBUF_FIELD_OFFSET(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.old_can_use_hevc_),
   0,
   1,
   2,
@@ -670,33 +758,35 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   4,
   5,
   6,
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, old_locale_id_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, new_locale_id_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, old_formatting_symbols_),
-  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, new_formatting_symbols_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_.old_locale_id_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_.new_locale_id_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_.old_formatting_symbols_),
+  PROTOBUF_FIELD_OFFSET(::TSA::ChangeDocumentLocaleCommandArchive, _impl_.new_formatting_symbols_),
   2,
   0,
   1,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, object_id_list_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, object_id_list_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, server_object_s_o_s_string_list_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, server_object_s_o_s_string_list_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, pending_recalc_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, remote_data_sync_key_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.object_id_list_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.object_id_list_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.server_object_s_o_s_string_list_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.server_object_s_o_s_string_list_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.pending_recalc_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyObjectsWithServerCommandArchive, _impl_.remote_data_sync_key_),
   0,
   ~0u,
   2,
@@ -704,106 +794,115 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   3,
   4,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, server_operation_storage_entries_),
-  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, server_operation_storage_entries_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _impl_.server_operation_storage_entries_),
+  PROTOBUF_FIELD_OFFSET(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive, _impl_.server_operation_storage_entries_undefined_),
   0,
   ~0u,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSA::StyleUpdatePropertyMapCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::StyleUpdatePropertyMapCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::StyleUpdatePropertyMapCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::StyleUpdatePropertyMapCommandArchive, super_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::StyleUpdatePropertyMapCommandArchive, _impl_.super_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, value_map_),
-  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, quotes_),
-  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, remote_data_sync_key_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _impl_.value_map_),
+  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _impl_.quotes_),
+  PROTOBUF_FIELD_OFFSET(::TSA::RemoteDataChangeCommandArchive, _impl_.remote_data_sync_key_),
   0,
   1,
   ~0u,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue, caption_mode_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue, _impl_.caption_mode_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, info_id_path_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, property_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, value_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, old_value_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_.info_id_path_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_.property_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoSetValueCommandArchive, _impl_.old_value_),
   0,
   1,
   4,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, items_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoInsertItemsCommandArchive, _impl_.items_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoRemoveItemsCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoRemoveItemsCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoRemoveItemsCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoRemoveItemsCommandArchive, super_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfoRemoveItemsCommandArchive, _impl_.super_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, item_id_path_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, offset_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, scale_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, old_offset_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, old_scale_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.item_id_path_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.offset_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.scale_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.old_offset_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetGeometryCommand, _impl_.old_scale_),
   0,
   1,
   2,
   5,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, offset_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, scale_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, thumbnail_image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, image_adjustments_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, adjusted_image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, thumbnail_adjusted_image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, caption_storage_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, accessibility_description_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.offset_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.scale_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.thumbnail_image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.image_adjustments_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.adjusted_image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.thumbnail_adjusted_image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.caption_storage_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItem, _impl_.accessibility_description_),
   1,
   8,
   2,
@@ -813,194 +912,217 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSAArchives_2eproto::offsets[]
   6,
   7,
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, items_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, caption_mode_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, caption_storage_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _impl_.items_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _impl_.caption_mode_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryInfo, _impl_.caption_storage_),
   ~0u,
   1,
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, gallery_uuid_path_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, caption_storage_uuid_path_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _impl_.gallery_uuid_path_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GallerySelectionTransformer, _impl_.caption_storage_uuid_path_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, displayed_item_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, items_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, _impl_.displayed_item_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelection, _impl_.items_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, transformer_helper_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, caption_storage_uuid_path_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, _impl_.transformer_helper_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformer, _impl_.caption_storage_uuid_path_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, displayed_item_uuid_path_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, item_uuid_paths_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, _impl_.displayed_item_uuid_path_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSelectionTransformerHelper, _impl_.item_uuid_paths_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, accessibility_description_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, _impl_.image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand_PropertyValue, _impl_.accessibility_description_),
   1,
   0,
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, item_id_path_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, property_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, value_),
-  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, old_value_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_.item_id_path_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_.property_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSA::GalleryItemSetValueCommand, _impl_.old_value_),
   0,
   1,
   4,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CollaboratorGalleryItemCursor, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CollaboratorGalleryItemCursor, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::CollaboratorGalleryItemCursor, _impl_.displayed_item_id_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CollaboratorGalleryItemCursor, _impl_.item_ids_),
+  0,
+  ~0u,
+  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, url_),
-  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, poster_image_data_),
-  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, attribution_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _impl_.url_),
+  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _impl_.poster_image_data_),
+  PROTOBUF_FIELD_OFFSET(::TSA::WebVideoInfo, _impl_.attribution_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, caption_anchor_location_),
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, drawable_anchor_location_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, _impl_.caption_anchor_location_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionPlacementArchive, _impl_.drawable_anchor_location_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, placement_),
-  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, childinfokind_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _impl_.placement_),
+  PROTOBUF_FIELD_OFFSET(::TSA::CaptionInfoArchive, _impl_.childinfokind_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, placing_child_info_kind_),
-  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, placement_),
-  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, old_placement_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _impl_.placing_child_info_kind_),
+  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _impl_.placement_),
+  PROTOBUF_FIELD_OFFSET(::TSA::TitlePlacementCommandArchive, _impl_.old_placement_),
   0,
   3,
   1,
   2,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 21, sizeof(::TSA::DocumentArchive)},
-  { 37, 46, sizeof(::TSA::FunctionBrowserStateArchive)},
-  { 50, -1, sizeof(::TSA::ThemePresetsArchive)},
-  { 56, 63, sizeof(::TSA::ShortcutControllerArchive_ShortcutMapEntry)},
-  { 65, -1, sizeof(::TSA::ShortcutControllerArchive)},
-  { 71, 79, sizeof(::TSA::PropagatePresetCommandArchive)},
-  { 82, 92, sizeof(::TSA::ShortcutCommandArchive)},
-  { 97, 105, sizeof(::TSA::AddCustomFormatCommandArchive)},
-  { 108, 117, sizeof(::TSA::UpdateCustomFormatCommandArchive)},
-  { 121, 130, sizeof(::TSA::ReplaceCustomFormatCommandArchive)},
-  { 134, 146, sizeof(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive)},
-  { 153, 163, sizeof(::TSA::ChangeDocumentLocaleCommandArchive)},
-  { 168, 180, sizeof(::TSA::InducedVerifyObjectsWithServerCommandArchive)},
-  { 187, 195, sizeof(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive)},
-  { 198, 204, sizeof(::TSA::StyleUpdatePropertyMapCommandArchive)},
-  { 205, 214, sizeof(::TSA::RemoteDataChangeCommandArchive)},
-  { 218, 224, sizeof(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue)},
-  { 225, 235, sizeof(::TSA::GalleryInfoSetValueCommandArchive)},
-  { 240, 247, sizeof(::TSA::GalleryInfoInsertItemsCommandArchive)},
-  { 249, 255, sizeof(::TSA::GalleryInfoRemoveItemsCommandArchive)},
-  { 256, 267, sizeof(::TSA::GalleryItemSetGeometryCommand)},
-  { 273, 287, sizeof(::TSA::GalleryItem)},
-  { 296, 304, sizeof(::TSA::GalleryInfo)},
-  { 307, 315, sizeof(::TSA::GallerySelectionTransformer)},
-  { 318, 325, sizeof(::TSA::GalleryItemSelection)},
-  { 327, 334, sizeof(::TSA::GalleryItemSelectionTransformer)},
-  { 336, 343, sizeof(::TSA::GalleryItemSelectionTransformerHelper)},
-  { 345, 352, sizeof(::TSA::GalleryItemSetValueCommand_PropertyValue)},
-  { 354, 364, sizeof(::TSA::GalleryItemSetValueCommand)},
-  { 369, 377, sizeof(::TSA::WebVideoInfo)},
-  { 380, 387, sizeof(::TSA::CaptionPlacementArchive)},
-  { 389, 397, sizeof(::TSA::CaptionInfoArchive)},
-  { 400, 409, sizeof(::TSA::TitlePlacementCommandArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 22, -1, sizeof(::TSA::DocumentArchive)},
+  { 38, 48, -1, sizeof(::TSA::FunctionBrowserStateArchive)},
+  { 52, -1, -1, sizeof(::TSA::ThemePresetsArchive)},
+  { 59, 67, -1, sizeof(::TSA::ShortcutControllerArchive_ShortcutMapEntry)},
+  { 69, -1, -1, sizeof(::TSA::ShortcutControllerArchive)},
+  { 76, 85, -1, sizeof(::TSA::PropagatePresetCommandArchive)},
+  { 88, 99, -1, sizeof(::TSA::ShortcutCommandArchive)},
+  { 104, 113, -1, sizeof(::TSA::AddCustomFormatCommandArchive)},
+  { 116, 126, -1, sizeof(::TSA::UpdateCustomFormatCommandArchive)},
+  { 130, 140, -1, sizeof(::TSA::ReplaceCustomFormatCommandArchive)},
+  { 144, 157, -1, sizeof(::TSA::NeedsMediaCompatibilityUpgradeCommandArchive)},
+  { 164, 175, -1, sizeof(::TSA::ChangeDocumentLocaleCommandArchive)},
+  { 180, 193, -1, sizeof(::TSA::InducedVerifyObjectsWithServerCommandArchive)},
+  { 200, 209, -1, sizeof(::TSA::InducedVerifyTransformHistoryWithServerCommandArchive)},
+  { 212, 219, -1, sizeof(::TSA::StyleUpdatePropertyMapCommandArchive)},
+  { 220, 230, -1, sizeof(::TSA::RemoteDataChangeCommandArchive)},
+  { 234, 241, -1, sizeof(::TSA::GalleryInfoSetValueCommandArchive_PropertyValue)},
+  { 242, 253, -1, sizeof(::TSA::GalleryInfoSetValueCommandArchive)},
+  { 258, 266, -1, sizeof(::TSA::GalleryInfoInsertItemsCommandArchive)},
+  { 268, 275, -1, sizeof(::TSA::GalleryInfoRemoveItemsCommandArchive)},
+  { 276, 288, -1, sizeof(::TSA::GalleryItemSetGeometryCommand)},
+  { 294, 309, -1, sizeof(::TSA::GalleryItem)},
+  { 318, 327, -1, sizeof(::TSA::GalleryInfo)},
+  { 330, 339, -1, sizeof(::TSA::GallerySelectionTransformer)},
+  { 342, 350, -1, sizeof(::TSA::GalleryItemSelection)},
+  { 352, 360, -1, sizeof(::TSA::GalleryItemSelectionTransformer)},
+  { 362, 370, -1, sizeof(::TSA::GalleryItemSelectionTransformerHelper)},
+  { 372, 380, -1, sizeof(::TSA::GalleryItemSetValueCommand_PropertyValue)},
+  { 382, 393, -1, sizeof(::TSA::GalleryItemSetValueCommand)},
+  { 398, 406, -1, sizeof(::TSA::CollaboratorGalleryItemCursor)},
+  { 408, 417, -1, sizeof(::TSA::WebVideoInfo)},
+  { 420, 428, -1, sizeof(::TSA::CaptionPlacementArchive)},
+  { 430, 439, -1, sizeof(::TSA::CaptionInfoArchive)},
+  { 442, 452, -1, sizeof(::TSA::TitlePlacementCommandArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_DocumentArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_FunctionBrowserStateArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ThemePresetsArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ShortcutControllerArchive_ShortcutMapEntry_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ShortcutControllerArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_PropagatePresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ShortcutCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_AddCustomFormatCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_UpdateCustomFormatCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ReplaceCustomFormatCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_NeedsMediaCompatibilityUpgradeCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_ChangeDocumentLocaleCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_InducedVerifyObjectsWithServerCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_InducedVerifyTransformHistoryWithServerCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_StyleUpdatePropertyMapCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_RemoteDataChangeCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryInfoSetValueCommandArchive_PropertyValue_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryInfoSetValueCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryInfoInsertItemsCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryInfoRemoveItemsCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSetGeometryCommand_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItem_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GallerySelectionTransformer_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSelection_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSelectionTransformer_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSelectionTransformerHelper_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSetValueCommand_PropertyValue_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_GalleryItemSetValueCommand_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_WebVideoInfo_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_CaptionPlacementArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_CaptionInfoArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSA::_TitlePlacementCommandArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSA::_DocumentArchive_default_instance_._instance,
+  &::TSA::_FunctionBrowserStateArchive_default_instance_._instance,
+  &::TSA::_ThemePresetsArchive_default_instance_._instance,
+  &::TSA::_ShortcutControllerArchive_ShortcutMapEntry_default_instance_._instance,
+  &::TSA::_ShortcutControllerArchive_default_instance_._instance,
+  &::TSA::_PropagatePresetCommandArchive_default_instance_._instance,
+  &::TSA::_ShortcutCommandArchive_default_instance_._instance,
+  &::TSA::_AddCustomFormatCommandArchive_default_instance_._instance,
+  &::TSA::_UpdateCustomFormatCommandArchive_default_instance_._instance,
+  &::TSA::_ReplaceCustomFormatCommandArchive_default_instance_._instance,
+  &::TSA::_NeedsMediaCompatibilityUpgradeCommandArchive_default_instance_._instance,
+  &::TSA::_ChangeDocumentLocaleCommandArchive_default_instance_._instance,
+  &::TSA::_InducedVerifyObjectsWithServerCommandArchive_default_instance_._instance,
+  &::TSA::_InducedVerifyTransformHistoryWithServerCommandArchive_default_instance_._instance,
+  &::TSA::_StyleUpdatePropertyMapCommandArchive_default_instance_._instance,
+  &::TSA::_RemoteDataChangeCommandArchive_default_instance_._instance,
+  &::TSA::_GalleryInfoSetValueCommandArchive_PropertyValue_default_instance_._instance,
+  &::TSA::_GalleryInfoSetValueCommandArchive_default_instance_._instance,
+  &::TSA::_GalleryInfoInsertItemsCommandArchive_default_instance_._instance,
+  &::TSA::_GalleryInfoRemoveItemsCommandArchive_default_instance_._instance,
+  &::TSA::_GalleryItemSetGeometryCommand_default_instance_._instance,
+  &::TSA::_GalleryItem_default_instance_._instance,
+  &::TSA::_GalleryInfo_default_instance_._instance,
+  &::TSA::_GallerySelectionTransformer_default_instance_._instance,
+  &::TSA::_GalleryItemSelection_default_instance_._instance,
+  &::TSA::_GalleryItemSelectionTransformer_default_instance_._instance,
+  &::TSA::_GalleryItemSelectionTransformerHelper_default_instance_._instance,
+  &::TSA::_GalleryItemSetValueCommand_PropertyValue_default_instance_._instance,
+  &::TSA::_GalleryItemSetValueCommand_default_instance_._instance,
+  &::TSA::_CollaboratorGalleryItemCursor_default_instance_._instance,
+  &::TSA::_WebVideoInfo_default_instance_._instance,
+  &::TSA::_CaptionPlacementArchive_default_instance_._instance,
+  &::TSA::_CaptionInfoArchive_default_instance_._instance,
+  &::TSA::_TitlePlacementCommandArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSAArchives_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -1026,7 +1148,7 @@ const char descriptor_table_protodef_TSAArchives_2eproto[] PROTOBUF_SECTION_VARI
   "\0225\n\035annotation_cache_deprecated_2\030\r \001(\0132"
   "\016.TSP.Reference\022:\n2collaborative_media_c"
   "ompatibility_upgrade_did_fail\030\016 \001(\010\022\024\n\014c"
-  "an_use_hevc\030\017 \001(\010\022\031\n\021is_content_master\030\020"
+  "an_use_hevc\030\017 \001(\010\022\031\n\021is_content_source\030\020"
   " \001(\010\"\204\001\n\033FunctionBrowserStateArchive\022\030\n\020"
   "recent_functions\030\001 \003(\r\022\026\n\016back_functions"
   "\030\002 \003(\r\022\031\n\021forward_functions\030\003 \003(\r\022\030\n\020cur"
@@ -1153,36 +1275,41 @@ const char descriptor_table_protodef_TSAArchives_2eproto[] PROTOBUF_SECTION_VARI
   "value\030\005 \001(\0132-.TSA.GalleryItemSetValueCom"
   "mand.PropertyValue\032Z\n\rPropertyValue\022&\n\ni"
   "mage_data\030\001 \001(\0132\022.TSP.DataReference\022!\n\031a"
-  "ccessibility_description\030\002 \001(\t\"\260\001\n\014WebVi"
-  "deoInfo\022\013\n\003url\030\001 \001(\t\022-\n\021poster_image_dat"
-  "a\030\002 \001(\0132\022.TSP.DataReference\022%\n\013attributi"
-  "on\030\003 \001(\0132\020.TSD.Attribution2=\n\016web_video_"
-  "info\022\021.TSD.ImageArchive\030\254\002 \001(\0132\021.TSA.Web"
-  "VideoInfo\"\\\n\027CaptionPlacementArchive\022\037\n\027"
-  "caption_anchor_location\030\001 \001(\005\022 \n\030drawabl"
-  "e_anchor_location\030\002 \001(\005\"\216\001\n\022CaptionInfoA"
-  "rchive\022%\n\005super\030\001 \002(\0132\026.TSWP.ShapeInfoAr"
-  "chive\022!\n\tplacement\030\002 \001(\0132\016.TSP.Reference"
-  "\022.\n\rchildInfoKind\030\003 \001(\0162\027.TSD.CaptionOrT"
-  "itleKind\"\312\001\n\034TitlePlacementCommandArchiv"
-  "e\022&\n\005super\030\001 \002(\0132\027.TSD.InfoCommandArchiv"
-  "e\0228\n\027placing_child_info_kind\030\002 \001(\0162\027.TSD"
-  ".CaptionOrTitleKind\022!\n\tplacement\030\003 \001(\0132\016"
-  ".TSP.Reference\022%\n\rold_placement\030\004 \001(\0132\016."
-  "TSP.Reference*\201\001\n\026GalleryInfoCaptionMode"
-  "\022\036\n\032GalleryInfoCaptionModeNone\020\000\022\"\n\036Gall"
-  "eryInfoCaptionModePerImage\020\001\022#\n\037GalleryI"
-  "nfoCaptionModeAllImages\020\002*5\n\023GalleryInfo"
-  "Property\022\036\n\032GalleryInfoCaptionProperty\020\000"
-  "*q\n\022GalleryCaptionMode\022\032\n\026GalleryCaption"
-  "ModeNone\020\000\022\036\n\032GalleryCaptionModePerImage"
-  "\020\001\022\037\n\033GalleryCaptionModeAllImages\020\002*\223\001\n\023"
-  "GalleryItemProperty\022 \n\034GalleryItemProper"
-  "tyImageData\020\000\022)\n%GalleryItemPropertyThum"
-  "bnailImageData\020\001\022/\n+GalleryItemPropertyA"
-  "ccessibilityDescription\020\002"
+  "ccessibility_description\030\002 \001(\t\"\304\001\n\035Colla"
+  "boratorGalleryItemCursor\022$\n\021displayed_it"
+  "em_id\030\001 \001(\0132\t.TSP.UUID\022\033\n\010item_ids\030\002 \003(\013"
+  "2\t.TSP.UUID2`\n\023gallery_item_cursor\022\036.TSK"
+  ".CollaboratorCursorArchive\030\220\003 \001(\0132\".TSA."
+  "CollaboratorGalleryItemCursor\"\260\001\n\014WebVid"
+  "eoInfo\022\013\n\003url\030\001 \001(\t\022-\n\021poster_image_data"
+  "\030\002 \001(\0132\022.TSP.DataReference\022%\n\013attributio"
+  "n\030\003 \001(\0132\020.TSD.Attribution2=\n\016web_video_i"
+  "nfo\022\021.TSD.ImageArchive\030\254\002 \001(\0132\021.TSA.WebV"
+  "ideoInfo\"\\\n\027CaptionPlacementArchive\022\037\n\027c"
+  "aption_anchor_location\030\001 \001(\005\022 \n\030drawable"
+  "_anchor_location\030\002 \001(\005\"\216\001\n\022CaptionInfoAr"
+  "chive\022%\n\005super\030\001 \002(\0132\026.TSWP.ShapeInfoArc"
+  "hive\022!\n\tplacement\030\002 \001(\0132\016.TSP.Reference\022"
+  ".\n\rchildInfoKind\030\003 \001(\0162\027.TSD.CaptionOrTi"
+  "tleKind\"\312\001\n\034TitlePlacementCommandArchive"
+  "\022&\n\005super\030\001 \002(\0132\027.TSD.InfoCommandArchive"
+  "\0228\n\027placing_child_info_kind\030\002 \001(\0162\027.TSD."
+  "CaptionOrTitleKind\022!\n\tplacement\030\003 \001(\0132\016."
+  "TSP.Reference\022%\n\rold_placement\030\004 \001(\0132\016.T"
+  "SP.Reference*\201\001\n\026GalleryInfoCaptionMode\022"
+  "\036\n\032GalleryInfoCaptionModeNone\020\000\022\"\n\036Galle"
+  "ryInfoCaptionModePerImage\020\001\022#\n\037GalleryIn"
+  "foCaptionModeAllImages\020\002*5\n\023GalleryInfoP"
+  "roperty\022\036\n\032GalleryInfoCaptionProperty\020\000*"
+  "q\n\022GalleryCaptionMode\022\032\n\026GalleryCaptionM"
+  "odeNone\020\000\022\036\n\032GalleryCaptionModePerImage\020"
+  "\001\022\037\n\033GalleryCaptionModeAllImages\020\002*\223\001\n\023G"
+  "alleryItemProperty\022 \n\034GalleryItemPropert"
+  "yImageData\020\000\022)\n%GalleryItemPropertyThumb"
+  "nailImageData\020\001\022/\n+GalleryItemPropertyAc"
+  "cessibilityDescription\020\002"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSAArchives_2eproto_deps[9] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSAArchives_2eproto_deps[9] = {
   &::descriptor_table_TSCEArchives_2eproto,
   &::descriptor_table_TSDArchives_2eproto,
   &::descriptor_table_TSDCommandArchives_2eproto,
@@ -1193,19 +1320,21 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_TSWPArchives_2eproto,
   &::descriptor_table_TSWPCommandArchives_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSAArchives_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSAArchives_2eproto = {
-  false, false, 7065, descriptor_table_protodef_TSAArchives_2eproto, "TSAArchives.proto", 
-  &descriptor_table_TSAArchives_2eproto_once, descriptor_table_TSAArchives_2eproto_deps, 9, 33,
-  schemas, file_default_instances, TableStruct_TSAArchives_2eproto::offsets,
-  file_level_metadata_TSAArchives_2eproto, file_level_enum_descriptors_TSAArchives_2eproto, file_level_service_descriptors_TSAArchives_2eproto,
+static ::_pbi::once_flag descriptor_table_TSAArchives_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSAArchives_2eproto = {
+    false, false, 7264, descriptor_table_protodef_TSAArchives_2eproto,
+    "TSAArchives.proto",
+    &descriptor_table_TSAArchives_2eproto_once, descriptor_table_TSAArchives_2eproto_deps, 9, 34,
+    schemas, file_default_instances, TableStruct_TSAArchives_2eproto::offsets,
+    file_level_metadata_TSAArchives_2eproto, file_level_enum_descriptors_TSAArchives_2eproto,
+    file_level_service_descriptors_TSAArchives_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSAArchives_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSAArchives_2eproto_getter() {
   return &descriptor_table_TSAArchives_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSAArchives_2eproto(&descriptor_table_TSAArchives_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSAArchives_2eproto(&descriptor_table_TSAArchives_2eproto);
 namespace TSA {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GalleryInfoCaptionMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_TSAArchives_2eproto);
@@ -1270,7 +1399,7 @@ bool GalleryItemProperty_IsValid(int value) {
 
 class DocumentArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<DocumentArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<DocumentArchive>()._impl_._has_bits_);
   static const ::TSK::DocumentArchive& super(const DocumentArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -1322,7 +1451,7 @@ class DocumentArchive::_Internal {
   static void set_has_can_use_hevc(HasBits* has_bits) {
     (*has_bits)[0] |= 8192u;
   }
-  static void set_has_is_content_master(HasBits* has_bits) {
+  static void set_has_is_content_source(HasBits* has_bits) {
     (*has_bits)[0] |= 16384u;
   }
   static bool MissingRequiredFields(const HasBits& has_bits) {
@@ -1332,274 +1461,300 @@ class DocumentArchive::_Internal {
 
 const ::TSK::DocumentArchive&
 DocumentArchive::_Internal::super(const DocumentArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::calculation_engine(const DocumentArchive* msg) {
-  return *msg->calculation_engine_;
+  return *msg->_impl_.calculation_engine_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::view_state(const DocumentArchive* msg) {
-  return *msg->view_state_;
+  return *msg->_impl_.view_state_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::function_browser_state(const DocumentArchive* msg) {
-  return *msg->function_browser_state_;
+  return *msg->_impl_.function_browser_state_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::tables_custom_format_list(const DocumentArchive* msg) {
-  return *msg->tables_custom_format_list_;
+  return *msg->_impl_.tables_custom_format_list_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::shortcut_controller(const DocumentArchive* msg) {
-  return *msg->shortcut_controller_;
+  return *msg->_impl_.shortcut_controller_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::annotation_cache_deprecated(const DocumentArchive* msg) {
-  return *msg->annotation_cache_deprecated_;
+  return *msg->_impl_.annotation_cache_deprecated_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::custom_format_list(const DocumentArchive* msg) {
-  return *msg->custom_format_list_;
+  return *msg->_impl_.custom_format_list_;
 }
 const ::TSP::Reference&
 DocumentArchive::_Internal::annotation_cache_deprecated_2(const DocumentArchive* msg) {
-  return *msg->annotation_cache_deprecated_2_;
+  return *msg->_impl_.annotation_cache_deprecated_2_;
 }
 void DocumentArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void DocumentArchive::clear_text_preset_display_items() {
-  text_preset_display_items_.Clear();
+  _impl_.text_preset_display_items_.Clear();
 }
 void DocumentArchive::clear_calculation_engine() {
-  if (calculation_engine_ != nullptr) calculation_engine_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.calculation_engine_ != nullptr) _impl_.calculation_engine_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void DocumentArchive::clear_view_state() {
-  if (view_state_ != nullptr) view_state_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.view_state_ != nullptr) _impl_.view_state_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 void DocumentArchive::clear_function_browser_state() {
-  if (function_browser_state_ != nullptr) function_browser_state_->Clear();
-  _has_bits_[0] &= ~0x00000020u;
+  if (_impl_.function_browser_state_ != nullptr) _impl_.function_browser_state_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 void DocumentArchive::clear_tables_custom_format_list() {
-  if (tables_custom_format_list_ != nullptr) tables_custom_format_list_->Clear();
-  _has_bits_[0] &= ~0x00000040u;
+  if (_impl_.tables_custom_format_list_ != nullptr) _impl_.tables_custom_format_list_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 void DocumentArchive::clear_shortcut_controller() {
-  if (shortcut_controller_ != nullptr) shortcut_controller_->Clear();
-  _has_bits_[0] &= ~0x00000080u;
+  if (_impl_.shortcut_controller_ != nullptr) _impl_.shortcut_controller_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 void DocumentArchive::clear_annotation_cache_deprecated() {
-  if (annotation_cache_deprecated_ != nullptr) annotation_cache_deprecated_->Clear();
-  _has_bits_[0] &= ~0x00000100u;
+  if (_impl_.annotation_cache_deprecated_ != nullptr) _impl_.annotation_cache_deprecated_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 void DocumentArchive::clear_custom_format_list() {
-  if (custom_format_list_ != nullptr) custom_format_list_->Clear();
-  _has_bits_[0] &= ~0x00000200u;
+  if (_impl_.custom_format_list_ != nullptr) _impl_.custom_format_list_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 void DocumentArchive::clear_annotation_cache_deprecated_2() {
-  if (annotation_cache_deprecated_2_ != nullptr) annotation_cache_deprecated_2_->Clear();
-  _has_bits_[0] &= ~0x00000400u;
+  if (_impl_.annotation_cache_deprecated_2_ != nullptr) _impl_.annotation_cache_deprecated_2_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000400u;
 }
 DocumentArchive::DocumentArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  text_preset_display_items_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.DocumentArchive)
 }
 DocumentArchive::DocumentArchive(const DocumentArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      text_preset_display_items_(from.text_preset_display_items_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  DocumentArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.text_preset_display_items_){from._impl_.text_preset_display_items_}
+    , decltype(_impl_.document_language_){}
+    , decltype(_impl_.template_identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.calculation_engine_){nullptr}
+    , decltype(_impl_.view_state_){nullptr}
+    , decltype(_impl_.function_browser_state_){nullptr}
+    , decltype(_impl_.tables_custom_format_list_){nullptr}
+    , decltype(_impl_.shortcut_controller_){nullptr}
+    , decltype(_impl_.annotation_cache_deprecated_){nullptr}
+    , decltype(_impl_.custom_format_list_){nullptr}
+    , decltype(_impl_.annotation_cache_deprecated_2_){nullptr}
+    , decltype(_impl_.needs_media_compatibility_upgrade_){}
+    , decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_){}
+    , decltype(_impl_.can_use_hevc_){}
+    , decltype(_impl_.is_content_source_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  document_language_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.document_language_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.document_language_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_document_language()) {
-    document_language_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_document_language(), 
-      GetArenaForAllocation());
+    _this->_impl_.document_language_.Set(from._internal_document_language(), 
+      _this->GetArenaForAllocation());
   }
-  template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.template_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.template_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_template_identifier()) {
-    template_identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_template_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.template_identifier_.Set(from._internal_template_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
-    super_ = new ::TSK::DocumentArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::DocumentArchive(*from._impl_.super_);
   }
   if (from._internal_has_calculation_engine()) {
-    calculation_engine_ = new ::TSP::Reference(*from.calculation_engine_);
-  } else {
-    calculation_engine_ = nullptr;
+    _this->_impl_.calculation_engine_ = new ::TSP::Reference(*from._impl_.calculation_engine_);
   }
   if (from._internal_has_view_state()) {
-    view_state_ = new ::TSP::Reference(*from.view_state_);
-  } else {
-    view_state_ = nullptr;
+    _this->_impl_.view_state_ = new ::TSP::Reference(*from._impl_.view_state_);
   }
   if (from._internal_has_function_browser_state()) {
-    function_browser_state_ = new ::TSP::Reference(*from.function_browser_state_);
-  } else {
-    function_browser_state_ = nullptr;
+    _this->_impl_.function_browser_state_ = new ::TSP::Reference(*from._impl_.function_browser_state_);
   }
   if (from._internal_has_tables_custom_format_list()) {
-    tables_custom_format_list_ = new ::TSP::Reference(*from.tables_custom_format_list_);
-  } else {
-    tables_custom_format_list_ = nullptr;
+    _this->_impl_.tables_custom_format_list_ = new ::TSP::Reference(*from._impl_.tables_custom_format_list_);
   }
   if (from._internal_has_shortcut_controller()) {
-    shortcut_controller_ = new ::TSP::Reference(*from.shortcut_controller_);
-  } else {
-    shortcut_controller_ = nullptr;
+    _this->_impl_.shortcut_controller_ = new ::TSP::Reference(*from._impl_.shortcut_controller_);
   }
   if (from._internal_has_annotation_cache_deprecated()) {
-    annotation_cache_deprecated_ = new ::TSP::Reference(*from.annotation_cache_deprecated_);
-  } else {
-    annotation_cache_deprecated_ = nullptr;
+    _this->_impl_.annotation_cache_deprecated_ = new ::TSP::Reference(*from._impl_.annotation_cache_deprecated_);
   }
   if (from._internal_has_custom_format_list()) {
-    custom_format_list_ = new ::TSP::Reference(*from.custom_format_list_);
-  } else {
-    custom_format_list_ = nullptr;
+    _this->_impl_.custom_format_list_ = new ::TSP::Reference(*from._impl_.custom_format_list_);
   }
   if (from._internal_has_annotation_cache_deprecated_2()) {
-    annotation_cache_deprecated_2_ = new ::TSP::Reference(*from.annotation_cache_deprecated_2_);
-  } else {
-    annotation_cache_deprecated_2_ = nullptr;
+    _this->_impl_.annotation_cache_deprecated_2_ = new ::TSP::Reference(*from._impl_.annotation_cache_deprecated_2_);
   }
-  ::memcpy(&needs_media_compatibility_upgrade_, &from.needs_media_compatibility_upgrade_,
-    static_cast<size_t>(reinterpret_cast<char*>(&is_content_master_) -
-    reinterpret_cast<char*>(&needs_media_compatibility_upgrade_)) + sizeof(is_content_master_));
+  ::memcpy(&_impl_.needs_media_compatibility_upgrade_, &from._impl_.needs_media_compatibility_upgrade_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.is_content_source_) -
+    reinterpret_cast<char*>(&_impl_.needs_media_compatibility_upgrade_)) + sizeof(_impl_.is_content_source_));
   // @@protoc_insertion_point(copy_constructor:TSA.DocumentArchive)
 }
 
-inline void DocumentArchive::SharedCtor() {
-document_language_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-template_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&is_content_master_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(is_content_master_));
+inline void DocumentArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.text_preset_display_items_){arena}
+    , decltype(_impl_.document_language_){}
+    , decltype(_impl_.template_identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.calculation_engine_){nullptr}
+    , decltype(_impl_.view_state_){nullptr}
+    , decltype(_impl_.function_browser_state_){nullptr}
+    , decltype(_impl_.tables_custom_format_list_){nullptr}
+    , decltype(_impl_.shortcut_controller_){nullptr}
+    , decltype(_impl_.annotation_cache_deprecated_){nullptr}
+    , decltype(_impl_.custom_format_list_){nullptr}
+    , decltype(_impl_.annotation_cache_deprecated_2_){nullptr}
+    , decltype(_impl_.needs_media_compatibility_upgrade_){false}
+    , decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_){false}
+    , decltype(_impl_.can_use_hevc_){false}
+    , decltype(_impl_.is_content_source_){false}
+  };
+  _impl_.document_language_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.document_language_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.template_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.template_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 DocumentArchive::~DocumentArchive() {
   // @@protoc_insertion_point(destructor:TSA.DocumentArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void DocumentArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  document_language_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  template_identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete calculation_engine_;
-  if (this != internal_default_instance()) delete view_state_;
-  if (this != internal_default_instance()) delete function_browser_state_;
-  if (this != internal_default_instance()) delete tables_custom_format_list_;
-  if (this != internal_default_instance()) delete shortcut_controller_;
-  if (this != internal_default_instance()) delete annotation_cache_deprecated_;
-  if (this != internal_default_instance()) delete custom_format_list_;
-  if (this != internal_default_instance()) delete annotation_cache_deprecated_2_;
+  _impl_.text_preset_display_items_.~RepeatedPtrField();
+  _impl_.document_language_.Destroy();
+  _impl_.template_identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.calculation_engine_;
+  if (this != internal_default_instance()) delete _impl_.view_state_;
+  if (this != internal_default_instance()) delete _impl_.function_browser_state_;
+  if (this != internal_default_instance()) delete _impl_.tables_custom_format_list_;
+  if (this != internal_default_instance()) delete _impl_.shortcut_controller_;
+  if (this != internal_default_instance()) delete _impl_.annotation_cache_deprecated_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_list_;
+  if (this != internal_default_instance()) delete _impl_.annotation_cache_deprecated_2_;
 }
 
-void DocumentArchive::ArenaDtor(void* object) {
-  DocumentArchive* _this = reinterpret_cast< DocumentArchive* >(object);
-  (void)_this;
-}
-void DocumentArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void DocumentArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void DocumentArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.DocumentArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  text_preset_display_items_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.text_preset_display_items_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      document_language_.ClearNonDefaultToEmpty();
+      _impl_.document_language_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      template_identifier_.ClearNonDefaultToEmpty();
+      _impl_.template_identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(calculation_engine_ != nullptr);
-      calculation_engine_->Clear();
+      GOOGLE_DCHECK(_impl_.calculation_engine_ != nullptr);
+      _impl_.calculation_engine_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(view_state_ != nullptr);
-      view_state_->Clear();
+      GOOGLE_DCHECK(_impl_.view_state_ != nullptr);
+      _impl_.view_state_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(function_browser_state_ != nullptr);
-      function_browser_state_->Clear();
+      GOOGLE_DCHECK(_impl_.function_browser_state_ != nullptr);
+      _impl_.function_browser_state_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(tables_custom_format_list_ != nullptr);
-      tables_custom_format_list_->Clear();
+      GOOGLE_DCHECK(_impl_.tables_custom_format_list_ != nullptr);
+      _impl_.tables_custom_format_list_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(shortcut_controller_ != nullptr);
-      shortcut_controller_->Clear();
+      GOOGLE_DCHECK(_impl_.shortcut_controller_ != nullptr);
+      _impl_.shortcut_controller_->Clear();
     }
   }
   if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(annotation_cache_deprecated_ != nullptr);
-      annotation_cache_deprecated_->Clear();
+      GOOGLE_DCHECK(_impl_.annotation_cache_deprecated_ != nullptr);
+      _impl_.annotation_cache_deprecated_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(custom_format_list_ != nullptr);
-      custom_format_list_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_list_ != nullptr);
+      _impl_.custom_format_list_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(annotation_cache_deprecated_2_ != nullptr);
-      annotation_cache_deprecated_2_->Clear();
+      GOOGLE_DCHECK(_impl_.annotation_cache_deprecated_2_ != nullptr);
+      _impl_.annotation_cache_deprecated_2_->Clear();
     }
   }
-  ::memset(&needs_media_compatibility_upgrade_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&is_content_master_) -
-      reinterpret_cast<char*>(&needs_media_compatibility_upgrade_)) + sizeof(is_content_master_));
-  _has_bits_.Clear();
+  ::memset(&_impl_.needs_media_compatibility_upgrade_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.is_content_source_) -
+      reinterpret_cast<char*>(&_impl_.needs_media_compatibility_upgrade_)) + sizeof(_impl_.is_content_source_));
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* DocumentArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* DocumentArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.DocumentArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSWP.TextPresetDisplayItemArchive text_preset_display_items = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1607,163 +1762,177 @@ const char* DocumentArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string document_language = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_document_language();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.DocumentArchive.document_language");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.DocumentArchive.document_language");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference calculation_engine = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_calculation_engine(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference view_state = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_view_state(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference function_browser_state = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_function_browser_state(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference tables_custom_format_list = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_tables_custom_format_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool needs_media_compatibility_upgrade = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_needs_media_compatibility_upgrade(&has_bits);
-          needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string template_identifier = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           auto str = _internal_mutable_template_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.DocumentArchive.template_identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.DocumentArchive.template_identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference shortcut_controller = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_shortcut_controller(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference annotation_cache_deprecated = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_annotation_cache_deprecated(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference custom_format_list = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference annotation_cache_deprecated_2 = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_annotation_cache_deprecated_2(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool collaborative_media_compatibility_upgrade_did_fail = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
           _Internal::set_has_collaborative_media_compatibility_upgrade_did_fail(&has_bits);
-          collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool can_use_hevc = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 120)) {
           _Internal::set_has_can_use_hevc(&has_bits);
-          can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      // optional bool is_content_master = 16;
+      // optional bool is_content_source = 16;
       case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 128)) {
-          _Internal::set_has_is_content_master(&has_bits);
-          is_content_master_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_is_content_source(&has_bits);
+          _impl_.is_content_source_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DocumentArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* DocumentArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.DocumentArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.DocumentArchive super = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSWP.TextPresetDisplayItemArchive text_preset_display_items = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_text_preset_display_items_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_text_preset_display_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_text_preset_display_items(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_text_preset_display_items(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional string document_language = 3;
@@ -1778,40 +1947,36 @@ failure:
 
   // optional .TSP.Reference calculation_engine = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::calculation_engine(this), target, stream);
+      InternalWriteMessage(4, _Internal::calculation_engine(this),
+        _Internal::calculation_engine(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference view_state = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::view_state(this), target, stream);
+      InternalWriteMessage(5, _Internal::view_state(this),
+        _Internal::view_state(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference function_browser_state = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::function_browser_state(this), target, stream);
+      InternalWriteMessage(6, _Internal::function_browser_state(this),
+        _Internal::function_browser_state(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference tables_custom_format_list = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::tables_custom_format_list(this), target, stream);
+      InternalWriteMessage(7, _Internal::tables_custom_format_list(this),
+        _Internal::tables_custom_format_list(this).GetCachedSize(), target, stream);
   }
 
   // optional bool needs_media_compatibility_upgrade = 8;
   if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_needs_media_compatibility_upgrade(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_needs_media_compatibility_upgrade(), target);
   }
 
   // optional string template_identifier = 9;
@@ -1826,56 +1991,52 @@ failure:
 
   // optional .TSP.Reference shortcut_controller = 10;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::shortcut_controller(this), target, stream);
+      InternalWriteMessage(10, _Internal::shortcut_controller(this),
+        _Internal::shortcut_controller(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference annotation_cache_deprecated = 11;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::annotation_cache_deprecated(this), target, stream);
+      InternalWriteMessage(11, _Internal::annotation_cache_deprecated(this),
+        _Internal::annotation_cache_deprecated(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference custom_format_list = 12;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        12, _Internal::custom_format_list(this), target, stream);
+      InternalWriteMessage(12, _Internal::custom_format_list(this),
+        _Internal::custom_format_list(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference annotation_cache_deprecated_2 = 13;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        13, _Internal::annotation_cache_deprecated_2(this), target, stream);
+      InternalWriteMessage(13, _Internal::annotation_cache_deprecated_2(this),
+        _Internal::annotation_cache_deprecated_2(this).GetCachedSize(), target, stream);
   }
 
   // optional bool collaborative_media_compatibility_upgrade_did_fail = 14;
   if (cached_has_bits & 0x00001000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(14, this->_internal_collaborative_media_compatibility_upgrade_did_fail(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(14, this->_internal_collaborative_media_compatibility_upgrade_did_fail(), target);
   }
 
   // optional bool can_use_hevc = 15;
   if (cached_has_bits & 0x00002000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(15, this->_internal_can_use_hevc(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(15, this->_internal_can_use_hevc(), target);
   }
 
-  // optional bool is_content_master = 16;
+  // optional bool is_content_source = 16;
   if (cached_has_bits & 0x00004000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(16, this->_internal_is_content_master(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(16, this->_internal_is_content_source(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.DocumentArchive)
@@ -1890,20 +2051,20 @@ size_t DocumentArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSWP.TextPresetDisplayItemArchive text_preset_display_items = 2;
   total_size += 1UL * this->_internal_text_preset_display_items_size();
-  for (const auto& msg : this->text_preset_display_items_) {
+  for (const auto& msg : this->_impl_.text_preset_display_items_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional string document_language = 3;
     if (cached_has_bits & 0x00000001u) {
@@ -1925,35 +2086,35 @@ size_t DocumentArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *calculation_engine_);
+          *_impl_.calculation_engine_);
     }
 
     // optional .TSP.Reference view_state = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *view_state_);
+          *_impl_.view_state_);
     }
 
     // optional .TSP.Reference function_browser_state = 6;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *function_browser_state_);
+          *_impl_.function_browser_state_);
     }
 
     // optional .TSP.Reference tables_custom_format_list = 7;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *tables_custom_format_list_);
+          *_impl_.tables_custom_format_list_);
     }
 
     // optional .TSP.Reference shortcut_controller = 10;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *shortcut_controller_);
+          *_impl_.shortcut_controller_);
     }
 
   }
@@ -1962,21 +2123,21 @@ size_t DocumentArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *annotation_cache_deprecated_);
+          *_impl_.annotation_cache_deprecated_);
     }
 
     // optional .TSP.Reference custom_format_list = 12;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_list_);
+          *_impl_.custom_format_list_);
     }
 
     // optional .TSP.Reference annotation_cache_deprecated_2 = 13;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *annotation_cache_deprecated_2_);
+          *_impl_.annotation_cache_deprecated_2_);
     }
 
     // optional bool needs_media_compatibility_upgrade = 8;
@@ -1994,93 +2155,92 @@ size_t DocumentArchive::ByteSizeLong() const {
       total_size += 1 + 1;
     }
 
-    // optional bool is_content_master = 16;
+    // optional bool is_content_source = 16;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 1;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DocumentArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     DocumentArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DocumentArchive::GetClassData() const { return &_class_data_; }
 
-void DocumentArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<DocumentArchive *>(to)->MergeFrom(
-      static_cast<const DocumentArchive &>(from));
-}
 
-
-void DocumentArchive::MergeFrom(const DocumentArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.DocumentArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void DocumentArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<DocumentArchive*>(&to_msg);
+  auto& from = static_cast<const DocumentArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.DocumentArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  text_preset_display_items_.MergeFrom(from.text_preset_display_items_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.text_preset_display_items_.MergeFrom(from._impl_.text_preset_display_items_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_document_language(from._internal_document_language());
+      _this->_internal_set_document_language(from._internal_document_language());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_template_identifier(from._internal_template_identifier());
+      _this->_internal_set_template_identifier(from._internal_template_identifier());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_super()->::TSK::DocumentArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::DocumentArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_calculation_engine()->::TSP::Reference::MergeFrom(from._internal_calculation_engine());
+      _this->_internal_mutable_calculation_engine()->::TSP::Reference::MergeFrom(
+          from._internal_calculation_engine());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_view_state()->::TSP::Reference::MergeFrom(from._internal_view_state());
+      _this->_internal_mutable_view_state()->::TSP::Reference::MergeFrom(
+          from._internal_view_state());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_function_browser_state()->::TSP::Reference::MergeFrom(from._internal_function_browser_state());
+      _this->_internal_mutable_function_browser_state()->::TSP::Reference::MergeFrom(
+          from._internal_function_browser_state());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_tables_custom_format_list()->::TSP::Reference::MergeFrom(from._internal_tables_custom_format_list());
+      _this->_internal_mutable_tables_custom_format_list()->::TSP::Reference::MergeFrom(
+          from._internal_tables_custom_format_list());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_shortcut_controller()->::TSP::Reference::MergeFrom(from._internal_shortcut_controller());
+      _this->_internal_mutable_shortcut_controller()->::TSP::Reference::MergeFrom(
+          from._internal_shortcut_controller());
     }
   }
   if (cached_has_bits & 0x00007f00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_annotation_cache_deprecated()->::TSP::Reference::MergeFrom(from._internal_annotation_cache_deprecated());
+      _this->_internal_mutable_annotation_cache_deprecated()->::TSP::Reference::MergeFrom(
+          from._internal_annotation_cache_deprecated());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_custom_format_list()->::TSP::Reference::MergeFrom(from._internal_custom_format_list());
+      _this->_internal_mutable_custom_format_list()->::TSP::Reference::MergeFrom(
+          from._internal_custom_format_list());
     }
     if (cached_has_bits & 0x00000400u) {
-      _internal_mutable_annotation_cache_deprecated_2()->::TSP::Reference::MergeFrom(from._internal_annotation_cache_deprecated_2());
+      _this->_internal_mutable_annotation_cache_deprecated_2()->::TSP::Reference::MergeFrom(
+          from._internal_annotation_cache_deprecated_2());
     }
     if (cached_has_bits & 0x00000800u) {
-      needs_media_compatibility_upgrade_ = from.needs_media_compatibility_upgrade_;
+      _this->_impl_.needs_media_compatibility_upgrade_ = from._impl_.needs_media_compatibility_upgrade_;
     }
     if (cached_has_bits & 0x00001000u) {
-      collaborative_media_compatibility_upgrade_did_fail_ = from.collaborative_media_compatibility_upgrade_did_fail_;
+      _this->_impl_.collaborative_media_compatibility_upgrade_did_fail_ = from._impl_.collaborative_media_compatibility_upgrade_did_fail_;
     }
     if (cached_has_bits & 0x00002000u) {
-      can_use_hevc_ = from.can_use_hevc_;
+      _this->_impl_.can_use_hevc_ = from._impl_.can_use_hevc_;
     }
     if (cached_has_bits & 0x00004000u) {
-      is_content_master_ = from.is_content_master_;
+      _this->_impl_.is_content_source_ = from._impl_.is_content_source_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DocumentArchive::CopyFrom(const DocumentArchive& from) {
@@ -2091,63 +2251,64 @@ void DocumentArchive::CopyFrom(const DocumentArchive& from) {
 }
 
 bool DocumentArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(text_preset_display_items_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.text_preset_display_items_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_calculation_engine()) {
-    if (!calculation_engine_->IsInitialized()) return false;
+    if (!_impl_.calculation_engine_->IsInitialized()) return false;
   }
   if (_internal_has_view_state()) {
-    if (!view_state_->IsInitialized()) return false;
+    if (!_impl_.view_state_->IsInitialized()) return false;
   }
   if (_internal_has_function_browser_state()) {
-    if (!function_browser_state_->IsInitialized()) return false;
+    if (!_impl_.function_browser_state_->IsInitialized()) return false;
   }
   if (_internal_has_tables_custom_format_list()) {
-    if (!tables_custom_format_list_->IsInitialized()) return false;
+    if (!_impl_.tables_custom_format_list_->IsInitialized()) return false;
   }
   if (_internal_has_shortcut_controller()) {
-    if (!shortcut_controller_->IsInitialized()) return false;
+    if (!_impl_.shortcut_controller_->IsInitialized()) return false;
   }
   if (_internal_has_annotation_cache_deprecated()) {
-    if (!annotation_cache_deprecated_->IsInitialized()) return false;
+    if (!_impl_.annotation_cache_deprecated_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format_list()) {
-    if (!custom_format_list_->IsInitialized()) return false;
+    if (!_impl_.custom_format_list_->IsInitialized()) return false;
   }
   if (_internal_has_annotation_cache_deprecated_2()) {
-    if (!annotation_cache_deprecated_2_->IsInitialized()) return false;
+    if (!_impl_.annotation_cache_deprecated_2_->IsInitialized()) return false;
   }
   return true;
 }
 
 void DocumentArchive::InternalSwap(DocumentArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  text_preset_display_items_.InternalSwap(&other->text_preset_display_items_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.text_preset_display_items_.InternalSwap(&other->_impl_.text_preset_display_items_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &document_language_, GetArenaForAllocation(),
-      &other->document_language_, other->GetArenaForAllocation()
+      &_impl_.document_language_, lhs_arena,
+      &other->_impl_.document_language_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &template_identifier_, GetArenaForAllocation(),
-      &other->template_identifier_, other->GetArenaForAllocation()
+      &_impl_.template_identifier_, lhs_arena,
+      &other->_impl_.template_identifier_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(DocumentArchive, is_content_master_)
-      + sizeof(DocumentArchive::is_content_master_)
-      - PROTOBUF_FIELD_OFFSET(DocumentArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(DocumentArchive, _impl_.is_content_source_)
+      + sizeof(DocumentArchive::_impl_.is_content_source_)
+      - PROTOBUF_FIELD_OFFSET(DocumentArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DocumentArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[0]);
 }
@@ -2156,7 +2317,7 @@ void DocumentArchive::InternalSwap(DocumentArchive* other) {
 
 class FunctionBrowserStateArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<FunctionBrowserStateArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<FunctionBrowserStateArchive>()._impl_._has_bits_);
   static void set_has_current_function(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2164,76 +2325,84 @@ class FunctionBrowserStateArchive::_Internal {
 
 FunctionBrowserStateArchive::FunctionBrowserStateArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  recent_functions_(arena),
-  back_functions_(arena),
-  forward_functions_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.FunctionBrowserStateArchive)
 }
 FunctionBrowserStateArchive::FunctionBrowserStateArchive(const FunctionBrowserStateArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      recent_functions_(from.recent_functions_),
-      back_functions_(from.back_functions_),
-      forward_functions_(from.forward_functions_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  FunctionBrowserStateArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.recent_functions_){from._impl_.recent_functions_}
+    , decltype(_impl_.back_functions_){from._impl_.back_functions_}
+    , decltype(_impl_.forward_functions_){from._impl_.forward_functions_}
+    , decltype(_impl_.current_function_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  current_function_ = from.current_function_;
+  _this->_impl_.current_function_ = from._impl_.current_function_;
   // @@protoc_insertion_point(copy_constructor:TSA.FunctionBrowserStateArchive)
 }
 
-inline void FunctionBrowserStateArchive::SharedCtor() {
-current_function_ = 0u;
+inline void FunctionBrowserStateArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.recent_functions_){arena}
+    , decltype(_impl_.back_functions_){arena}
+    , decltype(_impl_.forward_functions_){arena}
+    , decltype(_impl_.current_function_){0u}
+  };
 }
 
 FunctionBrowserStateArchive::~FunctionBrowserStateArchive() {
   // @@protoc_insertion_point(destructor:TSA.FunctionBrowserStateArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void FunctionBrowserStateArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.recent_functions_.~RepeatedField();
+  _impl_.back_functions_.~RepeatedField();
+  _impl_.forward_functions_.~RepeatedField();
 }
 
-void FunctionBrowserStateArchive::ArenaDtor(void* object) {
-  FunctionBrowserStateArchive* _this = reinterpret_cast< FunctionBrowserStateArchive* >(object);
-  (void)_this;
-}
-void FunctionBrowserStateArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void FunctionBrowserStateArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void FunctionBrowserStateArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.FunctionBrowserStateArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  recent_functions_.Clear();
-  back_functions_.Clear();
-  forward_functions_.Clear();
-  current_function_ = 0u;
-  _has_bits_.Clear();
+  _impl_.recent_functions_.Clear();
+  _impl_.back_functions_.Clear();
+  _impl_.forward_functions_.Clear();
+  _impl_.current_function_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* FunctionBrowserStateArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* FunctionBrowserStateArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated uint32 recent_functions = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2241,14 +2410,15 @@ const char* FunctionBrowserStateArchive::_InternalParse(const char* ptr, ::PROTO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<8>(ptr));
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10) {
+        } else if (static_cast<uint8_t>(tag) == 10) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_recent_functions(), ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated uint32 back_functions = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2256,14 +2426,15 @@ const char* FunctionBrowserStateArchive::_InternalParse(const char* ptr, ::PROTO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<16>(ptr));
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18) {
+        } else if (static_cast<uint8_t>(tag) == 18) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_back_functions(), ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated uint32 forward_functions = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2271,76 +2442,78 @@ const char* FunctionBrowserStateArchive::_InternalParse(const char* ptr, ::PROTO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<24>(ptr));
-        } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26) {
+        } else if (static_cast<uint8_t>(tag) == 26) {
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_forward_functions(), ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional uint32 current_function = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_current_function(&has_bits);
-          current_function_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.current_function_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FunctionBrowserStateArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FunctionBrowserStateArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.FunctionBrowserStateArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated uint32 recent_functions = 1;
   for (int i = 0, n = this->_internal_recent_functions_size(); i < n; i++) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_recent_functions(i), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_recent_functions(i), target);
   }
 
   // repeated uint32 back_functions = 2;
   for (int i = 0, n = this->_internal_back_functions_size(); i < n; i++) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_back_functions(i), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(2, this->_internal_back_functions(i), target);
   }
 
   // repeated uint32 forward_functions = 3;
   for (int i = 0, n = this->_internal_forward_functions_size(); i < n; i++) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_forward_functions(i), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(3, this->_internal_forward_functions(i), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional uint32 current_function = 4;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_current_function(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_current_function(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.FunctionBrowserStateArchive)
@@ -2351,80 +2524,68 @@ size_t FunctionBrowserStateArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.FunctionBrowserStateArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated uint32 recent_functions = 1;
   {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      UInt32Size(this->recent_functions_);
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt32Size(this->_impl_.recent_functions_);
     total_size += 1 *
-                  ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_recent_functions_size());
+                  ::_pbi::FromIntSize(this->_internal_recent_functions_size());
     total_size += data_size;
   }
 
   // repeated uint32 back_functions = 2;
   {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      UInt32Size(this->back_functions_);
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt32Size(this->_impl_.back_functions_);
     total_size += 1 *
-                  ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_back_functions_size());
+                  ::_pbi::FromIntSize(this->_internal_back_functions_size());
     total_size += data_size;
   }
 
   // repeated uint32 forward_functions = 3;
   {
-    size_t data_size = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      UInt32Size(this->forward_functions_);
+    size_t data_size = ::_pbi::WireFormatLite::
+      UInt32Size(this->_impl_.forward_functions_);
     total_size += 1 *
-                  ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_forward_functions_size());
+                  ::_pbi::FromIntSize(this->_internal_forward_functions_size());
     total_size += data_size;
   }
 
   // optional uint32 current_function = 4;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_current_function());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_current_function());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FunctionBrowserStateArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     FunctionBrowserStateArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FunctionBrowserStateArchive::GetClassData() const { return &_class_data_; }
 
-void FunctionBrowserStateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<FunctionBrowserStateArchive *>(to)->MergeFrom(
-      static_cast<const FunctionBrowserStateArchive &>(from));
-}
 
-
-void FunctionBrowserStateArchive::MergeFrom(const FunctionBrowserStateArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.FunctionBrowserStateArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void FunctionBrowserStateArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FunctionBrowserStateArchive*>(&to_msg);
+  auto& from = static_cast<const FunctionBrowserStateArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.FunctionBrowserStateArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  recent_functions_.MergeFrom(from.recent_functions_);
-  back_functions_.MergeFrom(from.back_functions_);
-  forward_functions_.MergeFrom(from.forward_functions_);
+  _this->_impl_.recent_functions_.MergeFrom(from._impl_.recent_functions_);
+  _this->_impl_.back_functions_.MergeFrom(from._impl_.back_functions_);
+  _this->_impl_.forward_functions_.MergeFrom(from._impl_.forward_functions_);
   if (from._internal_has_current_function()) {
-    _internal_set_current_function(from._internal_current_function());
+    _this->_internal_set_current_function(from._internal_current_function());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FunctionBrowserStateArchive::CopyFrom(const FunctionBrowserStateArchive& from) {
@@ -2441,15 +2602,15 @@ bool FunctionBrowserStateArchive::IsInitialized() const {
 void FunctionBrowserStateArchive::InternalSwap(FunctionBrowserStateArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  recent_functions_.InternalSwap(&other->recent_functions_);
-  back_functions_.InternalSwap(&other->back_functions_);
-  forward_functions_.InternalSwap(&other->forward_functions_);
-  swap(current_function_, other->current_function_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.recent_functions_.InternalSwap(&other->_impl_.recent_functions_);
+  _impl_.back_functions_.InternalSwap(&other->_impl_.back_functions_);
+  _impl_.forward_functions_.InternalSwap(&other->_impl_.forward_functions_);
+  swap(_impl_.current_function_, other->_impl_.current_function_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FunctionBrowserStateArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[1]);
 }
@@ -2461,68 +2622,72 @@ class ThemePresetsArchive::_Internal {
 };
 
 void ThemePresetsArchive::clear_caption_style_presets() {
-  caption_style_presets_.Clear();
+  _impl_.caption_style_presets_.Clear();
 }
 ThemePresetsArchive::ThemePresetsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  caption_style_presets_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ThemePresetsArchive)
 }
 ThemePresetsArchive::ThemePresetsArchive(const ThemePresetsArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      caption_style_presets_(from.caption_style_presets_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemePresetsArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.caption_style_presets_){from._impl_.caption_style_presets_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TSA.ThemePresetsArchive)
 }
 
-inline void ThemePresetsArchive::SharedCtor() {
+inline void ThemePresetsArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.caption_style_presets_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 ThemePresetsArchive::~ThemePresetsArchive() {
   // @@protoc_insertion_point(destructor:TSA.ThemePresetsArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemePresetsArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.caption_style_presets_.~RepeatedPtrField();
 }
 
-void ThemePresetsArchive::ArenaDtor(void* object) {
-  ThemePresetsArchive* _this = reinterpret_cast< ThemePresetsArchive* >(object);
-  (void)_this;
-}
-void ThemePresetsArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemePresetsArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemePresetsArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ThemePresetsArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  caption_style_presets_.Clear();
+  _impl_.caption_style_presets_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSP.Reference caption_style_presets = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2530,47 +2695,48 @@ const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAME
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemePresetsArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemePresetsArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ThemePresetsArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSP.Reference caption_style_presets = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_caption_style_presets_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_caption_style_presets_size()); i < n; i++) {
+    const auto& repfield = this->_internal_caption_style_presets(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_caption_style_presets(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ThemePresetsArchive)
@@ -2581,47 +2747,37 @@ size_t ThemePresetsArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ThemePresetsArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference caption_style_presets = 1;
   total_size += 1UL * this->_internal_caption_style_presets_size();
-  for (const auto& msg : this->caption_style_presets_) {
+  for (const auto& msg : this->_impl_.caption_style_presets_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemePresetsArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemePresetsArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemePresetsArchive::GetClassData() const { return &_class_data_; }
 
-void ThemePresetsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemePresetsArchive *>(to)->MergeFrom(
-      static_cast<const ThemePresetsArchive &>(from));
-}
 
-
-void ThemePresetsArchive::MergeFrom(const ThemePresetsArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ThemePresetsArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemePresetsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemePresetsArchive*>(&to_msg);
+  auto& from = static_cast<const ThemePresetsArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ThemePresetsArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  caption_style_presets_.MergeFrom(from.caption_style_presets_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.caption_style_presets_.MergeFrom(from._impl_.caption_style_presets_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemePresetsArchive::CopyFrom(const ThemePresetsArchive& from) {
@@ -2632,18 +2788,19 @@ void ThemePresetsArchive::CopyFrom(const ThemePresetsArchive& from) {
 }
 
 bool ThemePresetsArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(caption_style_presets_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.caption_style_presets_))
+    return false;
   return true;
 }
 
 void ThemePresetsArchive::InternalSwap(ThemePresetsArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  caption_style_presets_.InternalSwap(&other->caption_style_presets_);
+  _impl_.caption_style_presets_.InternalSwap(&other->_impl_.caption_style_presets_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemePresetsArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[2]);
 }
@@ -2652,7 +2809,7 @@ void ThemePresetsArchive::InternalSwap(ThemePresetsArchive* other) {
 
 class ShortcutControllerArchive_ShortcutMapEntry::_Internal {
  public:
-  using HasBits = decltype(std::declval<ShortcutControllerArchive_ShortcutMapEntry>()._has_bits_);
+  using HasBits = decltype(std::declval<ShortcutControllerArchive_ShortcutMapEntry>()._impl_._has_bits_);
   static void set_has_shortcut(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2667,142 +2824,155 @@ class ShortcutControllerArchive_ShortcutMapEntry::_Internal {
 
 const ::TSP::Reference&
 ShortcutControllerArchive_ShortcutMapEntry::_Internal::style(const ShortcutControllerArchive_ShortcutMapEntry* msg) {
-  return *msg->style_;
+  return *msg->_impl_.style_;
 }
 void ShortcutControllerArchive_ShortcutMapEntry::clear_style() {
-  if (style_ != nullptr) style_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.style_ != nullptr) _impl_.style_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 ShortcutControllerArchive_ShortcutMapEntry::ShortcutControllerArchive_ShortcutMapEntry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ShortcutControllerArchive.ShortcutMapEntry)
 }
 ShortcutControllerArchive_ShortcutMapEntry::ShortcutControllerArchive_ShortcutMapEntry(const ShortcutControllerArchive_ShortcutMapEntry& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ShortcutControllerArchive_ShortcutMapEntry* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.shortcut_){}
+    , decltype(_impl_.style_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_shortcut()) {
-    shortcut_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_shortcut(), 
-      GetArenaForAllocation());
+    _this->_impl_.shortcut_.Set(from._internal_shortcut(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_style()) {
-    style_ = new ::TSP::Reference(*from.style_);
-  } else {
-    style_ = nullptr;
+    _this->_impl_.style_ = new ::TSP::Reference(*from._impl_.style_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.ShortcutControllerArchive.ShortcutMapEntry)
 }
 
-inline void ShortcutControllerArchive_ShortcutMapEntry::SharedCtor() {
-shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-style_ = nullptr;
+inline void ShortcutControllerArchive_ShortcutMapEntry::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.shortcut_){}
+    , decltype(_impl_.style_){nullptr}
+  };
+  _impl_.shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ShortcutControllerArchive_ShortcutMapEntry::~ShortcutControllerArchive_ShortcutMapEntry() {
   // @@protoc_insertion_point(destructor:TSA.ShortcutControllerArchive.ShortcutMapEntry)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ShortcutControllerArchive_ShortcutMapEntry::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  shortcut_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete style_;
+  _impl_.shortcut_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.style_;
 }
 
-void ShortcutControllerArchive_ShortcutMapEntry::ArenaDtor(void* object) {
-  ShortcutControllerArchive_ShortcutMapEntry* _this = reinterpret_cast< ShortcutControllerArchive_ShortcutMapEntry* >(object);
-  (void)_this;
-}
-void ShortcutControllerArchive_ShortcutMapEntry::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ShortcutControllerArchive_ShortcutMapEntry::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ShortcutControllerArchive_ShortcutMapEntry::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ShortcutControllerArchive.ShortcutMapEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      shortcut_.ClearNonDefaultToEmpty();
+      _impl_.shortcut_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(style_ != nullptr);
-      style_->Clear();
+      GOOGLE_DCHECK(_impl_.style_ != nullptr);
+      _impl_.style_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ShortcutControllerArchive_ShortcutMapEntry::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ShortcutControllerArchive_ShortcutMapEntry::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required string shortcut = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_shortcut();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.ShortcutControllerArchive.ShortcutMapEntry.shortcut");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.ShortcutControllerArchive.ShortcutMapEntry.shortcut");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference style = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_style(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShortcutControllerArchive_ShortcutMapEntry::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ShortcutControllerArchive_ShortcutMapEntry::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ShortcutControllerArchive.ShortcutMapEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required string shortcut = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2815,14 +2985,13 @@ failure:
 
   // required .TSP.Reference style = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::style(this), target, stream);
+      InternalWriteMessage(2, _Internal::style(this),
+        _Internal::style(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ShortcutControllerArchive.ShortcutMapEntry)
@@ -2844,7 +3013,7 @@ size_t ShortcutControllerArchive_ShortcutMapEntry::RequiredFieldsByteSizeFallbac
     // required .TSP.Reference style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *style_);
+        *_impl_.style_);
   }
 
   return total_size;
@@ -2853,7 +3022,7 @@ size_t ShortcutControllerArchive_ShortcutMapEntry::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ShortcutControllerArchive.ShortcutMapEntry)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required string shortcut = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -2862,53 +3031,44 @@ size_t ShortcutControllerArchive_ShortcutMapEntry::ByteSizeLong() const {
     // required .TSP.Reference style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *style_);
+        *_impl_.style_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ShortcutControllerArchive_ShortcutMapEntry::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ShortcutControllerArchive_ShortcutMapEntry::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ShortcutControllerArchive_ShortcutMapEntry::GetClassData() const { return &_class_data_; }
 
-void ShortcutControllerArchive_ShortcutMapEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ShortcutControllerArchive_ShortcutMapEntry *>(to)->MergeFrom(
-      static_cast<const ShortcutControllerArchive_ShortcutMapEntry &>(from));
-}
 
-
-void ShortcutControllerArchive_ShortcutMapEntry::MergeFrom(const ShortcutControllerArchive_ShortcutMapEntry& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutControllerArchive.ShortcutMapEntry)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ShortcutControllerArchive_ShortcutMapEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ShortcutControllerArchive_ShortcutMapEntry*>(&to_msg);
+  auto& from = static_cast<const ShortcutControllerArchive_ShortcutMapEntry&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutControllerArchive.ShortcutMapEntry)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_shortcut(from._internal_shortcut());
+      _this->_internal_set_shortcut(from._internal_shortcut());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_style()->::TSP::Reference::MergeFrom(from._internal_style());
+      _this->_internal_mutable_style()->::TSP::Reference::MergeFrom(
+          from._internal_style());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ShortcutControllerArchive_ShortcutMapEntry::CopyFrom(const ShortcutControllerArchive_ShortcutMapEntry& from) {
@@ -2919,27 +3079,28 @@ void ShortcutControllerArchive_ShortcutMapEntry::CopyFrom(const ShortcutControll
 }
 
 bool ShortcutControllerArchive_ShortcutMapEntry::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_style()) {
-    if (!style_->IsInitialized()) return false;
+    if (!_impl_.style_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ShortcutControllerArchive_ShortcutMapEntry::InternalSwap(ShortcutControllerArchive_ShortcutMapEntry* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &shortcut_, GetArenaForAllocation(),
-      &other->shortcut_, other->GetArenaForAllocation()
+      &_impl_.shortcut_, lhs_arena,
+      &other->_impl_.shortcut_, rhs_arena
   );
-  swap(style_, other->style_);
+  swap(_impl_.style_, other->_impl_.style_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ShortcutControllerArchive_ShortcutMapEntry::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[3]);
 }
@@ -2952,64 +3113,68 @@ class ShortcutControllerArchive::_Internal {
 
 ShortcutControllerArchive::ShortcutControllerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  entries_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ShortcutControllerArchive)
 }
 ShortcutControllerArchive::ShortcutControllerArchive(const ShortcutControllerArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      entries_(from.entries_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ShortcutControllerArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.entries_){from._impl_.entries_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TSA.ShortcutControllerArchive)
 }
 
-inline void ShortcutControllerArchive::SharedCtor() {
+inline void ShortcutControllerArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.entries_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 ShortcutControllerArchive::~ShortcutControllerArchive() {
   // @@protoc_insertion_point(destructor:TSA.ShortcutControllerArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ShortcutControllerArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.entries_.~RepeatedPtrField();
 }
 
-void ShortcutControllerArchive::ArenaDtor(void* object) {
-  ShortcutControllerArchive* _this = reinterpret_cast< ShortcutControllerArchive* >(object);
-  (void)_this;
-}
-void ShortcutControllerArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ShortcutControllerArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ShortcutControllerArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ShortcutControllerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  entries_.Clear();
+  _impl_.entries_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ShortcutControllerArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ShortcutControllerArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSA.ShortcutControllerArchive.ShortcutMapEntry entries = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3017,47 +3182,48 @@ const char* ShortcutControllerArchive::_InternalParse(const char* ptr, ::PROTOBU
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShortcutControllerArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ShortcutControllerArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ShortcutControllerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSA.ShortcutControllerArchive.ShortcutMapEntry entries = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_entries_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_entries_size()); i < n; i++) {
+    const auto& repfield = this->_internal_entries(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_entries(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ShortcutControllerArchive)
@@ -3068,47 +3234,37 @@ size_t ShortcutControllerArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ShortcutControllerArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSA.ShortcutControllerArchive.ShortcutMapEntry entries = 1;
   total_size += 1UL * this->_internal_entries_size();
-  for (const auto& msg : this->entries_) {
+  for (const auto& msg : this->_impl_.entries_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ShortcutControllerArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ShortcutControllerArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ShortcutControllerArchive::GetClassData() const { return &_class_data_; }
 
-void ShortcutControllerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ShortcutControllerArchive *>(to)->MergeFrom(
-      static_cast<const ShortcutControllerArchive &>(from));
-}
 
-
-void ShortcutControllerArchive::MergeFrom(const ShortcutControllerArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutControllerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ShortcutControllerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ShortcutControllerArchive*>(&to_msg);
+  auto& from = static_cast<const ShortcutControllerArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutControllerArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  entries_.MergeFrom(from.entries_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.entries_.MergeFrom(from._impl_.entries_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ShortcutControllerArchive::CopyFrom(const ShortcutControllerArchive& from) {
@@ -3119,18 +3275,19 @@ void ShortcutControllerArchive::CopyFrom(const ShortcutControllerArchive& from) 
 }
 
 bool ShortcutControllerArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(entries_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.entries_))
+    return false;
   return true;
 }
 
 void ShortcutControllerArchive::InternalSwap(ShortcutControllerArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  entries_.InternalSwap(&other->entries_);
+  _impl_.entries_.InternalSwap(&other->_impl_.entries_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ShortcutControllerArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[4]);
 }
@@ -3139,7 +3296,7 @@ void ShortcutControllerArchive::InternalSwap(ShortcutControllerArchive* other) {
 
 class PropagatePresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<PropagatePresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<PropagatePresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const PropagatePresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3158,183 +3315,186 @@ class PropagatePresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 PropagatePresetCommandArchive::_Internal::super(const PropagatePresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 PropagatePresetCommandArchive::_Internal::preset_change_command(const PropagatePresetCommandArchive* msg) {
-  return *msg->preset_change_command_;
+  return *msg->_impl_.preset_change_command_;
 }
 void PropagatePresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void PropagatePresetCommandArchive::clear_preset_change_command() {
-  if (preset_change_command_ != nullptr) preset_change_command_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.preset_change_command_ != nullptr) _impl_.preset_change_command_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 PropagatePresetCommandArchive::PropagatePresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.PropagatePresetCommandArchive)
 }
 PropagatePresetCommandArchive::PropagatePresetCommandArchive(const PropagatePresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  PropagatePresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_change_command_){nullptr}
+    , decltype(_impl_.always_preserve_appearance_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_preset_change_command()) {
-    preset_change_command_ = new ::TSP::Reference(*from.preset_change_command_);
-  } else {
-    preset_change_command_ = nullptr;
+    _this->_impl_.preset_change_command_ = new ::TSP::Reference(*from._impl_.preset_change_command_);
   }
-  always_preserve_appearance_ = from.always_preserve_appearance_;
+  _this->_impl_.always_preserve_appearance_ = from._impl_.always_preserve_appearance_;
   // @@protoc_insertion_point(copy_constructor:TSA.PropagatePresetCommandArchive)
 }
 
-inline void PropagatePresetCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&always_preserve_appearance_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(always_preserve_appearance_));
+inline void PropagatePresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_change_command_){nullptr}
+    , decltype(_impl_.always_preserve_appearance_){false}
+  };
 }
 
 PropagatePresetCommandArchive::~PropagatePresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.PropagatePresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void PropagatePresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete preset_change_command_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.preset_change_command_;
 }
 
-void PropagatePresetCommandArchive::ArenaDtor(void* object) {
-  PropagatePresetCommandArchive* _this = reinterpret_cast< PropagatePresetCommandArchive* >(object);
-  (void)_this;
-}
-void PropagatePresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void PropagatePresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void PropagatePresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.PropagatePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(preset_change_command_ != nullptr);
-      preset_change_command_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_change_command_ != nullptr);
+      _impl_.preset_change_command_->Clear();
     }
   }
-  always_preserve_appearance_ = false;
-  _has_bits_.Clear();
+  _impl_.always_preserve_appearance_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* PropagatePresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* PropagatePresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference preset_change_command = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset_change_command(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool always_preserve_appearance = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_always_preserve_appearance(&has_bits);
-          always_preserve_appearance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.always_preserve_appearance_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropagatePresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* PropagatePresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.PropagatePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference preset_change_command = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::preset_change_command(this), target, stream);
+      InternalWriteMessage(2, _Internal::preset_change_command(this),
+        _Internal::preset_change_command(this).GetCachedSize(), target, stream);
   }
 
   // required bool always_preserve_appearance = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_always_preserve_appearance(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_always_preserve_appearance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.PropagatePresetCommandArchive)
@@ -3349,14 +3509,14 @@ size_t PropagatePresetCommandArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_preset_change_command()) {
     // required .TSP.Reference preset_change_command = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_change_command_);
+        *_impl_.preset_change_command_);
   }
 
   if (_internal_has_always_preserve_appearance()) {
@@ -3370,16 +3530,16 @@ size_t PropagatePresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.PropagatePresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference preset_change_command = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_change_command_);
+        *_impl_.preset_change_command_);
 
     // required bool always_preserve_appearance = 3;
     total_size += 1 + 1;
@@ -3387,52 +3547,44 @@ size_t PropagatePresetCommandArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData PropagatePresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     PropagatePresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*PropagatePresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void PropagatePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<PropagatePresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const PropagatePresetCommandArchive &>(from));
-}
 
-
-void PropagatePresetCommandArchive::MergeFrom(const PropagatePresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.PropagatePresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void PropagatePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<PropagatePresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const PropagatePresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.PropagatePresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_preset_change_command()->::TSP::Reference::MergeFrom(from._internal_preset_change_command());
+      _this->_internal_mutable_preset_change_command()->::TSP::Reference::MergeFrom(
+          from._internal_preset_change_command());
     }
     if (cached_has_bits & 0x00000004u) {
-      always_preserve_appearance_ = from.always_preserve_appearance_;
+      _this->_impl_.always_preserve_appearance_ = from._impl_.always_preserve_appearance_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void PropagatePresetCommandArchive::CopyFrom(const PropagatePresetCommandArchive& from) {
@@ -3443,12 +3595,12 @@ void PropagatePresetCommandArchive::CopyFrom(const PropagatePresetCommandArchive
 }
 
 bool PropagatePresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_preset_change_command()) {
-    if (!preset_change_command_->IsInitialized()) return false;
+    if (!_impl_.preset_change_command_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3456,17 +3608,17 @@ bool PropagatePresetCommandArchive::IsInitialized() const {
 void PropagatePresetCommandArchive::InternalSwap(PropagatePresetCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PropagatePresetCommandArchive, always_preserve_appearance_)
-      + sizeof(PropagatePresetCommandArchive::always_preserve_appearance_)
-      - PROTOBUF_FIELD_OFFSET(PropagatePresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(PropagatePresetCommandArchive, _impl_.always_preserve_appearance_)
+      + sizeof(PropagatePresetCommandArchive::_impl_.always_preserve_appearance_)
+      - PROTOBUF_FIELD_OFFSET(PropagatePresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PropagatePresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[5]);
 }
@@ -3475,7 +3627,7 @@ void PropagatePresetCommandArchive::InternalSwap(PropagatePresetCommandArchive* 
 
 class ShortcutCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ShortcutCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ShortcutCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ShortcutCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -3498,238 +3650,256 @@ class ShortcutCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ShortcutCommandArchive::_Internal::super(const ShortcutCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ShortcutCommandArchive::_Internal::old_style(const ShortcutCommandArchive* msg) {
-  return *msg->old_style_;
+  return *msg->_impl_.old_style_;
 }
 const ::TSP::Reference&
 ShortcutCommandArchive::_Internal::new_style(const ShortcutCommandArchive* msg) {
-  return *msg->new_style_;
+  return *msg->_impl_.new_style_;
 }
 void ShortcutCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ShortcutCommandArchive::clear_old_style() {
-  if (old_style_ != nullptr) old_style_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.old_style_ != nullptr) _impl_.old_style_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void ShortcutCommandArchive::clear_new_style() {
-  if (new_style_ != nullptr) new_style_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.new_style_ != nullptr) _impl_.new_style_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 ShortcutCommandArchive::ShortcutCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ShortcutCommandArchive)
 }
 ShortcutCommandArchive::ShortcutCommandArchive(const ShortcutCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ShortcutCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_shortcut_){}
+    , decltype(_impl_.new_shortcut_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_style_){nullptr}
+    , decltype(_impl_.new_style_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  old_shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.old_shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.old_shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_old_shortcut()) {
-    old_shortcut_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_old_shortcut(), 
-      GetArenaForAllocation());
+    _this->_impl_.old_shortcut_.Set(from._internal_old_shortcut(), 
+      _this->GetArenaForAllocation());
   }
-  new_shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.new_shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.new_shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_new_shortcut()) {
-    new_shortcut_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_new_shortcut(), 
-      GetArenaForAllocation());
+    _this->_impl_.new_shortcut_.Set(from._internal_new_shortcut(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_old_style()) {
-    old_style_ = new ::TSP::Reference(*from.old_style_);
-  } else {
-    old_style_ = nullptr;
+    _this->_impl_.old_style_ = new ::TSP::Reference(*from._impl_.old_style_);
   }
   if (from._internal_has_new_style()) {
-    new_style_ = new ::TSP::Reference(*from.new_style_);
-  } else {
-    new_style_ = nullptr;
+    _this->_impl_.new_style_ = new ::TSP::Reference(*from._impl_.new_style_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.ShortcutCommandArchive)
 }
 
-inline void ShortcutCommandArchive::SharedCtor() {
-old_shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-new_shortcut_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&new_style_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(new_style_));
+inline void ShortcutCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_shortcut_){}
+    , decltype(_impl_.new_shortcut_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_style_){nullptr}
+    , decltype(_impl_.new_style_){nullptr}
+  };
+  _impl_.old_shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.old_shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.new_shortcut_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.new_shortcut_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ShortcutCommandArchive::~ShortcutCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.ShortcutCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ShortcutCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  old_shortcut_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  new_shortcut_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete old_style_;
-  if (this != internal_default_instance()) delete new_style_;
+  _impl_.old_shortcut_.Destroy();
+  _impl_.new_shortcut_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.old_style_;
+  if (this != internal_default_instance()) delete _impl_.new_style_;
 }
 
-void ShortcutCommandArchive::ArenaDtor(void* object) {
-  ShortcutCommandArchive* _this = reinterpret_cast< ShortcutCommandArchive* >(object);
-  (void)_this;
-}
-void ShortcutCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ShortcutCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ShortcutCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ShortcutCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      old_shortcut_.ClearNonDefaultToEmpty();
+      _impl_.old_shortcut_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      new_shortcut_.ClearNonDefaultToEmpty();
+      _impl_.new_shortcut_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_style_ != nullptr);
-      old_style_->Clear();
+      GOOGLE_DCHECK(_impl_.old_style_ != nullptr);
+      _impl_.old_style_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(new_style_ != nullptr);
-      new_style_->Clear();
+      GOOGLE_DCHECK(_impl_.new_style_ != nullptr);
+      _impl_.new_style_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ShortcutCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ShortcutCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference old_style = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_style(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference new_style = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_new_style(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string old_shortcut = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_old_shortcut();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.ShortcutCommandArchive.old_shortcut");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.ShortcutCommandArchive.old_shortcut");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional string new_shortcut = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_new_shortcut();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(ptr);
           #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.ShortcutCommandArchive.new_shortcut");
+          ::_pbi::VerifyUTF8(str, "TSA.ShortcutCommandArchive.new_shortcut");
           #endif  // !NDEBUG
-          CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ShortcutCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ShortcutCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ShortcutCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference old_style = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::old_style(this), target, stream);
+      InternalWriteMessage(2, _Internal::old_style(this),
+        _Internal::old_style(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference new_style = 3;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::new_style(this), target, stream);
+      InternalWriteMessage(3, _Internal::new_style(this),
+        _Internal::new_style(this).GetCachedSize(), target, stream);
   }
 
   // optional string old_shortcut = 4;
@@ -3753,7 +3923,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ShortcutCommandArchive)
@@ -3764,11 +3934,11 @@ size_t ShortcutCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ShortcutCommandArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     // optional string old_shortcut = 4;
     if (cached_has_bits & 0x00000001u) {
@@ -3788,71 +3958,64 @@ size_t ShortcutCommandArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *super_);
+          *_impl_.super_);
     }
 
     // optional .TSP.Reference old_style = 2;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_style_);
+          *_impl_.old_style_);
     }
 
     // optional .TSP.Reference new_style = 3;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *new_style_);
+          *_impl_.new_style_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ShortcutCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ShortcutCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ShortcutCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ShortcutCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ShortcutCommandArchive *>(to)->MergeFrom(
-      static_cast<const ShortcutCommandArchive &>(from));
-}
 
-
-void ShortcutCommandArchive::MergeFrom(const ShortcutCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ShortcutCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ShortcutCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ShortcutCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ShortcutCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_old_shortcut(from._internal_old_shortcut());
+      _this->_internal_set_old_shortcut(from._internal_old_shortcut());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_new_shortcut(from._internal_new_shortcut());
+      _this->_internal_set_new_shortcut(from._internal_new_shortcut());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_style()->::TSP::Reference::MergeFrom(from._internal_old_style());
+      _this->_internal_mutable_old_style()->::TSP::Reference::MergeFrom(
+          from._internal_old_style());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_new_style()->::TSP::Reference::MergeFrom(from._internal_new_style());
+      _this->_internal_mutable_new_style()->::TSP::Reference::MergeFrom(
+          from._internal_new_style());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ShortcutCommandArchive::CopyFrom(const ShortcutCommandArchive& from) {
@@ -3864,41 +4027,41 @@ void ShortcutCommandArchive::CopyFrom(const ShortcutCommandArchive& from) {
 
 bool ShortcutCommandArchive::IsInitialized() const {
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_old_style()) {
-    if (!old_style_->IsInitialized()) return false;
+    if (!_impl_.old_style_->IsInitialized()) return false;
   }
   if (_internal_has_new_style()) {
-    if (!new_style_->IsInitialized()) return false;
+    if (!_impl_.new_style_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ShortcutCommandArchive::InternalSwap(ShortcutCommandArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &old_shortcut_, GetArenaForAllocation(),
-      &other->old_shortcut_, other->GetArenaForAllocation()
+      &_impl_.old_shortcut_, lhs_arena,
+      &other->_impl_.old_shortcut_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &new_shortcut_, GetArenaForAllocation(),
-      &other->new_shortcut_, other->GetArenaForAllocation()
+      &_impl_.new_shortcut_, lhs_arena,
+      &other->_impl_.new_shortcut_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ShortcutCommandArchive, new_style_)
-      + sizeof(ShortcutCommandArchive::new_style_)
-      - PROTOBUF_FIELD_OFFSET(ShortcutCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ShortcutCommandArchive, _impl_.new_style_)
+      + sizeof(ShortcutCommandArchive::_impl_.new_style_)
+      - PROTOBUF_FIELD_OFFSET(ShortcutCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ShortcutCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[6]);
 }
@@ -3907,7 +4070,7 @@ void ShortcutCommandArchive::InternalSwap(ShortcutCommandArchive* other) {
 
 class AddCustomFormatCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<AddCustomFormatCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<AddCustomFormatCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const AddCustomFormatCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3927,200 +4090,200 @@ class AddCustomFormatCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 AddCustomFormatCommandArchive::_Internal::super(const AddCustomFormatCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSK::CustomFormatArchive&
 AddCustomFormatCommandArchive::_Internal::custom_format(const AddCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_;
+  return *msg->_impl_.custom_format_;
 }
 const ::TSP::UUID&
 AddCustomFormatCommandArchive::_Internal::custom_format_key(const AddCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_key_;
+  return *msg->_impl_.custom_format_key_;
 }
 void AddCustomFormatCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void AddCustomFormatCommandArchive::clear_custom_format() {
-  if (custom_format_ != nullptr) custom_format_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.custom_format_ != nullptr) _impl_.custom_format_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void AddCustomFormatCommandArchive::clear_custom_format_key() {
-  if (custom_format_key_ != nullptr) custom_format_key_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.custom_format_key_ != nullptr) _impl_.custom_format_key_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 AddCustomFormatCommandArchive::AddCustomFormatCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.AddCustomFormatCommandArchive)
 }
 AddCustomFormatCommandArchive::AddCustomFormatCommandArchive(const AddCustomFormatCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  AddCustomFormatCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_custom_format()) {
-    custom_format_ = new ::TSK::CustomFormatArchive(*from.custom_format_);
-  } else {
-    custom_format_ = nullptr;
+    _this->_impl_.custom_format_ = new ::TSK::CustomFormatArchive(*from._impl_.custom_format_);
   }
   if (from._internal_has_custom_format_key()) {
-    custom_format_key_ = new ::TSP::UUID(*from.custom_format_key_);
-  } else {
-    custom_format_key_ = nullptr;
+    _this->_impl_.custom_format_key_ = new ::TSP::UUID(*from._impl_.custom_format_key_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.AddCustomFormatCommandArchive)
 }
 
-inline void AddCustomFormatCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&custom_format_key_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(custom_format_key_));
+inline void AddCustomFormatCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}
+  };
 }
 
 AddCustomFormatCommandArchive::~AddCustomFormatCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.AddCustomFormatCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void AddCustomFormatCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete custom_format_;
-  if (this != internal_default_instance()) delete custom_format_key_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_key_;
 }
 
-void AddCustomFormatCommandArchive::ArenaDtor(void* object) {
-  AddCustomFormatCommandArchive* _this = reinterpret_cast< AddCustomFormatCommandArchive* >(object);
-  (void)_this;
-}
-void AddCustomFormatCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AddCustomFormatCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void AddCustomFormatCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.AddCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(custom_format_ != nullptr);
-      custom_format_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_ != nullptr);
+      _impl_.custom_format_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(custom_format_key_ != nullptr);
-      custom_format_key_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_key_ != nullptr);
+      _impl_.custom_format_key_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* AddCustomFormatCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* AddCustomFormatCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.CustomFormatArchive custom_format = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUID custom_format_key = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format_key(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AddCustomFormatCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* AddCustomFormatCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.AddCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.CustomFormatArchive custom_format = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::custom_format(this), target, stream);
+      InternalWriteMessage(2, _Internal::custom_format(this),
+        _Internal::custom_format(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUID custom_format_key = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::custom_format_key(this), target, stream);
+      InternalWriteMessage(3, _Internal::custom_format_key(this),
+        _Internal::custom_format_key(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.AddCustomFormatCommandArchive)
@@ -4135,70 +4298,63 @@ size_t AddCustomFormatCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000006u) {
     // optional .TSK.CustomFormatArchive custom_format = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_);
+          *_impl_.custom_format_);
     }
 
     // optional .TSP.UUID custom_format_key = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_key_);
+          *_impl_.custom_format_key_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData AddCustomFormatCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     AddCustomFormatCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*AddCustomFormatCommandArchive::GetClassData() const { return &_class_data_; }
 
-void AddCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<AddCustomFormatCommandArchive *>(to)->MergeFrom(
-      static_cast<const AddCustomFormatCommandArchive &>(from));
-}
 
-
-void AddCustomFormatCommandArchive::MergeFrom(const AddCustomFormatCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.AddCustomFormatCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void AddCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<AddCustomFormatCommandArchive*>(&to_msg);
+  auto& from = static_cast<const AddCustomFormatCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.AddCustomFormatCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(from._internal_custom_format());
+      _this->_internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(
+          from._internal_custom_format());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(from._internal_custom_format_key());
+      _this->_internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(
+          from._internal_custom_format_key());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void AddCustomFormatCommandArchive::CopyFrom(const AddCustomFormatCommandArchive& from) {
@@ -4209,15 +4365,15 @@ void AddCustomFormatCommandArchive::CopyFrom(const AddCustomFormatCommandArchive
 }
 
 bool AddCustomFormatCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format()) {
-    if (!custom_format_->IsInitialized()) return false;
+    if (!_impl_.custom_format_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format_key()) {
-    if (!custom_format_key_->IsInitialized()) return false;
+    if (!_impl_.custom_format_key_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4225,17 +4381,17 @@ bool AddCustomFormatCommandArchive::IsInitialized() const {
 void AddCustomFormatCommandArchive::InternalSwap(AddCustomFormatCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AddCustomFormatCommandArchive, custom_format_key_)
-      + sizeof(AddCustomFormatCommandArchive::custom_format_key_)
-      - PROTOBUF_FIELD_OFFSET(AddCustomFormatCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(AddCustomFormatCommandArchive, _impl_.custom_format_key_)
+      + sizeof(AddCustomFormatCommandArchive::_impl_.custom_format_key_)
+      - PROTOBUF_FIELD_OFFSET(AddCustomFormatCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AddCustomFormatCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[7]);
 }
@@ -4244,7 +4400,7 @@ void AddCustomFormatCommandArchive::InternalSwap(AddCustomFormatCommandArchive* 
 
 class UpdateCustomFormatCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<UpdateCustomFormatCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<UpdateCustomFormatCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const UpdateCustomFormatCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4265,233 +4421,233 @@ class UpdateCustomFormatCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 UpdateCustomFormatCommandArchive::_Internal::super(const UpdateCustomFormatCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSK::CustomFormatArchive&
 UpdateCustomFormatCommandArchive::_Internal::custom_format(const UpdateCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_;
+  return *msg->_impl_.custom_format_;
 }
 const ::TSK::CustomFormatArchive&
 UpdateCustomFormatCommandArchive::_Internal::old_custom_format(const UpdateCustomFormatCommandArchive* msg) {
-  return *msg->old_custom_format_;
+  return *msg->_impl_.old_custom_format_;
 }
 const ::TSP::UUID&
 UpdateCustomFormatCommandArchive::_Internal::custom_format_key(const UpdateCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_key_;
+  return *msg->_impl_.custom_format_key_;
 }
 void UpdateCustomFormatCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void UpdateCustomFormatCommandArchive::clear_custom_format() {
-  if (custom_format_ != nullptr) custom_format_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.custom_format_ != nullptr) _impl_.custom_format_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void UpdateCustomFormatCommandArchive::clear_old_custom_format() {
-  if (old_custom_format_ != nullptr) old_custom_format_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.old_custom_format_ != nullptr) _impl_.old_custom_format_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void UpdateCustomFormatCommandArchive::clear_custom_format_key() {
-  if (custom_format_key_ != nullptr) custom_format_key_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.custom_format_key_ != nullptr) _impl_.custom_format_key_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 UpdateCustomFormatCommandArchive::UpdateCustomFormatCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.UpdateCustomFormatCommandArchive)
 }
 UpdateCustomFormatCommandArchive::UpdateCustomFormatCommandArchive(const UpdateCustomFormatCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  UpdateCustomFormatCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.old_custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_custom_format()) {
-    custom_format_ = new ::TSK::CustomFormatArchive(*from.custom_format_);
-  } else {
-    custom_format_ = nullptr;
+    _this->_impl_.custom_format_ = new ::TSK::CustomFormatArchive(*from._impl_.custom_format_);
   }
   if (from._internal_has_old_custom_format()) {
-    old_custom_format_ = new ::TSK::CustomFormatArchive(*from.old_custom_format_);
-  } else {
-    old_custom_format_ = nullptr;
+    _this->_impl_.old_custom_format_ = new ::TSK::CustomFormatArchive(*from._impl_.old_custom_format_);
   }
   if (from._internal_has_custom_format_key()) {
-    custom_format_key_ = new ::TSP::UUID(*from.custom_format_key_);
-  } else {
-    custom_format_key_ = nullptr;
+    _this->_impl_.custom_format_key_ = new ::TSP::UUID(*from._impl_.custom_format_key_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.UpdateCustomFormatCommandArchive)
 }
 
-inline void UpdateCustomFormatCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&custom_format_key_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(custom_format_key_));
+inline void UpdateCustomFormatCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.old_custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}
+  };
 }
 
 UpdateCustomFormatCommandArchive::~UpdateCustomFormatCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.UpdateCustomFormatCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void UpdateCustomFormatCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete custom_format_;
-  if (this != internal_default_instance()) delete old_custom_format_;
-  if (this != internal_default_instance()) delete custom_format_key_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_;
+  if (this != internal_default_instance()) delete _impl_.old_custom_format_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_key_;
 }
 
-void UpdateCustomFormatCommandArchive::ArenaDtor(void* object) {
-  UpdateCustomFormatCommandArchive* _this = reinterpret_cast< UpdateCustomFormatCommandArchive* >(object);
-  (void)_this;
-}
-void UpdateCustomFormatCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void UpdateCustomFormatCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void UpdateCustomFormatCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.UpdateCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(custom_format_ != nullptr);
-      custom_format_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_ != nullptr);
+      _impl_.custom_format_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(old_custom_format_ != nullptr);
-      old_custom_format_->Clear();
+      GOOGLE_DCHECK(_impl_.old_custom_format_ != nullptr);
+      _impl_.old_custom_format_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(custom_format_key_ != nullptr);
-      custom_format_key_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_key_ != nullptr);
+      _impl_.custom_format_key_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* UpdateCustomFormatCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* UpdateCustomFormatCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.CustomFormatArchive custom_format = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.CustomFormatArchive old_custom_format = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_custom_format(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUID custom_format_key = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format_key(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* UpdateCustomFormatCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* UpdateCustomFormatCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.UpdateCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.CustomFormatArchive custom_format = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::custom_format(this), target, stream);
+      InternalWriteMessage(2, _Internal::custom_format(this),
+        _Internal::custom_format(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.CustomFormatArchive old_custom_format = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::old_custom_format(this), target, stream);
+      InternalWriteMessage(3, _Internal::old_custom_format(this),
+        _Internal::old_custom_format(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUID custom_format_key = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::custom_format_key(this), target, stream);
+      InternalWriteMessage(4, _Internal::custom_format_key(this),
+        _Internal::custom_format_key(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.UpdateCustomFormatCommandArchive)
@@ -4502,85 +4658,79 @@ size_t UpdateCustomFormatCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.UpdateCustomFormatCommandArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSK.CommandArchive super = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *super_);
+          *_impl_.super_);
     }
 
     // optional .TSK.CustomFormatArchive custom_format = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_);
+          *_impl_.custom_format_);
     }
 
     // optional .TSK.CustomFormatArchive old_custom_format = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_custom_format_);
+          *_impl_.old_custom_format_);
     }
 
     // optional .TSP.UUID custom_format_key = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_key_);
+          *_impl_.custom_format_key_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData UpdateCustomFormatCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     UpdateCustomFormatCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*UpdateCustomFormatCommandArchive::GetClassData() const { return &_class_data_; }
 
-void UpdateCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<UpdateCustomFormatCommandArchive *>(to)->MergeFrom(
-      static_cast<const UpdateCustomFormatCommandArchive &>(from));
-}
 
-
-void UpdateCustomFormatCommandArchive::MergeFrom(const UpdateCustomFormatCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.UpdateCustomFormatCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void UpdateCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<UpdateCustomFormatCommandArchive*>(&to_msg);
+  auto& from = static_cast<const UpdateCustomFormatCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.UpdateCustomFormatCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(from._internal_custom_format());
+      _this->_internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(
+          from._internal_custom_format());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_old_custom_format()->::TSK::CustomFormatArchive::MergeFrom(from._internal_old_custom_format());
+      _this->_internal_mutable_old_custom_format()->::TSK::CustomFormatArchive::MergeFrom(
+          from._internal_old_custom_format());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(from._internal_custom_format_key());
+      _this->_internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(
+          from._internal_custom_format_key());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void UpdateCustomFormatCommandArchive::CopyFrom(const UpdateCustomFormatCommandArchive& from) {
@@ -4592,16 +4742,16 @@ void UpdateCustomFormatCommandArchive::CopyFrom(const UpdateCustomFormatCommandA
 
 bool UpdateCustomFormatCommandArchive::IsInitialized() const {
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format()) {
-    if (!custom_format_->IsInitialized()) return false;
+    if (!_impl_.custom_format_->IsInitialized()) return false;
   }
   if (_internal_has_old_custom_format()) {
-    if (!old_custom_format_->IsInitialized()) return false;
+    if (!_impl_.old_custom_format_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format_key()) {
-    if (!custom_format_key_->IsInitialized()) return false;
+    if (!_impl_.custom_format_key_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4609,17 +4759,17 @@ bool UpdateCustomFormatCommandArchive::IsInitialized() const {
 void UpdateCustomFormatCommandArchive::InternalSwap(UpdateCustomFormatCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(UpdateCustomFormatCommandArchive, custom_format_key_)
-      + sizeof(UpdateCustomFormatCommandArchive::custom_format_key_)
-      - PROTOBUF_FIELD_OFFSET(UpdateCustomFormatCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(UpdateCustomFormatCommandArchive, _impl_.custom_format_key_)
+      + sizeof(UpdateCustomFormatCommandArchive::_impl_.custom_format_key_)
+      - PROTOBUF_FIELD_OFFSET(UpdateCustomFormatCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata UpdateCustomFormatCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[8]);
 }
@@ -4628,7 +4778,7 @@ void UpdateCustomFormatCommandArchive::InternalSwap(UpdateCustomFormatCommandArc
 
 class ReplaceCustomFormatCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ReplaceCustomFormatCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ReplaceCustomFormatCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ReplaceCustomFormatCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4649,233 +4799,233 @@ class ReplaceCustomFormatCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ReplaceCustomFormatCommandArchive::_Internal::super(const ReplaceCustomFormatCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSK::CustomFormatArchive&
 ReplaceCustomFormatCommandArchive::_Internal::custom_format(const ReplaceCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_;
+  return *msg->_impl_.custom_format_;
 }
 const ::TSP::UUID&
 ReplaceCustomFormatCommandArchive::_Internal::custom_format_key(const ReplaceCustomFormatCommandArchive* msg) {
-  return *msg->custom_format_key_;
+  return *msg->_impl_.custom_format_key_;
 }
 const ::TSK::FormatStructArchive&
 ReplaceCustomFormatCommandArchive::_Internal::replacement_format(const ReplaceCustomFormatCommandArchive* msg) {
-  return *msg->replacement_format_;
+  return *msg->_impl_.replacement_format_;
 }
 void ReplaceCustomFormatCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ReplaceCustomFormatCommandArchive::clear_custom_format() {
-  if (custom_format_ != nullptr) custom_format_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.custom_format_ != nullptr) _impl_.custom_format_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ReplaceCustomFormatCommandArchive::clear_custom_format_key() {
-  if (custom_format_key_ != nullptr) custom_format_key_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.custom_format_key_ != nullptr) _impl_.custom_format_key_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ReplaceCustomFormatCommandArchive::clear_replacement_format() {
-  if (replacement_format_ != nullptr) replacement_format_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.replacement_format_ != nullptr) _impl_.replacement_format_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 ReplaceCustomFormatCommandArchive::ReplaceCustomFormatCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ReplaceCustomFormatCommandArchive)
 }
 ReplaceCustomFormatCommandArchive::ReplaceCustomFormatCommandArchive(const ReplaceCustomFormatCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ReplaceCustomFormatCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}
+    , decltype(_impl_.replacement_format_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_custom_format()) {
-    custom_format_ = new ::TSK::CustomFormatArchive(*from.custom_format_);
-  } else {
-    custom_format_ = nullptr;
+    _this->_impl_.custom_format_ = new ::TSK::CustomFormatArchive(*from._impl_.custom_format_);
   }
   if (from._internal_has_custom_format_key()) {
-    custom_format_key_ = new ::TSP::UUID(*from.custom_format_key_);
-  } else {
-    custom_format_key_ = nullptr;
+    _this->_impl_.custom_format_key_ = new ::TSP::UUID(*from._impl_.custom_format_key_);
   }
   if (from._internal_has_replacement_format()) {
-    replacement_format_ = new ::TSK::FormatStructArchive(*from.replacement_format_);
-  } else {
-    replacement_format_ = nullptr;
+    _this->_impl_.replacement_format_ = new ::TSK::FormatStructArchive(*from._impl_.replacement_format_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.ReplaceCustomFormatCommandArchive)
 }
 
-inline void ReplaceCustomFormatCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&replacement_format_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(replacement_format_));
+inline void ReplaceCustomFormatCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.custom_format_){nullptr}
+    , decltype(_impl_.custom_format_key_){nullptr}
+    , decltype(_impl_.replacement_format_){nullptr}
+  };
 }
 
 ReplaceCustomFormatCommandArchive::~ReplaceCustomFormatCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.ReplaceCustomFormatCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ReplaceCustomFormatCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete custom_format_;
-  if (this != internal_default_instance()) delete custom_format_key_;
-  if (this != internal_default_instance()) delete replacement_format_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_;
+  if (this != internal_default_instance()) delete _impl_.custom_format_key_;
+  if (this != internal_default_instance()) delete _impl_.replacement_format_;
 }
 
-void ReplaceCustomFormatCommandArchive::ArenaDtor(void* object) {
-  ReplaceCustomFormatCommandArchive* _this = reinterpret_cast< ReplaceCustomFormatCommandArchive* >(object);
-  (void)_this;
-}
-void ReplaceCustomFormatCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ReplaceCustomFormatCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ReplaceCustomFormatCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ReplaceCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(custom_format_ != nullptr);
-      custom_format_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_ != nullptr);
+      _impl_.custom_format_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(custom_format_key_ != nullptr);
-      custom_format_key_->Clear();
+      GOOGLE_DCHECK(_impl_.custom_format_key_ != nullptr);
+      _impl_.custom_format_key_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(replacement_format_ != nullptr);
-      replacement_format_->Clear();
+      GOOGLE_DCHECK(_impl_.replacement_format_ != nullptr);
+      _impl_.replacement_format_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ReplaceCustomFormatCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ReplaceCustomFormatCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.CustomFormatArchive custom_format = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUID custom_format_key = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_custom_format_key(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.FormatStructArchive replacement_format = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_replacement_format(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ReplaceCustomFormatCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ReplaceCustomFormatCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ReplaceCustomFormatCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.CustomFormatArchive custom_format = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::custom_format(this), target, stream);
+      InternalWriteMessage(2, _Internal::custom_format(this),
+        _Internal::custom_format(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUID custom_format_key = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::custom_format_key(this), target, stream);
+      InternalWriteMessage(3, _Internal::custom_format_key(this),
+        _Internal::custom_format_key(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.FormatStructArchive replacement_format = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::replacement_format(this), target, stream);
+      InternalWriteMessage(4, _Internal::replacement_format(this),
+        _Internal::replacement_format(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ReplaceCustomFormatCommandArchive)
@@ -4886,85 +5036,79 @@ size_t ReplaceCustomFormatCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ReplaceCustomFormatCommandArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSK.CommandArchive super = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *super_);
+          *_impl_.super_);
     }
 
     // optional .TSK.CustomFormatArchive custom_format = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_);
+          *_impl_.custom_format_);
     }
 
     // optional .TSP.UUID custom_format_key = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *custom_format_key_);
+          *_impl_.custom_format_key_);
     }
 
     // optional .TSK.FormatStructArchive replacement_format = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *replacement_format_);
+          *_impl_.replacement_format_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ReplaceCustomFormatCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ReplaceCustomFormatCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ReplaceCustomFormatCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ReplaceCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ReplaceCustomFormatCommandArchive *>(to)->MergeFrom(
-      static_cast<const ReplaceCustomFormatCommandArchive &>(from));
-}
 
-
-void ReplaceCustomFormatCommandArchive::MergeFrom(const ReplaceCustomFormatCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ReplaceCustomFormatCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ReplaceCustomFormatCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ReplaceCustomFormatCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ReplaceCustomFormatCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ReplaceCustomFormatCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(from._internal_custom_format());
+      _this->_internal_mutable_custom_format()->::TSK::CustomFormatArchive::MergeFrom(
+          from._internal_custom_format());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(from._internal_custom_format_key());
+      _this->_internal_mutable_custom_format_key()->::TSP::UUID::MergeFrom(
+          from._internal_custom_format_key());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_replacement_format()->::TSK::FormatStructArchive::MergeFrom(from._internal_replacement_format());
+      _this->_internal_mutable_replacement_format()->::TSK::FormatStructArchive::MergeFrom(
+          from._internal_replacement_format());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ReplaceCustomFormatCommandArchive::CopyFrom(const ReplaceCustomFormatCommandArchive& from) {
@@ -4976,16 +5120,16 @@ void ReplaceCustomFormatCommandArchive::CopyFrom(const ReplaceCustomFormatComman
 
 bool ReplaceCustomFormatCommandArchive::IsInitialized() const {
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format()) {
-    if (!custom_format_->IsInitialized()) return false;
+    if (!_impl_.custom_format_->IsInitialized()) return false;
   }
   if (_internal_has_custom_format_key()) {
-    if (!custom_format_key_->IsInitialized()) return false;
+    if (!_impl_.custom_format_key_->IsInitialized()) return false;
   }
   if (_internal_has_replacement_format()) {
-    if (!replacement_format_->IsInitialized()) return false;
+    if (!_impl_.replacement_format_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4993,17 +5137,17 @@ bool ReplaceCustomFormatCommandArchive::IsInitialized() const {
 void ReplaceCustomFormatCommandArchive::InternalSwap(ReplaceCustomFormatCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ReplaceCustomFormatCommandArchive, replacement_format_)
-      + sizeof(ReplaceCustomFormatCommandArchive::replacement_format_)
-      - PROTOBUF_FIELD_OFFSET(ReplaceCustomFormatCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ReplaceCustomFormatCommandArchive, _impl_.replacement_format_)
+      + sizeof(ReplaceCustomFormatCommandArchive::_impl_.replacement_format_)
+      - PROTOBUF_FIELD_OFFSET(ReplaceCustomFormatCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ReplaceCustomFormatCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[9]);
 }
@@ -5012,7 +5156,7 @@ void ReplaceCustomFormatCommandArchive::InternalSwap(ReplaceCustomFormatCommandA
 
 class NeedsMediaCompatibilityUpgradeCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<NeedsMediaCompatibilityUpgradeCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<NeedsMediaCompatibilityUpgradeCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const NeedsMediaCompatibilityUpgradeCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5042,224 +5186,242 @@ class NeedsMediaCompatibilityUpgradeCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 NeedsMediaCompatibilityUpgradeCommandArchive::_Internal::super(const NeedsMediaCompatibilityUpgradeCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void NeedsMediaCompatibilityUpgradeCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 NeedsMediaCompatibilityUpgradeCommandArchive::NeedsMediaCompatibilityUpgradeCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
 }
 NeedsMediaCompatibilityUpgradeCommandArchive::NeedsMediaCompatibilityUpgradeCommandArchive(const NeedsMediaCompatibilityUpgradeCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  NeedsMediaCompatibilityUpgradeCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.needs_media_compatibility_upgrade_){}
+    , decltype(_impl_.old_needs_media_compatibility_upgrade_){}
+    , decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_){}
+    , decltype(_impl_.old_collaborative_media_compatibility_upgrade_did_fail_){}
+    , decltype(_impl_.can_use_hevc_){}
+    , decltype(_impl_.old_can_use_hevc_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
-  ::memcpy(&needs_media_compatibility_upgrade_, &from.needs_media_compatibility_upgrade_,
-    static_cast<size_t>(reinterpret_cast<char*>(&old_can_use_hevc_) -
-    reinterpret_cast<char*>(&needs_media_compatibility_upgrade_)) + sizeof(old_can_use_hevc_));
+  ::memcpy(&_impl_.needs_media_compatibility_upgrade_, &from._impl_.needs_media_compatibility_upgrade_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.old_can_use_hevc_) -
+    reinterpret_cast<char*>(&_impl_.needs_media_compatibility_upgrade_)) + sizeof(_impl_.old_can_use_hevc_));
   // @@protoc_insertion_point(copy_constructor:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
 }
 
-inline void NeedsMediaCompatibilityUpgradeCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&old_can_use_hevc_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(old_can_use_hevc_));
+inline void NeedsMediaCompatibilityUpgradeCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.needs_media_compatibility_upgrade_){false}
+    , decltype(_impl_.old_needs_media_compatibility_upgrade_){false}
+    , decltype(_impl_.collaborative_media_compatibility_upgrade_did_fail_){false}
+    , decltype(_impl_.old_collaborative_media_compatibility_upgrade_did_fail_){false}
+    , decltype(_impl_.can_use_hevc_){false}
+    , decltype(_impl_.old_can_use_hevc_){false}
+  };
 }
 
 NeedsMediaCompatibilityUpgradeCommandArchive::~NeedsMediaCompatibilityUpgradeCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void NeedsMediaCompatibilityUpgradeCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void NeedsMediaCompatibilityUpgradeCommandArchive::ArenaDtor(void* object) {
-  NeedsMediaCompatibilityUpgradeCommandArchive* _this = reinterpret_cast< NeedsMediaCompatibilityUpgradeCommandArchive* >(object);
-  (void)_this;
-}
-void NeedsMediaCompatibilityUpgradeCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void NeedsMediaCompatibilityUpgradeCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void NeedsMediaCompatibilityUpgradeCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
   if (cached_has_bits & 0x0000007eu) {
-    ::memset(&needs_media_compatibility_upgrade_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&old_can_use_hevc_) -
-        reinterpret_cast<char*>(&needs_media_compatibility_upgrade_)) + sizeof(old_can_use_hevc_));
+    ::memset(&_impl_.needs_media_compatibility_upgrade_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.old_can_use_hevc_) -
+        reinterpret_cast<char*>(&_impl_.needs_media_compatibility_upgrade_)) + sizeof(_impl_.old_can_use_hevc_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* NeedsMediaCompatibilityUpgradeCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* NeedsMediaCompatibilityUpgradeCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool needs_media_compatibility_upgrade = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_needs_media_compatibility_upgrade(&has_bits);
-          needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool old_needs_media_compatibility_upgrade = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_old_needs_media_compatibility_upgrade(&has_bits);
-          old_needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.old_needs_media_compatibility_upgrade_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool collaborative_media_compatibility_upgrade_did_fail = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_collaborative_media_compatibility_upgrade_did_fail(&has_bits);
-          collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool old_collaborative_media_compatibility_upgrade_did_fail = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_old_collaborative_media_compatibility_upgrade_did_fail(&has_bits);
-          old_collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.old_collaborative_media_compatibility_upgrade_did_fail_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool can_use_hevc = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_can_use_hevc(&has_bits);
-          can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool old_can_use_hevc = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
           _Internal::set_has_old_can_use_hevc(&has_bits);
-          old_can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.old_can_use_hevc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* NeedsMediaCompatibilityUpgradeCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* NeedsMediaCompatibilityUpgradeCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional bool needs_media_compatibility_upgrade = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_needs_media_compatibility_upgrade(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_needs_media_compatibility_upgrade(), target);
   }
 
   // optional bool old_needs_media_compatibility_upgrade = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_old_needs_media_compatibility_upgrade(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_old_needs_media_compatibility_upgrade(), target);
   }
 
   // optional bool collaborative_media_compatibility_upgrade_did_fail = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_collaborative_media_compatibility_upgrade_did_fail(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_collaborative_media_compatibility_upgrade_did_fail(), target);
   }
 
   // optional bool old_collaborative_media_compatibility_upgrade_did_fail = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_old_collaborative_media_compatibility_upgrade_did_fail(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(5, this->_internal_old_collaborative_media_compatibility_upgrade_did_fail(), target);
   }
 
   // optional bool can_use_hevc = 6;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_can_use_hevc(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_can_use_hevc(), target);
   }
 
   // optional bool old_can_use_hevc = 7;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_old_can_use_hevc(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(7, this->_internal_old_can_use_hevc(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
@@ -5274,13 +5436,13 @@ size_t NeedsMediaCompatibilityUpgradeCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000007eu) {
     // optional bool needs_media_compatibility_upgrade = 2;
     if (cached_has_bits & 0x00000002u) {
@@ -5313,60 +5475,51 @@ size_t NeedsMediaCompatibilityUpgradeCommandArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData NeedsMediaCompatibilityUpgradeCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     NeedsMediaCompatibilityUpgradeCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*NeedsMediaCompatibilityUpgradeCommandArchive::GetClassData() const { return &_class_data_; }
 
-void NeedsMediaCompatibilityUpgradeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<NeedsMediaCompatibilityUpgradeCommandArchive *>(to)->MergeFrom(
-      static_cast<const NeedsMediaCompatibilityUpgradeCommandArchive &>(from));
-}
 
-
-void NeedsMediaCompatibilityUpgradeCommandArchive::MergeFrom(const NeedsMediaCompatibilityUpgradeCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void NeedsMediaCompatibilityUpgradeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<NeedsMediaCompatibilityUpgradeCommandArchive*>(&to_msg);
+  auto& from = static_cast<const NeedsMediaCompatibilityUpgradeCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.NeedsMediaCompatibilityUpgradeCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      needs_media_compatibility_upgrade_ = from.needs_media_compatibility_upgrade_;
+      _this->_impl_.needs_media_compatibility_upgrade_ = from._impl_.needs_media_compatibility_upgrade_;
     }
     if (cached_has_bits & 0x00000004u) {
-      old_needs_media_compatibility_upgrade_ = from.old_needs_media_compatibility_upgrade_;
+      _this->_impl_.old_needs_media_compatibility_upgrade_ = from._impl_.old_needs_media_compatibility_upgrade_;
     }
     if (cached_has_bits & 0x00000008u) {
-      collaborative_media_compatibility_upgrade_did_fail_ = from.collaborative_media_compatibility_upgrade_did_fail_;
+      _this->_impl_.collaborative_media_compatibility_upgrade_did_fail_ = from._impl_.collaborative_media_compatibility_upgrade_did_fail_;
     }
     if (cached_has_bits & 0x00000010u) {
-      old_collaborative_media_compatibility_upgrade_did_fail_ = from.old_collaborative_media_compatibility_upgrade_did_fail_;
+      _this->_impl_.old_collaborative_media_compatibility_upgrade_did_fail_ = from._impl_.old_collaborative_media_compatibility_upgrade_did_fail_;
     }
     if (cached_has_bits & 0x00000020u) {
-      can_use_hevc_ = from.can_use_hevc_;
+      _this->_impl_.can_use_hevc_ = from._impl_.can_use_hevc_;
     }
     if (cached_has_bits & 0x00000040u) {
-      old_can_use_hevc_ = from.old_can_use_hevc_;
+      _this->_impl_.old_can_use_hevc_ = from._impl_.old_can_use_hevc_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void NeedsMediaCompatibilityUpgradeCommandArchive::CopyFrom(const NeedsMediaCompatibilityUpgradeCommandArchive& from) {
@@ -5377,9 +5530,9 @@ void NeedsMediaCompatibilityUpgradeCommandArchive::CopyFrom(const NeedsMediaComp
 }
 
 bool NeedsMediaCompatibilityUpgradeCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5387,17 +5540,17 @@ bool NeedsMediaCompatibilityUpgradeCommandArchive::IsInitialized() const {
 void NeedsMediaCompatibilityUpgradeCommandArchive::InternalSwap(NeedsMediaCompatibilityUpgradeCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(NeedsMediaCompatibilityUpgradeCommandArchive, old_can_use_hevc_)
-      + sizeof(NeedsMediaCompatibilityUpgradeCommandArchive::old_can_use_hevc_)
-      - PROTOBUF_FIELD_OFFSET(NeedsMediaCompatibilityUpgradeCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.old_can_use_hevc_)
+      + sizeof(NeedsMediaCompatibilityUpgradeCommandArchive::_impl_.old_can_use_hevc_)
+      - PROTOBUF_FIELD_OFFSET(NeedsMediaCompatibilityUpgradeCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata NeedsMediaCompatibilityUpgradeCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[10]);
 }
@@ -5406,7 +5559,7 @@ void NeedsMediaCompatibilityUpgradeCommandArchive::InternalSwap(NeedsMediaCompat
 
 class ChangeDocumentLocaleCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ChangeDocumentLocaleCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ChangeDocumentLocaleCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ChangeDocumentLocaleCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -5429,222 +5582,242 @@ class ChangeDocumentLocaleCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ChangeDocumentLocaleCommandArchive::_Internal::super(const ChangeDocumentLocaleCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSK::FormattingSymbolsArchive&
 ChangeDocumentLocaleCommandArchive::_Internal::old_formatting_symbols(const ChangeDocumentLocaleCommandArchive* msg) {
-  return *msg->old_formatting_symbols_;
+  return *msg->_impl_.old_formatting_symbols_;
 }
 const ::TSK::FormattingSymbolsArchive&
 ChangeDocumentLocaleCommandArchive::_Internal::new_formatting_symbols(const ChangeDocumentLocaleCommandArchive* msg) {
-  return *msg->new_formatting_symbols_;
+  return *msg->_impl_.new_formatting_symbols_;
 }
 void ChangeDocumentLocaleCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ChangeDocumentLocaleCommandArchive::clear_old_formatting_symbols() {
-  if (old_formatting_symbols_ != nullptr) old_formatting_symbols_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.old_formatting_symbols_ != nullptr) _impl_.old_formatting_symbols_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void ChangeDocumentLocaleCommandArchive::clear_new_formatting_symbols() {
-  if (new_formatting_symbols_ != nullptr) new_formatting_symbols_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.new_formatting_symbols_ != nullptr) _impl_.new_formatting_symbols_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 ChangeDocumentLocaleCommandArchive::ChangeDocumentLocaleCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.ChangeDocumentLocaleCommandArchive)
 }
 ChangeDocumentLocaleCommandArchive::ChangeDocumentLocaleCommandArchive(const ChangeDocumentLocaleCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ChangeDocumentLocaleCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_locale_id_){}
+    , decltype(_impl_.new_locale_id_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_formatting_symbols_){nullptr}
+    , decltype(_impl_.new_formatting_symbols_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  old_locale_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.old_locale_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.old_locale_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_old_locale_id()) {
-    old_locale_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_old_locale_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.old_locale_id_.Set(from._internal_old_locale_id(), 
+      _this->GetArenaForAllocation());
   }
-  new_locale_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.new_locale_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.new_locale_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_new_locale_id()) {
-    new_locale_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_new_locale_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.new_locale_id_.Set(from._internal_new_locale_id(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_old_formatting_symbols()) {
-    old_formatting_symbols_ = new ::TSK::FormattingSymbolsArchive(*from.old_formatting_symbols_);
-  } else {
-    old_formatting_symbols_ = nullptr;
+    _this->_impl_.old_formatting_symbols_ = new ::TSK::FormattingSymbolsArchive(*from._impl_.old_formatting_symbols_);
   }
   if (from._internal_has_new_formatting_symbols()) {
-    new_formatting_symbols_ = new ::TSK::FormattingSymbolsArchive(*from.new_formatting_symbols_);
-  } else {
-    new_formatting_symbols_ = nullptr;
+    _this->_impl_.new_formatting_symbols_ = new ::TSK::FormattingSymbolsArchive(*from._impl_.new_formatting_symbols_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.ChangeDocumentLocaleCommandArchive)
 }
 
-inline void ChangeDocumentLocaleCommandArchive::SharedCtor() {
-old_locale_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-new_locale_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&new_formatting_symbols_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(new_formatting_symbols_));
+inline void ChangeDocumentLocaleCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_locale_id_){}
+    , decltype(_impl_.new_locale_id_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_formatting_symbols_){nullptr}
+    , decltype(_impl_.new_formatting_symbols_){nullptr}
+  };
+  _impl_.old_locale_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.old_locale_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.new_locale_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.new_locale_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ChangeDocumentLocaleCommandArchive::~ChangeDocumentLocaleCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.ChangeDocumentLocaleCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ChangeDocumentLocaleCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  old_locale_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  new_locale_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete old_formatting_symbols_;
-  if (this != internal_default_instance()) delete new_formatting_symbols_;
+  _impl_.old_locale_id_.Destroy();
+  _impl_.new_locale_id_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.old_formatting_symbols_;
+  if (this != internal_default_instance()) delete _impl_.new_formatting_symbols_;
 }
 
-void ChangeDocumentLocaleCommandArchive::ArenaDtor(void* object) {
-  ChangeDocumentLocaleCommandArchive* _this = reinterpret_cast< ChangeDocumentLocaleCommandArchive* >(object);
-  (void)_this;
-}
-void ChangeDocumentLocaleCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ChangeDocumentLocaleCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ChangeDocumentLocaleCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.ChangeDocumentLocaleCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      old_locale_id_.ClearNonDefaultToEmpty();
+      _impl_.old_locale_id_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      new_locale_id_.ClearNonDefaultToEmpty();
+      _impl_.new_locale_id_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_formatting_symbols_ != nullptr);
-      old_formatting_symbols_->Clear();
+      GOOGLE_DCHECK(_impl_.old_formatting_symbols_ != nullptr);
+      _impl_.old_formatting_symbols_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(new_formatting_symbols_ != nullptr);
-      new_formatting_symbols_->Clear();
+      GOOGLE_DCHECK(_impl_.new_formatting_symbols_ != nullptr);
+      _impl_.new_formatting_symbols_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ChangeDocumentLocaleCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ChangeDocumentLocaleCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string old_locale_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_old_locale_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.ChangeDocumentLocaleCommandArchive.old_locale_id");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.ChangeDocumentLocaleCommandArchive.old_locale_id");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional string new_locale_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_new_locale_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.ChangeDocumentLocaleCommandArchive.new_locale_id");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.ChangeDocumentLocaleCommandArchive.new_locale_id");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.FormattingSymbolsArchive old_formatting_symbols = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_formatting_symbols(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSK.FormattingSymbolsArchive new_formatting_symbols = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_new_formatting_symbols(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ChangeDocumentLocaleCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ChangeDocumentLocaleCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.ChangeDocumentLocaleCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional string old_locale_id = 2;
@@ -5669,22 +5842,20 @@ failure:
 
   // optional .TSK.FormattingSymbolsArchive old_formatting_symbols = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::old_formatting_symbols(this), target, stream);
+      InternalWriteMessage(4, _Internal::old_formatting_symbols(this),
+        _Internal::old_formatting_symbols(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSK.FormattingSymbolsArchive new_formatting_symbols = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::new_formatting_symbols(this), target, stream);
+      InternalWriteMessage(5, _Internal::new_formatting_symbols(this),
+        _Internal::new_formatting_symbols(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.ChangeDocumentLocaleCommandArchive)
@@ -5695,11 +5866,11 @@ size_t ChangeDocumentLocaleCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.ChangeDocumentLocaleCommandArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     // optional string old_locale_id = 2;
     if (cached_has_bits & 0x00000001u) {
@@ -5719,71 +5890,64 @@ size_t ChangeDocumentLocaleCommandArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *super_);
+          *_impl_.super_);
     }
 
     // optional .TSK.FormattingSymbolsArchive old_formatting_symbols = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_formatting_symbols_);
+          *_impl_.old_formatting_symbols_);
     }
 
     // optional .TSK.FormattingSymbolsArchive new_formatting_symbols = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *new_formatting_symbols_);
+          *_impl_.new_formatting_symbols_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ChangeDocumentLocaleCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ChangeDocumentLocaleCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ChangeDocumentLocaleCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ChangeDocumentLocaleCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ChangeDocumentLocaleCommandArchive *>(to)->MergeFrom(
-      static_cast<const ChangeDocumentLocaleCommandArchive &>(from));
-}
 
-
-void ChangeDocumentLocaleCommandArchive::MergeFrom(const ChangeDocumentLocaleCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.ChangeDocumentLocaleCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ChangeDocumentLocaleCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ChangeDocumentLocaleCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ChangeDocumentLocaleCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.ChangeDocumentLocaleCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_old_locale_id(from._internal_old_locale_id());
+      _this->_internal_set_old_locale_id(from._internal_old_locale_id());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_new_locale_id(from._internal_new_locale_id());
+      _this->_internal_set_new_locale_id(from._internal_new_locale_id());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_formatting_symbols()->::TSK::FormattingSymbolsArchive::MergeFrom(from._internal_old_formatting_symbols());
+      _this->_internal_mutable_old_formatting_symbols()->::TSK::FormattingSymbolsArchive::MergeFrom(
+          from._internal_old_formatting_symbols());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_new_formatting_symbols()->::TSK::FormattingSymbolsArchive::MergeFrom(from._internal_new_formatting_symbols());
+      _this->_internal_mutable_new_formatting_symbols()->::TSK::FormattingSymbolsArchive::MergeFrom(
+          from._internal_new_formatting_symbols());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ChangeDocumentLocaleCommandArchive::CopyFrom(const ChangeDocumentLocaleCommandArchive& from) {
@@ -5795,41 +5959,41 @@ void ChangeDocumentLocaleCommandArchive::CopyFrom(const ChangeDocumentLocaleComm
 
 bool ChangeDocumentLocaleCommandArchive::IsInitialized() const {
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_old_formatting_symbols()) {
-    if (!old_formatting_symbols_->IsInitialized()) return false;
+    if (!_impl_.old_formatting_symbols_->IsInitialized()) return false;
   }
   if (_internal_has_new_formatting_symbols()) {
-    if (!new_formatting_symbols_->IsInitialized()) return false;
+    if (!_impl_.new_formatting_symbols_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ChangeDocumentLocaleCommandArchive::InternalSwap(ChangeDocumentLocaleCommandArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &old_locale_id_, GetArenaForAllocation(),
-      &other->old_locale_id_, other->GetArenaForAllocation()
+      &_impl_.old_locale_id_, lhs_arena,
+      &other->_impl_.old_locale_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &new_locale_id_, GetArenaForAllocation(),
-      &other->new_locale_id_, other->GetArenaForAllocation()
+      &_impl_.new_locale_id_, lhs_arena,
+      &other->_impl_.new_locale_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ChangeDocumentLocaleCommandArchive, new_formatting_symbols_)
-      + sizeof(ChangeDocumentLocaleCommandArchive::new_formatting_symbols_)
-      - PROTOBUF_FIELD_OFFSET(ChangeDocumentLocaleCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ChangeDocumentLocaleCommandArchive, _impl_.new_formatting_symbols_)
+      + sizeof(ChangeDocumentLocaleCommandArchive::_impl_.new_formatting_symbols_)
+      - PROTOBUF_FIELD_OFFSET(ChangeDocumentLocaleCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ChangeDocumentLocaleCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[11]);
 }
@@ -5838,7 +6002,7 @@ void ChangeDocumentLocaleCommandArchive::InternalSwap(ChangeDocumentLocaleComman
 
 class InducedVerifyObjectsWithServerCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<InducedVerifyObjectsWithServerCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<InducedVerifyObjectsWithServerCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const InducedVerifyObjectsWithServerCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5862,111 +6026,122 @@ class InducedVerifyObjectsWithServerCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 InducedVerifyObjectsWithServerCommandArchive::_Internal::super(const InducedVerifyObjectsWithServerCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void InducedVerifyObjectsWithServerCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void InducedVerifyObjectsWithServerCommandArchive::clear_object_id_list() {
-  object_id_list_.Clear();
+  _impl_.object_id_list_.Clear();
 }
 InducedVerifyObjectsWithServerCommandArchive::InducedVerifyObjectsWithServerCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  object_id_list_(arena),
-  server_object_s_o_s_string_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.InducedVerifyObjectsWithServerCommandArchive)
 }
 InducedVerifyObjectsWithServerCommandArchive::InducedVerifyObjectsWithServerCommandArchive(const InducedVerifyObjectsWithServerCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      object_id_list_(from.object_id_list_),
-      server_object_s_o_s_string_list_(from.server_object_s_o_s_string_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InducedVerifyObjectsWithServerCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.object_id_list_){from._impl_.object_id_list_}
+    , decltype(_impl_.server_object_s_o_s_string_list_){from._impl_.server_object_s_o_s_string_list_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.remote_data_sync_key_){}
+    , decltype(_impl_.object_id_list_undefined_){}
+    , decltype(_impl_.server_object_s_o_s_string_list_undefined_){}
+    , decltype(_impl_.pending_recalc_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
-  ::memcpy(&remote_data_sync_key_, &from.remote_data_sync_key_,
-    static_cast<size_t>(reinterpret_cast<char*>(&pending_recalc_) -
-    reinterpret_cast<char*>(&remote_data_sync_key_)) + sizeof(pending_recalc_));
+  ::memcpy(&_impl_.remote_data_sync_key_, &from._impl_.remote_data_sync_key_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.pending_recalc_) -
+    reinterpret_cast<char*>(&_impl_.remote_data_sync_key_)) + sizeof(_impl_.pending_recalc_));
   // @@protoc_insertion_point(copy_constructor:TSA.InducedVerifyObjectsWithServerCommandArchive)
 }
 
-inline void InducedVerifyObjectsWithServerCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&pending_recalc_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(pending_recalc_));
+inline void InducedVerifyObjectsWithServerCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.object_id_list_){arena}
+    , decltype(_impl_.server_object_s_o_s_string_list_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.remote_data_sync_key_){0}
+    , decltype(_impl_.object_id_list_undefined_){false}
+    , decltype(_impl_.server_object_s_o_s_string_list_undefined_){false}
+    , decltype(_impl_.pending_recalc_){false}
+  };
 }
 
 InducedVerifyObjectsWithServerCommandArchive::~InducedVerifyObjectsWithServerCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.InducedVerifyObjectsWithServerCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void InducedVerifyObjectsWithServerCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.object_id_list_.~RepeatedPtrField();
+  _impl_.server_object_s_o_s_string_list_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void InducedVerifyObjectsWithServerCommandArchive::ArenaDtor(void* object) {
-  InducedVerifyObjectsWithServerCommandArchive* _this = reinterpret_cast< InducedVerifyObjectsWithServerCommandArchive* >(object);
-  (void)_this;
-}
-void InducedVerifyObjectsWithServerCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InducedVerifyObjectsWithServerCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void InducedVerifyObjectsWithServerCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.InducedVerifyObjectsWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  object_id_list_.Clear();
-  server_object_s_o_s_string_list_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.object_id_list_.Clear();
+  _impl_.server_object_s_o_s_string_list_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
   if (cached_has_bits & 0x0000001eu) {
-    ::memset(&remote_data_sync_key_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&pending_recalc_) -
-        reinterpret_cast<char*>(&remote_data_sync_key_)) + sizeof(pending_recalc_));
+    ::memset(&_impl_.remote_data_sync_key_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.pending_recalc_) -
+        reinterpret_cast<char*>(&_impl_.remote_data_sync_key_)) + sizeof(_impl_.pending_recalc_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InducedVerifyObjectsWithServerCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InducedVerifyObjectsWithServerCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUID object_id_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -5974,107 +6149,112 @@ const char* InducedVerifyObjectsWithServerCommandArchive::_InternalParse(const c
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool object_id_list_undefined = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_object_id_list_undefined(&has_bits);
-          object_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.object_id_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated string server_object_s_o_s_string_list = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
             auto str = _internal_add_server_object_s_o_s_string_list();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            #ifndef NDEBUG
-            ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.InducedVerifyObjectsWithServerCommandArchive.server_object_s_o_s_string_list");
-            #endif  // !NDEBUG
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            #ifndef NDEBUG
+            ::_pbi::VerifyUTF8(str, "TSA.InducedVerifyObjectsWithServerCommandArchive.server_object_s_o_s_string_list");
+            #endif  // !NDEBUG
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool server_object_s_o_s_string_list_undefined = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_server_object_s_o_s_string_list_undefined(&has_bits);
-          server_object_s_o_s_string_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.server_object_s_o_s_string_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool pending_recalc = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_pending_recalc(&has_bits);
-          pending_recalc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.pending_recalc_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double remote_data_sync_key = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 57)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 57)) {
           _Internal::set_has_remote_data_sync_key(&has_bits);
-          remote_data_sync_key_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.remote_data_sync_key_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InducedVerifyObjectsWithServerCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InducedVerifyObjectsWithServerCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.InducedVerifyObjectsWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.UUID object_id_list = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_object_id_list_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_object_id_list_size()); i < n; i++) {
+    const auto& repfield = this->_internal_object_id_list(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_object_id_list(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool object_id_list_undefined = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_object_id_list_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_object_id_list_undefined(), target);
   }
 
   // repeated string server_object_s_o_s_string_list = 4;
@@ -6090,23 +6270,23 @@ failure:
   // optional bool server_object_s_o_s_string_list_undefined = 5;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_server_object_s_o_s_string_list_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(5, this->_internal_server_object_s_o_s_string_list_undefined(), target);
   }
 
   // required bool pending_recalc = 6;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_pending_recalc(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_pending_recalc(), target);
   }
 
   // required double remote_data_sync_key = 7;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_remote_data_sync_key(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(7, this->_internal_remote_data_sync_key(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.InducedVerifyObjectsWithServerCommandArchive)
@@ -6121,7 +6301,7 @@ size_t InducedVerifyObjectsWithServerCommandArchive::RequiredFieldsByteSizeFallb
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_remote_data_sync_key()) {
@@ -6140,11 +6320,11 @@ size_t InducedVerifyObjectsWithServerCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.InducedVerifyObjectsWithServerCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000013) ^ 0x00000013) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000013) ^ 0x00000013) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required double remote_data_sync_key = 7;
     total_size += 1 + 8;
@@ -6155,26 +6335,26 @@ size_t InducedVerifyObjectsWithServerCommandArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.UUID object_id_list = 2;
   total_size += 1UL * this->_internal_object_id_list_size();
-  for (const auto& msg : this->object_id_list_) {
+  for (const auto& msg : this->_impl_.object_id_list_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated string server_object_s_o_s_string_list = 4;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(server_object_s_o_s_string_list_.size());
-  for (int i = 0, n = server_object_s_o_s_string_list_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.server_object_s_o_s_string_list_.size());
+  for (int i = 0, n = _impl_.server_object_s_o_s_string_list_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      server_object_s_o_s_string_list_.Get(i));
+      _impl_.server_object_s_o_s_string_list_.Get(i));
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000cu) {
     // optional bool object_id_list_undefined = 3;
     if (cached_has_bits & 0x00000004u) {
@@ -6187,56 +6367,47 @@ size_t InducedVerifyObjectsWithServerCommandArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InducedVerifyObjectsWithServerCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     InducedVerifyObjectsWithServerCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InducedVerifyObjectsWithServerCommandArchive::GetClassData() const { return &_class_data_; }
 
-void InducedVerifyObjectsWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<InducedVerifyObjectsWithServerCommandArchive *>(to)->MergeFrom(
-      static_cast<const InducedVerifyObjectsWithServerCommandArchive &>(from));
-}
 
-
-void InducedVerifyObjectsWithServerCommandArchive::MergeFrom(const InducedVerifyObjectsWithServerCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.InducedVerifyObjectsWithServerCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void InducedVerifyObjectsWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InducedVerifyObjectsWithServerCommandArchive*>(&to_msg);
+  auto& from = static_cast<const InducedVerifyObjectsWithServerCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.InducedVerifyObjectsWithServerCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  object_id_list_.MergeFrom(from.object_id_list_);
-  server_object_s_o_s_string_list_.MergeFrom(from.server_object_s_o_s_string_list_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.object_id_list_.MergeFrom(from._impl_.object_id_list_);
+  _this->_impl_.server_object_s_o_s_string_list_.MergeFrom(from._impl_.server_object_s_o_s_string_list_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      remote_data_sync_key_ = from.remote_data_sync_key_;
+      _this->_impl_.remote_data_sync_key_ = from._impl_.remote_data_sync_key_;
     }
     if (cached_has_bits & 0x00000004u) {
-      object_id_list_undefined_ = from.object_id_list_undefined_;
+      _this->_impl_.object_id_list_undefined_ = from._impl_.object_id_list_undefined_;
     }
     if (cached_has_bits & 0x00000008u) {
-      server_object_s_o_s_string_list_undefined_ = from.server_object_s_o_s_string_list_undefined_;
+      _this->_impl_.server_object_s_o_s_string_list_undefined_ = from._impl_.server_object_s_o_s_string_list_undefined_;
     }
     if (cached_has_bits & 0x00000010u) {
-      pending_recalc_ = from.pending_recalc_;
+      _this->_impl_.pending_recalc_ = from._impl_.pending_recalc_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InducedVerifyObjectsWithServerCommandArchive::CopyFrom(const InducedVerifyObjectsWithServerCommandArchive& from) {
@@ -6247,10 +6418,11 @@ void InducedVerifyObjectsWithServerCommandArchive::CopyFrom(const InducedVerifyO
 }
 
 bool InducedVerifyObjectsWithServerCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(object_id_list_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.object_id_list_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6258,19 +6430,19 @@ bool InducedVerifyObjectsWithServerCommandArchive::IsInitialized() const {
 void InducedVerifyObjectsWithServerCommandArchive::InternalSwap(InducedVerifyObjectsWithServerCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  object_id_list_.InternalSwap(&other->object_id_list_);
-  server_object_s_o_s_string_list_.InternalSwap(&other->server_object_s_o_s_string_list_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.object_id_list_.InternalSwap(&other->_impl_.object_id_list_);
+  _impl_.server_object_s_o_s_string_list_.InternalSwap(&other->_impl_.server_object_s_o_s_string_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InducedVerifyObjectsWithServerCommandArchive, pending_recalc_)
-      + sizeof(InducedVerifyObjectsWithServerCommandArchive::pending_recalc_)
-      - PROTOBUF_FIELD_OFFSET(InducedVerifyObjectsWithServerCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(InducedVerifyObjectsWithServerCommandArchive, _impl_.pending_recalc_)
+      + sizeof(InducedVerifyObjectsWithServerCommandArchive::_impl_.pending_recalc_)
+      - PROTOBUF_FIELD_OFFSET(InducedVerifyObjectsWithServerCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InducedVerifyObjectsWithServerCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[12]);
 }
@@ -6279,7 +6451,7 @@ void InducedVerifyObjectsWithServerCommandArchive::InternalSwap(InducedVerifyObj
 
 class InducedVerifyTransformHistoryWithServerCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<InducedVerifyTransformHistoryWithServerCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<InducedVerifyTransformHistoryWithServerCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const InducedVerifyTransformHistoryWithServerCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6294,102 +6466,106 @@ class InducedVerifyTransformHistoryWithServerCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 InducedVerifyTransformHistoryWithServerCommandArchive::_Internal::super(const InducedVerifyTransformHistoryWithServerCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void InducedVerifyTransformHistoryWithServerCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void InducedVerifyTransformHistoryWithServerCommandArchive::clear_server_operation_storage_entries() {
-  server_operation_storage_entries_.Clear();
+  _impl_.server_operation_storage_entries_.Clear();
 }
 InducedVerifyTransformHistoryWithServerCommandArchive::InducedVerifyTransformHistoryWithServerCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  server_operation_storage_entries_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
 }
 InducedVerifyTransformHistoryWithServerCommandArchive::InducedVerifyTransformHistoryWithServerCommandArchive(const InducedVerifyTransformHistoryWithServerCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      server_operation_storage_entries_(from.server_operation_storage_entries_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  InducedVerifyTransformHistoryWithServerCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.server_operation_storage_entries_){from._impl_.server_operation_storage_entries_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.server_operation_storage_entries_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
-  server_operation_storage_entries_undefined_ = from.server_operation_storage_entries_undefined_;
+  _this->_impl_.server_operation_storage_entries_undefined_ = from._impl_.server_operation_storage_entries_undefined_;
   // @@protoc_insertion_point(copy_constructor:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
 }
 
-inline void InducedVerifyTransformHistoryWithServerCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&server_operation_storage_entries_undefined_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(server_operation_storage_entries_undefined_));
+inline void InducedVerifyTransformHistoryWithServerCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.server_operation_storage_entries_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.server_operation_storage_entries_undefined_){false}
+  };
 }
 
 InducedVerifyTransformHistoryWithServerCommandArchive::~InducedVerifyTransformHistoryWithServerCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void InducedVerifyTransformHistoryWithServerCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.server_operation_storage_entries_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void InducedVerifyTransformHistoryWithServerCommandArchive::ArenaDtor(void* object) {
-  InducedVerifyTransformHistoryWithServerCommandArchive* _this = reinterpret_cast< InducedVerifyTransformHistoryWithServerCommandArchive* >(object);
-  (void)_this;
-}
-void InducedVerifyTransformHistoryWithServerCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void InducedVerifyTransformHistoryWithServerCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void InducedVerifyTransformHistoryWithServerCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  server_operation_storage_entries_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.server_operation_storage_entries_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  server_operation_storage_entries_undefined_ = false;
-  _has_bits_.Clear();
+  _impl_.server_operation_storage_entries_undefined_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* InducedVerifyTransformHistoryWithServerCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* InducedVerifyTransformHistoryWithServerCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSK.OperationStorageEntry server_operation_storage_entries = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -6397,71 +6573,72 @@ const char* InducedVerifyTransformHistoryWithServerCommandArchive::_InternalPars
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool server_operation_storage_entries_undefined = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_server_operation_storage_entries_undefined(&has_bits);
-          server_operation_storage_entries_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.server_operation_storage_entries_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* InducedVerifyTransformHistoryWithServerCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* InducedVerifyTransformHistoryWithServerCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSK.OperationStorageEntry server_operation_storage_entries = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_server_operation_storage_entries_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_server_operation_storage_entries_size()); i < n; i++) {
+    const auto& repfield = this->_internal_server_operation_storage_entries(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_server_operation_storage_entries(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool server_operation_storage_entries_undefined = 3;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_server_operation_storage_entries_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_server_operation_storage_entries_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
@@ -6476,65 +6653,56 @@ size_t InducedVerifyTransformHistoryWithServerCommandArchive::ByteSizeLong() con
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSK.OperationStorageEntry server_operation_storage_entries = 2;
   total_size += 1UL * this->_internal_server_operation_storage_entries_size();
-  for (const auto& msg : this->server_operation_storage_entries_) {
+  for (const auto& msg : this->_impl_.server_operation_storage_entries_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // optional bool server_operation_storage_entries_undefined = 3;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData InducedVerifyTransformHistoryWithServerCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     InducedVerifyTransformHistoryWithServerCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*InducedVerifyTransformHistoryWithServerCommandArchive::GetClassData() const { return &_class_data_; }
 
-void InducedVerifyTransformHistoryWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<InducedVerifyTransformHistoryWithServerCommandArchive *>(to)->MergeFrom(
-      static_cast<const InducedVerifyTransformHistoryWithServerCommandArchive &>(from));
-}
 
-
-void InducedVerifyTransformHistoryWithServerCommandArchive::MergeFrom(const InducedVerifyTransformHistoryWithServerCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void InducedVerifyTransformHistoryWithServerCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<InducedVerifyTransformHistoryWithServerCommandArchive*>(&to_msg);
+  auto& from = static_cast<const InducedVerifyTransformHistoryWithServerCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.InducedVerifyTransformHistoryWithServerCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  server_operation_storage_entries_.MergeFrom(from.server_operation_storage_entries_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.server_operation_storage_entries_.MergeFrom(from._impl_.server_operation_storage_entries_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      server_operation_storage_entries_undefined_ = from.server_operation_storage_entries_undefined_;
+      _this->_impl_.server_operation_storage_entries_undefined_ = from._impl_.server_operation_storage_entries_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void InducedVerifyTransformHistoryWithServerCommandArchive::CopyFrom(const InducedVerifyTransformHistoryWithServerCommandArchive& from) {
@@ -6545,9 +6713,9 @@ void InducedVerifyTransformHistoryWithServerCommandArchive::CopyFrom(const Induc
 }
 
 bool InducedVerifyTransformHistoryWithServerCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6555,18 +6723,18 @@ bool InducedVerifyTransformHistoryWithServerCommandArchive::IsInitialized() cons
 void InducedVerifyTransformHistoryWithServerCommandArchive::InternalSwap(InducedVerifyTransformHistoryWithServerCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  server_operation_storage_entries_.InternalSwap(&other->server_operation_storage_entries_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.server_operation_storage_entries_.InternalSwap(&other->_impl_.server_operation_storage_entries_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(InducedVerifyTransformHistoryWithServerCommandArchive, server_operation_storage_entries_undefined_)
-      + sizeof(InducedVerifyTransformHistoryWithServerCommandArchive::server_operation_storage_entries_undefined_)
-      - PROTOBUF_FIELD_OFFSET(InducedVerifyTransformHistoryWithServerCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(InducedVerifyTransformHistoryWithServerCommandArchive, _impl_.server_operation_storage_entries_undefined_)
+      + sizeof(InducedVerifyTransformHistoryWithServerCommandArchive::_impl_.server_operation_storage_entries_undefined_)
+      - PROTOBUF_FIELD_OFFSET(InducedVerifyTransformHistoryWithServerCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata InducedVerifyTransformHistoryWithServerCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[13]);
 }
@@ -6575,7 +6743,7 @@ void InducedVerifyTransformHistoryWithServerCommandArchive::InternalSwap(Induced
 
 class StyleUpdatePropertyMapCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StyleUpdatePropertyMapCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StyleUpdatePropertyMapCommandArchive>()._impl_._has_bits_);
   static const ::TSWP::StyleUpdatePropertyMapCommandArchive& super(const StyleUpdatePropertyMapCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6584,129 +6752,132 @@ class StyleUpdatePropertyMapCommandArchive::_Internal {
 
 const ::TSWP::StyleUpdatePropertyMapCommandArchive&
 StyleUpdatePropertyMapCommandArchive::_Internal::super(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.StyleUpdatePropertyMapCommandArchive)
 }
 StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(const StyleUpdatePropertyMapCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StyleUpdatePropertyMapCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSWP::StyleUpdatePropertyMapCommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSWP::StyleUpdatePropertyMapCommandArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.StyleUpdatePropertyMapCommandArchive)
 }
 
-inline void StyleUpdatePropertyMapCommandArchive::SharedCtor() {
-super_ = nullptr;
+inline void StyleUpdatePropertyMapCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 StyleUpdatePropertyMapCommandArchive::~StyleUpdatePropertyMapCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.StyleUpdatePropertyMapCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StyleUpdatePropertyMapCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void StyleUpdatePropertyMapCommandArchive::ArenaDtor(void* object) {
-  StyleUpdatePropertyMapCommandArchive* _this = reinterpret_cast< StyleUpdatePropertyMapCommandArchive* >(object);
-  (void)_this;
-}
-void StyleUpdatePropertyMapCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StyleUpdatePropertyMapCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StyleUpdatePropertyMapCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.StyleUpdatePropertyMapCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StyleUpdatePropertyMapCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StyleUpdatePropertyMapCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSWP.StyleUpdatePropertyMapCommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StyleUpdatePropertyMapCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StyleUpdatePropertyMapCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.StyleUpdatePropertyMapCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSWP.StyleUpdatePropertyMapCommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.StyleUpdatePropertyMapCommandArchive)
@@ -6717,50 +6888,41 @@ size_t StyleUpdatePropertyMapCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.StyleUpdatePropertyMapCommandArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSWP.StyleUpdatePropertyMapCommandArchive super = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StyleUpdatePropertyMapCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StyleUpdatePropertyMapCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StyleUpdatePropertyMapCommandArchive::GetClassData() const { return &_class_data_; }
 
-void StyleUpdatePropertyMapCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StyleUpdatePropertyMapCommandArchive *>(to)->MergeFrom(
-      static_cast<const StyleUpdatePropertyMapCommandArchive &>(from));
-}
 
-
-void StyleUpdatePropertyMapCommandArchive::MergeFrom(const StyleUpdatePropertyMapCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.StyleUpdatePropertyMapCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StyleUpdatePropertyMapCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StyleUpdatePropertyMapCommandArchive*>(&to_msg);
+  auto& from = static_cast<const StyleUpdatePropertyMapCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.StyleUpdatePropertyMapCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSWP::StyleUpdatePropertyMapCommandArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSWP::StyleUpdatePropertyMapCommandArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StyleUpdatePropertyMapCommandArchive::CopyFrom(const StyleUpdatePropertyMapCommandArchive& from) {
@@ -6772,7 +6934,7 @@ void StyleUpdatePropertyMapCommandArchive::CopyFrom(const StyleUpdatePropertyMap
 
 bool StyleUpdatePropertyMapCommandArchive::IsInitialized() const {
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6780,12 +6942,12 @@ bool StyleUpdatePropertyMapCommandArchive::IsInitialized() const {
 void StyleUpdatePropertyMapCommandArchive::InternalSwap(StyleUpdatePropertyMapCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StyleUpdatePropertyMapCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[14]);
 }
@@ -6794,7 +6956,7 @@ void StyleUpdatePropertyMapCommandArchive::InternalSwap(StyleUpdatePropertyMapCo
 
 class RemoteDataChangeCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<RemoteDataChangeCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<RemoteDataChangeCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const RemoteDataChangeCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6813,129 +6975,134 @@ class RemoteDataChangeCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 RemoteDataChangeCommandArchive::_Internal::super(const RemoteDataChangeCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSCE::RemoteDataValueMapArchive&
 RemoteDataChangeCommandArchive::_Internal::value_map(const RemoteDataChangeCommandArchive* msg) {
-  return *msg->value_map_;
+  return *msg->_impl_.value_map_;
 }
 void RemoteDataChangeCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void RemoteDataChangeCommandArchive::clear_value_map() {
-  if (value_map_ != nullptr) value_map_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.value_map_ != nullptr) _impl_.value_map_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void RemoteDataChangeCommandArchive::clear_quotes() {
-  quotes_.Clear();
+  _impl_.quotes_.Clear();
 }
 RemoteDataChangeCommandArchive::RemoteDataChangeCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  quotes_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.RemoteDataChangeCommandArchive)
 }
 RemoteDataChangeCommandArchive::RemoteDataChangeCommandArchive(const RemoteDataChangeCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      quotes_(from.quotes_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  RemoteDataChangeCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.quotes_){from._impl_.quotes_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.value_map_){nullptr}
+    , decltype(_impl_.remote_data_sync_key_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_value_map()) {
-    value_map_ = new ::TSCE::RemoteDataValueMapArchive(*from.value_map_);
-  } else {
-    value_map_ = nullptr;
+    _this->_impl_.value_map_ = new ::TSCE::RemoteDataValueMapArchive(*from._impl_.value_map_);
   }
-  remote_data_sync_key_ = from.remote_data_sync_key_;
+  _this->_impl_.remote_data_sync_key_ = from._impl_.remote_data_sync_key_;
   // @@protoc_insertion_point(copy_constructor:TSA.RemoteDataChangeCommandArchive)
 }
 
-inline void RemoteDataChangeCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&remote_data_sync_key_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(remote_data_sync_key_));
+inline void RemoteDataChangeCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.quotes_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.value_map_){nullptr}
+    , decltype(_impl_.remote_data_sync_key_){0}
+  };
 }
 
 RemoteDataChangeCommandArchive::~RemoteDataChangeCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.RemoteDataChangeCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void RemoteDataChangeCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete value_map_;
+  _impl_.quotes_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.value_map_;
 }
 
-void RemoteDataChangeCommandArchive::ArenaDtor(void* object) {
-  RemoteDataChangeCommandArchive* _this = reinterpret_cast< RemoteDataChangeCommandArchive* >(object);
-  (void)_this;
-}
-void RemoteDataChangeCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void RemoteDataChangeCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void RemoteDataChangeCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.RemoteDataChangeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  quotes_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.quotes_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(value_map_ != nullptr);
-      value_map_->Clear();
+      GOOGLE_DCHECK(_impl_.value_map_ != nullptr);
+      _impl_.value_map_->Clear();
     }
   }
-  remote_data_sync_key_ = 0;
-  _has_bits_.Clear();
+  _impl_.remote_data_sync_key_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* RemoteDataChangeCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* RemoteDataChangeCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCE.RemoteDataValueMapArchive value_map = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_value_map(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCE.StockArchive quotes = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -6943,79 +7110,79 @@ const char* RemoteDataChangeCommandArchive::_InternalParse(const char* ptr, ::PR
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required double remote_data_sync_key = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 33)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 33)) {
           _Internal::set_has_remote_data_sync_key(&has_bits);
-          remote_data_sync_key_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.remote_data_sync_key_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RemoteDataChangeCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RemoteDataChangeCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.RemoteDataChangeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSCE.RemoteDataValueMapArchive value_map = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::value_map(this), target, stream);
+      InternalWriteMessage(2, _Internal::value_map(this),
+        _Internal::value_map(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCE.StockArchive quotes = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_quotes_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_quotes_size()); i < n; i++) {
+    const auto& repfield = this->_internal_quotes(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_quotes(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // required double remote_data_sync_key = 4;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_remote_data_sync_key(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(4, this->_internal_remote_data_sync_key(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.RemoteDataChangeCommandArchive)
@@ -7030,14 +7197,14 @@ size_t RemoteDataChangeCommandArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_value_map()) {
     // required .TSCE.RemoteDataValueMapArchive value_map = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *value_map_);
+        *_impl_.value_map_);
   }
 
   if (_internal_has_remote_data_sync_key()) {
@@ -7051,16 +7218,16 @@ size_t RemoteDataChangeCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.RemoteDataChangeCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSCE.RemoteDataValueMapArchive value_map = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *value_map_);
+        *_impl_.value_map_);
 
     // required double remote_data_sync_key = 4;
     total_size += 1 + 8;
@@ -7068,60 +7235,52 @@ size_t RemoteDataChangeCommandArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCE.StockArchive quotes = 3;
   total_size += 1UL * this->_internal_quotes_size();
-  for (const auto& msg : this->quotes_) {
+  for (const auto& msg : this->_impl_.quotes_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RemoteDataChangeCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     RemoteDataChangeCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RemoteDataChangeCommandArchive::GetClassData() const { return &_class_data_; }
 
-void RemoteDataChangeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<RemoteDataChangeCommandArchive *>(to)->MergeFrom(
-      static_cast<const RemoteDataChangeCommandArchive &>(from));
-}
 
-
-void RemoteDataChangeCommandArchive::MergeFrom(const RemoteDataChangeCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.RemoteDataChangeCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void RemoteDataChangeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<RemoteDataChangeCommandArchive*>(&to_msg);
+  auto& from = static_cast<const RemoteDataChangeCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.RemoteDataChangeCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  quotes_.MergeFrom(from.quotes_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.quotes_.MergeFrom(from._impl_.quotes_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_value_map()->::TSCE::RemoteDataValueMapArchive::MergeFrom(from._internal_value_map());
+      _this->_internal_mutable_value_map()->::TSCE::RemoteDataValueMapArchive::MergeFrom(
+          from._internal_value_map());
     }
     if (cached_has_bits & 0x00000004u) {
-      remote_data_sync_key_ = from.remote_data_sync_key_;
+      _this->_impl_.remote_data_sync_key_ = from._impl_.remote_data_sync_key_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RemoteDataChangeCommandArchive::CopyFrom(const RemoteDataChangeCommandArchive& from) {
@@ -7132,13 +7291,14 @@ void RemoteDataChangeCommandArchive::CopyFrom(const RemoteDataChangeCommandArchi
 }
 
 bool RemoteDataChangeCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(quotes_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.quotes_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_value_map()) {
-    if (!value_map_->IsInitialized()) return false;
+    if (!_impl_.value_map_->IsInitialized()) return false;
   }
   return true;
 }
@@ -7146,18 +7306,18 @@ bool RemoteDataChangeCommandArchive::IsInitialized() const {
 void RemoteDataChangeCommandArchive::InternalSwap(RemoteDataChangeCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  quotes_.InternalSwap(&other->quotes_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.quotes_.InternalSwap(&other->_impl_.quotes_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(RemoteDataChangeCommandArchive, remote_data_sync_key_)
-      + sizeof(RemoteDataChangeCommandArchive::remote_data_sync_key_)
-      - PROTOBUF_FIELD_OFFSET(RemoteDataChangeCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(RemoteDataChangeCommandArchive, _impl_.remote_data_sync_key_)
+      + sizeof(RemoteDataChangeCommandArchive::_impl_.remote_data_sync_key_)
+      - PROTOBUF_FIELD_OFFSET(RemoteDataChangeCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RemoteDataChangeCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[15]);
 }
@@ -7166,7 +7326,7 @@ void RemoteDataChangeCommandArchive::InternalSwap(RemoteDataChangeCommandArchive
 
 class GalleryInfoSetValueCommandArchive_PropertyValue::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryInfoSetValueCommandArchive_PropertyValue>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryInfoSetValueCommandArchive_PropertyValue>()._impl_._has_bits_);
   static void set_has_caption_mode(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -7175,115 +7335,121 @@ class GalleryInfoSetValueCommandArchive_PropertyValue::_Internal {
 GalleryInfoSetValueCommandArchive_PropertyValue::GalleryInfoSetValueCommandArchive_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
 }
 GalleryInfoSetValueCommandArchive_PropertyValue::GalleryInfoSetValueCommandArchive_PropertyValue(const GalleryInfoSetValueCommandArchive_PropertyValue& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryInfoSetValueCommandArchive_PropertyValue* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.caption_mode_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  caption_mode_ = from.caption_mode_;
+  _this->_impl_.caption_mode_ = from._impl_.caption_mode_;
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
 }
 
-inline void GalleryInfoSetValueCommandArchive_PropertyValue::SharedCtor() {
-caption_mode_ = 0;
+inline void GalleryInfoSetValueCommandArchive_PropertyValue::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.caption_mode_){0}
+  };
 }
 
 GalleryInfoSetValueCommandArchive_PropertyValue::~GalleryInfoSetValueCommandArchive_PropertyValue() {
   // @@protoc_insertion_point(destructor:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryInfoSetValueCommandArchive_PropertyValue::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void GalleryInfoSetValueCommandArchive_PropertyValue::ArenaDtor(void* object) {
-  GalleryInfoSetValueCommandArchive_PropertyValue* _this = reinterpret_cast< GalleryInfoSetValueCommandArchive_PropertyValue* >(object);
-  (void)_this;
-}
-void GalleryInfoSetValueCommandArchive_PropertyValue::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryInfoSetValueCommandArchive_PropertyValue::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryInfoSetValueCommandArchive_PropertyValue::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  caption_mode_ = 0;
-  _has_bits_.Clear();
+  _impl_.caption_mode_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryInfoSetValueCommandArchive_PropertyValue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryInfoSetValueCommandArchive_PropertyValue::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSA.GalleryInfoCaptionMode caption_mode = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSA::GalleryInfoCaptionMode_IsValid(val))) {
             _internal_set_caption_mode(static_cast<::TSA::GalleryInfoCaptionMode>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(1, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryInfoSetValueCommandArchive_PropertyValue::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryInfoSetValueCommandArchive_PropertyValue::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSA.GalleryInfoCaptionMode caption_mode = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_caption_mode(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
@@ -7294,49 +7460,39 @@ size_t GalleryInfoSetValueCommandArchive_PropertyValue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSA.GalleryInfoCaptionMode caption_mode = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_caption_mode());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_caption_mode());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryInfoSetValueCommandArchive_PropertyValue::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryInfoSetValueCommandArchive_PropertyValue::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryInfoSetValueCommandArchive_PropertyValue::GetClassData() const { return &_class_data_; }
 
-void GalleryInfoSetValueCommandArchive_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryInfoSetValueCommandArchive_PropertyValue *>(to)->MergeFrom(
-      static_cast<const GalleryInfoSetValueCommandArchive_PropertyValue &>(from));
-}
 
-
-void GalleryInfoSetValueCommandArchive_PropertyValue::MergeFrom(const GalleryInfoSetValueCommandArchive_PropertyValue& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryInfoSetValueCommandArchive_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryInfoSetValueCommandArchive_PropertyValue*>(&to_msg);
+  auto& from = static_cast<const GalleryInfoSetValueCommandArchive_PropertyValue&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoSetValueCommandArchive.PropertyValue)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_caption_mode()) {
-    _internal_set_caption_mode(from._internal_caption_mode());
+    _this->_internal_set_caption_mode(from._internal_caption_mode());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryInfoSetValueCommandArchive_PropertyValue::CopyFrom(const GalleryInfoSetValueCommandArchive_PropertyValue& from) {
@@ -7353,12 +7509,12 @@ bool GalleryInfoSetValueCommandArchive_PropertyValue::IsInitialized() const {
 void GalleryInfoSetValueCommandArchive_PropertyValue::InternalSwap(GalleryInfoSetValueCommandArchive_PropertyValue* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(caption_mode_, other->caption_mode_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.caption_mode_, other->_impl_.caption_mode_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryInfoSetValueCommandArchive_PropertyValue::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[16]);
 }
@@ -7367,7 +7523,7 @@ void GalleryInfoSetValueCommandArchive_PropertyValue::InternalSwap(GalleryInfoSe
 
 class GalleryInfoSetValueCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryInfoSetValueCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryInfoSetValueCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const GalleryInfoSetValueCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -7394,246 +7550,249 @@ class GalleryInfoSetValueCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 GalleryInfoSetValueCommandArchive::_Internal::super(const GalleryInfoSetValueCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::UUIDPath&
 GalleryInfoSetValueCommandArchive::_Internal::info_id_path(const GalleryInfoSetValueCommandArchive* msg) {
-  return *msg->info_id_path_;
+  return *msg->_impl_.info_id_path_;
 }
 const ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue&
 GalleryInfoSetValueCommandArchive::_Internal::value(const GalleryInfoSetValueCommandArchive* msg) {
-  return *msg->value_;
+  return *msg->_impl_.value_;
 }
 const ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue&
 GalleryInfoSetValueCommandArchive::_Internal::old_value(const GalleryInfoSetValueCommandArchive* msg) {
-  return *msg->old_value_;
+  return *msg->_impl_.old_value_;
 }
 void GalleryInfoSetValueCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryInfoSetValueCommandArchive::clear_info_id_path() {
-  if (info_id_path_ != nullptr) info_id_path_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.info_id_path_ != nullptr) _impl_.info_id_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 GalleryInfoSetValueCommandArchive::GalleryInfoSetValueCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryInfoSetValueCommandArchive)
 }
 GalleryInfoSetValueCommandArchive::GalleryInfoSetValueCommandArchive(const GalleryInfoSetValueCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryInfoSetValueCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.info_id_path_){nullptr}
+    , decltype(_impl_.value_){nullptr}
+    , decltype(_impl_.old_value_){nullptr}
+    , decltype(_impl_.property_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_info_id_path()) {
-    info_id_path_ = new ::TSP::UUIDPath(*from.info_id_path_);
-  } else {
-    info_id_path_ = nullptr;
+    _this->_impl_.info_id_path_ = new ::TSP::UUIDPath(*from._impl_.info_id_path_);
   }
   if (from._internal_has_value()) {
-    value_ = new ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue(*from.value_);
-  } else {
-    value_ = nullptr;
+    _this->_impl_.value_ = new ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue(*from._impl_.value_);
   }
   if (from._internal_has_old_value()) {
-    old_value_ = new ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue(*from.old_value_);
-  } else {
-    old_value_ = nullptr;
+    _this->_impl_.old_value_ = new ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue(*from._impl_.old_value_);
   }
-  property_ = from.property_;
+  _this->_impl_.property_ = from._impl_.property_;
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryInfoSetValueCommandArchive)
 }
 
-inline void GalleryInfoSetValueCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&property_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(property_));
+inline void GalleryInfoSetValueCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.info_id_path_){nullptr}
+    , decltype(_impl_.value_){nullptr}
+    , decltype(_impl_.old_value_){nullptr}
+    , decltype(_impl_.property_){0}
+  };
 }
 
 GalleryInfoSetValueCommandArchive::~GalleryInfoSetValueCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.GalleryInfoSetValueCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryInfoSetValueCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete info_id_path_;
-  if (this != internal_default_instance()) delete value_;
-  if (this != internal_default_instance()) delete old_value_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.info_id_path_;
+  if (this != internal_default_instance()) delete _impl_.value_;
+  if (this != internal_default_instance()) delete _impl_.old_value_;
 }
 
-void GalleryInfoSetValueCommandArchive::ArenaDtor(void* object) {
-  GalleryInfoSetValueCommandArchive* _this = reinterpret_cast< GalleryInfoSetValueCommandArchive* >(object);
-  (void)_this;
-}
-void GalleryInfoSetValueCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryInfoSetValueCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryInfoSetValueCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryInfoSetValueCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(info_id_path_ != nullptr);
-      info_id_path_->Clear();
+      GOOGLE_DCHECK(_impl_.info_id_path_ != nullptr);
+      _impl_.info_id_path_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(value_ != nullptr);
-      value_->Clear();
+      GOOGLE_DCHECK(_impl_.value_ != nullptr);
+      _impl_.value_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_value_ != nullptr);
-      old_value_->Clear();
+      GOOGLE_DCHECK(_impl_.old_value_ != nullptr);
+      _impl_.old_value_->Clear();
     }
   }
-  property_ = 0;
-  _has_bits_.Clear();
+  _impl_.property_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryInfoSetValueCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryInfoSetValueCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath info_id_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_info_id_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryInfoProperty property = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSA::GalleryInfoProperty_IsValid(val))) {
             _internal_set_property(static_cast<::TSA::GalleryInfoProperty>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue value = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_value(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue old_value = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_value(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryInfoSetValueCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryInfoSetValueCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryInfoSetValueCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath info_id_path = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::info_id_path(this), target, stream);
+      InternalWriteMessage(2, _Internal::info_id_path(this),
+        _Internal::info_id_path(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSA.GalleryInfoProperty property = 3;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_property(), target);
   }
 
   // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue value = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::value(this), target, stream);
+      InternalWriteMessage(4, _Internal::value(this),
+        _Internal::value(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue old_value = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::old_value(this), target, stream);
+      InternalWriteMessage(5, _Internal::old_value(this),
+        _Internal::old_value(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryInfoSetValueCommandArchive)
@@ -7648,90 +7807,84 @@ size_t GalleryInfoSetValueCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001eu) {
     // optional .TSP.UUIDPath info_id_path = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *info_id_path_);
+          *_impl_.info_id_path_);
     }
 
     // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue value = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *value_);
+          *_impl_.value_);
     }
 
     // optional .TSA.GalleryInfoSetValueCommandArchive.PropertyValue old_value = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_value_);
+          *_impl_.old_value_);
     }
 
     // optional .TSA.GalleryInfoProperty property = 3;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_property());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_property());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryInfoSetValueCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryInfoSetValueCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryInfoSetValueCommandArchive::GetClassData() const { return &_class_data_; }
 
-void GalleryInfoSetValueCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryInfoSetValueCommandArchive *>(to)->MergeFrom(
-      static_cast<const GalleryInfoSetValueCommandArchive &>(from));
-}
 
-
-void GalleryInfoSetValueCommandArchive::MergeFrom(const GalleryInfoSetValueCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoSetValueCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryInfoSetValueCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryInfoSetValueCommandArchive*>(&to_msg);
+  auto& from = static_cast<const GalleryInfoSetValueCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoSetValueCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_info_id_path()->::TSP::UUIDPath::MergeFrom(from._internal_info_id_path());
+      _this->_internal_mutable_info_id_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_info_id_path());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_value()->::TSA::GalleryInfoSetValueCommandArchive_PropertyValue::MergeFrom(from._internal_value());
+      _this->_internal_mutable_value()->::TSA::GalleryInfoSetValueCommandArchive_PropertyValue::MergeFrom(
+          from._internal_value());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_value()->::TSA::GalleryInfoSetValueCommandArchive_PropertyValue::MergeFrom(from._internal_old_value());
+      _this->_internal_mutable_old_value()->::TSA::GalleryInfoSetValueCommandArchive_PropertyValue::MergeFrom(
+          from._internal_old_value());
     }
     if (cached_has_bits & 0x00000010u) {
-      property_ = from.property_;
+      _this->_impl_.property_ = from._impl_.property_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryInfoSetValueCommandArchive::CopyFrom(const GalleryInfoSetValueCommandArchive& from) {
@@ -7742,12 +7895,12 @@ void GalleryInfoSetValueCommandArchive::CopyFrom(const GalleryInfoSetValueComman
 }
 
 bool GalleryInfoSetValueCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_info_id_path()) {
-    if (!info_id_path_->IsInitialized()) return false;
+    if (!_impl_.info_id_path_->IsInitialized()) return false;
   }
   return true;
 }
@@ -7755,17 +7908,17 @@ bool GalleryInfoSetValueCommandArchive::IsInitialized() const {
 void GalleryInfoSetValueCommandArchive::InternalSwap(GalleryInfoSetValueCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryInfoSetValueCommandArchive, property_)
-      + sizeof(GalleryInfoSetValueCommandArchive::property_)
-      - PROTOBUF_FIELD_OFFSET(GalleryInfoSetValueCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(GalleryInfoSetValueCommandArchive, _impl_.property_)
+      + sizeof(GalleryInfoSetValueCommandArchive::_impl_.property_)
+      - PROTOBUF_FIELD_OFFSET(GalleryInfoSetValueCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryInfoSetValueCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[17]);
 }
@@ -7774,7 +7927,7 @@ void GalleryInfoSetValueCommandArchive::InternalSwap(GalleryInfoSetValueCommandA
 
 class GalleryInfoInsertItemsCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryInfoInsertItemsCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryInfoInsertItemsCommandArchive>()._impl_._has_bits_);
   static const ::TSD::ContainerInsertChildrenCommandArchive& super(const GalleryInfoInsertItemsCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -7786,97 +7939,102 @@ class GalleryInfoInsertItemsCommandArchive::_Internal {
 
 const ::TSD::ContainerInsertChildrenCommandArchive&
 GalleryInfoInsertItemsCommandArchive::_Internal::super(const GalleryInfoInsertItemsCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void GalleryInfoInsertItemsCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryInfoInsertItemsCommandArchive::clear_items() {
-  items_.Clear();
+  _impl_.items_.Clear();
 }
 GalleryInfoInsertItemsCommandArchive::GalleryInfoInsertItemsCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  items_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryInfoInsertItemsCommandArchive)
 }
 GalleryInfoInsertItemsCommandArchive::GalleryInfoInsertItemsCommandArchive(const GalleryInfoInsertItemsCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      items_(from.items_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryInfoInsertItemsCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){from._impl_.items_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSD::ContainerInsertChildrenCommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSD::ContainerInsertChildrenCommandArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryInfoInsertItemsCommandArchive)
 }
 
-inline void GalleryInfoInsertItemsCommandArchive::SharedCtor() {
-super_ = nullptr;
+inline void GalleryInfoInsertItemsCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 GalleryInfoInsertItemsCommandArchive::~GalleryInfoInsertItemsCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.GalleryInfoInsertItemsCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryInfoInsertItemsCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.items_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void GalleryInfoInsertItemsCommandArchive::ArenaDtor(void* object) {
-  GalleryInfoInsertItemsCommandArchive* _this = reinterpret_cast< GalleryInfoInsertItemsCommandArchive* >(object);
-  (void)_this;
-}
-void GalleryInfoInsertItemsCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryInfoInsertItemsCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryInfoInsertItemsCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryInfoInsertItemsCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  items_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.items_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryInfoInsertItemsCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryInfoInsertItemsCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSD.ContainerInsertChildrenCommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Reference items = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -7884,57 +8042,57 @@ const char* GalleryInfoInsertItemsCommandArchive::_InternalParse(const char* ptr
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryInfoInsertItemsCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryInfoInsertItemsCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryInfoInsertItemsCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSD.ContainerInsertChildrenCommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Reference items = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_items(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_items(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryInfoInsertItemsCommandArchive)
@@ -7949,52 +8107,43 @@ size_t GalleryInfoInsertItemsCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference items = 2;
   total_size += 1UL * this->_internal_items_size();
-  for (const auto& msg : this->items_) {
+  for (const auto& msg : this->_impl_.items_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryInfoInsertItemsCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryInfoInsertItemsCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryInfoInsertItemsCommandArchive::GetClassData() const { return &_class_data_; }
 
-void GalleryInfoInsertItemsCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryInfoInsertItemsCommandArchive *>(to)->MergeFrom(
-      static_cast<const GalleryInfoInsertItemsCommandArchive &>(from));
-}
 
-
-void GalleryInfoInsertItemsCommandArchive::MergeFrom(const GalleryInfoInsertItemsCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoInsertItemsCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryInfoInsertItemsCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryInfoInsertItemsCommandArchive*>(&to_msg);
+  auto& from = static_cast<const GalleryInfoInsertItemsCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoInsertItemsCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  items_.MergeFrom(from.items_);
+  _this->_impl_.items_.MergeFrom(from._impl_.items_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSD::ContainerInsertChildrenCommandArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSD::ContainerInsertChildrenCommandArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryInfoInsertItemsCommandArchive::CopyFrom(const GalleryInfoInsertItemsCommandArchive& from) {
@@ -8005,10 +8154,11 @@ void GalleryInfoInsertItemsCommandArchive::CopyFrom(const GalleryInfoInsertItems
 }
 
 bool GalleryInfoInsertItemsCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(items_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.items_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -8016,13 +8166,13 @@ bool GalleryInfoInsertItemsCommandArchive::IsInitialized() const {
 void GalleryInfoInsertItemsCommandArchive::InternalSwap(GalleryInfoInsertItemsCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  items_.InternalSwap(&other->items_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.items_.InternalSwap(&other->_impl_.items_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryInfoInsertItemsCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[18]);
 }
@@ -8031,7 +8181,7 @@ void GalleryInfoInsertItemsCommandArchive::InternalSwap(GalleryInfoInsertItemsCo
 
 class GalleryInfoRemoveItemsCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryInfoRemoveItemsCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryInfoRemoveItemsCommandArchive>()._impl_._has_bits_);
   static const ::TSD::ContainerRemoveChildrenCommandArchive& super(const GalleryInfoRemoveItemsCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -8043,129 +8193,132 @@ class GalleryInfoRemoveItemsCommandArchive::_Internal {
 
 const ::TSD::ContainerRemoveChildrenCommandArchive&
 GalleryInfoRemoveItemsCommandArchive::_Internal::super(const GalleryInfoRemoveItemsCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void GalleryInfoRemoveItemsCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 GalleryInfoRemoveItemsCommandArchive::GalleryInfoRemoveItemsCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryInfoRemoveItemsCommandArchive)
 }
 GalleryInfoRemoveItemsCommandArchive::GalleryInfoRemoveItemsCommandArchive(const GalleryInfoRemoveItemsCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryInfoRemoveItemsCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSD::ContainerRemoveChildrenCommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSD::ContainerRemoveChildrenCommandArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryInfoRemoveItemsCommandArchive)
 }
 
-inline void GalleryInfoRemoveItemsCommandArchive::SharedCtor() {
-super_ = nullptr;
+inline void GalleryInfoRemoveItemsCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 GalleryInfoRemoveItemsCommandArchive::~GalleryInfoRemoveItemsCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.GalleryInfoRemoveItemsCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryInfoRemoveItemsCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void GalleryInfoRemoveItemsCommandArchive::ArenaDtor(void* object) {
-  GalleryInfoRemoveItemsCommandArchive* _this = reinterpret_cast< GalleryInfoRemoveItemsCommandArchive* >(object);
-  (void)_this;
-}
-void GalleryInfoRemoveItemsCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryInfoRemoveItemsCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryInfoRemoveItemsCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryInfoRemoveItemsCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryInfoRemoveItemsCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryInfoRemoveItemsCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSD.ContainerRemoveChildrenCommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryInfoRemoveItemsCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryInfoRemoveItemsCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryInfoRemoveItemsCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSD.ContainerRemoveChildrenCommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryInfoRemoveItemsCommandArchive)
@@ -8180,44 +8333,35 @@ size_t GalleryInfoRemoveItemsCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryInfoRemoveItemsCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryInfoRemoveItemsCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryInfoRemoveItemsCommandArchive::GetClassData() const { return &_class_data_; }
 
-void GalleryInfoRemoveItemsCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryInfoRemoveItemsCommandArchive *>(to)->MergeFrom(
-      static_cast<const GalleryInfoRemoveItemsCommandArchive &>(from));
-}
 
-
-void GalleryInfoRemoveItemsCommandArchive::MergeFrom(const GalleryInfoRemoveItemsCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoRemoveItemsCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryInfoRemoveItemsCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryInfoRemoveItemsCommandArchive*>(&to_msg);
+  auto& from = static_cast<const GalleryInfoRemoveItemsCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfoRemoveItemsCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSD::ContainerRemoveChildrenCommandArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSD::ContainerRemoveChildrenCommandArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryInfoRemoveItemsCommandArchive::CopyFrom(const GalleryInfoRemoveItemsCommandArchive& from) {
@@ -8228,9 +8372,9 @@ void GalleryInfoRemoveItemsCommandArchive::CopyFrom(const GalleryInfoRemoveItems
 }
 
 bool GalleryInfoRemoveItemsCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -8238,12 +8382,12 @@ bool GalleryInfoRemoveItemsCommandArchive::IsInitialized() const {
 void GalleryInfoRemoveItemsCommandArchive::InternalSwap(GalleryInfoRemoveItemsCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryInfoRemoveItemsCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[19]);
 }
@@ -8252,7 +8396,7 @@ void GalleryInfoRemoveItemsCommandArchive::InternalSwap(GalleryInfoRemoveItemsCo
 
 class GalleryItemSetGeometryCommand::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSetGeometryCommand>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSetGeometryCommand>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const GalleryItemSetGeometryCommand* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -8282,269 +8426,274 @@ class GalleryItemSetGeometryCommand::_Internal {
 
 const ::TSK::CommandArchive&
 GalleryItemSetGeometryCommand::_Internal::super(const GalleryItemSetGeometryCommand* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::UUIDPath&
 GalleryItemSetGeometryCommand::_Internal::item_id_path(const GalleryItemSetGeometryCommand* msg) {
-  return *msg->item_id_path_;
+  return *msg->_impl_.item_id_path_;
 }
 const ::TSP::Point&
 GalleryItemSetGeometryCommand::_Internal::offset(const GalleryItemSetGeometryCommand* msg) {
-  return *msg->offset_;
+  return *msg->_impl_.offset_;
 }
 const ::TSP::Point&
 GalleryItemSetGeometryCommand::_Internal::old_offset(const GalleryItemSetGeometryCommand* msg) {
-  return *msg->old_offset_;
+  return *msg->_impl_.old_offset_;
 }
 void GalleryItemSetGeometryCommand::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryItemSetGeometryCommand::clear_item_id_path() {
-  if (item_id_path_ != nullptr) item_id_path_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.item_id_path_ != nullptr) _impl_.item_id_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void GalleryItemSetGeometryCommand::clear_offset() {
-  if (offset_ != nullptr) offset_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.offset_ != nullptr) _impl_.offset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void GalleryItemSetGeometryCommand::clear_old_offset() {
-  if (old_offset_ != nullptr) old_offset_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.old_offset_ != nullptr) _impl_.old_offset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 GalleryItemSetGeometryCommand::GalleryItemSetGeometryCommand(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSetGeometryCommand)
 }
 GalleryItemSetGeometryCommand::GalleryItemSetGeometryCommand(const GalleryItemSetGeometryCommand& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSetGeometryCommand* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.item_id_path_){nullptr}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.old_offset_){nullptr}
+    , decltype(_impl_.old_scale_){}
+    , decltype(_impl_.scale_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_item_id_path()) {
-    item_id_path_ = new ::TSP::UUIDPath(*from.item_id_path_);
-  } else {
-    item_id_path_ = nullptr;
+    _this->_impl_.item_id_path_ = new ::TSP::UUIDPath(*from._impl_.item_id_path_);
   }
   if (from._internal_has_offset()) {
-    offset_ = new ::TSP::Point(*from.offset_);
-  } else {
-    offset_ = nullptr;
+    _this->_impl_.offset_ = new ::TSP::Point(*from._impl_.offset_);
   }
   if (from._internal_has_old_offset()) {
-    old_offset_ = new ::TSP::Point(*from.old_offset_);
-  } else {
-    old_offset_ = nullptr;
+    _this->_impl_.old_offset_ = new ::TSP::Point(*from._impl_.old_offset_);
   }
-  ::memcpy(&old_scale_, &from.old_scale_,
-    static_cast<size_t>(reinterpret_cast<char*>(&scale_) -
-    reinterpret_cast<char*>(&old_scale_)) + sizeof(scale_));
+  ::memcpy(&_impl_.old_scale_, &from._impl_.old_scale_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.scale_) -
+    reinterpret_cast<char*>(&_impl_.old_scale_)) + sizeof(_impl_.scale_));
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSetGeometryCommand)
 }
 
-inline void GalleryItemSetGeometryCommand::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&old_scale_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(old_scale_));
-scale_ = 1;
+inline void GalleryItemSetGeometryCommand::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.item_id_path_){nullptr}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.old_offset_){nullptr}
+    , decltype(_impl_.old_scale_){0}
+    , decltype(_impl_.scale_){1}
+  };
 }
 
 GalleryItemSetGeometryCommand::~GalleryItemSetGeometryCommand() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSetGeometryCommand)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSetGeometryCommand::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete item_id_path_;
-  if (this != internal_default_instance()) delete offset_;
-  if (this != internal_default_instance()) delete old_offset_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.item_id_path_;
+  if (this != internal_default_instance()) delete _impl_.offset_;
+  if (this != internal_default_instance()) delete _impl_.old_offset_;
 }
 
-void GalleryItemSetGeometryCommand::ArenaDtor(void* object) {
-  GalleryItemSetGeometryCommand* _this = reinterpret_cast< GalleryItemSetGeometryCommand* >(object);
-  (void)_this;
-}
-void GalleryItemSetGeometryCommand::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSetGeometryCommand::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSetGeometryCommand::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSetGeometryCommand)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(item_id_path_ != nullptr);
-      item_id_path_->Clear();
+      GOOGLE_DCHECK(_impl_.item_id_path_ != nullptr);
+      _impl_.item_id_path_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(offset_ != nullptr);
-      offset_->Clear();
+      GOOGLE_DCHECK(_impl_.offset_ != nullptr);
+      _impl_.offset_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_offset_ != nullptr);
-      old_offset_->Clear();
+      GOOGLE_DCHECK(_impl_.old_offset_ != nullptr);
+      _impl_.old_offset_->Clear();
     }
   }
   if (cached_has_bits & 0x00000030u) {
-    old_scale_ = 0;
-    scale_ = 1;
+    _impl_.old_scale_ = 0;
+    _impl_.scale_ = 1;
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSetGeometryCommand::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSetGeometryCommand::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath item_id_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_item_id_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Point offset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_offset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float scale = 4 [default = 1];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           _Internal::set_has_scale(&has_bits);
-          scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Point old_offset = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_offset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float old_scale = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 53)) {
           _Internal::set_has_old_scale(&has_bits);
-          old_scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.old_scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSetGeometryCommand::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSetGeometryCommand::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSetGeometryCommand)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath item_id_path = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::item_id_path(this), target, stream);
+      InternalWriteMessage(2, _Internal::item_id_path(this),
+        _Internal::item_id_path(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Point offset = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::offset(this), target, stream);
+      InternalWriteMessage(3, _Internal::offset(this),
+        _Internal::offset(this).GetCachedSize(), target, stream);
   }
 
   // optional float scale = 4 [default = 1];
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_scale(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(4, this->_internal_scale(), target);
   }
 
   // optional .TSP.Point old_offset = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::old_offset(this), target, stream);
+      InternalWriteMessage(5, _Internal::old_offset(this),
+        _Internal::old_offset(this).GetCachedSize(), target, stream);
   }
 
   // optional float old_scale = 6;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_old_scale(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(6, this->_internal_old_scale(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSetGeometryCommand)
@@ -8559,33 +8708,33 @@ size_t GalleryItemSetGeometryCommand::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003eu) {
     // optional .TSP.UUIDPath item_id_path = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *item_id_path_);
+          *_impl_.item_id_path_);
     }
 
     // optional .TSP.Point offset = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *offset_);
+          *_impl_.offset_);
     }
 
     // optional .TSP.Point old_offset = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_offset_);
+          *_impl_.old_offset_);
     }
 
     // optional float old_scale = 6;
@@ -8599,57 +8748,51 @@ size_t GalleryItemSetGeometryCommand::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSetGeometryCommand::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSetGeometryCommand::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSetGeometryCommand::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSetGeometryCommand::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSetGeometryCommand *>(to)->MergeFrom(
-      static_cast<const GalleryItemSetGeometryCommand &>(from));
-}
 
-
-void GalleryItemSetGeometryCommand::MergeFrom(const GalleryItemSetGeometryCommand& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetGeometryCommand)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSetGeometryCommand::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSetGeometryCommand*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSetGeometryCommand&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetGeometryCommand)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_item_id_path()->::TSP::UUIDPath::MergeFrom(from._internal_item_id_path());
+      _this->_internal_mutable_item_id_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_item_id_path());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_offset()->::TSP::Point::MergeFrom(from._internal_offset());
+      _this->_internal_mutable_offset()->::TSP::Point::MergeFrom(
+          from._internal_offset());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_offset()->::TSP::Point::MergeFrom(from._internal_old_offset());
+      _this->_internal_mutable_old_offset()->::TSP::Point::MergeFrom(
+          from._internal_old_offset());
     }
     if (cached_has_bits & 0x00000010u) {
-      old_scale_ = from.old_scale_;
+      _this->_impl_.old_scale_ = from._impl_.old_scale_;
     }
     if (cached_has_bits & 0x00000020u) {
-      scale_ = from.scale_;
+      _this->_impl_.scale_ = from._impl_.scale_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSetGeometryCommand::CopyFrom(const GalleryItemSetGeometryCommand& from) {
@@ -8660,18 +8803,18 @@ void GalleryItemSetGeometryCommand::CopyFrom(const GalleryItemSetGeometryCommand
 }
 
 bool GalleryItemSetGeometryCommand::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_item_id_path()) {
-    if (!item_id_path_->IsInitialized()) return false;
+    if (!_impl_.item_id_path_->IsInitialized()) return false;
   }
   if (_internal_has_offset()) {
-    if (!offset_->IsInitialized()) return false;
+    if (!_impl_.offset_->IsInitialized()) return false;
   }
   if (_internal_has_old_offset()) {
-    if (!old_offset_->IsInitialized()) return false;
+    if (!_impl_.old_offset_->IsInitialized()) return false;
   }
   return true;
 }
@@ -8679,18 +8822,18 @@ bool GalleryItemSetGeometryCommand::IsInitialized() const {
 void GalleryItemSetGeometryCommand::InternalSwap(GalleryItemSetGeometryCommand* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryItemSetGeometryCommand, old_scale_)
-      + sizeof(GalleryItemSetGeometryCommand::old_scale_)
-      - PROTOBUF_FIELD_OFFSET(GalleryItemSetGeometryCommand, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
-  swap(scale_, other->scale_);
+      PROTOBUF_FIELD_OFFSET(GalleryItemSetGeometryCommand, _impl_.old_scale_)
+      + sizeof(GalleryItemSetGeometryCommand::_impl_.old_scale_)
+      - PROTOBUF_FIELD_OFFSET(GalleryItemSetGeometryCommand, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
+  swap(_impl_.scale_, other->_impl_.scale_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSetGeometryCommand::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[20]);
 }
@@ -8699,7 +8842,7 @@ void GalleryItemSetGeometryCommand::InternalSwap(GalleryItemSetGeometryCommand* 
 
 class GalleryItem::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItem>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItem>()._impl_._has_bits_);
   static const ::TSP::Point& offset(const GalleryItem* msg);
   static void set_has_offset(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
@@ -8738,365 +8881,377 @@ class GalleryItem::_Internal {
 
 const ::TSP::Point&
 GalleryItem::_Internal::offset(const GalleryItem* msg) {
-  return *msg->offset_;
+  return *msg->_impl_.offset_;
 }
 const ::TSP::DataReference&
 GalleryItem::_Internal::image_data(const GalleryItem* msg) {
-  return *msg->image_data_;
+  return *msg->_impl_.image_data_;
 }
 const ::TSP::DataReference&
 GalleryItem::_Internal::thumbnail_image_data(const GalleryItem* msg) {
-  return *msg->thumbnail_image_data_;
+  return *msg->_impl_.thumbnail_image_data_;
 }
 const ::TSD::ImageAdjustmentsArchive&
 GalleryItem::_Internal::image_adjustments(const GalleryItem* msg) {
-  return *msg->image_adjustments_;
+  return *msg->_impl_.image_adjustments_;
 }
 const ::TSP::DataReference&
 GalleryItem::_Internal::adjusted_image_data(const GalleryItem* msg) {
-  return *msg->adjusted_image_data_;
+  return *msg->_impl_.adjusted_image_data_;
 }
 const ::TSP::DataReference&
 GalleryItem::_Internal::thumbnail_adjusted_image_data(const GalleryItem* msg) {
-  return *msg->thumbnail_adjusted_image_data_;
+  return *msg->_impl_.thumbnail_adjusted_image_data_;
 }
 const ::TSP::Reference&
 GalleryItem::_Internal::caption_storage(const GalleryItem* msg) {
-  return *msg->caption_storage_;
+  return *msg->_impl_.caption_storage_;
 }
 void GalleryItem::clear_offset() {
-  if (offset_ != nullptr) offset_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.offset_ != nullptr) _impl_.offset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void GalleryItem::clear_image_data() {
-  if (image_data_ != nullptr) image_data_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.image_data_ != nullptr) _impl_.image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void GalleryItem::clear_thumbnail_image_data() {
-  if (thumbnail_image_data_ != nullptr) thumbnail_image_data_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.thumbnail_image_data_ != nullptr) _impl_.thumbnail_image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void GalleryItem::clear_image_adjustments() {
-  if (image_adjustments_ != nullptr) image_adjustments_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.image_adjustments_ != nullptr) _impl_.image_adjustments_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 void GalleryItem::clear_adjusted_image_data() {
-  if (adjusted_image_data_ != nullptr) adjusted_image_data_->Clear();
-  _has_bits_[0] &= ~0x00000020u;
+  if (_impl_.adjusted_image_data_ != nullptr) _impl_.adjusted_image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 void GalleryItem::clear_thumbnail_adjusted_image_data() {
-  if (thumbnail_adjusted_image_data_ != nullptr) thumbnail_adjusted_image_data_->Clear();
-  _has_bits_[0] &= ~0x00000040u;
+  if (_impl_.thumbnail_adjusted_image_data_ != nullptr) _impl_.thumbnail_adjusted_image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 void GalleryItem::clear_caption_storage() {
-  if (caption_storage_ != nullptr) caption_storage_->Clear();
-  _has_bits_[0] &= ~0x00000080u;
+  if (_impl_.caption_storage_ != nullptr) _impl_.caption_storage_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 GalleryItem::GalleryItem(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItem)
 }
 GalleryItem::GalleryItem(const GalleryItem& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItem* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accessibility_description_){}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.image_data_){nullptr}
+    , decltype(_impl_.thumbnail_image_data_){nullptr}
+    , decltype(_impl_.image_adjustments_){nullptr}
+    , decltype(_impl_.adjusted_image_data_){nullptr}
+    , decltype(_impl_.thumbnail_adjusted_image_data_){nullptr}
+    , decltype(_impl_.caption_storage_){nullptr}
+    , decltype(_impl_.scale_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  accessibility_description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.accessibility_description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.accessibility_description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_accessibility_description()) {
-    accessibility_description_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_accessibility_description(), 
-      GetArenaForAllocation());
+    _this->_impl_.accessibility_description_.Set(from._internal_accessibility_description(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_offset()) {
-    offset_ = new ::TSP::Point(*from.offset_);
-  } else {
-    offset_ = nullptr;
+    _this->_impl_.offset_ = new ::TSP::Point(*from._impl_.offset_);
   }
   if (from._internal_has_image_data()) {
-    image_data_ = new ::TSP::DataReference(*from.image_data_);
-  } else {
-    image_data_ = nullptr;
+    _this->_impl_.image_data_ = new ::TSP::DataReference(*from._impl_.image_data_);
   }
   if (from._internal_has_thumbnail_image_data()) {
-    thumbnail_image_data_ = new ::TSP::DataReference(*from.thumbnail_image_data_);
-  } else {
-    thumbnail_image_data_ = nullptr;
+    _this->_impl_.thumbnail_image_data_ = new ::TSP::DataReference(*from._impl_.thumbnail_image_data_);
   }
   if (from._internal_has_image_adjustments()) {
-    image_adjustments_ = new ::TSD::ImageAdjustmentsArchive(*from.image_adjustments_);
-  } else {
-    image_adjustments_ = nullptr;
+    _this->_impl_.image_adjustments_ = new ::TSD::ImageAdjustmentsArchive(*from._impl_.image_adjustments_);
   }
   if (from._internal_has_adjusted_image_data()) {
-    adjusted_image_data_ = new ::TSP::DataReference(*from.adjusted_image_data_);
-  } else {
-    adjusted_image_data_ = nullptr;
+    _this->_impl_.adjusted_image_data_ = new ::TSP::DataReference(*from._impl_.adjusted_image_data_);
   }
   if (from._internal_has_thumbnail_adjusted_image_data()) {
-    thumbnail_adjusted_image_data_ = new ::TSP::DataReference(*from.thumbnail_adjusted_image_data_);
-  } else {
-    thumbnail_adjusted_image_data_ = nullptr;
+    _this->_impl_.thumbnail_adjusted_image_data_ = new ::TSP::DataReference(*from._impl_.thumbnail_adjusted_image_data_);
   }
   if (from._internal_has_caption_storage()) {
-    caption_storage_ = new ::TSP::Reference(*from.caption_storage_);
-  } else {
-    caption_storage_ = nullptr;
+    _this->_impl_.caption_storage_ = new ::TSP::Reference(*from._impl_.caption_storage_);
   }
-  scale_ = from.scale_;
+  _this->_impl_.scale_ = from._impl_.scale_;
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItem)
 }
 
-inline void GalleryItem::SharedCtor() {
-accessibility_description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&offset_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&scale_) -
-    reinterpret_cast<char*>(&offset_)) + sizeof(scale_));
+inline void GalleryItem::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accessibility_description_){}
+    , decltype(_impl_.offset_){nullptr}
+    , decltype(_impl_.image_data_){nullptr}
+    , decltype(_impl_.thumbnail_image_data_){nullptr}
+    , decltype(_impl_.image_adjustments_){nullptr}
+    , decltype(_impl_.adjusted_image_data_){nullptr}
+    , decltype(_impl_.thumbnail_adjusted_image_data_){nullptr}
+    , decltype(_impl_.caption_storage_){nullptr}
+    , decltype(_impl_.scale_){0}
+  };
+  _impl_.accessibility_description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.accessibility_description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 GalleryItem::~GalleryItem() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItem)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItem::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  accessibility_description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete offset_;
-  if (this != internal_default_instance()) delete image_data_;
-  if (this != internal_default_instance()) delete thumbnail_image_data_;
-  if (this != internal_default_instance()) delete image_adjustments_;
-  if (this != internal_default_instance()) delete adjusted_image_data_;
-  if (this != internal_default_instance()) delete thumbnail_adjusted_image_data_;
-  if (this != internal_default_instance()) delete caption_storage_;
+  _impl_.accessibility_description_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.offset_;
+  if (this != internal_default_instance()) delete _impl_.image_data_;
+  if (this != internal_default_instance()) delete _impl_.thumbnail_image_data_;
+  if (this != internal_default_instance()) delete _impl_.image_adjustments_;
+  if (this != internal_default_instance()) delete _impl_.adjusted_image_data_;
+  if (this != internal_default_instance()) delete _impl_.thumbnail_adjusted_image_data_;
+  if (this != internal_default_instance()) delete _impl_.caption_storage_;
 }
 
-void GalleryItem::ArenaDtor(void* object) {
-  GalleryItem* _this = reinterpret_cast< GalleryItem* >(object);
-  (void)_this;
-}
-void GalleryItem::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItem::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItem::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItem)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      accessibility_description_.ClearNonDefaultToEmpty();
+      _impl_.accessibility_description_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(offset_ != nullptr);
-      offset_->Clear();
+      GOOGLE_DCHECK(_impl_.offset_ != nullptr);
+      _impl_.offset_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(image_data_ != nullptr);
-      image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.image_data_ != nullptr);
+      _impl_.image_data_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(thumbnail_image_data_ != nullptr);
-      thumbnail_image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.thumbnail_image_data_ != nullptr);
+      _impl_.thumbnail_image_data_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(image_adjustments_ != nullptr);
-      image_adjustments_->Clear();
+      GOOGLE_DCHECK(_impl_.image_adjustments_ != nullptr);
+      _impl_.image_adjustments_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(adjusted_image_data_ != nullptr);
-      adjusted_image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.adjusted_image_data_ != nullptr);
+      _impl_.adjusted_image_data_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(thumbnail_adjusted_image_data_ != nullptr);
-      thumbnail_adjusted_image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.thumbnail_adjusted_image_data_ != nullptr);
+      _impl_.thumbnail_adjusted_image_data_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(caption_storage_ != nullptr);
-      caption_storage_->Clear();
+      GOOGLE_DCHECK(_impl_.caption_storage_ != nullptr);
+      _impl_.caption_storage_->Clear();
     }
   }
-  scale_ = 0;
-  _has_bits_.Clear();
+  _impl_.scale_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItem::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItem::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Point offset = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_offset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float scale = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           _Internal::set_has_scale(&has_bits);
-          scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.scale_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference image_data = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference thumbnail_image_data = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_thumbnail_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.ImageAdjustmentsArchive image_adjustments = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_image_adjustments(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference adjusted_image_data = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_adjusted_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference thumbnail_adjusted_image_data = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_thumbnail_adjusted_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference caption_storage = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_caption_storage(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string accessibility_description = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           auto str = _internal_mutable_accessibility_description();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(ptr);
           #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.GalleryItem.accessibility_description");
+          ::_pbi::VerifyUTF8(str, "TSA.GalleryItem.accessibility_description");
           #endif  // !NDEBUG
-          CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItem::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItem::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItem)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Point offset = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::offset(this), target, stream);
+      InternalWriteMessage(1, _Internal::offset(this),
+        _Internal::offset(this).GetCachedSize(), target, stream);
   }
 
   // optional float scale = 2;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_scale(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_scale(), target);
   }
 
   // optional .TSP.DataReference image_data = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::image_data(this), target, stream);
+      InternalWriteMessage(3, _Internal::image_data(this),
+        _Internal::image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.DataReference thumbnail_image_data = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::thumbnail_image_data(this), target, stream);
+      InternalWriteMessage(4, _Internal::thumbnail_image_data(this),
+        _Internal::thumbnail_image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.ImageAdjustmentsArchive image_adjustments = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::image_adjustments(this), target, stream);
+      InternalWriteMessage(5, _Internal::image_adjustments(this),
+        _Internal::image_adjustments(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.DataReference adjusted_image_data = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::adjusted_image_data(this), target, stream);
+      InternalWriteMessage(6, _Internal::adjusted_image_data(this),
+        _Internal::adjusted_image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.DataReference thumbnail_adjusted_image_data = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::thumbnail_adjusted_image_data(this), target, stream);
+      InternalWriteMessage(7, _Internal::thumbnail_adjusted_image_data(this),
+        _Internal::thumbnail_adjusted_image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference caption_storage = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::caption_storage(this), target, stream);
+      InternalWriteMessage(8, _Internal::caption_storage(this),
+        _Internal::caption_storage(this).GetCachedSize(), target, stream);
   }
 
   // optional string accessibility_description = 9;
@@ -9110,7 +9265,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItem)
@@ -9121,11 +9276,11 @@ size_t GalleryItem::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryItem)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional string accessibility_description = 9;
     if (cached_has_bits & 0x00000001u) {
@@ -9138,49 +9293,49 @@ size_t GalleryItem::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *offset_);
+          *_impl_.offset_);
     }
 
     // optional .TSP.DataReference image_data = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *image_data_);
+          *_impl_.image_data_);
     }
 
     // optional .TSP.DataReference thumbnail_image_data = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *thumbnail_image_data_);
+          *_impl_.thumbnail_image_data_);
     }
 
     // optional .TSD.ImageAdjustmentsArchive image_adjustments = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *image_adjustments_);
+          *_impl_.image_adjustments_);
     }
 
     // optional .TSP.DataReference adjusted_image_data = 6;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *adjusted_image_data_);
+          *_impl_.adjusted_image_data_);
     }
 
     // optional .TSP.DataReference thumbnail_adjusted_image_data = 7;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *thumbnail_adjusted_image_data_);
+          *_impl_.thumbnail_adjusted_image_data_);
     }
 
     // optional .TSP.Reference caption_storage = 8;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *caption_storage_);
+          *_impl_.caption_storage_);
     }
 
   }
@@ -9189,65 +9344,62 @@ size_t GalleryItem::ByteSizeLong() const {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItem::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItem::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItem::GetClassData() const { return &_class_data_; }
 
-void GalleryItem::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItem *>(to)->MergeFrom(
-      static_cast<const GalleryItem &>(from));
-}
 
-
-void GalleryItem::MergeFrom(const GalleryItem& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItem)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItem::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItem*>(&to_msg);
+  auto& from = static_cast<const GalleryItem&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItem)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_accessibility_description(from._internal_accessibility_description());
+      _this->_internal_set_accessibility_description(from._internal_accessibility_description());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_offset()->::TSP::Point::MergeFrom(from._internal_offset());
+      _this->_internal_mutable_offset()->::TSP::Point::MergeFrom(
+          from._internal_offset());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_image_data()->::TSP::DataReference::MergeFrom(from._internal_image_data());
+      _this->_internal_mutable_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_image_data());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_thumbnail_image_data()->::TSP::DataReference::MergeFrom(from._internal_thumbnail_image_data());
+      _this->_internal_mutable_thumbnail_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_thumbnail_image_data());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_image_adjustments()->::TSD::ImageAdjustmentsArchive::MergeFrom(from._internal_image_adjustments());
+      _this->_internal_mutable_image_adjustments()->::TSD::ImageAdjustmentsArchive::MergeFrom(
+          from._internal_image_adjustments());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_adjusted_image_data()->::TSP::DataReference::MergeFrom(from._internal_adjusted_image_data());
+      _this->_internal_mutable_adjusted_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_adjusted_image_data());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_thumbnail_adjusted_image_data()->::TSP::DataReference::MergeFrom(from._internal_thumbnail_adjusted_image_data());
+      _this->_internal_mutable_thumbnail_adjusted_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_thumbnail_adjusted_image_data());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_caption_storage()->::TSP::Reference::MergeFrom(from._internal_caption_storage());
+      _this->_internal_mutable_caption_storage()->::TSP::Reference::MergeFrom(
+          from._internal_caption_storage());
     }
   }
   if (cached_has_bits & 0x00000100u) {
-    _internal_set_scale(from._internal_scale());
+    _this->_internal_set_scale(from._internal_scale());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItem::CopyFrom(const GalleryItem& from) {
@@ -9259,45 +9411,46 @@ void GalleryItem::CopyFrom(const GalleryItem& from) {
 
 bool GalleryItem::IsInitialized() const {
   if (_internal_has_offset()) {
-    if (!offset_->IsInitialized()) return false;
+    if (!_impl_.offset_->IsInitialized()) return false;
   }
   if (_internal_has_image_data()) {
-    if (!image_data_->IsInitialized()) return false;
+    if (!_impl_.image_data_->IsInitialized()) return false;
   }
   if (_internal_has_thumbnail_image_data()) {
-    if (!thumbnail_image_data_->IsInitialized()) return false;
+    if (!_impl_.thumbnail_image_data_->IsInitialized()) return false;
   }
   if (_internal_has_adjusted_image_data()) {
-    if (!adjusted_image_data_->IsInitialized()) return false;
+    if (!_impl_.adjusted_image_data_->IsInitialized()) return false;
   }
   if (_internal_has_thumbnail_adjusted_image_data()) {
-    if (!thumbnail_adjusted_image_data_->IsInitialized()) return false;
+    if (!_impl_.thumbnail_adjusted_image_data_->IsInitialized()) return false;
   }
   if (_internal_has_caption_storage()) {
-    if (!caption_storage_->IsInitialized()) return false;
+    if (!_impl_.caption_storage_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GalleryItem::InternalSwap(GalleryItem* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &accessibility_description_, GetArenaForAllocation(),
-      &other->accessibility_description_, other->GetArenaForAllocation()
+      &_impl_.accessibility_description_, lhs_arena,
+      &other->_impl_.accessibility_description_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryItem, scale_)
-      + sizeof(GalleryItem::scale_)
-      - PROTOBUF_FIELD_OFFSET(GalleryItem, offset_)>(
-          reinterpret_cast<char*>(&offset_),
-          reinterpret_cast<char*>(&other->offset_));
+      PROTOBUF_FIELD_OFFSET(GalleryItem, _impl_.scale_)
+      + sizeof(GalleryItem::_impl_.scale_)
+      - PROTOBUF_FIELD_OFFSET(GalleryItem, _impl_.offset_)>(
+          reinterpret_cast<char*>(&_impl_.offset_),
+          reinterpret_cast<char*>(&other->_impl_.offset_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItem::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[21]);
 }
@@ -9306,7 +9459,7 @@ void GalleryItem::InternalSwap(GalleryItem* other) {
 
 class GalleryInfo::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryInfo>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryInfo>()._impl_._has_bits_);
   static void set_has_caption_mode(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
@@ -9318,95 +9471,98 @@ class GalleryInfo::_Internal {
 
 const ::TSP::Reference&
 GalleryInfo::_Internal::caption_storage(const GalleryInfo* msg) {
-  return *msg->caption_storage_;
+  return *msg->_impl_.caption_storage_;
 }
 void GalleryInfo::clear_items() {
-  items_.Clear();
+  _impl_.items_.Clear();
 }
 void GalleryInfo::clear_caption_storage() {
-  if (caption_storage_ != nullptr) caption_storage_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.caption_storage_ != nullptr) _impl_.caption_storage_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 GalleryInfo::GalleryInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  items_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryInfo)
 }
 GalleryInfo::GalleryInfo(const GalleryInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      items_(from.items_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryInfo* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){from._impl_.items_}
+    , decltype(_impl_.caption_storage_){nullptr}
+    , decltype(_impl_.caption_mode_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_caption_storage()) {
-    caption_storage_ = new ::TSP::Reference(*from.caption_storage_);
-  } else {
-    caption_storage_ = nullptr;
+    _this->_impl_.caption_storage_ = new ::TSP::Reference(*from._impl_.caption_storage_);
   }
-  caption_mode_ = from.caption_mode_;
+  _this->_impl_.caption_mode_ = from._impl_.caption_mode_;
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryInfo)
 }
 
-inline void GalleryInfo::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&caption_storage_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&caption_mode_) -
-    reinterpret_cast<char*>(&caption_storage_)) + sizeof(caption_mode_));
+inline void GalleryInfo::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){arena}
+    , decltype(_impl_.caption_storage_){nullptr}
+    , decltype(_impl_.caption_mode_){0}
+  };
 }
 
 GalleryInfo::~GalleryInfo() {
   // @@protoc_insertion_point(destructor:TSA.GalleryInfo)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete caption_storage_;
+  _impl_.items_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.caption_storage_;
 }
 
-void GalleryInfo::ArenaDtor(void* object) {
-  GalleryInfo* _this = reinterpret_cast< GalleryInfo* >(object);
-  (void)_this;
-}
-void GalleryInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryInfo::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  items_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.items_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(caption_storage_ != nullptr);
-    caption_storage_->Clear();
+    GOOGLE_DCHECK(_impl_.caption_storage_ != nullptr);
+    _impl_.caption_storage_->Clear();
   }
-  caption_mode_ = 0;
-  _has_bits_.Clear();
+  _impl_.caption_mode_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryInfo::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSP.Reference items = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -9414,83 +9570,85 @@ const char* GalleryInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryCaptionMode caption_mode = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSA::GalleryCaptionMode_IsValid(val))) {
             _internal_set_caption_mode(static_cast<::TSA::GalleryCaptionMode>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(2, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference caption_storage = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_caption_storage(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryInfo::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryInfo::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSP.Reference items = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_items(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_items(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSA.GalleryCaptionMode caption_mode = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       2, this->_internal_caption_mode(), target);
   }
 
   // optional .TSP.Reference caption_storage = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::caption_storage(this), target, stream);
+      InternalWriteMessage(3, _Internal::caption_storage(this),
+        _Internal::caption_storage(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryInfo)
@@ -9501,73 +9659,64 @@ size_t GalleryInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryInfo)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference items = 1;
   total_size += 1UL * this->_internal_items_size();
-  for (const auto& msg : this->items_) {
+  for (const auto& msg : this->_impl_.items_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional .TSP.Reference caption_storage = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *caption_storage_);
+          *_impl_.caption_storage_);
     }
 
     // optional .TSA.GalleryCaptionMode caption_mode = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_caption_mode());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_caption_mode());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryInfo::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryInfo::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryInfo::GetClassData() const { return &_class_data_; }
 
-void GalleryInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryInfo *>(to)->MergeFrom(
-      static_cast<const GalleryInfo &>(from));
-}
 
-
-void GalleryInfo::MergeFrom(const GalleryInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryInfo*>(&to_msg);
+  auto& from = static_cast<const GalleryInfo&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryInfo)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  items_.MergeFrom(from.items_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.items_.MergeFrom(from._impl_.items_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_caption_storage()->::TSP::Reference::MergeFrom(from._internal_caption_storage());
+      _this->_internal_mutable_caption_storage()->::TSP::Reference::MergeFrom(
+          from._internal_caption_storage());
     }
     if (cached_has_bits & 0x00000002u) {
-      caption_mode_ = from.caption_mode_;
+      _this->_impl_.caption_mode_ = from._impl_.caption_mode_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryInfo::CopyFrom(const GalleryInfo& from) {
@@ -9578,9 +9727,10 @@ void GalleryInfo::CopyFrom(const GalleryInfo& from) {
 }
 
 bool GalleryInfo::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(items_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.items_))
+    return false;
   if (_internal_has_caption_storage()) {
-    if (!caption_storage_->IsInitialized()) return false;
+    if (!_impl_.caption_storage_->IsInitialized()) return false;
   }
   return true;
 }
@@ -9588,18 +9738,18 @@ bool GalleryInfo::IsInitialized() const {
 void GalleryInfo::InternalSwap(GalleryInfo* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  items_.InternalSwap(&other->items_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.items_.InternalSwap(&other->_impl_.items_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryInfo, caption_mode_)
-      + sizeof(GalleryInfo::caption_mode_)
-      - PROTOBUF_FIELD_OFFSET(GalleryInfo, caption_storage_)>(
-          reinterpret_cast<char*>(&caption_storage_),
-          reinterpret_cast<char*>(&other->caption_storage_));
+      PROTOBUF_FIELD_OFFSET(GalleryInfo, _impl_.caption_mode_)
+      + sizeof(GalleryInfo::_impl_.caption_mode_)
+      - PROTOBUF_FIELD_OFFSET(GalleryInfo, _impl_.caption_storage_)>(
+          reinterpret_cast<char*>(&_impl_.caption_storage_),
+          reinterpret_cast<char*>(&other->_impl_.caption_storage_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryInfo::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[22]);
 }
@@ -9608,7 +9758,7 @@ void GalleryInfo::InternalSwap(GalleryInfo* other) {
 
 class GallerySelectionTransformer::_Internal {
  public:
-  using HasBits = decltype(std::declval<GallerySelectionTransformer>()._has_bits_);
+  using HasBits = decltype(std::declval<GallerySelectionTransformer>()._impl_._has_bits_);
   static const ::TSD::DrawableSelectionTransformerArchive& super(const GallerySelectionTransformer* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -9628,200 +9778,200 @@ class GallerySelectionTransformer::_Internal {
 
 const ::TSD::DrawableSelectionTransformerArchive&
 GallerySelectionTransformer::_Internal::super(const GallerySelectionTransformer* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::UUIDPath&
 GallerySelectionTransformer::_Internal::gallery_uuid_path(const GallerySelectionTransformer* msg) {
-  return *msg->gallery_uuid_path_;
+  return *msg->_impl_.gallery_uuid_path_;
 }
 const ::TSP::UUIDPath&
 GallerySelectionTransformer::_Internal::caption_storage_uuid_path(const GallerySelectionTransformer* msg) {
-  return *msg->caption_storage_uuid_path_;
+  return *msg->_impl_.caption_storage_uuid_path_;
 }
 void GallerySelectionTransformer::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GallerySelectionTransformer::clear_gallery_uuid_path() {
-  if (gallery_uuid_path_ != nullptr) gallery_uuid_path_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.gallery_uuid_path_ != nullptr) _impl_.gallery_uuid_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void GallerySelectionTransformer::clear_caption_storage_uuid_path() {
-  if (caption_storage_uuid_path_ != nullptr) caption_storage_uuid_path_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.caption_storage_uuid_path_ != nullptr) _impl_.caption_storage_uuid_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 GallerySelectionTransformer::GallerySelectionTransformer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GallerySelectionTransformer)
 }
 GallerySelectionTransformer::GallerySelectionTransformer(const GallerySelectionTransformer& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GallerySelectionTransformer* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.gallery_uuid_path_){nullptr}
+    , decltype(_impl_.caption_storage_uuid_path_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSD::DrawableSelectionTransformerArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSD::DrawableSelectionTransformerArchive(*from._impl_.super_);
   }
   if (from._internal_has_gallery_uuid_path()) {
-    gallery_uuid_path_ = new ::TSP::UUIDPath(*from.gallery_uuid_path_);
-  } else {
-    gallery_uuid_path_ = nullptr;
+    _this->_impl_.gallery_uuid_path_ = new ::TSP::UUIDPath(*from._impl_.gallery_uuid_path_);
   }
   if (from._internal_has_caption_storage_uuid_path()) {
-    caption_storage_uuid_path_ = new ::TSP::UUIDPath(*from.caption_storage_uuid_path_);
-  } else {
-    caption_storage_uuid_path_ = nullptr;
+    _this->_impl_.caption_storage_uuid_path_ = new ::TSP::UUIDPath(*from._impl_.caption_storage_uuid_path_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GallerySelectionTransformer)
 }
 
-inline void GallerySelectionTransformer::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&caption_storage_uuid_path_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(caption_storage_uuid_path_));
+inline void GallerySelectionTransformer::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.gallery_uuid_path_){nullptr}
+    , decltype(_impl_.caption_storage_uuid_path_){nullptr}
+  };
 }
 
 GallerySelectionTransformer::~GallerySelectionTransformer() {
   // @@protoc_insertion_point(destructor:TSA.GallerySelectionTransformer)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GallerySelectionTransformer::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete gallery_uuid_path_;
-  if (this != internal_default_instance()) delete caption_storage_uuid_path_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.gallery_uuid_path_;
+  if (this != internal_default_instance()) delete _impl_.caption_storage_uuid_path_;
 }
 
-void GallerySelectionTransformer::ArenaDtor(void* object) {
-  GallerySelectionTransformer* _this = reinterpret_cast< GallerySelectionTransformer* >(object);
-  (void)_this;
-}
-void GallerySelectionTransformer::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GallerySelectionTransformer::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GallerySelectionTransformer::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GallerySelectionTransformer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(gallery_uuid_path_ != nullptr);
-      gallery_uuid_path_->Clear();
+      GOOGLE_DCHECK(_impl_.gallery_uuid_path_ != nullptr);
+      _impl_.gallery_uuid_path_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(caption_storage_uuid_path_ != nullptr);
-      caption_storage_uuid_path_->Clear();
+      GOOGLE_DCHECK(_impl_.caption_storage_uuid_path_ != nullptr);
+      _impl_.caption_storage_uuid_path_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GallerySelectionTransformer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GallerySelectionTransformer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSD.DrawableSelectionTransformerArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath gallery_uuid_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_gallery_uuid_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath caption_storage_uuid_path = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_caption_storage_uuid_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GallerySelectionTransformer::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GallerySelectionTransformer::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GallerySelectionTransformer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSD.DrawableSelectionTransformerArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath gallery_uuid_path = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::gallery_uuid_path(this), target, stream);
+      InternalWriteMessage(2, _Internal::gallery_uuid_path(this),
+        _Internal::gallery_uuid_path(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath caption_storage_uuid_path = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::caption_storage_uuid_path(this), target, stream);
+      InternalWriteMessage(3, _Internal::caption_storage_uuid_path(this),
+        _Internal::caption_storage_uuid_path(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GallerySelectionTransformer)
@@ -9836,70 +9986,63 @@ size_t GallerySelectionTransformer::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000006u) {
     // optional .TSP.UUIDPath gallery_uuid_path = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *gallery_uuid_path_);
+          *_impl_.gallery_uuid_path_);
     }
 
     // optional .TSP.UUIDPath caption_storage_uuid_path = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *caption_storage_uuid_path_);
+          *_impl_.caption_storage_uuid_path_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GallerySelectionTransformer::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GallerySelectionTransformer::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GallerySelectionTransformer::GetClassData() const { return &_class_data_; }
 
-void GallerySelectionTransformer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GallerySelectionTransformer *>(to)->MergeFrom(
-      static_cast<const GallerySelectionTransformer &>(from));
-}
 
-
-void GallerySelectionTransformer::MergeFrom(const GallerySelectionTransformer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GallerySelectionTransformer)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GallerySelectionTransformer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GallerySelectionTransformer*>(&to_msg);
+  auto& from = static_cast<const GallerySelectionTransformer&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GallerySelectionTransformer)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSD::DrawableSelectionTransformerArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSD::DrawableSelectionTransformerArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_gallery_uuid_path()->::TSP::UUIDPath::MergeFrom(from._internal_gallery_uuid_path());
+      _this->_internal_mutable_gallery_uuid_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_gallery_uuid_path());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_caption_storage_uuid_path()->::TSP::UUIDPath::MergeFrom(from._internal_caption_storage_uuid_path());
+      _this->_internal_mutable_caption_storage_uuid_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_caption_storage_uuid_path());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GallerySelectionTransformer::CopyFrom(const GallerySelectionTransformer& from) {
@@ -9910,15 +10053,15 @@ void GallerySelectionTransformer::CopyFrom(const GallerySelectionTransformer& fr
 }
 
 bool GallerySelectionTransformer::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_gallery_uuid_path()) {
-    if (!gallery_uuid_path_->IsInitialized()) return false;
+    if (!_impl_.gallery_uuid_path_->IsInitialized()) return false;
   }
   if (_internal_has_caption_storage_uuid_path()) {
-    if (!caption_storage_uuid_path_->IsInitialized()) return false;
+    if (!_impl_.caption_storage_uuid_path_->IsInitialized()) return false;
   }
   return true;
 }
@@ -9926,17 +10069,17 @@ bool GallerySelectionTransformer::IsInitialized() const {
 void GallerySelectionTransformer::InternalSwap(GallerySelectionTransformer* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GallerySelectionTransformer, caption_storage_uuid_path_)
-      + sizeof(GallerySelectionTransformer::caption_storage_uuid_path_)
-      - PROTOBUF_FIELD_OFFSET(GallerySelectionTransformer, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(GallerySelectionTransformer, _impl_.caption_storage_uuid_path_)
+      + sizeof(GallerySelectionTransformer::_impl_.caption_storage_uuid_path_)
+      - PROTOBUF_FIELD_OFFSET(GallerySelectionTransformer, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GallerySelectionTransformer::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[23]);
 }
@@ -9945,7 +10088,7 @@ void GallerySelectionTransformer::InternalSwap(GallerySelectionTransformer* othe
 
 class GalleryItemSelection::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSelection>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSelection>()._impl_._has_bits_);
   static const ::TSP::Reference& displayed_item(const GalleryItemSelection* msg);
   static void set_has_displayed_item(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -9954,97 +10097,102 @@ class GalleryItemSelection::_Internal {
 
 const ::TSP::Reference&
 GalleryItemSelection::_Internal::displayed_item(const GalleryItemSelection* msg) {
-  return *msg->displayed_item_;
+  return *msg->_impl_.displayed_item_;
 }
 void GalleryItemSelection::clear_displayed_item() {
-  if (displayed_item_ != nullptr) displayed_item_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.displayed_item_ != nullptr) _impl_.displayed_item_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryItemSelection::clear_items() {
-  items_.Clear();
+  _impl_.items_.Clear();
 }
 GalleryItemSelection::GalleryItemSelection(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  items_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSelection)
 }
 GalleryItemSelection::GalleryItemSelection(const GalleryItemSelection& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      items_(from.items_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSelection* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){from._impl_.items_}
+    , decltype(_impl_.displayed_item_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_displayed_item()) {
-    displayed_item_ = new ::TSP::Reference(*from.displayed_item_);
-  } else {
-    displayed_item_ = nullptr;
+    _this->_impl_.displayed_item_ = new ::TSP::Reference(*from._impl_.displayed_item_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSelection)
 }
 
-inline void GalleryItemSelection::SharedCtor() {
-displayed_item_ = nullptr;
+inline void GalleryItemSelection::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.items_){arena}
+    , decltype(_impl_.displayed_item_){nullptr}
+  };
 }
 
 GalleryItemSelection::~GalleryItemSelection() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSelection)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSelection::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete displayed_item_;
+  _impl_.items_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.displayed_item_;
 }
 
-void GalleryItemSelection::ArenaDtor(void* object) {
-  GalleryItemSelection* _this = reinterpret_cast< GalleryItemSelection* >(object);
-  (void)_this;
-}
-void GalleryItemSelection::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSelection::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSelection::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSelection)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  items_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.items_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(displayed_item_ != nullptr);
-    displayed_item_->Clear();
+    GOOGLE_DCHECK(_impl_.displayed_item_ != nullptr);
+    _impl_.displayed_item_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSelection::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSelection::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Reference displayed_item = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_displayed_item(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Reference items = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -10052,57 +10200,57 @@ const char* GalleryItemSelection::_InternalParse(const char* ptr, ::PROTOBUF_NAM
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSelection::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSelection::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSelection)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Reference displayed_item = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::displayed_item(this), target, stream);
+      InternalWriteMessage(1, _Internal::displayed_item(this),
+        _Internal::displayed_item(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Reference items = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_items_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_items_size()); i < n; i++) {
+    const auto& repfield = this->_internal_items(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_items(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSelection)
@@ -10113,58 +10261,49 @@ size_t GalleryItemSelection::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryItemSelection)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference items = 2;
   total_size += 1UL * this->_internal_items_size();
-  for (const auto& msg : this->items_) {
+  for (const auto& msg : this->_impl_.items_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // optional .TSP.Reference displayed_item = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *displayed_item_);
+        *_impl_.displayed_item_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSelection::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSelection::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSelection::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSelection::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSelection *>(to)->MergeFrom(
-      static_cast<const GalleryItemSelection &>(from));
-}
 
-
-void GalleryItemSelection::MergeFrom(const GalleryItemSelection& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelection)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSelection::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSelection*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSelection&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelection)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  items_.MergeFrom(from.items_);
+  _this->_impl_.items_.MergeFrom(from._impl_.items_);
   if (from._internal_has_displayed_item()) {
-    _internal_mutable_displayed_item()->::TSP::Reference::MergeFrom(from._internal_displayed_item());
+    _this->_internal_mutable_displayed_item()->::TSP::Reference::MergeFrom(
+        from._internal_displayed_item());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSelection::CopyFrom(const GalleryItemSelection& from) {
@@ -10175,9 +10314,10 @@ void GalleryItemSelection::CopyFrom(const GalleryItemSelection& from) {
 }
 
 bool GalleryItemSelection::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(items_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.items_))
+    return false;
   if (_internal_has_displayed_item()) {
-    if (!displayed_item_->IsInitialized()) return false;
+    if (!_impl_.displayed_item_->IsInitialized()) return false;
   }
   return true;
 }
@@ -10185,13 +10325,13 @@ bool GalleryItemSelection::IsInitialized() const {
 void GalleryItemSelection::InternalSwap(GalleryItemSelection* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  items_.InternalSwap(&other->items_);
-  swap(displayed_item_, other->displayed_item_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.items_.InternalSwap(&other->_impl_.items_);
+  swap(_impl_.displayed_item_, other->_impl_.displayed_item_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSelection::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[24]);
 }
@@ -10200,7 +10340,7 @@ void GalleryItemSelection::InternalSwap(GalleryItemSelection* other) {
 
 class GalleryItemSelectionTransformer::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSelectionTransformer>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSelectionTransformer>()._impl_._has_bits_);
   static const ::TSA::GalleryItemSelectionTransformerHelper& transformer_helper(const GalleryItemSelectionTransformer* msg);
   static void set_has_transformer_helper(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -10213,163 +10353,163 @@ class GalleryItemSelectionTransformer::_Internal {
 
 const ::TSA::GalleryItemSelectionTransformerHelper&
 GalleryItemSelectionTransformer::_Internal::transformer_helper(const GalleryItemSelectionTransformer* msg) {
-  return *msg->transformer_helper_;
+  return *msg->_impl_.transformer_helper_;
 }
 const ::TSP::UUIDPath&
 GalleryItemSelectionTransformer::_Internal::caption_storage_uuid_path(const GalleryItemSelectionTransformer* msg) {
-  return *msg->caption_storage_uuid_path_;
+  return *msg->_impl_.caption_storage_uuid_path_;
 }
 void GalleryItemSelectionTransformer::clear_caption_storage_uuid_path() {
-  if (caption_storage_uuid_path_ != nullptr) caption_storage_uuid_path_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.caption_storage_uuid_path_ != nullptr) _impl_.caption_storage_uuid_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 GalleryItemSelectionTransformer::GalleryItemSelectionTransformer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSelectionTransformer)
 }
 GalleryItemSelectionTransformer::GalleryItemSelectionTransformer(const GalleryItemSelectionTransformer& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSelectionTransformer* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.transformer_helper_){nullptr}
+    , decltype(_impl_.caption_storage_uuid_path_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_transformer_helper()) {
-    transformer_helper_ = new ::TSA::GalleryItemSelectionTransformerHelper(*from.transformer_helper_);
-  } else {
-    transformer_helper_ = nullptr;
+    _this->_impl_.transformer_helper_ = new ::TSA::GalleryItemSelectionTransformerHelper(*from._impl_.transformer_helper_);
   }
   if (from._internal_has_caption_storage_uuid_path()) {
-    caption_storage_uuid_path_ = new ::TSP::UUIDPath(*from.caption_storage_uuid_path_);
-  } else {
-    caption_storage_uuid_path_ = nullptr;
+    _this->_impl_.caption_storage_uuid_path_ = new ::TSP::UUIDPath(*from._impl_.caption_storage_uuid_path_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSelectionTransformer)
 }
 
-inline void GalleryItemSelectionTransformer::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&transformer_helper_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&caption_storage_uuid_path_) -
-    reinterpret_cast<char*>(&transformer_helper_)) + sizeof(caption_storage_uuid_path_));
+inline void GalleryItemSelectionTransformer::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.transformer_helper_){nullptr}
+    , decltype(_impl_.caption_storage_uuid_path_){nullptr}
+  };
 }
 
 GalleryItemSelectionTransformer::~GalleryItemSelectionTransformer() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSelectionTransformer)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSelectionTransformer::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete transformer_helper_;
-  if (this != internal_default_instance()) delete caption_storage_uuid_path_;
+  if (this != internal_default_instance()) delete _impl_.transformer_helper_;
+  if (this != internal_default_instance()) delete _impl_.caption_storage_uuid_path_;
 }
 
-void GalleryItemSelectionTransformer::ArenaDtor(void* object) {
-  GalleryItemSelectionTransformer* _this = reinterpret_cast< GalleryItemSelectionTransformer* >(object);
-  (void)_this;
-}
-void GalleryItemSelectionTransformer::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSelectionTransformer::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSelectionTransformer::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSelectionTransformer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(transformer_helper_ != nullptr);
-      transformer_helper_->Clear();
+      GOOGLE_DCHECK(_impl_.transformer_helper_ != nullptr);
+      _impl_.transformer_helper_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(caption_storage_uuid_path_ != nullptr);
-      caption_storage_uuid_path_->Clear();
+      GOOGLE_DCHECK(_impl_.caption_storage_uuid_path_ != nullptr);
+      _impl_.caption_storage_uuid_path_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSelectionTransformer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSelectionTransformer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSA.GalleryItemSelectionTransformerHelper transformer_helper = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_transformer_helper(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath caption_storage_uuid_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_caption_storage_uuid_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSelectionTransformer::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSelectionTransformer::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSelectionTransformer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSA.GalleryItemSelectionTransformerHelper transformer_helper = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::transformer_helper(this), target, stream);
+      InternalWriteMessage(1, _Internal::transformer_helper(this),
+        _Internal::transformer_helper(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath caption_storage_uuid_path = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::caption_storage_uuid_path(this), target, stream);
+      InternalWriteMessage(2, _Internal::caption_storage_uuid_path(this),
+        _Internal::caption_storage_uuid_path(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSelectionTransformer)
@@ -10380,65 +10520,57 @@ size_t GalleryItemSelectionTransformer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryItemSelectionTransformer)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional .TSA.GalleryItemSelectionTransformerHelper transformer_helper = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *transformer_helper_);
+          *_impl_.transformer_helper_);
     }
 
     // optional .TSP.UUIDPath caption_storage_uuid_path = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *caption_storage_uuid_path_);
+          *_impl_.caption_storage_uuid_path_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSelectionTransformer::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSelectionTransformer::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSelectionTransformer::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSelectionTransformer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSelectionTransformer *>(to)->MergeFrom(
-      static_cast<const GalleryItemSelectionTransformer &>(from));
-}
 
-
-void GalleryItemSelectionTransformer::MergeFrom(const GalleryItemSelectionTransformer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelectionTransformer)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSelectionTransformer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSelectionTransformer*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSelectionTransformer&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelectionTransformer)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_transformer_helper()->::TSA::GalleryItemSelectionTransformerHelper::MergeFrom(from._internal_transformer_helper());
+      _this->_internal_mutable_transformer_helper()->::TSA::GalleryItemSelectionTransformerHelper::MergeFrom(
+          from._internal_transformer_helper());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_caption_storage_uuid_path()->::TSP::UUIDPath::MergeFrom(from._internal_caption_storage_uuid_path());
+      _this->_internal_mutable_caption_storage_uuid_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_caption_storage_uuid_path());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSelectionTransformer::CopyFrom(const GalleryItemSelectionTransformer& from) {
@@ -10450,10 +10582,10 @@ void GalleryItemSelectionTransformer::CopyFrom(const GalleryItemSelectionTransfo
 
 bool GalleryItemSelectionTransformer::IsInitialized() const {
   if (_internal_has_transformer_helper()) {
-    if (!transformer_helper_->IsInitialized()) return false;
+    if (!_impl_.transformer_helper_->IsInitialized()) return false;
   }
   if (_internal_has_caption_storage_uuid_path()) {
-    if (!caption_storage_uuid_path_->IsInitialized()) return false;
+    if (!_impl_.caption_storage_uuid_path_->IsInitialized()) return false;
   }
   return true;
 }
@@ -10461,17 +10593,17 @@ bool GalleryItemSelectionTransformer::IsInitialized() const {
 void GalleryItemSelectionTransformer::InternalSwap(GalleryItemSelectionTransformer* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryItemSelectionTransformer, caption_storage_uuid_path_)
-      + sizeof(GalleryItemSelectionTransformer::caption_storage_uuid_path_)
-      - PROTOBUF_FIELD_OFFSET(GalleryItemSelectionTransformer, transformer_helper_)>(
-          reinterpret_cast<char*>(&transformer_helper_),
-          reinterpret_cast<char*>(&other->transformer_helper_));
+      PROTOBUF_FIELD_OFFSET(GalleryItemSelectionTransformer, _impl_.caption_storage_uuid_path_)
+      + sizeof(GalleryItemSelectionTransformer::_impl_.caption_storage_uuid_path_)
+      - PROTOBUF_FIELD_OFFSET(GalleryItemSelectionTransformer, _impl_.transformer_helper_)>(
+          reinterpret_cast<char*>(&_impl_.transformer_helper_),
+          reinterpret_cast<char*>(&other->_impl_.transformer_helper_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSelectionTransformer::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[25]);
 }
@@ -10480,7 +10612,7 @@ void GalleryItemSelectionTransformer::InternalSwap(GalleryItemSelectionTransform
 
 class GalleryItemSelectionTransformerHelper::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSelectionTransformerHelper>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSelectionTransformerHelper>()._impl_._has_bits_);
   static const ::TSP::UUIDPath& displayed_item_uuid_path(const GalleryItemSelectionTransformerHelper* msg);
   static void set_has_displayed_item_uuid_path(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -10489,97 +10621,102 @@ class GalleryItemSelectionTransformerHelper::_Internal {
 
 const ::TSP::UUIDPath&
 GalleryItemSelectionTransformerHelper::_Internal::displayed_item_uuid_path(const GalleryItemSelectionTransformerHelper* msg) {
-  return *msg->displayed_item_uuid_path_;
+  return *msg->_impl_.displayed_item_uuid_path_;
 }
 void GalleryItemSelectionTransformerHelper::clear_displayed_item_uuid_path() {
-  if (displayed_item_uuid_path_ != nullptr) displayed_item_uuid_path_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.displayed_item_uuid_path_ != nullptr) _impl_.displayed_item_uuid_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryItemSelectionTransformerHelper::clear_item_uuid_paths() {
-  item_uuid_paths_.Clear();
+  _impl_.item_uuid_paths_.Clear();
 }
 GalleryItemSelectionTransformerHelper::GalleryItemSelectionTransformerHelper(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  item_uuid_paths_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSelectionTransformerHelper)
 }
 GalleryItemSelectionTransformerHelper::GalleryItemSelectionTransformerHelper(const GalleryItemSelectionTransformerHelper& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      item_uuid_paths_(from.item_uuid_paths_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSelectionTransformerHelper* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.item_uuid_paths_){from._impl_.item_uuid_paths_}
+    , decltype(_impl_.displayed_item_uuid_path_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_displayed_item_uuid_path()) {
-    displayed_item_uuid_path_ = new ::TSP::UUIDPath(*from.displayed_item_uuid_path_);
-  } else {
-    displayed_item_uuid_path_ = nullptr;
+    _this->_impl_.displayed_item_uuid_path_ = new ::TSP::UUIDPath(*from._impl_.displayed_item_uuid_path_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSelectionTransformerHelper)
 }
 
-inline void GalleryItemSelectionTransformerHelper::SharedCtor() {
-displayed_item_uuid_path_ = nullptr;
+inline void GalleryItemSelectionTransformerHelper::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.item_uuid_paths_){arena}
+    , decltype(_impl_.displayed_item_uuid_path_){nullptr}
+  };
 }
 
 GalleryItemSelectionTransformerHelper::~GalleryItemSelectionTransformerHelper() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSelectionTransformerHelper)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSelectionTransformerHelper::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete displayed_item_uuid_path_;
+  _impl_.item_uuid_paths_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.displayed_item_uuid_path_;
 }
 
-void GalleryItemSelectionTransformerHelper::ArenaDtor(void* object) {
-  GalleryItemSelectionTransformerHelper* _this = reinterpret_cast< GalleryItemSelectionTransformerHelper* >(object);
-  (void)_this;
-}
-void GalleryItemSelectionTransformerHelper::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSelectionTransformerHelper::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSelectionTransformerHelper::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSelectionTransformerHelper)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  item_uuid_paths_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.item_uuid_paths_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(displayed_item_uuid_path_ != nullptr);
-    displayed_item_uuid_path_->Clear();
+    GOOGLE_DCHECK(_impl_.displayed_item_uuid_path_ != nullptr);
+    _impl_.displayed_item_uuid_path_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSelectionTransformerHelper::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSelectionTransformerHelper::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.UUIDPath displayed_item_uuid_path = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_displayed_item_uuid_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUIDPath item_uuid_paths = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -10587,57 +10724,57 @@ const char* GalleryItemSelectionTransformerHelper::_InternalParse(const char* pt
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSelectionTransformerHelper::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSelectionTransformerHelper::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSelectionTransformerHelper)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.UUIDPath displayed_item_uuid_path = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::displayed_item_uuid_path(this), target, stream);
+      InternalWriteMessage(1, _Internal::displayed_item_uuid_path(this),
+        _Internal::displayed_item_uuid_path(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.UUIDPath item_uuid_paths = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_item_uuid_paths_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_item_uuid_paths_size()); i < n; i++) {
+    const auto& repfield = this->_internal_item_uuid_paths(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_item_uuid_paths(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSelectionTransformerHelper)
@@ -10648,58 +10785,49 @@ size_t GalleryItemSelectionTransformerHelper::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryItemSelectionTransformerHelper)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.UUIDPath item_uuid_paths = 2;
   total_size += 1UL * this->_internal_item_uuid_paths_size();
-  for (const auto& msg : this->item_uuid_paths_) {
+  for (const auto& msg : this->_impl_.item_uuid_paths_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // optional .TSP.UUIDPath displayed_item_uuid_path = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *displayed_item_uuid_path_);
+        *_impl_.displayed_item_uuid_path_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSelectionTransformerHelper::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSelectionTransformerHelper::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSelectionTransformerHelper::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSelectionTransformerHelper::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSelectionTransformerHelper *>(to)->MergeFrom(
-      static_cast<const GalleryItemSelectionTransformerHelper &>(from));
-}
 
-
-void GalleryItemSelectionTransformerHelper::MergeFrom(const GalleryItemSelectionTransformerHelper& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelectionTransformerHelper)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSelectionTransformerHelper::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSelectionTransformerHelper*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSelectionTransformerHelper&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSelectionTransformerHelper)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  item_uuid_paths_.MergeFrom(from.item_uuid_paths_);
+  _this->_impl_.item_uuid_paths_.MergeFrom(from._impl_.item_uuid_paths_);
   if (from._internal_has_displayed_item_uuid_path()) {
-    _internal_mutable_displayed_item_uuid_path()->::TSP::UUIDPath::MergeFrom(from._internal_displayed_item_uuid_path());
+    _this->_internal_mutable_displayed_item_uuid_path()->::TSP::UUIDPath::MergeFrom(
+        from._internal_displayed_item_uuid_path());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSelectionTransformerHelper::CopyFrom(const GalleryItemSelectionTransformerHelper& from) {
@@ -10710,9 +10838,10 @@ void GalleryItemSelectionTransformerHelper::CopyFrom(const GalleryItemSelectionT
 }
 
 bool GalleryItemSelectionTransformerHelper::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(item_uuid_paths_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.item_uuid_paths_))
+    return false;
   if (_internal_has_displayed_item_uuid_path()) {
-    if (!displayed_item_uuid_path_->IsInitialized()) return false;
+    if (!_impl_.displayed_item_uuid_path_->IsInitialized()) return false;
   }
   return true;
 }
@@ -10720,13 +10849,13 @@ bool GalleryItemSelectionTransformerHelper::IsInitialized() const {
 void GalleryItemSelectionTransformerHelper::InternalSwap(GalleryItemSelectionTransformerHelper* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  item_uuid_paths_.InternalSwap(&other->item_uuid_paths_);
-  swap(displayed_item_uuid_path_, other->displayed_item_uuid_path_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.item_uuid_paths_.InternalSwap(&other->_impl_.item_uuid_paths_);
+  swap(_impl_.displayed_item_uuid_path_, other->_impl_.displayed_item_uuid_path_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSelectionTransformerHelper::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[26]);
 }
@@ -10735,7 +10864,7 @@ void GalleryItemSelectionTransformerHelper::InternalSwap(GalleryItemSelectionTra
 
 class GalleryItemSetValueCommand_PropertyValue::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSetValueCommand_PropertyValue>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSetValueCommand_PropertyValue>()._impl_._has_bits_);
   static const ::TSP::DataReference& image_data(const GalleryItemSetValueCommand_PropertyValue* msg);
   static void set_has_image_data(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
@@ -10747,148 +10876,160 @@ class GalleryItemSetValueCommand_PropertyValue::_Internal {
 
 const ::TSP::DataReference&
 GalleryItemSetValueCommand_PropertyValue::_Internal::image_data(const GalleryItemSetValueCommand_PropertyValue* msg) {
-  return *msg->image_data_;
+  return *msg->_impl_.image_data_;
 }
 void GalleryItemSetValueCommand_PropertyValue::clear_image_data() {
-  if (image_data_ != nullptr) image_data_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.image_data_ != nullptr) _impl_.image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 GalleryItemSetValueCommand_PropertyValue::GalleryItemSetValueCommand_PropertyValue(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSetValueCommand.PropertyValue)
 }
 GalleryItemSetValueCommand_PropertyValue::GalleryItemSetValueCommand_PropertyValue(const GalleryItemSetValueCommand_PropertyValue& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSetValueCommand_PropertyValue* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accessibility_description_){}
+    , decltype(_impl_.image_data_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  accessibility_description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.accessibility_description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.accessibility_description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_accessibility_description()) {
-    accessibility_description_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_accessibility_description(), 
-      GetArenaForAllocation());
+    _this->_impl_.accessibility_description_.Set(from._internal_accessibility_description(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_image_data()) {
-    image_data_ = new ::TSP::DataReference(*from.image_data_);
-  } else {
-    image_data_ = nullptr;
+    _this->_impl_.image_data_ = new ::TSP::DataReference(*from._impl_.image_data_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSetValueCommand.PropertyValue)
 }
 
-inline void GalleryItemSetValueCommand_PropertyValue::SharedCtor() {
-accessibility_description_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-image_data_ = nullptr;
+inline void GalleryItemSetValueCommand_PropertyValue::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.accessibility_description_){}
+    , decltype(_impl_.image_data_){nullptr}
+  };
+  _impl_.accessibility_description_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.accessibility_description_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 GalleryItemSetValueCommand_PropertyValue::~GalleryItemSetValueCommand_PropertyValue() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSetValueCommand.PropertyValue)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSetValueCommand_PropertyValue::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  accessibility_description_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete image_data_;
+  _impl_.accessibility_description_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.image_data_;
 }
 
-void GalleryItemSetValueCommand_PropertyValue::ArenaDtor(void* object) {
-  GalleryItemSetValueCommand_PropertyValue* _this = reinterpret_cast< GalleryItemSetValueCommand_PropertyValue* >(object);
-  (void)_this;
-}
-void GalleryItemSetValueCommand_PropertyValue::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSetValueCommand_PropertyValue::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSetValueCommand_PropertyValue::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSetValueCommand.PropertyValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      accessibility_description_.ClearNonDefaultToEmpty();
+      _impl_.accessibility_description_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(image_data_ != nullptr);
-      image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.image_data_ != nullptr);
+      _impl_.image_data_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSetValueCommand_PropertyValue::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSetValueCommand_PropertyValue::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.DataReference image_data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string accessibility_description = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_accessibility_description();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(ptr);
           #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.GalleryItemSetValueCommand.PropertyValue.accessibility_description");
+          ::_pbi::VerifyUTF8(str, "TSA.GalleryItemSetValueCommand.PropertyValue.accessibility_description");
           #endif  // !NDEBUG
-          CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSetValueCommand_PropertyValue::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSetValueCommand_PropertyValue::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSetValueCommand.PropertyValue)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.DataReference image_data = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::image_data(this), target, stream);
+      InternalWriteMessage(1, _Internal::image_data(this),
+        _Internal::image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional string accessibility_description = 2;
@@ -10902,7 +11043,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSetValueCommand.PropertyValue)
@@ -10913,11 +11054,11 @@ size_t GalleryItemSetValueCommand_PropertyValue::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.GalleryItemSetValueCommand.PropertyValue)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional string accessibility_description = 2;
     if (cached_has_bits & 0x00000001u) {
@@ -10930,48 +11071,39 @@ size_t GalleryItemSetValueCommand_PropertyValue::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *image_data_);
+          *_impl_.image_data_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSetValueCommand_PropertyValue::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSetValueCommand_PropertyValue::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSetValueCommand_PropertyValue::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSetValueCommand_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSetValueCommand_PropertyValue *>(to)->MergeFrom(
-      static_cast<const GalleryItemSetValueCommand_PropertyValue &>(from));
-}
 
-
-void GalleryItemSetValueCommand_PropertyValue::MergeFrom(const GalleryItemSetValueCommand_PropertyValue& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetValueCommand.PropertyValue)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSetValueCommand_PropertyValue::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSetValueCommand_PropertyValue*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSetValueCommand_PropertyValue&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetValueCommand.PropertyValue)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_accessibility_description(from._internal_accessibility_description());
+      _this->_internal_set_accessibility_description(from._internal_accessibility_description());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_image_data()->::TSP::DataReference::MergeFrom(from._internal_image_data());
+      _this->_internal_mutable_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_image_data());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSetValueCommand_PropertyValue::CopyFrom(const GalleryItemSetValueCommand_PropertyValue& from) {
@@ -10983,25 +11115,26 @@ void GalleryItemSetValueCommand_PropertyValue::CopyFrom(const GalleryItemSetValu
 
 bool GalleryItemSetValueCommand_PropertyValue::IsInitialized() const {
   if (_internal_has_image_data()) {
-    if (!image_data_->IsInitialized()) return false;
+    if (!_impl_.image_data_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GalleryItemSetValueCommand_PropertyValue::InternalSwap(GalleryItemSetValueCommand_PropertyValue* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &accessibility_description_, GetArenaForAllocation(),
-      &other->accessibility_description_, other->GetArenaForAllocation()
+      &_impl_.accessibility_description_, lhs_arena,
+      &other->_impl_.accessibility_description_, rhs_arena
   );
-  swap(image_data_, other->image_data_);
+  swap(_impl_.image_data_, other->_impl_.image_data_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSetValueCommand_PropertyValue::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[27]);
 }
@@ -11010,7 +11143,7 @@ void GalleryItemSetValueCommand_PropertyValue::InternalSwap(GalleryItemSetValueC
 
 class GalleryItemSetValueCommand::_Internal {
  public:
-  using HasBits = decltype(std::declval<GalleryItemSetValueCommand>()._has_bits_);
+  using HasBits = decltype(std::declval<GalleryItemSetValueCommand>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const GalleryItemSetValueCommand* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -11037,246 +11170,249 @@ class GalleryItemSetValueCommand::_Internal {
 
 const ::TSK::CommandArchive&
 GalleryItemSetValueCommand::_Internal::super(const GalleryItemSetValueCommand* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::UUIDPath&
 GalleryItemSetValueCommand::_Internal::item_id_path(const GalleryItemSetValueCommand* msg) {
-  return *msg->item_id_path_;
+  return *msg->_impl_.item_id_path_;
 }
 const ::TSA::GalleryItemSetValueCommand_PropertyValue&
 GalleryItemSetValueCommand::_Internal::value(const GalleryItemSetValueCommand* msg) {
-  return *msg->value_;
+  return *msg->_impl_.value_;
 }
 const ::TSA::GalleryItemSetValueCommand_PropertyValue&
 GalleryItemSetValueCommand::_Internal::old_value(const GalleryItemSetValueCommand* msg) {
-  return *msg->old_value_;
+  return *msg->_impl_.old_value_;
 }
 void GalleryItemSetValueCommand::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void GalleryItemSetValueCommand::clear_item_id_path() {
-  if (item_id_path_ != nullptr) item_id_path_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.item_id_path_ != nullptr) _impl_.item_id_path_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 GalleryItemSetValueCommand::GalleryItemSetValueCommand(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.GalleryItemSetValueCommand)
 }
 GalleryItemSetValueCommand::GalleryItemSetValueCommand(const GalleryItemSetValueCommand& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  GalleryItemSetValueCommand* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.item_id_path_){nullptr}
+    , decltype(_impl_.value_){nullptr}
+    , decltype(_impl_.old_value_){nullptr}
+    , decltype(_impl_.property_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_item_id_path()) {
-    item_id_path_ = new ::TSP::UUIDPath(*from.item_id_path_);
-  } else {
-    item_id_path_ = nullptr;
+    _this->_impl_.item_id_path_ = new ::TSP::UUIDPath(*from._impl_.item_id_path_);
   }
   if (from._internal_has_value()) {
-    value_ = new ::TSA::GalleryItemSetValueCommand_PropertyValue(*from.value_);
-  } else {
-    value_ = nullptr;
+    _this->_impl_.value_ = new ::TSA::GalleryItemSetValueCommand_PropertyValue(*from._impl_.value_);
   }
   if (from._internal_has_old_value()) {
-    old_value_ = new ::TSA::GalleryItemSetValueCommand_PropertyValue(*from.old_value_);
-  } else {
-    old_value_ = nullptr;
+    _this->_impl_.old_value_ = new ::TSA::GalleryItemSetValueCommand_PropertyValue(*from._impl_.old_value_);
   }
-  property_ = from.property_;
+  _this->_impl_.property_ = from._impl_.property_;
   // @@protoc_insertion_point(copy_constructor:TSA.GalleryItemSetValueCommand)
 }
 
-inline void GalleryItemSetValueCommand::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&property_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(property_));
+inline void GalleryItemSetValueCommand::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.item_id_path_){nullptr}
+    , decltype(_impl_.value_){nullptr}
+    , decltype(_impl_.old_value_){nullptr}
+    , decltype(_impl_.property_){0}
+  };
 }
 
 GalleryItemSetValueCommand::~GalleryItemSetValueCommand() {
   // @@protoc_insertion_point(destructor:TSA.GalleryItemSetValueCommand)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void GalleryItemSetValueCommand::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete item_id_path_;
-  if (this != internal_default_instance()) delete value_;
-  if (this != internal_default_instance()) delete old_value_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.item_id_path_;
+  if (this != internal_default_instance()) delete _impl_.value_;
+  if (this != internal_default_instance()) delete _impl_.old_value_;
 }
 
-void GalleryItemSetValueCommand::ArenaDtor(void* object) {
-  GalleryItemSetValueCommand* _this = reinterpret_cast< GalleryItemSetValueCommand* >(object);
-  (void)_this;
-}
-void GalleryItemSetValueCommand::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GalleryItemSetValueCommand::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void GalleryItemSetValueCommand::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.GalleryItemSetValueCommand)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(item_id_path_ != nullptr);
-      item_id_path_->Clear();
+      GOOGLE_DCHECK(_impl_.item_id_path_ != nullptr);
+      _impl_.item_id_path_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(value_ != nullptr);
-      value_->Clear();
+      GOOGLE_DCHECK(_impl_.value_ != nullptr);
+      _impl_.value_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_value_ != nullptr);
-      old_value_->Clear();
+      GOOGLE_DCHECK(_impl_.old_value_ != nullptr);
+      _impl_.old_value_->Clear();
     }
   }
-  property_ = 0;
-  _has_bits_.Clear();
+  _impl_.property_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* GalleryItemSetValueCommand::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* GalleryItemSetValueCommand::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.UUIDPath item_id_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_item_id_path(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryItemProperty property = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSA::GalleryItemProperty_IsValid(val))) {
             _internal_set_property(static_cast<::TSA::GalleryItemProperty>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryItemSetValueCommand.PropertyValue value = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_value(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSA.GalleryItemSetValueCommand.PropertyValue old_value = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_value(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GalleryItemSetValueCommand::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* GalleryItemSetValueCommand::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.GalleryItemSetValueCommand)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.UUIDPath item_id_path = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::item_id_path(this), target, stream);
+      InternalWriteMessage(2, _Internal::item_id_path(this),
+        _Internal::item_id_path(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSA.GalleryItemProperty property = 3;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_property(), target);
   }
 
   // optional .TSA.GalleryItemSetValueCommand.PropertyValue value = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::value(this), target, stream);
+      InternalWriteMessage(4, _Internal::value(this),
+        _Internal::value(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSA.GalleryItemSetValueCommand.PropertyValue old_value = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::old_value(this), target, stream);
+      InternalWriteMessage(5, _Internal::old_value(this),
+        _Internal::old_value(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.GalleryItemSetValueCommand)
@@ -11291,90 +11427,84 @@ size_t GalleryItemSetValueCommand::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001eu) {
     // optional .TSP.UUIDPath item_id_path = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *item_id_path_);
+          *_impl_.item_id_path_);
     }
 
     // optional .TSA.GalleryItemSetValueCommand.PropertyValue value = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *value_);
+          *_impl_.value_);
     }
 
     // optional .TSA.GalleryItemSetValueCommand.PropertyValue old_value = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_value_);
+          *_impl_.old_value_);
     }
 
     // optional .TSA.GalleryItemProperty property = 3;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_property());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_property());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData GalleryItemSetValueCommand::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     GalleryItemSetValueCommand::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GalleryItemSetValueCommand::GetClassData() const { return &_class_data_; }
 
-void GalleryItemSetValueCommand::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<GalleryItemSetValueCommand *>(to)->MergeFrom(
-      static_cast<const GalleryItemSetValueCommand &>(from));
-}
 
-
-void GalleryItemSetValueCommand::MergeFrom(const GalleryItemSetValueCommand& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetValueCommand)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void GalleryItemSetValueCommand::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<GalleryItemSetValueCommand*>(&to_msg);
+  auto& from = static_cast<const GalleryItemSetValueCommand&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.GalleryItemSetValueCommand)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_item_id_path()->::TSP::UUIDPath::MergeFrom(from._internal_item_id_path());
+      _this->_internal_mutable_item_id_path()->::TSP::UUIDPath::MergeFrom(
+          from._internal_item_id_path());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_value()->::TSA::GalleryItemSetValueCommand_PropertyValue::MergeFrom(from._internal_value());
+      _this->_internal_mutable_value()->::TSA::GalleryItemSetValueCommand_PropertyValue::MergeFrom(
+          from._internal_value());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_value()->::TSA::GalleryItemSetValueCommand_PropertyValue::MergeFrom(from._internal_old_value());
+      _this->_internal_mutable_old_value()->::TSA::GalleryItemSetValueCommand_PropertyValue::MergeFrom(
+          from._internal_old_value());
     }
     if (cached_has_bits & 0x00000010u) {
-      property_ = from.property_;
+      _this->_impl_.property_ = from._impl_.property_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GalleryItemSetValueCommand::CopyFrom(const GalleryItemSetValueCommand& from) {
@@ -11385,18 +11515,18 @@ void GalleryItemSetValueCommand::CopyFrom(const GalleryItemSetValueCommand& from
 }
 
 bool GalleryItemSetValueCommand::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_item_id_path()) {
-    if (!item_id_path_->IsInitialized()) return false;
+    if (!_impl_.item_id_path_->IsInitialized()) return false;
   }
   if (_internal_has_value()) {
-    if (!value_->IsInitialized()) return false;
+    if (!_impl_.value_->IsInitialized()) return false;
   }
   if (_internal_has_old_value()) {
-    if (!old_value_->IsInitialized()) return false;
+    if (!_impl_.old_value_->IsInitialized()) return false;
   }
   return true;
 }
@@ -11404,26 +11534,278 @@ bool GalleryItemSetValueCommand::IsInitialized() const {
 void GalleryItemSetValueCommand::InternalSwap(GalleryItemSetValueCommand* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GalleryItemSetValueCommand, property_)
-      + sizeof(GalleryItemSetValueCommand::property_)
-      - PROTOBUF_FIELD_OFFSET(GalleryItemSetValueCommand, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(GalleryItemSetValueCommand, _impl_.property_)
+      + sizeof(GalleryItemSetValueCommand::_impl_.property_)
+      - PROTOBUF_FIELD_OFFSET(GalleryItemSetValueCommand, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GalleryItemSetValueCommand::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
       file_level_metadata_TSAArchives_2eproto[28]);
 }
 
 // ===================================================================
 
+class CollaboratorGalleryItemCursor::_Internal {
+ public:
+  using HasBits = decltype(std::declval<CollaboratorGalleryItemCursor>()._impl_._has_bits_);
+  static const ::TSP::UUID& displayed_item_id(const CollaboratorGalleryItemCursor* msg);
+  static void set_has_displayed_item_id(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+};
+
+const ::TSP::UUID&
+CollaboratorGalleryItemCursor::_Internal::displayed_item_id(const CollaboratorGalleryItemCursor* msg) {
+  return *msg->_impl_.displayed_item_id_;
+}
+void CollaboratorGalleryItemCursor::clear_displayed_item_id() {
+  if (_impl_.displayed_item_id_ != nullptr) _impl_.displayed_item_id_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+void CollaboratorGalleryItemCursor::clear_item_ids() {
+  _impl_.item_ids_.Clear();
+}
+CollaboratorGalleryItemCursor::CollaboratorGalleryItemCursor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:TSA.CollaboratorGalleryItemCursor)
+}
+CollaboratorGalleryItemCursor::CollaboratorGalleryItemCursor(const CollaboratorGalleryItemCursor& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CollaboratorGalleryItemCursor* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.item_ids_){from._impl_.item_ids_}
+    , decltype(_impl_.displayed_item_id_){nullptr}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_displayed_item_id()) {
+    _this->_impl_.displayed_item_id_ = new ::TSP::UUID(*from._impl_.displayed_item_id_);
+  }
+  // @@protoc_insertion_point(copy_constructor:TSA.CollaboratorGalleryItemCursor)
+}
+
+inline void CollaboratorGalleryItemCursor::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.item_ids_){arena}
+    , decltype(_impl_.displayed_item_id_){nullptr}
+  };
+}
+
+CollaboratorGalleryItemCursor::~CollaboratorGalleryItemCursor() {
+  // @@protoc_insertion_point(destructor:TSA.CollaboratorGalleryItemCursor)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void CollaboratorGalleryItemCursor::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.item_ids_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.displayed_item_id_;
+}
+
+void CollaboratorGalleryItemCursor::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void CollaboratorGalleryItemCursor::Clear() {
+// @@protoc_insertion_point(message_clear_start:TSA.CollaboratorGalleryItemCursor)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.item_ids_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(_impl_.displayed_item_id_ != nullptr);
+    _impl_.displayed_item_id_->Clear();
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* CollaboratorGalleryItemCursor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // optional .TSP.UUID displayed_item_id = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_displayed_item_id(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .TSP.UUID item_ids = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_item_ids(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* CollaboratorGalleryItemCursor::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TSA.CollaboratorGalleryItemCursor)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSP.UUID displayed_item_id = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, _Internal::displayed_item_id(this),
+        _Internal::displayed_item_id(this).GetCachedSize(), target, stream);
+  }
+
+  // repeated .TSP.UUID item_ids = 2;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_item_ids_size()); i < n; i++) {
+    const auto& repfield = this->_internal_item_ids(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TSA.CollaboratorGalleryItemCursor)
+  return target;
+}
+
+size_t CollaboratorGalleryItemCursor::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TSA.CollaboratorGalleryItemCursor)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .TSP.UUID item_ids = 2;
+  total_size += 1UL * this->_internal_item_ids_size();
+  for (const auto& msg : this->_impl_.item_ids_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // optional .TSP.UUID displayed_item_id = 1;
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *_impl_.displayed_item_id_);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CollaboratorGalleryItemCursor::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    CollaboratorGalleryItemCursor::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CollaboratorGalleryItemCursor::GetClassData() const { return &_class_data_; }
+
+
+void CollaboratorGalleryItemCursor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CollaboratorGalleryItemCursor*>(&to_msg);
+  auto& from = static_cast<const CollaboratorGalleryItemCursor&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.CollaboratorGalleryItemCursor)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.item_ids_.MergeFrom(from._impl_.item_ids_);
+  if (from._internal_has_displayed_item_id()) {
+    _this->_internal_mutable_displayed_item_id()->::TSP::UUID::MergeFrom(
+        from._internal_displayed_item_id());
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CollaboratorGalleryItemCursor::CopyFrom(const CollaboratorGalleryItemCursor& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TSA.CollaboratorGalleryItemCursor)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool CollaboratorGalleryItemCursor::IsInitialized() const {
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.item_ids_))
+    return false;
+  if (_internal_has_displayed_item_id()) {
+    if (!_impl_.displayed_item_id_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void CollaboratorGalleryItemCursor::InternalSwap(CollaboratorGalleryItemCursor* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.item_ids_.InternalSwap(&other->_impl_.item_ids_);
+  swap(_impl_.displayed_item_id_, other->_impl_.displayed_item_id_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata CollaboratorGalleryItemCursor::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
+      file_level_metadata_TSAArchives_2eproto[29]);
+}
+
+// ===================================================================
+
 class WebVideoInfo::_Internal {
  public:
-  using HasBits = decltype(std::declval<WebVideoInfo>()._has_bits_);
+  using HasBits = decltype(std::declval<WebVideoInfo>()._impl_._has_bits_);
   static void set_has_url(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -11439,170 +11821,181 @@ class WebVideoInfo::_Internal {
 
 const ::TSP::DataReference&
 WebVideoInfo::_Internal::poster_image_data(const WebVideoInfo* msg) {
-  return *msg->poster_image_data_;
+  return *msg->_impl_.poster_image_data_;
 }
 const ::TSD::Attribution&
 WebVideoInfo::_Internal::attribution(const WebVideoInfo* msg) {
-  return *msg->attribution_;
+  return *msg->_impl_.attribution_;
 }
 void WebVideoInfo::clear_poster_image_data() {
-  if (poster_image_data_ != nullptr) poster_image_data_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.poster_image_data_ != nullptr) _impl_.poster_image_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void WebVideoInfo::clear_attribution() {
-  if (attribution_ != nullptr) attribution_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.attribution_ != nullptr) _impl_.attribution_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 WebVideoInfo::WebVideoInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.WebVideoInfo)
 }
 WebVideoInfo::WebVideoInfo(const WebVideoInfo& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  WebVideoInfo* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.url_){}
+    , decltype(_impl_.poster_image_data_){nullptr}
+    , decltype(_impl_.attribution_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  url_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.url_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.url_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_url()) {
-    url_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_url(), 
-      GetArenaForAllocation());
+    _this->_impl_.url_.Set(from._internal_url(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_poster_image_data()) {
-    poster_image_data_ = new ::TSP::DataReference(*from.poster_image_data_);
-  } else {
-    poster_image_data_ = nullptr;
+    _this->_impl_.poster_image_data_ = new ::TSP::DataReference(*from._impl_.poster_image_data_);
   }
   if (from._internal_has_attribution()) {
-    attribution_ = new ::TSD::Attribution(*from.attribution_);
-  } else {
-    attribution_ = nullptr;
+    _this->_impl_.attribution_ = new ::TSD::Attribution(*from._impl_.attribution_);
   }
   // @@protoc_insertion_point(copy_constructor:TSA.WebVideoInfo)
 }
 
-inline void WebVideoInfo::SharedCtor() {
-url_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&poster_image_data_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&attribution_) -
-    reinterpret_cast<char*>(&poster_image_data_)) + sizeof(attribution_));
+inline void WebVideoInfo::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.url_){}
+    , decltype(_impl_.poster_image_data_){nullptr}
+    , decltype(_impl_.attribution_){nullptr}
+  };
+  _impl_.url_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.url_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 WebVideoInfo::~WebVideoInfo() {
   // @@protoc_insertion_point(destructor:TSA.WebVideoInfo)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void WebVideoInfo::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  url_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete poster_image_data_;
-  if (this != internal_default_instance()) delete attribution_;
+  _impl_.url_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.poster_image_data_;
+  if (this != internal_default_instance()) delete _impl_.attribution_;
 }
 
-void WebVideoInfo::ArenaDtor(void* object) {
-  WebVideoInfo* _this = reinterpret_cast< WebVideoInfo* >(object);
-  (void)_this;
-}
-void WebVideoInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void WebVideoInfo::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void WebVideoInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.WebVideoInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      url_.ClearNonDefaultToEmpty();
+      _impl_.url_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(poster_image_data_ != nullptr);
-      poster_image_data_->Clear();
+      GOOGLE_DCHECK(_impl_.poster_image_data_ != nullptr);
+      _impl_.poster_image_data_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(attribution_ != nullptr);
-      attribution_->Clear();
+      GOOGLE_DCHECK(_impl_.attribution_ != nullptr);
+      _impl_.attribution_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* WebVideoInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* WebVideoInfo::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional string url = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_url();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSA.WebVideoInfo.url");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSA.WebVideoInfo.url");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference poster_image_data = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_poster_image_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.Attribution attribution = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_attribution(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* WebVideoInfo::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* WebVideoInfo::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.WebVideoInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional string url = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -11615,22 +12008,20 @@ failure:
 
   // optional .TSP.DataReference poster_image_data = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::poster_image_data(this), target, stream);
+      InternalWriteMessage(2, _Internal::poster_image_data(this),
+        _Internal::poster_image_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.Attribution attribution = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::attribution(this), target, stream);
+      InternalWriteMessage(3, _Internal::attribution(this),
+        _Internal::attribution(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.WebVideoInfo)
@@ -11641,11 +12032,11 @@ size_t WebVideoInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.WebVideoInfo)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     // optional string url = 1;
     if (cached_has_bits & 0x00000001u) {
@@ -11658,58 +12049,50 @@ size_t WebVideoInfo::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *poster_image_data_);
+          *_impl_.poster_image_data_);
     }
 
     // optional .TSD.Attribution attribution = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *attribution_);
+          *_impl_.attribution_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData WebVideoInfo::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     WebVideoInfo::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*WebVideoInfo::GetClassData() const { return &_class_data_; }
 
-void WebVideoInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<WebVideoInfo *>(to)->MergeFrom(
-      static_cast<const WebVideoInfo &>(from));
-}
 
-
-void WebVideoInfo::MergeFrom(const WebVideoInfo& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.WebVideoInfo)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void WebVideoInfo::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<WebVideoInfo*>(&to_msg);
+  auto& from = static_cast<const WebVideoInfo&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.WebVideoInfo)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_url(from._internal_url());
+      _this->_internal_set_url(from._internal_url());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_poster_image_data()->::TSP::DataReference::MergeFrom(from._internal_poster_image_data());
+      _this->_internal_mutable_poster_image_data()->::TSP::DataReference::MergeFrom(
+          from._internal_poster_image_data());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_attribution()->::TSD::Attribution::MergeFrom(from._internal_attribution());
+      _this->_internal_mutable_attribution()->::TSD::Attribution::MergeFrom(
+          from._internal_attribution());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void WebVideoInfo::CopyFrom(const WebVideoInfo& from) {
@@ -11721,39 +12104,40 @@ void WebVideoInfo::CopyFrom(const WebVideoInfo& from) {
 
 bool WebVideoInfo::IsInitialized() const {
   if (_internal_has_poster_image_data()) {
-    if (!poster_image_data_->IsInitialized()) return false;
+    if (!_impl_.poster_image_data_->IsInitialized()) return false;
   }
   return true;
 }
 
 void WebVideoInfo::InternalSwap(WebVideoInfo* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &url_, GetArenaForAllocation(),
-      &other->url_, other->GetArenaForAllocation()
+      &_impl_.url_, lhs_arena,
+      &other->_impl_.url_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(WebVideoInfo, attribution_)
-      + sizeof(WebVideoInfo::attribution_)
-      - PROTOBUF_FIELD_OFFSET(WebVideoInfo, poster_image_data_)>(
-          reinterpret_cast<char*>(&poster_image_data_),
-          reinterpret_cast<char*>(&other->poster_image_data_));
+      PROTOBUF_FIELD_OFFSET(WebVideoInfo, _impl_.attribution_)
+      + sizeof(WebVideoInfo::_impl_.attribution_)
+      - PROTOBUF_FIELD_OFFSET(WebVideoInfo, _impl_.poster_image_data_)>(
+          reinterpret_cast<char*>(&_impl_.poster_image_data_),
+          reinterpret_cast<char*>(&other->_impl_.poster_image_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata WebVideoInfo::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
-      file_level_metadata_TSAArchives_2eproto[29]);
+      file_level_metadata_TSAArchives_2eproto[30]);
 }
 
 // ===================================================================
 
 class CaptionPlacementArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<CaptionPlacementArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<CaptionPlacementArchive>()._impl_._has_bits_);
   static void set_has_caption_anchor_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -11765,134 +12149,140 @@ class CaptionPlacementArchive::_Internal {
 CaptionPlacementArchive::CaptionPlacementArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.CaptionPlacementArchive)
 }
 CaptionPlacementArchive::CaptionPlacementArchive(const CaptionPlacementArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CaptionPlacementArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.caption_anchor_location_){}
+    , decltype(_impl_.drawable_anchor_location_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&caption_anchor_location_, &from.caption_anchor_location_,
-    static_cast<size_t>(reinterpret_cast<char*>(&drawable_anchor_location_) -
-    reinterpret_cast<char*>(&caption_anchor_location_)) + sizeof(drawable_anchor_location_));
+  ::memcpy(&_impl_.caption_anchor_location_, &from._impl_.caption_anchor_location_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.drawable_anchor_location_) -
+    reinterpret_cast<char*>(&_impl_.caption_anchor_location_)) + sizeof(_impl_.drawable_anchor_location_));
   // @@protoc_insertion_point(copy_constructor:TSA.CaptionPlacementArchive)
 }
 
-inline void CaptionPlacementArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&caption_anchor_location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&drawable_anchor_location_) -
-    reinterpret_cast<char*>(&caption_anchor_location_)) + sizeof(drawable_anchor_location_));
+inline void CaptionPlacementArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.caption_anchor_location_){0}
+    , decltype(_impl_.drawable_anchor_location_){0}
+  };
 }
 
 CaptionPlacementArchive::~CaptionPlacementArchive() {
   // @@protoc_insertion_point(destructor:TSA.CaptionPlacementArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CaptionPlacementArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void CaptionPlacementArchive::ArenaDtor(void* object) {
-  CaptionPlacementArchive* _this = reinterpret_cast< CaptionPlacementArchive* >(object);
-  (void)_this;
-}
-void CaptionPlacementArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CaptionPlacementArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CaptionPlacementArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.CaptionPlacementArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    ::memset(&caption_anchor_location_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&drawable_anchor_location_) -
-        reinterpret_cast<char*>(&caption_anchor_location_)) + sizeof(drawable_anchor_location_));
+    ::memset(&_impl_.caption_anchor_location_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.drawable_anchor_location_) -
+        reinterpret_cast<char*>(&_impl_.caption_anchor_location_)) + sizeof(_impl_.drawable_anchor_location_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CaptionPlacementArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CaptionPlacementArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional int32 caption_anchor_location = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_caption_anchor_location(&has_bits);
-          caption_anchor_location_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.caption_anchor_location_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional int32 drawable_anchor_location = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_drawable_anchor_location(&has_bits);
-          drawable_anchor_location_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.drawable_anchor_location_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CaptionPlacementArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CaptionPlacementArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.CaptionPlacementArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional int32 caption_anchor_location = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_caption_anchor_location(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_caption_anchor_location(), target);
   }
 
   // optional int32 drawable_anchor_location = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_drawable_anchor_location(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_drawable_anchor_location(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.CaptionPlacementArchive)
@@ -11903,66 +12293,52 @@ size_t CaptionPlacementArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSA.CaptionPlacementArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional int32 caption_anchor_location = 1;
     if (cached_has_bits & 0x00000001u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_caption_anchor_location());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_caption_anchor_location());
     }
 
     // optional int32 drawable_anchor_location = 2;
     if (cached_has_bits & 0x00000002u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_drawable_anchor_location());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_drawable_anchor_location());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CaptionPlacementArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CaptionPlacementArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CaptionPlacementArchive::GetClassData() const { return &_class_data_; }
 
-void CaptionPlacementArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CaptionPlacementArchive *>(to)->MergeFrom(
-      static_cast<const CaptionPlacementArchive &>(from));
-}
 
-
-void CaptionPlacementArchive::MergeFrom(const CaptionPlacementArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.CaptionPlacementArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CaptionPlacementArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CaptionPlacementArchive*>(&to_msg);
+  auto& from = static_cast<const CaptionPlacementArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.CaptionPlacementArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      caption_anchor_location_ = from.caption_anchor_location_;
+      _this->_impl_.caption_anchor_location_ = from._impl_.caption_anchor_location_;
     }
     if (cached_has_bits & 0x00000002u) {
-      drawable_anchor_location_ = from.drawable_anchor_location_;
+      _this->_impl_.drawable_anchor_location_ = from._impl_.drawable_anchor_location_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CaptionPlacementArchive::CopyFrom(const CaptionPlacementArchive& from) {
@@ -11979,26 +12355,26 @@ bool CaptionPlacementArchive::IsInitialized() const {
 void CaptionPlacementArchive::InternalSwap(CaptionPlacementArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CaptionPlacementArchive, drawable_anchor_location_)
-      + sizeof(CaptionPlacementArchive::drawable_anchor_location_)
-      - PROTOBUF_FIELD_OFFSET(CaptionPlacementArchive, caption_anchor_location_)>(
-          reinterpret_cast<char*>(&caption_anchor_location_),
-          reinterpret_cast<char*>(&other->caption_anchor_location_));
+      PROTOBUF_FIELD_OFFSET(CaptionPlacementArchive, _impl_.drawable_anchor_location_)
+      + sizeof(CaptionPlacementArchive::_impl_.drawable_anchor_location_)
+      - PROTOBUF_FIELD_OFFSET(CaptionPlacementArchive, _impl_.caption_anchor_location_)>(
+          reinterpret_cast<char*>(&_impl_.caption_anchor_location_),
+          reinterpret_cast<char*>(&other->_impl_.caption_anchor_location_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CaptionPlacementArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
-      file_level_metadata_TSAArchives_2eproto[30]);
+      file_level_metadata_TSAArchives_2eproto[31]);
 }
 
 // ===================================================================
 
 class CaptionInfoArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<CaptionInfoArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<CaptionInfoArchive>()._impl_._has_bits_);
   static const ::TSWP::ShapeInfoArchive& super(const CaptionInfoArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -12017,189 +12393,191 @@ class CaptionInfoArchive::_Internal {
 
 const ::TSWP::ShapeInfoArchive&
 CaptionInfoArchive::_Internal::super(const CaptionInfoArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 CaptionInfoArchive::_Internal::placement(const CaptionInfoArchive* msg) {
-  return *msg->placement_;
+  return *msg->_impl_.placement_;
 }
 void CaptionInfoArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void CaptionInfoArchive::clear_placement() {
-  if (placement_ != nullptr) placement_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.placement_ != nullptr) _impl_.placement_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 CaptionInfoArchive::CaptionInfoArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.CaptionInfoArchive)
 }
 CaptionInfoArchive::CaptionInfoArchive(const CaptionInfoArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CaptionInfoArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.placement_){nullptr}
+    , decltype(_impl_.childinfokind_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSWP::ShapeInfoArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSWP::ShapeInfoArchive(*from._impl_.super_);
   }
   if (from._internal_has_placement()) {
-    placement_ = new ::TSP::Reference(*from.placement_);
-  } else {
-    placement_ = nullptr;
+    _this->_impl_.placement_ = new ::TSP::Reference(*from._impl_.placement_);
   }
-  childinfokind_ = from.childinfokind_;
+  _this->_impl_.childinfokind_ = from._impl_.childinfokind_;
   // @@protoc_insertion_point(copy_constructor:TSA.CaptionInfoArchive)
 }
 
-inline void CaptionInfoArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&placement_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(placement_));
-childinfokind_ = 1;
+inline void CaptionInfoArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.placement_){nullptr}
+    , decltype(_impl_.childinfokind_){1}
+  };
 }
 
 CaptionInfoArchive::~CaptionInfoArchive() {
   // @@protoc_insertion_point(destructor:TSA.CaptionInfoArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CaptionInfoArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete placement_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.placement_;
 }
 
-void CaptionInfoArchive::ArenaDtor(void* object) {
-  CaptionInfoArchive* _this = reinterpret_cast< CaptionInfoArchive* >(object);
-  (void)_this;
-}
-void CaptionInfoArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CaptionInfoArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CaptionInfoArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.CaptionInfoArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(placement_ != nullptr);
-      placement_->Clear();
+      GOOGLE_DCHECK(_impl_.placement_ != nullptr);
+      _impl_.placement_->Clear();
     }
-    childinfokind_ = 1;
+    _impl_.childinfokind_ = 1;
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CaptionInfoArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CaptionInfoArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSWP.ShapeInfoArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference placement = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_placement(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.CaptionOrTitleKind childInfoKind = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSD::CaptionOrTitleKind_IsValid(val))) {
             _internal_set_childinfokind(static_cast<::TSD::CaptionOrTitleKind>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CaptionInfoArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CaptionInfoArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.CaptionInfoArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSWP.ShapeInfoArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference placement = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::placement(this), target, stream);
+      InternalWriteMessage(2, _Internal::placement(this),
+        _Internal::placement(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.CaptionOrTitleKind childInfoKind = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_childinfokind(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.CaptionInfoArchive)
@@ -12214,70 +12592,62 @@ size_t CaptionInfoArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000006u) {
     // optional .TSP.Reference placement = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *placement_);
+          *_impl_.placement_);
     }
 
     // optional .TSD.CaptionOrTitleKind childInfoKind = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_childinfokind());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_childinfokind());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CaptionInfoArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CaptionInfoArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CaptionInfoArchive::GetClassData() const { return &_class_data_; }
 
-void CaptionInfoArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CaptionInfoArchive *>(to)->MergeFrom(
-      static_cast<const CaptionInfoArchive &>(from));
-}
 
-
-void CaptionInfoArchive::MergeFrom(const CaptionInfoArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.CaptionInfoArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CaptionInfoArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CaptionInfoArchive*>(&to_msg);
+  auto& from = static_cast<const CaptionInfoArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.CaptionInfoArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSWP::ShapeInfoArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSWP::ShapeInfoArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_placement()->::TSP::Reference::MergeFrom(from._internal_placement());
+      _this->_internal_mutable_placement()->::TSP::Reference::MergeFrom(
+          from._internal_placement());
     }
     if (cached_has_bits & 0x00000004u) {
-      childinfokind_ = from.childinfokind_;
+      _this->_impl_.childinfokind_ = from._impl_.childinfokind_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CaptionInfoArchive::CopyFrom(const CaptionInfoArchive& from) {
@@ -12288,12 +12658,12 @@ void CaptionInfoArchive::CopyFrom(const CaptionInfoArchive& from) {
 }
 
 bool CaptionInfoArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_placement()) {
-    if (!placement_->IsInitialized()) return false;
+    if (!_impl_.placement_->IsInitialized()) return false;
   }
   return true;
 }
@@ -12301,27 +12671,27 @@ bool CaptionInfoArchive::IsInitialized() const {
 void CaptionInfoArchive::InternalSwap(CaptionInfoArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CaptionInfoArchive, placement_)
-      + sizeof(CaptionInfoArchive::placement_)
-      - PROTOBUF_FIELD_OFFSET(CaptionInfoArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
-  swap(childinfokind_, other->childinfokind_);
+      PROTOBUF_FIELD_OFFSET(CaptionInfoArchive, _impl_.placement_)
+      + sizeof(CaptionInfoArchive::_impl_.placement_)
+      - PROTOBUF_FIELD_OFFSET(CaptionInfoArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
+  swap(_impl_.childinfokind_, other->_impl_.childinfokind_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CaptionInfoArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
-      file_level_metadata_TSAArchives_2eproto[31]);
+      file_level_metadata_TSAArchives_2eproto[32]);
 }
 
 // ===================================================================
 
 class TitlePlacementCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TitlePlacementCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TitlePlacementCommandArchive>()._impl_._has_bits_);
   static const ::TSD::InfoCommandArchive& super(const TitlePlacementCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -12344,222 +12714,224 @@ class TitlePlacementCommandArchive::_Internal {
 
 const ::TSD::InfoCommandArchive&
 TitlePlacementCommandArchive::_Internal::super(const TitlePlacementCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 TitlePlacementCommandArchive::_Internal::placement(const TitlePlacementCommandArchive* msg) {
-  return *msg->placement_;
+  return *msg->_impl_.placement_;
 }
 const ::TSP::Reference&
 TitlePlacementCommandArchive::_Internal::old_placement(const TitlePlacementCommandArchive* msg) {
-  return *msg->old_placement_;
+  return *msg->_impl_.old_placement_;
 }
 void TitlePlacementCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void TitlePlacementCommandArchive::clear_placement() {
-  if (placement_ != nullptr) placement_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.placement_ != nullptr) _impl_.placement_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void TitlePlacementCommandArchive::clear_old_placement() {
-  if (old_placement_ != nullptr) old_placement_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.old_placement_ != nullptr) _impl_.old_placement_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 TitlePlacementCommandArchive::TitlePlacementCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSA.TitlePlacementCommandArchive)
 }
 TitlePlacementCommandArchive::TitlePlacementCommandArchive(const TitlePlacementCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TitlePlacementCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.placement_){nullptr}
+    , decltype(_impl_.old_placement_){nullptr}
+    , decltype(_impl_.placing_child_info_kind_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSD::InfoCommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSD::InfoCommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_placement()) {
-    placement_ = new ::TSP::Reference(*from.placement_);
-  } else {
-    placement_ = nullptr;
+    _this->_impl_.placement_ = new ::TSP::Reference(*from._impl_.placement_);
   }
   if (from._internal_has_old_placement()) {
-    old_placement_ = new ::TSP::Reference(*from.old_placement_);
-  } else {
-    old_placement_ = nullptr;
+    _this->_impl_.old_placement_ = new ::TSP::Reference(*from._impl_.old_placement_);
   }
-  placing_child_info_kind_ = from.placing_child_info_kind_;
+  _this->_impl_.placing_child_info_kind_ = from._impl_.placing_child_info_kind_;
   // @@protoc_insertion_point(copy_constructor:TSA.TitlePlacementCommandArchive)
 }
 
-inline void TitlePlacementCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&old_placement_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(old_placement_));
-placing_child_info_kind_ = 1;
+inline void TitlePlacementCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.placement_){nullptr}
+    , decltype(_impl_.old_placement_){nullptr}
+    , decltype(_impl_.placing_child_info_kind_){1}
+  };
 }
 
 TitlePlacementCommandArchive::~TitlePlacementCommandArchive() {
   // @@protoc_insertion_point(destructor:TSA.TitlePlacementCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TitlePlacementCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete placement_;
-  if (this != internal_default_instance()) delete old_placement_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.placement_;
+  if (this != internal_default_instance()) delete _impl_.old_placement_;
 }
 
-void TitlePlacementCommandArchive::ArenaDtor(void* object) {
-  TitlePlacementCommandArchive* _this = reinterpret_cast< TitlePlacementCommandArchive* >(object);
-  (void)_this;
-}
-void TitlePlacementCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TitlePlacementCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TitlePlacementCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSA.TitlePlacementCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(placement_ != nullptr);
-      placement_->Clear();
+      GOOGLE_DCHECK(_impl_.placement_ != nullptr);
+      _impl_.placement_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(old_placement_ != nullptr);
-      old_placement_->Clear();
+      GOOGLE_DCHECK(_impl_.old_placement_ != nullptr);
+      _impl_.old_placement_->Clear();
     }
-    placing_child_info_kind_ = 1;
+    _impl_.placing_child_info_kind_ = 1;
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TitlePlacementCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TitlePlacementCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSD.InfoCommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.CaptionOrTitleKind placing_child_info_kind = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSD::CaptionOrTitleKind_IsValid(val))) {
             _internal_set_placing_child_info_kind(static_cast<::TSD::CaptionOrTitleKind>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(2, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference placement = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_placement(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference old_placement = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_placement(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TitlePlacementCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TitlePlacementCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSA.TitlePlacementCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSD.InfoCommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.CaptionOrTitleKind placing_child_info_kind = 2;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       2, this->_internal_placing_child_info_kind(), target);
   }
 
   // optional .TSP.Reference placement = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::placement(this), target, stream);
+      InternalWriteMessage(3, _Internal::placement(this),
+        _Internal::placement(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference old_placement = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::old_placement(this), target, stream);
+      InternalWriteMessage(4, _Internal::old_placement(this),
+        _Internal::old_placement(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSA.TitlePlacementCommandArchive)
@@ -12574,80 +12946,73 @@ size_t TitlePlacementCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000eu) {
     // optional .TSP.Reference placement = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *placement_);
+          *_impl_.placement_);
     }
 
     // optional .TSP.Reference old_placement = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_placement_);
+          *_impl_.old_placement_);
     }
 
     // optional .TSD.CaptionOrTitleKind placing_child_info_kind = 2;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_placing_child_info_kind());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_placing_child_info_kind());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TitlePlacementCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TitlePlacementCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TitlePlacementCommandArchive::GetClassData() const { return &_class_data_; }
 
-void TitlePlacementCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TitlePlacementCommandArchive *>(to)->MergeFrom(
-      static_cast<const TitlePlacementCommandArchive &>(from));
-}
 
-
-void TitlePlacementCommandArchive::MergeFrom(const TitlePlacementCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSA.TitlePlacementCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TitlePlacementCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TitlePlacementCommandArchive*>(&to_msg);
+  auto& from = static_cast<const TitlePlacementCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSA.TitlePlacementCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSD::InfoCommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSD::InfoCommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_placement()->::TSP::Reference::MergeFrom(from._internal_placement());
+      _this->_internal_mutable_placement()->::TSP::Reference::MergeFrom(
+          from._internal_placement());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_old_placement()->::TSP::Reference::MergeFrom(from._internal_old_placement());
+      _this->_internal_mutable_old_placement()->::TSP::Reference::MergeFrom(
+          from._internal_old_placement());
     }
     if (cached_has_bits & 0x00000008u) {
-      placing_child_info_kind_ = from.placing_child_info_kind_;
+      _this->_impl_.placing_child_info_kind_ = from._impl_.placing_child_info_kind_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TitlePlacementCommandArchive::CopyFrom(const TitlePlacementCommandArchive& from) {
@@ -12658,15 +13023,15 @@ void TitlePlacementCommandArchive::CopyFrom(const TitlePlacementCommandArchive& 
 }
 
 bool TitlePlacementCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_placement()) {
-    if (!placement_->IsInitialized()) return false;
+    if (!_impl_.placement_->IsInitialized()) return false;
   }
   if (_internal_has_old_placement()) {
-    if (!old_placement_->IsInitialized()) return false;
+    if (!_impl_.old_placement_->IsInitialized()) return false;
   }
   return true;
 }
@@ -12674,140 +13039,183 @@ bool TitlePlacementCommandArchive::IsInitialized() const {
 void TitlePlacementCommandArchive::InternalSwap(TitlePlacementCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TitlePlacementCommandArchive, old_placement_)
-      + sizeof(TitlePlacementCommandArchive::old_placement_)
-      - PROTOBUF_FIELD_OFFSET(TitlePlacementCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
-  swap(placing_child_info_kind_, other->placing_child_info_kind_);
+      PROTOBUF_FIELD_OFFSET(TitlePlacementCommandArchive, _impl_.old_placement_)
+      + sizeof(TitlePlacementCommandArchive::_impl_.old_placement_)
+      - PROTOBUF_FIELD_OFFSET(TitlePlacementCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
+  swap(_impl_.placing_child_info_kind_, other->_impl_.placing_child_info_kind_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TitlePlacementCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSAArchives_2eproto_getter, &descriptor_table_TSAArchives_2eproto_once,
-      file_level_metadata_TSAArchives_2eproto[32]);
+      file_level_metadata_TSAArchives_2eproto[33]);
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912)
 const int ThemePresetsArchive::kExtensionFieldNumber;
 #endif
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::ThemeArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::ThemePresetsArchive >, 11, false >
-  ThemePresetsArchive::extension(kExtensionFieldNumber, ::TSA::ThemePresetsArchive::default_instance());
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::ThemeArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::ThemePresetsArchive >, 11, false>
+  ThemePresetsArchive::extension(kExtensionFieldNumber, ::TSA::ThemePresetsArchive::default_instance(), nullptr);
+#if !defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912)
 const int GalleryInfo::kGalleryInfoFieldNumber;
 #endif
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::ImageArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::GalleryInfo >, 11, false >
-  GalleryInfo::gallery_info(kGalleryInfoFieldNumber, ::TSA::GalleryInfo::default_instance());
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::ImageArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::GalleryInfo >, 11, false>
+  GalleryInfo::gallery_info(kGalleryInfoFieldNumber, ::TSA::GalleryInfo::default_instance(), nullptr);
+#if !defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912)
+const int CollaboratorGalleryItemCursor::kGalleryItemCursorFieldNumber;
+#endif
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSK::CollaboratorCursorArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::CollaboratorGalleryItemCursor >, 11, false>
+  CollaboratorGalleryItemCursor::gallery_item_cursor(kGalleryItemCursorFieldNumber, ::TSA::CollaboratorGalleryItemCursor::default_instance(), nullptr);
+#if !defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912)
 const int WebVideoInfo::kWebVideoInfoFieldNumber;
 #endif
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::ImageArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::WebVideoInfo >, 11, false >
-  WebVideoInfo::web_video_info(kWebVideoInfoFieldNumber, ::TSA::WebVideoInfo::default_instance());
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::ImageArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSA::WebVideoInfo >, 11, false>
+  WebVideoInfo::web_video_info(kWebVideoInfoFieldNumber, ::TSA::WebVideoInfo::default_instance(), nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSA
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSA::DocumentArchive* Arena::CreateMaybeMessage< ::TSA::DocumentArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::DocumentArchive*
+Arena::CreateMaybeMessage< ::TSA::DocumentArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::DocumentArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::FunctionBrowserStateArchive* Arena::CreateMaybeMessage< ::TSA::FunctionBrowserStateArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::FunctionBrowserStateArchive*
+Arena::CreateMaybeMessage< ::TSA::FunctionBrowserStateArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::FunctionBrowserStateArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ThemePresetsArchive* Arena::CreateMaybeMessage< ::TSA::ThemePresetsArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ThemePresetsArchive*
+Arena::CreateMaybeMessage< ::TSA::ThemePresetsArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ThemePresetsArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ShortcutControllerArchive_ShortcutMapEntry* Arena::CreateMaybeMessage< ::TSA::ShortcutControllerArchive_ShortcutMapEntry >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ShortcutControllerArchive_ShortcutMapEntry*
+Arena::CreateMaybeMessage< ::TSA::ShortcutControllerArchive_ShortcutMapEntry >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ShortcutControllerArchive_ShortcutMapEntry >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ShortcutControllerArchive* Arena::CreateMaybeMessage< ::TSA::ShortcutControllerArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ShortcutControllerArchive*
+Arena::CreateMaybeMessage< ::TSA::ShortcutControllerArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ShortcutControllerArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::PropagatePresetCommandArchive* Arena::CreateMaybeMessage< ::TSA::PropagatePresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::PropagatePresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::PropagatePresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::PropagatePresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ShortcutCommandArchive* Arena::CreateMaybeMessage< ::TSA::ShortcutCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ShortcutCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::ShortcutCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ShortcutCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::AddCustomFormatCommandArchive* Arena::CreateMaybeMessage< ::TSA::AddCustomFormatCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::AddCustomFormatCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::AddCustomFormatCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::AddCustomFormatCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::UpdateCustomFormatCommandArchive* Arena::CreateMaybeMessage< ::TSA::UpdateCustomFormatCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::UpdateCustomFormatCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::UpdateCustomFormatCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::UpdateCustomFormatCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ReplaceCustomFormatCommandArchive* Arena::CreateMaybeMessage< ::TSA::ReplaceCustomFormatCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ReplaceCustomFormatCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::ReplaceCustomFormatCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ReplaceCustomFormatCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::NeedsMediaCompatibilityUpgradeCommandArchive* Arena::CreateMaybeMessage< ::TSA::NeedsMediaCompatibilityUpgradeCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::NeedsMediaCompatibilityUpgradeCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::NeedsMediaCompatibilityUpgradeCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::NeedsMediaCompatibilityUpgradeCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::ChangeDocumentLocaleCommandArchive* Arena::CreateMaybeMessage< ::TSA::ChangeDocumentLocaleCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::ChangeDocumentLocaleCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::ChangeDocumentLocaleCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::ChangeDocumentLocaleCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::InducedVerifyObjectsWithServerCommandArchive* Arena::CreateMaybeMessage< ::TSA::InducedVerifyObjectsWithServerCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::InducedVerifyObjectsWithServerCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::InducedVerifyObjectsWithServerCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::InducedVerifyObjectsWithServerCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::InducedVerifyTransformHistoryWithServerCommandArchive* Arena::CreateMaybeMessage< ::TSA::InducedVerifyTransformHistoryWithServerCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::InducedVerifyTransformHistoryWithServerCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::InducedVerifyTransformHistoryWithServerCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::InducedVerifyTransformHistoryWithServerCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::StyleUpdatePropertyMapCommandArchive* Arena::CreateMaybeMessage< ::TSA::StyleUpdatePropertyMapCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::StyleUpdatePropertyMapCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::StyleUpdatePropertyMapCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::StyleUpdatePropertyMapCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::RemoteDataChangeCommandArchive* Arena::CreateMaybeMessage< ::TSA::RemoteDataChangeCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::RemoteDataChangeCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::RemoteDataChangeCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::RemoteDataChangeCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue* Arena::CreateMaybeMessage< ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue*
+Arena::CreateMaybeMessage< ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryInfoSetValueCommandArchive_PropertyValue >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoSetValueCommandArchive* Arena::CreateMaybeMessage< ::TSA::GalleryInfoSetValueCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoSetValueCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::GalleryInfoSetValueCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryInfoSetValueCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoInsertItemsCommandArchive* Arena::CreateMaybeMessage< ::TSA::GalleryInfoInsertItemsCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoInsertItemsCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::GalleryInfoInsertItemsCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryInfoInsertItemsCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoRemoveItemsCommandArchive* Arena::CreateMaybeMessage< ::TSA::GalleryInfoRemoveItemsCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryInfoRemoveItemsCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::GalleryInfoRemoveItemsCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryInfoRemoveItemsCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetGeometryCommand* Arena::CreateMaybeMessage< ::TSA::GalleryItemSetGeometryCommand >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetGeometryCommand*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSetGeometryCommand >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSetGeometryCommand >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItem* Arena::CreateMaybeMessage< ::TSA::GalleryItem >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItem*
+Arena::CreateMaybeMessage< ::TSA::GalleryItem >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItem >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryInfo* Arena::CreateMaybeMessage< ::TSA::GalleryInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryInfo*
+Arena::CreateMaybeMessage< ::TSA::GalleryInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GallerySelectionTransformer* Arena::CreateMaybeMessage< ::TSA::GallerySelectionTransformer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GallerySelectionTransformer*
+Arena::CreateMaybeMessage< ::TSA::GallerySelectionTransformer >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GallerySelectionTransformer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelection* Arena::CreateMaybeMessage< ::TSA::GalleryItemSelection >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelection*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSelection >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSelection >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelectionTransformer* Arena::CreateMaybeMessage< ::TSA::GalleryItemSelectionTransformer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelectionTransformer*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSelectionTransformer >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSelectionTransformer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelectionTransformerHelper* Arena::CreateMaybeMessage< ::TSA::GalleryItemSelectionTransformerHelper >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSelectionTransformerHelper*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSelectionTransformerHelper >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSelectionTransformerHelper >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetValueCommand_PropertyValue* Arena::CreateMaybeMessage< ::TSA::GalleryItemSetValueCommand_PropertyValue >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetValueCommand_PropertyValue*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSetValueCommand_PropertyValue >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSetValueCommand_PropertyValue >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetValueCommand* Arena::CreateMaybeMessage< ::TSA::GalleryItemSetValueCommand >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::GalleryItemSetValueCommand*
+Arena::CreateMaybeMessage< ::TSA::GalleryItemSetValueCommand >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::GalleryItemSetValueCommand >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::WebVideoInfo* Arena::CreateMaybeMessage< ::TSA::WebVideoInfo >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::CollaboratorGalleryItemCursor*
+Arena::CreateMaybeMessage< ::TSA::CollaboratorGalleryItemCursor >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::TSA::CollaboratorGalleryItemCursor >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TSA::WebVideoInfo*
+Arena::CreateMaybeMessage< ::TSA::WebVideoInfo >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::WebVideoInfo >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::CaptionPlacementArchive* Arena::CreateMaybeMessage< ::TSA::CaptionPlacementArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::CaptionPlacementArchive*
+Arena::CreateMaybeMessage< ::TSA::CaptionPlacementArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::CaptionPlacementArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::CaptionInfoArchive* Arena::CreateMaybeMessage< ::TSA::CaptionInfoArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::CaptionInfoArchive*
+Arena::CreateMaybeMessage< ::TSA::CaptionInfoArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::CaptionInfoArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSA::TitlePlacementCommandArchive* Arena::CreateMaybeMessage< ::TSA::TitlePlacementCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSA::TitlePlacementCommandArchive*
+Arena::CreateMaybeMessage< ::TSA::TitlePlacementCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSA::TitlePlacementCommandArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

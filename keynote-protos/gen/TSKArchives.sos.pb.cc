@@ -16,77 +16,147 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSKSOS {
-constexpr FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : corrupted_digest_list_()
-  , super_(nullptr)
-  , corrupted_digest_list_undefined_(false){}
+PROTOBUF_CONSTEXPR FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.corrupted_digest_list_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.corrupted_digest_list_undefined_)*/false} {}
 struct FixCorruptedDataCommandArchiveDefaultTypeInternal {
-  constexpr FixCorruptedDataCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR FixCorruptedDataCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~FixCorruptedDataCommandArchiveDefaultTypeInternal() {}
   union {
     FixCorruptedDataCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT FixCorruptedDataCommandArchiveDefaultTypeInternal _FixCorruptedDataCommandArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FixCorruptedDataCommandArchiveDefaultTypeInternal _FixCorruptedDataCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR RemoveAuthorIdentifiersCommandArchive::RemoveAuthorIdentifiersCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.author_identifiers_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.author_identifiers_undefined_)*/false} {}
+struct RemoveAuthorIdentifiersCommandArchiveDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RemoveAuthorIdentifiersCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RemoveAuthorIdentifiersCommandArchiveDefaultTypeInternal() {}
+  union {
+    RemoveAuthorIdentifiersCommandArchive _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RemoveAuthorIdentifiersCommandArchiveDefaultTypeInternal _RemoveAuthorIdentifiersCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ResetActivityStreamCommandArchive::ResetActivityStreamCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
+struct ResetActivityStreamCommandArchiveDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ResetActivityStreamCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ResetActivityStreamCommandArchiveDefaultTypeInternal() {}
+  union {
+    ResetActivityStreamCommandArchive _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ResetActivityStreamCommandArchiveDefaultTypeInternal _ResetActivityStreamCommandArchive_default_instance_;
 }  // namespace TSKSOS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSKArchives_2esos_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TSKArchives_2esos_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSKArchives_2esos_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSKArchives_2esos_2eproto[3];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_TSKArchives_2esos_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSKArchives_2esos_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSKArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _has_bits_),
+const uint32_t TableStruct_TSKArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, corrupted_digest_list_),
-  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, corrupted_digest_list_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _impl_.corrupted_digest_list_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::FixCorruptedDataCommandArchive, _impl_.corrupted_digest_list_undefined_),
   0,
   ~0u,
   1,
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::RemoveAuthorIdentifiersCommandArchive, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::RemoveAuthorIdentifiersCommandArchive, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::RemoveAuthorIdentifiersCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::RemoveAuthorIdentifiersCommandArchive, _impl_.author_identifiers_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::RemoveAuthorIdentifiersCommandArchive, _impl_.author_identifiers_undefined_),
+  0,
+  ~0u,
+  1,
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::ResetActivityStreamCommandArchive, _impl_._has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::ResetActivityStreamCommandArchive, _internal_metadata_),
+  ~0u,  // no _extensions_
+  ~0u,  // no _oneof_case_
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSKSOS::ResetActivityStreamCommandArchive, _impl_.super_),
+  0,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(::TSKSOS::FixCorruptedDataCommandArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 9, -1, sizeof(::TSKSOS::FixCorruptedDataCommandArchive)},
+  { 12, 21, -1, sizeof(::TSKSOS::RemoveAuthorIdentifiersCommandArchive)},
+  { 24, 31, -1, sizeof(::TSKSOS::ResetActivityStreamCommandArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSKSOS::_FixCorruptedDataCommandArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSKSOS::_FixCorruptedDataCommandArchive_default_instance_._instance,
+  &::TSKSOS::_RemoveAuthorIdentifiersCommandArchive_default_instance_._instance,
+  &::TSKSOS::_ResetActivityStreamCommandArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSKArchives_2esos_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\025TSKArchives.sos.proto\022\006TSKSOS\032\021TSKArch"
-  "ives.proto\"\214\001\n\036FixCorruptedDataCommandAr"
-  "chive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchiv"
-  "e\022\035\n\025corrupted_digest_list\030\002 \003(\t\022\'\n\037corr"
-  "upted_digest_list_undefined\030\003 \001(\010"
+  "ives.proto\032\021TSPMessages.proto\"\214\001\n\036FixCor"
+  "ruptedDataCommandArchive\022\"\n\005super\030\001 \002(\0132"
+  "\023.TSK.CommandArchive\022\035\n\025corrupted_digest"
+  "_list\030\002 \003(\t\022\'\n\037corrupted_digest_list_und"
+  "efined\030\003 \001(\010\"\230\001\n%RemoveAuthorIdentifiers"
+  "CommandArchive\022\"\n\005super\030\001 \002(\0132\023.TSK.Comm"
+  "andArchive\022%\n\022author_identifiers\030\002 \003(\0132\t"
+  ".TSP.UUID\022$\n\034author_identifiers_undefine"
+  "d\030\003 \001(\010\"G\n!ResetActivityStreamCommandArc"
+  "hive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchive"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSKArchives_2esos_2eproto_deps[1] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSKArchives_2esos_2eproto_deps[2] = {
   &::descriptor_table_TSKArchives_2eproto,
+  &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSKArchives_2esos_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSKArchives_2esos_2eproto = {
-  false, false, 193, descriptor_table_protodef_TSKArchives_2esos_2eproto, "TSKArchives.sos.proto", 
-  &descriptor_table_TSKArchives_2esos_2eproto_once, descriptor_table_TSKArchives_2esos_2eproto_deps, 1, 1,
-  schemas, file_default_instances, TableStruct_TSKArchives_2esos_2eproto::offsets,
-  file_level_metadata_TSKArchives_2esos_2eproto, file_level_enum_descriptors_TSKArchives_2esos_2eproto, file_level_service_descriptors_TSKArchives_2esos_2eproto,
+static ::_pbi::once_flag descriptor_table_TSKArchives_2esos_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSKArchives_2esos_2eproto = {
+    false, false, 440, descriptor_table_protodef_TSKArchives_2esos_2eproto,
+    "TSKArchives.sos.proto",
+    &descriptor_table_TSKArchives_2esos_2eproto_once, descriptor_table_TSKArchives_2esos_2eproto_deps, 2, 3,
+    schemas, file_default_instances, TableStruct_TSKArchives_2esos_2eproto::offsets,
+    file_level_metadata_TSKArchives_2esos_2eproto, file_level_enum_descriptors_TSKArchives_2esos_2eproto,
+    file_level_service_descriptors_TSKArchives_2esos_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSKArchives_2esos_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSKArchives_2esos_2eproto_getter() {
   return &descriptor_table_TSKArchives_2esos_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSKArchives_2esos_2eproto(&descriptor_table_TSKArchives_2esos_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSKArchives_2esos_2eproto(&descriptor_table_TSKArchives_2esos_2eproto);
 namespace TSKSOS {
 
 // ===================================================================
 
 class FixCorruptedDataCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<FixCorruptedDataCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<FixCorruptedDataCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const FixCorruptedDataCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -101,157 +171,162 @@ class FixCorruptedDataCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 FixCorruptedDataCommandArchive::_Internal::super(const FixCorruptedDataCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 void FixCorruptedDataCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  corrupted_digest_list_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSKSOS.FixCorruptedDataCommandArchive)
 }
 FixCorruptedDataCommandArchive::FixCorruptedDataCommandArchive(const FixCorruptedDataCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      corrupted_digest_list_(from.corrupted_digest_list_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  FixCorruptedDataCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.corrupted_digest_list_){from._impl_.corrupted_digest_list_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.corrupted_digest_list_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
-  corrupted_digest_list_undefined_ = from.corrupted_digest_list_undefined_;
+  _this->_impl_.corrupted_digest_list_undefined_ = from._impl_.corrupted_digest_list_undefined_;
   // @@protoc_insertion_point(copy_constructor:TSKSOS.FixCorruptedDataCommandArchive)
 }
 
-inline void FixCorruptedDataCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&corrupted_digest_list_undefined_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(corrupted_digest_list_undefined_));
+inline void FixCorruptedDataCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.corrupted_digest_list_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.corrupted_digest_list_undefined_){false}
+  };
 }
 
 FixCorruptedDataCommandArchive::~FixCorruptedDataCommandArchive() {
   // @@protoc_insertion_point(destructor:TSKSOS.FixCorruptedDataCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void FixCorruptedDataCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.corrupted_digest_list_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void FixCorruptedDataCommandArchive::ArenaDtor(void* object) {
-  FixCorruptedDataCommandArchive* _this = reinterpret_cast< FixCorruptedDataCommandArchive* >(object);
-  (void)_this;
-}
-void FixCorruptedDataCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void FixCorruptedDataCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void FixCorruptedDataCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSKSOS.FixCorruptedDataCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  corrupted_digest_list_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.corrupted_digest_list_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  corrupted_digest_list_undefined_ = false;
-  _has_bits_.Clear();
+  _impl_.corrupted_digest_list_undefined_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* FixCorruptedDataCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* FixCorruptedDataCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated string corrupted_digest_list = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
             auto str = _internal_add_corrupted_digest_list();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            #ifndef NDEBUG
-            ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSKSOS.FixCorruptedDataCommandArchive.corrupted_digest_list");
-            #endif  // !NDEBUG
+            ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
+            #ifndef NDEBUG
+            ::_pbi::VerifyUTF8(str, "TSKSOS.FixCorruptedDataCommandArchive.corrupted_digest_list");
+            #endif  // !NDEBUG
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool corrupted_digest_list_undefined = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_corrupted_digest_list_undefined(&has_bits);
-          corrupted_digest_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.corrupted_digest_list_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FixCorruptedDataCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FixCorruptedDataCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSKSOS.FixCorruptedDataCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated string corrupted_digest_list = 2;
@@ -267,11 +342,11 @@ failure:
   // optional bool corrupted_digest_list_undefined = 3;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_corrupted_digest_list_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_corrupted_digest_list_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSKSOS.FixCorruptedDataCommandArchive)
@@ -286,66 +361,57 @@ size_t FixCorruptedDataCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string corrupted_digest_list = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(corrupted_digest_list_.size());
-  for (int i = 0, n = corrupted_digest_list_.size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(_impl_.corrupted_digest_list_.size());
+  for (int i = 0, n = _impl_.corrupted_digest_list_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      corrupted_digest_list_.Get(i));
+      _impl_.corrupted_digest_list_.Get(i));
   }
 
   // optional bool corrupted_digest_list_undefined = 3;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FixCorruptedDataCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     FixCorruptedDataCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FixCorruptedDataCommandArchive::GetClassData() const { return &_class_data_; }
 
-void FixCorruptedDataCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<FixCorruptedDataCommandArchive *>(to)->MergeFrom(
-      static_cast<const FixCorruptedDataCommandArchive &>(from));
-}
 
-
-void FixCorruptedDataCommandArchive::MergeFrom(const FixCorruptedDataCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSKSOS.FixCorruptedDataCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void FixCorruptedDataCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FixCorruptedDataCommandArchive*>(&to_msg);
+  auto& from = static_cast<const FixCorruptedDataCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSKSOS.FixCorruptedDataCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  corrupted_digest_list_.MergeFrom(from.corrupted_digest_list_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.corrupted_digest_list_.MergeFrom(from._impl_.corrupted_digest_list_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      corrupted_digest_list_undefined_ = from.corrupted_digest_list_undefined_;
+      _this->_impl_.corrupted_digest_list_undefined_ = from._impl_.corrupted_digest_list_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FixCorruptedDataCommandArchive::CopyFrom(const FixCorruptedDataCommandArchive& from) {
@@ -356,9 +422,9 @@ void FixCorruptedDataCommandArchive::CopyFrom(const FixCorruptedDataCommandArchi
 }
 
 bool FixCorruptedDataCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -366,27 +432,545 @@ bool FixCorruptedDataCommandArchive::IsInitialized() const {
 void FixCorruptedDataCommandArchive::InternalSwap(FixCorruptedDataCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  corrupted_digest_list_.InternalSwap(&other->corrupted_digest_list_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.corrupted_digest_list_.InternalSwap(&other->_impl_.corrupted_digest_list_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(FixCorruptedDataCommandArchive, corrupted_digest_list_undefined_)
-      + sizeof(FixCorruptedDataCommandArchive::corrupted_digest_list_undefined_)
-      - PROTOBUF_FIELD_OFFSET(FixCorruptedDataCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(FixCorruptedDataCommandArchive, _impl_.corrupted_digest_list_undefined_)
+      + sizeof(FixCorruptedDataCommandArchive::_impl_.corrupted_digest_list_undefined_)
+      - PROTOBUF_FIELD_OFFSET(FixCorruptedDataCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FixCorruptedDataCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSKArchives_2esos_2eproto_getter, &descriptor_table_TSKArchives_2esos_2eproto_once,
       file_level_metadata_TSKArchives_2esos_2eproto[0]);
+}
+
+// ===================================================================
+
+class RemoveAuthorIdentifiersCommandArchive::_Internal {
+ public:
+  using HasBits = decltype(std::declval<RemoveAuthorIdentifiersCommandArchive>()._impl_._has_bits_);
+  static const ::TSK::CommandArchive& super(const RemoveAuthorIdentifiersCommandArchive* msg);
+  static void set_has_super(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static void set_has_author_identifiers_undefined(HasBits* has_bits) {
+    (*has_bits)[0] |= 2u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
+
+const ::TSK::CommandArchive&
+RemoveAuthorIdentifiersCommandArchive::_Internal::super(const RemoveAuthorIdentifiersCommandArchive* msg) {
+  return *msg->_impl_.super_;
+}
+void RemoveAuthorIdentifiersCommandArchive::clear_super() {
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+void RemoveAuthorIdentifiersCommandArchive::clear_author_identifiers() {
+  _impl_.author_identifiers_.Clear();
+}
+RemoveAuthorIdentifiersCommandArchive::RemoveAuthorIdentifiersCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+}
+RemoveAuthorIdentifiersCommandArchive::RemoveAuthorIdentifiersCommandArchive(const RemoveAuthorIdentifiersCommandArchive& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  RemoveAuthorIdentifiersCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.author_identifiers_){from._impl_.author_identifiers_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.author_identifiers_undefined_){}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_super()) {
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
+  }
+  _this->_impl_.author_identifiers_undefined_ = from._impl_.author_identifiers_undefined_;
+  // @@protoc_insertion_point(copy_constructor:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+}
+
+inline void RemoveAuthorIdentifiersCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.author_identifiers_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.author_identifiers_undefined_){false}
+  };
+}
+
+RemoveAuthorIdentifiersCommandArchive::~RemoveAuthorIdentifiersCommandArchive() {
+  // @@protoc_insertion_point(destructor:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void RemoveAuthorIdentifiersCommandArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.author_identifiers_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
+}
+
+void RemoveAuthorIdentifiersCommandArchive::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void RemoveAuthorIdentifiersCommandArchive::Clear() {
+// @@protoc_insertion_point(message_clear_start:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.author_identifiers_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
+  }
+  _impl_.author_identifiers_undefined_ = false;
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* RemoveAuthorIdentifiersCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required .TSK.CommandArchive super = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // repeated .TSP.UUID author_identifiers = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_author_identifiers(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool author_identifiers_undefined = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_author_identifiers_undefined(&has_bits);
+          _impl_.author_identifiers_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* RemoveAuthorIdentifiersCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // required .TSK.CommandArchive super = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
+  }
+
+  // repeated .TSP.UUID author_identifiers = 2;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_author_identifiers_size()); i < n; i++) {
+    const auto& repfield = this->_internal_author_identifiers(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  // optional bool author_identifiers_undefined = 3;
+  if (cached_has_bits & 0x00000002u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_author_identifiers_undefined(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  return target;
+}
+
+size_t RemoveAuthorIdentifiersCommandArchive::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  size_t total_size = 0;
+
+  // required .TSK.CommandArchive super = 1;
+  if (_internal_has_super()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *_impl_.super_);
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .TSP.UUID author_identifiers = 2;
+  total_size += 1UL * this->_internal_author_identifiers_size();
+  for (const auto& msg : this->_impl_.author_identifiers_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  // optional bool author_identifiers_undefined = 3;
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000002u) {
+    total_size += 1 + 1;
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RemoveAuthorIdentifiersCommandArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    RemoveAuthorIdentifiersCommandArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RemoveAuthorIdentifiersCommandArchive::GetClassData() const { return &_class_data_; }
+
+
+void RemoveAuthorIdentifiersCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<RemoveAuthorIdentifiersCommandArchive*>(&to_msg);
+  auto& from = static_cast<const RemoveAuthorIdentifiersCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.author_identifiers_.MergeFrom(from._impl_.author_identifiers_);
+  cached_has_bits = from._impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
+    }
+    if (cached_has_bits & 0x00000002u) {
+      _this->_impl_.author_identifiers_undefined_ = from._impl_.author_identifiers_undefined_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void RemoveAuthorIdentifiersCommandArchive::CopyFrom(const RemoveAuthorIdentifiersCommandArchive& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TSKSOS.RemoveAuthorIdentifiersCommandArchive)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool RemoveAuthorIdentifiersCommandArchive::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.author_identifiers_))
+    return false;
+  if (_internal_has_super()) {
+    if (!_impl_.super_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void RemoveAuthorIdentifiersCommandArchive::InternalSwap(RemoveAuthorIdentifiersCommandArchive* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.author_identifiers_.InternalSwap(&other->_impl_.author_identifiers_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RemoveAuthorIdentifiersCommandArchive, _impl_.author_identifiers_undefined_)
+      + sizeof(RemoveAuthorIdentifiersCommandArchive::_impl_.author_identifiers_undefined_)
+      - PROTOBUF_FIELD_OFFSET(RemoveAuthorIdentifiersCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata RemoveAuthorIdentifiersCommandArchive::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_TSKArchives_2esos_2eproto_getter, &descriptor_table_TSKArchives_2esos_2eproto_once,
+      file_level_metadata_TSKArchives_2esos_2eproto[1]);
+}
+
+// ===================================================================
+
+class ResetActivityStreamCommandArchive::_Internal {
+ public:
+  using HasBits = decltype(std::declval<ResetActivityStreamCommandArchive>()._impl_._has_bits_);
+  static const ::TSK::CommandArchive& super(const ResetActivityStreamCommandArchive* msg);
+  static void set_has_super(HasBits* has_bits) {
+    (*has_bits)[0] |= 1u;
+  }
+  static bool MissingRequiredFields(const HasBits& has_bits) {
+    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
+  }
+};
+
+const ::TSK::CommandArchive&
+ResetActivityStreamCommandArchive::_Internal::super(const ResetActivityStreamCommandArchive* msg) {
+  return *msg->_impl_.super_;
+}
+void ResetActivityStreamCommandArchive::clear_super() {
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
+}
+ResetActivityStreamCommandArchive::ResetActivityStreamCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:TSKSOS.ResetActivityStreamCommandArchive)
+}
+ResetActivityStreamCommandArchive::ResetActivityStreamCommandArchive(const ResetActivityStreamCommandArchive& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ResetActivityStreamCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_super()) {
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
+  }
+  // @@protoc_insertion_point(copy_constructor:TSKSOS.ResetActivityStreamCommandArchive)
+}
+
+inline void ResetActivityStreamCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+  };
+}
+
+ResetActivityStreamCommandArchive::~ResetActivityStreamCommandArchive() {
+  // @@protoc_insertion_point(destructor:TSKSOS.ResetActivityStreamCommandArchive)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void ResetActivityStreamCommandArchive::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.super_;
+}
+
+void ResetActivityStreamCommandArchive::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void ResetActivityStreamCommandArchive::Clear() {
+// @@protoc_insertion_point(message_clear_start:TSKSOS.ResetActivityStreamCommandArchive)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x00000001u) {
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
+  }
+  _impl_._has_bits_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* ResetActivityStreamCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  _Internal::HasBits has_bits{};
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // required .TSK.CommandArchive super = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  _impl_._has_bits_.Or(has_bits);
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* ResetActivityStreamCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:TSKSOS.ResetActivityStreamCommandArchive)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  cached_has_bits = _impl_._has_bits_[0];
+  // required .TSK.CommandArchive super = 1;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:TSKSOS.ResetActivityStreamCommandArchive)
+  return target;
+}
+
+size_t ResetActivityStreamCommandArchive::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:TSKSOS.ResetActivityStreamCommandArchive)
+  size_t total_size = 0;
+
+  // required .TSK.CommandArchive super = 1;
+  if (_internal_has_super()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+        *_impl_.super_);
+  }
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ResetActivityStreamCommandArchive::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    ResetActivityStreamCommandArchive::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ResetActivityStreamCommandArchive::GetClassData() const { return &_class_data_; }
+
+
+void ResetActivityStreamCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ResetActivityStreamCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ResetActivityStreamCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSKSOS.ResetActivityStreamCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (from._internal_has_super()) {
+    _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+        from._internal_super());
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ResetActivityStreamCommandArchive::CopyFrom(const ResetActivityStreamCommandArchive& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:TSKSOS.ResetActivityStreamCommandArchive)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ResetActivityStreamCommandArchive::IsInitialized() const {
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (_internal_has_super()) {
+    if (!_impl_.super_->IsInitialized()) return false;
+  }
+  return true;
+}
+
+void ResetActivityStreamCommandArchive::InternalSwap(ResetActivityStreamCommandArchive* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.super_, other->_impl_.super_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata ResetActivityStreamCommandArchive::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_TSKArchives_2esos_2eproto_getter, &descriptor_table_TSKArchives_2esos_2eproto_once,
+      file_level_metadata_TSKArchives_2esos_2eproto[2]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSKSOS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSKSOS::FixCorruptedDataCommandArchive* Arena::CreateMaybeMessage< ::TSKSOS::FixCorruptedDataCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSKSOS::FixCorruptedDataCommandArchive*
+Arena::CreateMaybeMessage< ::TSKSOS::FixCorruptedDataCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSKSOS::FixCorruptedDataCommandArchive >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TSKSOS::RemoveAuthorIdentifiersCommandArchive*
+Arena::CreateMaybeMessage< ::TSKSOS::RemoveAuthorIdentifiersCommandArchive >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::TSKSOS::RemoveAuthorIdentifiersCommandArchive >(arena);
+}
+template<> PROTOBUF_NOINLINE ::TSKSOS::ResetActivityStreamCommandArchive*
+Arena::CreateMaybeMessage< ::TSKSOS::ResetActivityStreamCommandArchive >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::TSKSOS::ResetActivityStreamCommandArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

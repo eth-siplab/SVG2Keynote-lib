@@ -15,6 +15,7 @@ enum SelectionType {
   SelectionType_Replace2 = 5;
   SelectionType_SmartField = 6;
   SelectionType_Visual = 7;
+  SelectionType_Logical = 8;
 }
 
 enum StyleInsertionBehavior {
@@ -35,11 +36,15 @@ enum WritingDirectionType {
 }
 
 message SelectionArchive {
-  required .TSWP.SelectionType type = 1;
-  required .TSP.Range range = 2;
+  required .TSWP.SelectionType deprecated_type = 1 [deprecated = true];
+  required .TSP.Range deprecated_range = 2 [deprecated = true];
   required .TSWP.StyleInsertionBehavior styleInsertionBehavior = 3;
   required .TSWP.CaretAffinity caretAffinity = 4;
   required .TSP.Range smart_field_range = 5;
+  optional bool leading_edge = 6;
+  optional uint32 leading_char_index = 7;
+  optional .TSWP.SelectionType type = 8;
+  repeated .TSP.Range ranges = 9;
 }
 
 message ObjectAttributeTable {
@@ -85,6 +90,7 @@ message StorageArchive {
     CELL = 5;
     UNCLASSIFIED = 6;
     TABLEOFCONTENTS = 7;
+    UNDEFINED = 8;
   }
   optional .TSWP.StorageArchive.KindType kind = 1 [default = TEXTBOX];
   optional .TSP.Reference style_sheet = 2;
@@ -835,20 +841,29 @@ message FilenameSmartFieldArchive {
   optional uint32 display_flags = 2;
 }
 
+message MergeFieldTypeArchive {
+  optional string contacts_property = 2;
+  optional string contacts_key = 3;
+  optional string contacts_label = 4;
+  optional string table_key = 5;
+}
+
 message MergeSmartFieldArchive {
   enum MergeCategory {
     kMergeCategoryTo = 0;
     kMergeCategoryFrom = 1;
   }
   optional .TSWP.PlaceholderSmartFieldArchive super = 1;
-  optional string property = 2;
-  optional string label = 3;
-  optional string key = 4;
+  optional string contacts_property = 2;
+  optional string contacts_key = 3;
+  optional string contacts_label = 4;
   optional .TSWP.MergeSmartFieldArchive.MergeCategory category = 5;
   optional bool requires_following_whitespace = 6;
   optional string whitespace = 7;
   optional string guid = 8;
-  optional string table_field = 9;
+  optional string table_key = 9;
+  optional .TSWP.MergeFieldTypeArchive field_type = 10;
+  optional bool has_custom_text = 11;
 }
 
 message TOCSmartFieldArchive {
@@ -944,6 +959,13 @@ message DropCapStyleArchive {
   optional uint32 override_count = 10 [default = 0];
   optional .TSWP.CharacterStylePropertiesArchive char_properties = 11;
   optional .TSWP.DropCapStylePropertiesArchive drop_cap_properties = 12;
+}
+
+message CollaboratorTextCursorSubselectionArchive {
+  optional .TSWP.SelectionArchive text_selection = 1;
+  extend .TSK.CollaboratorCursorArchive {
+    optional .TSWP.CollaboratorTextCursorSubselectionArchive text_cursor_subselection = 100;
+  }
 }
 
 extend .TSS.CommandPropertyEntryArchive {

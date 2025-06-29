@@ -15,7 +15,7 @@ MessageWrapper* createPasteboardNativeStorageArchiveMessageWrapper(google::proto
 MessageWrapper* createPasteboardObjectMessageWrapper(google::protobuf::uint64 identifier, google::protobuf::uint64 appNativeObjectIdentifier, google::protobuf::uint64 stylesheetIdentifier);
 void addDrawableReferenceToPasteboard(std::vector<MessageWrapper *>* vector, google::protobuf::uint64 identifier, float x, float y, float width, float height);
 std::tuple<unsigned int, unsigned int, unsigned int, unsigned int> convertColorToRGB(unsigned int color);
-std::vector<MessageWrapper *>* convertSVGFileToKeynoteClipboard(std::string fileContents);
+std::vector<MessageWrapper *> convertSVGFileToKeynoteClipboard(std::string fileContents); // Changed to return by value
 void addStyleReferenceToStylesheet(google::protobuf::uint64 identifier, std::vector<MessageWrapper *> *pVector);
 
 

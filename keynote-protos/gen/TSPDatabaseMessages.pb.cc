@@ -16,100 +16,112 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSP {
-constexpr DatabaseData::DatabaseData(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : data_(nullptr){}
+PROTOBUF_CONSTEXPR DatabaseData::DatabaseData(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.data_)*/nullptr} {}
 struct DatabaseDataDefaultTypeInternal {
-  constexpr DatabaseDataDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR DatabaseDataDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~DatabaseDataDefaultTypeInternal() {}
   union {
     DatabaseData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DatabaseDataDefaultTypeInternal _DatabaseData_default_instance_;
-constexpr DatabaseDataArchive::DatabaseDataArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : app_relative_path_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , display_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , data_(nullptr)
-  , length_(uint64_t{0u})
-  , hash_(0u)
-  , sharable_(true){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DatabaseDataDefaultTypeInternal _DatabaseData_default_instance_;
+PROTOBUF_CONSTEXPR DatabaseDataArchive::DatabaseDataArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.app_relative_path_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.display_name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.data_)*/nullptr
+  , /*decltype(_impl_.length_)*/uint64_t{0u}
+  , /*decltype(_impl_.hash_)*/0u
+  , /*decltype(_impl_.sharable_)*/true} {}
 struct DatabaseDataArchiveDefaultTypeInternal {
-  constexpr DatabaseDataArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR DatabaseDataArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~DatabaseDataArchiveDefaultTypeInternal() {}
   union {
     DatabaseDataArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DatabaseDataArchiveDefaultTypeInternal _DatabaseDataArchive_default_instance_;
-constexpr DatabaseImageDataArchive::DatabaseImageDataArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , type_(0)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DatabaseDataArchiveDefaultTypeInternal _DatabaseDataArchive_default_instance_;
+PROTOBUF_CONSTEXPR DatabaseImageDataArchive::DatabaseImageDataArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.type_)*/0} {}
 struct DatabaseImageDataArchiveDefaultTypeInternal {
-  constexpr DatabaseImageDataArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR DatabaseImageDataArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~DatabaseImageDataArchiveDefaultTypeInternal() {}
   union {
     DatabaseImageDataArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DatabaseImageDataArchiveDefaultTypeInternal _DatabaseImageDataArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DatabaseImageDataArchiveDefaultTypeInternal _DatabaseImageDataArchive_default_instance_;
 }  // namespace TSP
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSPDatabaseMessages_2eproto[3];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_TSPDatabaseMessages_2eproto[1];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSPDatabaseMessages_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSPDatabaseMessages_2eproto[3];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_TSPDatabaseMessages_2eproto[1];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSPDatabaseMessages_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSPDatabaseMessages_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseData, _has_bits_),
+const uint32_t TableStruct_TSPDatabaseMessages_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseData, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSP::DatabaseData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseData, data_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseData, _impl_.data_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, data_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, app_relative_path_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, display_name_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, length_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, hash_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, sharable_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.app_relative_path_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.display_name_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.length_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.hash_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseDataArchive, _impl_.sharable_),
   2,
   0,
   1,
   3,
   4,
   5,
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, type_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSP::DatabaseImageDataArchive, _impl_.type_),
   0,
   1,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 6, sizeof(::TSP::DatabaseData)},
-  { 7, 18, sizeof(::TSP::DatabaseDataArchive)},
-  { 24, 31, sizeof(::TSP::DatabaseImageDataArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 7, -1, sizeof(::TSP::DatabaseData)},
+  { 8, 20, -1, sizeof(::TSP::DatabaseDataArchive)},
+  { 26, 34, -1, sizeof(::TSP::DatabaseImageDataArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSP::_DatabaseData_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSP::_DatabaseDataArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSP::_DatabaseImageDataArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSP::_DatabaseData_default_instance_._instance,
+  &::TSP::_DatabaseDataArchive_default_instance_._instance,
+  &::TSP::_DatabaseImageDataArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSPDatabaseMessages_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -125,22 +137,24 @@ const char descriptor_table_protodef_TSPDatabaseMessages_2eproto[] PROTOBUF_SECT
   "geDataArchive.ImageType\"-\n\tImageType\022\013\n\007"
   "unknown\020\000\022\n\n\006bitmap\020\001\022\007\n\003pdf\020\002"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSPDatabaseMessages_2eproto_deps[1] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSPDatabaseMessages_2eproto_deps[1] = {
   &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSPDatabaseMessages_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSPDatabaseMessages_2eproto = {
-  false, false, 430, descriptor_table_protodef_TSPDatabaseMessages_2eproto, "TSPDatabaseMessages.proto", 
-  &descriptor_table_TSPDatabaseMessages_2eproto_once, descriptor_table_TSPDatabaseMessages_2eproto_deps, 1, 3,
-  schemas, file_default_instances, TableStruct_TSPDatabaseMessages_2eproto::offsets,
-  file_level_metadata_TSPDatabaseMessages_2eproto, file_level_enum_descriptors_TSPDatabaseMessages_2eproto, file_level_service_descriptors_TSPDatabaseMessages_2eproto,
+static ::_pbi::once_flag descriptor_table_TSPDatabaseMessages_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSPDatabaseMessages_2eproto = {
+    false, false, 430, descriptor_table_protodef_TSPDatabaseMessages_2eproto,
+    "TSPDatabaseMessages.proto",
+    &descriptor_table_TSPDatabaseMessages_2eproto_once, descriptor_table_TSPDatabaseMessages_2eproto_deps, 1, 3,
+    schemas, file_default_instances, TableStruct_TSPDatabaseMessages_2eproto::offsets,
+    file_level_metadata_TSPDatabaseMessages_2eproto, file_level_enum_descriptors_TSPDatabaseMessages_2eproto,
+    file_level_service_descriptors_TSPDatabaseMessages_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSPDatabaseMessages_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSPDatabaseMessages_2eproto_getter() {
   return &descriptor_table_TSPDatabaseMessages_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSPDatabaseMessages_2eproto(&descriptor_table_TSPDatabaseMessages_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSPDatabaseMessages_2eproto(&descriptor_table_TSPDatabaseMessages_2eproto);
 namespace TSP {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* DatabaseImageDataArchive_ImageType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_TSPDatabaseMessages_2eproto);
@@ -157,20 +171,20 @@ bool DatabaseImageDataArchive_ImageType_IsValid(int value) {
   }
 }
 
-#if (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#if (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 constexpr DatabaseImageDataArchive_ImageType DatabaseImageDataArchive::unknown;
 constexpr DatabaseImageDataArchive_ImageType DatabaseImageDataArchive::bitmap;
 constexpr DatabaseImageDataArchive_ImageType DatabaseImageDataArchive::pdf;
 constexpr DatabaseImageDataArchive_ImageType DatabaseImageDataArchive::ImageType_MIN;
 constexpr DatabaseImageDataArchive_ImageType DatabaseImageDataArchive::ImageType_MAX;
 constexpr int DatabaseImageDataArchive::ImageType_ARRAYSIZE;
-#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || _MSC_VER >= 1900)
+#endif  // (__cplusplus < 201703) && (!defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912))
 
 // ===================================================================
 
 class DatabaseData::_Internal {
  public:
-  using HasBits = decltype(std::declval<DatabaseData>()._has_bits_);
+  using HasBits = decltype(std::declval<DatabaseData>()._impl_._has_bits_);
   static const ::TSP::DataReference& data(const DatabaseData* msg);
   static void set_has_data(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -182,129 +196,132 @@ class DatabaseData::_Internal {
 
 const ::TSP::DataReference&
 DatabaseData::_Internal::data(const DatabaseData* msg) {
-  return *msg->data_;
+  return *msg->_impl_.data_;
 }
 void DatabaseData::clear_data() {
-  if (data_ != nullptr) data_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.data_ != nullptr) _impl_.data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 DatabaseData::DatabaseData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseData)
 }
 DatabaseData::DatabaseData(const DatabaseData& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  DatabaseData* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.data_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_data()) {
-    data_ = new ::TSP::DataReference(*from.data_);
-  } else {
-    data_ = nullptr;
+    _this->_impl_.data_ = new ::TSP::DataReference(*from._impl_.data_);
   }
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseData)
 }
 
-inline void DatabaseData::SharedCtor() {
-data_ = nullptr;
+inline void DatabaseData::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.data_){nullptr}
+  };
 }
 
 DatabaseData::~DatabaseData() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseData)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void DatabaseData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete data_;
+  if (this != internal_default_instance()) delete _impl_.data_;
 }
 
-void DatabaseData::ArenaDtor(void* object) {
-  DatabaseData* _this = reinterpret_cast< DatabaseData* >(object);
-  (void)_this;
-}
-void DatabaseData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void DatabaseData::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void DatabaseData::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSP.DatabaseData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(data_ != nullptr);
-    data_->Clear();
+    GOOGLE_DCHECK(_impl_.data_ != nullptr);
+    _impl_.data_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* DatabaseData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* DatabaseData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSP.DataReference data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseData::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* DatabaseData::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSP.DatabaseData)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSP.DataReference data = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::data(this), target, stream);
+      InternalWriteMessage(1, _Internal::data(this),
+        _Internal::data(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSP.DatabaseData)
@@ -319,44 +336,35 @@ size_t DatabaseData::ByteSizeLong() const {
   if (_internal_has_data()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *data_);
+        *_impl_.data_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseData::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     DatabaseData::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseData::GetClassData() const { return &_class_data_; }
 
-void DatabaseData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<DatabaseData *>(to)->MergeFrom(
-      static_cast<const DatabaseData &>(from));
-}
 
-
-void DatabaseData::MergeFrom(const DatabaseData& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseData)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void DatabaseData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<DatabaseData*>(&to_msg);
+  auto& from = static_cast<const DatabaseData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseData)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_data()) {
-    _internal_mutable_data()->::TSP::DataReference::MergeFrom(from._internal_data());
+    _this->_internal_mutable_data()->::TSP::DataReference::MergeFrom(
+        from._internal_data());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseData::CopyFrom(const DatabaseData& from) {
@@ -367,9 +375,9 @@ void DatabaseData::CopyFrom(const DatabaseData& from) {
 }
 
 bool DatabaseData::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_data()) {
-    if (!data_->IsInitialized()) return false;
+    if (!_impl_.data_->IsInitialized()) return false;
   }
   return true;
 }
@@ -377,12 +385,12 @@ bool DatabaseData::IsInitialized() const {
 void DatabaseData::InternalSwap(DatabaseData* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(data_, other->data_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.data_, other->_impl_.data_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DatabaseData::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSPDatabaseMessages_2eproto_getter, &descriptor_table_TSPDatabaseMessages_2eproto_once,
       file_level_metadata_TSPDatabaseMessages_2eproto[0]);
 }
@@ -391,7 +399,7 @@ void DatabaseData::InternalSwap(DatabaseData* other) {
 
 class DatabaseDataArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<DatabaseDataArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<DatabaseDataArchive>()._impl_._has_bits_);
   static const ::TSP::Reference& data(const DatabaseDataArchive* msg);
   static void set_has_data(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -418,206 +426,232 @@ class DatabaseDataArchive::_Internal {
 
 const ::TSP::Reference&
 DatabaseDataArchive::_Internal::data(const DatabaseDataArchive* msg) {
-  return *msg->data_;
+  return *msg->_impl_.data_;
 }
 void DatabaseDataArchive::clear_data() {
-  if (data_ != nullptr) data_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.data_ != nullptr) _impl_.data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 DatabaseDataArchive::DatabaseDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseDataArchive)
 }
 DatabaseDataArchive::DatabaseDataArchive(const DatabaseDataArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  DatabaseDataArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.app_relative_path_){}
+    , decltype(_impl_.display_name_){}
+    , decltype(_impl_.data_){nullptr}
+    , decltype(_impl_.length_){}
+    , decltype(_impl_.hash_){}
+    , decltype(_impl_.sharable_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  app_relative_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.app_relative_path_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.app_relative_path_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_app_relative_path()) {
-    app_relative_path_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_app_relative_path(), 
-      GetArenaForAllocation());
+    _this->_impl_.app_relative_path_.Set(from._internal_app_relative_path(), 
+      _this->GetArenaForAllocation());
   }
-  display_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.display_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.display_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_display_name()) {
-    display_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_display_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.display_name_.Set(from._internal_display_name(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_data()) {
-    data_ = new ::TSP::Reference(*from.data_);
-  } else {
-    data_ = nullptr;
+    _this->_impl_.data_ = new ::TSP::Reference(*from._impl_.data_);
   }
-  ::memcpy(&length_, &from.length_,
-    static_cast<size_t>(reinterpret_cast<char*>(&sharable_) -
-    reinterpret_cast<char*>(&length_)) + sizeof(sharable_));
+  ::memcpy(&_impl_.length_, &from._impl_.length_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.sharable_) -
+    reinterpret_cast<char*>(&_impl_.length_)) + sizeof(_impl_.sharable_));
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseDataArchive)
 }
 
-inline void DatabaseDataArchive::SharedCtor() {
-app_relative_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-display_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&data_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&hash_) -
-    reinterpret_cast<char*>(&data_)) + sizeof(hash_));
-sharable_ = true;
+inline void DatabaseDataArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.app_relative_path_){}
+    , decltype(_impl_.display_name_){}
+    , decltype(_impl_.data_){nullptr}
+    , decltype(_impl_.length_){uint64_t{0u}}
+    , decltype(_impl_.hash_){0u}
+    , decltype(_impl_.sharable_){true}
+  };
+  _impl_.app_relative_path_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.app_relative_path_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.display_name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.display_name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 DatabaseDataArchive::~DatabaseDataArchive() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseDataArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void DatabaseDataArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  app_relative_path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  display_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete data_;
+  _impl_.app_relative_path_.Destroy();
+  _impl_.display_name_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.data_;
 }
 
-void DatabaseDataArchive::ArenaDtor(void* object) {
-  DatabaseDataArchive* _this = reinterpret_cast< DatabaseDataArchive* >(object);
-  (void)_this;
-}
-void DatabaseDataArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void DatabaseDataArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void DatabaseDataArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSP.DatabaseDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      app_relative_path_.ClearNonDefaultToEmpty();
+      _impl_.app_relative_path_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      display_name_.ClearNonDefaultToEmpty();
+      _impl_.display_name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(data_ != nullptr);
-      data_->Clear();
+      GOOGLE_DCHECK(_impl_.data_ != nullptr);
+      _impl_.data_->Clear();
     }
   }
   if (cached_has_bits & 0x00000038u) {
-    ::memset(&length_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&hash_) -
-        reinterpret_cast<char*>(&length_)) + sizeof(hash_));
-    sharable_ = true;
+    ::memset(&_impl_.length_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.hash_) -
+        reinterpret_cast<char*>(&_impl_.length_)) + sizeof(_impl_.hash_));
+    _impl_.sharable_ = true;
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* DatabaseDataArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* DatabaseDataArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Reference data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string app_relative_path = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_app_relative_path();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSP.DatabaseDataArchive.app_relative_path");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSP.DatabaseDataArchive.app_relative_path");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // required string display_name = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_display_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSP.DatabaseDataArchive.display_name");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSP.DatabaseDataArchive.display_name");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional uint64 length = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_length(&has_bits);
-          length_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.length_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional uint32 hash = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_hash(&has_bits);
-          hash_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.hash_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool sharable = 6 [default = true];
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_sharable(&has_bits);
-          sharable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.sharable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseDataArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* DatabaseDataArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSP.DatabaseDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Reference data = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::data(this), target, stream);
+      InternalWriteMessage(1, _Internal::data(this),
+        _Internal::data(this).GetCachedSize(), target, stream);
   }
 
   // optional string app_relative_path = 2;
@@ -643,23 +677,23 @@ failure:
   // optional uint64 length = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_length(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt64ToArray(4, this->_internal_length(), target);
   }
 
   // optional uint32 hash = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_hash(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_hash(), target);
   }
 
   // required bool sharable = 6 [default = true];
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_sharable(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_sharable(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSP.DatabaseDataArchive)
@@ -688,7 +722,7 @@ size_t DatabaseDataArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSP.DatabaseDataArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000022) ^ 0x00000022) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000022) ^ 0x00000022) == 0) {  // All required fields are present.
     // required string display_name = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -700,12 +734,12 @@ size_t DatabaseDataArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional string app_relative_path = 2;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -717,75 +751,62 @@ size_t DatabaseDataArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *data_);
+          *_impl_.data_);
     }
 
     // optional uint64 length = 4;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-          this->_internal_length());
+      total_size += ::_pbi::WireFormatLite::UInt64SizePlusOne(this->_internal_length());
     }
 
     // optional uint32 hash = 5;
     if (cached_has_bits & 0x00000010u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->_internal_hash());
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_hash());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseDataArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     DatabaseDataArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseDataArchive::GetClassData() const { return &_class_data_; }
 
-void DatabaseDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<DatabaseDataArchive *>(to)->MergeFrom(
-      static_cast<const DatabaseDataArchive &>(from));
-}
 
-
-void DatabaseDataArchive::MergeFrom(const DatabaseDataArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void DatabaseDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<DatabaseDataArchive*>(&to_msg);
+  auto& from = static_cast<const DatabaseDataArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseDataArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_app_relative_path(from._internal_app_relative_path());
+      _this->_internal_set_app_relative_path(from._internal_app_relative_path());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_display_name(from._internal_display_name());
+      _this->_internal_set_display_name(from._internal_display_name());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_data()->::TSP::Reference::MergeFrom(from._internal_data());
+      _this->_internal_mutable_data()->::TSP::Reference::MergeFrom(
+          from._internal_data());
     }
     if (cached_has_bits & 0x00000008u) {
-      length_ = from.length_;
+      _this->_impl_.length_ = from._impl_.length_;
     }
     if (cached_has_bits & 0x00000010u) {
-      hash_ = from.hash_;
+      _this->_impl_.hash_ = from._impl_.hash_;
     }
     if (cached_has_bits & 0x00000020u) {
-      sharable_ = from.sharable_;
+      _this->_impl_.sharable_ = from._impl_.sharable_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseDataArchive::CopyFrom(const DatabaseDataArchive& from) {
@@ -796,38 +817,38 @@ void DatabaseDataArchive::CopyFrom(const DatabaseDataArchive& from) {
 }
 
 bool DatabaseDataArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_data()) {
-    if (!data_->IsInitialized()) return false;
+    if (!_impl_.data_->IsInitialized()) return false;
   }
   return true;
 }
 
 void DatabaseDataArchive::InternalSwap(DatabaseDataArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &app_relative_path_, GetArenaForAllocation(),
-      &other->app_relative_path_, other->GetArenaForAllocation()
+      &_impl_.app_relative_path_, lhs_arena,
+      &other->_impl_.app_relative_path_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &display_name_, GetArenaForAllocation(),
-      &other->display_name_, other->GetArenaForAllocation()
+      &_impl_.display_name_, lhs_arena,
+      &other->_impl_.display_name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(DatabaseDataArchive, hash_)
-      + sizeof(DatabaseDataArchive::hash_)
-      - PROTOBUF_FIELD_OFFSET(DatabaseDataArchive, data_)>(
-          reinterpret_cast<char*>(&data_),
-          reinterpret_cast<char*>(&other->data_));
-  swap(sharable_, other->sharable_);
+      PROTOBUF_FIELD_OFFSET(DatabaseDataArchive, _impl_.hash_)
+      + sizeof(DatabaseDataArchive::_impl_.hash_)
+      - PROTOBUF_FIELD_OFFSET(DatabaseDataArchive, _impl_.data_)>(
+          reinterpret_cast<char*>(&_impl_.data_),
+          reinterpret_cast<char*>(&other->_impl_.data_));
+  swap(_impl_.sharable_, other->_impl_.sharable_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DatabaseDataArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSPDatabaseMessages_2eproto_getter, &descriptor_table_TSPDatabaseMessages_2eproto_once,
       file_level_metadata_TSPDatabaseMessages_2eproto[1]);
 }
@@ -836,7 +857,7 @@ void DatabaseDataArchive::InternalSwap(DatabaseDataArchive* other) {
 
 class DatabaseImageDataArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<DatabaseImageDataArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<DatabaseImageDataArchive>()._impl_._has_bits_);
   static const ::TSP::DatabaseDataArchive& super(const DatabaseImageDataArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -851,149 +872,152 @@ class DatabaseImageDataArchive::_Internal {
 
 const ::TSP::DatabaseDataArchive&
 DatabaseImageDataArchive::_Internal::super(const DatabaseImageDataArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 DatabaseImageDataArchive::DatabaseImageDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSP.DatabaseImageDataArchive)
 }
 DatabaseImageDataArchive::DatabaseImageDataArchive(const DatabaseImageDataArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  DatabaseImageDataArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.type_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSP::DatabaseDataArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSP::DatabaseDataArchive(*from._impl_.super_);
   }
-  type_ = from.type_;
+  _this->_impl_.type_ = from._impl_.type_;
   // @@protoc_insertion_point(copy_constructor:TSP.DatabaseImageDataArchive)
 }
 
-inline void DatabaseImageDataArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&type_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(type_));
+inline void DatabaseImageDataArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.type_){0}
+  };
 }
 
 DatabaseImageDataArchive::~DatabaseImageDataArchive() {
   // @@protoc_insertion_point(destructor:TSP.DatabaseImageDataArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void DatabaseImageDataArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void DatabaseImageDataArchive::ArenaDtor(void* object) {
-  DatabaseImageDataArchive* _this = reinterpret_cast< DatabaseImageDataArchive* >(object);
-  (void)_this;
-}
-void DatabaseImageDataArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void DatabaseImageDataArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void DatabaseImageDataArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSP.DatabaseImageDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  type_ = 0;
-  _has_bits_.Clear();
+  _impl_.type_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* DatabaseImageDataArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* DatabaseImageDataArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSP.DatabaseDataArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.DatabaseImageDataArchive.ImageType type = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSP::DatabaseImageDataArchive_ImageType_IsValid(val))) {
             _internal_set_type(static_cast<::TSP::DatabaseImageDataArchive_ImageType>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(2, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DatabaseImageDataArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* DatabaseImageDataArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSP.DatabaseImageDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSP.DatabaseDataArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.DatabaseImageDataArchive.ImageType type = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       2, this->_internal_type(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSP.DatabaseImageDataArchive)
@@ -1008,13 +1032,13 @@ size_t DatabaseImageDataArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSP.DatabaseDataArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_type()) {
     // required .TSP.DatabaseImageDataArchive.ImageType type = 2;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
   }
 
   return total_size;
@@ -1023,62 +1047,53 @@ size_t DatabaseImageDataArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSP.DatabaseImageDataArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .TSP.DatabaseDataArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.DatabaseImageDataArchive.ImageType type = 2;
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_type());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DatabaseImageDataArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     DatabaseImageDataArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DatabaseImageDataArchive::GetClassData() const { return &_class_data_; }
 
-void DatabaseImageDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<DatabaseImageDataArchive *>(to)->MergeFrom(
-      static_cast<const DatabaseImageDataArchive &>(from));
-}
 
-
-void DatabaseImageDataArchive::MergeFrom(const DatabaseImageDataArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseImageDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void DatabaseImageDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<DatabaseImageDataArchive*>(&to_msg);
+  auto& from = static_cast<const DatabaseImageDataArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSP.DatabaseImageDataArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSP::DatabaseDataArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSP::DatabaseDataArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      type_ = from.type_;
+      _this->_impl_.type_ = from._impl_.type_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void DatabaseImageDataArchive::CopyFrom(const DatabaseImageDataArchive& from) {
@@ -1089,9 +1104,9 @@ void DatabaseImageDataArchive::CopyFrom(const DatabaseImageDataArchive& from) {
 }
 
 bool DatabaseImageDataArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1099,17 +1114,17 @@ bool DatabaseImageDataArchive::IsInitialized() const {
 void DatabaseImageDataArchive::InternalSwap(DatabaseImageDataArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(DatabaseImageDataArchive, type_)
-      + sizeof(DatabaseImageDataArchive::type_)
-      - PROTOBUF_FIELD_OFFSET(DatabaseImageDataArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(DatabaseImageDataArchive, _impl_.type_)
+      + sizeof(DatabaseImageDataArchive::_impl_.type_)
+      - PROTOBUF_FIELD_OFFSET(DatabaseImageDataArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DatabaseImageDataArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSPDatabaseMessages_2eproto_getter, &descriptor_table_TSPDatabaseMessages_2eproto_once,
       file_level_metadata_TSPDatabaseMessages_2eproto[2]);
 }
@@ -1117,13 +1132,16 @@ void DatabaseImageDataArchive::InternalSwap(DatabaseImageDataArchive* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSP
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSP::DatabaseData* Arena::CreateMaybeMessage< ::TSP::DatabaseData >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSP::DatabaseData*
+Arena::CreateMaybeMessage< ::TSP::DatabaseData >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSP::DatabaseData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSP::DatabaseDataArchive* Arena::CreateMaybeMessage< ::TSP::DatabaseDataArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSP::DatabaseDataArchive*
+Arena::CreateMaybeMessage< ::TSP::DatabaseDataArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSP::DatabaseDataArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSP::DatabaseImageDataArchive* Arena::CreateMaybeMessage< ::TSP::DatabaseImageDataArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSP::DatabaseImageDataArchive*
+Arena::CreateMaybeMessage< ::TSP::DatabaseImageDataArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSP::DatabaseImageDataArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

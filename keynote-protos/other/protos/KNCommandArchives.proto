@@ -4,11 +4,13 @@ import "TSPMessages.proto";
 import "TSKArchives.proto";
 import "TSSArchives.proto";
 import "TSDArchives.proto";
+import "TSDArchives.sos.proto";
 import "TSDCommandArchives.proto";
 import "TSWPArchives.proto";
 import "TSAArchives.proto";
 import "TSTArchives.proto";
 import "KNArchives.proto";
+import "KNArchives.sos.proto";
 package KN;
 
 enum AnimationReferent {
@@ -527,5 +529,103 @@ message OutlineSelectionTransformerArchive {
   required .KN.SlideCollectionSelectionTransformerHelperArchive transformer_helper = 1;
   optional bool can_have_range_in_selected_paragraph = 2 [default = false];
   repeated .TSK.RangeAddress selection_range_addresses = 3;
+}
+
+message CommandLiveVideoInfoApplyPreset {
+  required .TSD.BaseApplyPresetCommandArchive super = 1;
+}
+
+message CommandLiveVideoInfoSetSource {
+  required .TSK.CommandArchive super = 1;
+  required .TSP.UUIDPath live_video_info_id_path = 2;
+  optional .TSP.UUID source_id = 3;
+  optional .TSP.UUID local_collaboration_command_usage_token = 4;
+  optional .KN.LiveVideoSourceCollaborationCommandUsageState working_source_old_collaboration_command_usage_state = 5;
+  optional .TSP.Reference old_source = 6;
+  optional .TSP.UUID old_source_id = 7;
+}
+
+message CommandLiveVideoInfoSetValue {
+  message PropertyValue {
+    optional double scale = 1;
+    optional .TSP.Point normalized_offset = 2;
+    optional int32 mask_kind = 3;
+    optional double mask_corner_radius = 4;
+    optional bool is_placeholder = 5;
+    optional int32 background_kind = 6;
+    optional .TSD.FillArchive background_fill = 7;
+  }
+  enum Property {
+    Scale = 0;
+    NormalizedOffset = 1;
+    MaskKind = 2;
+    MaskCornerRadius = 3;
+    IsPlaceholder = 4;
+    BackgroundKind = 5;
+    BackgroundFill = 6;
+  }
+  required .TSK.CommandArchive super = 1;
+  required .TSP.UUIDPath live_video_info_id_path = 2;
+  required .KN.CommandLiveVideoInfoSetValue.Property property = 3;
+  optional .KN.CommandLiveVideoInfoSetValue.PropertyValue value = 4;
+  optional .KN.CommandLiveVideoInfoSetValue.PropertyValue old_value = 5;
+}
+
+message CommandLiveVideoSourceSetValue {
+  message PropertyValue {
+    optional string name = 1;
+    optional .KN.LiveVideoCaptureDeviceDescription capture_device_description = 2;
+    optional .TSP.DataReference poster_image_data = 3;
+    optional string symbol_abbreviation_text = 4;
+    optional int32 symbol_image_identifier = 5;
+    optional int32 symbol_tint_color_identifier = 6;
+  }
+  enum Property {
+    SourceName = 0;
+    CaptureDeviceDescription = 1;
+    PosterImageData = 2;
+    SymbolAbbreviationText = 3;
+    SymbolImageIdentifier = 4;
+    SymbolTintColorIdentifier = 5;
+  }
+  required .TSK.CommandArchive super = 1;
+  required .TSP.UUID live_video_source_id = 2;
+  required .KN.CommandLiveVideoSourceSetValue.Property property = 3;
+  optional .KN.CommandLiveVideoSourceSetValue.PropertyValue value = 4;
+  optional .KN.CommandLiveVideoSourceSetValue.PropertyValue old_value = 5;
+}
+
+message CommandLiveVideoStyleSetValue {
+  required .TSD.BaseStyleSetValueCommandArchive super = 1;
+  optional .TSDSOS.MediaStylePropertyChangeSetArchive change = 2;
+}
+
+message CommandThemeAddLiveVideoSource {
+  required .TSK.CommandArchive super = 1;
+  optional .TSP.Reference live_video_source = 2;
+  optional bool is_implicit = 3;
+}
+
+message CommandThemeRemoveLiveVideoSource {
+  required .TSK.CommandArchive super = 1;
+  required .TSP.UUID live_video_source_id = 2;
+  optional bool is_implicit = 3;
+  optional .TSP.Reference removed_live_video_source = 4;
+}
+
+message CommandMotionBackgroundStyleSetValueArchive {
+  required .TSK.CommandArchive super = 1;
+  required .TSP.UUIDPath slide_id_path = 4;
+  optional .TSP.Reference old_style = 2;
+  optional .TSP.Reference old_slide_style = 5;
+  optional .KNSOS.MotionBackgroundStylePropertyChangeSetArchive change = 3;
+  optional .KNSOS.MotionBackgroundStylePropertyChangeSetArchive undo_property_change = 6;
+}
+
+message CommandMotionBackgroundStyleUpdatePosterFrameDataArchive {
+  required .TSK.CommandArchive super = 1;
+  optional .TSP.Reference motion_background_style = 2;
+  optional .TSP.DataReference poster_image_data = 3;
+  optional .TSP.DataReference old_poster_image_data = 4;
 }
 

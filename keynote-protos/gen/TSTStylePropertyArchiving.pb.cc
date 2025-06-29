@@ -16,246 +16,279 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TST {
-constexpr Deprecated_TableStrokeArchive::Deprecated_TableStrokeArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : stroke_(nullptr)
-  , opacity_(0)
-  , background_(false)
-  , empty_(false){}
+PROTOBUF_CONSTEXPR Deprecated_TableStrokeArchive::Deprecated_TableStrokeArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.stroke_)*/nullptr
+  , /*decltype(_impl_.opacity_)*/0
+  , /*decltype(_impl_.background_)*/false
+  , /*decltype(_impl_.empty_)*/false} {}
 struct Deprecated_TableStrokeArchiveDefaultTypeInternal {
-  constexpr Deprecated_TableStrokeArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Deprecated_TableStrokeArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Deprecated_TableStrokeArchiveDefaultTypeInternal() {}
   union {
     Deprecated_TableStrokeArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Deprecated_TableStrokeArchiveDefaultTypeInternal _Deprecated_TableStrokeArchive_default_instance_;
-constexpr CellStylePropertiesArchive::CellStylePropertiesArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : cell_fill_(nullptr)
-  , deprecated_top_stroke_(nullptr)
-  , deprecated_right_stroke_(nullptr)
-  , deprecated_bottom_stroke_(nullptr)
-  , deprecated_left_stroke_(nullptr)
-  , padding_(nullptr)
-  , top_stroke_(nullptr)
-  , right_stroke_(nullptr)
-  , bottom_stroke_(nullptr)
-  , left_stroke_(nullptr)
-  , text_wrap_(false)
-  , vertical_alignment_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Deprecated_TableStrokeArchiveDefaultTypeInternal _Deprecated_TableStrokeArchive_default_instance_;
+PROTOBUF_CONSTEXPR CellStylePropertiesArchive::CellStylePropertiesArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.cell_fill_)*/nullptr
+  , /*decltype(_impl_.deprecated_top_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_right_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_left_stroke_)*/nullptr
+  , /*decltype(_impl_.padding_)*/nullptr
+  , /*decltype(_impl_.top_stroke_)*/nullptr
+  , /*decltype(_impl_.right_stroke_)*/nullptr
+  , /*decltype(_impl_.bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.left_stroke_)*/nullptr
+  , /*decltype(_impl_.text_wrap_)*/false
+  , /*decltype(_impl_.vertical_alignment_)*/0} {}
 struct CellStylePropertiesArchiveDefaultTypeInternal {
-  constexpr CellStylePropertiesArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CellStylePropertiesArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CellStylePropertiesArchiveDefaultTypeInternal() {}
   union {
     CellStylePropertiesArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CellStylePropertiesArchiveDefaultTypeInternal _CellStylePropertiesArchive_default_instance_;
-constexpr Deprecated_StrokePresetDataArchive::Deprecated_StrokePresetDataArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : deprecated_vertical_stroke_(nullptr)
-  , deprecated_horizontal_stroke_(nullptr)
-  , deprecated_exterior_stroke_(nullptr)
-  , deprecated_visible_mask_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CellStylePropertiesArchiveDefaultTypeInternal _CellStylePropertiesArchive_default_instance_;
+PROTOBUF_CONSTEXPR Deprecated_StrokePresetDataArchive::Deprecated_StrokePresetDataArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.deprecated_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_exterior_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_visible_mask_)*/0} {}
 struct Deprecated_StrokePresetDataArchiveDefaultTypeInternal {
-  constexpr Deprecated_StrokePresetDataArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Deprecated_StrokePresetDataArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Deprecated_StrokePresetDataArchiveDefaultTypeInternal() {}
   union {
     Deprecated_StrokePresetDataArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Deprecated_StrokePresetDataArchiveDefaultTypeInternal _Deprecated_StrokePresetDataArchive_default_instance_;
-constexpr StrokePresetDataArchive::StrokePresetDataArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : horizontal_stroke_(nullptr)
-  , vertical_stroke_(nullptr)
-  , exterior_stroke_(nullptr)
-  , visible_mask_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Deprecated_StrokePresetDataArchiveDefaultTypeInternal _Deprecated_StrokePresetDataArchive_default_instance_;
+PROTOBUF_CONSTEXPR StrokePresetDataArchive::StrokePresetDataArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.exterior_stroke_)*/nullptr
+  , /*decltype(_impl_.visible_mask_)*/0} {}
 struct StrokePresetDataArchiveDefaultTypeInternal {
-  constexpr StrokePresetDataArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StrokePresetDataArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StrokePresetDataArchiveDefaultTypeInternal() {}
   union {
     StrokePresetDataArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StrokePresetDataArchiveDefaultTypeInternal _StrokePresetDataArchive_default_instance_;
-constexpr StrokePresetListArchive::StrokePresetListArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : deprecated_preset_()
-  , preset_()
-  , count_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StrokePresetDataArchiveDefaultTypeInternal _StrokePresetDataArchive_default_instance_;
+PROTOBUF_CONSTEXPR StrokePresetListArchive::StrokePresetListArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.deprecated_preset_)*/{}
+  , /*decltype(_impl_.preset_)*/{}
+  , /*decltype(_impl_.count_)*/0} {}
 struct StrokePresetListArchiveDefaultTypeInternal {
-  constexpr StrokePresetListArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StrokePresetListArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StrokePresetListArchiveDefaultTypeInternal() {}
   union {
     StrokePresetListArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StrokePresetListArchiveDefaultTypeInternal _StrokePresetListArchive_default_instance_;
-constexpr TableStylePropertiesArchive::TableStylePropertiesArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : master_font_family_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , banded_fill_(nullptr)
-  , deprecated_header_row_separator_stroke_(nullptr)
-  , deprecated_header_row_border_stroke_(nullptr)
-  , deprecated_header_column_border_stroke_(nullptr)
-  , deprecated_header_column_separator_stroke_(nullptr)
-  , deprecated_footer_row_separator_stroke_(nullptr)
-  , deprecated_footer_row_border_stroke_(nullptr)
-  , deprecated_table_body_horizontal_border_stroke_(nullptr)
-  , deprecated_header_row_horizontal_stroke_(nullptr)
-  , deprecated_header_row_vertical_stroke_(nullptr)
-  , deprecated_header_column_horizontal_stroke_(nullptr)
-  , deprecated_header_column_vertical_stroke_(nullptr)
-  , deprecated_footer_row_horizontal_stroke_(nullptr)
-  , deprecated_footer_row_vertical_stroke_(nullptr)
-  , deprecated_table_body_vertical_border_stroke_(nullptr)
-  , deprecated_table_body_horizontal_stroke_(nullptr)
-  , deprecated_table_body_vertical_stroke_(nullptr)
-  , stroke_preset_list_(nullptr)
-  , header_row_separator_stroke_(nullptr)
-  , header_row_border_stroke_(nullptr)
-  , header_row_horizontal_stroke_(nullptr)
-  , header_row_vertical_stroke_(nullptr)
-  , header_column_border_stroke_(nullptr)
-  , header_column_separator_stroke_(nullptr)
-  , header_column_horizontal_stroke_(nullptr)
-  , header_column_vertical_stroke_(nullptr)
-  , footer_row_separator_stroke_(nullptr)
-  , footer_row_border_stroke_(nullptr)
-  , footer_row_horizontal_stroke_(nullptr)
-  , footer_row_vertical_stroke_(nullptr)
-  , table_body_horizontal_border_stroke_(nullptr)
-  , table_body_vertical_border_stroke_(nullptr)
-  , table_body_horizontal_stroke_(nullptr)
-  , table_body_vertical_stroke_(nullptr)
-  , category_level1_top_stroke_(nullptr)
-  , category_level2_top_stroke_(nullptr)
-  , category_level3_top_stroke_(nullptr)
-  , category_level4_top_stroke_(nullptr)
-  , category_level5_top_stroke_(nullptr)
-  , category_level1_bottom_stroke_(nullptr)
-  , category_level2_bottom_stroke_(nullptr)
-  , category_level3_bottom_stroke_(nullptr)
-  , category_level4_bottom_stroke_(nullptr)
-  , category_level5_bottom_stroke_(nullptr)
-  , category_level1_interior_stroke_(nullptr)
-  , category_level2_interior_stroke_(nullptr)
-  , category_level3_interior_stroke_(nullptr)
-  , category_level4_interior_stroke_(nullptr)
-  , category_level5_interior_stroke_(nullptr)
-  , category_level1_label_separator_stroke_(nullptr)
-  , category_level2_label_separator_stroke_(nullptr)
-  , category_level3_label_separator_stroke_(nullptr)
-  , category_level4_label_separator_stroke_(nullptr)
-  , category_level5_label_separator_stroke_(nullptr)
-  , banded_rows_(false)
-  , behaves_like_spreadsheet_(false)
-  , auto_resize_(false)
-  , v_strokes_visible_(false)
-  , h_strokes_visible_(false)
-  , hr_separator_visible_(false)
-  , hc_separator_visible_(false)
-  , footer_separator_visible_(false)
-  , obsolete_master_font_size_(0)
-  , table_border_visible_(false)
-  , table_header_border_visible_(false)
-  , table_hc_divider_visible_(false)
-  , table_hr_divider_visible_(false)
-  , table_footer_divider_visible_(false)
-  , writing_direction_(-1)
-{}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StrokePresetListArchiveDefaultTypeInternal _StrokePresetListArchive_default_instance_;
+PROTOBUF_CONSTEXPR TableStylePropertiesArchive::TableStylePropertiesArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.master_font_family_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.banded_fill_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_column_border_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_column_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_footer_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_footer_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_table_body_horizontal_border_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_column_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_header_column_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_footer_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_footer_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_table_body_vertical_border_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_table_body_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.deprecated_table_body_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.stroke_preset_list_)*/nullptr
+  , /*decltype(_impl_.header_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_border_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_horizontal_border_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_vertical_border_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_pivot_group_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_pivot_deemphasis_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.table_body_pivot_emphasis_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_group_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_group_deemphasis_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_group_deemphasis_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_title_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.banded_rows_)*/false
+  , /*decltype(_impl_.behaves_like_spreadsheet_)*/false
+  , /*decltype(_impl_.auto_resize_)*/false
+  , /*decltype(_impl_.v_strokes_visible_)*/false
+  , /*decltype(_impl_.h_strokes_visible_)*/false
+  , /*decltype(_impl_.hr_separator_visible_)*/false
+  , /*decltype(_impl_.hc_separator_visible_)*/false
+  , /*decltype(_impl_.footer_separator_visible_)*/false
+  , /*decltype(_impl_.obsolete_master_font_size_)*/0
+  , /*decltype(_impl_.table_border_visible_)*/false
+  , /*decltype(_impl_.table_header_border_visible_)*/false
+  , /*decltype(_impl_.table_hc_divider_visible_)*/false
+  , /*decltype(_impl_.table_hr_divider_visible_)*/false
+  , /*decltype(_impl_.table_footer_divider_visible_)*/false
+  , /*decltype(_impl_.writing_direction_)*/-1} {}
 struct TableStylePropertiesArchiveDefaultTypeInternal {
-  constexpr TableStylePropertiesArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TableStylePropertiesArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TableStylePropertiesArchiveDefaultTypeInternal() {}
   union {
     TableStylePropertiesArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TableStylePropertiesArchiveDefaultTypeInternal _TableStylePropertiesArchive_default_instance_;
-constexpr TableStylePresetArchive::TableStylePresetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : image_(nullptr)
-  , style_network_(nullptr)
-  , index_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TableStylePropertiesArchiveDefaultTypeInternal _TableStylePropertiesArchive_default_instance_;
+PROTOBUF_CONSTEXPR TableStylePresetArchive::TableStylePresetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.image_)*/nullptr
+  , /*decltype(_impl_.style_network_)*/nullptr
+  , /*decltype(_impl_.index_)*/0} {}
 struct TableStylePresetArchiveDefaultTypeInternal {
-  constexpr TableStylePresetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TableStylePresetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TableStylePresetArchiveDefaultTypeInternal() {}
   union {
     TableStylePresetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TableStylePresetArchiveDefaultTypeInternal _TableStylePresetArchive_default_instance_;
-constexpr TableStrokePresetArchive::TableStrokePresetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : index_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TableStylePresetArchiveDefaultTypeInternal _TableStylePresetArchive_default_instance_;
+PROTOBUF_CONSTEXPR TableStrokePresetArchive::TableStrokePresetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.index_)*/0} {}
 struct TableStrokePresetArchiveDefaultTypeInternal {
-  constexpr TableStrokePresetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TableStrokePresetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TableStrokePresetArchiveDefaultTypeInternal() {}
   union {
     TableStrokePresetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TableStrokePresetArchiveDefaultTypeInternal _TableStrokePresetArchive_default_instance_;
-constexpr ThemePresetsArchive::ThemePresetsArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : table_style_presets_()
-  , table_cell_stroke_presets_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TableStrokePresetArchiveDefaultTypeInternal _TableStrokePresetArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemePresetsArchive::ThemePresetsArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.table_style_presets_)*/{}
+  , /*decltype(_impl_.table_cell_stroke_presets_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct ThemePresetsArchiveDefaultTypeInternal {
-  constexpr ThemePresetsArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemePresetsArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemePresetsArchiveDefaultTypeInternal() {}
   union {
     ThemePresetsArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemePresetsArchiveDefaultTypeInternal _ThemePresetsArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemePresetsArchiveDefaultTypeInternal _ThemePresetsArchive_default_instance_;
 }  // namespace TST
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSTStylePropertyArchiving_2eproto[9];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TSTStylePropertyArchiving_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSTStylePropertyArchiving_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSTStylePropertyArchiving_2eproto[9];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_TSTStylePropertyArchiving_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSTStylePropertyArchiving_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTStylePropertyArchiving_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _has_bits_),
+const uint32_t TableStruct_TSTStylePropertyArchiving_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, background_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, opacity_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, empty_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _impl_.stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _impl_.background_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _impl_.opacity_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_TableStrokeArchive, _impl_.empty_),
   0,
   2,
   1,
   3,
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, cell_fill_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, text_wrap_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, deprecated_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, deprecated_right_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, deprecated_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, deprecated_left_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, vertical_alignment_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, padding_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, right_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, left_stroke_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.cell_fill_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.text_wrap_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.deprecated_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.deprecated_right_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.deprecated_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.deprecated_left_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.vertical_alignment_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.padding_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.right_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::CellStylePropertiesArchive, _impl_.left_stroke_),
   0,
   10,
   1,
@@ -268,122 +301,137 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTStylePropertyArchiving_2epr
   7,
   8,
   9,
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, deprecated_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, deprecated_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, deprecated_exterior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, deprecated_visible_mask_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _impl_.deprecated_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _impl_.deprecated_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _impl_.deprecated_exterior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::Deprecated_StrokePresetDataArchive, _impl_.deprecated_visible_mask_),
   1,
   0,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, exterior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, visible_mask_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _impl_.horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _impl_.vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _impl_.exterior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetDataArchive, _impl_.visible_mask_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, count_),
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, deprecated_preset_),
-  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, preset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _impl_.count_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _impl_.deprecated_preset_),
+  PROTOBUF_FIELD_OFFSET(::TST::StrokePresetListArchive, _impl_.preset_),
   0,
   ~0u,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, banded_rows_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, banded_fill_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, behaves_like_spreadsheet_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, auto_resize_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_column_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_column_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_column_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_header_column_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_footer_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_footer_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_footer_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_footer_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_table_body_horizontal_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_table_body_vertical_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_table_body_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, deprecated_table_body_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, stroke_preset_list_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, v_strokes_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, h_strokes_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, hr_separator_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, hc_separator_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, footer_separator_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_border_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_header_border_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_hc_divider_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_hr_divider_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_footer_divider_visible_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, obsolete_master_font_size_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, master_font_family_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, writing_direction_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_column_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_column_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_column_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, header_column_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, footer_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, footer_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, footer_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, footer_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_body_horizontal_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_body_vertical_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_body_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, table_body_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level1_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level2_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level3_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level4_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level5_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level1_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level2_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level3_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level4_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level5_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level1_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level2_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level3_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level4_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level5_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level1_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level2_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level3_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level4_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, category_level5_label_separator_stroke_),
-  55,
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.banded_rows_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.banded_fill_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.behaves_like_spreadsheet_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.auto_resize_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_column_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_column_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_column_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_header_column_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_footer_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_footer_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_footer_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_footer_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_table_body_horizontal_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_table_body_vertical_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_table_body_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.deprecated_table_body_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.stroke_preset_list_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.v_strokes_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.h_strokes_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.hr_separator_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.hc_separator_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_separator_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_border_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_header_border_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_hc_divider_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_hr_divider_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_footer_divider_visible_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.obsolete_master_font_size_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.master_font_family_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.writing_direction_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_horizontal_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_vertical_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level1_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level2_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level3_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level4_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level5_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level1_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level2_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level3_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level4_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level5_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level1_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level2_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level3_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level4_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level5_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level1_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level2_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level3_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level4_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.category_level5_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_pivot_group_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_pivot_group_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_pivot_deemphasis_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.table_body_pivot_emphasis_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_pivot_group_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_pivot_group_deemphasis_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_column_pivot_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_pivot_group_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_pivot_group_deemphasis_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.header_row_pivot_title_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePropertiesArchive, _impl_.footer_row_pivot_group_vertical_stroke_),
+  66,
   1,
-  56,
-  57,
+  67,
+  68,
   2,
   3,
   9,
@@ -401,19 +449,19 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTStylePropertyArchiving_2epr
   16,
   17,
   18,
-  58,
-  59,
-  60,
-  61,
-  62,
-  64,
-  65,
-  66,
-  67,
-  68,
-  63,
-  0,
   69,
+  70,
+  71,
+  72,
+  73,
+  75,
+  76,
+  77,
+  78,
+  79,
+  74,
+  0,
+  80,
   19,
   20,
   21,
@@ -450,54 +498,68 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTStylePropertyArchiving_2epr
   52,
   53,
   54,
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _has_bits_),
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, index_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, image_),
-  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, style_network_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _impl_.index_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _impl_.image_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStylePresetArchive, _impl_.style_network_),
   2,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TST::TableStrokePresetArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TST::TableStrokePresetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TST::TableStrokePresetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::TableStrokePresetArchive, index_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::TableStrokePresetArchive, _impl_.index_),
   0,
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TST::ThemePresetsArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TST::ThemePresetsArchive, table_style_presets_),
-  PROTOBUF_FIELD_OFFSET(::TST::ThemePresetsArchive, table_cell_stroke_presets_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TST::ThemePresetsArchive, _impl_.table_style_presets_),
+  PROTOBUF_FIELD_OFFSET(::TST::ThemePresetsArchive, _impl_.table_cell_stroke_presets_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 9, sizeof(::TST::Deprecated_TableStrokeArchive)},
-  { 13, 30, sizeof(::TST::CellStylePropertiesArchive)},
-  { 42, 51, sizeof(::TST::Deprecated_StrokePresetDataArchive)},
-  { 55, 64, sizeof(::TST::StrokePresetDataArchive)},
-  { 68, 76, sizeof(::TST::StrokePresetListArchive)},
-  { 79, 154, sizeof(::TST::TableStylePropertiesArchive)},
-  { 224, 232, sizeof(::TST::TableStylePresetArchive)},
-  { 235, 241, sizeof(::TST::TableStrokePresetArchive)},
-  { 242, -1, sizeof(::TST::ThemePresetsArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 10, -1, sizeof(::TST::Deprecated_TableStrokeArchive)},
+  { 14, 32, -1, sizeof(::TST::CellStylePropertiesArchive)},
+  { 44, 54, -1, sizeof(::TST::Deprecated_StrokePresetDataArchive)},
+  { 58, 68, -1, sizeof(::TST::StrokePresetDataArchive)},
+  { 72, 81, -1, sizeof(::TST::StrokePresetListArchive)},
+  { 84, 171, -1, sizeof(::TST::TableStylePropertiesArchive)},
+  { 252, 261, -1, sizeof(::TST::TableStylePresetArchive)},
+  { 264, 271, -1, sizeof(::TST::TableStrokePresetArchive)},
+  { 272, -1, -1, sizeof(::TST::ThemePresetsArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_Deprecated_TableStrokeArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_CellStylePropertiesArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_Deprecated_StrokePresetDataArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_StrokePresetDataArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_StrokePresetListArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_TableStylePropertiesArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_TableStylePresetArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_TableStrokePresetArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TST::_ThemePresetsArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TST::_Deprecated_TableStrokeArchive_default_instance_._instance,
+  &::TST::_CellStylePropertiesArchive_default_instance_._instance,
+  &::TST::_Deprecated_StrokePresetDataArchive_default_instance_._instance,
+  &::TST::_StrokePresetDataArchive_default_instance_._instance,
+  &::TST::_StrokePresetListArchive_default_instance_._instance,
+  &::TST::_TableStylePropertiesArchive_default_instance_._instance,
+  &::TST::_TableStylePresetArchive_default_instance_._instance,
+  &::TST::_TableStrokePresetArchive_default_instance_._instance,
+  &::TST::_ThemePresetsArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSTStylePropertyArchiving_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -538,7 +600,7 @@ const char descriptor_table_protodef_TSTStylePropertyArchiving_2eproto[] PROTOBU
   "Archive\022\r\n\005count\030\001 \002(\005\022B\n\021deprecated_pre"
   "set\030\002 \003(\0132\'.TST.Deprecated_StrokePresetD"
   "ataArchive\022,\n\006preset\030\003 \003(\0132\034.TST.StrokeP"
-  "resetDataArchive\"\267 \n\033TableStylePropertie"
+  "resetDataArchive\"\260&\n\033TableStylePropertie"
   "sArchive\022\023\n\013banded_rows\030\001 \001(\010\022%\n\013banded_"
   "fill\030\002 \001(\0132\020.TSD.FillArchive\022 \n\030behaves_"
   "like_spreadsheet\030\025 \001(\010\022\023\n\013auto_resize\030\026 "
@@ -642,43 +704,64 @@ const char descriptor_table_protodef_TSTStylePropertyArchiving_2eproto[] PROTOBU
   "tegory_level4_label_separator_stroke\030P \001"
   "(\0132\022.TSD.StrokeArchive\022B\n&category_level"
   "5_label_separator_stroke\030Q \001(\0132\022.TSD.Str"
-  "okeArchive\"n\n\027TableStylePresetArchive\022\r\n"
-  "\005index\030\001 \001(\005\022\035\n\005image\030\002 \001(\0132\016.TSP.Refere"
-  "nce\022%\n\rstyle_network\030\003 \001(\0132\016.TSP.Referen"
-  "ce\")\n\030TableStrokePresetArchive\022\r\n\005index\030"
-  "\001 \002(\005\"\266\001\n\023ThemePresetsArchive\022+\n\023table_s"
-  "tyle_presets\030\001 \003(\0132\016.TSP.Reference\0221\n\031ta"
-  "ble_cell_stroke_presets\030\002 \003(\0132\016.TSP.Refe"
-  "rence2\?\n\textension\022\021.TSS.ThemeArchive\030\310\001"
-  " \001(\0132\030.TST.ThemePresetsArchive"
+  "okeArchive\022D\n(table_body_pivot_group_hor"
+  "izontal_stroke\030R \001(\0132\022.TSD.StrokeArchive"
+  "\022B\n&table_body_pivot_group_vertical_stro"
+  "ke\030S \001(\0132\022.TSD.StrokeArchive\022I\n-table_bo"
+  "dy_pivot_deemphasis_horizontal_stroke\030T "
+  "\001(\0132\022.TSD.StrokeArchive\022E\n)table_body_pi"
+  "vot_emphasis_vertical_stroke\030U \001(\0132\022.TSD"
+  ".StrokeArchive\022G\n+header_column_pivot_gr"
+  "oup_horizontal_stroke\030V \001(\0132\022.TSD.Stroke"
+  "Archive\022G\n+header_column_pivot_group_dee"
+  "mphasis_stroke\030W \001(\0132\022.TSD.StrokeArchive"
+  "\022@\n$header_column_pivot_separator_stroke"
+  "\030X \001(\0132\022.TSD.StrokeArchive\022B\n&header_row"
+  "_pivot_group_vertical_stroke\030Y \001(\0132\022.TSD"
+  ".StrokeArchive\022D\n(header_row_pivot_group"
+  "_deemphasis_stroke\030Z \001(\0132\022.TSD.StrokeArc"
+  "hive\0229\n\035header_row_pivot_title_stroke\030[ "
+  "\001(\0132\022.TSD.StrokeArchive\022B\n&footer_row_pi"
+  "vot_group_vertical_stroke\030\\ \001(\0132\022.TSD.St"
+  "rokeArchive\"n\n\027TableStylePresetArchive\022\r"
+  "\n\005index\030\001 \001(\005\022\035\n\005image\030\002 \001(\0132\016.TSP.Refer"
+  "ence\022%\n\rstyle_network\030\003 \001(\0132\016.TSP.Refere"
+  "nce\")\n\030TableStrokePresetArchive\022\r\n\005index"
+  "\030\001 \002(\005\"\266\001\n\023ThemePresetsArchive\022+\n\023table_"
+  "style_presets\030\001 \003(\0132\016.TSP.Reference\0221\n\031t"
+  "able_cell_stroke_presets\030\002 \003(\0132\016.TSP.Ref"
+  "erence2\?\n\textension\022\021.TSS.ThemeArchive\030\310"
+  "\001 \001(\0132\030.TST.ThemePresetsArchive"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSTStylePropertyArchiving_2eproto_deps[5] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSTStylePropertyArchiving_2eproto_deps[5] = {
   &::descriptor_table_TSDArchives_2eproto,
   &::descriptor_table_TSKArchives_2eproto,
   &::descriptor_table_TSPMessages_2eproto,
   &::descriptor_table_TSSArchives_2eproto,
   &::descriptor_table_TSWPArchives_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSTStylePropertyArchiving_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSTStylePropertyArchiving_2eproto = {
-  false, false, 5990, descriptor_table_protodef_TSTStylePropertyArchiving_2eproto, "TSTStylePropertyArchiving.proto", 
-  &descriptor_table_TSTStylePropertyArchiving_2eproto_once, descriptor_table_TSTStylePropertyArchiving_2eproto_deps, 5, 9,
-  schemas, file_default_instances, TableStruct_TSTStylePropertyArchiving_2eproto::offsets,
-  file_level_metadata_TSTStylePropertyArchiving_2eproto, file_level_enum_descriptors_TSTStylePropertyArchiving_2eproto, file_level_service_descriptors_TSTStylePropertyArchiving_2eproto,
+static ::_pbi::once_flag descriptor_table_TSTStylePropertyArchiving_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSTStylePropertyArchiving_2eproto = {
+    false, false, 6751, descriptor_table_protodef_TSTStylePropertyArchiving_2eproto,
+    "TSTStylePropertyArchiving.proto",
+    &descriptor_table_TSTStylePropertyArchiving_2eproto_once, descriptor_table_TSTStylePropertyArchiving_2eproto_deps, 5, 9,
+    schemas, file_default_instances, TableStruct_TSTStylePropertyArchiving_2eproto::offsets,
+    file_level_metadata_TSTStylePropertyArchiving_2eproto, file_level_enum_descriptors_TSTStylePropertyArchiving_2eproto,
+    file_level_service_descriptors_TSTStylePropertyArchiving_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSTStylePropertyArchiving_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSTStylePropertyArchiving_2eproto_getter() {
   return &descriptor_table_TSTStylePropertyArchiving_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSTStylePropertyArchiving_2eproto(&descriptor_table_TSTStylePropertyArchiving_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSTStylePropertyArchiving_2eproto(&descriptor_table_TSTStylePropertyArchiving_2eproto);
 namespace TST {
 
 // ===================================================================
 
 class Deprecated_TableStrokeArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Deprecated_TableStrokeArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Deprecated_TableStrokeArchive>()._impl_._has_bits_);
   static const ::TSD::StrokeArchive& stroke(const Deprecated_TableStrokeArchive* msg);
   static void set_has_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -696,182 +779,191 @@ class Deprecated_TableStrokeArchive::_Internal {
 
 const ::TSD::StrokeArchive&
 Deprecated_TableStrokeArchive::_Internal::stroke(const Deprecated_TableStrokeArchive* msg) {
-  return *msg->stroke_;
+  return *msg->_impl_.stroke_;
 }
 void Deprecated_TableStrokeArchive::clear_stroke() {
-  if (stroke_ != nullptr) stroke_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.stroke_ != nullptr) _impl_.stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 Deprecated_TableStrokeArchive::Deprecated_TableStrokeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.Deprecated_TableStrokeArchive)
 }
 Deprecated_TableStrokeArchive::Deprecated_TableStrokeArchive(const Deprecated_TableStrokeArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Deprecated_TableStrokeArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.stroke_){nullptr}
+    , decltype(_impl_.opacity_){}
+    , decltype(_impl_.background_){}
+    , decltype(_impl_.empty_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_stroke()) {
-    stroke_ = new ::TSD::StrokeArchive(*from.stroke_);
-  } else {
-    stroke_ = nullptr;
+    _this->_impl_.stroke_ = new ::TSD::StrokeArchive(*from._impl_.stroke_);
   }
-  ::memcpy(&opacity_, &from.opacity_,
-    static_cast<size_t>(reinterpret_cast<char*>(&empty_) -
-    reinterpret_cast<char*>(&opacity_)) + sizeof(empty_));
+  ::memcpy(&_impl_.opacity_, &from._impl_.opacity_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.empty_) -
+    reinterpret_cast<char*>(&_impl_.opacity_)) + sizeof(_impl_.empty_));
   // @@protoc_insertion_point(copy_constructor:TST.Deprecated_TableStrokeArchive)
 }
 
-inline void Deprecated_TableStrokeArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&stroke_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&empty_) -
-    reinterpret_cast<char*>(&stroke_)) + sizeof(empty_));
+inline void Deprecated_TableStrokeArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.stroke_){nullptr}
+    , decltype(_impl_.opacity_){0}
+    , decltype(_impl_.background_){false}
+    , decltype(_impl_.empty_){false}
+  };
 }
 
 Deprecated_TableStrokeArchive::~Deprecated_TableStrokeArchive() {
   // @@protoc_insertion_point(destructor:TST.Deprecated_TableStrokeArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Deprecated_TableStrokeArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete stroke_;
+  if (this != internal_default_instance()) delete _impl_.stroke_;
 }
 
-void Deprecated_TableStrokeArchive::ArenaDtor(void* object) {
-  Deprecated_TableStrokeArchive* _this = reinterpret_cast< Deprecated_TableStrokeArchive* >(object);
-  (void)_this;
-}
-void Deprecated_TableStrokeArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Deprecated_TableStrokeArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Deprecated_TableStrokeArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.Deprecated_TableStrokeArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(stroke_ != nullptr);
-    stroke_->Clear();
+    GOOGLE_DCHECK(_impl_.stroke_ != nullptr);
+    _impl_.stroke_->Clear();
   }
   if (cached_has_bits & 0x0000000eu) {
-    ::memset(&opacity_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&empty_) -
-        reinterpret_cast<char*>(&opacity_)) + sizeof(empty_));
+    ::memset(&_impl_.opacity_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.empty_) -
+        reinterpret_cast<char*>(&_impl_.opacity_)) + sizeof(_impl_.empty_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Deprecated_TableStrokeArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Deprecated_TableStrokeArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSD.StrokeArchive stroke = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool background = 2 [deprecated = true];
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_background(&has_bits);
-          background_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.background_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float opacity = 3 [deprecated = true];
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           _Internal::set_has_opacity(&has_bits);
-          opacity_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.opacity_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool empty = 4 [deprecated = true];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_empty(&has_bits);
-          empty_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.empty_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Deprecated_TableStrokeArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Deprecated_TableStrokeArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.Deprecated_TableStrokeArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSD.StrokeArchive stroke = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::stroke(this), target, stream);
+      InternalWriteMessage(1, _Internal::stroke(this),
+        _Internal::stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional bool background = 2 [deprecated = true];
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_background(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_background(), target);
   }
 
   // optional float opacity = 3 [deprecated = true];
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_opacity(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(3, this->_internal_opacity(), target);
   }
 
   // optional bool empty = 4 [deprecated = true];
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_empty(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_empty(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.Deprecated_TableStrokeArchive)
@@ -882,17 +974,17 @@ size_t Deprecated_TableStrokeArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.Deprecated_TableStrokeArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSD.StrokeArchive stroke = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *stroke_);
+          *_impl_.stroke_);
     }
 
     // optional float opacity = 3 [deprecated = true];
@@ -911,51 +1003,42 @@ size_t Deprecated_TableStrokeArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Deprecated_TableStrokeArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Deprecated_TableStrokeArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Deprecated_TableStrokeArchive::GetClassData() const { return &_class_data_; }
 
-void Deprecated_TableStrokeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Deprecated_TableStrokeArchive *>(to)->MergeFrom(
-      static_cast<const Deprecated_TableStrokeArchive &>(from));
-}
 
-
-void Deprecated_TableStrokeArchive::MergeFrom(const Deprecated_TableStrokeArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.Deprecated_TableStrokeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Deprecated_TableStrokeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Deprecated_TableStrokeArchive*>(&to_msg);
+  auto& from = static_cast<const Deprecated_TableStrokeArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.Deprecated_TableStrokeArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_stroke());
+      _this->_internal_mutable_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      opacity_ = from.opacity_;
+      _this->_impl_.opacity_ = from._impl_.opacity_;
     }
     if (cached_has_bits & 0x00000004u) {
-      background_ = from.background_;
+      _this->_impl_.background_ = from._impl_.background_;
     }
     if (cached_has_bits & 0x00000008u) {
-      empty_ = from.empty_;
+      _this->_impl_.empty_ = from._impl_.empty_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Deprecated_TableStrokeArchive::CopyFrom(const Deprecated_TableStrokeArchive& from) {
@@ -967,7 +1050,7 @@ void Deprecated_TableStrokeArchive::CopyFrom(const Deprecated_TableStrokeArchive
 
 bool Deprecated_TableStrokeArchive::IsInitialized() const {
   if (_internal_has_stroke()) {
-    if (!stroke_->IsInitialized()) return false;
+    if (!_impl_.stroke_->IsInitialized()) return false;
   }
   return true;
 }
@@ -975,17 +1058,17 @@ bool Deprecated_TableStrokeArchive::IsInitialized() const {
 void Deprecated_TableStrokeArchive::InternalSwap(Deprecated_TableStrokeArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Deprecated_TableStrokeArchive, empty_)
-      + sizeof(Deprecated_TableStrokeArchive::empty_)
-      - PROTOBUF_FIELD_OFFSET(Deprecated_TableStrokeArchive, stroke_)>(
-          reinterpret_cast<char*>(&stroke_),
-          reinterpret_cast<char*>(&other->stroke_));
+      PROTOBUF_FIELD_OFFSET(Deprecated_TableStrokeArchive, _impl_.empty_)
+      + sizeof(Deprecated_TableStrokeArchive::_impl_.empty_)
+      - PROTOBUF_FIELD_OFFSET(Deprecated_TableStrokeArchive, _impl_.stroke_)>(
+          reinterpret_cast<char*>(&_impl_.stroke_),
+          reinterpret_cast<char*>(&other->_impl_.stroke_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Deprecated_TableStrokeArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[0]);
 }
@@ -994,7 +1077,7 @@ void Deprecated_TableStrokeArchive::InternalSwap(Deprecated_TableStrokeArchive* 
 
 class CellStylePropertiesArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<CellStylePropertiesArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<CellStylePropertiesArchive>()._impl_._has_bits_);
   static const ::TSD::FillArchive& cell_fill(const CellStylePropertiesArchive* msg);
   static void set_has_cell_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1045,453 +1128,459 @@ class CellStylePropertiesArchive::_Internal {
 
 const ::TSD::FillArchive&
 CellStylePropertiesArchive::_Internal::cell_fill(const CellStylePropertiesArchive* msg) {
-  return *msg->cell_fill_;
+  return *msg->_impl_.cell_fill_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 CellStylePropertiesArchive::_Internal::deprecated_top_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->deprecated_top_stroke_;
+  return *msg->_impl_.deprecated_top_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 CellStylePropertiesArchive::_Internal::deprecated_right_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->deprecated_right_stroke_;
+  return *msg->_impl_.deprecated_right_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 CellStylePropertiesArchive::_Internal::deprecated_bottom_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->deprecated_bottom_stroke_;
+  return *msg->_impl_.deprecated_bottom_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 CellStylePropertiesArchive::_Internal::deprecated_left_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->deprecated_left_stroke_;
+  return *msg->_impl_.deprecated_left_stroke_;
 }
 const ::TSWP::PaddingArchive&
 CellStylePropertiesArchive::_Internal::padding(const CellStylePropertiesArchive* msg) {
-  return *msg->padding_;
+  return *msg->_impl_.padding_;
 }
 const ::TSD::StrokeArchive&
 CellStylePropertiesArchive::_Internal::top_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->top_stroke_;
+  return *msg->_impl_.top_stroke_;
 }
 const ::TSD::StrokeArchive&
 CellStylePropertiesArchive::_Internal::right_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->right_stroke_;
+  return *msg->_impl_.right_stroke_;
 }
 const ::TSD::StrokeArchive&
 CellStylePropertiesArchive::_Internal::bottom_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->bottom_stroke_;
+  return *msg->_impl_.bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 CellStylePropertiesArchive::_Internal::left_stroke(const CellStylePropertiesArchive* msg) {
-  return *msg->left_stroke_;
+  return *msg->_impl_.left_stroke_;
 }
 void CellStylePropertiesArchive::clear_cell_fill() {
-  if (cell_fill_ != nullptr) cell_fill_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.cell_fill_ != nullptr) _impl_.cell_fill_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void CellStylePropertiesArchive::clear_padding() {
-  if (padding_ != nullptr) padding_->Clear();
-  _has_bits_[0] &= ~0x00000020u;
+  if (_impl_.padding_ != nullptr) _impl_.padding_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 void CellStylePropertiesArchive::clear_top_stroke() {
-  if (top_stroke_ != nullptr) top_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000040u;
+  if (_impl_.top_stroke_ != nullptr) _impl_.top_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 void CellStylePropertiesArchive::clear_right_stroke() {
-  if (right_stroke_ != nullptr) right_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000080u;
+  if (_impl_.right_stroke_ != nullptr) _impl_.right_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 void CellStylePropertiesArchive::clear_bottom_stroke() {
-  if (bottom_stroke_ != nullptr) bottom_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000100u;
+  if (_impl_.bottom_stroke_ != nullptr) _impl_.bottom_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 void CellStylePropertiesArchive::clear_left_stroke() {
-  if (left_stroke_ != nullptr) left_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000200u;
+  if (_impl_.left_stroke_ != nullptr) _impl_.left_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 CellStylePropertiesArchive::CellStylePropertiesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.CellStylePropertiesArchive)
 }
 CellStylePropertiesArchive::CellStylePropertiesArchive(const CellStylePropertiesArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CellStylePropertiesArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.cell_fill_){nullptr}
+    , decltype(_impl_.deprecated_top_stroke_){nullptr}
+    , decltype(_impl_.deprecated_right_stroke_){nullptr}
+    , decltype(_impl_.deprecated_bottom_stroke_){nullptr}
+    , decltype(_impl_.deprecated_left_stroke_){nullptr}
+    , decltype(_impl_.padding_){nullptr}
+    , decltype(_impl_.top_stroke_){nullptr}
+    , decltype(_impl_.right_stroke_){nullptr}
+    , decltype(_impl_.bottom_stroke_){nullptr}
+    , decltype(_impl_.left_stroke_){nullptr}
+    , decltype(_impl_.text_wrap_){}
+    , decltype(_impl_.vertical_alignment_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_cell_fill()) {
-    cell_fill_ = new ::TSD::FillArchive(*from.cell_fill_);
-  } else {
-    cell_fill_ = nullptr;
+    _this->_impl_.cell_fill_ = new ::TSD::FillArchive(*from._impl_.cell_fill_);
   }
   if (from._internal_has_deprecated_top_stroke()) {
-    deprecated_top_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_top_stroke_);
-  } else {
-    deprecated_top_stroke_ = nullptr;
+    _this->_impl_.deprecated_top_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_top_stroke_);
   }
   if (from._internal_has_deprecated_right_stroke()) {
-    deprecated_right_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_right_stroke_);
-  } else {
-    deprecated_right_stroke_ = nullptr;
+    _this->_impl_.deprecated_right_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_right_stroke_);
   }
   if (from._internal_has_deprecated_bottom_stroke()) {
-    deprecated_bottom_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_bottom_stroke_);
-  } else {
-    deprecated_bottom_stroke_ = nullptr;
+    _this->_impl_.deprecated_bottom_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_bottom_stroke_);
   }
   if (from._internal_has_deprecated_left_stroke()) {
-    deprecated_left_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_left_stroke_);
-  } else {
-    deprecated_left_stroke_ = nullptr;
+    _this->_impl_.deprecated_left_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_left_stroke_);
   }
   if (from._internal_has_padding()) {
-    padding_ = new ::TSWP::PaddingArchive(*from.padding_);
-  } else {
-    padding_ = nullptr;
+    _this->_impl_.padding_ = new ::TSWP::PaddingArchive(*from._impl_.padding_);
   }
   if (from._internal_has_top_stroke()) {
-    top_stroke_ = new ::TSD::StrokeArchive(*from.top_stroke_);
-  } else {
-    top_stroke_ = nullptr;
+    _this->_impl_.top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.top_stroke_);
   }
   if (from._internal_has_right_stroke()) {
-    right_stroke_ = new ::TSD::StrokeArchive(*from.right_stroke_);
-  } else {
-    right_stroke_ = nullptr;
+    _this->_impl_.right_stroke_ = new ::TSD::StrokeArchive(*from._impl_.right_stroke_);
   }
   if (from._internal_has_bottom_stroke()) {
-    bottom_stroke_ = new ::TSD::StrokeArchive(*from.bottom_stroke_);
-  } else {
-    bottom_stroke_ = nullptr;
+    _this->_impl_.bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.bottom_stroke_);
   }
   if (from._internal_has_left_stroke()) {
-    left_stroke_ = new ::TSD::StrokeArchive(*from.left_stroke_);
-  } else {
-    left_stroke_ = nullptr;
+    _this->_impl_.left_stroke_ = new ::TSD::StrokeArchive(*from._impl_.left_stroke_);
   }
-  ::memcpy(&text_wrap_, &from.text_wrap_,
-    static_cast<size_t>(reinterpret_cast<char*>(&vertical_alignment_) -
-    reinterpret_cast<char*>(&text_wrap_)) + sizeof(vertical_alignment_));
+  ::memcpy(&_impl_.text_wrap_, &from._impl_.text_wrap_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.vertical_alignment_) -
+    reinterpret_cast<char*>(&_impl_.text_wrap_)) + sizeof(_impl_.vertical_alignment_));
   // @@protoc_insertion_point(copy_constructor:TST.CellStylePropertiesArchive)
 }
 
-inline void CellStylePropertiesArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&cell_fill_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&vertical_alignment_) -
-    reinterpret_cast<char*>(&cell_fill_)) + sizeof(vertical_alignment_));
+inline void CellStylePropertiesArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.cell_fill_){nullptr}
+    , decltype(_impl_.deprecated_top_stroke_){nullptr}
+    , decltype(_impl_.deprecated_right_stroke_){nullptr}
+    , decltype(_impl_.deprecated_bottom_stroke_){nullptr}
+    , decltype(_impl_.deprecated_left_stroke_){nullptr}
+    , decltype(_impl_.padding_){nullptr}
+    , decltype(_impl_.top_stroke_){nullptr}
+    , decltype(_impl_.right_stroke_){nullptr}
+    , decltype(_impl_.bottom_stroke_){nullptr}
+    , decltype(_impl_.left_stroke_){nullptr}
+    , decltype(_impl_.text_wrap_){false}
+    , decltype(_impl_.vertical_alignment_){0}
+  };
 }
 
 CellStylePropertiesArchive::~CellStylePropertiesArchive() {
   // @@protoc_insertion_point(destructor:TST.CellStylePropertiesArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CellStylePropertiesArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete cell_fill_;
-  if (this != internal_default_instance()) delete deprecated_top_stroke_;
-  if (this != internal_default_instance()) delete deprecated_right_stroke_;
-  if (this != internal_default_instance()) delete deprecated_bottom_stroke_;
-  if (this != internal_default_instance()) delete deprecated_left_stroke_;
-  if (this != internal_default_instance()) delete padding_;
-  if (this != internal_default_instance()) delete top_stroke_;
-  if (this != internal_default_instance()) delete right_stroke_;
-  if (this != internal_default_instance()) delete bottom_stroke_;
-  if (this != internal_default_instance()) delete left_stroke_;
+  if (this != internal_default_instance()) delete _impl_.cell_fill_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_right_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_left_stroke_;
+  if (this != internal_default_instance()) delete _impl_.padding_;
+  if (this != internal_default_instance()) delete _impl_.top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.right_stroke_;
+  if (this != internal_default_instance()) delete _impl_.bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.left_stroke_;
 }
 
-void CellStylePropertiesArchive::ArenaDtor(void* object) {
-  CellStylePropertiesArchive* _this = reinterpret_cast< CellStylePropertiesArchive* >(object);
-  (void)_this;
-}
-void CellStylePropertiesArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CellStylePropertiesArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CellStylePropertiesArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.CellStylePropertiesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(cell_fill_ != nullptr);
-      cell_fill_->Clear();
+      GOOGLE_DCHECK(_impl_.cell_fill_ != nullptr);
+      _impl_.cell_fill_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(deprecated_top_stroke_ != nullptr);
-      deprecated_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_top_stroke_ != nullptr);
+      _impl_.deprecated_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(deprecated_right_stroke_ != nullptr);
-      deprecated_right_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_right_stroke_ != nullptr);
+      _impl_.deprecated_right_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(deprecated_bottom_stroke_ != nullptr);
-      deprecated_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_bottom_stroke_ != nullptr);
+      _impl_.deprecated_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(deprecated_left_stroke_ != nullptr);
-      deprecated_left_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_left_stroke_ != nullptr);
+      _impl_.deprecated_left_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(padding_ != nullptr);
-      padding_->Clear();
+      GOOGLE_DCHECK(_impl_.padding_ != nullptr);
+      _impl_.padding_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(top_stroke_ != nullptr);
-      top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.top_stroke_ != nullptr);
+      _impl_.top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(right_stroke_ != nullptr);
-      right_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.right_stroke_ != nullptr);
+      _impl_.right_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x00000300u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(bottom_stroke_ != nullptr);
-      bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.bottom_stroke_ != nullptr);
+      _impl_.bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(left_stroke_ != nullptr);
-      left_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.left_stroke_ != nullptr);
+      _impl_.left_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x00000c00u) {
-    ::memset(&text_wrap_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&vertical_alignment_) -
-        reinterpret_cast<char*>(&text_wrap_)) + sizeof(vertical_alignment_));
+    ::memset(&_impl_.text_wrap_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.vertical_alignment_) -
+        reinterpret_cast<char*>(&_impl_.text_wrap_)) + sizeof(_impl_.vertical_alignment_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CellStylePropertiesArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CellStylePropertiesArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSD.FillArchive cell_fill = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_cell_fill(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool text_wrap = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_text_wrap(&has_bits);
-          text_wrap_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.text_wrap_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_top_stroke = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_right_stroke = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_right_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_bottom_stroke = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_left_stroke = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_left_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional int32 vertical_alignment = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_vertical_alignment(&has_bits);
-          vertical_alignment_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.vertical_alignment_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSWP.PaddingArchive padding = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_padding(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive top_stroke = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive right_stroke = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_right_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive bottom_stroke = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive left_stroke = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_left_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CellStylePropertiesArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CellStylePropertiesArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.CellStylePropertiesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSD.FillArchive cell_fill = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::cell_fill(this), target, stream);
+      InternalWriteMessage(1, _Internal::cell_fill(this),
+        _Internal::cell_fill(this).GetCachedSize(), target, stream);
   }
 
   // optional bool text_wrap = 3;
   if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_text_wrap(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_text_wrap(), target);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_top_stroke = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::deprecated_top_stroke(this), target, stream);
+      InternalWriteMessage(4, _Internal::deprecated_top_stroke(this),
+        _Internal::deprecated_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_right_stroke = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::deprecated_right_stroke(this), target, stream);
+      InternalWriteMessage(5, _Internal::deprecated_right_stroke(this),
+        _Internal::deprecated_right_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_bottom_stroke = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::deprecated_bottom_stroke(this), target, stream);
+      InternalWriteMessage(6, _Internal::deprecated_bottom_stroke(this),
+        _Internal::deprecated_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_left_stroke = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::deprecated_left_stroke(this), target, stream);
+      InternalWriteMessage(7, _Internal::deprecated_left_stroke(this),
+        _Internal::deprecated_left_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional int32 vertical_alignment = 8;
   if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_vertical_alignment(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(8, this->_internal_vertical_alignment(), target);
   }
 
   // optional .TSWP.PaddingArchive padding = 9;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::padding(this), target, stream);
+      InternalWriteMessage(9, _Internal::padding(this),
+        _Internal::padding(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive top_stroke = 10;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::top_stroke(this), target, stream);
+      InternalWriteMessage(10, _Internal::top_stroke(this),
+        _Internal::top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive right_stroke = 11;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::right_stroke(this), target, stream);
+      InternalWriteMessage(11, _Internal::right_stroke(this),
+        _Internal::right_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive bottom_stroke = 12;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        12, _Internal::bottom_stroke(this), target, stream);
+      InternalWriteMessage(12, _Internal::bottom_stroke(this),
+        _Internal::bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive left_stroke = 13;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        13, _Internal::left_stroke(this), target, stream);
+      InternalWriteMessage(13, _Internal::left_stroke(this),
+        _Internal::left_stroke(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.CellStylePropertiesArchive)
@@ -1502,66 +1591,66 @@ size_t CellStylePropertiesArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.CellStylePropertiesArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSD.FillArchive cell_fill = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *cell_fill_);
+          *_impl_.cell_fill_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_top_stroke = 4;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_top_stroke_);
+          *_impl_.deprecated_top_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_right_stroke = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_right_stroke_);
+          *_impl_.deprecated_right_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_bottom_stroke = 6;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_bottom_stroke_);
+          *_impl_.deprecated_bottom_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_left_stroke = 7;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_left_stroke_);
+          *_impl_.deprecated_left_stroke_);
     }
 
     // optional .TSWP.PaddingArchive padding = 9;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *padding_);
+          *_impl_.padding_);
     }
 
     // optional .TSD.StrokeArchive top_stroke = 10;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *top_stroke_);
+          *_impl_.top_stroke_);
     }
 
     // optional .TSD.StrokeArchive right_stroke = 11;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *right_stroke_);
+          *_impl_.right_stroke_);
     }
 
   }
@@ -1570,14 +1659,14 @@ size_t CellStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *bottom_stroke_);
+          *_impl_.bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive left_stroke = 13;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *left_stroke_);
+          *_impl_.left_stroke_);
     }
 
     // optional bool text_wrap = 3;
@@ -1587,83 +1676,81 @@ size_t CellStylePropertiesArchive::ByteSizeLong() const {
 
     // optional int32 vertical_alignment = 8;
     if (cached_has_bits & 0x00000800u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_vertical_alignment());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_vertical_alignment());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CellStylePropertiesArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CellStylePropertiesArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CellStylePropertiesArchive::GetClassData() const { return &_class_data_; }
 
-void CellStylePropertiesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CellStylePropertiesArchive *>(to)->MergeFrom(
-      static_cast<const CellStylePropertiesArchive &>(from));
-}
 
-
-void CellStylePropertiesArchive::MergeFrom(const CellStylePropertiesArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.CellStylePropertiesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CellStylePropertiesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CellStylePropertiesArchive*>(&to_msg);
+  auto& from = static_cast<const CellStylePropertiesArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.CellStylePropertiesArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_cell_fill()->::TSD::FillArchive::MergeFrom(from._internal_cell_fill());
+      _this->_internal_mutable_cell_fill()->::TSD::FillArchive::MergeFrom(
+          from._internal_cell_fill());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_deprecated_top_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_top_stroke());
+      _this->_internal_mutable_deprecated_top_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_top_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_deprecated_right_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_right_stroke());
+      _this->_internal_mutable_deprecated_right_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_right_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_deprecated_bottom_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_bottom_stroke());
+      _this->_internal_mutable_deprecated_bottom_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_bottom_stroke());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_deprecated_left_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_left_stroke());
+      _this->_internal_mutable_deprecated_left_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_left_stroke());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_padding()->::TSWP::PaddingArchive::MergeFrom(from._internal_padding());
+      _this->_internal_mutable_padding()->::TSWP::PaddingArchive::MergeFrom(
+          from._internal_padding());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_top_stroke());
+      _this->_internal_mutable_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_top_stroke());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_right_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_right_stroke());
+      _this->_internal_mutable_right_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_right_stroke());
     }
   }
   if (cached_has_bits & 0x00000f00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_bottom_stroke());
+      _this->_internal_mutable_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_bottom_stroke());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_left_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_left_stroke());
+      _this->_internal_mutable_left_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_left_stroke());
     }
     if (cached_has_bits & 0x00000400u) {
-      text_wrap_ = from.text_wrap_;
+      _this->_impl_.text_wrap_ = from._impl_.text_wrap_;
     }
     if (cached_has_bits & 0x00000800u) {
-      vertical_alignment_ = from.vertical_alignment_;
+      _this->_impl_.vertical_alignment_ = from._impl_.vertical_alignment_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CellStylePropertiesArchive::CopyFrom(const CellStylePropertiesArchive& from) {
@@ -1675,31 +1762,31 @@ void CellStylePropertiesArchive::CopyFrom(const CellStylePropertiesArchive& from
 
 bool CellStylePropertiesArchive::IsInitialized() const {
   if (_internal_has_cell_fill()) {
-    if (!cell_fill_->IsInitialized()) return false;
+    if (!_impl_.cell_fill_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_top_stroke()) {
-    if (!deprecated_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_right_stroke()) {
-    if (!deprecated_right_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_right_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_bottom_stroke()) {
-    if (!deprecated_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_left_stroke()) {
-    if (!deprecated_left_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_left_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_top_stroke()) {
-    if (!top_stroke_->IsInitialized()) return false;
+    if (!_impl_.top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_right_stroke()) {
-    if (!right_stroke_->IsInitialized()) return false;
+    if (!_impl_.right_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_bottom_stroke()) {
-    if (!bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_left_stroke()) {
-    if (!left_stroke_->IsInitialized()) return false;
+    if (!_impl_.left_stroke_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1707,17 +1794,17 @@ bool CellStylePropertiesArchive::IsInitialized() const {
 void CellStylePropertiesArchive::InternalSwap(CellStylePropertiesArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CellStylePropertiesArchive, vertical_alignment_)
-      + sizeof(CellStylePropertiesArchive::vertical_alignment_)
-      - PROTOBUF_FIELD_OFFSET(CellStylePropertiesArchive, cell_fill_)>(
-          reinterpret_cast<char*>(&cell_fill_),
-          reinterpret_cast<char*>(&other->cell_fill_));
+      PROTOBUF_FIELD_OFFSET(CellStylePropertiesArchive, _impl_.vertical_alignment_)
+      + sizeof(CellStylePropertiesArchive::_impl_.vertical_alignment_)
+      - PROTOBUF_FIELD_OFFSET(CellStylePropertiesArchive, _impl_.cell_fill_)>(
+          reinterpret_cast<char*>(&_impl_.cell_fill_),
+          reinterpret_cast<char*>(&other->_impl_.cell_fill_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CellStylePropertiesArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[1]);
 }
@@ -1726,7 +1813,7 @@ void CellStylePropertiesArchive::InternalSwap(CellStylePropertiesArchive* other)
 
 class Deprecated_StrokePresetDataArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Deprecated_StrokePresetDataArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Deprecated_StrokePresetDataArchive>()._impl_._has_bits_);
   static const ::TST::Deprecated_TableStrokeArchive& deprecated_horizontal_stroke(const Deprecated_StrokePresetDataArchive* msg);
   static void set_has_deprecated_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
@@ -1749,204 +1836,207 @@ class Deprecated_StrokePresetDataArchive::_Internal {
 
 const ::TST::Deprecated_TableStrokeArchive&
 Deprecated_StrokePresetDataArchive::_Internal::deprecated_horizontal_stroke(const Deprecated_StrokePresetDataArchive* msg) {
-  return *msg->deprecated_horizontal_stroke_;
+  return *msg->_impl_.deprecated_horizontal_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 Deprecated_StrokePresetDataArchive::_Internal::deprecated_vertical_stroke(const Deprecated_StrokePresetDataArchive* msg) {
-  return *msg->deprecated_vertical_stroke_;
+  return *msg->_impl_.deprecated_vertical_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 Deprecated_StrokePresetDataArchive::_Internal::deprecated_exterior_stroke(const Deprecated_StrokePresetDataArchive* msg) {
-  return *msg->deprecated_exterior_stroke_;
+  return *msg->_impl_.deprecated_exterior_stroke_;
 }
 Deprecated_StrokePresetDataArchive::Deprecated_StrokePresetDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.Deprecated_StrokePresetDataArchive)
 }
 Deprecated_StrokePresetDataArchive::Deprecated_StrokePresetDataArchive(const Deprecated_StrokePresetDataArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Deprecated_StrokePresetDataArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.deprecated_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_exterior_stroke_){nullptr}
+    , decltype(_impl_.deprecated_visible_mask_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_deprecated_vertical_stroke()) {
-    deprecated_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_vertical_stroke_);
-  } else {
-    deprecated_vertical_stroke_ = nullptr;
+    _this->_impl_.deprecated_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_vertical_stroke_);
   }
   if (from._internal_has_deprecated_horizontal_stroke()) {
-    deprecated_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_horizontal_stroke_);
-  } else {
-    deprecated_horizontal_stroke_ = nullptr;
+    _this->_impl_.deprecated_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_horizontal_stroke_);
   }
   if (from._internal_has_deprecated_exterior_stroke()) {
-    deprecated_exterior_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_exterior_stroke_);
-  } else {
-    deprecated_exterior_stroke_ = nullptr;
+    _this->_impl_.deprecated_exterior_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_exterior_stroke_);
   }
-  deprecated_visible_mask_ = from.deprecated_visible_mask_;
+  _this->_impl_.deprecated_visible_mask_ = from._impl_.deprecated_visible_mask_;
   // @@protoc_insertion_point(copy_constructor:TST.Deprecated_StrokePresetDataArchive)
 }
 
-inline void Deprecated_StrokePresetDataArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&deprecated_vertical_stroke_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&deprecated_visible_mask_) -
-    reinterpret_cast<char*>(&deprecated_vertical_stroke_)) + sizeof(deprecated_visible_mask_));
+inline void Deprecated_StrokePresetDataArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.deprecated_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_exterior_stroke_){nullptr}
+    , decltype(_impl_.deprecated_visible_mask_){0}
+  };
 }
 
 Deprecated_StrokePresetDataArchive::~Deprecated_StrokePresetDataArchive() {
   // @@protoc_insertion_point(destructor:TST.Deprecated_StrokePresetDataArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Deprecated_StrokePresetDataArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete deprecated_vertical_stroke_;
-  if (this != internal_default_instance()) delete deprecated_horizontal_stroke_;
-  if (this != internal_default_instance()) delete deprecated_exterior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_exterior_stroke_;
 }
 
-void Deprecated_StrokePresetDataArchive::ArenaDtor(void* object) {
-  Deprecated_StrokePresetDataArchive* _this = reinterpret_cast< Deprecated_StrokePresetDataArchive* >(object);
-  (void)_this;
-}
-void Deprecated_StrokePresetDataArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Deprecated_StrokePresetDataArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Deprecated_StrokePresetDataArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.Deprecated_StrokePresetDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(deprecated_vertical_stroke_ != nullptr);
-      deprecated_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_vertical_stroke_ != nullptr);
+      _impl_.deprecated_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(deprecated_horizontal_stroke_ != nullptr);
-      deprecated_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_horizontal_stroke_ != nullptr);
+      _impl_.deprecated_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(deprecated_exterior_stroke_ != nullptr);
-      deprecated_exterior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_exterior_stroke_ != nullptr);
+      _impl_.deprecated_exterior_stroke_->Clear();
     }
   }
-  deprecated_visible_mask_ = 0;
-  _has_bits_.Clear();
+  _impl_.deprecated_visible_mask_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Deprecated_StrokePresetDataArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Deprecated_StrokePresetDataArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TST.Deprecated_TableStrokeArchive deprecated_horizontal_stroke = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_exterior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required int32 deprecated_visible_mask = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_deprecated_visible_mask(&has_bits);
-          deprecated_visible_mask_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.deprecated_visible_mask_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Deprecated_StrokePresetDataArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Deprecated_StrokePresetDataArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.Deprecated_StrokePresetDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::deprecated_vertical_stroke(this), target, stream);
+      InternalWriteMessage(1, _Internal::deprecated_vertical_stroke(this),
+        _Internal::deprecated_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // required .TST.Deprecated_TableStrokeArchive deprecated_horizontal_stroke = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::deprecated_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(2, _Internal::deprecated_horizontal_stroke(this),
+        _Internal::deprecated_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::deprecated_exterior_stroke(this), target, stream);
+      InternalWriteMessage(3, _Internal::deprecated_exterior_stroke(this),
+        _Internal::deprecated_exterior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // required int32 deprecated_visible_mask = 5;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_deprecated_visible_mask(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(5, this->_internal_deprecated_visible_mask(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.Deprecated_StrokePresetDataArchive)
@@ -1961,28 +2051,26 @@ size_t Deprecated_StrokePresetDataArchive::RequiredFieldsByteSizeFallback() cons
     // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_vertical_stroke_);
+        *_impl_.deprecated_vertical_stroke_);
   }
 
   if (_internal_has_deprecated_horizontal_stroke()) {
     // required .TST.Deprecated_TableStrokeArchive deprecated_horizontal_stroke = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_horizontal_stroke_);
+        *_impl_.deprecated_horizontal_stroke_);
   }
 
   if (_internal_has_deprecated_exterior_stroke()) {
     // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_exterior_stroke_);
+        *_impl_.deprecated_exterior_stroke_);
   }
 
   if (_internal_has_deprecated_visible_mask()) {
     // required int32 deprecated_visible_mask = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_deprecated_visible_mask());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_deprecated_visible_mask());
   }
 
   return total_size;
@@ -1991,79 +2079,70 @@ size_t Deprecated_StrokePresetDataArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.Deprecated_StrokePresetDataArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
     // required .TST.Deprecated_TableStrokeArchive deprecated_vertical_stroke = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_vertical_stroke_);
+        *_impl_.deprecated_vertical_stroke_);
 
     // required .TST.Deprecated_TableStrokeArchive deprecated_horizontal_stroke = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_horizontal_stroke_);
+        *_impl_.deprecated_horizontal_stroke_);
 
     // required .TST.Deprecated_TableStrokeArchive deprecated_exterior_stroke = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *deprecated_exterior_stroke_);
+        *_impl_.deprecated_exterior_stroke_);
 
     // required int32 deprecated_visible_mask = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_deprecated_visible_mask());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_deprecated_visible_mask());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Deprecated_StrokePresetDataArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Deprecated_StrokePresetDataArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Deprecated_StrokePresetDataArchive::GetClassData() const { return &_class_data_; }
 
-void Deprecated_StrokePresetDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Deprecated_StrokePresetDataArchive *>(to)->MergeFrom(
-      static_cast<const Deprecated_StrokePresetDataArchive &>(from));
-}
 
-
-void Deprecated_StrokePresetDataArchive::MergeFrom(const Deprecated_StrokePresetDataArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.Deprecated_StrokePresetDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Deprecated_StrokePresetDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Deprecated_StrokePresetDataArchive*>(&to_msg);
+  auto& from = static_cast<const Deprecated_StrokePresetDataArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.Deprecated_StrokePresetDataArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_deprecated_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_vertical_stroke());
+      _this->_internal_mutable_deprecated_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_vertical_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_deprecated_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_horizontal_stroke());
+      _this->_internal_mutable_deprecated_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_deprecated_exterior_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_exterior_stroke());
+      _this->_internal_mutable_deprecated_exterior_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_exterior_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      deprecated_visible_mask_ = from.deprecated_visible_mask_;
+      _this->_impl_.deprecated_visible_mask_ = from._impl_.deprecated_visible_mask_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Deprecated_StrokePresetDataArchive::CopyFrom(const Deprecated_StrokePresetDataArchive& from) {
@@ -2074,15 +2153,15 @@ void Deprecated_StrokePresetDataArchive::CopyFrom(const Deprecated_StrokePresetD
 }
 
 bool Deprecated_StrokePresetDataArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_deprecated_vertical_stroke()) {
-    if (!deprecated_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_horizontal_stroke()) {
-    if (!deprecated_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_exterior_stroke()) {
-    if (!deprecated_exterior_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_exterior_stroke_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2090,17 +2169,17 @@ bool Deprecated_StrokePresetDataArchive::IsInitialized() const {
 void Deprecated_StrokePresetDataArchive::InternalSwap(Deprecated_StrokePresetDataArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Deprecated_StrokePresetDataArchive, deprecated_visible_mask_)
-      + sizeof(Deprecated_StrokePresetDataArchive::deprecated_visible_mask_)
-      - PROTOBUF_FIELD_OFFSET(Deprecated_StrokePresetDataArchive, deprecated_vertical_stroke_)>(
-          reinterpret_cast<char*>(&deprecated_vertical_stroke_),
-          reinterpret_cast<char*>(&other->deprecated_vertical_stroke_));
+      PROTOBUF_FIELD_OFFSET(Deprecated_StrokePresetDataArchive, _impl_.deprecated_visible_mask_)
+      + sizeof(Deprecated_StrokePresetDataArchive::_impl_.deprecated_visible_mask_)
+      - PROTOBUF_FIELD_OFFSET(Deprecated_StrokePresetDataArchive, _impl_.deprecated_vertical_stroke_)>(
+          reinterpret_cast<char*>(&_impl_.deprecated_vertical_stroke_),
+          reinterpret_cast<char*>(&other->_impl_.deprecated_vertical_stroke_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Deprecated_StrokePresetDataArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[2]);
 }
@@ -2109,7 +2188,7 @@ void Deprecated_StrokePresetDataArchive::InternalSwap(Deprecated_StrokePresetDat
 
 class StrokePresetDataArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StrokePresetDataArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StrokePresetDataArchive>()._impl_._has_bits_);
   static const ::TSD::StrokeArchive& horizontal_stroke(const StrokePresetDataArchive* msg);
   static void set_has_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -2129,216 +2208,219 @@ class StrokePresetDataArchive::_Internal {
 
 const ::TSD::StrokeArchive&
 StrokePresetDataArchive::_Internal::horizontal_stroke(const StrokePresetDataArchive* msg) {
-  return *msg->horizontal_stroke_;
+  return *msg->_impl_.horizontal_stroke_;
 }
 const ::TSD::StrokeArchive&
 StrokePresetDataArchive::_Internal::vertical_stroke(const StrokePresetDataArchive* msg) {
-  return *msg->vertical_stroke_;
+  return *msg->_impl_.vertical_stroke_;
 }
 const ::TSD::StrokeArchive&
 StrokePresetDataArchive::_Internal::exterior_stroke(const StrokePresetDataArchive* msg) {
-  return *msg->exterior_stroke_;
+  return *msg->_impl_.exterior_stroke_;
 }
 void StrokePresetDataArchive::clear_horizontal_stroke() {
-  if (horizontal_stroke_ != nullptr) horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.horizontal_stroke_ != nullptr) _impl_.horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void StrokePresetDataArchive::clear_vertical_stroke() {
-  if (vertical_stroke_ != nullptr) vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.vertical_stroke_ != nullptr) _impl_.vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void StrokePresetDataArchive::clear_exterior_stroke() {
-  if (exterior_stroke_ != nullptr) exterior_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.exterior_stroke_ != nullptr) _impl_.exterior_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 StrokePresetDataArchive::StrokePresetDataArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.StrokePresetDataArchive)
 }
 StrokePresetDataArchive::StrokePresetDataArchive(const StrokePresetDataArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StrokePresetDataArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.horizontal_stroke_){nullptr}
+    , decltype(_impl_.vertical_stroke_){nullptr}
+    , decltype(_impl_.exterior_stroke_){nullptr}
+    , decltype(_impl_.visible_mask_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_horizontal_stroke()) {
-    horizontal_stroke_ = new ::TSD::StrokeArchive(*from.horizontal_stroke_);
-  } else {
-    horizontal_stroke_ = nullptr;
+    _this->_impl_.horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.horizontal_stroke_);
   }
   if (from._internal_has_vertical_stroke()) {
-    vertical_stroke_ = new ::TSD::StrokeArchive(*from.vertical_stroke_);
-  } else {
-    vertical_stroke_ = nullptr;
+    _this->_impl_.vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.vertical_stroke_);
   }
   if (from._internal_has_exterior_stroke()) {
-    exterior_stroke_ = new ::TSD::StrokeArchive(*from.exterior_stroke_);
-  } else {
-    exterior_stroke_ = nullptr;
+    _this->_impl_.exterior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.exterior_stroke_);
   }
-  visible_mask_ = from.visible_mask_;
+  _this->_impl_.visible_mask_ = from._impl_.visible_mask_;
   // @@protoc_insertion_point(copy_constructor:TST.StrokePresetDataArchive)
 }
 
-inline void StrokePresetDataArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&horizontal_stroke_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&visible_mask_) -
-    reinterpret_cast<char*>(&horizontal_stroke_)) + sizeof(visible_mask_));
+inline void StrokePresetDataArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.horizontal_stroke_){nullptr}
+    , decltype(_impl_.vertical_stroke_){nullptr}
+    , decltype(_impl_.exterior_stroke_){nullptr}
+    , decltype(_impl_.visible_mask_){0}
+  };
 }
 
 StrokePresetDataArchive::~StrokePresetDataArchive() {
   // @@protoc_insertion_point(destructor:TST.StrokePresetDataArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StrokePresetDataArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete horizontal_stroke_;
-  if (this != internal_default_instance()) delete vertical_stroke_;
-  if (this != internal_default_instance()) delete exterior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.exterior_stroke_;
 }
 
-void StrokePresetDataArchive::ArenaDtor(void* object) {
-  StrokePresetDataArchive* _this = reinterpret_cast< StrokePresetDataArchive* >(object);
-  (void)_this;
-}
-void StrokePresetDataArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StrokePresetDataArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StrokePresetDataArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.StrokePresetDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(horizontal_stroke_ != nullptr);
-      horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.horizontal_stroke_ != nullptr);
+      _impl_.horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(vertical_stroke_ != nullptr);
-      vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.vertical_stroke_ != nullptr);
+      _impl_.vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(exterior_stroke_ != nullptr);
-      exterior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.exterior_stroke_ != nullptr);
+      _impl_.exterior_stroke_->Clear();
     }
   }
-  visible_mask_ = 0;
-  _has_bits_.Clear();
+  _impl_.visible_mask_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StrokePresetDataArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StrokePresetDataArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSD.StrokeArchive horizontal_stroke = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive vertical_stroke = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive exterior_stroke = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_exterior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional int32 visible_mask = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_visible_mask(&has_bits);
-          visible_mask_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.visible_mask_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StrokePresetDataArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StrokePresetDataArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.StrokePresetDataArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSD.StrokeArchive horizontal_stroke = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::horizontal_stroke(this), target, stream);
+      InternalWriteMessage(1, _Internal::horizontal_stroke(this),
+        _Internal::horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive vertical_stroke = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::vertical_stroke(this), target, stream);
+      InternalWriteMessage(2, _Internal::vertical_stroke(this),
+        _Internal::vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive exterior_stroke = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::exterior_stroke(this), target, stream);
+      InternalWriteMessage(3, _Internal::exterior_stroke(this),
+        _Internal::exterior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional int32 visible_mask = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_visible_mask(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(4, this->_internal_visible_mask(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.StrokePresetDataArchive)
@@ -2349,86 +2431,77 @@ size_t StrokePresetDataArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.StrokePresetDataArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSD.StrokeArchive horizontal_stroke = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *horizontal_stroke_);
+          *_impl_.horizontal_stroke_);
     }
 
     // optional .TSD.StrokeArchive vertical_stroke = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *vertical_stroke_);
+          *_impl_.vertical_stroke_);
     }
 
     // optional .TSD.StrokeArchive exterior_stroke = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *exterior_stroke_);
+          *_impl_.exterior_stroke_);
     }
 
     // optional int32 visible_mask = 4;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_visible_mask());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_visible_mask());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StrokePresetDataArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StrokePresetDataArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StrokePresetDataArchive::GetClassData() const { return &_class_data_; }
 
-void StrokePresetDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StrokePresetDataArchive *>(to)->MergeFrom(
-      static_cast<const StrokePresetDataArchive &>(from));
-}
 
-
-void StrokePresetDataArchive::MergeFrom(const StrokePresetDataArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.StrokePresetDataArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StrokePresetDataArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StrokePresetDataArchive*>(&to_msg);
+  auto& from = static_cast<const StrokePresetDataArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.StrokePresetDataArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_horizontal_stroke());
+      _this->_internal_mutable_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_vertical_stroke());
+      _this->_internal_mutable_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_vertical_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_exterior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_exterior_stroke());
+      _this->_internal_mutable_exterior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_exterior_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      visible_mask_ = from.visible_mask_;
+      _this->_impl_.visible_mask_ = from._impl_.visible_mask_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StrokePresetDataArchive::CopyFrom(const StrokePresetDataArchive& from) {
@@ -2440,13 +2513,13 @@ void StrokePresetDataArchive::CopyFrom(const StrokePresetDataArchive& from) {
 
 bool StrokePresetDataArchive::IsInitialized() const {
   if (_internal_has_horizontal_stroke()) {
-    if (!horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_vertical_stroke()) {
-    if (!vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_exterior_stroke()) {
-    if (!exterior_stroke_->IsInitialized()) return false;
+    if (!_impl_.exterior_stroke_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2454,17 +2527,17 @@ bool StrokePresetDataArchive::IsInitialized() const {
 void StrokePresetDataArchive::InternalSwap(StrokePresetDataArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StrokePresetDataArchive, visible_mask_)
-      + sizeof(StrokePresetDataArchive::visible_mask_)
-      - PROTOBUF_FIELD_OFFSET(StrokePresetDataArchive, horizontal_stroke_)>(
-          reinterpret_cast<char*>(&horizontal_stroke_),
-          reinterpret_cast<char*>(&other->horizontal_stroke_));
+      PROTOBUF_FIELD_OFFSET(StrokePresetDataArchive, _impl_.visible_mask_)
+      + sizeof(StrokePresetDataArchive::_impl_.visible_mask_)
+      - PROTOBUF_FIELD_OFFSET(StrokePresetDataArchive, _impl_.horizontal_stroke_)>(
+          reinterpret_cast<char*>(&_impl_.horizontal_stroke_),
+          reinterpret_cast<char*>(&other->_impl_.horizontal_stroke_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StrokePresetDataArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[3]);
 }
@@ -2473,7 +2546,7 @@ void StrokePresetDataArchive::InternalSwap(StrokePresetDataArchive* other) {
 
 class StrokePresetListArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StrokePresetListArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StrokePresetListArchive>()._impl_._has_bits_);
   static void set_has_count(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2484,81 +2557,89 @@ class StrokePresetListArchive::_Internal {
 
 StrokePresetListArchive::StrokePresetListArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  deprecated_preset_(arena),
-  preset_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.StrokePresetListArchive)
 }
 StrokePresetListArchive::StrokePresetListArchive(const StrokePresetListArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      deprecated_preset_(from.deprecated_preset_),
-      preset_(from.preset_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StrokePresetListArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.deprecated_preset_){from._impl_.deprecated_preset_}
+    , decltype(_impl_.preset_){from._impl_.preset_}
+    , decltype(_impl_.count_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  count_ = from.count_;
+  _this->_impl_.count_ = from._impl_.count_;
   // @@protoc_insertion_point(copy_constructor:TST.StrokePresetListArchive)
 }
 
-inline void StrokePresetListArchive::SharedCtor() {
-count_ = 0;
+inline void StrokePresetListArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.deprecated_preset_){arena}
+    , decltype(_impl_.preset_){arena}
+    , decltype(_impl_.count_){0}
+  };
 }
 
 StrokePresetListArchive::~StrokePresetListArchive() {
   // @@protoc_insertion_point(destructor:TST.StrokePresetListArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StrokePresetListArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.deprecated_preset_.~RepeatedPtrField();
+  _impl_.preset_.~RepeatedPtrField();
 }
 
-void StrokePresetListArchive::ArenaDtor(void* object) {
-  StrokePresetListArchive* _this = reinterpret_cast< StrokePresetListArchive* >(object);
-  (void)_this;
-}
-void StrokePresetListArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StrokePresetListArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StrokePresetListArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.StrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  deprecated_preset_.Clear();
-  preset_.Clear();
-  count_ = 0;
-  _has_bits_.Clear();
+  _impl_.deprecated_preset_.Clear();
+  _impl_.preset_.Clear();
+  _impl_.count_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StrokePresetListArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StrokePresetListArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required int32 count = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_count(&has_bits);
-          count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TST.Deprecated_StrokePresetDataArchive deprecated_preset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2566,11 +2647,12 @@ const char* StrokePresetListArchive::_InternalParse(const char* ptr, ::PROTOBUF_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TST.StrokePresetDataArchive preset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2578,63 +2660,64 @@ const char* StrokePresetListArchive::_InternalParse(const char* ptr, ::PROTOBUF_
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StrokePresetListArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StrokePresetListArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.StrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required int32 count = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_count(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_count(), target);
   }
 
   // repeated .TST.Deprecated_StrokePresetDataArchive deprecated_preset = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_deprecated_preset_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_deprecated_preset_size()); i < n; i++) {
+    const auto& repfield = this->_internal_deprecated_preset(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_deprecated_preset(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TST.StrokePresetDataArchive preset = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_preset_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_preset_size()); i < n; i++) {
+    const auto& repfield = this->_internal_preset(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_preset(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.StrokePresetListArchive)
@@ -2647,62 +2730,50 @@ size_t StrokePresetListArchive::ByteSizeLong() const {
 
   // required int32 count = 1;
   if (_internal_has_count()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_count());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_count());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TST.Deprecated_StrokePresetDataArchive deprecated_preset = 2;
   total_size += 1UL * this->_internal_deprecated_preset_size();
-  for (const auto& msg : this->deprecated_preset_) {
+  for (const auto& msg : this->_impl_.deprecated_preset_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TST.StrokePresetDataArchive preset = 3;
   total_size += 1UL * this->_internal_preset_size();
-  for (const auto& msg : this->preset_) {
+  for (const auto& msg : this->_impl_.preset_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StrokePresetListArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StrokePresetListArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StrokePresetListArchive::GetClassData() const { return &_class_data_; }
 
-void StrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StrokePresetListArchive *>(to)->MergeFrom(
-      static_cast<const StrokePresetListArchive &>(from));
-}
 
-
-void StrokePresetListArchive::MergeFrom(const StrokePresetListArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.StrokePresetListArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StrokePresetListArchive*>(&to_msg);
+  auto& from = static_cast<const StrokePresetListArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.StrokePresetListArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  deprecated_preset_.MergeFrom(from.deprecated_preset_);
-  preset_.MergeFrom(from.preset_);
+  _this->_impl_.deprecated_preset_.MergeFrom(from._impl_.deprecated_preset_);
+  _this->_impl_.preset_.MergeFrom(from._impl_.preset_);
   if (from._internal_has_count()) {
-    _internal_set_count(from._internal_count());
+    _this->_internal_set_count(from._internal_count());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StrokePresetListArchive::CopyFrom(const StrokePresetListArchive& from) {
@@ -2713,23 +2784,25 @@ void StrokePresetListArchive::CopyFrom(const StrokePresetListArchive& from) {
 }
 
 bool StrokePresetListArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(deprecated_preset_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(preset_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.deprecated_preset_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.preset_))
+    return false;
   return true;
 }
 
 void StrokePresetListArchive::InternalSwap(StrokePresetListArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  deprecated_preset_.InternalSwap(&other->deprecated_preset_);
-  preset_.InternalSwap(&other->preset_);
-  swap(count_, other->count_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.deprecated_preset_.InternalSwap(&other->_impl_.deprecated_preset_);
+  _impl_.preset_.InternalSwap(&other->_impl_.preset_);
+  swap(_impl_.count_, other->_impl_.count_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StrokePresetListArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[4]);
 }
@@ -2738,19 +2811,19 @@ void StrokePresetListArchive::InternalSwap(StrokePresetListArchive* other) {
 
 class TableStylePropertiesArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TableStylePropertiesArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TableStylePropertiesArchive>()._impl_._has_bits_);
   static void set_has_banded_rows(HasBits* has_bits) {
-    (*has_bits)[1] |= 8388608u;
+    (*has_bits)[2] |= 4u;
   }
   static const ::TSD::FillArchive& banded_fill(const TableStylePropertiesArchive* msg);
   static void set_has_banded_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
   static void set_has_behaves_like_spreadsheet(HasBits* has_bits) {
-    (*has_bits)[1] |= 16777216u;
+    (*has_bits)[2] |= 8u;
   }
   static void set_has_auto_resize(HasBits* has_bits) {
-    (*has_bits)[1] |= 33554432u;
+    (*has_bits)[2] |= 16u;
   }
   static const ::TST::Deprecated_TableStrokeArchive& deprecated_header_row_separator_stroke(const TableStylePropertiesArchive* msg);
   static void set_has_deprecated_header_row_separator_stroke(HasBits* has_bits) {
@@ -2821,43 +2894,43 @@ class TableStylePropertiesArchive::_Internal {
     (*has_bits)[0] |= 262144u;
   }
   static void set_has_v_strokes_visible(HasBits* has_bits) {
-    (*has_bits)[1] |= 67108864u;
+    (*has_bits)[2] |= 32u;
   }
   static void set_has_h_strokes_visible(HasBits* has_bits) {
-    (*has_bits)[1] |= 134217728u;
+    (*has_bits)[2] |= 64u;
   }
   static void set_has_hr_separator_visible(HasBits* has_bits) {
-    (*has_bits)[1] |= 268435456u;
+    (*has_bits)[2] |= 128u;
   }
   static void set_has_hc_separator_visible(HasBits* has_bits) {
-    (*has_bits)[1] |= 536870912u;
+    (*has_bits)[2] |= 256u;
   }
   static void set_has_footer_separator_visible(HasBits* has_bits) {
-    (*has_bits)[1] |= 1073741824u;
+    (*has_bits)[2] |= 512u;
   }
   static void set_has_table_border_visible(HasBits* has_bits) {
-    (*has_bits)[2] |= 1u;
+    (*has_bits)[2] |= 2048u;
   }
   static void set_has_table_header_border_visible(HasBits* has_bits) {
-    (*has_bits)[2] |= 2u;
+    (*has_bits)[2] |= 4096u;
   }
   static void set_has_table_hc_divider_visible(HasBits* has_bits) {
-    (*has_bits)[2] |= 4u;
+    (*has_bits)[2] |= 8192u;
   }
   static void set_has_table_hr_divider_visible(HasBits* has_bits) {
-    (*has_bits)[2] |= 8u;
+    (*has_bits)[2] |= 16384u;
   }
   static void set_has_table_footer_divider_visible(HasBits* has_bits) {
-    (*has_bits)[2] |= 16u;
+    (*has_bits)[2] |= 32768u;
   }
   static void set_has_obsolete_master_font_size(HasBits* has_bits) {
-    (*has_bits)[1] |= 2147483648u;
+    (*has_bits)[2] |= 1024u;
   }
   static void set_has_master_font_family(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
   static void set_has_writing_direction(HasBits* has_bits) {
-    (*has_bits)[2] |= 32u;
+    (*has_bits)[2] |= 65536u;
   }
   static const ::TSD::StrokeArchive& header_row_separator_stroke(const TableStylePropertiesArchive* msg);
   static void set_has_header_row_separator_stroke(HasBits* has_bits) {
@@ -3003,1775 +3076,2195 @@ class TableStylePropertiesArchive::_Internal {
   static void set_has_category_level5_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 4194304u;
   }
+  static const ::TSD::StrokeArchive& table_body_pivot_group_horizontal_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_table_body_pivot_group_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 8388608u;
+  }
+  static const ::TSD::StrokeArchive& table_body_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_table_body_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 16777216u;
+  }
+  static const ::TSD::StrokeArchive& table_body_pivot_deemphasis_horizontal_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_table_body_pivot_deemphasis_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 33554432u;
+  }
+  static const ::TSD::StrokeArchive& table_body_pivot_emphasis_vertical_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_table_body_pivot_emphasis_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 67108864u;
+  }
+  static const ::TSD::StrokeArchive& header_column_pivot_group_horizontal_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_column_pivot_group_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 134217728u;
+  }
+  static const ::TSD::StrokeArchive& header_column_pivot_group_deemphasis_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_column_pivot_group_deemphasis_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 268435456u;
+  }
+  static const ::TSD::StrokeArchive& header_column_pivot_separator_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_column_pivot_separator_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 536870912u;
+  }
+  static const ::TSD::StrokeArchive& header_row_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_row_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 1073741824u;
+  }
+  static const ::TSD::StrokeArchive& header_row_pivot_group_deemphasis_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_row_pivot_group_deemphasis_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 2147483648u;
+  }
+  static const ::TSD::StrokeArchive& header_row_pivot_title_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_header_row_pivot_title_stroke(HasBits* has_bits) {
+    (*has_bits)[2] |= 1u;
+  }
+  static const ::TSD::StrokeArchive& footer_row_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg);
+  static void set_has_footer_row_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[2] |= 2u;
+  }
 };
 
 const ::TSD::FillArchive&
 TableStylePropertiesArchive::_Internal::banded_fill(const TableStylePropertiesArchive* msg) {
-  return *msg->banded_fill_;
+  return *msg->_impl_.banded_fill_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_row_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_row_separator_stroke_;
+  return *msg->_impl_.deprecated_header_row_separator_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_row_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_row_border_stroke_;
+  return *msg->_impl_.deprecated_header_row_border_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_row_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_row_horizontal_stroke_;
+  return *msg->_impl_.deprecated_header_row_horizontal_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_row_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_row_vertical_stroke_;
+  return *msg->_impl_.deprecated_header_row_vertical_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_column_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_column_border_stroke_;
+  return *msg->_impl_.deprecated_header_column_border_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_column_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_column_separator_stroke_;
+  return *msg->_impl_.deprecated_header_column_separator_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_column_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_column_horizontal_stroke_;
+  return *msg->_impl_.deprecated_header_column_horizontal_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_header_column_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_header_column_vertical_stroke_;
+  return *msg->_impl_.deprecated_header_column_vertical_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_footer_row_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_footer_row_separator_stroke_;
+  return *msg->_impl_.deprecated_footer_row_separator_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_footer_row_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_footer_row_border_stroke_;
+  return *msg->_impl_.deprecated_footer_row_border_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_footer_row_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_footer_row_horizontal_stroke_;
+  return *msg->_impl_.deprecated_footer_row_horizontal_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_footer_row_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_footer_row_vertical_stroke_;
+  return *msg->_impl_.deprecated_footer_row_vertical_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_table_body_horizontal_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_table_body_horizontal_border_stroke_;
+  return *msg->_impl_.deprecated_table_body_horizontal_border_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_table_body_vertical_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_table_body_vertical_border_stroke_;
+  return *msg->_impl_.deprecated_table_body_vertical_border_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_table_body_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_table_body_horizontal_stroke_;
+  return *msg->_impl_.deprecated_table_body_horizontal_stroke_;
 }
 const ::TST::Deprecated_TableStrokeArchive&
 TableStylePropertiesArchive::_Internal::deprecated_table_body_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->deprecated_table_body_vertical_stroke_;
+  return *msg->_impl_.deprecated_table_body_vertical_stroke_;
 }
 const ::TST::StrokePresetListArchive&
 TableStylePropertiesArchive::_Internal::stroke_preset_list(const TableStylePropertiesArchive* msg) {
-  return *msg->stroke_preset_list_;
+  return *msg->_impl_.stroke_preset_list_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_row_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_row_separator_stroke_;
+  return *msg->_impl_.header_row_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_row_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_row_border_stroke_;
+  return *msg->_impl_.header_row_border_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_row_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_row_horizontal_stroke_;
+  return *msg->_impl_.header_row_horizontal_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_row_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_row_vertical_stroke_;
+  return *msg->_impl_.header_row_vertical_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_column_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_column_border_stroke_;
+  return *msg->_impl_.header_column_border_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_column_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_column_separator_stroke_;
+  return *msg->_impl_.header_column_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_column_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_column_horizontal_stroke_;
+  return *msg->_impl_.header_column_horizontal_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::header_column_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->header_column_vertical_stroke_;
+  return *msg->_impl_.header_column_vertical_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::footer_row_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->footer_row_separator_stroke_;
+  return *msg->_impl_.footer_row_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::footer_row_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->footer_row_border_stroke_;
+  return *msg->_impl_.footer_row_border_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::footer_row_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->footer_row_horizontal_stroke_;
+  return *msg->_impl_.footer_row_horizontal_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::footer_row_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->footer_row_vertical_stroke_;
+  return *msg->_impl_.footer_row_vertical_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::table_body_horizontal_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->table_body_horizontal_border_stroke_;
+  return *msg->_impl_.table_body_horizontal_border_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::table_body_vertical_border_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->table_body_vertical_border_stroke_;
+  return *msg->_impl_.table_body_vertical_border_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::table_body_horizontal_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->table_body_horizontal_stroke_;
+  return *msg->_impl_.table_body_horizontal_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::table_body_vertical_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->table_body_vertical_stroke_;
+  return *msg->_impl_.table_body_vertical_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level1_top_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level1_top_stroke_;
+  return *msg->_impl_.category_level1_top_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level2_top_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level2_top_stroke_;
+  return *msg->_impl_.category_level2_top_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level3_top_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level3_top_stroke_;
+  return *msg->_impl_.category_level3_top_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level4_top_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level4_top_stroke_;
+  return *msg->_impl_.category_level4_top_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level5_top_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level5_top_stroke_;
+  return *msg->_impl_.category_level5_top_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level1_bottom_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level1_bottom_stroke_;
+  return *msg->_impl_.category_level1_bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level2_bottom_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level2_bottom_stroke_;
+  return *msg->_impl_.category_level2_bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level3_bottom_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level3_bottom_stroke_;
+  return *msg->_impl_.category_level3_bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level4_bottom_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level4_bottom_stroke_;
+  return *msg->_impl_.category_level4_bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level5_bottom_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level5_bottom_stroke_;
+  return *msg->_impl_.category_level5_bottom_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level1_interior_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level1_interior_stroke_;
+  return *msg->_impl_.category_level1_interior_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level2_interior_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level2_interior_stroke_;
+  return *msg->_impl_.category_level2_interior_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level3_interior_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level3_interior_stroke_;
+  return *msg->_impl_.category_level3_interior_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level4_interior_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level4_interior_stroke_;
+  return *msg->_impl_.category_level4_interior_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level5_interior_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level5_interior_stroke_;
+  return *msg->_impl_.category_level5_interior_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level1_label_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level1_label_separator_stroke_;
+  return *msg->_impl_.category_level1_label_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level2_label_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level2_label_separator_stroke_;
+  return *msg->_impl_.category_level2_label_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level3_label_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level3_label_separator_stroke_;
+  return *msg->_impl_.category_level3_label_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level4_label_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level4_label_separator_stroke_;
+  return *msg->_impl_.category_level4_label_separator_stroke_;
 }
 const ::TSD::StrokeArchive&
 TableStylePropertiesArchive::_Internal::category_level5_label_separator_stroke(const TableStylePropertiesArchive* msg) {
-  return *msg->category_level5_label_separator_stroke_;
+  return *msg->_impl_.category_level5_label_separator_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::table_body_pivot_group_horizontal_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.table_body_pivot_group_horizontal_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::table_body_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.table_body_pivot_group_vertical_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::table_body_pivot_deemphasis_horizontal_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.table_body_pivot_deemphasis_horizontal_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::table_body_pivot_emphasis_vertical_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.table_body_pivot_emphasis_vertical_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_column_pivot_group_horizontal_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_column_pivot_group_horizontal_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_column_pivot_group_deemphasis_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_column_pivot_group_deemphasis_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_column_pivot_separator_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_column_pivot_separator_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_row_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_row_pivot_group_vertical_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_row_pivot_group_deemphasis_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_row_pivot_group_deemphasis_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::header_row_pivot_title_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.header_row_pivot_title_stroke_;
+}
+const ::TSD::StrokeArchive&
+TableStylePropertiesArchive::_Internal::footer_row_pivot_group_vertical_stroke(const TableStylePropertiesArchive* msg) {
+  return *msg->_impl_.footer_row_pivot_group_vertical_stroke_;
 }
 void TableStylePropertiesArchive::clear_banded_fill() {
-  if (banded_fill_ != nullptr) banded_fill_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.banded_fill_ != nullptr) _impl_.banded_fill_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void TableStylePropertiesArchive::clear_header_row_separator_stroke() {
-  if (header_row_separator_stroke_ != nullptr) header_row_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x00080000u;
+  if (_impl_.header_row_separator_stroke_ != nullptr) _impl_.header_row_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00080000u;
 }
 void TableStylePropertiesArchive::clear_header_row_border_stroke() {
-  if (header_row_border_stroke_ != nullptr) header_row_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00100000u;
+  if (_impl_.header_row_border_stroke_ != nullptr) _impl_.header_row_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00100000u;
 }
 void TableStylePropertiesArchive::clear_header_row_horizontal_stroke() {
-  if (header_row_horizontal_stroke_ != nullptr) header_row_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00200000u;
+  if (_impl_.header_row_horizontal_stroke_ != nullptr) _impl_.header_row_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00200000u;
 }
 void TableStylePropertiesArchive::clear_header_row_vertical_stroke() {
-  if (header_row_vertical_stroke_ != nullptr) header_row_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00400000u;
+  if (_impl_.header_row_vertical_stroke_ != nullptr) _impl_.header_row_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00400000u;
 }
 void TableStylePropertiesArchive::clear_header_column_border_stroke() {
-  if (header_column_border_stroke_ != nullptr) header_column_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00800000u;
+  if (_impl_.header_column_border_stroke_ != nullptr) _impl_.header_column_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00800000u;
 }
 void TableStylePropertiesArchive::clear_header_column_separator_stroke() {
-  if (header_column_separator_stroke_ != nullptr) header_column_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x01000000u;
+  if (_impl_.header_column_separator_stroke_ != nullptr) _impl_.header_column_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x01000000u;
 }
 void TableStylePropertiesArchive::clear_header_column_horizontal_stroke() {
-  if (header_column_horizontal_stroke_ != nullptr) header_column_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x02000000u;
+  if (_impl_.header_column_horizontal_stroke_ != nullptr) _impl_.header_column_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x02000000u;
 }
 void TableStylePropertiesArchive::clear_header_column_vertical_stroke() {
-  if (header_column_vertical_stroke_ != nullptr) header_column_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x04000000u;
+  if (_impl_.header_column_vertical_stroke_ != nullptr) _impl_.header_column_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x04000000u;
 }
 void TableStylePropertiesArchive::clear_footer_row_separator_stroke() {
-  if (footer_row_separator_stroke_ != nullptr) footer_row_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x08000000u;
+  if (_impl_.footer_row_separator_stroke_ != nullptr) _impl_.footer_row_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x08000000u;
 }
 void TableStylePropertiesArchive::clear_footer_row_border_stroke() {
-  if (footer_row_border_stroke_ != nullptr) footer_row_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x10000000u;
+  if (_impl_.footer_row_border_stroke_ != nullptr) _impl_.footer_row_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x10000000u;
 }
 void TableStylePropertiesArchive::clear_footer_row_horizontal_stroke() {
-  if (footer_row_horizontal_stroke_ != nullptr) footer_row_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x20000000u;
+  if (_impl_.footer_row_horizontal_stroke_ != nullptr) _impl_.footer_row_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x20000000u;
 }
 void TableStylePropertiesArchive::clear_footer_row_vertical_stroke() {
-  if (footer_row_vertical_stroke_ != nullptr) footer_row_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x40000000u;
+  if (_impl_.footer_row_vertical_stroke_ != nullptr) _impl_.footer_row_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x40000000u;
 }
 void TableStylePropertiesArchive::clear_table_body_horizontal_border_stroke() {
-  if (table_body_horizontal_border_stroke_ != nullptr) table_body_horizontal_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x80000000u;
+  if (_impl_.table_body_horizontal_border_stroke_ != nullptr) _impl_.table_body_horizontal_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x80000000u;
 }
 void TableStylePropertiesArchive::clear_table_body_vertical_border_stroke() {
-  if (table_body_vertical_border_stroke_ != nullptr) table_body_vertical_border_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000001u;
+  if (_impl_.table_body_vertical_border_stroke_ != nullptr) _impl_.table_body_vertical_border_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000001u;
 }
 void TableStylePropertiesArchive::clear_table_body_horizontal_stroke() {
-  if (table_body_horizontal_stroke_ != nullptr) table_body_horizontal_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000002u;
+  if (_impl_.table_body_horizontal_stroke_ != nullptr) _impl_.table_body_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000002u;
 }
 void TableStylePropertiesArchive::clear_table_body_vertical_stroke() {
-  if (table_body_vertical_stroke_ != nullptr) table_body_vertical_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000004u;
+  if (_impl_.table_body_vertical_stroke_ != nullptr) _impl_.table_body_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000004u;
 }
 void TableStylePropertiesArchive::clear_category_level1_top_stroke() {
-  if (category_level1_top_stroke_ != nullptr) category_level1_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000008u;
+  if (_impl_.category_level1_top_stroke_ != nullptr) _impl_.category_level1_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000008u;
 }
 void TableStylePropertiesArchive::clear_category_level2_top_stroke() {
-  if (category_level2_top_stroke_ != nullptr) category_level2_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000010u;
+  if (_impl_.category_level2_top_stroke_ != nullptr) _impl_.category_level2_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000010u;
 }
 void TableStylePropertiesArchive::clear_category_level3_top_stroke() {
-  if (category_level3_top_stroke_ != nullptr) category_level3_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000020u;
+  if (_impl_.category_level3_top_stroke_ != nullptr) _impl_.category_level3_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000020u;
 }
 void TableStylePropertiesArchive::clear_category_level4_top_stroke() {
-  if (category_level4_top_stroke_ != nullptr) category_level4_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000040u;
+  if (_impl_.category_level4_top_stroke_ != nullptr) _impl_.category_level4_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000040u;
 }
 void TableStylePropertiesArchive::clear_category_level5_top_stroke() {
-  if (category_level5_top_stroke_ != nullptr) category_level5_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000080u;
+  if (_impl_.category_level5_top_stroke_ != nullptr) _impl_.category_level5_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000080u;
 }
 void TableStylePropertiesArchive::clear_category_level1_bottom_stroke() {
-  if (category_level1_bottom_stroke_ != nullptr) category_level1_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000100u;
+  if (_impl_.category_level1_bottom_stroke_ != nullptr) _impl_.category_level1_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000100u;
 }
 void TableStylePropertiesArchive::clear_category_level2_bottom_stroke() {
-  if (category_level2_bottom_stroke_ != nullptr) category_level2_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000200u;
+  if (_impl_.category_level2_bottom_stroke_ != nullptr) _impl_.category_level2_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000200u;
 }
 void TableStylePropertiesArchive::clear_category_level3_bottom_stroke() {
-  if (category_level3_bottom_stroke_ != nullptr) category_level3_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000400u;
+  if (_impl_.category_level3_bottom_stroke_ != nullptr) _impl_.category_level3_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000400u;
 }
 void TableStylePropertiesArchive::clear_category_level4_bottom_stroke() {
-  if (category_level4_bottom_stroke_ != nullptr) category_level4_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000800u;
+  if (_impl_.category_level4_bottom_stroke_ != nullptr) _impl_.category_level4_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000800u;
 }
 void TableStylePropertiesArchive::clear_category_level5_bottom_stroke() {
-  if (category_level5_bottom_stroke_ != nullptr) category_level5_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00001000u;
+  if (_impl_.category_level5_bottom_stroke_ != nullptr) _impl_.category_level5_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00001000u;
 }
 void TableStylePropertiesArchive::clear_category_level1_interior_stroke() {
-  if (category_level1_interior_stroke_ != nullptr) category_level1_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00002000u;
+  if (_impl_.category_level1_interior_stroke_ != nullptr) _impl_.category_level1_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00002000u;
 }
 void TableStylePropertiesArchive::clear_category_level2_interior_stroke() {
-  if (category_level2_interior_stroke_ != nullptr) category_level2_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00004000u;
+  if (_impl_.category_level2_interior_stroke_ != nullptr) _impl_.category_level2_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00004000u;
 }
 void TableStylePropertiesArchive::clear_category_level3_interior_stroke() {
-  if (category_level3_interior_stroke_ != nullptr) category_level3_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00008000u;
+  if (_impl_.category_level3_interior_stroke_ != nullptr) _impl_.category_level3_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00008000u;
 }
 void TableStylePropertiesArchive::clear_category_level4_interior_stroke() {
-  if (category_level4_interior_stroke_ != nullptr) category_level4_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00010000u;
+  if (_impl_.category_level4_interior_stroke_ != nullptr) _impl_.category_level4_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00010000u;
 }
 void TableStylePropertiesArchive::clear_category_level5_interior_stroke() {
-  if (category_level5_interior_stroke_ != nullptr) category_level5_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00020000u;
+  if (_impl_.category_level5_interior_stroke_ != nullptr) _impl_.category_level5_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00020000u;
 }
 void TableStylePropertiesArchive::clear_category_level1_label_separator_stroke() {
-  if (category_level1_label_separator_stroke_ != nullptr) category_level1_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00040000u;
+  if (_impl_.category_level1_label_separator_stroke_ != nullptr) _impl_.category_level1_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00040000u;
 }
 void TableStylePropertiesArchive::clear_category_level2_label_separator_stroke() {
-  if (category_level2_label_separator_stroke_ != nullptr) category_level2_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00080000u;
+  if (_impl_.category_level2_label_separator_stroke_ != nullptr) _impl_.category_level2_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00080000u;
 }
 void TableStylePropertiesArchive::clear_category_level3_label_separator_stroke() {
-  if (category_level3_label_separator_stroke_ != nullptr) category_level3_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00100000u;
+  if (_impl_.category_level3_label_separator_stroke_ != nullptr) _impl_.category_level3_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00100000u;
 }
 void TableStylePropertiesArchive::clear_category_level4_label_separator_stroke() {
-  if (category_level4_label_separator_stroke_ != nullptr) category_level4_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00200000u;
+  if (_impl_.category_level4_label_separator_stroke_ != nullptr) _impl_.category_level4_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00200000u;
 }
 void TableStylePropertiesArchive::clear_category_level5_label_separator_stroke() {
-  if (category_level5_label_separator_stroke_ != nullptr) category_level5_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00400000u;
+  if (_impl_.category_level5_label_separator_stroke_ != nullptr) _impl_.category_level5_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00400000u;
+}
+void TableStylePropertiesArchive::clear_table_body_pivot_group_horizontal_stroke() {
+  if (_impl_.table_body_pivot_group_horizontal_stroke_ != nullptr) _impl_.table_body_pivot_group_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00800000u;
+}
+void TableStylePropertiesArchive::clear_table_body_pivot_group_vertical_stroke() {
+  if (_impl_.table_body_pivot_group_vertical_stroke_ != nullptr) _impl_.table_body_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x01000000u;
+}
+void TableStylePropertiesArchive::clear_table_body_pivot_deemphasis_horizontal_stroke() {
+  if (_impl_.table_body_pivot_deemphasis_horizontal_stroke_ != nullptr) _impl_.table_body_pivot_deemphasis_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x02000000u;
+}
+void TableStylePropertiesArchive::clear_table_body_pivot_emphasis_vertical_stroke() {
+  if (_impl_.table_body_pivot_emphasis_vertical_stroke_ != nullptr) _impl_.table_body_pivot_emphasis_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x04000000u;
+}
+void TableStylePropertiesArchive::clear_header_column_pivot_group_horizontal_stroke() {
+  if (_impl_.header_column_pivot_group_horizontal_stroke_ != nullptr) _impl_.header_column_pivot_group_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x08000000u;
+}
+void TableStylePropertiesArchive::clear_header_column_pivot_group_deemphasis_stroke() {
+  if (_impl_.header_column_pivot_group_deemphasis_stroke_ != nullptr) _impl_.header_column_pivot_group_deemphasis_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x10000000u;
+}
+void TableStylePropertiesArchive::clear_header_column_pivot_separator_stroke() {
+  if (_impl_.header_column_pivot_separator_stroke_ != nullptr) _impl_.header_column_pivot_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x20000000u;
+}
+void TableStylePropertiesArchive::clear_header_row_pivot_group_vertical_stroke() {
+  if (_impl_.header_row_pivot_group_vertical_stroke_ != nullptr) _impl_.header_row_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x40000000u;
+}
+void TableStylePropertiesArchive::clear_header_row_pivot_group_deemphasis_stroke() {
+  if (_impl_.header_row_pivot_group_deemphasis_stroke_ != nullptr) _impl_.header_row_pivot_group_deemphasis_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x80000000u;
+}
+void TableStylePropertiesArchive::clear_header_row_pivot_title_stroke() {
+  if (_impl_.header_row_pivot_title_stroke_ != nullptr) _impl_.header_row_pivot_title_stroke_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000001u;
+}
+void TableStylePropertiesArchive::clear_footer_row_pivot_group_vertical_stroke() {
+  if (_impl_.footer_row_pivot_group_vertical_stroke_ != nullptr) _impl_.footer_row_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[2] &= ~0x00000002u;
 }
 TableStylePropertiesArchive::TableStylePropertiesArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.TableStylePropertiesArchive)
 }
 TableStylePropertiesArchive::TableStylePropertiesArchive(const TableStylePropertiesArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TableStylePropertiesArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.master_font_family_){}
+    , decltype(_impl_.banded_fill_){nullptr}
+    , decltype(_impl_.deprecated_header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_vertical_stroke_){nullptr}
+    , decltype(_impl_.stroke_preset_list_){nullptr}
+    , decltype(_impl_.header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_border_stroke_){nullptr}
+    , decltype(_impl_.header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_border_stroke_){nullptr}
+    , decltype(_impl_.header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.table_body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.table_body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.table_body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_vertical_stroke_){nullptr}
+    , decltype(_impl_.category_level1_top_stroke_){nullptr}
+    , decltype(_impl_.category_level2_top_stroke_){nullptr}
+    , decltype(_impl_.category_level3_top_stroke_){nullptr}
+    , decltype(_impl_.category_level4_top_stroke_){nullptr}
+    , decltype(_impl_.category_level5_top_stroke_){nullptr}
+    , decltype(_impl_.category_level1_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level2_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level3_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level4_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level5_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level1_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level2_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level3_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level4_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level5_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level1_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level2_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level3_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level4_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level5_label_separator_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_deemphasis_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_emphasis_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_deemphasis_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_deemphasis_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_title_stroke_){nullptr}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.banded_rows_){}
+    , decltype(_impl_.behaves_like_spreadsheet_){}
+    , decltype(_impl_.auto_resize_){}
+    , decltype(_impl_.v_strokes_visible_){}
+    , decltype(_impl_.h_strokes_visible_){}
+    , decltype(_impl_.hr_separator_visible_){}
+    , decltype(_impl_.hc_separator_visible_){}
+    , decltype(_impl_.footer_separator_visible_){}
+    , decltype(_impl_.obsolete_master_font_size_){}
+    , decltype(_impl_.table_border_visible_){}
+    , decltype(_impl_.table_header_border_visible_){}
+    , decltype(_impl_.table_hc_divider_visible_){}
+    , decltype(_impl_.table_hr_divider_visible_){}
+    , decltype(_impl_.table_footer_divider_visible_){}
+    , decltype(_impl_.writing_direction_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  master_font_family_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.master_font_family_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.master_font_family_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_master_font_family()) {
-    master_font_family_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_master_font_family(), 
-      GetArenaForAllocation());
+    _this->_impl_.master_font_family_.Set(from._internal_master_font_family(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_banded_fill()) {
-    banded_fill_ = new ::TSD::FillArchive(*from.banded_fill_);
-  } else {
-    banded_fill_ = nullptr;
+    _this->_impl_.banded_fill_ = new ::TSD::FillArchive(*from._impl_.banded_fill_);
   }
   if (from._internal_has_deprecated_header_row_separator_stroke()) {
-    deprecated_header_row_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_row_separator_stroke_);
-  } else {
-    deprecated_header_row_separator_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_row_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_row_separator_stroke_);
   }
   if (from._internal_has_deprecated_header_row_border_stroke()) {
-    deprecated_header_row_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_row_border_stroke_);
-  } else {
-    deprecated_header_row_border_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_row_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_row_border_stroke_);
   }
   if (from._internal_has_deprecated_header_column_border_stroke()) {
-    deprecated_header_column_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_column_border_stroke_);
-  } else {
-    deprecated_header_column_border_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_column_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_column_border_stroke_);
   }
   if (from._internal_has_deprecated_header_column_separator_stroke()) {
-    deprecated_header_column_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_column_separator_stroke_);
-  } else {
-    deprecated_header_column_separator_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_column_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_column_separator_stroke_);
   }
   if (from._internal_has_deprecated_footer_row_separator_stroke()) {
-    deprecated_footer_row_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_footer_row_separator_stroke_);
-  } else {
-    deprecated_footer_row_separator_stroke_ = nullptr;
+    _this->_impl_.deprecated_footer_row_separator_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_footer_row_separator_stroke_);
   }
   if (from._internal_has_deprecated_footer_row_border_stroke()) {
-    deprecated_footer_row_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_footer_row_border_stroke_);
-  } else {
-    deprecated_footer_row_border_stroke_ = nullptr;
+    _this->_impl_.deprecated_footer_row_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_footer_row_border_stroke_);
   }
   if (from._internal_has_deprecated_table_body_horizontal_border_stroke()) {
-    deprecated_table_body_horizontal_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_table_body_horizontal_border_stroke_);
-  } else {
-    deprecated_table_body_horizontal_border_stroke_ = nullptr;
+    _this->_impl_.deprecated_table_body_horizontal_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_table_body_horizontal_border_stroke_);
   }
   if (from._internal_has_deprecated_header_row_horizontal_stroke()) {
-    deprecated_header_row_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_row_horizontal_stroke_);
-  } else {
-    deprecated_header_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_row_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_row_horizontal_stroke_);
   }
   if (from._internal_has_deprecated_header_row_vertical_stroke()) {
-    deprecated_header_row_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_row_vertical_stroke_);
-  } else {
-    deprecated_header_row_vertical_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_row_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_row_vertical_stroke_);
   }
   if (from._internal_has_deprecated_header_column_horizontal_stroke()) {
-    deprecated_header_column_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_column_horizontal_stroke_);
-  } else {
-    deprecated_header_column_horizontal_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_column_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_column_horizontal_stroke_);
   }
   if (from._internal_has_deprecated_header_column_vertical_stroke()) {
-    deprecated_header_column_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_header_column_vertical_stroke_);
-  } else {
-    deprecated_header_column_vertical_stroke_ = nullptr;
+    _this->_impl_.deprecated_header_column_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_header_column_vertical_stroke_);
   }
   if (from._internal_has_deprecated_footer_row_horizontal_stroke()) {
-    deprecated_footer_row_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_footer_row_horizontal_stroke_);
-  } else {
-    deprecated_footer_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.deprecated_footer_row_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_footer_row_horizontal_stroke_);
   }
   if (from._internal_has_deprecated_footer_row_vertical_stroke()) {
-    deprecated_footer_row_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_footer_row_vertical_stroke_);
-  } else {
-    deprecated_footer_row_vertical_stroke_ = nullptr;
+    _this->_impl_.deprecated_footer_row_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_footer_row_vertical_stroke_);
   }
   if (from._internal_has_deprecated_table_body_vertical_border_stroke()) {
-    deprecated_table_body_vertical_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_table_body_vertical_border_stroke_);
-  } else {
-    deprecated_table_body_vertical_border_stroke_ = nullptr;
+    _this->_impl_.deprecated_table_body_vertical_border_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_table_body_vertical_border_stroke_);
   }
   if (from._internal_has_deprecated_table_body_horizontal_stroke()) {
-    deprecated_table_body_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_table_body_horizontal_stroke_);
-  } else {
-    deprecated_table_body_horizontal_stroke_ = nullptr;
+    _this->_impl_.deprecated_table_body_horizontal_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_table_body_horizontal_stroke_);
   }
   if (from._internal_has_deprecated_table_body_vertical_stroke()) {
-    deprecated_table_body_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from.deprecated_table_body_vertical_stroke_);
-  } else {
-    deprecated_table_body_vertical_stroke_ = nullptr;
+    _this->_impl_.deprecated_table_body_vertical_stroke_ = new ::TST::Deprecated_TableStrokeArchive(*from._impl_.deprecated_table_body_vertical_stroke_);
   }
   if (from._internal_has_stroke_preset_list()) {
-    stroke_preset_list_ = new ::TST::StrokePresetListArchive(*from.stroke_preset_list_);
-  } else {
-    stroke_preset_list_ = nullptr;
+    _this->_impl_.stroke_preset_list_ = new ::TST::StrokePresetListArchive(*from._impl_.stroke_preset_list_);
   }
   if (from._internal_has_header_row_separator_stroke()) {
-    header_row_separator_stroke_ = new ::TSD::StrokeArchive(*from.header_row_separator_stroke_);
-  } else {
-    header_row_separator_stroke_ = nullptr;
+    _this->_impl_.header_row_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_separator_stroke_);
   }
   if (from._internal_has_header_row_border_stroke()) {
-    header_row_border_stroke_ = new ::TSD::StrokeArchive(*from.header_row_border_stroke_);
-  } else {
-    header_row_border_stroke_ = nullptr;
+    _this->_impl_.header_row_border_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_border_stroke_);
   }
   if (from._internal_has_header_row_horizontal_stroke()) {
-    header_row_horizontal_stroke_ = new ::TSD::StrokeArchive(*from.header_row_horizontal_stroke_);
-  } else {
-    header_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.header_row_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_horizontal_stroke_);
   }
   if (from._internal_has_header_row_vertical_stroke()) {
-    header_row_vertical_stroke_ = new ::TSD::StrokeArchive(*from.header_row_vertical_stroke_);
-  } else {
-    header_row_vertical_stroke_ = nullptr;
+    _this->_impl_.header_row_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_vertical_stroke_);
   }
   if (from._internal_has_header_column_border_stroke()) {
-    header_column_border_stroke_ = new ::TSD::StrokeArchive(*from.header_column_border_stroke_);
-  } else {
-    header_column_border_stroke_ = nullptr;
+    _this->_impl_.header_column_border_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_border_stroke_);
   }
   if (from._internal_has_header_column_separator_stroke()) {
-    header_column_separator_stroke_ = new ::TSD::StrokeArchive(*from.header_column_separator_stroke_);
-  } else {
-    header_column_separator_stroke_ = nullptr;
+    _this->_impl_.header_column_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_separator_stroke_);
   }
   if (from._internal_has_header_column_horizontal_stroke()) {
-    header_column_horizontal_stroke_ = new ::TSD::StrokeArchive(*from.header_column_horizontal_stroke_);
-  } else {
-    header_column_horizontal_stroke_ = nullptr;
+    _this->_impl_.header_column_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_horizontal_stroke_);
   }
   if (from._internal_has_header_column_vertical_stroke()) {
-    header_column_vertical_stroke_ = new ::TSD::StrokeArchive(*from.header_column_vertical_stroke_);
-  } else {
-    header_column_vertical_stroke_ = nullptr;
+    _this->_impl_.header_column_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_vertical_stroke_);
   }
   if (from._internal_has_footer_row_separator_stroke()) {
-    footer_row_separator_stroke_ = new ::TSD::StrokeArchive(*from.footer_row_separator_stroke_);
-  } else {
-    footer_row_separator_stroke_ = nullptr;
+    _this->_impl_.footer_row_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.footer_row_separator_stroke_);
   }
   if (from._internal_has_footer_row_border_stroke()) {
-    footer_row_border_stroke_ = new ::TSD::StrokeArchive(*from.footer_row_border_stroke_);
-  } else {
-    footer_row_border_stroke_ = nullptr;
+    _this->_impl_.footer_row_border_stroke_ = new ::TSD::StrokeArchive(*from._impl_.footer_row_border_stroke_);
   }
   if (from._internal_has_footer_row_horizontal_stroke()) {
-    footer_row_horizontal_stroke_ = new ::TSD::StrokeArchive(*from.footer_row_horizontal_stroke_);
-  } else {
-    footer_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.footer_row_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.footer_row_horizontal_stroke_);
   }
   if (from._internal_has_footer_row_vertical_stroke()) {
-    footer_row_vertical_stroke_ = new ::TSD::StrokeArchive(*from.footer_row_vertical_stroke_);
-  } else {
-    footer_row_vertical_stroke_ = nullptr;
+    _this->_impl_.footer_row_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.footer_row_vertical_stroke_);
   }
   if (from._internal_has_table_body_horizontal_border_stroke()) {
-    table_body_horizontal_border_stroke_ = new ::TSD::StrokeArchive(*from.table_body_horizontal_border_stroke_);
-  } else {
-    table_body_horizontal_border_stroke_ = nullptr;
+    _this->_impl_.table_body_horizontal_border_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_horizontal_border_stroke_);
   }
   if (from._internal_has_table_body_vertical_border_stroke()) {
-    table_body_vertical_border_stroke_ = new ::TSD::StrokeArchive(*from.table_body_vertical_border_stroke_);
-  } else {
-    table_body_vertical_border_stroke_ = nullptr;
+    _this->_impl_.table_body_vertical_border_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_vertical_border_stroke_);
   }
   if (from._internal_has_table_body_horizontal_stroke()) {
-    table_body_horizontal_stroke_ = new ::TSD::StrokeArchive(*from.table_body_horizontal_stroke_);
-  } else {
-    table_body_horizontal_stroke_ = nullptr;
+    _this->_impl_.table_body_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_horizontal_stroke_);
   }
   if (from._internal_has_table_body_vertical_stroke()) {
-    table_body_vertical_stroke_ = new ::TSD::StrokeArchive(*from.table_body_vertical_stroke_);
-  } else {
-    table_body_vertical_stroke_ = nullptr;
+    _this->_impl_.table_body_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_vertical_stroke_);
   }
   if (from._internal_has_category_level1_top_stroke()) {
-    category_level1_top_stroke_ = new ::TSD::StrokeArchive(*from.category_level1_top_stroke_);
-  } else {
-    category_level1_top_stroke_ = nullptr;
+    _this->_impl_.category_level1_top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level1_top_stroke_);
   }
   if (from._internal_has_category_level2_top_stroke()) {
-    category_level2_top_stroke_ = new ::TSD::StrokeArchive(*from.category_level2_top_stroke_);
-  } else {
-    category_level2_top_stroke_ = nullptr;
+    _this->_impl_.category_level2_top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level2_top_stroke_);
   }
   if (from._internal_has_category_level3_top_stroke()) {
-    category_level3_top_stroke_ = new ::TSD::StrokeArchive(*from.category_level3_top_stroke_);
-  } else {
-    category_level3_top_stroke_ = nullptr;
+    _this->_impl_.category_level3_top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level3_top_stroke_);
   }
   if (from._internal_has_category_level4_top_stroke()) {
-    category_level4_top_stroke_ = new ::TSD::StrokeArchive(*from.category_level4_top_stroke_);
-  } else {
-    category_level4_top_stroke_ = nullptr;
+    _this->_impl_.category_level4_top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level4_top_stroke_);
   }
   if (from._internal_has_category_level5_top_stroke()) {
-    category_level5_top_stroke_ = new ::TSD::StrokeArchive(*from.category_level5_top_stroke_);
-  } else {
-    category_level5_top_stroke_ = nullptr;
+    _this->_impl_.category_level5_top_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level5_top_stroke_);
   }
   if (from._internal_has_category_level1_bottom_stroke()) {
-    category_level1_bottom_stroke_ = new ::TSD::StrokeArchive(*from.category_level1_bottom_stroke_);
-  } else {
-    category_level1_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level1_bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level1_bottom_stroke_);
   }
   if (from._internal_has_category_level2_bottom_stroke()) {
-    category_level2_bottom_stroke_ = new ::TSD::StrokeArchive(*from.category_level2_bottom_stroke_);
-  } else {
-    category_level2_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level2_bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level2_bottom_stroke_);
   }
   if (from._internal_has_category_level3_bottom_stroke()) {
-    category_level3_bottom_stroke_ = new ::TSD::StrokeArchive(*from.category_level3_bottom_stroke_);
-  } else {
-    category_level3_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level3_bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level3_bottom_stroke_);
   }
   if (from._internal_has_category_level4_bottom_stroke()) {
-    category_level4_bottom_stroke_ = new ::TSD::StrokeArchive(*from.category_level4_bottom_stroke_);
-  } else {
-    category_level4_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level4_bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level4_bottom_stroke_);
   }
   if (from._internal_has_category_level5_bottom_stroke()) {
-    category_level5_bottom_stroke_ = new ::TSD::StrokeArchive(*from.category_level5_bottom_stroke_);
-  } else {
-    category_level5_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level5_bottom_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level5_bottom_stroke_);
   }
   if (from._internal_has_category_level1_interior_stroke()) {
-    category_level1_interior_stroke_ = new ::TSD::StrokeArchive(*from.category_level1_interior_stroke_);
-  } else {
-    category_level1_interior_stroke_ = nullptr;
+    _this->_impl_.category_level1_interior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level1_interior_stroke_);
   }
   if (from._internal_has_category_level2_interior_stroke()) {
-    category_level2_interior_stroke_ = new ::TSD::StrokeArchive(*from.category_level2_interior_stroke_);
-  } else {
-    category_level2_interior_stroke_ = nullptr;
+    _this->_impl_.category_level2_interior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level2_interior_stroke_);
   }
   if (from._internal_has_category_level3_interior_stroke()) {
-    category_level3_interior_stroke_ = new ::TSD::StrokeArchive(*from.category_level3_interior_stroke_);
-  } else {
-    category_level3_interior_stroke_ = nullptr;
+    _this->_impl_.category_level3_interior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level3_interior_stroke_);
   }
   if (from._internal_has_category_level4_interior_stroke()) {
-    category_level4_interior_stroke_ = new ::TSD::StrokeArchive(*from.category_level4_interior_stroke_);
-  } else {
-    category_level4_interior_stroke_ = nullptr;
+    _this->_impl_.category_level4_interior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level4_interior_stroke_);
   }
   if (from._internal_has_category_level5_interior_stroke()) {
-    category_level5_interior_stroke_ = new ::TSD::StrokeArchive(*from.category_level5_interior_stroke_);
-  } else {
-    category_level5_interior_stroke_ = nullptr;
+    _this->_impl_.category_level5_interior_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level5_interior_stroke_);
   }
   if (from._internal_has_category_level1_label_separator_stroke()) {
-    category_level1_label_separator_stroke_ = new ::TSD::StrokeArchive(*from.category_level1_label_separator_stroke_);
-  } else {
-    category_level1_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level1_label_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level1_label_separator_stroke_);
   }
   if (from._internal_has_category_level2_label_separator_stroke()) {
-    category_level2_label_separator_stroke_ = new ::TSD::StrokeArchive(*from.category_level2_label_separator_stroke_);
-  } else {
-    category_level2_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level2_label_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level2_label_separator_stroke_);
   }
   if (from._internal_has_category_level3_label_separator_stroke()) {
-    category_level3_label_separator_stroke_ = new ::TSD::StrokeArchive(*from.category_level3_label_separator_stroke_);
-  } else {
-    category_level3_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level3_label_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level3_label_separator_stroke_);
   }
   if (from._internal_has_category_level4_label_separator_stroke()) {
-    category_level4_label_separator_stroke_ = new ::TSD::StrokeArchive(*from.category_level4_label_separator_stroke_);
-  } else {
-    category_level4_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level4_label_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level4_label_separator_stroke_);
   }
   if (from._internal_has_category_level5_label_separator_stroke()) {
-    category_level5_label_separator_stroke_ = new ::TSD::StrokeArchive(*from.category_level5_label_separator_stroke_);
-  } else {
-    category_level5_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level5_label_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.category_level5_label_separator_stroke_);
   }
-  ::memcpy(&banded_rows_, &from.banded_rows_,
-    static_cast<size_t>(reinterpret_cast<char*>(&writing_direction_) -
-    reinterpret_cast<char*>(&banded_rows_)) + sizeof(writing_direction_));
+  if (from._internal_has_table_body_pivot_group_horizontal_stroke()) {
+    _this->_impl_.table_body_pivot_group_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_pivot_group_horizontal_stroke_);
+  }
+  if (from._internal_has_table_body_pivot_group_vertical_stroke()) {
+    _this->_impl_.table_body_pivot_group_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_pivot_group_vertical_stroke_);
+  }
+  if (from._internal_has_table_body_pivot_deemphasis_horizontal_stroke()) {
+    _this->_impl_.table_body_pivot_deemphasis_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_pivot_deemphasis_horizontal_stroke_);
+  }
+  if (from._internal_has_table_body_pivot_emphasis_vertical_stroke()) {
+    _this->_impl_.table_body_pivot_emphasis_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.table_body_pivot_emphasis_vertical_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_group_horizontal_stroke()) {
+    _this->_impl_.header_column_pivot_group_horizontal_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_pivot_group_horizontal_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_group_deemphasis_stroke()) {
+    _this->_impl_.header_column_pivot_group_deemphasis_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_pivot_group_deemphasis_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_separator_stroke()) {
+    _this->_impl_.header_column_pivot_separator_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_column_pivot_separator_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_group_vertical_stroke()) {
+    _this->_impl_.header_row_pivot_group_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_pivot_group_vertical_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_group_deemphasis_stroke()) {
+    _this->_impl_.header_row_pivot_group_deemphasis_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_pivot_group_deemphasis_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_title_stroke()) {
+    _this->_impl_.header_row_pivot_title_stroke_ = new ::TSD::StrokeArchive(*from._impl_.header_row_pivot_title_stroke_);
+  }
+  if (from._internal_has_footer_row_pivot_group_vertical_stroke()) {
+    _this->_impl_.footer_row_pivot_group_vertical_stroke_ = new ::TSD::StrokeArchive(*from._impl_.footer_row_pivot_group_vertical_stroke_);
+  }
+  ::memcpy(&_impl_.banded_rows_, &from._impl_.banded_rows_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.writing_direction_) -
+    reinterpret_cast<char*>(&_impl_.banded_rows_)) + sizeof(_impl_.writing_direction_));
   // @@protoc_insertion_point(copy_constructor:TST.TableStylePropertiesArchive)
 }
 
-inline void TableStylePropertiesArchive::SharedCtor() {
-master_font_family_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&banded_fill_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&table_footer_divider_visible_) -
-    reinterpret_cast<char*>(&banded_fill_)) + sizeof(table_footer_divider_visible_));
-writing_direction_ = -1;
+inline void TableStylePropertiesArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.master_font_family_){}
+    , decltype(_impl_.banded_fill_){nullptr}
+    , decltype(_impl_.deprecated_header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.deprecated_table_body_vertical_stroke_){nullptr}
+    , decltype(_impl_.stroke_preset_list_){nullptr}
+    , decltype(_impl_.header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_border_stroke_){nullptr}
+    , decltype(_impl_.header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_border_stroke_){nullptr}
+    , decltype(_impl_.header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.table_body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.table_body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.table_body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_vertical_stroke_){nullptr}
+    , decltype(_impl_.category_level1_top_stroke_){nullptr}
+    , decltype(_impl_.category_level2_top_stroke_){nullptr}
+    , decltype(_impl_.category_level3_top_stroke_){nullptr}
+    , decltype(_impl_.category_level4_top_stroke_){nullptr}
+    , decltype(_impl_.category_level5_top_stroke_){nullptr}
+    , decltype(_impl_.category_level1_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level2_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level3_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level4_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level5_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level1_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level2_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level3_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level4_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level5_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level1_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level2_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level3_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level4_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level5_label_separator_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_deemphasis_horizontal_stroke_){nullptr}
+    , decltype(_impl_.table_body_pivot_emphasis_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_deemphasis_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_deemphasis_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_title_stroke_){nullptr}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.banded_rows_){false}
+    , decltype(_impl_.behaves_like_spreadsheet_){false}
+    , decltype(_impl_.auto_resize_){false}
+    , decltype(_impl_.v_strokes_visible_){false}
+    , decltype(_impl_.h_strokes_visible_){false}
+    , decltype(_impl_.hr_separator_visible_){false}
+    , decltype(_impl_.hc_separator_visible_){false}
+    , decltype(_impl_.footer_separator_visible_){false}
+    , decltype(_impl_.obsolete_master_font_size_){0}
+    , decltype(_impl_.table_border_visible_){false}
+    , decltype(_impl_.table_header_border_visible_){false}
+    , decltype(_impl_.table_hc_divider_visible_){false}
+    , decltype(_impl_.table_hr_divider_visible_){false}
+    , decltype(_impl_.table_footer_divider_visible_){false}
+    , decltype(_impl_.writing_direction_){-1}
+  };
+  _impl_.master_font_family_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.master_font_family_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 TableStylePropertiesArchive::~TableStylePropertiesArchive() {
   // @@protoc_insertion_point(destructor:TST.TableStylePropertiesArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TableStylePropertiesArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  master_font_family_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete banded_fill_;
-  if (this != internal_default_instance()) delete deprecated_header_row_separator_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_row_border_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_column_border_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_column_separator_stroke_;
-  if (this != internal_default_instance()) delete deprecated_footer_row_separator_stroke_;
-  if (this != internal_default_instance()) delete deprecated_footer_row_border_stroke_;
-  if (this != internal_default_instance()) delete deprecated_table_body_horizontal_border_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_column_horizontal_stroke_;
-  if (this != internal_default_instance()) delete deprecated_header_column_vertical_stroke_;
-  if (this != internal_default_instance()) delete deprecated_footer_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete deprecated_footer_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete deprecated_table_body_vertical_border_stroke_;
-  if (this != internal_default_instance()) delete deprecated_table_body_horizontal_stroke_;
-  if (this != internal_default_instance()) delete deprecated_table_body_vertical_stroke_;
-  if (this != internal_default_instance()) delete stroke_preset_list_;
-  if (this != internal_default_instance()) delete header_row_separator_stroke_;
-  if (this != internal_default_instance()) delete header_row_border_stroke_;
-  if (this != internal_default_instance()) delete header_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete header_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete header_column_border_stroke_;
-  if (this != internal_default_instance()) delete header_column_separator_stroke_;
-  if (this != internal_default_instance()) delete header_column_horizontal_stroke_;
-  if (this != internal_default_instance()) delete header_column_vertical_stroke_;
-  if (this != internal_default_instance()) delete footer_row_separator_stroke_;
-  if (this != internal_default_instance()) delete footer_row_border_stroke_;
-  if (this != internal_default_instance()) delete footer_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete footer_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete table_body_horizontal_border_stroke_;
-  if (this != internal_default_instance()) delete table_body_vertical_border_stroke_;
-  if (this != internal_default_instance()) delete table_body_horizontal_stroke_;
-  if (this != internal_default_instance()) delete table_body_vertical_stroke_;
-  if (this != internal_default_instance()) delete category_level1_top_stroke_;
-  if (this != internal_default_instance()) delete category_level2_top_stroke_;
-  if (this != internal_default_instance()) delete category_level3_top_stroke_;
-  if (this != internal_default_instance()) delete category_level4_top_stroke_;
-  if (this != internal_default_instance()) delete category_level5_top_stroke_;
-  if (this != internal_default_instance()) delete category_level1_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level2_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level3_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level4_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level5_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level1_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level2_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level3_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level4_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level5_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level1_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level2_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level3_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level4_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level5_label_separator_stroke_;
+  _impl_.master_font_family_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.banded_fill_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_column_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_column_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_footer_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_footer_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_table_body_horizontal_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_column_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_header_column_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_footer_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_footer_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_table_body_vertical_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_table_body_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.deprecated_table_body_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.stroke_preset_list_;
+  if (this != internal_default_instance()) delete _impl_.header_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_horizontal_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_vertical_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_pivot_group_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_pivot_group_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_pivot_deemphasis_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.table_body_pivot_emphasis_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_group_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_group_deemphasis_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_group_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_group_deemphasis_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_title_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_pivot_group_vertical_stroke_;
 }
 
-void TableStylePropertiesArchive::ArenaDtor(void* object) {
-  TableStylePropertiesArchive* _this = reinterpret_cast< TableStylePropertiesArchive* >(object);
-  (void)_this;
-}
-void TableStylePropertiesArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TableStylePropertiesArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TableStylePropertiesArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.TableStylePropertiesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      master_font_family_.ClearNonDefaultToEmpty();
+      _impl_.master_font_family_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(banded_fill_ != nullptr);
-      banded_fill_->Clear();
+      GOOGLE_DCHECK(_impl_.banded_fill_ != nullptr);
+      _impl_.banded_fill_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(deprecated_header_row_separator_stroke_ != nullptr);
-      deprecated_header_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_row_separator_stroke_ != nullptr);
+      _impl_.deprecated_header_row_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(deprecated_header_row_border_stroke_ != nullptr);
-      deprecated_header_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_row_border_stroke_ != nullptr);
+      _impl_.deprecated_header_row_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(deprecated_header_column_border_stroke_ != nullptr);
-      deprecated_header_column_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_column_border_stroke_ != nullptr);
+      _impl_.deprecated_header_column_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(deprecated_header_column_separator_stroke_ != nullptr);
-      deprecated_header_column_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_column_separator_stroke_ != nullptr);
+      _impl_.deprecated_header_column_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(deprecated_footer_row_separator_stroke_ != nullptr);
-      deprecated_footer_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_footer_row_separator_stroke_ != nullptr);
+      _impl_.deprecated_footer_row_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(deprecated_footer_row_border_stroke_ != nullptr);
-      deprecated_footer_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_footer_row_border_stroke_ != nullptr);
+      _impl_.deprecated_footer_row_border_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(deprecated_table_body_horizontal_border_stroke_ != nullptr);
-      deprecated_table_body_horizontal_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_table_body_horizontal_border_stroke_ != nullptr);
+      _impl_.deprecated_table_body_horizontal_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(deprecated_header_row_horizontal_stroke_ != nullptr);
-      deprecated_header_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_row_horizontal_stroke_ != nullptr);
+      _impl_.deprecated_header_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(deprecated_header_row_vertical_stroke_ != nullptr);
-      deprecated_header_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_row_vertical_stroke_ != nullptr);
+      _impl_.deprecated_header_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(deprecated_header_column_horizontal_stroke_ != nullptr);
-      deprecated_header_column_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_column_horizontal_stroke_ != nullptr);
+      _impl_.deprecated_header_column_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(deprecated_header_column_vertical_stroke_ != nullptr);
-      deprecated_header_column_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_header_column_vertical_stroke_ != nullptr);
+      _impl_.deprecated_header_column_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(deprecated_footer_row_horizontal_stroke_ != nullptr);
-      deprecated_footer_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_footer_row_horizontal_stroke_ != nullptr);
+      _impl_.deprecated_footer_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(deprecated_footer_row_vertical_stroke_ != nullptr);
-      deprecated_footer_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_footer_row_vertical_stroke_ != nullptr);
+      _impl_.deprecated_footer_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00008000u) {
-      GOOGLE_DCHECK(deprecated_table_body_vertical_border_stroke_ != nullptr);
-      deprecated_table_body_vertical_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_table_body_vertical_border_stroke_ != nullptr);
+      _impl_.deprecated_table_body_vertical_border_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      GOOGLE_DCHECK(deprecated_table_body_horizontal_stroke_ != nullptr);
-      deprecated_table_body_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_table_body_horizontal_stroke_ != nullptr);
+      _impl_.deprecated_table_body_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00020000u) {
-      GOOGLE_DCHECK(deprecated_table_body_vertical_stroke_ != nullptr);
-      deprecated_table_body_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.deprecated_table_body_vertical_stroke_ != nullptr);
+      _impl_.deprecated_table_body_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00040000u) {
-      GOOGLE_DCHECK(stroke_preset_list_ != nullptr);
-      stroke_preset_list_->Clear();
+      GOOGLE_DCHECK(_impl_.stroke_preset_list_ != nullptr);
+      _impl_.stroke_preset_list_->Clear();
     }
     if (cached_has_bits & 0x00080000u) {
-      GOOGLE_DCHECK(header_row_separator_stroke_ != nullptr);
-      header_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_separator_stroke_ != nullptr);
+      _impl_.header_row_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00100000u) {
-      GOOGLE_DCHECK(header_row_border_stroke_ != nullptr);
-      header_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_border_stroke_ != nullptr);
+      _impl_.header_row_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00200000u) {
-      GOOGLE_DCHECK(header_row_horizontal_stroke_ != nullptr);
-      header_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_horizontal_stroke_ != nullptr);
+      _impl_.header_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00400000u) {
-      GOOGLE_DCHECK(header_row_vertical_stroke_ != nullptr);
-      header_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_vertical_stroke_ != nullptr);
+      _impl_.header_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00800000u) {
-      GOOGLE_DCHECK(header_column_border_stroke_ != nullptr);
-      header_column_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_border_stroke_ != nullptr);
+      _impl_.header_column_border_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      GOOGLE_DCHECK(header_column_separator_stroke_ != nullptr);
-      header_column_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_separator_stroke_ != nullptr);
+      _impl_.header_column_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x02000000u) {
-      GOOGLE_DCHECK(header_column_horizontal_stroke_ != nullptr);
-      header_column_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_horizontal_stroke_ != nullptr);
+      _impl_.header_column_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x04000000u) {
-      GOOGLE_DCHECK(header_column_vertical_stroke_ != nullptr);
-      header_column_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_vertical_stroke_ != nullptr);
+      _impl_.header_column_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x08000000u) {
-      GOOGLE_DCHECK(footer_row_separator_stroke_ != nullptr);
-      footer_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_separator_stroke_ != nullptr);
+      _impl_.footer_row_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x10000000u) {
-      GOOGLE_DCHECK(footer_row_border_stroke_ != nullptr);
-      footer_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_border_stroke_ != nullptr);
+      _impl_.footer_row_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x20000000u) {
-      GOOGLE_DCHECK(footer_row_horizontal_stroke_ != nullptr);
-      footer_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_horizontal_stroke_ != nullptr);
+      _impl_.footer_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x40000000u) {
-      GOOGLE_DCHECK(footer_row_vertical_stroke_ != nullptr);
-      footer_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_vertical_stroke_ != nullptr);
+      _impl_.footer_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x80000000u) {
-      GOOGLE_DCHECK(table_body_horizontal_border_stroke_ != nullptr);
-      table_body_horizontal_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.table_body_horizontal_border_stroke_ != nullptr);
+      _impl_.table_body_horizontal_border_stroke_->Clear();
     }
   }
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(table_body_vertical_border_stroke_ != nullptr);
-      table_body_vertical_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.table_body_vertical_border_stroke_ != nullptr);
+      _impl_.table_body_vertical_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(table_body_horizontal_stroke_ != nullptr);
-      table_body_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.table_body_horizontal_stroke_ != nullptr);
+      _impl_.table_body_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(table_body_vertical_stroke_ != nullptr);
-      table_body_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.table_body_vertical_stroke_ != nullptr);
+      _impl_.table_body_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(category_level1_top_stroke_ != nullptr);
-      category_level1_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_top_stroke_ != nullptr);
+      _impl_.category_level1_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(category_level2_top_stroke_ != nullptr);
-      category_level2_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_top_stroke_ != nullptr);
+      _impl_.category_level2_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(category_level3_top_stroke_ != nullptr);
-      category_level3_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_top_stroke_ != nullptr);
+      _impl_.category_level3_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(category_level4_top_stroke_ != nullptr);
-      category_level4_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_top_stroke_ != nullptr);
+      _impl_.category_level4_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(category_level5_top_stroke_ != nullptr);
-      category_level5_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_top_stroke_ != nullptr);
+      _impl_.category_level5_top_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(category_level1_bottom_stroke_ != nullptr);
-      category_level1_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_bottom_stroke_ != nullptr);
+      _impl_.category_level1_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(category_level2_bottom_stroke_ != nullptr);
-      category_level2_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_bottom_stroke_ != nullptr);
+      _impl_.category_level2_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(category_level3_bottom_stroke_ != nullptr);
-      category_level3_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_bottom_stroke_ != nullptr);
+      _impl_.category_level3_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(category_level4_bottom_stroke_ != nullptr);
-      category_level4_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_bottom_stroke_ != nullptr);
+      _impl_.category_level4_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(category_level5_bottom_stroke_ != nullptr);
-      category_level5_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_bottom_stroke_ != nullptr);
+      _impl_.category_level5_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(category_level1_interior_stroke_ != nullptr);
-      category_level1_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_interior_stroke_ != nullptr);
+      _impl_.category_level1_interior_stroke_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(category_level2_interior_stroke_ != nullptr);
-      category_level2_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_interior_stroke_ != nullptr);
+      _impl_.category_level2_interior_stroke_->Clear();
     }
     if (cached_has_bits & 0x00008000u) {
-      GOOGLE_DCHECK(category_level3_interior_stroke_ != nullptr);
-      category_level3_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_interior_stroke_ != nullptr);
+      _impl_.category_level3_interior_stroke_->Clear();
     }
   }
-  if (cached_has_bits & 0x007f0000u) {
+  if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      GOOGLE_DCHECK(category_level4_interior_stroke_ != nullptr);
-      category_level4_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_interior_stroke_ != nullptr);
+      _impl_.category_level4_interior_stroke_->Clear();
     }
     if (cached_has_bits & 0x00020000u) {
-      GOOGLE_DCHECK(category_level5_interior_stroke_ != nullptr);
-      category_level5_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_interior_stroke_ != nullptr);
+      _impl_.category_level5_interior_stroke_->Clear();
     }
     if (cached_has_bits & 0x00040000u) {
-      GOOGLE_DCHECK(category_level1_label_separator_stroke_ != nullptr);
-      category_level1_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_label_separator_stroke_ != nullptr);
+      _impl_.category_level1_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00080000u) {
-      GOOGLE_DCHECK(category_level2_label_separator_stroke_ != nullptr);
-      category_level2_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_label_separator_stroke_ != nullptr);
+      _impl_.category_level2_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00100000u) {
-      GOOGLE_DCHECK(category_level3_label_separator_stroke_ != nullptr);
-      category_level3_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_label_separator_stroke_ != nullptr);
+      _impl_.category_level3_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00200000u) {
-      GOOGLE_DCHECK(category_level4_label_separator_stroke_ != nullptr);
-      category_level4_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_label_separator_stroke_ != nullptr);
+      _impl_.category_level4_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00400000u) {
-      GOOGLE_DCHECK(category_level5_label_separator_stroke_ != nullptr);
-      category_level5_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_label_separator_stroke_ != nullptr);
+      _impl_.category_level5_label_separator_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00800000u) {
+      GOOGLE_DCHECK(_impl_.table_body_pivot_group_horizontal_stroke_ != nullptr);
+      _impl_.table_body_pivot_group_horizontal_stroke_->Clear();
     }
   }
-  banded_rows_ = false;
   if (cached_has_bits & 0xff000000u) {
-    ::memset(&behaves_like_spreadsheet_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&obsolete_master_font_size_) -
-        reinterpret_cast<char*>(&behaves_like_spreadsheet_)) + sizeof(obsolete_master_font_size_));
+    if (cached_has_bits & 0x01000000u) {
+      GOOGLE_DCHECK(_impl_.table_body_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.table_body_pivot_group_vertical_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x02000000u) {
+      GOOGLE_DCHECK(_impl_.table_body_pivot_deemphasis_horizontal_stroke_ != nullptr);
+      _impl_.table_body_pivot_deemphasis_horizontal_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x04000000u) {
+      GOOGLE_DCHECK(_impl_.table_body_pivot_emphasis_vertical_stroke_ != nullptr);
+      _impl_.table_body_pivot_emphasis_vertical_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x08000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_group_horizontal_stroke_ != nullptr);
+      _impl_.header_column_pivot_group_horizontal_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x10000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_group_deemphasis_stroke_ != nullptr);
+      _impl_.header_column_pivot_group_deemphasis_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x20000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_separator_stroke_ != nullptr);
+      _impl_.header_column_pivot_separator_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x40000000u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.header_row_pivot_group_vertical_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x80000000u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_group_deemphasis_stroke_ != nullptr);
+      _impl_.header_row_pivot_group_deemphasis_stroke_->Clear();
+    }
   }
-  cached_has_bits = _has_bits_[2];
-  if (cached_has_bits & 0x0000003fu) {
-    ::memset(&table_border_visible_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&table_footer_divider_visible_) -
-        reinterpret_cast<char*>(&table_border_visible_)) + sizeof(table_footer_divider_visible_));
-    writing_direction_ = -1;
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x00000003u) {
+    if (cached_has_bits & 0x00000001u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_title_stroke_ != nullptr);
+      _impl_.header_row_pivot_title_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00000002u) {
+      GOOGLE_DCHECK(_impl_.footer_row_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.footer_row_pivot_group_vertical_stroke_->Clear();
+    }
   }
-  _has_bits_.Clear();
+  if (cached_has_bits & 0x000000fcu) {
+    ::memset(&_impl_.banded_rows_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.hr_separator_visible_) -
+        reinterpret_cast<char*>(&_impl_.banded_rows_)) + sizeof(_impl_.hr_separator_visible_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.hc_separator_visible_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.table_footer_divider_visible_) -
+        reinterpret_cast<char*>(&_impl_.hc_separator_visible_)) + sizeof(_impl_.table_footer_divider_visible_));
+  }
+  _impl_.writing_direction_ = -1;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TableStylePropertiesArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TableStylePropertiesArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional bool banded_rows = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          _Internal::set_has_banded_rows(&_has_bits_);
-          banded_rows_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_banded_rows(&_impl_._has_bits_);
+          _impl_.banded_rows_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.FillArchive banded_fill = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_banded_fill(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_separator_stroke = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_border_stroke = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_border_stroke = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_column_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_separator_stroke = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_column_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_separator_stroke = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_footer_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_border_stroke = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_footer_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_border_stroke = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_table_body_horizontal_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool behaves_like_spreadsheet = 21;
       case 21:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 168)) {
-          _Internal::set_has_behaves_like_spreadsheet(&_has_bits_);
-          behaves_like_spreadsheet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 168)) {
+          _Internal::set_has_behaves_like_spreadsheet(&_impl_._has_bits_);
+          _impl_.behaves_like_spreadsheet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool auto_resize = 22;
       case 22:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
-          _Internal::set_has_auto_resize(&_has_bits_);
-          auto_resize_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_auto_resize(&_impl_._has_bits_);
+          _impl_.auto_resize_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_horizontal_stroke = 23;
       case 23:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_vertical_stroke = 24;
       case 24:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 194)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 194)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_horizontal_stroke = 25;
       case 25:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_column_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_vertical_stroke = 26;
       case 26:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 210)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_header_column_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_horizontal_stroke = 27;
       case 27:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_footer_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_vertical_stroke = 28;
       case 28:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 226)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 226)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_footer_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_border_stroke = 29;
       case 29:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_table_body_vertical_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_stroke = 30;
       case 30:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 242)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 242)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_table_body_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_stroke = 31;
       case 31:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_deprecated_table_body_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TST.StrokePresetListArchive stroke_preset_list = 32;
       case 32:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 2)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 2)) {
           ptr = ctx->ParseMessage(_internal_mutable_stroke_preset_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool v_strokes_visible = 33;
       case 33:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          _Internal::set_has_v_strokes_visible(&_has_bits_);
-          v_strokes_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _Internal::set_has_v_strokes_visible(&_impl_._has_bits_);
+          _impl_.v_strokes_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool h_strokes_visible = 34;
       case 34:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _Internal::set_has_h_strokes_visible(&_has_bits_);
-          h_strokes_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_h_strokes_visible(&_impl_._has_bits_);
+          _impl_.h_strokes_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool hr_separator_visible = 35;
       case 35:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          _Internal::set_has_hr_separator_visible(&_has_bits_);
-          hr_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          _Internal::set_has_hr_separator_visible(&_impl_._has_bits_);
+          _impl_.hr_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool hc_separator_visible = 36;
       case 36:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _Internal::set_has_hc_separator_visible(&_has_bits_);
-          hc_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_hc_separator_visible(&_impl_._has_bits_);
+          _impl_.hc_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_separator_visible = 37;
       case 37:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          _Internal::set_has_footer_separator_visible(&_has_bits_);
-          footer_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          _Internal::set_has_footer_separator_visible(&_impl_._has_bits_);
+          _impl_.footer_separator_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool table_border_visible = 38;
       case 38:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          _Internal::set_has_table_border_visible(&_has_bits_);
-          table_border_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_table_border_visible(&_impl_._has_bits_);
+          _impl_.table_border_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool table_header_border_visible = 39;
       case 39:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          _Internal::set_has_table_header_border_visible(&_has_bits_);
-          table_header_border_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          _Internal::set_has_table_header_border_visible(&_impl_._has_bits_);
+          _impl_.table_header_border_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional int32 OBSOLETE_master_font_size = 40;
       case 40:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          _Internal::set_has_obsolete_master_font_size(&_has_bits_);
-          obsolete_master_font_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_obsolete_master_font_size(&_impl_._has_bits_);
+          _impl_.obsolete_master_font_size_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string master_font_family = 41;
       case 41:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           auto str = _internal_mutable_master_font_family();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TST.TableStylePropertiesArchive.master_font_family");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TST.TableStylePropertiesArchive.master_font_family");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional bool table_hc_divider_visible = 42;
       case 42:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          _Internal::set_has_table_hc_divider_visible(&_has_bits_);
-          table_hc_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_table_hc_divider_visible(&_impl_._has_bits_);
+          _impl_.table_hc_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool table_hr_divider_visible = 43;
       case 43:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          _Internal::set_has_table_hr_divider_visible(&_has_bits_);
-          table_hr_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 88)) {
+          _Internal::set_has_table_hr_divider_visible(&_impl_._has_bits_);
+          _impl_.table_hr_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool table_footer_divider_visible = 44;
       case 44:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          _Internal::set_has_table_footer_divider_visible(&_has_bits_);
-          table_footer_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_table_footer_divider_visible(&_impl_._has_bits_);
+          _impl_.table_footer_divider_visible_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSWP.WritingDirectionType writing_direction = 45;
       case 45:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 104)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSWP::WritingDirectionType_IsValid(val))) {
             _internal_set_writing_direction(static_cast<::TSWP::WritingDirectionType>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(45, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_row_separator_stroke = 46;
       case 46:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_row_border_stroke = 47;
       case 47:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_row_horizontal_stroke = 48;
       case 48:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 130)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_row_vertical_stroke = 49;
       case 49:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_column_border_stroke = 50;
       case 50:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 146)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_column_separator_stroke = 51;
       case 51:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_column_horizontal_stroke = 52;
       case 52:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive header_column_vertical_stroke = 53;
       case 53:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive footer_row_separator_stroke = 54;
       case 54:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 178)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 178)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive footer_row_border_stroke = 55;
       case 55:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive footer_row_horizontal_stroke = 56;
       case 56:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 194)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 194)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive footer_row_vertical_stroke = 57;
       case 57:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive table_body_horizontal_border_stroke = 58;
       case 58:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 210)) {
           ptr = ctx->ParseMessage(_internal_mutable_table_body_horizontal_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive table_body_vertical_border_stroke = 59;
       case 59:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_table_body_vertical_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive table_body_horizontal_stroke = 60;
       case 60:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 226)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 226)) {
           ptr = ctx->ParseMessage(_internal_mutable_table_body_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive table_body_vertical_stroke = 61;
       case 61:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_table_body_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level1_top_stroke = 62;
       case 62:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 242)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 242)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level2_top_stroke = 63;
       case 63:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level3_top_stroke = 64;
       case 64:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 2)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 2)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level4_top_stroke = 65;
       case 65:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level5_top_stroke = 66;
       case 66:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level1_bottom_stroke = 67;
       case 67:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level2_bottom_stroke = 68;
       case 68:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level3_bottom_stroke = 69;
       case 69:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level4_bottom_stroke = 70;
       case 70:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level5_bottom_stroke = 71;
       case 71:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level1_interior_stroke = 72;
       case 72:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level2_interior_stroke = 73;
       case 73:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level3_interior_stroke = 74;
       case 74:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level4_interior_stroke = 75;
       case 75:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level5_interior_stroke = 76;
       case 76:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level1_label_separator_stroke = 77;
       case 77:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level2_label_separator_stroke = 78;
       case 78:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level3_label_separator_stroke = 79;
       case 79:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level4_label_separator_stroke = 80;
       case 80:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 130)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSD.StrokeArchive category_level5_label_separator_stroke = 81;
       case 81:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
+      // optional .TSD.StrokeArchive table_body_pivot_group_horizontal_stroke = 82;
+      case 82:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 146)) {
+          ptr = ctx->ParseMessage(_internal_mutable_table_body_pivot_group_horizontal_stroke(), ptr);
           CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
+        } else
+          goto handle_unusual;
         continue;
-      }
+      // optional .TSD.StrokeArchive table_body_pivot_group_vertical_stroke = 83;
+      case 83:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_table_body_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive table_body_pivot_deemphasis_horizontal_stroke = 84;
+      case 84:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 162)) {
+          ptr = ctx->ParseMessage(_internal_mutable_table_body_pivot_deemphasis_horizontal_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive table_body_pivot_emphasis_vertical_stroke = 85;
+      case 85:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_table_body_pivot_emphasis_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_column_pivot_group_horizontal_stroke = 86;
+      case 86:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 178)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_group_horizontal_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_column_pivot_group_deemphasis_stroke = 87;
+      case 87:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_group_deemphasis_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_column_pivot_separator_stroke = 88;
+      case 88:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 194)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_separator_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_row_pivot_group_vertical_stroke = 89;
+      case 89:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_row_pivot_group_deemphasis_stroke = 90;
+      case 90:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 210)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_group_deemphasis_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive header_row_pivot_title_stroke = 91;
+      case 91:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_title_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSD.StrokeArchive footer_row_pivot_group_vertical_stroke = 92;
+      case 92:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 226)) {
+          ptr = ctx->ParseMessage(_internal_mutable_footer_row_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TableStylePropertiesArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TableStylePropertiesArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.TableStylePropertiesArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool banded_rows = 1;
-  if (cached_has_bits & 0x00800000u) {
+  if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_banded_rows(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(1, this->_internal_banded_rows(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSD.FillArchive banded_fill = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::banded_fill(this), target, stream);
+      InternalWriteMessage(2, _Internal::banded_fill(this),
+        _Internal::banded_fill(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_separator_stroke = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::deprecated_header_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(4, _Internal::deprecated_header_row_separator_stroke(this),
+        _Internal::deprecated_header_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_border_stroke = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::deprecated_header_row_border_stroke(this), target, stream);
+      InternalWriteMessage(5, _Internal::deprecated_header_row_border_stroke(this),
+        _Internal::deprecated_header_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_border_stroke = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::deprecated_header_column_border_stroke(this), target, stream);
+      InternalWriteMessage(7, _Internal::deprecated_header_column_border_stroke(this),
+        _Internal::deprecated_header_column_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_separator_stroke = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::deprecated_header_column_separator_stroke(this), target, stream);
+      InternalWriteMessage(8, _Internal::deprecated_header_column_separator_stroke(this),
+        _Internal::deprecated_header_column_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_separator_stroke = 10;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::deprecated_footer_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(10, _Internal::deprecated_footer_row_separator_stroke(this),
+        _Internal::deprecated_footer_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_border_stroke = 11;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::deprecated_footer_row_border_stroke(this), target, stream);
+      InternalWriteMessage(11, _Internal::deprecated_footer_row_border_stroke(this),
+        _Internal::deprecated_footer_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_border_stroke = 12;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        12, _Internal::deprecated_table_body_horizontal_border_stroke(this), target, stream);
+      InternalWriteMessage(12, _Internal::deprecated_table_body_horizontal_border_stroke(this),
+        _Internal::deprecated_table_body_horizontal_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool behaves_like_spreadsheet = 21;
-  if (cached_has_bits & 0x01000000u) {
+  if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(21, this->_internal_behaves_like_spreadsheet(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(21, this->_internal_behaves_like_spreadsheet(), target);
   }
 
   // optional bool auto_resize = 22;
-  if (cached_has_bits & 0x02000000u) {
+  if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(22, this->_internal_auto_resize(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(22, this->_internal_auto_resize(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_horizontal_stroke = 23;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        23, _Internal::deprecated_header_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(23, _Internal::deprecated_header_row_horizontal_stroke(this),
+        _Internal::deprecated_header_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_vertical_stroke = 24;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        24, _Internal::deprecated_header_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(24, _Internal::deprecated_header_row_vertical_stroke(this),
+        _Internal::deprecated_header_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_horizontal_stroke = 25;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        25, _Internal::deprecated_header_column_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(25, _Internal::deprecated_header_column_horizontal_stroke(this),
+        _Internal::deprecated_header_column_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_vertical_stroke = 26;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        26, _Internal::deprecated_header_column_vertical_stroke(this), target, stream);
+      InternalWriteMessage(26, _Internal::deprecated_header_column_vertical_stroke(this),
+        _Internal::deprecated_header_column_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_horizontal_stroke = 27;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        27, _Internal::deprecated_footer_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(27, _Internal::deprecated_footer_row_horizontal_stroke(this),
+        _Internal::deprecated_footer_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_vertical_stroke = 28;
   if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        28, _Internal::deprecated_footer_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(28, _Internal::deprecated_footer_row_vertical_stroke(this),
+        _Internal::deprecated_footer_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_border_stroke = 29;
   if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        29, _Internal::deprecated_table_body_vertical_border_stroke(this), target, stream);
+      InternalWriteMessage(29, _Internal::deprecated_table_body_vertical_border_stroke(this),
+        _Internal::deprecated_table_body_vertical_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_horizontal_stroke = 30;
   if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        30, _Internal::deprecated_table_body_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(30, _Internal::deprecated_table_body_horizontal_stroke(this),
+        _Internal::deprecated_table_body_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_stroke = 31;
   if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        31, _Internal::deprecated_table_body_vertical_stroke(this), target, stream);
+      InternalWriteMessage(31, _Internal::deprecated_table_body_vertical_stroke(this),
+        _Internal::deprecated_table_body_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TST.StrokePresetListArchive stroke_preset_list = 32;
   if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        32, _Internal::stroke_preset_list(this), target, stream);
+      InternalWriteMessage(32, _Internal::stroke_preset_list(this),
+        _Internal::stroke_preset_list(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool v_strokes_visible = 33;
-  if (cached_has_bits & 0x04000000u) {
+  if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(33, this->_internal_v_strokes_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(33, this->_internal_v_strokes_visible(), target);
   }
 
   // optional bool h_strokes_visible = 34;
-  if (cached_has_bits & 0x08000000u) {
+  if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(34, this->_internal_h_strokes_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(34, this->_internal_h_strokes_visible(), target);
   }
 
   // optional bool hr_separator_visible = 35;
-  if (cached_has_bits & 0x10000000u) {
+  if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(35, this->_internal_hr_separator_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(35, this->_internal_hr_separator_visible(), target);
   }
 
   // optional bool hc_separator_visible = 36;
-  if (cached_has_bits & 0x20000000u) {
+  if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(36, this->_internal_hc_separator_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(36, this->_internal_hc_separator_visible(), target);
   }
 
   // optional bool footer_separator_visible = 37;
-  if (cached_has_bits & 0x40000000u) {
+  if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(37, this->_internal_footer_separator_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(37, this->_internal_footer_separator_visible(), target);
   }
 
-  cached_has_bits = _has_bits_[2];
   // optional bool table_border_visible = 38;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(38, this->_internal_table_border_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(38, this->_internal_table_border_visible(), target);
   }
 
   // optional bool table_header_border_visible = 39;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00001000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(39, this->_internal_table_header_border_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(39, this->_internal_table_header_border_visible(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
   // optional int32 OBSOLETE_master_font_size = 40;
-  if (cached_has_bits & 0x80000000u) {
+  if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(40, this->_internal_obsolete_master_font_size(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(40, this->_internal_obsolete_master_font_size(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional string master_font_family = 41;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -4782,324 +5275,366 @@ failure:
         41, this->_internal_master_font_family(), target);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool table_hc_divider_visible = 42;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00002000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(42, this->_internal_table_hc_divider_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(42, this->_internal_table_hc_divider_visible(), target);
   }
 
   // optional bool table_hr_divider_visible = 43;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00004000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(43, this->_internal_table_hr_divider_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(43, this->_internal_table_hr_divider_visible(), target);
   }
 
   // optional bool table_footer_divider_visible = 44;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00008000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(44, this->_internal_table_footer_divider_visible(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(44, this->_internal_table_footer_divider_visible(), target);
   }
 
   // optional .TSWP.WritingDirectionType writing_direction = 45;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00010000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       45, this->_internal_writing_direction(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSD.StrokeArchive header_row_separator_stroke = 46;
   if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        46, _Internal::header_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(46, _Internal::header_row_separator_stroke(this),
+        _Internal::header_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_row_border_stroke = 47;
   if (cached_has_bits & 0x00100000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        47, _Internal::header_row_border_stroke(this), target, stream);
+      InternalWriteMessage(47, _Internal::header_row_border_stroke(this),
+        _Internal::header_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_row_horizontal_stroke = 48;
   if (cached_has_bits & 0x00200000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        48, _Internal::header_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(48, _Internal::header_row_horizontal_stroke(this),
+        _Internal::header_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_row_vertical_stroke = 49;
   if (cached_has_bits & 0x00400000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        49, _Internal::header_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(49, _Internal::header_row_vertical_stroke(this),
+        _Internal::header_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_column_border_stroke = 50;
   if (cached_has_bits & 0x00800000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        50, _Internal::header_column_border_stroke(this), target, stream);
+      InternalWriteMessage(50, _Internal::header_column_border_stroke(this),
+        _Internal::header_column_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_column_separator_stroke = 51;
   if (cached_has_bits & 0x01000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        51, _Internal::header_column_separator_stroke(this), target, stream);
+      InternalWriteMessage(51, _Internal::header_column_separator_stroke(this),
+        _Internal::header_column_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_column_horizontal_stroke = 52;
   if (cached_has_bits & 0x02000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        52, _Internal::header_column_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(52, _Internal::header_column_horizontal_stroke(this),
+        _Internal::header_column_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive header_column_vertical_stroke = 53;
   if (cached_has_bits & 0x04000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        53, _Internal::header_column_vertical_stroke(this), target, stream);
+      InternalWriteMessage(53, _Internal::header_column_vertical_stroke(this),
+        _Internal::header_column_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive footer_row_separator_stroke = 54;
   if (cached_has_bits & 0x08000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        54, _Internal::footer_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(54, _Internal::footer_row_separator_stroke(this),
+        _Internal::footer_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive footer_row_border_stroke = 55;
   if (cached_has_bits & 0x10000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        55, _Internal::footer_row_border_stroke(this), target, stream);
+      InternalWriteMessage(55, _Internal::footer_row_border_stroke(this),
+        _Internal::footer_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive footer_row_horizontal_stroke = 56;
   if (cached_has_bits & 0x20000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        56, _Internal::footer_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(56, _Internal::footer_row_horizontal_stroke(this),
+        _Internal::footer_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive footer_row_vertical_stroke = 57;
   if (cached_has_bits & 0x40000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        57, _Internal::footer_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(57, _Internal::footer_row_vertical_stroke(this),
+        _Internal::footer_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive table_body_horizontal_border_stroke = 58;
   if (cached_has_bits & 0x80000000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        58, _Internal::table_body_horizontal_border_stroke(this), target, stream);
+      InternalWriteMessage(58, _Internal::table_body_horizontal_border_stroke(this),
+        _Internal::table_body_horizontal_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   // optional .TSD.StrokeArchive table_body_vertical_border_stroke = 59;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        59, _Internal::table_body_vertical_border_stroke(this), target, stream);
+      InternalWriteMessage(59, _Internal::table_body_vertical_border_stroke(this),
+        _Internal::table_body_vertical_border_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive table_body_horizontal_stroke = 60;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        60, _Internal::table_body_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(60, _Internal::table_body_horizontal_stroke(this),
+        _Internal::table_body_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive table_body_vertical_stroke = 61;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        61, _Internal::table_body_vertical_stroke(this), target, stream);
+      InternalWriteMessage(61, _Internal::table_body_vertical_stroke(this),
+        _Internal::table_body_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level1_top_stroke = 62;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        62, _Internal::category_level1_top_stroke(this), target, stream);
+      InternalWriteMessage(62, _Internal::category_level1_top_stroke(this),
+        _Internal::category_level1_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level2_top_stroke = 63;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        63, _Internal::category_level2_top_stroke(this), target, stream);
+      InternalWriteMessage(63, _Internal::category_level2_top_stroke(this),
+        _Internal::category_level2_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level3_top_stroke = 64;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        64, _Internal::category_level3_top_stroke(this), target, stream);
+      InternalWriteMessage(64, _Internal::category_level3_top_stroke(this),
+        _Internal::category_level3_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level4_top_stroke = 65;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        65, _Internal::category_level4_top_stroke(this), target, stream);
+      InternalWriteMessage(65, _Internal::category_level4_top_stroke(this),
+        _Internal::category_level4_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level5_top_stroke = 66;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        66, _Internal::category_level5_top_stroke(this), target, stream);
+      InternalWriteMessage(66, _Internal::category_level5_top_stroke(this),
+        _Internal::category_level5_top_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level1_bottom_stroke = 67;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        67, _Internal::category_level1_bottom_stroke(this), target, stream);
+      InternalWriteMessage(67, _Internal::category_level1_bottom_stroke(this),
+        _Internal::category_level1_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level2_bottom_stroke = 68;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        68, _Internal::category_level2_bottom_stroke(this), target, stream);
+      InternalWriteMessage(68, _Internal::category_level2_bottom_stroke(this),
+        _Internal::category_level2_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level3_bottom_stroke = 69;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        69, _Internal::category_level3_bottom_stroke(this), target, stream);
+      InternalWriteMessage(69, _Internal::category_level3_bottom_stroke(this),
+        _Internal::category_level3_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level4_bottom_stroke = 70;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        70, _Internal::category_level4_bottom_stroke(this), target, stream);
+      InternalWriteMessage(70, _Internal::category_level4_bottom_stroke(this),
+        _Internal::category_level4_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level5_bottom_stroke = 71;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        71, _Internal::category_level5_bottom_stroke(this), target, stream);
+      InternalWriteMessage(71, _Internal::category_level5_bottom_stroke(this),
+        _Internal::category_level5_bottom_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level1_interior_stroke = 72;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        72, _Internal::category_level1_interior_stroke(this), target, stream);
+      InternalWriteMessage(72, _Internal::category_level1_interior_stroke(this),
+        _Internal::category_level1_interior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level2_interior_stroke = 73;
   if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        73, _Internal::category_level2_interior_stroke(this), target, stream);
+      InternalWriteMessage(73, _Internal::category_level2_interior_stroke(this),
+        _Internal::category_level2_interior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level3_interior_stroke = 74;
   if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        74, _Internal::category_level3_interior_stroke(this), target, stream);
+      InternalWriteMessage(74, _Internal::category_level3_interior_stroke(this),
+        _Internal::category_level3_interior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level4_interior_stroke = 75;
   if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        75, _Internal::category_level4_interior_stroke(this), target, stream);
+      InternalWriteMessage(75, _Internal::category_level4_interior_stroke(this),
+        _Internal::category_level4_interior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level5_interior_stroke = 76;
   if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        76, _Internal::category_level5_interior_stroke(this), target, stream);
+      InternalWriteMessage(76, _Internal::category_level5_interior_stroke(this),
+        _Internal::category_level5_interior_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level1_label_separator_stroke = 77;
   if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        77, _Internal::category_level1_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(77, _Internal::category_level1_label_separator_stroke(this),
+        _Internal::category_level1_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level2_label_separator_stroke = 78;
   if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        78, _Internal::category_level2_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(78, _Internal::category_level2_label_separator_stroke(this),
+        _Internal::category_level2_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level3_label_separator_stroke = 79;
   if (cached_has_bits & 0x00100000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        79, _Internal::category_level3_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(79, _Internal::category_level3_label_separator_stroke(this),
+        _Internal::category_level3_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level4_label_separator_stroke = 80;
   if (cached_has_bits & 0x00200000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        80, _Internal::category_level4_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(80, _Internal::category_level4_label_separator_stroke(this),
+        _Internal::category_level4_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSD.StrokeArchive category_level5_label_separator_stroke = 81;
   if (cached_has_bits & 0x00400000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        81, _Internal::category_level5_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(81, _Internal::category_level5_label_separator_stroke(this),
+        _Internal::category_level5_label_separator_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive table_body_pivot_group_horizontal_stroke = 82;
+  if (cached_has_bits & 0x00800000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(82, _Internal::table_body_pivot_group_horizontal_stroke(this),
+        _Internal::table_body_pivot_group_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive table_body_pivot_group_vertical_stroke = 83;
+  if (cached_has_bits & 0x01000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(83, _Internal::table_body_pivot_group_vertical_stroke(this),
+        _Internal::table_body_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive table_body_pivot_deemphasis_horizontal_stroke = 84;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(84, _Internal::table_body_pivot_deemphasis_horizontal_stroke(this),
+        _Internal::table_body_pivot_deemphasis_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive table_body_pivot_emphasis_vertical_stroke = 85;
+  if (cached_has_bits & 0x04000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(85, _Internal::table_body_pivot_emphasis_vertical_stroke(this),
+        _Internal::table_body_pivot_emphasis_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive header_column_pivot_group_horizontal_stroke = 86;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(86, _Internal::header_column_pivot_group_horizontal_stroke(this),
+        _Internal::header_column_pivot_group_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive header_column_pivot_group_deemphasis_stroke = 87;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(87, _Internal::header_column_pivot_group_deemphasis_stroke(this),
+        _Internal::header_column_pivot_group_deemphasis_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive header_column_pivot_separator_stroke = 88;
+  if (cached_has_bits & 0x20000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(88, _Internal::header_column_pivot_separator_stroke(this),
+        _Internal::header_column_pivot_separator_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive header_row_pivot_group_vertical_stroke = 89;
+  if (cached_has_bits & 0x40000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(89, _Internal::header_row_pivot_group_vertical_stroke(this),
+        _Internal::header_row_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive header_row_pivot_group_deemphasis_stroke = 90;
+  if (cached_has_bits & 0x80000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(90, _Internal::header_row_pivot_group_deemphasis_stroke(this),
+        _Internal::header_row_pivot_group_deemphasis_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional .TSD.StrokeArchive header_row_pivot_title_stroke = 91;
+  if (cached_has_bits & 0x00000001u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(91, _Internal::header_row_pivot_title_stroke(this),
+        _Internal::header_row_pivot_title_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSD.StrokeArchive footer_row_pivot_group_vertical_stroke = 92;
+  if (cached_has_bits & 0x00000002u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(92, _Internal::footer_row_pivot_group_vertical_stroke(this),
+        _Internal::footer_row_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.TableStylePropertiesArchive)
@@ -5110,11 +5645,11 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.TableStylePropertiesArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional string master_font_family = 41;
     if (cached_has_bits & 0x00000001u) {
@@ -5127,49 +5662,49 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *banded_fill_);
+          *_impl_.banded_fill_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_separator_stroke = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_row_separator_stroke_);
+          *_impl_.deprecated_header_row_separator_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_border_stroke = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_row_border_stroke_);
+          *_impl_.deprecated_header_row_border_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_border_stroke = 7;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_column_border_stroke_);
+          *_impl_.deprecated_header_column_border_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_separator_stroke = 8;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_column_separator_stroke_);
+          *_impl_.deprecated_header_column_separator_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_separator_stroke = 10;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_footer_row_separator_stroke_);
+          *_impl_.deprecated_footer_row_separator_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_border_stroke = 11;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_footer_row_border_stroke_);
+          *_impl_.deprecated_footer_row_border_stroke_);
     }
 
   }
@@ -5178,56 +5713,56 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_table_body_horizontal_border_stroke_);
+          *_impl_.deprecated_table_body_horizontal_border_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_horizontal_stroke = 23;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_row_horizontal_stroke_);
+          *_impl_.deprecated_header_row_horizontal_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_row_vertical_stroke = 24;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_row_vertical_stroke_);
+          *_impl_.deprecated_header_row_vertical_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_horizontal_stroke = 25;
     if (cached_has_bits & 0x00000800u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_column_horizontal_stroke_);
+          *_impl_.deprecated_header_column_horizontal_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_header_column_vertical_stroke = 26;
     if (cached_has_bits & 0x00001000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_header_column_vertical_stroke_);
+          *_impl_.deprecated_header_column_vertical_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_horizontal_stroke = 27;
     if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_footer_row_horizontal_stroke_);
+          *_impl_.deprecated_footer_row_horizontal_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_footer_row_vertical_stroke = 28;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_footer_row_vertical_stroke_);
+          *_impl_.deprecated_footer_row_vertical_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_border_stroke = 29;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_table_body_vertical_border_stroke_);
+          *_impl_.deprecated_table_body_vertical_border_stroke_);
     }
 
   }
@@ -5236,56 +5771,56 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_table_body_horizontal_stroke_);
+          *_impl_.deprecated_table_body_horizontal_stroke_);
     }
 
     // optional .TST.Deprecated_TableStrokeArchive deprecated_table_body_vertical_stroke = 31;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *deprecated_table_body_vertical_stroke_);
+          *_impl_.deprecated_table_body_vertical_stroke_);
     }
 
     // optional .TST.StrokePresetListArchive stroke_preset_list = 32;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *stroke_preset_list_);
+          *_impl_.stroke_preset_list_);
     }
 
     // optional .TSD.StrokeArchive header_row_separator_stroke = 46;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_separator_stroke_);
+          *_impl_.header_row_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_row_border_stroke = 47;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_border_stroke_);
+          *_impl_.header_row_border_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_row_horizontal_stroke = 48;
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_horizontal_stroke_);
+          *_impl_.header_row_horizontal_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_row_vertical_stroke = 49;
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_vertical_stroke_);
+          *_impl_.header_row_vertical_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_column_border_stroke = 50;
     if (cached_has_bits & 0x00800000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_border_stroke_);
+          *_impl_.header_column_border_stroke_);
     }
 
   }
@@ -5294,115 +5829,115 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x01000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_separator_stroke_);
+          *_impl_.header_column_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_column_horizontal_stroke = 52;
     if (cached_has_bits & 0x02000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_horizontal_stroke_);
+          *_impl_.header_column_horizontal_stroke_);
     }
 
     // optional .TSD.StrokeArchive header_column_vertical_stroke = 53;
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_vertical_stroke_);
+          *_impl_.header_column_vertical_stroke_);
     }
 
     // optional .TSD.StrokeArchive footer_row_separator_stroke = 54;
     if (cached_has_bits & 0x08000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_separator_stroke_);
+          *_impl_.footer_row_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive footer_row_border_stroke = 55;
     if (cached_has_bits & 0x10000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_border_stroke_);
+          *_impl_.footer_row_border_stroke_);
     }
 
     // optional .TSD.StrokeArchive footer_row_horizontal_stroke = 56;
     if (cached_has_bits & 0x20000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_horizontal_stroke_);
+          *_impl_.footer_row_horizontal_stroke_);
     }
 
     // optional .TSD.StrokeArchive footer_row_vertical_stroke = 57;
     if (cached_has_bits & 0x40000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_vertical_stroke_);
+          *_impl_.footer_row_vertical_stroke_);
     }
 
     // optional .TSD.StrokeArchive table_body_horizontal_border_stroke = 58;
     if (cached_has_bits & 0x80000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *table_body_horizontal_border_stroke_);
+          *_impl_.table_body_horizontal_border_stroke_);
     }
 
   }
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSD.StrokeArchive table_body_vertical_border_stroke = 59;
     if (cached_has_bits & 0x00000001u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *table_body_vertical_border_stroke_);
+          *_impl_.table_body_vertical_border_stroke_);
     }
 
     // optional .TSD.StrokeArchive table_body_horizontal_stroke = 60;
     if (cached_has_bits & 0x00000002u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *table_body_horizontal_stroke_);
+          *_impl_.table_body_horizontal_stroke_);
     }
 
     // optional .TSD.StrokeArchive table_body_vertical_stroke = 61;
     if (cached_has_bits & 0x00000004u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *table_body_vertical_stroke_);
+          *_impl_.table_body_vertical_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level1_top_stroke = 62;
     if (cached_has_bits & 0x00000008u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_top_stroke_);
+          *_impl_.category_level1_top_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level2_top_stroke = 63;
     if (cached_has_bits & 0x00000010u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_top_stroke_);
+          *_impl_.category_level2_top_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level3_top_stroke = 64;
     if (cached_has_bits & 0x00000020u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_top_stroke_);
+          *_impl_.category_level3_top_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level4_top_stroke = 65;
     if (cached_has_bits & 0x00000040u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_top_stroke_);
+          *_impl_.category_level4_top_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level5_top_stroke = 66;
     if (cached_has_bits & 0x00000080u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_top_stroke_);
+          *_impl_.category_level5_top_stroke_);
     }
 
   }
@@ -5411,56 +5946,56 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_bottom_stroke_);
+          *_impl_.category_level1_bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level2_bottom_stroke = 68;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_bottom_stroke_);
+          *_impl_.category_level2_bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level3_bottom_stroke = 69;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_bottom_stroke_);
+          *_impl_.category_level3_bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level4_bottom_stroke = 70;
     if (cached_has_bits & 0x00000800u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_bottom_stroke_);
+          *_impl_.category_level4_bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level5_bottom_stroke = 71;
     if (cached_has_bits & 0x00001000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_bottom_stroke_);
+          *_impl_.category_level5_bottom_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level1_interior_stroke = 72;
     if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_interior_stroke_);
+          *_impl_.category_level1_interior_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level2_interior_stroke = 73;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_interior_stroke_);
+          *_impl_.category_level2_interior_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level3_interior_stroke = 74;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_interior_stroke_);
+          *_impl_.category_level3_interior_stroke_);
     }
 
   }
@@ -5469,398 +6004,566 @@ size_t TableStylePropertiesArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_interior_stroke_);
+          *_impl_.category_level4_interior_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level5_interior_stroke = 76;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_interior_stroke_);
+          *_impl_.category_level5_interior_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level1_label_separator_stroke = 77;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_label_separator_stroke_);
+          *_impl_.category_level1_label_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level2_label_separator_stroke = 78;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_label_separator_stroke_);
+          *_impl_.category_level2_label_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level3_label_separator_stroke = 79;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_label_separator_stroke_);
+          *_impl_.category_level3_label_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level4_label_separator_stroke = 80;
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_label_separator_stroke_);
+          *_impl_.category_level4_label_separator_stroke_);
     }
 
     // optional .TSD.StrokeArchive category_level5_label_separator_stroke = 81;
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_label_separator_stroke_);
+          *_impl_.category_level5_label_separator_stroke_);
     }
 
-    // optional bool banded_rows = 1;
+    // optional .TSD.StrokeArchive table_body_pivot_group_horizontal_stroke = 82;
     if (cached_has_bits & 0x00800000u) {
-      total_size += 1 + 1;
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.table_body_pivot_group_horizontal_stroke_);
     }
 
   }
   if (cached_has_bits & 0xff000000u) {
-    // optional bool behaves_like_spreadsheet = 21;
+    // optional .TSD.StrokeArchive table_body_pivot_group_vertical_stroke = 83;
     if (cached_has_bits & 0x01000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.table_body_pivot_group_vertical_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive table_body_pivot_deemphasis_horizontal_stroke = 84;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.table_body_pivot_deemphasis_horizontal_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive table_body_pivot_emphasis_vertical_stroke = 85;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.table_body_pivot_emphasis_vertical_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive header_column_pivot_group_horizontal_stroke = 86;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_group_horizontal_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive header_column_pivot_group_deemphasis_stroke = 87;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_group_deemphasis_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive header_column_pivot_separator_stroke = 88;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_separator_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive header_row_pivot_group_vertical_stroke = 89;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_group_vertical_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive header_row_pivot_group_deemphasis_stroke = 90;
+    if (cached_has_bits & 0x80000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_group_deemphasis_stroke_);
+    }
+
+  }
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
+    // optional .TSD.StrokeArchive header_row_pivot_title_stroke = 91;
+    if (cached_has_bits & 0x00000001u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_title_stroke_);
+    }
+
+    // optional .TSD.StrokeArchive footer_row_pivot_group_vertical_stroke = 92;
+    if (cached_has_bits & 0x00000002u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.footer_row_pivot_group_vertical_stroke_);
+    }
+
+    // optional bool banded_rows = 1;
+    if (cached_has_bits & 0x00000004u) {
+      total_size += 1 + 1;
+    }
+
+    // optional bool behaves_like_spreadsheet = 21;
+    if (cached_has_bits & 0x00000008u) {
       total_size += 2 + 1;
     }
 
     // optional bool auto_resize = 22;
-    if (cached_has_bits & 0x02000000u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 2 + 1;
     }
 
     // optional bool v_strokes_visible = 33;
-    if (cached_has_bits & 0x04000000u) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 2 + 1;
     }
 
     // optional bool h_strokes_visible = 34;
-    if (cached_has_bits & 0x08000000u) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 + 1;
     }
 
     // optional bool hr_separator_visible = 35;
-    if (cached_has_bits & 0x10000000u) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0x0000ff00u) {
     // optional bool hc_separator_visible = 36;
-    if (cached_has_bits & 0x20000000u) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 2 + 1;
     }
 
     // optional bool footer_separator_visible = 37;
-    if (cached_has_bits & 0x40000000u) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 2 + 1;
     }
 
     // optional int32 OBSOLETE_master_font_size = 40;
-    if (cached_has_bits & 0x80000000u) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
+        ::_pbi::WireFormatLite::Int32Size(
           this->_internal_obsolete_master_font_size());
     }
 
-  }
-  cached_has_bits = _has_bits_[2];
-  if (cached_has_bits & 0x0000003fu) {
     // optional bool table_border_visible = 38;
-    if (cached_has_bits & 0x00000001u) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 2 + 1;
     }
 
     // optional bool table_header_border_visible = 39;
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 2 + 1;
     }
 
     // optional bool table_hc_divider_visible = 42;
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 + 1;
     }
 
     // optional bool table_hr_divider_visible = 43;
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 1;
     }
 
     // optional bool table_footer_divider_visible = 44;
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 + 1;
     }
 
-    // optional .TSWP.WritingDirectionType writing_direction = 45;
-    if (cached_has_bits & 0x00000020u) {
-      total_size += 2 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_writing_direction());
-    }
+  }
+  // optional .TSWP.WritingDirectionType writing_direction = 45;
+  if (cached_has_bits & 0x00010000u) {
+    total_size += 2 +
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_writing_direction());
+  }
 
-  }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TableStylePropertiesArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TableStylePropertiesArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TableStylePropertiesArchive::GetClassData() const { return &_class_data_; }
 
-void TableStylePropertiesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TableStylePropertiesArchive *>(to)->MergeFrom(
-      static_cast<const TableStylePropertiesArchive &>(from));
-}
 
-
-void TableStylePropertiesArchive::MergeFrom(const TableStylePropertiesArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStylePropertiesArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TableStylePropertiesArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TableStylePropertiesArchive*>(&to_msg);
+  auto& from = static_cast<const TableStylePropertiesArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStylePropertiesArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_master_font_family(from._internal_master_font_family());
+      _this->_internal_set_master_font_family(from._internal_master_font_family());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_banded_fill()->::TSD::FillArchive::MergeFrom(from._internal_banded_fill());
+      _this->_internal_mutable_banded_fill()->::TSD::FillArchive::MergeFrom(
+          from._internal_banded_fill());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_deprecated_header_row_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_row_separator_stroke());
+      _this->_internal_mutable_deprecated_header_row_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_row_separator_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_deprecated_header_row_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_row_border_stroke());
+      _this->_internal_mutable_deprecated_header_row_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_row_border_stroke());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_deprecated_header_column_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_column_border_stroke());
+      _this->_internal_mutable_deprecated_header_column_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_column_border_stroke());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_deprecated_header_column_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_column_separator_stroke());
+      _this->_internal_mutable_deprecated_header_column_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_column_separator_stroke());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_deprecated_footer_row_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_footer_row_separator_stroke());
+      _this->_internal_mutable_deprecated_footer_row_separator_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_footer_row_separator_stroke());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_deprecated_footer_row_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_footer_row_border_stroke());
+      _this->_internal_mutable_deprecated_footer_row_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_footer_row_border_stroke());
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_deprecated_table_body_horizontal_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_table_body_horizontal_border_stroke());
+      _this->_internal_mutable_deprecated_table_body_horizontal_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_table_body_horizontal_border_stroke());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_deprecated_header_row_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_row_horizontal_stroke());
+      _this->_internal_mutable_deprecated_header_row_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000400u) {
-      _internal_mutable_deprecated_header_row_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_row_vertical_stroke());
+      _this->_internal_mutable_deprecated_header_row_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_row_vertical_stroke());
     }
     if (cached_has_bits & 0x00000800u) {
-      _internal_mutable_deprecated_header_column_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_column_horizontal_stroke());
+      _this->_internal_mutable_deprecated_header_column_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_column_horizontal_stroke());
     }
     if (cached_has_bits & 0x00001000u) {
-      _internal_mutable_deprecated_header_column_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_header_column_vertical_stroke());
+      _this->_internal_mutable_deprecated_header_column_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_header_column_vertical_stroke());
     }
     if (cached_has_bits & 0x00002000u) {
-      _internal_mutable_deprecated_footer_row_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_footer_row_horizontal_stroke());
+      _this->_internal_mutable_deprecated_footer_row_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_footer_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x00004000u) {
-      _internal_mutable_deprecated_footer_row_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_footer_row_vertical_stroke());
+      _this->_internal_mutable_deprecated_footer_row_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_footer_row_vertical_stroke());
     }
     if (cached_has_bits & 0x00008000u) {
-      _internal_mutable_deprecated_table_body_vertical_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_table_body_vertical_border_stroke());
+      _this->_internal_mutable_deprecated_table_body_vertical_border_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_table_body_vertical_border_stroke());
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _internal_mutable_deprecated_table_body_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_table_body_horizontal_stroke());
+      _this->_internal_mutable_deprecated_table_body_horizontal_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_table_body_horizontal_stroke());
     }
     if (cached_has_bits & 0x00020000u) {
-      _internal_mutable_deprecated_table_body_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(from._internal_deprecated_table_body_vertical_stroke());
+      _this->_internal_mutable_deprecated_table_body_vertical_stroke()->::TST::Deprecated_TableStrokeArchive::MergeFrom(
+          from._internal_deprecated_table_body_vertical_stroke());
     }
     if (cached_has_bits & 0x00040000u) {
-      _internal_mutable_stroke_preset_list()->::TST::StrokePresetListArchive::MergeFrom(from._internal_stroke_preset_list());
+      _this->_internal_mutable_stroke_preset_list()->::TST::StrokePresetListArchive::MergeFrom(
+          from._internal_stroke_preset_list());
     }
     if (cached_has_bits & 0x00080000u) {
-      _internal_mutable_header_row_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_row_separator_stroke());
+      _this->_internal_mutable_header_row_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_separator_stroke());
     }
     if (cached_has_bits & 0x00100000u) {
-      _internal_mutable_header_row_border_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_row_border_stroke());
+      _this->_internal_mutable_header_row_border_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_border_stroke());
     }
     if (cached_has_bits & 0x00200000u) {
-      _internal_mutable_header_row_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_row_horizontal_stroke());
+      _this->_internal_mutable_header_row_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x00400000u) {
-      _internal_mutable_header_row_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_row_vertical_stroke());
+      _this->_internal_mutable_header_row_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_vertical_stroke());
     }
     if (cached_has_bits & 0x00800000u) {
-      _internal_mutable_header_column_border_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_column_border_stroke());
+      _this->_internal_mutable_header_column_border_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_border_stroke());
     }
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      _internal_mutable_header_column_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_column_separator_stroke());
+      _this->_internal_mutable_header_column_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_separator_stroke());
     }
     if (cached_has_bits & 0x02000000u) {
-      _internal_mutable_header_column_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_column_horizontal_stroke());
+      _this->_internal_mutable_header_column_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_horizontal_stroke());
     }
     if (cached_has_bits & 0x04000000u) {
-      _internal_mutable_header_column_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_header_column_vertical_stroke());
+      _this->_internal_mutable_header_column_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_vertical_stroke());
     }
     if (cached_has_bits & 0x08000000u) {
-      _internal_mutable_footer_row_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_footer_row_separator_stroke());
+      _this->_internal_mutable_footer_row_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_footer_row_separator_stroke());
     }
     if (cached_has_bits & 0x10000000u) {
-      _internal_mutable_footer_row_border_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_footer_row_border_stroke());
+      _this->_internal_mutable_footer_row_border_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_footer_row_border_stroke());
     }
     if (cached_has_bits & 0x20000000u) {
-      _internal_mutable_footer_row_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_footer_row_horizontal_stroke());
+      _this->_internal_mutable_footer_row_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_footer_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x40000000u) {
-      _internal_mutable_footer_row_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_footer_row_vertical_stroke());
+      _this->_internal_mutable_footer_row_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_footer_row_vertical_stroke());
     }
     if (cached_has_bits & 0x80000000u) {
-      _internal_mutable_table_body_horizontal_border_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_table_body_horizontal_border_stroke());
+      _this->_internal_mutable_table_body_horizontal_border_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_horizontal_border_stroke());
     }
   }
-  cached_has_bits = from._has_bits_[1];
+  cached_has_bits = from._impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_table_body_vertical_border_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_table_body_vertical_border_stroke());
+      _this->_internal_mutable_table_body_vertical_border_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_vertical_border_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_table_body_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_table_body_horizontal_stroke());
+      _this->_internal_mutable_table_body_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_table_body_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_table_body_vertical_stroke());
+      _this->_internal_mutable_table_body_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_vertical_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_category_level1_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level1_top_stroke());
+      _this->_internal_mutable_category_level1_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level1_top_stroke());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_category_level2_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level2_top_stroke());
+      _this->_internal_mutable_category_level2_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level2_top_stroke());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_category_level3_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level3_top_stroke());
+      _this->_internal_mutable_category_level3_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level3_top_stroke());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_category_level4_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level4_top_stroke());
+      _this->_internal_mutable_category_level4_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level4_top_stroke());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_category_level5_top_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level5_top_stroke());
+      _this->_internal_mutable_category_level5_top_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level5_top_stroke());
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_category_level1_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level1_bottom_stroke());
+      _this->_internal_mutable_category_level1_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level1_bottom_stroke());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_category_level2_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level2_bottom_stroke());
+      _this->_internal_mutable_category_level2_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level2_bottom_stroke());
     }
     if (cached_has_bits & 0x00000400u) {
-      _internal_mutable_category_level3_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level3_bottom_stroke());
+      _this->_internal_mutable_category_level3_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level3_bottom_stroke());
     }
     if (cached_has_bits & 0x00000800u) {
-      _internal_mutable_category_level4_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level4_bottom_stroke());
+      _this->_internal_mutable_category_level4_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level4_bottom_stroke());
     }
     if (cached_has_bits & 0x00001000u) {
-      _internal_mutable_category_level5_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level5_bottom_stroke());
+      _this->_internal_mutable_category_level5_bottom_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level5_bottom_stroke());
     }
     if (cached_has_bits & 0x00002000u) {
-      _internal_mutable_category_level1_interior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level1_interior_stroke());
+      _this->_internal_mutable_category_level1_interior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level1_interior_stroke());
     }
     if (cached_has_bits & 0x00004000u) {
-      _internal_mutable_category_level2_interior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level2_interior_stroke());
+      _this->_internal_mutable_category_level2_interior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level2_interior_stroke());
     }
     if (cached_has_bits & 0x00008000u) {
-      _internal_mutable_category_level3_interior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level3_interior_stroke());
+      _this->_internal_mutable_category_level3_interior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level3_interior_stroke());
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _internal_mutable_category_level4_interior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level4_interior_stroke());
+      _this->_internal_mutable_category_level4_interior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level4_interior_stroke());
     }
     if (cached_has_bits & 0x00020000u) {
-      _internal_mutable_category_level5_interior_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level5_interior_stroke());
+      _this->_internal_mutable_category_level5_interior_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level5_interior_stroke());
     }
     if (cached_has_bits & 0x00040000u) {
-      _internal_mutable_category_level1_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level1_label_separator_stroke());
+      _this->_internal_mutable_category_level1_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level1_label_separator_stroke());
     }
     if (cached_has_bits & 0x00080000u) {
-      _internal_mutable_category_level2_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level2_label_separator_stroke());
+      _this->_internal_mutable_category_level2_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level2_label_separator_stroke());
     }
     if (cached_has_bits & 0x00100000u) {
-      _internal_mutable_category_level3_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level3_label_separator_stroke());
+      _this->_internal_mutable_category_level3_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level3_label_separator_stroke());
     }
     if (cached_has_bits & 0x00200000u) {
-      _internal_mutable_category_level4_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level4_label_separator_stroke());
+      _this->_internal_mutable_category_level4_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level4_label_separator_stroke());
     }
     if (cached_has_bits & 0x00400000u) {
-      _internal_mutable_category_level5_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(from._internal_category_level5_label_separator_stroke());
+      _this->_internal_mutable_category_level5_label_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_category_level5_label_separator_stroke());
     }
     if (cached_has_bits & 0x00800000u) {
-      banded_rows_ = from.banded_rows_;
+      _this->_internal_mutable_table_body_pivot_group_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_pivot_group_horizontal_stroke());
     }
-    _has_bits_[1] |= cached_has_bits;
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      behaves_like_spreadsheet_ = from.behaves_like_spreadsheet_;
+      _this->_internal_mutable_table_body_pivot_group_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x02000000u) {
-      auto_resize_ = from.auto_resize_;
+      _this->_internal_mutable_table_body_pivot_deemphasis_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_pivot_deemphasis_horizontal_stroke());
     }
     if (cached_has_bits & 0x04000000u) {
-      v_strokes_visible_ = from.v_strokes_visible_;
+      _this->_internal_mutable_table_body_pivot_emphasis_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_table_body_pivot_emphasis_vertical_stroke());
     }
     if (cached_has_bits & 0x08000000u) {
-      h_strokes_visible_ = from.h_strokes_visible_;
+      _this->_internal_mutable_header_column_pivot_group_horizontal_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_group_horizontal_stroke());
     }
     if (cached_has_bits & 0x10000000u) {
-      hr_separator_visible_ = from.hr_separator_visible_;
+      _this->_internal_mutable_header_column_pivot_group_deemphasis_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_group_deemphasis_stroke());
     }
     if (cached_has_bits & 0x20000000u) {
-      hc_separator_visible_ = from.hc_separator_visible_;
+      _this->_internal_mutable_header_column_pivot_separator_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_separator_stroke());
     }
     if (cached_has_bits & 0x40000000u) {
-      footer_separator_visible_ = from.footer_separator_visible_;
+      _this->_internal_mutable_header_row_pivot_group_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x80000000u) {
-      obsolete_master_font_size_ = from.obsolete_master_font_size_;
+      _this->_internal_mutable_header_row_pivot_group_deemphasis_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_group_deemphasis_stroke());
     }
-    _has_bits_[1] |= cached_has_bits;
   }
-  cached_has_bits = from._has_bits_[2];
-  if (cached_has_bits & 0x0000003fu) {
+  cached_has_bits = from._impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      table_border_visible_ = from.table_border_visible_;
+      _this->_internal_mutable_header_row_pivot_title_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_title_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      table_header_border_visible_ = from.table_header_border_visible_;
+      _this->_internal_mutable_footer_row_pivot_group_vertical_stroke()->::TSD::StrokeArchive::MergeFrom(
+          from._internal_footer_row_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      table_hc_divider_visible_ = from.table_hc_divider_visible_;
+      _this->_impl_.banded_rows_ = from._impl_.banded_rows_;
     }
     if (cached_has_bits & 0x00000008u) {
-      table_hr_divider_visible_ = from.table_hr_divider_visible_;
+      _this->_impl_.behaves_like_spreadsheet_ = from._impl_.behaves_like_spreadsheet_;
     }
     if (cached_has_bits & 0x00000010u) {
-      table_footer_divider_visible_ = from.table_footer_divider_visible_;
+      _this->_impl_.auto_resize_ = from._impl_.auto_resize_;
     }
     if (cached_has_bits & 0x00000020u) {
-      writing_direction_ = from.writing_direction_;
+      _this->_impl_.v_strokes_visible_ = from._impl_.v_strokes_visible_;
     }
-    _has_bits_[2] |= cached_has_bits;
+    if (cached_has_bits & 0x00000040u) {
+      _this->_impl_.h_strokes_visible_ = from._impl_.h_strokes_visible_;
+    }
+    if (cached_has_bits & 0x00000080u) {
+      _this->_impl_.hr_separator_visible_ = from._impl_.hr_separator_visible_;
+    }
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.hc_separator_visible_ = from._impl_.hc_separator_visible_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.footer_separator_visible_ = from._impl_.footer_separator_visible_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.obsolete_master_font_size_ = from._impl_.obsolete_master_font_size_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.table_border_visible_ = from._impl_.table_border_visible_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.table_header_border_visible_ = from._impl_.table_header_border_visible_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.table_hc_divider_visible_ = from._impl_.table_hc_divider_visible_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.table_hr_divider_visible_ = from._impl_.table_hr_divider_visible_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.table_footer_divider_visible_ = from._impl_.table_footer_divider_visible_;
+    }
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00010000u) {
+    _this->_internal_set_writing_direction(from._internal_writing_direction());
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TableStylePropertiesArchive::CopyFrom(const TableStylePropertiesArchive& from) {
@@ -5872,192 +6575,226 @@ void TableStylePropertiesArchive::CopyFrom(const TableStylePropertiesArchive& fr
 
 bool TableStylePropertiesArchive::IsInitialized() const {
   if (_internal_has_banded_fill()) {
-    if (!banded_fill_->IsInitialized()) return false;
+    if (!_impl_.banded_fill_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_row_separator_stroke()) {
-    if (!deprecated_header_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_row_border_stroke()) {
-    if (!deprecated_header_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_column_border_stroke()) {
-    if (!deprecated_header_column_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_column_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_column_separator_stroke()) {
-    if (!deprecated_header_column_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_column_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_footer_row_separator_stroke()) {
-    if (!deprecated_footer_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_footer_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_footer_row_border_stroke()) {
-    if (!deprecated_footer_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_footer_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_table_body_horizontal_border_stroke()) {
-    if (!deprecated_table_body_horizontal_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_table_body_horizontal_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_row_horizontal_stroke()) {
-    if (!deprecated_header_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_row_vertical_stroke()) {
-    if (!deprecated_header_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_column_horizontal_stroke()) {
-    if (!deprecated_header_column_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_column_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_header_column_vertical_stroke()) {
-    if (!deprecated_header_column_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_header_column_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_footer_row_horizontal_stroke()) {
-    if (!deprecated_footer_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_footer_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_footer_row_vertical_stroke()) {
-    if (!deprecated_footer_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_footer_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_table_body_vertical_border_stroke()) {
-    if (!deprecated_table_body_vertical_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_table_body_vertical_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_table_body_horizontal_stroke()) {
-    if (!deprecated_table_body_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_table_body_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_deprecated_table_body_vertical_stroke()) {
-    if (!deprecated_table_body_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.deprecated_table_body_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_stroke_preset_list()) {
-    if (!stroke_preset_list_->IsInitialized()) return false;
+    if (!_impl_.stroke_preset_list_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_separator_stroke()) {
-    if (!header_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_border_stroke()) {
-    if (!header_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_horizontal_stroke()) {
-    if (!header_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_vertical_stroke()) {
-    if (!header_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_border_stroke()) {
-    if (!header_column_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_separator_stroke()) {
-    if (!header_column_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_horizontal_stroke()) {
-    if (!header_column_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_vertical_stroke()) {
-    if (!header_column_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_separator_stroke()) {
-    if (!footer_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_border_stroke()) {
-    if (!footer_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_horizontal_stroke()) {
-    if (!footer_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_vertical_stroke()) {
-    if (!footer_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_table_body_horizontal_border_stroke()) {
-    if (!table_body_horizontal_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.table_body_horizontal_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_table_body_vertical_border_stroke()) {
-    if (!table_body_vertical_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.table_body_vertical_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_table_body_horizontal_stroke()) {
-    if (!table_body_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.table_body_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_table_body_vertical_stroke()) {
-    if (!table_body_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.table_body_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_top_stroke()) {
-    if (!category_level1_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_top_stroke()) {
-    if (!category_level2_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_top_stroke()) {
-    if (!category_level3_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_top_stroke()) {
-    if (!category_level4_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_top_stroke()) {
-    if (!category_level5_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_bottom_stroke()) {
-    if (!category_level1_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_bottom_stroke()) {
-    if (!category_level2_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_bottom_stroke()) {
-    if (!category_level3_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_bottom_stroke()) {
-    if (!category_level4_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_bottom_stroke()) {
-    if (!category_level5_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_interior_stroke()) {
-    if (!category_level1_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_interior_stroke()) {
-    if (!category_level2_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_interior_stroke()) {
-    if (!category_level3_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_interior_stroke()) {
-    if (!category_level4_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_interior_stroke()) {
-    if (!category_level5_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_label_separator_stroke()) {
-    if (!category_level1_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_label_separator_stroke()) {
-    if (!category_level2_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_label_separator_stroke()) {
-    if (!category_level3_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_label_separator_stroke()) {
-    if (!category_level4_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_label_separator_stroke()) {
-    if (!category_level5_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_label_separator_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_table_body_pivot_group_horizontal_stroke()) {
+    if (!_impl_.table_body_pivot_group_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_table_body_pivot_group_vertical_stroke()) {
+    if (!_impl_.table_body_pivot_group_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_table_body_pivot_deemphasis_horizontal_stroke()) {
+    if (!_impl_.table_body_pivot_deemphasis_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_table_body_pivot_emphasis_vertical_stroke()) {
+    if (!_impl_.table_body_pivot_emphasis_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_group_horizontal_stroke()) {
+    if (!_impl_.header_column_pivot_group_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_group_deemphasis_stroke()) {
+    if (!_impl_.header_column_pivot_group_deemphasis_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_separator_stroke()) {
+    if (!_impl_.header_column_pivot_separator_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_group_vertical_stroke()) {
+    if (!_impl_.header_row_pivot_group_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_group_deemphasis_stroke()) {
+    if (!_impl_.header_row_pivot_group_deemphasis_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_title_stroke()) {
+    if (!_impl_.header_row_pivot_title_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_footer_row_pivot_group_vertical_stroke()) {
+    if (!_impl_.footer_row_pivot_group_vertical_stroke_->IsInitialized()) return false;
   }
   return true;
 }
 
 void TableStylePropertiesArchive::InternalSwap(TableStylePropertiesArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(_has_bits_[1], other->_has_bits_[1]);
-  swap(_has_bits_[2], other->_has_bits_[2]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_._has_bits_[1], other->_impl_._has_bits_[1]);
+  swap(_impl_._has_bits_[2], other->_impl_._has_bits_[2]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &master_font_family_, GetArenaForAllocation(),
-      &other->master_font_family_, other->GetArenaForAllocation()
+      &_impl_.master_font_family_, lhs_arena,
+      &other->_impl_.master_font_family_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TableStylePropertiesArchive, table_footer_divider_visible_)
-      + sizeof(TableStylePropertiesArchive::table_footer_divider_visible_)
-      - PROTOBUF_FIELD_OFFSET(TableStylePropertiesArchive, banded_fill_)>(
-          reinterpret_cast<char*>(&banded_fill_),
-          reinterpret_cast<char*>(&other->banded_fill_));
-  swap(writing_direction_, other->writing_direction_);
+      PROTOBUF_FIELD_OFFSET(TableStylePropertiesArchive, _impl_.table_footer_divider_visible_)
+      + sizeof(TableStylePropertiesArchive::_impl_.table_footer_divider_visible_)
+      - PROTOBUF_FIELD_OFFSET(TableStylePropertiesArchive, _impl_.banded_fill_)>(
+          reinterpret_cast<char*>(&_impl_.banded_fill_),
+          reinterpret_cast<char*>(&other->_impl_.banded_fill_));
+  swap(_impl_.writing_direction_, other->_impl_.writing_direction_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TableStylePropertiesArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[5]);
 }
@@ -6066,7 +6803,7 @@ void TableStylePropertiesArchive::InternalSwap(TableStylePropertiesArchive* othe
 
 class TableStylePresetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TableStylePresetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TableStylePresetArchive>()._impl_._has_bits_);
   static void set_has_index(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
@@ -6082,183 +6819,186 @@ class TableStylePresetArchive::_Internal {
 
 const ::TSP::Reference&
 TableStylePresetArchive::_Internal::image(const TableStylePresetArchive* msg) {
-  return *msg->image_;
+  return *msg->_impl_.image_;
 }
 const ::TSP::Reference&
 TableStylePresetArchive::_Internal::style_network(const TableStylePresetArchive* msg) {
-  return *msg->style_network_;
+  return *msg->_impl_.style_network_;
 }
 void TableStylePresetArchive::clear_image() {
-  if (image_ != nullptr) image_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.image_ != nullptr) _impl_.image_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void TableStylePresetArchive::clear_style_network() {
-  if (style_network_ != nullptr) style_network_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.style_network_ != nullptr) _impl_.style_network_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 TableStylePresetArchive::TableStylePresetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.TableStylePresetArchive)
 }
 TableStylePresetArchive::TableStylePresetArchive(const TableStylePresetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TableStylePresetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.image_){nullptr}
+    , decltype(_impl_.style_network_){nullptr}
+    , decltype(_impl_.index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_image()) {
-    image_ = new ::TSP::Reference(*from.image_);
-  } else {
-    image_ = nullptr;
+    _this->_impl_.image_ = new ::TSP::Reference(*from._impl_.image_);
   }
   if (from._internal_has_style_network()) {
-    style_network_ = new ::TSP::Reference(*from.style_network_);
-  } else {
-    style_network_ = nullptr;
+    _this->_impl_.style_network_ = new ::TSP::Reference(*from._impl_.style_network_);
   }
-  index_ = from.index_;
+  _this->_impl_.index_ = from._impl_.index_;
   // @@protoc_insertion_point(copy_constructor:TST.TableStylePresetArchive)
 }
 
-inline void TableStylePresetArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&image_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
-    reinterpret_cast<char*>(&image_)) + sizeof(index_));
+inline void TableStylePresetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.image_){nullptr}
+    , decltype(_impl_.style_network_){nullptr}
+    , decltype(_impl_.index_){0}
+  };
 }
 
 TableStylePresetArchive::~TableStylePresetArchive() {
   // @@protoc_insertion_point(destructor:TST.TableStylePresetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TableStylePresetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete image_;
-  if (this != internal_default_instance()) delete style_network_;
+  if (this != internal_default_instance()) delete _impl_.image_;
+  if (this != internal_default_instance()) delete _impl_.style_network_;
 }
 
-void TableStylePresetArchive::ArenaDtor(void* object) {
-  TableStylePresetArchive* _this = reinterpret_cast< TableStylePresetArchive* >(object);
-  (void)_this;
-}
-void TableStylePresetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TableStylePresetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TableStylePresetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.TableStylePresetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(image_ != nullptr);
-      image_->Clear();
+      GOOGLE_DCHECK(_impl_.image_ != nullptr);
+      _impl_.image_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(style_network_ != nullptr);
-      style_network_->Clear();
+      GOOGLE_DCHECK(_impl_.style_network_ != nullptr);
+      _impl_.style_network_->Clear();
     }
   }
-  index_ = 0;
-  _has_bits_.Clear();
+  _impl_.index_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TableStylePresetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TableStylePresetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional int32 index = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_index(&has_bits);
-          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference image = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_image(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference style_network = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_style_network(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TableStylePresetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TableStylePresetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.TableStylePresetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional int32 index = 1;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_index(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_index(), target);
   }
 
   // optional .TSP.Reference image = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::image(this), target, stream);
+      InternalWriteMessage(2, _Internal::image(this),
+        _Internal::image(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference style_network = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::style_network(this), target, stream);
+      InternalWriteMessage(3, _Internal::style_network(this),
+        _Internal::style_network(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.TableStylePresetArchive)
@@ -6269,76 +7009,66 @@ size_t TableStylePresetArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.TableStylePresetArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     // optional .TSP.Reference image = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *image_);
+          *_impl_.image_);
     }
 
     // optional .TSP.Reference style_network = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *style_network_);
+          *_impl_.style_network_);
     }
 
     // optional int32 index = 1;
     if (cached_has_bits & 0x00000004u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_index());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_index());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TableStylePresetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TableStylePresetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TableStylePresetArchive::GetClassData() const { return &_class_data_; }
 
-void TableStylePresetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TableStylePresetArchive *>(to)->MergeFrom(
-      static_cast<const TableStylePresetArchive &>(from));
-}
 
-
-void TableStylePresetArchive::MergeFrom(const TableStylePresetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStylePresetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TableStylePresetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TableStylePresetArchive*>(&to_msg);
+  auto& from = static_cast<const TableStylePresetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStylePresetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_image()->::TSP::Reference::MergeFrom(from._internal_image());
+      _this->_internal_mutable_image()->::TSP::Reference::MergeFrom(
+          from._internal_image());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_style_network()->::TSP::Reference::MergeFrom(from._internal_style_network());
+      _this->_internal_mutable_style_network()->::TSP::Reference::MergeFrom(
+          from._internal_style_network());
     }
     if (cached_has_bits & 0x00000004u) {
-      index_ = from.index_;
+      _this->_impl_.index_ = from._impl_.index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TableStylePresetArchive::CopyFrom(const TableStylePresetArchive& from) {
@@ -6350,10 +7080,10 @@ void TableStylePresetArchive::CopyFrom(const TableStylePresetArchive& from) {
 
 bool TableStylePresetArchive::IsInitialized() const {
   if (_internal_has_image()) {
-    if (!image_->IsInitialized()) return false;
+    if (!_impl_.image_->IsInitialized()) return false;
   }
   if (_internal_has_style_network()) {
-    if (!style_network_->IsInitialized()) return false;
+    if (!_impl_.style_network_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6361,17 +7091,17 @@ bool TableStylePresetArchive::IsInitialized() const {
 void TableStylePresetArchive::InternalSwap(TableStylePresetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TableStylePresetArchive, index_)
-      + sizeof(TableStylePresetArchive::index_)
-      - PROTOBUF_FIELD_OFFSET(TableStylePresetArchive, image_)>(
-          reinterpret_cast<char*>(&image_),
-          reinterpret_cast<char*>(&other->image_));
+      PROTOBUF_FIELD_OFFSET(TableStylePresetArchive, _impl_.index_)
+      + sizeof(TableStylePresetArchive::_impl_.index_)
+      - PROTOBUF_FIELD_OFFSET(TableStylePresetArchive, _impl_.image_)>(
+          reinterpret_cast<char*>(&_impl_.image_),
+          reinterpret_cast<char*>(&other->_impl_.image_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TableStylePresetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[6]);
 }
@@ -6380,7 +7110,7 @@ void TableStylePresetArchive::InternalSwap(TableStylePresetArchive* other) {
 
 class TableStrokePresetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TableStrokePresetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TableStrokePresetArchive>()._impl_._has_bits_);
   static void set_has_index(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -6392,110 +7122,116 @@ class TableStrokePresetArchive::_Internal {
 TableStrokePresetArchive::TableStrokePresetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.TableStrokePresetArchive)
 }
 TableStrokePresetArchive::TableStrokePresetArchive(const TableStrokePresetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TableStrokePresetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  index_ = from.index_;
+  _this->_impl_.index_ = from._impl_.index_;
   // @@protoc_insertion_point(copy_constructor:TST.TableStrokePresetArchive)
 }
 
-inline void TableStrokePresetArchive::SharedCtor() {
-index_ = 0;
+inline void TableStrokePresetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.index_){0}
+  };
 }
 
 TableStrokePresetArchive::~TableStrokePresetArchive() {
   // @@protoc_insertion_point(destructor:TST.TableStrokePresetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TableStrokePresetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void TableStrokePresetArchive::ArenaDtor(void* object) {
-  TableStrokePresetArchive* _this = reinterpret_cast< TableStrokePresetArchive* >(object);
-  (void)_this;
-}
-void TableStrokePresetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TableStrokePresetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TableStrokePresetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.TableStrokePresetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  index_ = 0;
-  _has_bits_.Clear();
+  _impl_.index_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TableStrokePresetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TableStrokePresetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required int32 index = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_index(&has_bits);
-          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TableStrokePresetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TableStrokePresetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.TableStrokePresetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required int32 index = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_index(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.TableStrokePresetArchive)
@@ -6508,46 +7244,34 @@ size_t TableStrokePresetArchive::ByteSizeLong() const {
 
   // required int32 index = 1;
   if (_internal_has_index()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_index());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_index());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TableStrokePresetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TableStrokePresetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TableStrokePresetArchive::GetClassData() const { return &_class_data_; }
 
-void TableStrokePresetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TableStrokePresetArchive *>(to)->MergeFrom(
-      static_cast<const TableStrokePresetArchive &>(from));
-}
 
-
-void TableStrokePresetArchive::MergeFrom(const TableStrokePresetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStrokePresetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TableStrokePresetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TableStrokePresetArchive*>(&to_msg);
+  auto& from = static_cast<const TableStrokePresetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.TableStrokePresetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_index()) {
-    _internal_set_index(from._internal_index());
+    _this->_internal_set_index(from._internal_index());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TableStrokePresetArchive::CopyFrom(const TableStrokePresetArchive& from) {
@@ -6558,19 +7282,19 @@ void TableStrokePresetArchive::CopyFrom(const TableStrokePresetArchive& from) {
 }
 
 bool TableStrokePresetArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void TableStrokePresetArchive::InternalSwap(TableStrokePresetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(index_, other->index_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.index_, other->_impl_.index_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TableStrokePresetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[7]);
 }
@@ -6582,74 +7306,79 @@ class ThemePresetsArchive::_Internal {
 };
 
 void ThemePresetsArchive::clear_table_style_presets() {
-  table_style_presets_.Clear();
+  _impl_.table_style_presets_.Clear();
 }
 void ThemePresetsArchive::clear_table_cell_stroke_presets() {
-  table_cell_stroke_presets_.Clear();
+  _impl_.table_cell_stroke_presets_.Clear();
 }
 ThemePresetsArchive::ThemePresetsArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  table_style_presets_(arena),
-  table_cell_stroke_presets_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TST.ThemePresetsArchive)
 }
 ThemePresetsArchive::ThemePresetsArchive(const ThemePresetsArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      table_style_presets_(from.table_style_presets_),
-      table_cell_stroke_presets_(from.table_cell_stroke_presets_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemePresetsArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.table_style_presets_){from._impl_.table_style_presets_}
+    , decltype(_impl_.table_cell_stroke_presets_){from._impl_.table_cell_stroke_presets_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TST.ThemePresetsArchive)
 }
 
-inline void ThemePresetsArchive::SharedCtor() {
+inline void ThemePresetsArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.table_style_presets_){arena}
+    , decltype(_impl_.table_cell_stroke_presets_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 ThemePresetsArchive::~ThemePresetsArchive() {
   // @@protoc_insertion_point(destructor:TST.ThemePresetsArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemePresetsArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.table_style_presets_.~RepeatedPtrField();
+  _impl_.table_cell_stroke_presets_.~RepeatedPtrField();
 }
 
-void ThemePresetsArchive::ArenaDtor(void* object) {
-  ThemePresetsArchive* _this = reinterpret_cast< ThemePresetsArchive* >(object);
-  (void)_this;
-}
-void ThemePresetsArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemePresetsArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemePresetsArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TST.ThemePresetsArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  table_style_presets_.Clear();
-  table_cell_stroke_presets_.Clear();
+  _impl_.table_style_presets_.Clear();
+  _impl_.table_cell_stroke_presets_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSP.Reference table_style_presets = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -6657,11 +7386,12 @@ const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAME
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Reference table_cell_stroke_presets = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -6669,55 +7399,56 @@ const char* ThemePresetsArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAME
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemePresetsArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemePresetsArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TST.ThemePresetsArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSP.Reference table_style_presets = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_table_style_presets_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_table_style_presets_size()); i < n; i++) {
+    const auto& repfield = this->_internal_table_style_presets(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_table_style_presets(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Reference table_cell_stroke_presets = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_table_cell_stroke_presets_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_table_cell_stroke_presets_size()); i < n; i++) {
+    const auto& repfield = this->_internal_table_cell_stroke_presets(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_table_cell_stroke_presets(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TST.ThemePresetsArchive)
@@ -6728,55 +7459,45 @@ size_t ThemePresetsArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TST.ThemePresetsArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference table_style_presets = 1;
   total_size += 1UL * this->_internal_table_style_presets_size();
-  for (const auto& msg : this->table_style_presets_) {
+  for (const auto& msg : this->_impl_.table_style_presets_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSP.Reference table_cell_stroke_presets = 2;
   total_size += 1UL * this->_internal_table_cell_stroke_presets_size();
-  for (const auto& msg : this->table_cell_stroke_presets_) {
+  for (const auto& msg : this->_impl_.table_cell_stroke_presets_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemePresetsArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemePresetsArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemePresetsArchive::GetClassData() const { return &_class_data_; }
 
-void ThemePresetsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemePresetsArchive *>(to)->MergeFrom(
-      static_cast<const ThemePresetsArchive &>(from));
-}
 
-
-void ThemePresetsArchive::MergeFrom(const ThemePresetsArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TST.ThemePresetsArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemePresetsArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemePresetsArchive*>(&to_msg);
+  auto& from = static_cast<const ThemePresetsArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TST.ThemePresetsArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  table_style_presets_.MergeFrom(from.table_style_presets_);
-  table_cell_stroke_presets_.MergeFrom(from.table_cell_stroke_presets_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.table_style_presets_.MergeFrom(from._impl_.table_style_presets_);
+  _this->_impl_.table_cell_stroke_presets_.MergeFrom(from._impl_.table_cell_stroke_presets_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemePresetsArchive::CopyFrom(const ThemePresetsArchive& from) {
@@ -6787,58 +7508,69 @@ void ThemePresetsArchive::CopyFrom(const ThemePresetsArchive& from) {
 }
 
 bool ThemePresetsArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(table_style_presets_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(table_cell_stroke_presets_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.table_style_presets_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.table_cell_stroke_presets_))
+    return false;
   return true;
 }
 
 void ThemePresetsArchive::InternalSwap(ThemePresetsArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  table_style_presets_.InternalSwap(&other->table_style_presets_);
-  table_cell_stroke_presets_.InternalSwap(&other->table_cell_stroke_presets_);
+  _impl_.table_style_presets_.InternalSwap(&other->_impl_.table_style_presets_);
+  _impl_.table_cell_stroke_presets_.InternalSwap(&other->_impl_.table_cell_stroke_presets_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemePresetsArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTStylePropertyArchiving_2eproto_getter, &descriptor_table_TSTStylePropertyArchiving_2eproto_once,
       file_level_metadata_TSTStylePropertyArchiving_2eproto[8]);
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#if !defined(_MSC_VER) || (_MSC_VER >= 1900 && _MSC_VER < 1912)
 const int ThemePresetsArchive::kExtensionFieldNumber;
 #endif
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::ThemeArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TST::ThemePresetsArchive >, 11, false >
-  ThemePresetsArchive::extension(kExtensionFieldNumber, ::TST::ThemePresetsArchive::default_instance());
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::ThemeArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TST::ThemePresetsArchive >, 11, false>
+  ThemePresetsArchive::extension(kExtensionFieldNumber, ::TST::ThemePresetsArchive::default_instance(), nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TST
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TST::Deprecated_TableStrokeArchive* Arena::CreateMaybeMessage< ::TST::Deprecated_TableStrokeArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::Deprecated_TableStrokeArchive*
+Arena::CreateMaybeMessage< ::TST::Deprecated_TableStrokeArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::Deprecated_TableStrokeArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::CellStylePropertiesArchive* Arena::CreateMaybeMessage< ::TST::CellStylePropertiesArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::CellStylePropertiesArchive*
+Arena::CreateMaybeMessage< ::TST::CellStylePropertiesArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::CellStylePropertiesArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::Deprecated_StrokePresetDataArchive* Arena::CreateMaybeMessage< ::TST::Deprecated_StrokePresetDataArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::Deprecated_StrokePresetDataArchive*
+Arena::CreateMaybeMessage< ::TST::Deprecated_StrokePresetDataArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::Deprecated_StrokePresetDataArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::StrokePresetDataArchive* Arena::CreateMaybeMessage< ::TST::StrokePresetDataArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::StrokePresetDataArchive*
+Arena::CreateMaybeMessage< ::TST::StrokePresetDataArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::StrokePresetDataArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::StrokePresetListArchive* Arena::CreateMaybeMessage< ::TST::StrokePresetListArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::StrokePresetListArchive*
+Arena::CreateMaybeMessage< ::TST::StrokePresetListArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::StrokePresetListArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::TableStylePropertiesArchive* Arena::CreateMaybeMessage< ::TST::TableStylePropertiesArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::TableStylePropertiesArchive*
+Arena::CreateMaybeMessage< ::TST::TableStylePropertiesArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::TableStylePropertiesArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::TableStylePresetArchive* Arena::CreateMaybeMessage< ::TST::TableStylePresetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::TableStylePresetArchive*
+Arena::CreateMaybeMessage< ::TST::TableStylePresetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::TableStylePresetArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::TableStrokePresetArchive* Arena::CreateMaybeMessage< ::TST::TableStrokePresetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::TableStrokePresetArchive*
+Arena::CreateMaybeMessage< ::TST::TableStrokePresetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::TableStrokePresetArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TST::ThemePresetsArchive* Arena::CreateMaybeMessage< ::TST::ThemePresetsArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TST::ThemePresetsArchive*
+Arena::CreateMaybeMessage< ::TST::ThemePresetsArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TST::ThemePresetsArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

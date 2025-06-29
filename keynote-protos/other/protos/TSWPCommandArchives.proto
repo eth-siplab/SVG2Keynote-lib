@@ -98,6 +98,9 @@ message StorageActionCommandArchive {
     kKindRemoveRuby = 37;
     kKindTateChuYoko = 38;
     kKindDropCapStyle = 39;
+    kKindMergeField = 40;
+    kKindModifyMergeField = 41;
+    kKindMergeFieldTypeReplace = 42;
   }
   optional .TSK.CommandArchive super = 1;
   optional .TSP.UUIDPath storage = 2;
@@ -111,6 +114,7 @@ message StorageActionCommandArchive {
   optional bool should_migrate_styles = 10;
   optional .TSK.DataReferenceRecord changed_data_reference_record = 11;
   optional string coalescing_property = 12;
+  optional .TSWP.StorageArchive.KindType wp_kind = 13;
 }
 
 message SetColumnStyleCommandArchive {

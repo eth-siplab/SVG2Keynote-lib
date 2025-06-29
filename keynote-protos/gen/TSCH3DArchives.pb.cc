@@ -16,394 +16,439 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSCH {
-constexpr Chart3DEnvironmentPackageArchive::Chart3DEnvironmentPackageArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : materials_(){}
+PROTOBUF_CONSTEXPR Chart3DEnvironmentPackageArchive::Chart3DEnvironmentPackageArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.materials_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct Chart3DEnvironmentPackageArchiveDefaultTypeInternal {
-  constexpr Chart3DEnvironmentPackageArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DEnvironmentPackageArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DEnvironmentPackageArchiveDefaultTypeInternal() {}
   union {
     Chart3DEnvironmentPackageArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DEnvironmentPackageArchiveDefaultTypeInternal _Chart3DEnvironmentPackageArchive_default_instance_;
-constexpr Chart3DFillArchive::Chart3DFillArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : textureset_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , lightingmodel_(nullptr)
-  , fill_type_(0)
-
-  , series_index_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DEnvironmentPackageArchiveDefaultTypeInternal _Chart3DEnvironmentPackageArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DFillArchive::Chart3DFillArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.textureset_id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.lightingmodel_)*/nullptr
+  , /*decltype(_impl_.fill_type_)*/0
+  , /*decltype(_impl_.series_index_)*/0u} {}
 struct Chart3DFillArchiveDefaultTypeInternal {
-  constexpr Chart3DFillArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DFillArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DFillArchiveDefaultTypeInternal() {}
   union {
     Chart3DFillArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DFillArchiveDefaultTypeInternal _Chart3DFillArchive_default_instance_;
-constexpr Chart3DPointLightArchive::Chart3DPointLightArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : position_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DFillArchiveDefaultTypeInternal _Chart3DFillArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DPointLightArchive::Chart3DPointLightArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.position_)*/nullptr} {}
 struct Chart3DPointLightArchiveDefaultTypeInternal {
-  constexpr Chart3DPointLightArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DPointLightArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DPointLightArchiveDefaultTypeInternal() {}
   union {
     Chart3DPointLightArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DPointLightArchiveDefaultTypeInternal _Chart3DPointLightArchive_default_instance_;
-constexpr Chart3DDirectionalLightArchive::Chart3DDirectionalLightArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : direction_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DPointLightArchiveDefaultTypeInternal _Chart3DPointLightArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DDirectionalLightArchive::Chart3DDirectionalLightArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.direction_)*/nullptr} {}
 struct Chart3DDirectionalLightArchiveDefaultTypeInternal {
-  constexpr Chart3DDirectionalLightArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DDirectionalLightArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DDirectionalLightArchiveDefaultTypeInternal() {}
   union {
     Chart3DDirectionalLightArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DDirectionalLightArchiveDefaultTypeInternal _Chart3DDirectionalLightArchive_default_instance_;
-constexpr Chart3DSpotLightArchive::Chart3DSpotLightArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : position_(nullptr)
-  , direction_(nullptr)
-  , cutoff_(0)
-  , dropoff_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DDirectionalLightArchiveDefaultTypeInternal _Chart3DDirectionalLightArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DSpotLightArchive::Chart3DSpotLightArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.position_)*/nullptr
+  , /*decltype(_impl_.direction_)*/nullptr
+  , /*decltype(_impl_.cutoff_)*/0
+  , /*decltype(_impl_.dropoff_)*/0} {}
 struct Chart3DSpotLightArchiveDefaultTypeInternal {
-  constexpr Chart3DSpotLightArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DSpotLightArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DSpotLightArchiveDefaultTypeInternal() {}
   union {
     Chart3DSpotLightArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DSpotLightArchiveDefaultTypeInternal _Chart3DSpotLightArchive_default_instance_;
-constexpr Chart3DLightArchive::Chart3DLightArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , ambient_color_(nullptr)
-  , diffuse_color_(nullptr)
-  , specular_color_(nullptr)
-  , attenuation_(nullptr)
-  , point_light_(nullptr)
-  , directional_light_(nullptr)
-  , spot_light_(nullptr)
-  , intensity_(0)
-  , coordinate_space_(0u)
-  , enabled_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DSpotLightArchiveDefaultTypeInternal _Chart3DSpotLightArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DLightArchive::Chart3DLightArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.ambient_color_)*/nullptr
+  , /*decltype(_impl_.diffuse_color_)*/nullptr
+  , /*decltype(_impl_.specular_color_)*/nullptr
+  , /*decltype(_impl_.attenuation_)*/nullptr
+  , /*decltype(_impl_.point_light_)*/nullptr
+  , /*decltype(_impl_.directional_light_)*/nullptr
+  , /*decltype(_impl_.spot_light_)*/nullptr
+  , /*decltype(_impl_.intensity_)*/0
+  , /*decltype(_impl_.coordinate_space_)*/0u
+  , /*decltype(_impl_.enabled_)*/false} {}
 struct Chart3DLightArchiveDefaultTypeInternal {
-  constexpr Chart3DLightArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DLightArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DLightArchiveDefaultTypeInternal() {}
   union {
     Chart3DLightArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DLightArchiveDefaultTypeInternal _Chart3DLightArchive_default_instance_;
-constexpr Chart3DLightingModelArchive::Chart3DLightingModelArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : phong_(nullptr)
-  , fixed_function_(nullptr)
-  , environment_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DLightArchiveDefaultTypeInternal _Chart3DLightArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DLightingModelArchive::Chart3DLightingModelArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.phong_)*/nullptr
+  , /*decltype(_impl_.fixed_function_)*/nullptr
+  , /*decltype(_impl_.environment_)*/nullptr} {}
 struct Chart3DLightingModelArchiveDefaultTypeInternal {
-  constexpr Chart3DLightingModelArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DLightingModelArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DLightingModelArchiveDefaultTypeInternal() {}
   union {
     Chart3DLightingModelArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DLightingModelArchiveDefaultTypeInternal _Chart3DLightingModelArchive_default_instance_;
-constexpr Chart3DLightingPackageArchive::Chart3DLightingPackageArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : lights_()
-  , name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DLightingModelArchiveDefaultTypeInternal _Chart3DLightingModelArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DLightingPackageArchive::Chart3DLightingPackageArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.lights_)*/{}
+  , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}} {}
 struct Chart3DLightingPackageArchiveDefaultTypeInternal {
-  constexpr Chart3DLightingPackageArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DLightingPackageArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DLightingPackageArchiveDefaultTypeInternal() {}
   union {
     Chart3DLightingPackageArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DLightingPackageArchiveDefaultTypeInternal _Chart3DLightingPackageArchive_default_instance_;
-constexpr Chart3DTexturesMaterialArchive::Chart3DTexturesMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : textures_()
-  , color_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DLightingPackageArchiveDefaultTypeInternal _Chart3DLightingPackageArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DTexturesMaterialArchive::Chart3DTexturesMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.textures_)*/{}
+  , /*decltype(_impl_.color_)*/nullptr} {}
 struct Chart3DTexturesMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DTexturesMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DTexturesMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DTexturesMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DTexturesMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DTexturesMaterialArchiveDefaultTypeInternal _Chart3DTexturesMaterialArchive_default_instance_;
-constexpr Chart3DEmissiveMaterialArchive::Chart3DEmissiveMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tilings_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DTexturesMaterialArchiveDefaultTypeInternal _Chart3DTexturesMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DEmissiveMaterialArchive::Chart3DEmissiveMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct Chart3DEmissiveMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DEmissiveMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DEmissiveMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DEmissiveMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DEmissiveMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DEmissiveMaterialArchiveDefaultTypeInternal _Chart3DEmissiveMaterialArchive_default_instance_;
-constexpr Chart3DDiffuseMaterialArchive::Chart3DDiffuseMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tilings_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DEmissiveMaterialArchiveDefaultTypeInternal _Chart3DEmissiveMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DDiffuseMaterialArchive::Chart3DDiffuseMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct Chart3DDiffuseMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DDiffuseMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DDiffuseMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DDiffuseMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DDiffuseMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DDiffuseMaterialArchiveDefaultTypeInternal _Chart3DDiffuseMaterialArchive_default_instance_;
-constexpr Chart3DModulateMaterialArchive::Chart3DModulateMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tilings_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DDiffuseMaterialArchiveDefaultTypeInternal _Chart3DDiffuseMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DModulateMaterialArchive::Chart3DModulateMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct Chart3DModulateMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DModulateMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DModulateMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DModulateMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DModulateMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DModulateMaterialArchiveDefaultTypeInternal _Chart3DModulateMaterialArchive_default_instance_;
-constexpr Chart3DSpecularMaterialArchive::Chart3DSpecularMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tilings_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DModulateMaterialArchiveDefaultTypeInternal _Chart3DModulateMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DSpecularMaterialArchive::Chart3DSpecularMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct Chart3DSpecularMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DSpecularMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DSpecularMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DSpecularMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DSpecularMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DSpecularMaterialArchiveDefaultTypeInternal _Chart3DSpecularMaterialArchive_default_instance_;
-constexpr Chart3DShininessMaterialArchive::Chart3DShininessMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : tilings_()
-  , super_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DSpecularMaterialArchiveDefaultTypeInternal _Chart3DSpecularMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DShininessMaterialArchive::Chart3DShininessMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr} {}
 struct Chart3DShininessMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DShininessMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DShininessMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DShininessMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DShininessMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DShininessMaterialArchiveDefaultTypeInternal _Chart3DShininessMaterialArchive_default_instance_;
-constexpr Chart3DEnvironmentMaterialArchive::Chart3DEnvironmentMaterialArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : obsolete_tilings_()
-  , tilings_()
-  , super_(nullptr)
-  , decalmode_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DShininessMaterialArchiveDefaultTypeInternal _Chart3DShininessMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DEnvironmentMaterialArchive::Chart3DEnvironmentMaterialArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.obsolete_tilings_)*/{}
+  , /*decltype(_impl_.tilings_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.decalmode_)*/false} {}
 struct Chart3DEnvironmentMaterialArchiveDefaultTypeInternal {
-  constexpr Chart3DEnvironmentMaterialArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DEnvironmentMaterialArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DEnvironmentMaterialArchiveDefaultTypeInternal() {}
   union {
     Chart3DEnvironmentMaterialArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DEnvironmentMaterialArchiveDefaultTypeInternal _Chart3DEnvironmentMaterialArchive_default_instance_;
-constexpr Chart3DFixedFunctionLightingModelArchive::Chart3DFixedFunctionLightingModelArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : materials_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DEnvironmentMaterialArchiveDefaultTypeInternal _Chart3DEnvironmentMaterialArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DFixedFunctionLightingModelArchive::Chart3DFixedFunctionLightingModelArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.materials_)*/nullptr} {}
 struct Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal {
-  constexpr Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal() {}
   union {
     Chart3DFixedFunctionLightingModelArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal _Chart3DFixedFunctionLightingModelArchive_default_instance_;
-constexpr Chart3DPhongLightingModelArchive::Chart3DPhongLightingModelArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : materials_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DFixedFunctionLightingModelArchiveDefaultTypeInternal _Chart3DFixedFunctionLightingModelArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DPhongLightingModelArchive::Chart3DPhongLightingModelArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.materials_)*/nullptr} {}
 struct Chart3DPhongLightingModelArchiveDefaultTypeInternal {
-  constexpr Chart3DPhongLightingModelArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DPhongLightingModelArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DPhongLightingModelArchiveDefaultTypeInternal() {}
   union {
     Chart3DPhongLightingModelArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DPhongLightingModelArchiveDefaultTypeInternal _Chart3DPhongLightingModelArchive_default_instance_;
-constexpr Chart3DPhongMaterialPackageArchive::Chart3DPhongMaterialPackageArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : emissive_(nullptr)
-  , diffuse_(nullptr)
-  , modulate_(nullptr)
-  , specular_(nullptr)
-  , shininess_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DPhongLightingModelArchiveDefaultTypeInternal _Chart3DPhongLightingModelArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DPhongMaterialPackageArchive::Chart3DPhongMaterialPackageArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.emissive_)*/nullptr
+  , /*decltype(_impl_.diffuse_)*/nullptr
+  , /*decltype(_impl_.modulate_)*/nullptr
+  , /*decltype(_impl_.specular_)*/nullptr
+  , /*decltype(_impl_.shininess_)*/nullptr} {}
 struct Chart3DPhongMaterialPackageArchiveDefaultTypeInternal {
-  constexpr Chart3DPhongMaterialPackageArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DPhongMaterialPackageArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DPhongMaterialPackageArchiveDefaultTypeInternal() {}
   union {
     Chart3DPhongMaterialPackageArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DPhongMaterialPackageArchiveDefaultTypeInternal _Chart3DPhongMaterialPackageArchive_default_instance_;
-constexpr Chart3DTSPImageDataTextureArchive::Chart3DTSPImageDataTextureArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : database_data_(nullptr)
-  , database_mipmapdata_(nullptr)
-  , data_(nullptr)
-  , mipmapdata_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DPhongMaterialPackageArchiveDefaultTypeInternal _Chart3DPhongMaterialPackageArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DTSPImageDataTextureArchive::Chart3DTSPImageDataTextureArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.database_data_)*/nullptr
+  , /*decltype(_impl_.database_mipmapdata_)*/nullptr
+  , /*decltype(_impl_.data_)*/nullptr
+  , /*decltype(_impl_.mipmapdata_)*/nullptr} {}
 struct Chart3DTSPImageDataTextureArchiveDefaultTypeInternal {
-  constexpr Chart3DTSPImageDataTextureArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DTSPImageDataTextureArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DTSPImageDataTextureArchiveDefaultTypeInternal() {}
   union {
     Chart3DTSPImageDataTextureArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DTSPImageDataTextureArchiveDefaultTypeInternal _Chart3DTSPImageDataTextureArchive_default_instance_;
-constexpr Chart3DBaseImageTextureTilingArchive::Chart3DBaseImageTextureTilingArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : scale_(nullptr)
-  , rotation_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DTSPImageDataTextureArchiveDefaultTypeInternal _Chart3DTSPImageDataTextureArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DBaseImageTextureTilingArchive::Chart3DBaseImageTextureTilingArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.scale_)*/nullptr
+  , /*decltype(_impl_.rotation_)*/0} {}
 struct Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal {
-  constexpr Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal() {}
   union {
     Chart3DBaseImageTextureTilingArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal _Chart3DBaseImageTextureTilingArchive_default_instance_;
-constexpr Chart3DImageTextureTilingArchive::Chart3DImageTextureTilingArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , mode_(0)
-
-  , wrap_(0)
-
-  , face_(0)
-
-  , xposition_(0)
-
-  , yposition_(0)
-
-  , scontinuity_(0)
-
-  , tcontinuity_(0)
-
-  , reveal_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DBaseImageTextureTilingArchiveDefaultTypeInternal _Chart3DBaseImageTextureTilingArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DImageTextureTilingArchive::Chart3DImageTextureTilingArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.mode_)*/0
+  , /*decltype(_impl_.wrap_)*/0
+  , /*decltype(_impl_.face_)*/0
+  , /*decltype(_impl_.xposition_)*/0
+  , /*decltype(_impl_.yposition_)*/0
+  , /*decltype(_impl_.scontinuity_)*/0
+  , /*decltype(_impl_.tcontinuity_)*/0
+  , /*decltype(_impl_.reveal_)*/false} {}
 struct Chart3DImageTextureTilingArchiveDefaultTypeInternal {
-  constexpr Chart3DImageTextureTilingArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DImageTextureTilingArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DImageTextureTilingArchiveDefaultTypeInternal() {}
   union {
     Chart3DImageTextureTilingArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DImageTextureTilingArchiveDefaultTypeInternal _Chart3DImageTextureTilingArchive_default_instance_;
-constexpr Chart3DVectorArchive::Chart3DVectorArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0)
-  , z_(0)
-  , w_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DImageTextureTilingArchiveDefaultTypeInternal _Chart3DImageTextureTilingArchive_default_instance_;
+PROTOBUF_CONSTEXPR Chart3DVectorArchive::Chart3DVectorArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.x_)*/0
+  , /*decltype(_impl_.y_)*/0
+  , /*decltype(_impl_.z_)*/0
+  , /*decltype(_impl_.w_)*/0} {}
 struct Chart3DVectorArchiveDefaultTypeInternal {
-  constexpr Chart3DVectorArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR Chart3DVectorArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~Chart3DVectorArchiveDefaultTypeInternal() {}
   union {
     Chart3DVectorArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chart3DVectorArchiveDefaultTypeInternal _Chart3DVectorArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Chart3DVectorArchiveDefaultTypeInternal _Chart3DVectorArchive_default_instance_;
 }  // namespace TSCH
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSCH3DArchives_2eproto[22];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_TSCH3DArchives_2eproto[7];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSCH3DArchives_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSCH3DArchives_2eproto[22];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_TSCH3DArchives_2eproto[7];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSCH3DArchives_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSCH3DArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+const uint32_t TableStruct_TSCH3DArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentPackageArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentPackageArchive, materials_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentPackageArchive, _impl_.materials_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, lightingmodel_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, textureset_id_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, fill_type_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, series_index_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _impl_.lightingmodel_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _impl_.textureset_id_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _impl_.fill_type_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFillArchive, _impl_.series_index_),
   1,
   0,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPointLightArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPointLightArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPointLightArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPointLightArchive, position_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPointLightArchive, _impl_.position_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDirectionalLightArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDirectionalLightArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDirectionalLightArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDirectionalLightArchive, direction_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDirectionalLightArchive, _impl_.direction_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, position_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, direction_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, cutoff_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, dropoff_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _impl_.position_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _impl_.direction_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _impl_.cutoff_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpotLightArchive, _impl_.dropoff_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, name_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, ambient_color_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, diffuse_color_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, specular_color_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, intensity_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, attenuation_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, coordinate_space_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, enabled_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, point_light_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, directional_light_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, spot_light_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.ambient_color_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.diffuse_color_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.specular_color_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.intensity_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.attenuation_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.coordinate_space_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.enabled_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.point_light_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.directional_light_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightArchive, _impl_.spot_light_),
   0,
   1,
   2,
@@ -415,158 +460,173 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSCH3DArchives_2eproto::offset
   5,
   6,
   7,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, phong_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, fixed_function_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, environment_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _impl_.phong_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _impl_.fixed_function_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingModelArchive, _impl_.environment_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, name_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, lights_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DLightingPackageArchive, _impl_.lights_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, color_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, textures_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, _impl_.color_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTexturesMaterialArchive, _impl_.textures_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEmissiveMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DDiffuseMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DModulateMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DSpecularMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DShininessMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, obsolete_tilings_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, decalmode_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, tilings_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _impl_.obsolete_tilings_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _impl_.decalmode_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DEnvironmentMaterialArchive, _impl_.tilings_),
   0,
   ~0u,
   1,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFixedFunctionLightingModelArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFixedFunctionLightingModelArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFixedFunctionLightingModelArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFixedFunctionLightingModelArchive, materials_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DFixedFunctionLightingModelArchive, _impl_.materials_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongLightingModelArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongLightingModelArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongLightingModelArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongLightingModelArchive, materials_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongLightingModelArchive, _impl_.materials_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, emissive_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, diffuse_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, modulate_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, specular_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, shininess_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_.emissive_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_.diffuse_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_.modulate_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_.specular_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DPhongMaterialPackageArchive, _impl_.shininess_),
   0,
   1,
   2,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, data_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, mipmapdata_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, database_data_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, database_mipmapdata_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _impl_.data_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _impl_.mipmapdata_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _impl_.database_data_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DTSPImageDataTextureArchive, _impl_.database_mipmapdata_),
   2,
   3,
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, scale_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, rotation_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, _impl_.scale_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DBaseImageTextureTilingArchive, _impl_.rotation_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, mode_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, wrap_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, face_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, xposition_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, yposition_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, scontinuity_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, tcontinuity_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, reveal_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.mode_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.wrap_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.face_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.xposition_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.yposition_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.scontinuity_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.tcontinuity_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DImageTextureTilingArchive, _impl_.reveal_),
   0,
   1,
   2,
@@ -576,68 +636,69 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSCH3DArchives_2eproto::offset
   6,
   7,
   8,
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, x_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, y_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, z_),
-  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, w_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _impl_.x_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _impl_.y_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _impl_.z_),
+  PROTOBUF_FIELD_OFFSET(::TSCH::Chart3DVectorArchive, _impl_.w_),
   0,
   1,
   2,
   3,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::TSCH::Chart3DEnvironmentPackageArchive)},
-  { 6, 15, sizeof(::TSCH::Chart3DFillArchive)},
-  { 19, 25, sizeof(::TSCH::Chart3DPointLightArchive)},
-  { 26, 32, sizeof(::TSCH::Chart3DDirectionalLightArchive)},
-  { 33, 42, sizeof(::TSCH::Chart3DSpotLightArchive)},
-  { 46, 62, sizeof(::TSCH::Chart3DLightArchive)},
-  { 73, 81, sizeof(::TSCH::Chart3DLightingModelArchive)},
-  { 84, 91, sizeof(::TSCH::Chart3DLightingPackageArchive)},
-  { 93, 100, sizeof(::TSCH::Chart3DTexturesMaterialArchive)},
-  { 102, 109, sizeof(::TSCH::Chart3DEmissiveMaterialArchive)},
-  { 111, 118, sizeof(::TSCH::Chart3DDiffuseMaterialArchive)},
-  { 120, 127, sizeof(::TSCH::Chart3DModulateMaterialArchive)},
-  { 129, 136, sizeof(::TSCH::Chart3DSpecularMaterialArchive)},
-  { 138, 145, sizeof(::TSCH::Chart3DShininessMaterialArchive)},
-  { 147, 156, sizeof(::TSCH::Chart3DEnvironmentMaterialArchive)},
-  { 160, 166, sizeof(::TSCH::Chart3DFixedFunctionLightingModelArchive)},
-  { 167, 173, sizeof(::TSCH::Chart3DPhongLightingModelArchive)},
-  { 174, 184, sizeof(::TSCH::Chart3DPhongMaterialPackageArchive)},
-  { 189, 198, sizeof(::TSCH::Chart3DTSPImageDataTextureArchive)},
-  { 202, 209, sizeof(::TSCH::Chart3DBaseImageTextureTilingArchive)},
-  { 211, 225, sizeof(::TSCH::Chart3DImageTextureTilingArchive)},
-  { 234, 243, sizeof(::TSCH::Chart3DVectorArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, -1, -1, sizeof(::TSCH::Chart3DEnvironmentPackageArchive)},
+  { 7, 17, -1, sizeof(::TSCH::Chart3DFillArchive)},
+  { 21, 28, -1, sizeof(::TSCH::Chart3DPointLightArchive)},
+  { 29, 36, -1, sizeof(::TSCH::Chart3DDirectionalLightArchive)},
+  { 37, 47, -1, sizeof(::TSCH::Chart3DSpotLightArchive)},
+  { 51, 68, -1, sizeof(::TSCH::Chart3DLightArchive)},
+  { 79, 88, -1, sizeof(::TSCH::Chart3DLightingModelArchive)},
+  { 91, 99, -1, sizeof(::TSCH::Chart3DLightingPackageArchive)},
+  { 101, 109, -1, sizeof(::TSCH::Chart3DTexturesMaterialArchive)},
+  { 111, 119, -1, sizeof(::TSCH::Chart3DEmissiveMaterialArchive)},
+  { 121, 129, -1, sizeof(::TSCH::Chart3DDiffuseMaterialArchive)},
+  { 131, 139, -1, sizeof(::TSCH::Chart3DModulateMaterialArchive)},
+  { 141, 149, -1, sizeof(::TSCH::Chart3DSpecularMaterialArchive)},
+  { 151, 159, -1, sizeof(::TSCH::Chart3DShininessMaterialArchive)},
+  { 161, 171, -1, sizeof(::TSCH::Chart3DEnvironmentMaterialArchive)},
+  { 175, 182, -1, sizeof(::TSCH::Chart3DFixedFunctionLightingModelArchive)},
+  { 183, 190, -1, sizeof(::TSCH::Chart3DPhongLightingModelArchive)},
+  { 191, 202, -1, sizeof(::TSCH::Chart3DPhongMaterialPackageArchive)},
+  { 207, 217, -1, sizeof(::TSCH::Chart3DTSPImageDataTextureArchive)},
+  { 221, 229, -1, sizeof(::TSCH::Chart3DBaseImageTextureTilingArchive)},
+  { 231, 246, -1, sizeof(::TSCH::Chart3DImageTextureTilingArchive)},
+  { 255, 265, -1, sizeof(::TSCH::Chart3DVectorArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DEnvironmentPackageArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DFillArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DPointLightArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DDirectionalLightArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DSpotLightArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DLightArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DLightingModelArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DLightingPackageArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DTexturesMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DEmissiveMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DDiffuseMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DModulateMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DSpecularMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DShininessMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DEnvironmentMaterialArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DFixedFunctionLightingModelArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DPhongLightingModelArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DPhongMaterialPackageArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DTSPImageDataTextureArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DBaseImageTextureTilingArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DImageTextureTilingArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSCH::_Chart3DVectorArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSCH::_Chart3DEnvironmentPackageArchive_default_instance_._instance,
+  &::TSCH::_Chart3DFillArchive_default_instance_._instance,
+  &::TSCH::_Chart3DPointLightArchive_default_instance_._instance,
+  &::TSCH::_Chart3DDirectionalLightArchive_default_instance_._instance,
+  &::TSCH::_Chart3DSpotLightArchive_default_instance_._instance,
+  &::TSCH::_Chart3DLightArchive_default_instance_._instance,
+  &::TSCH::_Chart3DLightingModelArchive_default_instance_._instance,
+  &::TSCH::_Chart3DLightingPackageArchive_default_instance_._instance,
+  &::TSCH::_Chart3DTexturesMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DEmissiveMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DDiffuseMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DModulateMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DSpecularMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DShininessMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DEnvironmentMaterialArchive_default_instance_._instance,
+  &::TSCH::_Chart3DFixedFunctionLightingModelArchive_default_instance_._instance,
+  &::TSCH::_Chart3DPhongLightingModelArchive_default_instance_._instance,
+  &::TSCH::_Chart3DPhongMaterialPackageArchive_default_instance_._instance,
+  &::TSCH::_Chart3DTSPImageDataTextureArchive_default_instance_._instance,
+  &::TSCH::_Chart3DBaseImageTextureTilingArchive_default_instance_._instance,
+  &::TSCH::_Chart3DImageTextureTilingArchive_default_instance_._instance,
+  &::TSCH::_Chart3DVectorArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSCH3DArchives_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -762,23 +823,25 @@ const char descriptor_table_protodef_TSCH3DArchives_2eproto[] PROTOBUF_SECTION_V
   "\020.TSD.FillArchive\030d \001(\0132\030.TSCH.Chart3DFi"
   "llArchive"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSCH3DArchives_2eproto_deps[2] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSCH3DArchives_2eproto_deps[2] = {
   &::descriptor_table_TSDArchives_2eproto,
   &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSCH3DArchives_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSCH3DArchives_2eproto = {
-  false, false, 4769, descriptor_table_protodef_TSCH3DArchives_2eproto, "TSCH3DArchives.proto", 
-  &descriptor_table_TSCH3DArchives_2eproto_once, descriptor_table_TSCH3DArchives_2eproto_deps, 2, 22,
-  schemas, file_default_instances, TableStruct_TSCH3DArchives_2eproto::offsets,
-  file_level_metadata_TSCH3DArchives_2eproto, file_level_enum_descriptors_TSCH3DArchives_2eproto, file_level_service_descriptors_TSCH3DArchives_2eproto,
+static ::_pbi::once_flag descriptor_table_TSCH3DArchives_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSCH3DArchives_2eproto = {
+    false, false, 4769, descriptor_table_protodef_TSCH3DArchives_2eproto,
+    "TSCH3DArchives.proto",
+    &descriptor_table_TSCH3DArchives_2eproto_once, descriptor_table_TSCH3DArchives_2eproto_deps, 2, 22,
+    schemas, file_default_instances, TableStruct_TSCH3DArchives_2eproto::offsets,
+    file_level_metadata_TSCH3DArchives_2eproto, file_level_enum_descriptors_TSCH3DArchives_2eproto,
+    file_level_service_descriptors_TSCH3DArchives_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSCH3DArchives_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSCH3DArchives_2eproto_getter() {
   return &descriptor_table_TSCH3DArchives_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSCH3DArchives_2eproto(&descriptor_table_TSCH3DArchives_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSCH3DArchives_2eproto(&descriptor_table_TSCH3DArchives_2eproto);
 namespace TSCH {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* TextureTilingMode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_TSCH3DArchives_2eproto);
@@ -896,64 +959,68 @@ class Chart3DEnvironmentPackageArchive::_Internal {
 
 Chart3DEnvironmentPackageArchive::Chart3DEnvironmentPackageArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  materials_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DEnvironmentPackageArchive)
 }
 Chart3DEnvironmentPackageArchive::Chart3DEnvironmentPackageArchive(const Chart3DEnvironmentPackageArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      materials_(from.materials_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DEnvironmentPackageArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.materials_){from._impl_.materials_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DEnvironmentPackageArchive)
 }
 
-inline void Chart3DEnvironmentPackageArchive::SharedCtor() {
+inline void Chart3DEnvironmentPackageArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.materials_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 Chart3DEnvironmentPackageArchive::~Chart3DEnvironmentPackageArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DEnvironmentPackageArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DEnvironmentPackageArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.materials_.~RepeatedPtrField();
 }
 
-void Chart3DEnvironmentPackageArchive::ArenaDtor(void* object) {
-  Chart3DEnvironmentPackageArchive* _this = reinterpret_cast< Chart3DEnvironmentPackageArchive* >(object);
-  (void)_this;
-}
-void Chart3DEnvironmentPackageArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DEnvironmentPackageArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DEnvironmentPackageArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DEnvironmentPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  materials_.Clear();
+  _impl_.materials_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DEnvironmentPackageArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DEnvironmentPackageArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSCH.Chart3DEnvironmentMaterialArchive materials = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -961,47 +1028,48 @@ const char* Chart3DEnvironmentPackageArchive::_InternalParse(const char* ptr, ::
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DEnvironmentPackageArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DEnvironmentPackageArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DEnvironmentPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DEnvironmentMaterialArchive materials = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_materials_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_materials_size()); i < n; i++) {
+    const auto& repfield = this->_internal_materials(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_materials(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DEnvironmentPackageArchive)
@@ -1012,47 +1080,37 @@ size_t Chart3DEnvironmentPackageArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DEnvironmentPackageArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DEnvironmentMaterialArchive materials = 1;
   total_size += 1UL * this->_internal_materials_size();
-  for (const auto& msg : this->materials_) {
+  for (const auto& msg : this->_impl_.materials_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DEnvironmentPackageArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DEnvironmentPackageArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DEnvironmentPackageArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DEnvironmentPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DEnvironmentPackageArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DEnvironmentPackageArchive &>(from));
-}
 
-
-void Chart3DEnvironmentPackageArchive::MergeFrom(const Chart3DEnvironmentPackageArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEnvironmentPackageArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DEnvironmentPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DEnvironmentPackageArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DEnvironmentPackageArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEnvironmentPackageArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  materials_.MergeFrom(from.materials_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.materials_.MergeFrom(from._impl_.materials_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DEnvironmentPackageArchive::CopyFrom(const Chart3DEnvironmentPackageArchive& from) {
@@ -1063,18 +1121,19 @@ void Chart3DEnvironmentPackageArchive::CopyFrom(const Chart3DEnvironmentPackageA
 }
 
 bool Chart3DEnvironmentPackageArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(materials_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.materials_))
+    return false;
   return true;
 }
 
 void Chart3DEnvironmentPackageArchive::InternalSwap(Chart3DEnvironmentPackageArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  materials_.InternalSwap(&other->materials_);
+  _impl_.materials_.InternalSwap(&other->_impl_.materials_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DEnvironmentPackageArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[0]);
 }
@@ -1083,7 +1142,7 @@ void Chart3DEnvironmentPackageArchive::InternalSwap(Chart3DEnvironmentPackageArc
 
 class Chart3DFillArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DFillArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DFillArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DLightingModelArchive& lightingmodel(const Chart3DFillArchive* msg);
   static void set_has_lightingmodel(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
@@ -1101,175 +1160,190 @@ class Chart3DFillArchive::_Internal {
 
 const ::TSCH::Chart3DLightingModelArchive&
 Chart3DFillArchive::_Internal::lightingmodel(const Chart3DFillArchive* msg) {
-  return *msg->lightingmodel_;
+  return *msg->_impl_.lightingmodel_;
 }
 Chart3DFillArchive::Chart3DFillArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DFillArchive)
 }
 Chart3DFillArchive::Chart3DFillArchive(const Chart3DFillArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DFillArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.textureset_id_){}
+    , decltype(_impl_.lightingmodel_){nullptr}
+    , decltype(_impl_.fill_type_){}
+    , decltype(_impl_.series_index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  textureset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.textureset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.textureset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_textureset_id()) {
-    textureset_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_textureset_id(), 
-      GetArenaForAllocation());
+    _this->_impl_.textureset_id_.Set(from._internal_textureset_id(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_lightingmodel()) {
-    lightingmodel_ = new ::TSCH::Chart3DLightingModelArchive(*from.lightingmodel_);
-  } else {
-    lightingmodel_ = nullptr;
+    _this->_impl_.lightingmodel_ = new ::TSCH::Chart3DLightingModelArchive(*from._impl_.lightingmodel_);
   }
-  ::memcpy(&fill_type_, &from.fill_type_,
-    static_cast<size_t>(reinterpret_cast<char*>(&series_index_) -
-    reinterpret_cast<char*>(&fill_type_)) + sizeof(series_index_));
+  ::memcpy(&_impl_.fill_type_, &from._impl_.fill_type_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.series_index_) -
+    reinterpret_cast<char*>(&_impl_.fill_type_)) + sizeof(_impl_.series_index_));
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DFillArchive)
 }
 
-inline void Chart3DFillArchive::SharedCtor() {
-textureset_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&lightingmodel_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&series_index_) -
-    reinterpret_cast<char*>(&lightingmodel_)) + sizeof(series_index_));
+inline void Chart3DFillArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.textureset_id_){}
+    , decltype(_impl_.lightingmodel_){nullptr}
+    , decltype(_impl_.fill_type_){0}
+    , decltype(_impl_.series_index_){0u}
+  };
+  _impl_.textureset_id_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.textureset_id_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Chart3DFillArchive::~Chart3DFillArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DFillArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DFillArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  textureset_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete lightingmodel_;
+  _impl_.textureset_id_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.lightingmodel_;
 }
 
-void Chart3DFillArchive::ArenaDtor(void* object) {
-  Chart3DFillArchive* _this = reinterpret_cast< Chart3DFillArchive* >(object);
-  (void)_this;
-}
-void Chart3DFillArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DFillArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DFillArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DFillArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      textureset_id_.ClearNonDefaultToEmpty();
+      _impl_.textureset_id_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(lightingmodel_ != nullptr);
-      lightingmodel_->Clear();
+      GOOGLE_DCHECK(_impl_.lightingmodel_ != nullptr);
+      _impl_.lightingmodel_->Clear();
     }
   }
   if (cached_has_bits & 0x0000000cu) {
-    ::memset(&fill_type_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&series_index_) -
-        reinterpret_cast<char*>(&fill_type_)) + sizeof(series_index_));
+    ::memset(&_impl_.fill_type_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.series_index_) -
+        reinterpret_cast<char*>(&_impl_.fill_type_)) + sizeof(_impl_.series_index_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DFillArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DFillArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSCH.Chart3DLightingModelArchive lightingmodel = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_lightingmodel(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string textureset_id = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_textureset_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSCH.Chart3DFillArchive.textureset_id");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSCH.Chart3DFillArchive.textureset_id");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.FillPropertyType fill_type = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::FillPropertyType_IsValid(val))) {
             _internal_set_fill_type(static_cast<::TSCH::FillPropertyType>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional uint32 series_index = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_series_index(&has_bits);
-          series_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.series_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DFillArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DFillArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DFillArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSCH.Chart3DLightingModelArchive lightingmodel = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::lightingmodel(this), target, stream);
+      InternalWriteMessage(1, _Internal::lightingmodel(this),
+        _Internal::lightingmodel(this).GetCachedSize(), target, stream);
   }
 
   // optional string textureset_id = 2;
@@ -1285,18 +1359,18 @@ failure:
   // optional .TSCH.FillPropertyType fill_type = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_fill_type(), target);
   }
 
   // optional uint32 series_index = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_series_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_series_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DFillArchive)
@@ -1307,11 +1381,11 @@ size_t Chart3DFillArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DFillArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional string textureset_id = 2;
     if (cached_has_bits & 0x00000001u) {
@@ -1324,68 +1398,57 @@ size_t Chart3DFillArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *lightingmodel_);
+          *_impl_.lightingmodel_);
     }
 
     // optional .TSCH.FillPropertyType fill_type = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_fill_type());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_fill_type());
     }
 
     // optional uint32 series_index = 4;
     if (cached_has_bits & 0x00000008u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-          this->_internal_series_index());
+      total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_series_index());
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DFillArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DFillArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DFillArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DFillArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DFillArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DFillArchive &>(from));
-}
 
-
-void Chart3DFillArchive::MergeFrom(const Chart3DFillArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DFillArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DFillArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DFillArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DFillArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DFillArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_textureset_id(from._internal_textureset_id());
+      _this->_internal_set_textureset_id(from._internal_textureset_id());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_lightingmodel()->::TSCH::Chart3DLightingModelArchive::MergeFrom(from._internal_lightingmodel());
+      _this->_internal_mutable_lightingmodel()->::TSCH::Chart3DLightingModelArchive::MergeFrom(
+          from._internal_lightingmodel());
     }
     if (cached_has_bits & 0x00000004u) {
-      fill_type_ = from.fill_type_;
+      _this->_impl_.fill_type_ = from._impl_.fill_type_;
     }
     if (cached_has_bits & 0x00000008u) {
-      series_index_ = from.series_index_;
+      _this->_impl_.series_index_ = from._impl_.series_index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DFillArchive::CopyFrom(const Chart3DFillArchive& from) {
@@ -1397,30 +1460,31 @@ void Chart3DFillArchive::CopyFrom(const Chart3DFillArchive& from) {
 
 bool Chart3DFillArchive::IsInitialized() const {
   if (_internal_has_lightingmodel()) {
-    if (!lightingmodel_->IsInitialized()) return false;
+    if (!_impl_.lightingmodel_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Chart3DFillArchive::InternalSwap(Chart3DFillArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &textureset_id_, GetArenaForAllocation(),
-      &other->textureset_id_, other->GetArenaForAllocation()
+      &_impl_.textureset_id_, lhs_arena,
+      &other->_impl_.textureset_id_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DFillArchive, series_index_)
-      + sizeof(Chart3DFillArchive::series_index_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DFillArchive, lightingmodel_)>(
-          reinterpret_cast<char*>(&lightingmodel_),
-          reinterpret_cast<char*>(&other->lightingmodel_));
+      PROTOBUF_FIELD_OFFSET(Chart3DFillArchive, _impl_.series_index_)
+      + sizeof(Chart3DFillArchive::_impl_.series_index_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DFillArchive, _impl_.lightingmodel_)>(
+          reinterpret_cast<char*>(&_impl_.lightingmodel_),
+          reinterpret_cast<char*>(&other->_impl_.lightingmodel_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DFillArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[1]);
 }
@@ -1429,7 +1493,7 @@ void Chart3DFillArchive::InternalSwap(Chart3DFillArchive* other) {
 
 class Chart3DPointLightArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DPointLightArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DPointLightArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DVectorArchive& position(const Chart3DPointLightArchive* msg);
   static void set_has_position(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1441,125 +1505,128 @@ class Chart3DPointLightArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DPointLightArchive::_Internal::position(const Chart3DPointLightArchive* msg) {
-  return *msg->position_;
+  return *msg->_impl_.position_;
 }
 Chart3DPointLightArchive::Chart3DPointLightArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DPointLightArchive)
 }
 Chart3DPointLightArchive::Chart3DPointLightArchive(const Chart3DPointLightArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DPointLightArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.position_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_position()) {
-    position_ = new ::TSCH::Chart3DVectorArchive(*from.position_);
-  } else {
-    position_ = nullptr;
+    _this->_impl_.position_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.position_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DPointLightArchive)
 }
 
-inline void Chart3DPointLightArchive::SharedCtor() {
-position_ = nullptr;
+inline void Chart3DPointLightArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.position_){nullptr}
+  };
 }
 
 Chart3DPointLightArchive::~Chart3DPointLightArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DPointLightArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DPointLightArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete position_;
+  if (this != internal_default_instance()) delete _impl_.position_;
 }
 
-void Chart3DPointLightArchive::ArenaDtor(void* object) {
-  Chart3DPointLightArchive* _this = reinterpret_cast< Chart3DPointLightArchive* >(object);
-  (void)_this;
-}
-void Chart3DPointLightArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DPointLightArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DPointLightArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DPointLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(position_ != nullptr);
-    position_->Clear();
+    GOOGLE_DCHECK(_impl_.position_ != nullptr);
+    _impl_.position_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DPointLightArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DPointLightArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DVectorArchive position = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_position(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DPointLightArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DPointLightArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DPointLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DVectorArchive position = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::position(this), target, stream);
+      InternalWriteMessage(1, _Internal::position(this),
+        _Internal::position(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DPointLightArchive)
@@ -1574,44 +1641,35 @@ size_t Chart3DPointLightArchive::ByteSizeLong() const {
   if (_internal_has_position()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *position_);
+        *_impl_.position_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DPointLightArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DPointLightArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DPointLightArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DPointLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DPointLightArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DPointLightArchive &>(from));
-}
 
-
-void Chart3DPointLightArchive::MergeFrom(const Chart3DPointLightArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPointLightArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DPointLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DPointLightArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DPointLightArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPointLightArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_position()) {
-    _internal_mutable_position()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_position());
+    _this->_internal_mutable_position()->::TSCH::Chart3DVectorArchive::MergeFrom(
+        from._internal_position());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DPointLightArchive::CopyFrom(const Chart3DPointLightArchive& from) {
@@ -1622,9 +1680,9 @@ void Chart3DPointLightArchive::CopyFrom(const Chart3DPointLightArchive& from) {
 }
 
 bool Chart3DPointLightArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_position()) {
-    if (!position_->IsInitialized()) return false;
+    if (!_impl_.position_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1632,12 +1690,12 @@ bool Chart3DPointLightArchive::IsInitialized() const {
 void Chart3DPointLightArchive::InternalSwap(Chart3DPointLightArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(position_, other->position_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.position_, other->_impl_.position_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DPointLightArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[2]);
 }
@@ -1646,7 +1704,7 @@ void Chart3DPointLightArchive::InternalSwap(Chart3DPointLightArchive* other) {
 
 class Chart3DDirectionalLightArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DDirectionalLightArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DDirectionalLightArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DVectorArchive& direction(const Chart3DDirectionalLightArchive* msg);
   static void set_has_direction(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1658,125 +1716,128 @@ class Chart3DDirectionalLightArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DDirectionalLightArchive::_Internal::direction(const Chart3DDirectionalLightArchive* msg) {
-  return *msg->direction_;
+  return *msg->_impl_.direction_;
 }
 Chart3DDirectionalLightArchive::Chart3DDirectionalLightArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DDirectionalLightArchive)
 }
 Chart3DDirectionalLightArchive::Chart3DDirectionalLightArchive(const Chart3DDirectionalLightArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DDirectionalLightArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.direction_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_direction()) {
-    direction_ = new ::TSCH::Chart3DVectorArchive(*from.direction_);
-  } else {
-    direction_ = nullptr;
+    _this->_impl_.direction_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.direction_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DDirectionalLightArchive)
 }
 
-inline void Chart3DDirectionalLightArchive::SharedCtor() {
-direction_ = nullptr;
+inline void Chart3DDirectionalLightArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.direction_){nullptr}
+  };
 }
 
 Chart3DDirectionalLightArchive::~Chart3DDirectionalLightArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DDirectionalLightArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DDirectionalLightArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete direction_;
+  if (this != internal_default_instance()) delete _impl_.direction_;
 }
 
-void Chart3DDirectionalLightArchive::ArenaDtor(void* object) {
-  Chart3DDirectionalLightArchive* _this = reinterpret_cast< Chart3DDirectionalLightArchive* >(object);
-  (void)_this;
-}
-void Chart3DDirectionalLightArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DDirectionalLightArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DDirectionalLightArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DDirectionalLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(direction_ != nullptr);
-    direction_->Clear();
+    GOOGLE_DCHECK(_impl_.direction_ != nullptr);
+    _impl_.direction_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DDirectionalLightArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DDirectionalLightArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DVectorArchive direction = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_direction(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DDirectionalLightArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DDirectionalLightArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DDirectionalLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DVectorArchive direction = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::direction(this), target, stream);
+      InternalWriteMessage(1, _Internal::direction(this),
+        _Internal::direction(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DDirectionalLightArchive)
@@ -1791,44 +1852,35 @@ size_t Chart3DDirectionalLightArchive::ByteSizeLong() const {
   if (_internal_has_direction()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *direction_);
+        *_impl_.direction_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DDirectionalLightArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DDirectionalLightArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DDirectionalLightArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DDirectionalLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DDirectionalLightArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DDirectionalLightArchive &>(from));
-}
 
-
-void Chart3DDirectionalLightArchive::MergeFrom(const Chart3DDirectionalLightArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DDirectionalLightArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DDirectionalLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DDirectionalLightArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DDirectionalLightArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DDirectionalLightArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_direction()) {
-    _internal_mutable_direction()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_direction());
+    _this->_internal_mutable_direction()->::TSCH::Chart3DVectorArchive::MergeFrom(
+        from._internal_direction());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DDirectionalLightArchive::CopyFrom(const Chart3DDirectionalLightArchive& from) {
@@ -1839,9 +1891,9 @@ void Chart3DDirectionalLightArchive::CopyFrom(const Chart3DDirectionalLightArchi
 }
 
 bool Chart3DDirectionalLightArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_direction()) {
-    if (!direction_->IsInitialized()) return false;
+    if (!_impl_.direction_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1849,12 +1901,12 @@ bool Chart3DDirectionalLightArchive::IsInitialized() const {
 void Chart3DDirectionalLightArchive::InternalSwap(Chart3DDirectionalLightArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(direction_, other->direction_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.direction_, other->_impl_.direction_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DDirectionalLightArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[3]);
 }
@@ -1863,7 +1915,7 @@ void Chart3DDirectionalLightArchive::InternalSwap(Chart3DDirectionalLightArchive
 
 class Chart3DSpotLightArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DSpotLightArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DSpotLightArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DVectorArchive& position(const Chart3DSpotLightArchive* msg);
   static void set_has_position(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1885,195 +1937,201 @@ class Chart3DSpotLightArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DSpotLightArchive::_Internal::position(const Chart3DSpotLightArchive* msg) {
-  return *msg->position_;
+  return *msg->_impl_.position_;
 }
 const ::TSCH::Chart3DVectorArchive&
 Chart3DSpotLightArchive::_Internal::direction(const Chart3DSpotLightArchive* msg) {
-  return *msg->direction_;
+  return *msg->_impl_.direction_;
 }
 Chart3DSpotLightArchive::Chart3DSpotLightArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DSpotLightArchive)
 }
 Chart3DSpotLightArchive::Chart3DSpotLightArchive(const Chart3DSpotLightArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DSpotLightArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.position_){nullptr}
+    , decltype(_impl_.direction_){nullptr}
+    , decltype(_impl_.cutoff_){}
+    , decltype(_impl_.dropoff_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_position()) {
-    position_ = new ::TSCH::Chart3DVectorArchive(*from.position_);
-  } else {
-    position_ = nullptr;
+    _this->_impl_.position_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.position_);
   }
   if (from._internal_has_direction()) {
-    direction_ = new ::TSCH::Chart3DVectorArchive(*from.direction_);
-  } else {
-    direction_ = nullptr;
+    _this->_impl_.direction_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.direction_);
   }
-  ::memcpy(&cutoff_, &from.cutoff_,
-    static_cast<size_t>(reinterpret_cast<char*>(&dropoff_) -
-    reinterpret_cast<char*>(&cutoff_)) + sizeof(dropoff_));
+  ::memcpy(&_impl_.cutoff_, &from._impl_.cutoff_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.dropoff_) -
+    reinterpret_cast<char*>(&_impl_.cutoff_)) + sizeof(_impl_.dropoff_));
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DSpotLightArchive)
 }
 
-inline void Chart3DSpotLightArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&position_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&dropoff_) -
-    reinterpret_cast<char*>(&position_)) + sizeof(dropoff_));
+inline void Chart3DSpotLightArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.position_){nullptr}
+    , decltype(_impl_.direction_){nullptr}
+    , decltype(_impl_.cutoff_){0}
+    , decltype(_impl_.dropoff_){0}
+  };
 }
 
 Chart3DSpotLightArchive::~Chart3DSpotLightArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DSpotLightArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DSpotLightArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete position_;
-  if (this != internal_default_instance()) delete direction_;
+  if (this != internal_default_instance()) delete _impl_.position_;
+  if (this != internal_default_instance()) delete _impl_.direction_;
 }
 
-void Chart3DSpotLightArchive::ArenaDtor(void* object) {
-  Chart3DSpotLightArchive* _this = reinterpret_cast< Chart3DSpotLightArchive* >(object);
-  (void)_this;
-}
-void Chart3DSpotLightArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DSpotLightArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DSpotLightArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DSpotLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(position_ != nullptr);
-      position_->Clear();
+      GOOGLE_DCHECK(_impl_.position_ != nullptr);
+      _impl_.position_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(direction_ != nullptr);
-      direction_->Clear();
+      GOOGLE_DCHECK(_impl_.direction_ != nullptr);
+      _impl_.direction_->Clear();
     }
   }
   if (cached_has_bits & 0x0000000cu) {
-    ::memset(&cutoff_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&dropoff_) -
-        reinterpret_cast<char*>(&cutoff_)) + sizeof(dropoff_));
+    ::memset(&_impl_.cutoff_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.dropoff_) -
+        reinterpret_cast<char*>(&_impl_.cutoff_)) + sizeof(_impl_.dropoff_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DSpotLightArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DSpotLightArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DVectorArchive position = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_position(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCH.Chart3DVectorArchive direction = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_direction(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float cutoff = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           _Internal::set_has_cutoff(&has_bits);
-          cutoff_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.cutoff_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float dropoff = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           _Internal::set_has_dropoff(&has_bits);
-          dropoff_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.dropoff_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DSpotLightArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DSpotLightArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DSpotLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DVectorArchive position = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::position(this), target, stream);
+      InternalWriteMessage(1, _Internal::position(this),
+        _Internal::position(this).GetCachedSize(), target, stream);
   }
 
   // required .TSCH.Chart3DVectorArchive direction = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::direction(this), target, stream);
+      InternalWriteMessage(2, _Internal::direction(this),
+        _Internal::direction(this).GetCachedSize(), target, stream);
   }
 
   // required float cutoff = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_cutoff(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(3, this->_internal_cutoff(), target);
   }
 
   // required float dropoff = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_dropoff(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(4, this->_internal_dropoff(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DSpotLightArchive)
@@ -2088,14 +2146,14 @@ size_t Chart3DSpotLightArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSCH.Chart3DVectorArchive position = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *position_);
+        *_impl_.position_);
   }
 
   if (_internal_has_direction()) {
     // required .TSCH.Chart3DVectorArchive direction = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *direction_);
+        *_impl_.direction_);
   }
 
   if (_internal_has_cutoff()) {
@@ -2114,16 +2172,16 @@ size_t Chart3DSpotLightArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DSpotLightArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
     // required .TSCH.Chart3DVectorArchive position = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *position_);
+        *_impl_.position_);
 
     // required .TSCH.Chart3DVectorArchive direction = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *direction_);
+        *_impl_.direction_);
 
     // required float cutoff = 3;
     total_size += 1 + 4;
@@ -2134,55 +2192,47 @@ size_t Chart3DSpotLightArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DSpotLightArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DSpotLightArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DSpotLightArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DSpotLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DSpotLightArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DSpotLightArchive &>(from));
-}
 
-
-void Chart3DSpotLightArchive::MergeFrom(const Chart3DSpotLightArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DSpotLightArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DSpotLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DSpotLightArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DSpotLightArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DSpotLightArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_position()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_position());
+      _this->_internal_mutable_position()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_position());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_direction()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_direction());
+      _this->_internal_mutable_direction()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_direction());
     }
     if (cached_has_bits & 0x00000004u) {
-      cutoff_ = from.cutoff_;
+      _this->_impl_.cutoff_ = from._impl_.cutoff_;
     }
     if (cached_has_bits & 0x00000008u) {
-      dropoff_ = from.dropoff_;
+      _this->_impl_.dropoff_ = from._impl_.dropoff_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DSpotLightArchive::CopyFrom(const Chart3DSpotLightArchive& from) {
@@ -2193,12 +2243,12 @@ void Chart3DSpotLightArchive::CopyFrom(const Chart3DSpotLightArchive& from) {
 }
 
 bool Chart3DSpotLightArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_position()) {
-    if (!position_->IsInitialized()) return false;
+    if (!_impl_.position_->IsInitialized()) return false;
   }
   if (_internal_has_direction()) {
-    if (!direction_->IsInitialized()) return false;
+    if (!_impl_.direction_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2206,17 +2256,17 @@ bool Chart3DSpotLightArchive::IsInitialized() const {
 void Chart3DSpotLightArchive::InternalSwap(Chart3DSpotLightArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DSpotLightArchive, dropoff_)
-      + sizeof(Chart3DSpotLightArchive::dropoff_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DSpotLightArchive, position_)>(
-          reinterpret_cast<char*>(&position_),
-          reinterpret_cast<char*>(&other->position_));
+      PROTOBUF_FIELD_OFFSET(Chart3DSpotLightArchive, _impl_.dropoff_)
+      + sizeof(Chart3DSpotLightArchive::_impl_.dropoff_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DSpotLightArchive, _impl_.position_)>(
+          reinterpret_cast<char*>(&_impl_.position_),
+          reinterpret_cast<char*>(&other->_impl_.position_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DSpotLightArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[4]);
 }
@@ -2225,7 +2275,7 @@ void Chart3DSpotLightArchive::InternalSwap(Chart3DSpotLightArchive* other) {
 
 class Chart3DLightArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DLightArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DLightArchive>()._impl_._has_bits_);
   static void set_has_name(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -2273,299 +2323,324 @@ class Chart3DLightArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DLightArchive::_Internal::ambient_color(const Chart3DLightArchive* msg) {
-  return *msg->ambient_color_;
+  return *msg->_impl_.ambient_color_;
 }
 const ::TSCH::Chart3DVectorArchive&
 Chart3DLightArchive::_Internal::diffuse_color(const Chart3DLightArchive* msg) {
-  return *msg->diffuse_color_;
+  return *msg->_impl_.diffuse_color_;
 }
 const ::TSCH::Chart3DVectorArchive&
 Chart3DLightArchive::_Internal::specular_color(const Chart3DLightArchive* msg) {
-  return *msg->specular_color_;
+  return *msg->_impl_.specular_color_;
 }
 const ::TSCH::Chart3DVectorArchive&
 Chart3DLightArchive::_Internal::attenuation(const Chart3DLightArchive* msg) {
-  return *msg->attenuation_;
+  return *msg->_impl_.attenuation_;
 }
 const ::TSCH::Chart3DPointLightArchive&
 Chart3DLightArchive::_Internal::point_light(const Chart3DLightArchive* msg) {
-  return *msg->point_light_;
+  return *msg->_impl_.point_light_;
 }
 const ::TSCH::Chart3DDirectionalLightArchive&
 Chart3DLightArchive::_Internal::directional_light(const Chart3DLightArchive* msg) {
-  return *msg->directional_light_;
+  return *msg->_impl_.directional_light_;
 }
 const ::TSCH::Chart3DSpotLightArchive&
 Chart3DLightArchive::_Internal::spot_light(const Chart3DLightArchive* msg) {
-  return *msg->spot_light_;
+  return *msg->_impl_.spot_light_;
 }
 Chart3DLightArchive::Chart3DLightArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DLightArchive)
 }
 Chart3DLightArchive::Chart3DLightArchive(const Chart3DLightArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DLightArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.ambient_color_){nullptr}
+    , decltype(_impl_.diffuse_color_){nullptr}
+    , decltype(_impl_.specular_color_){nullptr}
+    , decltype(_impl_.attenuation_){nullptr}
+    , decltype(_impl_.point_light_){nullptr}
+    , decltype(_impl_.directional_light_){nullptr}
+    , decltype(_impl_.spot_light_){nullptr}
+    , decltype(_impl_.intensity_){}
+    , decltype(_impl_.coordinate_space_){}
+    , decltype(_impl_.enabled_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_name()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.name_.Set(from._internal_name(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_ambient_color()) {
-    ambient_color_ = new ::TSCH::Chart3DVectorArchive(*from.ambient_color_);
-  } else {
-    ambient_color_ = nullptr;
+    _this->_impl_.ambient_color_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.ambient_color_);
   }
   if (from._internal_has_diffuse_color()) {
-    diffuse_color_ = new ::TSCH::Chart3DVectorArchive(*from.diffuse_color_);
-  } else {
-    diffuse_color_ = nullptr;
+    _this->_impl_.diffuse_color_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.diffuse_color_);
   }
   if (from._internal_has_specular_color()) {
-    specular_color_ = new ::TSCH::Chart3DVectorArchive(*from.specular_color_);
-  } else {
-    specular_color_ = nullptr;
+    _this->_impl_.specular_color_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.specular_color_);
   }
   if (from._internal_has_attenuation()) {
-    attenuation_ = new ::TSCH::Chart3DVectorArchive(*from.attenuation_);
-  } else {
-    attenuation_ = nullptr;
+    _this->_impl_.attenuation_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.attenuation_);
   }
   if (from._internal_has_point_light()) {
-    point_light_ = new ::TSCH::Chart3DPointLightArchive(*from.point_light_);
-  } else {
-    point_light_ = nullptr;
+    _this->_impl_.point_light_ = new ::TSCH::Chart3DPointLightArchive(*from._impl_.point_light_);
   }
   if (from._internal_has_directional_light()) {
-    directional_light_ = new ::TSCH::Chart3DDirectionalLightArchive(*from.directional_light_);
-  } else {
-    directional_light_ = nullptr;
+    _this->_impl_.directional_light_ = new ::TSCH::Chart3DDirectionalLightArchive(*from._impl_.directional_light_);
   }
   if (from._internal_has_spot_light()) {
-    spot_light_ = new ::TSCH::Chart3DSpotLightArchive(*from.spot_light_);
-  } else {
-    spot_light_ = nullptr;
+    _this->_impl_.spot_light_ = new ::TSCH::Chart3DSpotLightArchive(*from._impl_.spot_light_);
   }
-  ::memcpy(&intensity_, &from.intensity_,
-    static_cast<size_t>(reinterpret_cast<char*>(&enabled_) -
-    reinterpret_cast<char*>(&intensity_)) + sizeof(enabled_));
+  ::memcpy(&_impl_.intensity_, &from._impl_.intensity_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.enabled_) -
+    reinterpret_cast<char*>(&_impl_.intensity_)) + sizeof(_impl_.enabled_));
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DLightArchive)
 }
 
-inline void Chart3DLightArchive::SharedCtor() {
-name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&ambient_color_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&enabled_) -
-    reinterpret_cast<char*>(&ambient_color_)) + sizeof(enabled_));
+inline void Chart3DLightArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.ambient_color_){nullptr}
+    , decltype(_impl_.diffuse_color_){nullptr}
+    , decltype(_impl_.specular_color_){nullptr}
+    , decltype(_impl_.attenuation_){nullptr}
+    , decltype(_impl_.point_light_){nullptr}
+    , decltype(_impl_.directional_light_){nullptr}
+    , decltype(_impl_.spot_light_){nullptr}
+    , decltype(_impl_.intensity_){0}
+    , decltype(_impl_.coordinate_space_){0u}
+    , decltype(_impl_.enabled_){false}
+  };
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Chart3DLightArchive::~Chart3DLightArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DLightArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DLightArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete ambient_color_;
-  if (this != internal_default_instance()) delete diffuse_color_;
-  if (this != internal_default_instance()) delete specular_color_;
-  if (this != internal_default_instance()) delete attenuation_;
-  if (this != internal_default_instance()) delete point_light_;
-  if (this != internal_default_instance()) delete directional_light_;
-  if (this != internal_default_instance()) delete spot_light_;
+  _impl_.name_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.ambient_color_;
+  if (this != internal_default_instance()) delete _impl_.diffuse_color_;
+  if (this != internal_default_instance()) delete _impl_.specular_color_;
+  if (this != internal_default_instance()) delete _impl_.attenuation_;
+  if (this != internal_default_instance()) delete _impl_.point_light_;
+  if (this != internal_default_instance()) delete _impl_.directional_light_;
+  if (this != internal_default_instance()) delete _impl_.spot_light_;
 }
 
-void Chart3DLightArchive::ArenaDtor(void* object) {
-  Chart3DLightArchive* _this = reinterpret_cast< Chart3DLightArchive* >(object);
-  (void)_this;
-}
-void Chart3DLightArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DLightArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DLightArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      name_.ClearNonDefaultToEmpty();
+      _impl_.name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(ambient_color_ != nullptr);
-      ambient_color_->Clear();
+      GOOGLE_DCHECK(_impl_.ambient_color_ != nullptr);
+      _impl_.ambient_color_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(diffuse_color_ != nullptr);
-      diffuse_color_->Clear();
+      GOOGLE_DCHECK(_impl_.diffuse_color_ != nullptr);
+      _impl_.diffuse_color_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(specular_color_ != nullptr);
-      specular_color_->Clear();
+      GOOGLE_DCHECK(_impl_.specular_color_ != nullptr);
+      _impl_.specular_color_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(attenuation_ != nullptr);
-      attenuation_->Clear();
+      GOOGLE_DCHECK(_impl_.attenuation_ != nullptr);
+      _impl_.attenuation_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(point_light_ != nullptr);
-      point_light_->Clear();
+      GOOGLE_DCHECK(_impl_.point_light_ != nullptr);
+      _impl_.point_light_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(directional_light_ != nullptr);
-      directional_light_->Clear();
+      GOOGLE_DCHECK(_impl_.directional_light_ != nullptr);
+      _impl_.directional_light_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(spot_light_ != nullptr);
-      spot_light_->Clear();
+      GOOGLE_DCHECK(_impl_.spot_light_ != nullptr);
+      _impl_.spot_light_->Clear();
     }
   }
   if (cached_has_bits & 0x00000700u) {
-    ::memset(&intensity_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&enabled_) -
-        reinterpret_cast<char*>(&intensity_)) + sizeof(enabled_));
+    ::memset(&_impl_.intensity_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.enabled_) -
+        reinterpret_cast<char*>(&_impl_.intensity_)) + sizeof(_impl_.enabled_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DLightArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DLightArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required string name = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSCH.Chart3DLightArchive.name");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSCH.Chart3DLightArchive.name");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCH.Chart3DVectorArchive ambient_color = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_ambient_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCH.Chart3DVectorArchive diffuse_color = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_diffuse_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCH.Chart3DVectorArchive specular_color = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_specular_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float intensity = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 45)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 45)) {
           _Internal::set_has_intensity(&has_bits);
-          intensity_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.intensity_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSCH.Chart3DVectorArchive attenuation = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_attenuation(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 coordinate_space = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
           _Internal::set_has_coordinate_space(&has_bits);
-          coordinate_space_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.coordinate_space_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool enabled = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_enabled(&has_bits);
-          enabled_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.enabled_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DPointLightArchive point_light = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_point_light(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DDirectionalLightArchive directional_light = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_directional_light(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DSpotLightArchive spot_light = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_spot_light(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DLightArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DLightArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DLightArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required string name = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -2578,80 +2653,73 @@ failure:
 
   // required .TSCH.Chart3DVectorArchive ambient_color = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::ambient_color(this), target, stream);
+      InternalWriteMessage(2, _Internal::ambient_color(this),
+        _Internal::ambient_color(this).GetCachedSize(), target, stream);
   }
 
   // required .TSCH.Chart3DVectorArchive diffuse_color = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::diffuse_color(this), target, stream);
+      InternalWriteMessage(3, _Internal::diffuse_color(this),
+        _Internal::diffuse_color(this).GetCachedSize(), target, stream);
   }
 
   // required .TSCH.Chart3DVectorArchive specular_color = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::specular_color(this), target, stream);
+      InternalWriteMessage(4, _Internal::specular_color(this),
+        _Internal::specular_color(this).GetCachedSize(), target, stream);
   }
 
   // required float intensity = 5;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_intensity(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(5, this->_internal_intensity(), target);
   }
 
   // required .TSCH.Chart3DVectorArchive attenuation = 6;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        6, _Internal::attenuation(this), target, stream);
+      InternalWriteMessage(6, _Internal::attenuation(this),
+        _Internal::attenuation(this).GetCachedSize(), target, stream);
   }
 
   // required uint32 coordinate_space = 7;
   if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(7, this->_internal_coordinate_space(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(7, this->_internal_coordinate_space(), target);
   }
 
   // required bool enabled = 8;
   if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_enabled(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_enabled(), target);
   }
 
   // optional .TSCH.Chart3DPointLightArchive point_light = 9;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::point_light(this), target, stream);
+      InternalWriteMessage(9, _Internal::point_light(this),
+        _Internal::point_light(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DDirectionalLightArchive directional_light = 10;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::directional_light(this), target, stream);
+      InternalWriteMessage(10, _Internal::directional_light(this),
+        _Internal::directional_light(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DSpotLightArchive spot_light = 11;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::spot_light(this), target, stream);
+      InternalWriteMessage(11, _Internal::spot_light(this),
+        _Internal::spot_light(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DLightArchive)
@@ -2673,28 +2741,28 @@ size_t Chart3DLightArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSCH.Chart3DVectorArchive ambient_color = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *ambient_color_);
+        *_impl_.ambient_color_);
   }
 
   if (_internal_has_diffuse_color()) {
     // required .TSCH.Chart3DVectorArchive diffuse_color = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *diffuse_color_);
+        *_impl_.diffuse_color_);
   }
 
   if (_internal_has_specular_color()) {
     // required .TSCH.Chart3DVectorArchive specular_color = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *specular_color_);
+        *_impl_.specular_color_);
   }
 
   if (_internal_has_attenuation()) {
     // required .TSCH.Chart3DVectorArchive attenuation = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *attenuation_);
+        *_impl_.attenuation_);
   }
 
   if (_internal_has_intensity()) {
@@ -2704,9 +2772,7 @@ size_t Chart3DLightArchive::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_coordinate_space()) {
     // required uint32 coordinate_space = 7;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_coordinate_space());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_coordinate_space());
   }
 
   if (_internal_has_enabled()) {
@@ -2720,7 +2786,7 @@ size_t Chart3DLightArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DLightArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000071f) ^ 0x0000071f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000071f) ^ 0x0000071f) == 0) {  // All required fields are present.
     // required string name = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -2729,30 +2795,28 @@ size_t Chart3DLightArchive::ByteSizeLong() const {
     // required .TSCH.Chart3DVectorArchive ambient_color = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *ambient_color_);
+        *_impl_.ambient_color_);
 
     // required .TSCH.Chart3DVectorArchive diffuse_color = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *diffuse_color_);
+        *_impl_.diffuse_color_);
 
     // required .TSCH.Chart3DVectorArchive specular_color = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *specular_color_);
+        *_impl_.specular_color_);
 
     // required .TSCH.Chart3DVectorArchive attenuation = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *attenuation_);
+        *_impl_.attenuation_);
 
     // required float intensity = 5;
     total_size += 1 + 4;
 
     // required uint32 coordinate_space = 7;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_coordinate_space());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_coordinate_space());
 
     // required bool enabled = 8;
     total_size += 1 + 1;
@@ -2760,102 +2824,99 @@ size_t Chart3DLightArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000e0u) {
     // optional .TSCH.Chart3DPointLightArchive point_light = 9;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *point_light_);
+          *_impl_.point_light_);
     }
 
     // optional .TSCH.Chart3DDirectionalLightArchive directional_light = 10;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *directional_light_);
+          *_impl_.directional_light_);
     }
 
     // optional .TSCH.Chart3DSpotLightArchive spot_light = 11;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *spot_light_);
+          *_impl_.spot_light_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DLightArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DLightArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DLightArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DLightArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DLightArchive &>(from));
-}
 
-
-void Chart3DLightArchive::MergeFrom(const Chart3DLightArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DLightArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DLightArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DLightArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_name(from._internal_name());
+      _this->_internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_ambient_color()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_ambient_color());
+      _this->_internal_mutable_ambient_color()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_ambient_color());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_diffuse_color()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_diffuse_color());
+      _this->_internal_mutable_diffuse_color()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_diffuse_color());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_specular_color()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_specular_color());
+      _this->_internal_mutable_specular_color()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_specular_color());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_attenuation()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_attenuation());
+      _this->_internal_mutable_attenuation()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_attenuation());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_point_light()->::TSCH::Chart3DPointLightArchive::MergeFrom(from._internal_point_light());
+      _this->_internal_mutable_point_light()->::TSCH::Chart3DPointLightArchive::MergeFrom(
+          from._internal_point_light());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_directional_light()->::TSCH::Chart3DDirectionalLightArchive::MergeFrom(from._internal_directional_light());
+      _this->_internal_mutable_directional_light()->::TSCH::Chart3DDirectionalLightArchive::MergeFrom(
+          from._internal_directional_light());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_spot_light()->::TSCH::Chart3DSpotLightArchive::MergeFrom(from._internal_spot_light());
+      _this->_internal_mutable_spot_light()->::TSCH::Chart3DSpotLightArchive::MergeFrom(
+          from._internal_spot_light());
     }
   }
   if (cached_has_bits & 0x00000700u) {
     if (cached_has_bits & 0x00000100u) {
-      intensity_ = from.intensity_;
+      _this->_impl_.intensity_ = from._impl_.intensity_;
     }
     if (cached_has_bits & 0x00000200u) {
-      coordinate_space_ = from.coordinate_space_;
+      _this->_impl_.coordinate_space_ = from._impl_.coordinate_space_;
     }
     if (cached_has_bits & 0x00000400u) {
-      enabled_ = from.enabled_;
+      _this->_impl_.enabled_ = from._impl_.enabled_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DLightArchive::CopyFrom(const Chart3DLightArchive& from) {
@@ -2866,50 +2927,51 @@ void Chart3DLightArchive::CopyFrom(const Chart3DLightArchive& from) {
 }
 
 bool Chart3DLightArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_ambient_color()) {
-    if (!ambient_color_->IsInitialized()) return false;
+    if (!_impl_.ambient_color_->IsInitialized()) return false;
   }
   if (_internal_has_diffuse_color()) {
-    if (!diffuse_color_->IsInitialized()) return false;
+    if (!_impl_.diffuse_color_->IsInitialized()) return false;
   }
   if (_internal_has_specular_color()) {
-    if (!specular_color_->IsInitialized()) return false;
+    if (!_impl_.specular_color_->IsInitialized()) return false;
   }
   if (_internal_has_attenuation()) {
-    if (!attenuation_->IsInitialized()) return false;
+    if (!_impl_.attenuation_->IsInitialized()) return false;
   }
   if (_internal_has_point_light()) {
-    if (!point_light_->IsInitialized()) return false;
+    if (!_impl_.point_light_->IsInitialized()) return false;
   }
   if (_internal_has_directional_light()) {
-    if (!directional_light_->IsInitialized()) return false;
+    if (!_impl_.directional_light_->IsInitialized()) return false;
   }
   if (_internal_has_spot_light()) {
-    if (!spot_light_->IsInitialized()) return false;
+    if (!_impl_.spot_light_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Chart3DLightArchive::InternalSwap(Chart3DLightArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &name_, GetArenaForAllocation(),
-      &other->name_, other->GetArenaForAllocation()
+      &_impl_.name_, lhs_arena,
+      &other->_impl_.name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DLightArchive, enabled_)
-      + sizeof(Chart3DLightArchive::enabled_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DLightArchive, ambient_color_)>(
-          reinterpret_cast<char*>(&ambient_color_),
-          reinterpret_cast<char*>(&other->ambient_color_));
+      PROTOBUF_FIELD_OFFSET(Chart3DLightArchive, _impl_.enabled_)
+      + sizeof(Chart3DLightArchive::_impl_.enabled_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DLightArchive, _impl_.ambient_color_)>(
+          reinterpret_cast<char*>(&_impl_.ambient_color_),
+          reinterpret_cast<char*>(&other->_impl_.ambient_color_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DLightArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[5]);
 }
@@ -2918,7 +2980,7 @@ void Chart3DLightArchive::InternalSwap(Chart3DLightArchive* other) {
 
 class Chart3DLightingModelArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DLightingModelArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DLightingModelArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DPhongLightingModelArchive& phong(const Chart3DLightingModelArchive* msg);
   static void set_has_phong(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -2935,188 +2997,188 @@ class Chart3DLightingModelArchive::_Internal {
 
 const ::TSCH::Chart3DPhongLightingModelArchive&
 Chart3DLightingModelArchive::_Internal::phong(const Chart3DLightingModelArchive* msg) {
-  return *msg->phong_;
+  return *msg->_impl_.phong_;
 }
 const ::TSCH::Chart3DFixedFunctionLightingModelArchive&
 Chart3DLightingModelArchive::_Internal::fixed_function(const Chart3DLightingModelArchive* msg) {
-  return *msg->fixed_function_;
+  return *msg->_impl_.fixed_function_;
 }
 const ::TSCH::Chart3DEnvironmentPackageArchive&
 Chart3DLightingModelArchive::_Internal::environment(const Chart3DLightingModelArchive* msg) {
-  return *msg->environment_;
+  return *msg->_impl_.environment_;
 }
 Chart3DLightingModelArchive::Chart3DLightingModelArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DLightingModelArchive)
 }
 Chart3DLightingModelArchive::Chart3DLightingModelArchive(const Chart3DLightingModelArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DLightingModelArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.phong_){nullptr}
+    , decltype(_impl_.fixed_function_){nullptr}
+    , decltype(_impl_.environment_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_phong()) {
-    phong_ = new ::TSCH::Chart3DPhongLightingModelArchive(*from.phong_);
-  } else {
-    phong_ = nullptr;
+    _this->_impl_.phong_ = new ::TSCH::Chart3DPhongLightingModelArchive(*from._impl_.phong_);
   }
   if (from._internal_has_fixed_function()) {
-    fixed_function_ = new ::TSCH::Chart3DFixedFunctionLightingModelArchive(*from.fixed_function_);
-  } else {
-    fixed_function_ = nullptr;
+    _this->_impl_.fixed_function_ = new ::TSCH::Chart3DFixedFunctionLightingModelArchive(*from._impl_.fixed_function_);
   }
   if (from._internal_has_environment()) {
-    environment_ = new ::TSCH::Chart3DEnvironmentPackageArchive(*from.environment_);
-  } else {
-    environment_ = nullptr;
+    _this->_impl_.environment_ = new ::TSCH::Chart3DEnvironmentPackageArchive(*from._impl_.environment_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DLightingModelArchive)
 }
 
-inline void Chart3DLightingModelArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&phong_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&environment_) -
-    reinterpret_cast<char*>(&phong_)) + sizeof(environment_));
+inline void Chart3DLightingModelArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.phong_){nullptr}
+    , decltype(_impl_.fixed_function_){nullptr}
+    , decltype(_impl_.environment_){nullptr}
+  };
 }
 
 Chart3DLightingModelArchive::~Chart3DLightingModelArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DLightingModelArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DLightingModelArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete phong_;
-  if (this != internal_default_instance()) delete fixed_function_;
-  if (this != internal_default_instance()) delete environment_;
+  if (this != internal_default_instance()) delete _impl_.phong_;
+  if (this != internal_default_instance()) delete _impl_.fixed_function_;
+  if (this != internal_default_instance()) delete _impl_.environment_;
 }
 
-void Chart3DLightingModelArchive::ArenaDtor(void* object) {
-  Chart3DLightingModelArchive* _this = reinterpret_cast< Chart3DLightingModelArchive* >(object);
-  (void)_this;
-}
-void Chart3DLightingModelArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DLightingModelArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DLightingModelArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(phong_ != nullptr);
-      phong_->Clear();
+      GOOGLE_DCHECK(_impl_.phong_ != nullptr);
+      _impl_.phong_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(fixed_function_ != nullptr);
-      fixed_function_->Clear();
+      GOOGLE_DCHECK(_impl_.fixed_function_ != nullptr);
+      _impl_.fixed_function_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(environment_ != nullptr);
-      environment_->Clear();
+      GOOGLE_DCHECK(_impl_.environment_ != nullptr);
+      _impl_.environment_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DLightingModelArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DLightingModelArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSCH.Chart3DPhongLightingModelArchive phong = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_phong(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DFixedFunctionLightingModelArchive fixed_function = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_fixed_function(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DEnvironmentPackageArchive environment = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_environment(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DLightingModelArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DLightingModelArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSCH.Chart3DPhongLightingModelArchive phong = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::phong(this), target, stream);
+      InternalWriteMessage(1, _Internal::phong(this),
+        _Internal::phong(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DFixedFunctionLightingModelArchive fixed_function = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::fixed_function(this), target, stream);
+      InternalWriteMessage(2, _Internal::fixed_function(this),
+        _Internal::fixed_function(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DEnvironmentPackageArchive environment = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::environment(this), target, stream);
+      InternalWriteMessage(3, _Internal::environment(this),
+        _Internal::environment(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DLightingModelArchive)
@@ -3127,75 +3189,68 @@ size_t Chart3DLightingModelArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DLightingModelArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     // optional .TSCH.Chart3DPhongLightingModelArchive phong = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *phong_);
+          *_impl_.phong_);
     }
 
     // optional .TSCH.Chart3DFixedFunctionLightingModelArchive fixed_function = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *fixed_function_);
+          *_impl_.fixed_function_);
     }
 
     // optional .TSCH.Chart3DEnvironmentPackageArchive environment = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *environment_);
+          *_impl_.environment_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DLightingModelArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DLightingModelArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DLightingModelArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DLightingModelArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DLightingModelArchive &>(from));
-}
 
-
-void Chart3DLightingModelArchive::MergeFrom(const Chart3DLightingModelArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightingModelArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DLightingModelArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DLightingModelArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightingModelArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_phong()->::TSCH::Chart3DPhongLightingModelArchive::MergeFrom(from._internal_phong());
+      _this->_internal_mutable_phong()->::TSCH::Chart3DPhongLightingModelArchive::MergeFrom(
+          from._internal_phong());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_fixed_function()->::TSCH::Chart3DFixedFunctionLightingModelArchive::MergeFrom(from._internal_fixed_function());
+      _this->_internal_mutable_fixed_function()->::TSCH::Chart3DFixedFunctionLightingModelArchive::MergeFrom(
+          from._internal_fixed_function());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_environment()->::TSCH::Chart3DEnvironmentPackageArchive::MergeFrom(from._internal_environment());
+      _this->_internal_mutable_environment()->::TSCH::Chart3DEnvironmentPackageArchive::MergeFrom(
+          from._internal_environment());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DLightingModelArchive::CopyFrom(const Chart3DLightingModelArchive& from) {
@@ -3207,13 +3262,13 @@ void Chart3DLightingModelArchive::CopyFrom(const Chart3DLightingModelArchive& fr
 
 bool Chart3DLightingModelArchive::IsInitialized() const {
   if (_internal_has_phong()) {
-    if (!phong_->IsInitialized()) return false;
+    if (!_impl_.phong_->IsInitialized()) return false;
   }
   if (_internal_has_fixed_function()) {
-    if (!fixed_function_->IsInitialized()) return false;
+    if (!_impl_.fixed_function_->IsInitialized()) return false;
   }
   if (_internal_has_environment()) {
-    if (!environment_->IsInitialized()) return false;
+    if (!_impl_.environment_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3221,17 +3276,17 @@ bool Chart3DLightingModelArchive::IsInitialized() const {
 void Chart3DLightingModelArchive::InternalSwap(Chart3DLightingModelArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DLightingModelArchive, environment_)
-      + sizeof(Chart3DLightingModelArchive::environment_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DLightingModelArchive, phong_)>(
-          reinterpret_cast<char*>(&phong_),
-          reinterpret_cast<char*>(&other->phong_));
+      PROTOBUF_FIELD_OFFSET(Chart3DLightingModelArchive, _impl_.environment_)
+      + sizeof(Chart3DLightingModelArchive::_impl_.environment_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DLightingModelArchive, _impl_.phong_)>(
+          reinterpret_cast<char*>(&_impl_.phong_),
+          reinterpret_cast<char*>(&other->_impl_.phong_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DLightingModelArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[6]);
 }
@@ -3240,7 +3295,7 @@ void Chart3DLightingModelArchive::InternalSwap(Chart3DLightingModelArchive* othe
 
 class Chart3DLightingPackageArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DLightingPackageArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DLightingPackageArchive>()._impl_._has_bits_);
   static void set_has_name(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -3251,89 +3306,103 @@ class Chart3DLightingPackageArchive::_Internal {
 
 Chart3DLightingPackageArchive::Chart3DLightingPackageArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  lights_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DLightingPackageArchive)
 }
 Chart3DLightingPackageArchive::Chart3DLightingPackageArchive(const Chart3DLightingPackageArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      lights_(from.lights_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DLightingPackageArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.lights_){from._impl_.lights_}
+    , decltype(_impl_.name_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_name()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.name_.Set(from._internal_name(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DLightingPackageArchive)
 }
 
-inline void Chart3DLightingPackageArchive::SharedCtor() {
-name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void Chart3DLightingPackageArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.lights_){arena}
+    , decltype(_impl_.name_){}
+  };
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 Chart3DLightingPackageArchive::~Chart3DLightingPackageArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DLightingPackageArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DLightingPackageArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.lights_.~RepeatedPtrField();
+  _impl_.name_.Destroy();
 }
 
-void Chart3DLightingPackageArchive::ArenaDtor(void* object) {
-  Chart3DLightingPackageArchive* _this = reinterpret_cast< Chart3DLightingPackageArchive* >(object);
-  (void)_this;
-}
-void Chart3DLightingPackageArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DLightingPackageArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DLightingPackageArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DLightingPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  lights_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.lights_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    name_.ClearNonDefaultToEmpty();
+    _impl_.name_.ClearNonDefaultToEmpty();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DLightingPackageArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DLightingPackageArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required string name = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSCH.Chart3DLightingPackageArchive.name");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSCH.Chart3DLightingPackageArchive.name");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DLightArchive lights = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3341,39 +3410,40 @@ const char* Chart3DLightingPackageArchive::_InternalParse(const char* ptr, ::PRO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DLightingPackageArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DLightingPackageArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DLightingPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required string name = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -3385,15 +3455,15 @@ failure:
   }
 
   // repeated .TSCH.Chart3DLightArchive lights = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_lights_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_lights_size()); i < n; i++) {
+    const auto& repfield = this->_internal_lights(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_lights(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DLightingPackageArchive)
@@ -3410,50 +3480,40 @@ size_t Chart3DLightingPackageArchive::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DLightArchive lights = 2;
   total_size += 1UL * this->_internal_lights_size();
-  for (const auto& msg : this->lights_) {
+  for (const auto& msg : this->_impl_.lights_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DLightingPackageArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DLightingPackageArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DLightingPackageArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DLightingPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DLightingPackageArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DLightingPackageArchive &>(from));
-}
 
-
-void Chart3DLightingPackageArchive::MergeFrom(const Chart3DLightingPackageArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightingPackageArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DLightingPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DLightingPackageArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DLightingPackageArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DLightingPackageArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  lights_.MergeFrom(from.lights_);
+  _this->_impl_.lights_.MergeFrom(from._impl_.lights_);
   if (from._internal_has_name()) {
-    _internal_set_name(from._internal_name());
+    _this->_internal_set_name(from._internal_name());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DLightingPackageArchive::CopyFrom(const Chart3DLightingPackageArchive& from) {
@@ -3464,25 +3524,27 @@ void Chart3DLightingPackageArchive::CopyFrom(const Chart3DLightingPackageArchive
 }
 
 bool Chart3DLightingPackageArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(lights_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.lights_))
+    return false;
   return true;
 }
 
 void Chart3DLightingPackageArchive::InternalSwap(Chart3DLightingPackageArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  lights_.InternalSwap(&other->lights_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.lights_.InternalSwap(&other->_impl_.lights_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &name_, GetArenaForAllocation(),
-      &other->name_, other->GetArenaForAllocation()
+      &_impl_.name_, lhs_arena,
+      &other->_impl_.name_, rhs_arena
   );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DLightingPackageArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[7]);
 }
@@ -3491,7 +3553,7 @@ void Chart3DLightingPackageArchive::InternalSwap(Chart3DLightingPackageArchive* 
 
 class Chart3DTexturesMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DTexturesMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DTexturesMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DVectorArchive& color(const Chart3DTexturesMaterialArchive* msg);
   static void set_has_color(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3503,90 +3565,95 @@ class Chart3DTexturesMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DTexturesMaterialArchive::_Internal::color(const Chart3DTexturesMaterialArchive* msg) {
-  return *msg->color_;
+  return *msg->_impl_.color_;
 }
 Chart3DTexturesMaterialArchive::Chart3DTexturesMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  textures_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DTexturesMaterialArchive)
 }
 Chart3DTexturesMaterialArchive::Chart3DTexturesMaterialArchive(const Chart3DTexturesMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      textures_(from.textures_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DTexturesMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.textures_){from._impl_.textures_}
+    , decltype(_impl_.color_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_color()) {
-    color_ = new ::TSCH::Chart3DVectorArchive(*from.color_);
-  } else {
-    color_ = nullptr;
+    _this->_impl_.color_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.color_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DTexturesMaterialArchive)
 }
 
-inline void Chart3DTexturesMaterialArchive::SharedCtor() {
-color_ = nullptr;
+inline void Chart3DTexturesMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.textures_){arena}
+    , decltype(_impl_.color_){nullptr}
+  };
 }
 
 Chart3DTexturesMaterialArchive::~Chart3DTexturesMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DTexturesMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DTexturesMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete color_;
+  _impl_.textures_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.color_;
 }
 
-void Chart3DTexturesMaterialArchive::ArenaDtor(void* object) {
-  Chart3DTexturesMaterialArchive* _this = reinterpret_cast< Chart3DTexturesMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DTexturesMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DTexturesMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DTexturesMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DTexturesMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  textures_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.textures_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(color_ != nullptr);
-    color_->Clear();
+    GOOGLE_DCHECK(_impl_.color_ != nullptr);
+    _impl_.color_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DTexturesMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DTexturesMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DVectorArchive color = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DTSPImageDataTextureArchive textures = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3594,57 +3661,57 @@ const char* Chart3DTexturesMaterialArchive::_InternalParse(const char* ptr, ::PR
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DTexturesMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DTexturesMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DTexturesMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DVectorArchive color = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::color(this), target, stream);
+      InternalWriteMessage(1, _Internal::color(this),
+        _Internal::color(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DTSPImageDataTextureArchive textures = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_textures_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_textures_size()); i < n; i++) {
+    const auto& repfield = this->_internal_textures(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_textures(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DTexturesMaterialArchive)
@@ -3659,52 +3726,43 @@ size_t Chart3DTexturesMaterialArchive::ByteSizeLong() const {
   if (_internal_has_color()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *color_);
+        *_impl_.color_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DTSPImageDataTextureArchive textures = 2;
   total_size += 1UL * this->_internal_textures_size();
-  for (const auto& msg : this->textures_) {
+  for (const auto& msg : this->_impl_.textures_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DTexturesMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DTexturesMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DTexturesMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DTexturesMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DTexturesMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DTexturesMaterialArchive &>(from));
-}
 
-
-void Chart3DTexturesMaterialArchive::MergeFrom(const Chart3DTexturesMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DTexturesMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DTexturesMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DTexturesMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DTexturesMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DTexturesMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  textures_.MergeFrom(from.textures_);
+  _this->_impl_.textures_.MergeFrom(from._impl_.textures_);
   if (from._internal_has_color()) {
-    _internal_mutable_color()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_color());
+    _this->_internal_mutable_color()->::TSCH::Chart3DVectorArchive::MergeFrom(
+        from._internal_color());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DTexturesMaterialArchive::CopyFrom(const Chart3DTexturesMaterialArchive& from) {
@@ -3715,10 +3773,11 @@ void Chart3DTexturesMaterialArchive::CopyFrom(const Chart3DTexturesMaterialArchi
 }
 
 bool Chart3DTexturesMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(textures_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.textures_))
+    return false;
   if (_internal_has_color()) {
-    if (!color_->IsInitialized()) return false;
+    if (!_impl_.color_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3726,13 +3785,13 @@ bool Chart3DTexturesMaterialArchive::IsInitialized() const {
 void Chart3DTexturesMaterialArchive::InternalSwap(Chart3DTexturesMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  textures_.InternalSwap(&other->textures_);
-  swap(color_, other->color_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.textures_.InternalSwap(&other->_impl_.textures_);
+  swap(_impl_.color_, other->_impl_.color_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DTexturesMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[8]);
 }
@@ -3741,7 +3800,7 @@ void Chart3DTexturesMaterialArchive::InternalSwap(Chart3DTexturesMaterialArchive
 
 class Chart3DEmissiveMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DEmissiveMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DEmissiveMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DEmissiveMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3753,90 +3812,95 @@ class Chart3DEmissiveMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DEmissiveMaterialArchive::_Internal::super(const Chart3DEmissiveMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DEmissiveMaterialArchive::Chart3DEmissiveMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DEmissiveMaterialArchive)
 }
 Chart3DEmissiveMaterialArchive::Chart3DEmissiveMaterialArchive(const Chart3DEmissiveMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DEmissiveMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DEmissiveMaterialArchive)
 }
 
-inline void Chart3DEmissiveMaterialArchive::SharedCtor() {
-super_ = nullptr;
+inline void Chart3DEmissiveMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 Chart3DEmissiveMaterialArchive::~Chart3DEmissiveMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DEmissiveMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DEmissiveMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DEmissiveMaterialArchive::ArenaDtor(void* object) {
-  Chart3DEmissiveMaterialArchive* _this = reinterpret_cast< Chart3DEmissiveMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DEmissiveMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DEmissiveMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DEmissiveMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DEmissiveMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DEmissiveMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DEmissiveMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3844,57 +3908,57 @@ const char* Chart3DEmissiveMaterialArchive::_InternalParse(const char* ptr, ::PR
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DEmissiveMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DEmissiveMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DEmissiveMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DEmissiveMaterialArchive)
@@ -3909,52 +3973,43 @@ size_t Chart3DEmissiveMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DEmissiveMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DEmissiveMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DEmissiveMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DEmissiveMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DEmissiveMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DEmissiveMaterialArchive &>(from));
-}
 
-
-void Chart3DEmissiveMaterialArchive::MergeFrom(const Chart3DEmissiveMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEmissiveMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DEmissiveMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DEmissiveMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DEmissiveMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEmissiveMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tilings_.MergeFrom(from.tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DEmissiveMaterialArchive::CopyFrom(const Chart3DEmissiveMaterialArchive& from) {
@@ -3965,10 +4020,11 @@ void Chart3DEmissiveMaterialArchive::CopyFrom(const Chart3DEmissiveMaterialArchi
 }
 
 bool Chart3DEmissiveMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3976,13 +4032,13 @@ bool Chart3DEmissiveMaterialArchive::IsInitialized() const {
 void Chart3DEmissiveMaterialArchive::InternalSwap(Chart3DEmissiveMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  tilings_.InternalSwap(&other->tilings_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DEmissiveMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[9]);
 }
@@ -3991,7 +4047,7 @@ void Chart3DEmissiveMaterialArchive::InternalSwap(Chart3DEmissiveMaterialArchive
 
 class Chart3DDiffuseMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DDiffuseMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DDiffuseMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DDiffuseMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4003,90 +4059,95 @@ class Chart3DDiffuseMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DDiffuseMaterialArchive::_Internal::super(const Chart3DDiffuseMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DDiffuseMaterialArchive::Chart3DDiffuseMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DDiffuseMaterialArchive)
 }
 Chart3DDiffuseMaterialArchive::Chart3DDiffuseMaterialArchive(const Chart3DDiffuseMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DDiffuseMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DDiffuseMaterialArchive)
 }
 
-inline void Chart3DDiffuseMaterialArchive::SharedCtor() {
-super_ = nullptr;
+inline void Chart3DDiffuseMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 Chart3DDiffuseMaterialArchive::~Chart3DDiffuseMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DDiffuseMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DDiffuseMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DDiffuseMaterialArchive::ArenaDtor(void* object) {
-  Chart3DDiffuseMaterialArchive* _this = reinterpret_cast< Chart3DDiffuseMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DDiffuseMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DDiffuseMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DDiffuseMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DDiffuseMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DDiffuseMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DDiffuseMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4094,57 +4155,57 @@ const char* Chart3DDiffuseMaterialArchive::_InternalParse(const char* ptr, ::PRO
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DDiffuseMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DDiffuseMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DDiffuseMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DDiffuseMaterialArchive)
@@ -4159,52 +4220,43 @@ size_t Chart3DDiffuseMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DDiffuseMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DDiffuseMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DDiffuseMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DDiffuseMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DDiffuseMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DDiffuseMaterialArchive &>(from));
-}
 
-
-void Chart3DDiffuseMaterialArchive::MergeFrom(const Chart3DDiffuseMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DDiffuseMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DDiffuseMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DDiffuseMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DDiffuseMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DDiffuseMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tilings_.MergeFrom(from.tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DDiffuseMaterialArchive::CopyFrom(const Chart3DDiffuseMaterialArchive& from) {
@@ -4215,10 +4267,11 @@ void Chart3DDiffuseMaterialArchive::CopyFrom(const Chart3DDiffuseMaterialArchive
 }
 
 bool Chart3DDiffuseMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4226,13 +4279,13 @@ bool Chart3DDiffuseMaterialArchive::IsInitialized() const {
 void Chart3DDiffuseMaterialArchive::InternalSwap(Chart3DDiffuseMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  tilings_.InternalSwap(&other->tilings_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DDiffuseMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[10]);
 }
@@ -4241,7 +4294,7 @@ void Chart3DDiffuseMaterialArchive::InternalSwap(Chart3DDiffuseMaterialArchive* 
 
 class Chart3DModulateMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DModulateMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DModulateMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DModulateMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4253,90 +4306,95 @@ class Chart3DModulateMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DModulateMaterialArchive::_Internal::super(const Chart3DModulateMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DModulateMaterialArchive::Chart3DModulateMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DModulateMaterialArchive)
 }
 Chart3DModulateMaterialArchive::Chart3DModulateMaterialArchive(const Chart3DModulateMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DModulateMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DModulateMaterialArchive)
 }
 
-inline void Chart3DModulateMaterialArchive::SharedCtor() {
-super_ = nullptr;
+inline void Chart3DModulateMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 Chart3DModulateMaterialArchive::~Chart3DModulateMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DModulateMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DModulateMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DModulateMaterialArchive::ArenaDtor(void* object) {
-  Chart3DModulateMaterialArchive* _this = reinterpret_cast< Chart3DModulateMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DModulateMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DModulateMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DModulateMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DModulateMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DModulateMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DModulateMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4344,57 +4402,57 @@ const char* Chart3DModulateMaterialArchive::_InternalParse(const char* ptr, ::PR
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DModulateMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DModulateMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DModulateMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DModulateMaterialArchive)
@@ -4409,52 +4467,43 @@ size_t Chart3DModulateMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DModulateMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DModulateMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DModulateMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DModulateMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DModulateMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DModulateMaterialArchive &>(from));
-}
 
-
-void Chart3DModulateMaterialArchive::MergeFrom(const Chart3DModulateMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DModulateMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DModulateMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DModulateMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DModulateMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DModulateMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tilings_.MergeFrom(from.tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DModulateMaterialArchive::CopyFrom(const Chart3DModulateMaterialArchive& from) {
@@ -4465,10 +4514,11 @@ void Chart3DModulateMaterialArchive::CopyFrom(const Chart3DModulateMaterialArchi
 }
 
 bool Chart3DModulateMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4476,13 +4526,13 @@ bool Chart3DModulateMaterialArchive::IsInitialized() const {
 void Chart3DModulateMaterialArchive::InternalSwap(Chart3DModulateMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  tilings_.InternalSwap(&other->tilings_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DModulateMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[11]);
 }
@@ -4491,7 +4541,7 @@ void Chart3DModulateMaterialArchive::InternalSwap(Chart3DModulateMaterialArchive
 
 class Chart3DSpecularMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DSpecularMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DSpecularMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DSpecularMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4503,90 +4553,95 @@ class Chart3DSpecularMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DSpecularMaterialArchive::_Internal::super(const Chart3DSpecularMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DSpecularMaterialArchive::Chart3DSpecularMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DSpecularMaterialArchive)
 }
 Chart3DSpecularMaterialArchive::Chart3DSpecularMaterialArchive(const Chart3DSpecularMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DSpecularMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DSpecularMaterialArchive)
 }
 
-inline void Chart3DSpecularMaterialArchive::SharedCtor() {
-super_ = nullptr;
+inline void Chart3DSpecularMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 Chart3DSpecularMaterialArchive::~Chart3DSpecularMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DSpecularMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DSpecularMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DSpecularMaterialArchive::ArenaDtor(void* object) {
-  Chart3DSpecularMaterialArchive* _this = reinterpret_cast< Chart3DSpecularMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DSpecularMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DSpecularMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DSpecularMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DSpecularMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DSpecularMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DSpecularMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4594,57 +4649,57 @@ const char* Chart3DSpecularMaterialArchive::_InternalParse(const char* ptr, ::PR
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DSpecularMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DSpecularMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DSpecularMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DSpecularMaterialArchive)
@@ -4659,52 +4714,43 @@ size_t Chart3DSpecularMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DSpecularMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DSpecularMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DSpecularMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DSpecularMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DSpecularMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DSpecularMaterialArchive &>(from));
-}
 
-
-void Chart3DSpecularMaterialArchive::MergeFrom(const Chart3DSpecularMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DSpecularMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DSpecularMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DSpecularMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DSpecularMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DSpecularMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tilings_.MergeFrom(from.tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DSpecularMaterialArchive::CopyFrom(const Chart3DSpecularMaterialArchive& from) {
@@ -4715,10 +4761,11 @@ void Chart3DSpecularMaterialArchive::CopyFrom(const Chart3DSpecularMaterialArchi
 }
 
 bool Chart3DSpecularMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4726,13 +4773,13 @@ bool Chart3DSpecularMaterialArchive::IsInitialized() const {
 void Chart3DSpecularMaterialArchive::InternalSwap(Chart3DSpecularMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  tilings_.InternalSwap(&other->tilings_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DSpecularMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[12]);
 }
@@ -4741,7 +4788,7 @@ void Chart3DSpecularMaterialArchive::InternalSwap(Chart3DSpecularMaterialArchive
 
 class Chart3DShininessMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DShininessMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DShininessMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DShininessMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4753,90 +4800,95 @@ class Chart3DShininessMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DShininessMaterialArchive::_Internal::super(const Chart3DShininessMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DShininessMaterialArchive::Chart3DShininessMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DShininessMaterialArchive)
 }
 Chart3DShininessMaterialArchive::Chart3DShininessMaterialArchive(const Chart3DShininessMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DShininessMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DShininessMaterialArchive)
 }
 
-inline void Chart3DShininessMaterialArchive::SharedCtor() {
-super_ = nullptr;
+inline void Chart3DShininessMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+  };
 }
 
 Chart3DShininessMaterialArchive::~Chart3DShininessMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DShininessMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DShininessMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DShininessMaterialArchive::ArenaDtor(void* object) {
-  Chart3DShininessMaterialArchive* _this = reinterpret_cast< Chart3DShininessMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DShininessMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DShininessMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DShininessMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DShininessMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DShininessMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DShininessMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -4844,57 +4896,57 @@ const char* Chart3DShininessMaterialArchive::_InternalParse(const char* ptr, ::P
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DShininessMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DShininessMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DShininessMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DShininessMaterialArchive)
@@ -4909,52 +4961,43 @@ size_t Chart3DShininessMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 2;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DShininessMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DShininessMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DShininessMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DShininessMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DShininessMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DShininessMaterialArchive &>(from));
-}
 
-
-void Chart3DShininessMaterialArchive::MergeFrom(const Chart3DShininessMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DShininessMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DShininessMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DShininessMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DShininessMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DShininessMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  tilings_.MergeFrom(from.tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
   if (from._internal_has_super()) {
-    _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+    _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+        from._internal_super());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DShininessMaterialArchive::CopyFrom(const Chart3DShininessMaterialArchive& from) {
@@ -4965,10 +5008,11 @@ void Chart3DShininessMaterialArchive::CopyFrom(const Chart3DShininessMaterialArc
 }
 
 bool Chart3DShininessMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4976,13 +5020,13 @@ bool Chart3DShininessMaterialArchive::IsInitialized() const {
 void Chart3DShininessMaterialArchive::InternalSwap(Chart3DShininessMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  tilings_.InternalSwap(&other->tilings_);
-  swap(super_, other->super_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
+  swap(_impl_.super_, other->_impl_.super_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DShininessMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[13]);
 }
@@ -4991,7 +5035,7 @@ void Chart3DShininessMaterialArchive::InternalSwap(Chart3DShininessMaterialArchi
 
 class Chart3DEnvironmentMaterialArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DEnvironmentMaterialArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DEnvironmentMaterialArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DTexturesMaterialArchive& super(const Chart3DEnvironmentMaterialArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5006,98 +5050,103 @@ class Chart3DEnvironmentMaterialArchive::_Internal {
 
 const ::TSCH::Chart3DTexturesMaterialArchive&
 Chart3DEnvironmentMaterialArchive::_Internal::super(const Chart3DEnvironmentMaterialArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DEnvironmentMaterialArchive::Chart3DEnvironmentMaterialArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  obsolete_tilings_(arena),
-  tilings_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DEnvironmentMaterialArchive)
 }
 Chart3DEnvironmentMaterialArchive::Chart3DEnvironmentMaterialArchive(const Chart3DEnvironmentMaterialArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      obsolete_tilings_(from.obsolete_tilings_),
-      tilings_(from.tilings_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DEnvironmentMaterialArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.obsolete_tilings_){from._impl_.obsolete_tilings_}
+    , decltype(_impl_.tilings_){from._impl_.tilings_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.decalmode_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DTexturesMaterialArchive(*from._impl_.super_);
   }
-  decalmode_ = from.decalmode_;
+  _this->_impl_.decalmode_ = from._impl_.decalmode_;
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DEnvironmentMaterialArchive)
 }
 
-inline void Chart3DEnvironmentMaterialArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&decalmode_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(decalmode_));
+inline void Chart3DEnvironmentMaterialArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.obsolete_tilings_){arena}
+    , decltype(_impl_.tilings_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.decalmode_){false}
+  };
 }
 
 Chart3DEnvironmentMaterialArchive::~Chart3DEnvironmentMaterialArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DEnvironmentMaterialArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DEnvironmentMaterialArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  _impl_.obsolete_tilings_.~RepeatedPtrField();
+  _impl_.tilings_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DEnvironmentMaterialArchive::ArenaDtor(void* object) {
-  Chart3DEnvironmentMaterialArchive* _this = reinterpret_cast< Chart3DEnvironmentMaterialArchive* >(object);
-  (void)_this;
-}
-void Chart3DEnvironmentMaterialArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DEnvironmentMaterialArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DEnvironmentMaterialArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DEnvironmentMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  obsolete_tilings_.Clear();
-  tilings_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.obsolete_tilings_.Clear();
+  _impl_.tilings_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
-  decalmode_ = false;
-  _has_bits_.Clear();
+  _impl_.decalmode_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DEnvironmentMaterialArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DEnvironmentMaterialArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DBaseImageTextureTilingArchive OBSOLETE_tilings = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -5105,19 +5154,21 @@ const char* Chart3DEnvironmentMaterialArchive::_InternalParse(const char* ptr, :
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool decalMode = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_decalmode(&has_bits);
-          decalmode_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.decalmode_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -5125,71 +5176,71 @@ const char* Chart3DEnvironmentMaterialArchive::_InternalParse(const char* ptr, :
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<34>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DEnvironmentMaterialArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DEnvironmentMaterialArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DEnvironmentMaterialArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DTexturesMaterialArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSCH.Chart3DBaseImageTextureTilingArchive OBSOLETE_tilings = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_obsolete_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_obsolete_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_obsolete_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_obsolete_tilings(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool decalMode = 3;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_decalmode(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(3, this->_internal_decalmode(), target);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 4;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_tilings_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_tilings_size()); i < n; i++) {
+    const auto& repfield = this->_internal_tilings(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_tilings(i), target, stream);
+        InternalWriteMessage(4, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DEnvironmentMaterialArchive)
@@ -5204,73 +5255,64 @@ size_t Chart3DEnvironmentMaterialArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSCH.Chart3DBaseImageTextureTilingArchive OBSOLETE_tilings = 2;
   total_size += 1UL * this->_internal_obsolete_tilings_size();
-  for (const auto& msg : this->obsolete_tilings_) {
+  for (const auto& msg : this->_impl_.obsolete_tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSCH.Chart3DImageTextureTilingArchive tilings = 4;
   total_size += 1UL * this->_internal_tilings_size();
-  for (const auto& msg : this->tilings_) {
+  for (const auto& msg : this->_impl_.tilings_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // optional bool decalMode = 3;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DEnvironmentMaterialArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DEnvironmentMaterialArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DEnvironmentMaterialArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DEnvironmentMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DEnvironmentMaterialArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DEnvironmentMaterialArchive &>(from));
-}
 
-
-void Chart3DEnvironmentMaterialArchive::MergeFrom(const Chart3DEnvironmentMaterialArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEnvironmentMaterialArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DEnvironmentMaterialArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DEnvironmentMaterialArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DEnvironmentMaterialArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DEnvironmentMaterialArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  obsolete_tilings_.MergeFrom(from.obsolete_tilings_);
-  tilings_.MergeFrom(from.tilings_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.obsolete_tilings_.MergeFrom(from._impl_.obsolete_tilings_);
+  _this->_impl_.tilings_.MergeFrom(from._impl_.tilings_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSCH::Chart3DTexturesMaterialArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      decalmode_ = from.decalmode_;
+      _this->_impl_.decalmode_ = from._impl_.decalmode_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DEnvironmentMaterialArchive::CopyFrom(const Chart3DEnvironmentMaterialArchive& from) {
@@ -5281,11 +5323,13 @@ void Chart3DEnvironmentMaterialArchive::CopyFrom(const Chart3DEnvironmentMateria
 }
 
 bool Chart3DEnvironmentMaterialArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(obsolete_tilings_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(tilings_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.obsolete_tilings_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.tilings_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5293,19 +5337,19 @@ bool Chart3DEnvironmentMaterialArchive::IsInitialized() const {
 void Chart3DEnvironmentMaterialArchive::InternalSwap(Chart3DEnvironmentMaterialArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  obsolete_tilings_.InternalSwap(&other->obsolete_tilings_);
-  tilings_.InternalSwap(&other->tilings_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.obsolete_tilings_.InternalSwap(&other->_impl_.obsolete_tilings_);
+  _impl_.tilings_.InternalSwap(&other->_impl_.tilings_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DEnvironmentMaterialArchive, decalmode_)
-      + sizeof(Chart3DEnvironmentMaterialArchive::decalmode_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DEnvironmentMaterialArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(Chart3DEnvironmentMaterialArchive, _impl_.decalmode_)
+      + sizeof(Chart3DEnvironmentMaterialArchive::_impl_.decalmode_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DEnvironmentMaterialArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DEnvironmentMaterialArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[14]);
 }
@@ -5314,7 +5358,7 @@ void Chart3DEnvironmentMaterialArchive::InternalSwap(Chart3DEnvironmentMaterialA
 
 class Chart3DFixedFunctionLightingModelArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DFixedFunctionLightingModelArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DFixedFunctionLightingModelArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DPhongMaterialPackageArchive& materials(const Chart3DFixedFunctionLightingModelArchive* msg);
   static void set_has_materials(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5326,125 +5370,128 @@ class Chart3DFixedFunctionLightingModelArchive::_Internal {
 
 const ::TSCH::Chart3DPhongMaterialPackageArchive&
 Chart3DFixedFunctionLightingModelArchive::_Internal::materials(const Chart3DFixedFunctionLightingModelArchive* msg) {
-  return *msg->materials_;
+  return *msg->_impl_.materials_;
 }
 Chart3DFixedFunctionLightingModelArchive::Chart3DFixedFunctionLightingModelArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DFixedFunctionLightingModelArchive)
 }
 Chart3DFixedFunctionLightingModelArchive::Chart3DFixedFunctionLightingModelArchive(const Chart3DFixedFunctionLightingModelArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DFixedFunctionLightingModelArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.materials_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_materials()) {
-    materials_ = new ::TSCH::Chart3DPhongMaterialPackageArchive(*from.materials_);
-  } else {
-    materials_ = nullptr;
+    _this->_impl_.materials_ = new ::TSCH::Chart3DPhongMaterialPackageArchive(*from._impl_.materials_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DFixedFunctionLightingModelArchive)
 }
 
-inline void Chart3DFixedFunctionLightingModelArchive::SharedCtor() {
-materials_ = nullptr;
+inline void Chart3DFixedFunctionLightingModelArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.materials_){nullptr}
+  };
 }
 
 Chart3DFixedFunctionLightingModelArchive::~Chart3DFixedFunctionLightingModelArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DFixedFunctionLightingModelArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DFixedFunctionLightingModelArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete materials_;
+  if (this != internal_default_instance()) delete _impl_.materials_;
 }
 
-void Chart3DFixedFunctionLightingModelArchive::ArenaDtor(void* object) {
-  Chart3DFixedFunctionLightingModelArchive* _this = reinterpret_cast< Chart3DFixedFunctionLightingModelArchive* >(object);
-  (void)_this;
-}
-void Chart3DFixedFunctionLightingModelArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DFixedFunctionLightingModelArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DFixedFunctionLightingModelArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DFixedFunctionLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(materials_ != nullptr);
-    materials_->Clear();
+    GOOGLE_DCHECK(_impl_.materials_ != nullptr);
+    _impl_.materials_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DFixedFunctionLightingModelArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DFixedFunctionLightingModelArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DPhongMaterialPackageArchive materials = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_materials(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DFixedFunctionLightingModelArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DFixedFunctionLightingModelArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DFixedFunctionLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DPhongMaterialPackageArchive materials = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::materials(this), target, stream);
+      InternalWriteMessage(1, _Internal::materials(this),
+        _Internal::materials(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DFixedFunctionLightingModelArchive)
@@ -5459,44 +5506,35 @@ size_t Chart3DFixedFunctionLightingModelArchive::ByteSizeLong() const {
   if (_internal_has_materials()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *materials_);
+        *_impl_.materials_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DFixedFunctionLightingModelArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DFixedFunctionLightingModelArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DFixedFunctionLightingModelArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DFixedFunctionLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DFixedFunctionLightingModelArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DFixedFunctionLightingModelArchive &>(from));
-}
 
-
-void Chart3DFixedFunctionLightingModelArchive::MergeFrom(const Chart3DFixedFunctionLightingModelArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DFixedFunctionLightingModelArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DFixedFunctionLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DFixedFunctionLightingModelArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DFixedFunctionLightingModelArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DFixedFunctionLightingModelArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_materials()) {
-    _internal_mutable_materials()->::TSCH::Chart3DPhongMaterialPackageArchive::MergeFrom(from._internal_materials());
+    _this->_internal_mutable_materials()->::TSCH::Chart3DPhongMaterialPackageArchive::MergeFrom(
+        from._internal_materials());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DFixedFunctionLightingModelArchive::CopyFrom(const Chart3DFixedFunctionLightingModelArchive& from) {
@@ -5507,9 +5545,9 @@ void Chart3DFixedFunctionLightingModelArchive::CopyFrom(const Chart3DFixedFuncti
 }
 
 bool Chart3DFixedFunctionLightingModelArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_materials()) {
-    if (!materials_->IsInitialized()) return false;
+    if (!_impl_.materials_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5517,12 +5555,12 @@ bool Chart3DFixedFunctionLightingModelArchive::IsInitialized() const {
 void Chart3DFixedFunctionLightingModelArchive::InternalSwap(Chart3DFixedFunctionLightingModelArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(materials_, other->materials_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.materials_, other->_impl_.materials_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DFixedFunctionLightingModelArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[15]);
 }
@@ -5531,7 +5569,7 @@ void Chart3DFixedFunctionLightingModelArchive::InternalSwap(Chart3DFixedFunction
 
 class Chart3DPhongLightingModelArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DPhongLightingModelArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DPhongLightingModelArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DPhongMaterialPackageArchive& materials(const Chart3DPhongLightingModelArchive* msg);
   static void set_has_materials(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5543,125 +5581,128 @@ class Chart3DPhongLightingModelArchive::_Internal {
 
 const ::TSCH::Chart3DPhongMaterialPackageArchive&
 Chart3DPhongLightingModelArchive::_Internal::materials(const Chart3DPhongLightingModelArchive* msg) {
-  return *msg->materials_;
+  return *msg->_impl_.materials_;
 }
 Chart3DPhongLightingModelArchive::Chart3DPhongLightingModelArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DPhongLightingModelArchive)
 }
 Chart3DPhongLightingModelArchive::Chart3DPhongLightingModelArchive(const Chart3DPhongLightingModelArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DPhongLightingModelArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.materials_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_materials()) {
-    materials_ = new ::TSCH::Chart3DPhongMaterialPackageArchive(*from.materials_);
-  } else {
-    materials_ = nullptr;
+    _this->_impl_.materials_ = new ::TSCH::Chart3DPhongMaterialPackageArchive(*from._impl_.materials_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DPhongLightingModelArchive)
 }
 
-inline void Chart3DPhongLightingModelArchive::SharedCtor() {
-materials_ = nullptr;
+inline void Chart3DPhongLightingModelArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.materials_){nullptr}
+  };
 }
 
 Chart3DPhongLightingModelArchive::~Chart3DPhongLightingModelArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DPhongLightingModelArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DPhongLightingModelArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete materials_;
+  if (this != internal_default_instance()) delete _impl_.materials_;
 }
 
-void Chart3DPhongLightingModelArchive::ArenaDtor(void* object) {
-  Chart3DPhongLightingModelArchive* _this = reinterpret_cast< Chart3DPhongLightingModelArchive* >(object);
-  (void)_this;
-}
-void Chart3DPhongLightingModelArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DPhongLightingModelArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DPhongLightingModelArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DPhongLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(materials_ != nullptr);
-    materials_->Clear();
+    GOOGLE_DCHECK(_impl_.materials_ != nullptr);
+    _impl_.materials_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DPhongLightingModelArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DPhongLightingModelArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DPhongMaterialPackageArchive materials = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_materials(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DPhongLightingModelArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DPhongLightingModelArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DPhongLightingModelArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DPhongMaterialPackageArchive materials = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::materials(this), target, stream);
+      InternalWriteMessage(1, _Internal::materials(this),
+        _Internal::materials(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DPhongLightingModelArchive)
@@ -5676,44 +5717,35 @@ size_t Chart3DPhongLightingModelArchive::ByteSizeLong() const {
   if (_internal_has_materials()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *materials_);
+        *_impl_.materials_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DPhongLightingModelArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DPhongLightingModelArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DPhongLightingModelArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DPhongLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DPhongLightingModelArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DPhongLightingModelArchive &>(from));
-}
 
-
-void Chart3DPhongLightingModelArchive::MergeFrom(const Chart3DPhongLightingModelArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPhongLightingModelArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DPhongLightingModelArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DPhongLightingModelArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DPhongLightingModelArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPhongLightingModelArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_materials()) {
-    _internal_mutable_materials()->::TSCH::Chart3DPhongMaterialPackageArchive::MergeFrom(from._internal_materials());
+    _this->_internal_mutable_materials()->::TSCH::Chart3DPhongMaterialPackageArchive::MergeFrom(
+        from._internal_materials());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DPhongLightingModelArchive::CopyFrom(const Chart3DPhongLightingModelArchive& from) {
@@ -5724,9 +5756,9 @@ void Chart3DPhongLightingModelArchive::CopyFrom(const Chart3DPhongLightingModelA
 }
 
 bool Chart3DPhongLightingModelArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_materials()) {
-    if (!materials_->IsInitialized()) return false;
+    if (!_impl_.materials_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5734,12 +5766,12 @@ bool Chart3DPhongLightingModelArchive::IsInitialized() const {
 void Chart3DPhongLightingModelArchive::InternalSwap(Chart3DPhongLightingModelArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(materials_, other->materials_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.materials_, other->_impl_.materials_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DPhongLightingModelArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[16]);
 }
@@ -5748,7 +5780,7 @@ void Chart3DPhongLightingModelArchive::InternalSwap(Chart3DPhongLightingModelArc
 
 class Chart3DPhongMaterialPackageArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DPhongMaterialPackageArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DPhongMaterialPackageArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DEmissiveMaterialArchive& emissive(const Chart3DPhongMaterialPackageArchive* msg);
   static void set_has_emissive(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -5773,246 +5805,246 @@ class Chart3DPhongMaterialPackageArchive::_Internal {
 
 const ::TSCH::Chart3DEmissiveMaterialArchive&
 Chart3DPhongMaterialPackageArchive::_Internal::emissive(const Chart3DPhongMaterialPackageArchive* msg) {
-  return *msg->emissive_;
+  return *msg->_impl_.emissive_;
 }
 const ::TSCH::Chart3DDiffuseMaterialArchive&
 Chart3DPhongMaterialPackageArchive::_Internal::diffuse(const Chart3DPhongMaterialPackageArchive* msg) {
-  return *msg->diffuse_;
+  return *msg->_impl_.diffuse_;
 }
 const ::TSCH::Chart3DModulateMaterialArchive&
 Chart3DPhongMaterialPackageArchive::_Internal::modulate(const Chart3DPhongMaterialPackageArchive* msg) {
-  return *msg->modulate_;
+  return *msg->_impl_.modulate_;
 }
 const ::TSCH::Chart3DSpecularMaterialArchive&
 Chart3DPhongMaterialPackageArchive::_Internal::specular(const Chart3DPhongMaterialPackageArchive* msg) {
-  return *msg->specular_;
+  return *msg->_impl_.specular_;
 }
 const ::TSCH::Chart3DShininessMaterialArchive&
 Chart3DPhongMaterialPackageArchive::_Internal::shininess(const Chart3DPhongMaterialPackageArchive* msg) {
-  return *msg->shininess_;
+  return *msg->_impl_.shininess_;
 }
 Chart3DPhongMaterialPackageArchive::Chart3DPhongMaterialPackageArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DPhongMaterialPackageArchive)
 }
 Chart3DPhongMaterialPackageArchive::Chart3DPhongMaterialPackageArchive(const Chart3DPhongMaterialPackageArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DPhongMaterialPackageArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.emissive_){nullptr}
+    , decltype(_impl_.diffuse_){nullptr}
+    , decltype(_impl_.modulate_){nullptr}
+    , decltype(_impl_.specular_){nullptr}
+    , decltype(_impl_.shininess_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_emissive()) {
-    emissive_ = new ::TSCH::Chart3DEmissiveMaterialArchive(*from.emissive_);
-  } else {
-    emissive_ = nullptr;
+    _this->_impl_.emissive_ = new ::TSCH::Chart3DEmissiveMaterialArchive(*from._impl_.emissive_);
   }
   if (from._internal_has_diffuse()) {
-    diffuse_ = new ::TSCH::Chart3DDiffuseMaterialArchive(*from.diffuse_);
-  } else {
-    diffuse_ = nullptr;
+    _this->_impl_.diffuse_ = new ::TSCH::Chart3DDiffuseMaterialArchive(*from._impl_.diffuse_);
   }
   if (from._internal_has_modulate()) {
-    modulate_ = new ::TSCH::Chart3DModulateMaterialArchive(*from.modulate_);
-  } else {
-    modulate_ = nullptr;
+    _this->_impl_.modulate_ = new ::TSCH::Chart3DModulateMaterialArchive(*from._impl_.modulate_);
   }
   if (from._internal_has_specular()) {
-    specular_ = new ::TSCH::Chart3DSpecularMaterialArchive(*from.specular_);
-  } else {
-    specular_ = nullptr;
+    _this->_impl_.specular_ = new ::TSCH::Chart3DSpecularMaterialArchive(*from._impl_.specular_);
   }
   if (from._internal_has_shininess()) {
-    shininess_ = new ::TSCH::Chart3DShininessMaterialArchive(*from.shininess_);
-  } else {
-    shininess_ = nullptr;
+    _this->_impl_.shininess_ = new ::TSCH::Chart3DShininessMaterialArchive(*from._impl_.shininess_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DPhongMaterialPackageArchive)
 }
 
-inline void Chart3DPhongMaterialPackageArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&emissive_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&shininess_) -
-    reinterpret_cast<char*>(&emissive_)) + sizeof(shininess_));
+inline void Chart3DPhongMaterialPackageArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.emissive_){nullptr}
+    , decltype(_impl_.diffuse_){nullptr}
+    , decltype(_impl_.modulate_){nullptr}
+    , decltype(_impl_.specular_){nullptr}
+    , decltype(_impl_.shininess_){nullptr}
+  };
 }
 
 Chart3DPhongMaterialPackageArchive::~Chart3DPhongMaterialPackageArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DPhongMaterialPackageArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DPhongMaterialPackageArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete emissive_;
-  if (this != internal_default_instance()) delete diffuse_;
-  if (this != internal_default_instance()) delete modulate_;
-  if (this != internal_default_instance()) delete specular_;
-  if (this != internal_default_instance()) delete shininess_;
+  if (this != internal_default_instance()) delete _impl_.emissive_;
+  if (this != internal_default_instance()) delete _impl_.diffuse_;
+  if (this != internal_default_instance()) delete _impl_.modulate_;
+  if (this != internal_default_instance()) delete _impl_.specular_;
+  if (this != internal_default_instance()) delete _impl_.shininess_;
 }
 
-void Chart3DPhongMaterialPackageArchive::ArenaDtor(void* object) {
-  Chart3DPhongMaterialPackageArchive* _this = reinterpret_cast< Chart3DPhongMaterialPackageArchive* >(object);
-  (void)_this;
-}
-void Chart3DPhongMaterialPackageArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DPhongMaterialPackageArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DPhongMaterialPackageArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DPhongMaterialPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(emissive_ != nullptr);
-      emissive_->Clear();
+      GOOGLE_DCHECK(_impl_.emissive_ != nullptr);
+      _impl_.emissive_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(diffuse_ != nullptr);
-      diffuse_->Clear();
+      GOOGLE_DCHECK(_impl_.diffuse_ != nullptr);
+      _impl_.diffuse_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(modulate_ != nullptr);
-      modulate_->Clear();
+      GOOGLE_DCHECK(_impl_.modulate_ != nullptr);
+      _impl_.modulate_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(specular_ != nullptr);
-      specular_->Clear();
+      GOOGLE_DCHECK(_impl_.specular_ != nullptr);
+      _impl_.specular_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(shininess_ != nullptr);
-      shininess_->Clear();
+      GOOGLE_DCHECK(_impl_.shininess_ != nullptr);
+      _impl_.shininess_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DPhongMaterialPackageArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DPhongMaterialPackageArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSCH.Chart3DEmissiveMaterialArchive emissive = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_emissive(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DDiffuseMaterialArchive diffuse = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_diffuse(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DModulateMaterialArchive modulate = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_modulate(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DSpecularMaterialArchive specular = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_specular(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.Chart3DShininessMaterialArchive shininess = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_shininess(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DPhongMaterialPackageArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DPhongMaterialPackageArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DPhongMaterialPackageArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSCH.Chart3DEmissiveMaterialArchive emissive = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::emissive(this), target, stream);
+      InternalWriteMessage(1, _Internal::emissive(this),
+        _Internal::emissive(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DDiffuseMaterialArchive diffuse = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::diffuse(this), target, stream);
+      InternalWriteMessage(2, _Internal::diffuse(this),
+        _Internal::diffuse(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DModulateMaterialArchive modulate = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::modulate(this), target, stream);
+      InternalWriteMessage(3, _Internal::modulate(this),
+        _Internal::modulate(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DSpecularMaterialArchive specular = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::specular(this), target, stream);
+      InternalWriteMessage(4, _Internal::specular(this),
+        _Internal::specular(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.Chart3DShininessMaterialArchive shininess = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::shininess(this), target, stream);
+      InternalWriteMessage(5, _Internal::shininess(this),
+        _Internal::shininess(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DPhongMaterialPackageArchive)
@@ -6023,95 +6055,90 @@ size_t Chart3DPhongMaterialPackageArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DPhongMaterialPackageArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     // optional .TSCH.Chart3DEmissiveMaterialArchive emissive = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *emissive_);
+          *_impl_.emissive_);
     }
 
     // optional .TSCH.Chart3DDiffuseMaterialArchive diffuse = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *diffuse_);
+          *_impl_.diffuse_);
     }
 
     // optional .TSCH.Chart3DModulateMaterialArchive modulate = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *modulate_);
+          *_impl_.modulate_);
     }
 
     // optional .TSCH.Chart3DSpecularMaterialArchive specular = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *specular_);
+          *_impl_.specular_);
     }
 
     // optional .TSCH.Chart3DShininessMaterialArchive shininess = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *shininess_);
+          *_impl_.shininess_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DPhongMaterialPackageArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DPhongMaterialPackageArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DPhongMaterialPackageArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DPhongMaterialPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DPhongMaterialPackageArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DPhongMaterialPackageArchive &>(from));
-}
 
-
-void Chart3DPhongMaterialPackageArchive::MergeFrom(const Chart3DPhongMaterialPackageArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPhongMaterialPackageArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DPhongMaterialPackageArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DPhongMaterialPackageArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DPhongMaterialPackageArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DPhongMaterialPackageArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_emissive()->::TSCH::Chart3DEmissiveMaterialArchive::MergeFrom(from._internal_emissive());
+      _this->_internal_mutable_emissive()->::TSCH::Chart3DEmissiveMaterialArchive::MergeFrom(
+          from._internal_emissive());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_diffuse()->::TSCH::Chart3DDiffuseMaterialArchive::MergeFrom(from._internal_diffuse());
+      _this->_internal_mutable_diffuse()->::TSCH::Chart3DDiffuseMaterialArchive::MergeFrom(
+          from._internal_diffuse());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_modulate()->::TSCH::Chart3DModulateMaterialArchive::MergeFrom(from._internal_modulate());
+      _this->_internal_mutable_modulate()->::TSCH::Chart3DModulateMaterialArchive::MergeFrom(
+          from._internal_modulate());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_specular()->::TSCH::Chart3DSpecularMaterialArchive::MergeFrom(from._internal_specular());
+      _this->_internal_mutable_specular()->::TSCH::Chart3DSpecularMaterialArchive::MergeFrom(
+          from._internal_specular());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_shininess()->::TSCH::Chart3DShininessMaterialArchive::MergeFrom(from._internal_shininess());
+      _this->_internal_mutable_shininess()->::TSCH::Chart3DShininessMaterialArchive::MergeFrom(
+          from._internal_shininess());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DPhongMaterialPackageArchive::CopyFrom(const Chart3DPhongMaterialPackageArchive& from) {
@@ -6123,19 +6150,19 @@ void Chart3DPhongMaterialPackageArchive::CopyFrom(const Chart3DPhongMaterialPack
 
 bool Chart3DPhongMaterialPackageArchive::IsInitialized() const {
   if (_internal_has_emissive()) {
-    if (!emissive_->IsInitialized()) return false;
+    if (!_impl_.emissive_->IsInitialized()) return false;
   }
   if (_internal_has_diffuse()) {
-    if (!diffuse_->IsInitialized()) return false;
+    if (!_impl_.diffuse_->IsInitialized()) return false;
   }
   if (_internal_has_modulate()) {
-    if (!modulate_->IsInitialized()) return false;
+    if (!_impl_.modulate_->IsInitialized()) return false;
   }
   if (_internal_has_specular()) {
-    if (!specular_->IsInitialized()) return false;
+    if (!_impl_.specular_->IsInitialized()) return false;
   }
   if (_internal_has_shininess()) {
-    if (!shininess_->IsInitialized()) return false;
+    if (!_impl_.shininess_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6143,17 +6170,17 @@ bool Chart3DPhongMaterialPackageArchive::IsInitialized() const {
 void Chart3DPhongMaterialPackageArchive::InternalSwap(Chart3DPhongMaterialPackageArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DPhongMaterialPackageArchive, shininess_)
-      + sizeof(Chart3DPhongMaterialPackageArchive::shininess_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DPhongMaterialPackageArchive, emissive_)>(
-          reinterpret_cast<char*>(&emissive_),
-          reinterpret_cast<char*>(&other->emissive_));
+      PROTOBUF_FIELD_OFFSET(Chart3DPhongMaterialPackageArchive, _impl_.shininess_)
+      + sizeof(Chart3DPhongMaterialPackageArchive::_impl_.shininess_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DPhongMaterialPackageArchive, _impl_.emissive_)>(
+          reinterpret_cast<char*>(&_impl_.emissive_),
+          reinterpret_cast<char*>(&other->_impl_.emissive_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DPhongMaterialPackageArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[17]);
 }
@@ -6162,7 +6189,7 @@ void Chart3DPhongMaterialPackageArchive::InternalSwap(Chart3DPhongMaterialPackag
 
 class Chart3DTSPImageDataTextureArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DTSPImageDataTextureArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DTSPImageDataTextureArchive>()._impl_._has_bits_);
   static const ::TSP::DataReference& data(const Chart3DTSPImageDataTextureArchive* msg);
   static void set_has_data(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -6183,233 +6210,233 @@ class Chart3DTSPImageDataTextureArchive::_Internal {
 
 const ::TSP::DataReference&
 Chart3DTSPImageDataTextureArchive::_Internal::data(const Chart3DTSPImageDataTextureArchive* msg) {
-  return *msg->data_;
+  return *msg->_impl_.data_;
 }
 const ::TSP::DataReference&
 Chart3DTSPImageDataTextureArchive::_Internal::mipmapdata(const Chart3DTSPImageDataTextureArchive* msg) {
-  return *msg->mipmapdata_;
+  return *msg->_impl_.mipmapdata_;
 }
 const ::TSP::Reference&
 Chart3DTSPImageDataTextureArchive::_Internal::database_data(const Chart3DTSPImageDataTextureArchive* msg) {
-  return *msg->database_data_;
+  return *msg->_impl_.database_data_;
 }
 const ::TSP::Reference&
 Chart3DTSPImageDataTextureArchive::_Internal::database_mipmapdata(const Chart3DTSPImageDataTextureArchive* msg) {
-  return *msg->database_mipmapdata_;
+  return *msg->_impl_.database_mipmapdata_;
 }
 void Chart3DTSPImageDataTextureArchive::clear_data() {
-  if (data_ != nullptr) data_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.data_ != nullptr) _impl_.data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void Chart3DTSPImageDataTextureArchive::clear_mipmapdata() {
-  if (mipmapdata_ != nullptr) mipmapdata_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.mipmapdata_ != nullptr) _impl_.mipmapdata_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void Chart3DTSPImageDataTextureArchive::clear_database_data() {
-  if (database_data_ != nullptr) database_data_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.database_data_ != nullptr) _impl_.database_data_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void Chart3DTSPImageDataTextureArchive::clear_database_mipmapdata() {
-  if (database_mipmapdata_ != nullptr) database_mipmapdata_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.database_mipmapdata_ != nullptr) _impl_.database_mipmapdata_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 Chart3DTSPImageDataTextureArchive::Chart3DTSPImageDataTextureArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DTSPImageDataTextureArchive)
 }
 Chart3DTSPImageDataTextureArchive::Chart3DTSPImageDataTextureArchive(const Chart3DTSPImageDataTextureArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DTSPImageDataTextureArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.database_data_){nullptr}
+    , decltype(_impl_.database_mipmapdata_){nullptr}
+    , decltype(_impl_.data_){nullptr}
+    , decltype(_impl_.mipmapdata_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_database_data()) {
-    database_data_ = new ::TSP::Reference(*from.database_data_);
-  } else {
-    database_data_ = nullptr;
+    _this->_impl_.database_data_ = new ::TSP::Reference(*from._impl_.database_data_);
   }
   if (from._internal_has_database_mipmapdata()) {
-    database_mipmapdata_ = new ::TSP::Reference(*from.database_mipmapdata_);
-  } else {
-    database_mipmapdata_ = nullptr;
+    _this->_impl_.database_mipmapdata_ = new ::TSP::Reference(*from._impl_.database_mipmapdata_);
   }
   if (from._internal_has_data()) {
-    data_ = new ::TSP::DataReference(*from.data_);
-  } else {
-    data_ = nullptr;
+    _this->_impl_.data_ = new ::TSP::DataReference(*from._impl_.data_);
   }
   if (from._internal_has_mipmapdata()) {
-    mipmapdata_ = new ::TSP::DataReference(*from.mipmapdata_);
-  } else {
-    mipmapdata_ = nullptr;
+    _this->_impl_.mipmapdata_ = new ::TSP::DataReference(*from._impl_.mipmapdata_);
   }
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DTSPImageDataTextureArchive)
 }
 
-inline void Chart3DTSPImageDataTextureArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&database_data_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&mipmapdata_) -
-    reinterpret_cast<char*>(&database_data_)) + sizeof(mipmapdata_));
+inline void Chart3DTSPImageDataTextureArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.database_data_){nullptr}
+    , decltype(_impl_.database_mipmapdata_){nullptr}
+    , decltype(_impl_.data_){nullptr}
+    , decltype(_impl_.mipmapdata_){nullptr}
+  };
 }
 
 Chart3DTSPImageDataTextureArchive::~Chart3DTSPImageDataTextureArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DTSPImageDataTextureArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DTSPImageDataTextureArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete database_data_;
-  if (this != internal_default_instance()) delete database_mipmapdata_;
-  if (this != internal_default_instance()) delete data_;
-  if (this != internal_default_instance()) delete mipmapdata_;
+  if (this != internal_default_instance()) delete _impl_.database_data_;
+  if (this != internal_default_instance()) delete _impl_.database_mipmapdata_;
+  if (this != internal_default_instance()) delete _impl_.data_;
+  if (this != internal_default_instance()) delete _impl_.mipmapdata_;
 }
 
-void Chart3DTSPImageDataTextureArchive::ArenaDtor(void* object) {
-  Chart3DTSPImageDataTextureArchive* _this = reinterpret_cast< Chart3DTSPImageDataTextureArchive* >(object);
-  (void)_this;
-}
-void Chart3DTSPImageDataTextureArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DTSPImageDataTextureArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DTSPImageDataTextureArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DTSPImageDataTextureArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(database_data_ != nullptr);
-      database_data_->Clear();
+      GOOGLE_DCHECK(_impl_.database_data_ != nullptr);
+      _impl_.database_data_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(database_mipmapdata_ != nullptr);
-      database_mipmapdata_->Clear();
+      GOOGLE_DCHECK(_impl_.database_mipmapdata_ != nullptr);
+      _impl_.database_mipmapdata_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(data_ != nullptr);
-      data_->Clear();
+      GOOGLE_DCHECK(_impl_.data_ != nullptr);
+      _impl_.data_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(mipmapdata_ != nullptr);
-      mipmapdata_->Clear();
+      GOOGLE_DCHECK(_impl_.mipmapdata_ != nullptr);
+      _impl_.mipmapdata_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DTSPImageDataTextureArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DTSPImageDataTextureArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Reference database_data = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_database_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference database_mipmapdata = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_database_mipmapdata(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference data = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_data(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.DataReference mipmapdata = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_mipmapdata(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DTSPImageDataTextureArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DTSPImageDataTextureArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DTSPImageDataTextureArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Reference database_data = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::database_data(this), target, stream);
+      InternalWriteMessage(1, _Internal::database_data(this),
+        _Internal::database_data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference database_mipmapdata = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::database_mipmapdata(this), target, stream);
+      InternalWriteMessage(2, _Internal::database_mipmapdata(this),
+        _Internal::database_mipmapdata(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.DataReference data = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::data(this), target, stream);
+      InternalWriteMessage(3, _Internal::data(this),
+        _Internal::data(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.DataReference mipmapdata = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::mipmapdata(this), target, stream);
+      InternalWriteMessage(4, _Internal::mipmapdata(this),
+        _Internal::mipmapdata(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DTSPImageDataTextureArchive)
@@ -6420,85 +6447,79 @@ size_t Chart3DTSPImageDataTextureArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DTSPImageDataTextureArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TSP.Reference database_data = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *database_data_);
+          *_impl_.database_data_);
     }
 
     // optional .TSP.Reference database_mipmapdata = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *database_mipmapdata_);
+          *_impl_.database_mipmapdata_);
     }
 
     // optional .TSP.DataReference data = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *data_);
+          *_impl_.data_);
     }
 
     // optional .TSP.DataReference mipmapdata = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *mipmapdata_);
+          *_impl_.mipmapdata_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DTSPImageDataTextureArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DTSPImageDataTextureArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DTSPImageDataTextureArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DTSPImageDataTextureArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DTSPImageDataTextureArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DTSPImageDataTextureArchive &>(from));
-}
 
-
-void Chart3DTSPImageDataTextureArchive::MergeFrom(const Chart3DTSPImageDataTextureArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DTSPImageDataTextureArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DTSPImageDataTextureArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DTSPImageDataTextureArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DTSPImageDataTextureArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DTSPImageDataTextureArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_database_data()->::TSP::Reference::MergeFrom(from._internal_database_data());
+      _this->_internal_mutable_database_data()->::TSP::Reference::MergeFrom(
+          from._internal_database_data());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_database_mipmapdata()->::TSP::Reference::MergeFrom(from._internal_database_mipmapdata());
+      _this->_internal_mutable_database_mipmapdata()->::TSP::Reference::MergeFrom(
+          from._internal_database_mipmapdata());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_data()->::TSP::DataReference::MergeFrom(from._internal_data());
+      _this->_internal_mutable_data()->::TSP::DataReference::MergeFrom(
+          from._internal_data());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_mipmapdata()->::TSP::DataReference::MergeFrom(from._internal_mipmapdata());
+      _this->_internal_mutable_mipmapdata()->::TSP::DataReference::MergeFrom(
+          from._internal_mipmapdata());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DTSPImageDataTextureArchive::CopyFrom(const Chart3DTSPImageDataTextureArchive& from) {
@@ -6510,16 +6531,16 @@ void Chart3DTSPImageDataTextureArchive::CopyFrom(const Chart3DTSPImageDataTextur
 
 bool Chart3DTSPImageDataTextureArchive::IsInitialized() const {
   if (_internal_has_database_data()) {
-    if (!database_data_->IsInitialized()) return false;
+    if (!_impl_.database_data_->IsInitialized()) return false;
   }
   if (_internal_has_database_mipmapdata()) {
-    if (!database_mipmapdata_->IsInitialized()) return false;
+    if (!_impl_.database_mipmapdata_->IsInitialized()) return false;
   }
   if (_internal_has_data()) {
-    if (!data_->IsInitialized()) return false;
+    if (!_impl_.data_->IsInitialized()) return false;
   }
   if (_internal_has_mipmapdata()) {
-    if (!mipmapdata_->IsInitialized()) return false;
+    if (!_impl_.mipmapdata_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6527,17 +6548,17 @@ bool Chart3DTSPImageDataTextureArchive::IsInitialized() const {
 void Chart3DTSPImageDataTextureArchive::InternalSwap(Chart3DTSPImageDataTextureArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DTSPImageDataTextureArchive, mipmapdata_)
-      + sizeof(Chart3DTSPImageDataTextureArchive::mipmapdata_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DTSPImageDataTextureArchive, database_data_)>(
-          reinterpret_cast<char*>(&database_data_),
-          reinterpret_cast<char*>(&other->database_data_));
+      PROTOBUF_FIELD_OFFSET(Chart3DTSPImageDataTextureArchive, _impl_.mipmapdata_)
+      + sizeof(Chart3DTSPImageDataTextureArchive::_impl_.mipmapdata_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DTSPImageDataTextureArchive, _impl_.database_data_)>(
+          reinterpret_cast<char*>(&_impl_.database_data_),
+          reinterpret_cast<char*>(&other->_impl_.database_data_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DTSPImageDataTextureArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[18]);
 }
@@ -6546,7 +6567,7 @@ void Chart3DTSPImageDataTextureArchive::InternalSwap(Chart3DTSPImageDataTextureA
 
 class Chart3DBaseImageTextureTilingArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DBaseImageTextureTilingArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DBaseImageTextureTilingArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DVectorArchive& scale(const Chart3DBaseImageTextureTilingArchive* msg);
   static void set_has_scale(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6558,144 +6579,147 @@ class Chart3DBaseImageTextureTilingArchive::_Internal {
 
 const ::TSCH::Chart3DVectorArchive&
 Chart3DBaseImageTextureTilingArchive::_Internal::scale(const Chart3DBaseImageTextureTilingArchive* msg) {
-  return *msg->scale_;
+  return *msg->_impl_.scale_;
 }
 Chart3DBaseImageTextureTilingArchive::Chart3DBaseImageTextureTilingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DBaseImageTextureTilingArchive)
 }
 Chart3DBaseImageTextureTilingArchive::Chart3DBaseImageTextureTilingArchive(const Chart3DBaseImageTextureTilingArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DBaseImageTextureTilingArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.scale_){nullptr}
+    , decltype(_impl_.rotation_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_scale()) {
-    scale_ = new ::TSCH::Chart3DVectorArchive(*from.scale_);
-  } else {
-    scale_ = nullptr;
+    _this->_impl_.scale_ = new ::TSCH::Chart3DVectorArchive(*from._impl_.scale_);
   }
-  rotation_ = from.rotation_;
+  _this->_impl_.rotation_ = from._impl_.rotation_;
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DBaseImageTextureTilingArchive)
 }
 
-inline void Chart3DBaseImageTextureTilingArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&scale_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&rotation_) -
-    reinterpret_cast<char*>(&scale_)) + sizeof(rotation_));
+inline void Chart3DBaseImageTextureTilingArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.scale_){nullptr}
+    , decltype(_impl_.rotation_){0}
+  };
 }
 
 Chart3DBaseImageTextureTilingArchive::~Chart3DBaseImageTextureTilingArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DBaseImageTextureTilingArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DBaseImageTextureTilingArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete scale_;
+  if (this != internal_default_instance()) delete _impl_.scale_;
 }
 
-void Chart3DBaseImageTextureTilingArchive::ArenaDtor(void* object) {
-  Chart3DBaseImageTextureTilingArchive* _this = reinterpret_cast< Chart3DBaseImageTextureTilingArchive* >(object);
-  (void)_this;
-}
-void Chart3DBaseImageTextureTilingArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DBaseImageTextureTilingArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DBaseImageTextureTilingArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DBaseImageTextureTilingArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(scale_ != nullptr);
-    scale_->Clear();
+    GOOGLE_DCHECK(_impl_.scale_ != nullptr);
+    _impl_.scale_->Clear();
   }
-  rotation_ = 0;
-  _has_bits_.Clear();
+  _impl_.rotation_ = 0;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DBaseImageTextureTilingArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DBaseImageTextureTilingArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSCH.Chart3DVectorArchive scale = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_scale(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float rotation = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           _Internal::set_has_rotation(&has_bits);
-          rotation_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.rotation_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DBaseImageTextureTilingArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DBaseImageTextureTilingArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DBaseImageTextureTilingArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSCH.Chart3DVectorArchive scale = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::scale(this), target, stream);
+      InternalWriteMessage(1, _Internal::scale(this),
+        _Internal::scale(this).GetCachedSize(), target, stream);
   }
 
   // optional float rotation = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_rotation(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_rotation(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DBaseImageTextureTilingArchive)
@@ -6706,17 +6730,17 @@ size_t Chart3DBaseImageTextureTilingArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DBaseImageTextureTilingArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional .TSCH.Chart3DVectorArchive scale = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *scale_);
+          *_impl_.scale_);
     }
 
     // optional float rotation = 2;
@@ -6725,45 +6749,36 @@ size_t Chart3DBaseImageTextureTilingArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DBaseImageTextureTilingArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DBaseImageTextureTilingArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DBaseImageTextureTilingArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DBaseImageTextureTilingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DBaseImageTextureTilingArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DBaseImageTextureTilingArchive &>(from));
-}
 
-
-void Chart3DBaseImageTextureTilingArchive::MergeFrom(const Chart3DBaseImageTextureTilingArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DBaseImageTextureTilingArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DBaseImageTextureTilingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DBaseImageTextureTilingArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DBaseImageTextureTilingArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DBaseImageTextureTilingArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_scale()->::TSCH::Chart3DVectorArchive::MergeFrom(from._internal_scale());
+      _this->_internal_mutable_scale()->::TSCH::Chart3DVectorArchive::MergeFrom(
+          from._internal_scale());
     }
     if (cached_has_bits & 0x00000002u) {
-      rotation_ = from.rotation_;
+      _this->_impl_.rotation_ = from._impl_.rotation_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DBaseImageTextureTilingArchive::CopyFrom(const Chart3DBaseImageTextureTilingArchive& from) {
@@ -6775,7 +6790,7 @@ void Chart3DBaseImageTextureTilingArchive::CopyFrom(const Chart3DBaseImageTextur
 
 bool Chart3DBaseImageTextureTilingArchive::IsInitialized() const {
   if (_internal_has_scale()) {
-    if (!scale_->IsInitialized()) return false;
+    if (!_impl_.scale_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6783,17 +6798,17 @@ bool Chart3DBaseImageTextureTilingArchive::IsInitialized() const {
 void Chart3DBaseImageTextureTilingArchive::InternalSwap(Chart3DBaseImageTextureTilingArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DBaseImageTextureTilingArchive, rotation_)
-      + sizeof(Chart3DBaseImageTextureTilingArchive::rotation_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DBaseImageTextureTilingArchive, scale_)>(
-          reinterpret_cast<char*>(&scale_),
-          reinterpret_cast<char*>(&other->scale_));
+      PROTOBUF_FIELD_OFFSET(Chart3DBaseImageTextureTilingArchive, _impl_.rotation_)
+      + sizeof(Chart3DBaseImageTextureTilingArchive::_impl_.rotation_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DBaseImageTextureTilingArchive, _impl_.scale_)>(
+          reinterpret_cast<char*>(&_impl_.scale_),
+          reinterpret_cast<char*>(&other->_impl_.scale_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DBaseImageTextureTilingArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[19]);
 }
@@ -6802,7 +6817,7 @@ void Chart3DBaseImageTextureTilingArchive::InternalSwap(Chart3DBaseImageTextureT
 
 class Chart3DImageTextureTilingArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DImageTextureTilingArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DImageTextureTilingArchive>()._impl_._has_bits_);
   static const ::TSCH::Chart3DBaseImageTextureTilingArchive& super(const Chart3DImageTextureTilingArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6838,284 +6853,308 @@ class Chart3DImageTextureTilingArchive::_Internal {
 
 const ::TSCH::Chart3DBaseImageTextureTilingArchive&
 Chart3DImageTextureTilingArchive::_Internal::super(const Chart3DImageTextureTilingArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 Chart3DImageTextureTilingArchive::Chart3DImageTextureTilingArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DImageTextureTilingArchive)
 }
 Chart3DImageTextureTilingArchive::Chart3DImageTextureTilingArchive(const Chart3DImageTextureTilingArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DImageTextureTilingArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.mode_){}
+    , decltype(_impl_.wrap_){}
+    , decltype(_impl_.face_){}
+    , decltype(_impl_.xposition_){}
+    , decltype(_impl_.yposition_){}
+    , decltype(_impl_.scontinuity_){}
+    , decltype(_impl_.tcontinuity_){}
+    , decltype(_impl_.reveal_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSCH::Chart3DBaseImageTextureTilingArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSCH::Chart3DBaseImageTextureTilingArchive(*from._impl_.super_);
   }
-  ::memcpy(&mode_, &from.mode_,
-    static_cast<size_t>(reinterpret_cast<char*>(&reveal_) -
-    reinterpret_cast<char*>(&mode_)) + sizeof(reveal_));
+  ::memcpy(&_impl_.mode_, &from._impl_.mode_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.reveal_) -
+    reinterpret_cast<char*>(&_impl_.mode_)) + sizeof(_impl_.reveal_));
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DImageTextureTilingArchive)
 }
 
-inline void Chart3DImageTextureTilingArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&reveal_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(reveal_));
+inline void Chart3DImageTextureTilingArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.mode_){0}
+    , decltype(_impl_.wrap_){0}
+    , decltype(_impl_.face_){0}
+    , decltype(_impl_.xposition_){0}
+    , decltype(_impl_.yposition_){0}
+    , decltype(_impl_.scontinuity_){0}
+    , decltype(_impl_.tcontinuity_){0}
+    , decltype(_impl_.reveal_){false}
+  };
 }
 
 Chart3DImageTextureTilingArchive::~Chart3DImageTextureTilingArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DImageTextureTilingArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DImageTextureTilingArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
+  if (this != internal_default_instance()) delete _impl_.super_;
 }
 
-void Chart3DImageTextureTilingArchive::ArenaDtor(void* object) {
-  Chart3DImageTextureTilingArchive* _this = reinterpret_cast< Chart3DImageTextureTilingArchive* >(object);
-  (void)_this;
-}
-void Chart3DImageTextureTilingArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DImageTextureTilingArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DImageTextureTilingArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DImageTextureTilingArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(super_ != nullptr);
-    super_->Clear();
+    GOOGLE_DCHECK(_impl_.super_ != nullptr);
+    _impl_.super_->Clear();
   }
   if (cached_has_bits & 0x000000feu) {
-    ::memset(&mode_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&tcontinuity_) -
-        reinterpret_cast<char*>(&mode_)) + sizeof(tcontinuity_));
+    ::memset(&_impl_.mode_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.tcontinuity_) -
+        reinterpret_cast<char*>(&_impl_.mode_)) + sizeof(_impl_.tcontinuity_));
   }
-  reveal_ = false;
-  _has_bits_.Clear();
+  _impl_.reveal_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DImageTextureTilingArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DImageTextureTilingArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSCH.Chart3DBaseImageTextureTilingArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingMode mode = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingMode_IsValid(val))) {
             _internal_set_mode(static_cast<::TSCH::TextureTilingMode>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(2, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingWrap wrap = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingWrap_IsValid(val))) {
             _internal_set_wrap(static_cast<::TSCH::TextureTilingWrap>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(3, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingFace face = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingFace_IsValid(val))) {
             _internal_set_face(static_cast<::TSCH::TextureTilingFace>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(4, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingXPosition xposition = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingXPosition_IsValid(val))) {
             _internal_set_xposition(static_cast<::TSCH::TextureTilingXPosition>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(5, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingYPosition yposition = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingYPosition_IsValid(val))) {
             _internal_set_yposition(static_cast<::TSCH::TextureTilingYPosition>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(6, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingContinuity scontinuity = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 56)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingContinuity_IsValid(val))) {
             _internal_set_scontinuity(static_cast<::TSCH::TextureTilingContinuity>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(7, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSCH.TextureTilingContinuity tcontinuity = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TSCH::TextureTilingContinuity_IsValid(val))) {
             _internal_set_tcontinuity(static_cast<::TSCH::TextureTilingContinuity>(val));
           } else {
             ::PROTOBUF_NAMESPACE_ID::internal::WriteVarint(8, val, mutable_unknown_fields());
           }
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool reveal = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 72)) {
           _Internal::set_has_reveal(&has_bits);
-          reveal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.reveal_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DImageTextureTilingArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DImageTextureTilingArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DImageTextureTilingArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSCH.Chart3DBaseImageTextureTilingArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSCH.TextureTilingMode mode = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       2, this->_internal_mode(), target);
   }
 
   // optional .TSCH.TextureTilingWrap wrap = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       3, this->_internal_wrap(), target);
   }
 
   // optional .TSCH.TextureTilingFace face = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       4, this->_internal_face(), target);
   }
 
   // optional .TSCH.TextureTilingXPosition xposition = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       5, this->_internal_xposition(), target);
   }
 
   // optional .TSCH.TextureTilingYPosition yposition = 6;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       6, this->_internal_yposition(), target);
   }
 
   // optional .TSCH.TextureTilingContinuity scontinuity = 7;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       7, this->_internal_scontinuity(), target);
   }
 
   // optional .TSCH.TextureTilingContinuity tcontinuity = 8;
   if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
+    target = ::_pbi::WireFormatLite::WriteEnumToArray(
       8, this->_internal_tcontinuity(), target);
   }
 
   // optional bool reveal = 9;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_reveal(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(9, this->_internal_reveal(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DImageTextureTilingArchive)
@@ -7130,54 +7169,54 @@ size_t Chart3DImageTextureTilingArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000feu) {
     // optional .TSCH.TextureTilingMode mode = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_mode());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_mode());
     }
 
     // optional .TSCH.TextureTilingWrap wrap = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_wrap());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_wrap());
     }
 
     // optional .TSCH.TextureTilingFace face = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_face());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_face());
     }
 
     // optional .TSCH.TextureTilingXPosition xposition = 5;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_xposition());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_xposition());
     }
 
     // optional .TSCH.TextureTilingYPosition yposition = 6;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_yposition());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_yposition());
     }
 
     // optional .TSCH.TextureTilingContinuity scontinuity = 7;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_scontinuity());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_scontinuity());
     }
 
     // optional .TSCH.TextureTilingContinuity tcontinuity = 8;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_tcontinuity());
+        ::_pbi::WireFormatLite::EnumSize(this->_internal_tcontinuity());
     }
 
   }
@@ -7186,66 +7225,57 @@ size_t Chart3DImageTextureTilingArchive::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DImageTextureTilingArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DImageTextureTilingArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DImageTextureTilingArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DImageTextureTilingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DImageTextureTilingArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DImageTextureTilingArchive &>(from));
-}
 
-
-void Chart3DImageTextureTilingArchive::MergeFrom(const Chart3DImageTextureTilingArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DImageTextureTilingArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DImageTextureTilingArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DImageTextureTilingArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DImageTextureTilingArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DImageTextureTilingArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSCH::Chart3DBaseImageTextureTilingArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSCH::Chart3DBaseImageTextureTilingArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      mode_ = from.mode_;
+      _this->_impl_.mode_ = from._impl_.mode_;
     }
     if (cached_has_bits & 0x00000004u) {
-      wrap_ = from.wrap_;
+      _this->_impl_.wrap_ = from._impl_.wrap_;
     }
     if (cached_has_bits & 0x00000008u) {
-      face_ = from.face_;
+      _this->_impl_.face_ = from._impl_.face_;
     }
     if (cached_has_bits & 0x00000010u) {
-      xposition_ = from.xposition_;
+      _this->_impl_.xposition_ = from._impl_.xposition_;
     }
     if (cached_has_bits & 0x00000020u) {
-      yposition_ = from.yposition_;
+      _this->_impl_.yposition_ = from._impl_.yposition_;
     }
     if (cached_has_bits & 0x00000040u) {
-      scontinuity_ = from.scontinuity_;
+      _this->_impl_.scontinuity_ = from._impl_.scontinuity_;
     }
     if (cached_has_bits & 0x00000080u) {
-      tcontinuity_ = from.tcontinuity_;
+      _this->_impl_.tcontinuity_ = from._impl_.tcontinuity_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000100u) {
-    _internal_set_reveal(from._internal_reveal());
+    _this->_internal_set_reveal(from._internal_reveal());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DImageTextureTilingArchive::CopyFrom(const Chart3DImageTextureTilingArchive& from) {
@@ -7256,9 +7286,9 @@ void Chart3DImageTextureTilingArchive::CopyFrom(const Chart3DImageTextureTilingA
 }
 
 bool Chart3DImageTextureTilingArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   return true;
 }
@@ -7266,17 +7296,17 @@ bool Chart3DImageTextureTilingArchive::IsInitialized() const {
 void Chart3DImageTextureTilingArchive::InternalSwap(Chart3DImageTextureTilingArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DImageTextureTilingArchive, reveal_)
-      + sizeof(Chart3DImageTextureTilingArchive::reveal_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DImageTextureTilingArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(Chart3DImageTextureTilingArchive, _impl_.reveal_)
+      + sizeof(Chart3DImageTextureTilingArchive::_impl_.reveal_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DImageTextureTilingArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DImageTextureTilingArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[20]);
 }
@@ -7285,7 +7315,7 @@ void Chart3DImageTextureTilingArchive::InternalSwap(Chart3DImageTextureTilingArc
 
 class Chart3DVectorArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<Chart3DVectorArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<Chart3DVectorArchive>()._impl_._has_bits_);
   static void set_has_x(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -7306,162 +7336,174 @@ class Chart3DVectorArchive::_Internal {
 Chart3DVectorArchive::Chart3DVectorArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSCH.Chart3DVectorArchive)
 }
 Chart3DVectorArchive::Chart3DVectorArchive(const Chart3DVectorArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Chart3DVectorArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.x_){}
+    , decltype(_impl_.y_){}
+    , decltype(_impl_.z_){}
+    , decltype(_impl_.w_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&x_, &from.x_,
-    static_cast<size_t>(reinterpret_cast<char*>(&w_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(w_));
+  ::memcpy(&_impl_.x_, &from._impl_.x_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.w_) -
+    reinterpret_cast<char*>(&_impl_.x_)) + sizeof(_impl_.w_));
   // @@protoc_insertion_point(copy_constructor:TSCH.Chart3DVectorArchive)
 }
 
-inline void Chart3DVectorArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&w_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(w_));
+inline void Chart3DVectorArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.x_){0}
+    , decltype(_impl_.y_){0}
+    , decltype(_impl_.z_){0}
+    , decltype(_impl_.w_){0}
+  };
 }
 
 Chart3DVectorArchive::~Chart3DVectorArchive() {
   // @@protoc_insertion_point(destructor:TSCH.Chart3DVectorArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void Chart3DVectorArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Chart3DVectorArchive::ArenaDtor(void* object) {
-  Chart3DVectorArchive* _this = reinterpret_cast< Chart3DVectorArchive* >(object);
-  (void)_this;
-}
-void Chart3DVectorArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chart3DVectorArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void Chart3DVectorArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSCH.Chart3DVectorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
-    ::memset(&x_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&w_) -
-        reinterpret_cast<char*>(&x_)) + sizeof(w_));
+    ::memset(&_impl_.x_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.w_) -
+        reinterpret_cast<char*>(&_impl_.x_)) + sizeof(_impl_.w_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Chart3DVectorArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* Chart3DVectorArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required float x = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 13)) {
           _Internal::set_has_x(&has_bits);
-          x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float y = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 21)) {
           _Internal::set_has_y(&has_bits);
-          y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float z = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 29)) {
           _Internal::set_has_z(&has_bits);
-          z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required float w = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           _Internal::set_has_w(&has_bits);
-          w_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.w_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chart3DVectorArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* Chart3DVectorArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSCH.Chart3DVectorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required float x = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // required float y = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   // required float z = 3;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_z(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(3, this->_internal_z(), target);
   }
 
   // required float w = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_w(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(4, this->_internal_w(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSCH.Chart3DVectorArchive)
@@ -7498,7 +7540,7 @@ size_t Chart3DVectorArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSCH.Chart3DVectorArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000000f) ^ 0x0000000f) == 0) {  // All required fields are present.
     // required float x = 1;
     total_size += 1 + 4;
 
@@ -7514,55 +7556,45 @@ size_t Chart3DVectorArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Chart3DVectorArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     Chart3DVectorArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Chart3DVectorArchive::GetClassData() const { return &_class_data_; }
 
-void Chart3DVectorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<Chart3DVectorArchive *>(to)->MergeFrom(
-      static_cast<const Chart3DVectorArchive &>(from));
-}
 
-
-void Chart3DVectorArchive::MergeFrom(const Chart3DVectorArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DVectorArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void Chart3DVectorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Chart3DVectorArchive*>(&to_msg);
+  auto& from = static_cast<const Chart3DVectorArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSCH.Chart3DVectorArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      x_ = from.x_;
+      _this->_impl_.x_ = from._impl_.x_;
     }
     if (cached_has_bits & 0x00000002u) {
-      y_ = from.y_;
+      _this->_impl_.y_ = from._impl_.y_;
     }
     if (cached_has_bits & 0x00000004u) {
-      z_ = from.z_;
+      _this->_impl_.z_ = from._impl_.z_;
     }
     if (cached_has_bits & 0x00000008u) {
-      w_ = from.w_;
+      _this->_impl_.w_ = from._impl_.w_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Chart3DVectorArchive::CopyFrom(const Chart3DVectorArchive& from) {
@@ -7573,98 +7605,120 @@ void Chart3DVectorArchive::CopyFrom(const Chart3DVectorArchive& from) {
 }
 
 bool Chart3DVectorArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void Chart3DVectorArchive::InternalSwap(Chart3DVectorArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chart3DVectorArchive, w_)
-      + sizeof(Chart3DVectorArchive::w_)
-      - PROTOBUF_FIELD_OFFSET(Chart3DVectorArchive, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+      PROTOBUF_FIELD_OFFSET(Chart3DVectorArchive, _impl_.w_)
+      + sizeof(Chart3DVectorArchive::_impl_.w_)
+      - PROTOBUF_FIELD_OFFSET(Chart3DVectorArchive, _impl_.x_)>(
+          reinterpret_cast<char*>(&_impl_.x_),
+          reinterpret_cast<char*>(&other->_impl_.x_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chart3DVectorArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSCH3DArchives_2eproto_getter, &descriptor_table_TSCH3DArchives_2eproto_once,
       file_level_metadata_TSCH3DArchives_2eproto[21]);
 }
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::FillArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSCH::Chart3DFillArchive >, 11, false >
-  fill3d(kFill3DFieldNumber, ::TSCH::Chart3DFillArchive::default_instance());
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSD::FillArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSCH::Chart3DFillArchive >, 11, false>
+  fill3d(kFill3DFieldNumber, ::TSCH::Chart3DFillArchive::default_instance(), nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSCH
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEnvironmentPackageArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DEnvironmentPackageArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEnvironmentPackageArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DEnvironmentPackageArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DEnvironmentPackageArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DFillArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DFillArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DFillArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DFillArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DFillArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPointLightArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DPointLightArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPointLightArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DPointLightArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DPointLightArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DDirectionalLightArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DDirectionalLightArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DDirectionalLightArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DDirectionalLightArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DDirectionalLightArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DSpotLightArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DSpotLightArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DSpotLightArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DSpotLightArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DSpotLightArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DLightArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DLightArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DLightArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightingModelArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DLightingModelArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightingModelArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DLightingModelArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DLightingModelArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightingPackageArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DLightingPackageArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DLightingPackageArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DLightingPackageArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DLightingPackageArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DTexturesMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DTexturesMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DTexturesMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DTexturesMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DTexturesMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEmissiveMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DEmissiveMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEmissiveMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DEmissiveMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DEmissiveMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DDiffuseMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DDiffuseMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DDiffuseMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DDiffuseMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DDiffuseMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DModulateMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DModulateMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DModulateMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DModulateMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DModulateMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DSpecularMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DSpecularMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DSpecularMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DSpecularMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DSpecularMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DShininessMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DShininessMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DShininessMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DShininessMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DShininessMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEnvironmentMaterialArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DEnvironmentMaterialArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DEnvironmentMaterialArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DEnvironmentMaterialArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DEnvironmentMaterialArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DFixedFunctionLightingModelArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DFixedFunctionLightingModelArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DFixedFunctionLightingModelArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DFixedFunctionLightingModelArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DFixedFunctionLightingModelArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPhongLightingModelArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DPhongLightingModelArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPhongLightingModelArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DPhongLightingModelArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DPhongLightingModelArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPhongMaterialPackageArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DPhongMaterialPackageArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DPhongMaterialPackageArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DPhongMaterialPackageArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DPhongMaterialPackageArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DTSPImageDataTextureArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DTSPImageDataTextureArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DTSPImageDataTextureArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DTSPImageDataTextureArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DTSPImageDataTextureArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DBaseImageTextureTilingArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DBaseImageTextureTilingArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DBaseImageTextureTilingArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DBaseImageTextureTilingArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DBaseImageTextureTilingArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DImageTextureTilingArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DImageTextureTilingArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DImageTextureTilingArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DImageTextureTilingArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DImageTextureTilingArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSCH::Chart3DVectorArchive* Arena::CreateMaybeMessage< ::TSCH::Chart3DVectorArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSCH::Chart3DVectorArchive*
+Arena::CreateMaybeMessage< ::TSCH::Chart3DVectorArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSCH::Chart3DVectorArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -356,6 +356,7 @@ message FreehandDrawingArchive {
   optional .TSP.Reference spacer_shape = 1;
   optional double opacity = 2;
   optional .TSD.FreehandDrawingAnimationArchive animation = 3;
+  optional double last_clamped_scale = 4;
   extend .TSD.GroupArchive {
     optional .TSD.FreehandDrawingArchive freehand_drawing_archive = 100;
   }
@@ -400,6 +401,7 @@ message ImageArchive {
   optional .TSP.Path traced_path = 19;
   optional .TSD.Attribution attribution = 20;
   optional bool should_trace_pdf_content = 21;
+  optional bool background_removed = 22;
   extensions 100 to 999;
 }
 
@@ -452,6 +454,8 @@ message MovieArchive {
   optional .TSP.Size naturalSize = 21;
   optional .TSD.Attribution attribution = 26;
   optional .TSD.MovieFingerprint fingerprint = 29;
+  optional bool is_live_video = 30 [default = false];
+  extensions 100 to 999;
 }
 
 message ExteriorTextWrapArchive {
@@ -557,6 +561,7 @@ message CommentStorageArchive {
   optional .TSP.Date creation_date = 2;
   optional .TSP.Reference author = 3;
   repeated .TSP.Reference replies = 4;
+  optional .TSP.UUID storage_uuid = 5;
 }
 
 message ReplaceAnnotationAuthorCommandArchive {

@@ -16,205 +16,242 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSTSOS {
-constexpr SpecSetTableStrokePresetListArchive::SpecSetTableStrokePresetListArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : table_stroke_preset_list_(nullptr)
-  , unset_(false){}
+PROTOBUF_CONSTEXPR SpecSetTableStrokePresetListArchive::SpecSetTableStrokePresetListArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.table_stroke_preset_list_)*/nullptr
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetTableStrokePresetListArchiveDefaultTypeInternal {
-  constexpr SpecSetTableStrokePresetListArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetTableStrokePresetListArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetTableStrokePresetListArchiveDefaultTypeInternal() {}
   union {
     SpecSetTableStrokePresetListArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetTableStrokePresetListArchiveDefaultTypeInternal _SpecSetTableStrokePresetListArchive_default_instance_;
-constexpr SpecTableStrokePresetListArchive::SpecTableStrokePresetListArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_table_stroke_preset_list_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetTableStrokePresetListArchiveDefaultTypeInternal _SpecSetTableStrokePresetListArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecTableStrokePresetListArchive::SpecTableStrokePresetListArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_table_stroke_preset_list_)*/nullptr} {}
 struct SpecTableStrokePresetListArchiveDefaultTypeInternal {
-  constexpr SpecTableStrokePresetListArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecTableStrokePresetListArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecTableStrokePresetListArchiveDefaultTypeInternal() {}
   union {
     SpecTableStrokePresetListArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecTableStrokePresetListArchiveDefaultTypeInternal _SpecTableStrokePresetListArchive_default_instance_;
-constexpr TableCellStylePropertyChangeSetArchive::TableCellStylePropertyChangeSetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : text_wrap_(nullptr)
-  , type_(nullptr)
-  , fill_(nullptr)
-  , vertical_alignment_(nullptr)
-  , padding_(nullptr)
-  , text_wrap_undefined_(false)
-  , type_undefined_(false)
-  , fill_undefined_(false)
-  , vertical_alignment_undefined_(false)
-  , padding_undefined_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecTableStrokePresetListArchiveDefaultTypeInternal _SpecTableStrokePresetListArchive_default_instance_;
+PROTOBUF_CONSTEXPR TableCellStylePropertyChangeSetArchive::TableCellStylePropertyChangeSetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.text_wrap_)*/nullptr
+  , /*decltype(_impl_.type_)*/nullptr
+  , /*decltype(_impl_.fill_)*/nullptr
+  , /*decltype(_impl_.vertical_alignment_)*/nullptr
+  , /*decltype(_impl_.padding_)*/nullptr
+  , /*decltype(_impl_.text_wrap_undefined_)*/false
+  , /*decltype(_impl_.type_undefined_)*/false
+  , /*decltype(_impl_.fill_undefined_)*/false
+  , /*decltype(_impl_.vertical_alignment_undefined_)*/false
+  , /*decltype(_impl_.padding_undefined_)*/false} {}
 struct TableCellStylePropertyChangeSetArchiveDefaultTypeInternal {
-  constexpr TableCellStylePropertyChangeSetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TableCellStylePropertyChangeSetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TableCellStylePropertyChangeSetArchiveDefaultTypeInternal() {}
   union {
     TableCellStylePropertyChangeSetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TableCellStylePropertyChangeSetArchiveDefaultTypeInternal _TableCellStylePropertyChangeSetArchive_default_instance_;
-constexpr TableStylePropertyChangeSetArchive::TableStylePropertyChangeSetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : auto_resize_(nullptr)
-  , banded_rows_(nullptr)
-  , banded_cell_fill_(nullptr)
-  , behaves_like_spreadsheet_(nullptr)
-  , body_horizontal_border_stroke_(nullptr)
-  , body_vertical_border_stroke_(nullptr)
-  , body_horizontal_stroke_(nullptr)
-  , body_vertical_stroke_(nullptr)
-  , header_column_border_stroke_(nullptr)
-  , header_column_vertical_stroke_(nullptr)
-  , header_column_horizontal_stroke_(nullptr)
-  , header_column_separator_stroke_(nullptr)
-  , header_row_border_stroke_(nullptr)
-  , header_row_horizontal_stroke_(nullptr)
-  , header_row_vertical_stroke_(nullptr)
-  , header_row_separator_stroke_(nullptr)
-  , footer_row_border_stroke_(nullptr)
-  , footer_row_horizontal_stroke_(nullptr)
-  , footer_row_vertical_stroke_(nullptr)
-  , footer_row_separator_stroke_(nullptr)
-  , stroke_preset_list_object_(nullptr)
-  , vertical_strokes_visible_(nullptr)
-  , horizontal_strokes_visible_(nullptr)
-  , header_row_sep_visible_(nullptr)
-  , header_row_verticals_visible_(nullptr)
-  , header_col_sep_visible_(nullptr)
-  , header_col_horizontals_visible_(nullptr)
-  , footer_sep_visible_(nullptr)
-  , footer_verticals_visible_(nullptr)
-  , border_strokes_visible_(nullptr)
-  , master_font_family_(nullptr)
-  , writing_direction_(nullptr)
-  , category_level1_top_stroke_(nullptr)
-  , category_level2_top_stroke_(nullptr)
-  , category_level3_top_stroke_(nullptr)
-  , category_level4_top_stroke_(nullptr)
-  , category_level5_top_stroke_(nullptr)
-  , category_level1_label_separator_stroke_(nullptr)
-  , category_level2_label_separator_stroke_(nullptr)
-  , category_level3_label_separator_stroke_(nullptr)
-  , category_level4_label_separator_stroke_(nullptr)
-  , category_level5_label_separator_stroke_(nullptr)
-  , category_level1_bottom_stroke_(nullptr)
-  , category_level2_bottom_stroke_(nullptr)
-  , category_level3_bottom_stroke_(nullptr)
-  , category_level4_bottom_stroke_(nullptr)
-  , category_level5_bottom_stroke_(nullptr)
-  , category_level1_interior_stroke_(nullptr)
-  , category_level2_interior_stroke_(nullptr)
-  , category_level3_interior_stroke_(nullptr)
-  , category_level4_interior_stroke_(nullptr)
-  , category_level5_interior_stroke_(nullptr)
-  , auto_resize_undefined_(false)
-  , banded_rows_undefined_(false)
-  , banded_cell_fill_undefined_(false)
-  , behaves_like_spreadsheet_undefined_(false)
-  , body_horizontal_border_stroke_undefined_(false)
-  , body_vertical_border_stroke_undefined_(false)
-  , body_horizontal_stroke_undefined_(false)
-  , body_vertical_stroke_undefined_(false)
-  , header_column_border_stroke_undefined_(false)
-  , header_column_vertical_stroke_undefined_(false)
-  , header_column_horizontal_stroke_undefined_(false)
-  , header_column_separator_stroke_undefined_(false)
-  , header_row_border_stroke_undefined_(false)
-  , header_row_horizontal_stroke_undefined_(false)
-  , header_row_vertical_stroke_undefined_(false)
-  , header_row_separator_stroke_undefined_(false)
-  , footer_row_border_stroke_undefined_(false)
-  , footer_row_horizontal_stroke_undefined_(false)
-  , footer_row_vertical_stroke_undefined_(false)
-  , footer_row_separator_stroke_undefined_(false)
-  , stroke_preset_list_object_undefined_(false)
-  , vertical_strokes_visible_undefined_(false)
-  , horizontal_strokes_visible_undefined_(false)
-  , header_row_sep_visible_undefined_(false)
-  , header_row_verticals_visible_undefined_(false)
-  , header_col_sep_visible_undefined_(false)
-  , header_col_horizontals_visible_undefined_(false)
-  , footer_sep_visible_undefined_(false)
-  , footer_verticals_visible_undefined_(false)
-  , border_strokes_visible_undefined_(false)
-  , master_font_family_undefined_(false)
-  , writing_direction_undefined_(false)
-  , category_level1_top_stroke_undefined_(false)
-  , category_level2_top_stroke_undefined_(false)
-  , category_level3_top_stroke_undefined_(false)
-  , category_level4_top_stroke_undefined_(false)
-  , category_level5_top_stroke_undefined_(false)
-  , category_level1_label_separator_stroke_undefined_(false)
-  , category_level2_label_separator_stroke_undefined_(false)
-  , category_level3_label_separator_stroke_undefined_(false)
-  , category_level4_label_separator_stroke_undefined_(false)
-  , category_level5_label_separator_stroke_undefined_(false)
-  , category_level1_bottom_stroke_undefined_(false)
-  , category_level2_bottom_stroke_undefined_(false)
-  , category_level3_bottom_stroke_undefined_(false)
-  , category_level4_bottom_stroke_undefined_(false)
-  , category_level5_bottom_stroke_undefined_(false)
-  , category_level1_interior_stroke_undefined_(false)
-  , category_level2_interior_stroke_undefined_(false)
-  , category_level3_interior_stroke_undefined_(false)
-  , category_level4_interior_stroke_undefined_(false)
-  , category_level5_interior_stroke_undefined_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TableCellStylePropertyChangeSetArchiveDefaultTypeInternal _TableCellStylePropertyChangeSetArchive_default_instance_;
+PROTOBUF_CONSTEXPR TableStylePropertyChangeSetArchive::TableStylePropertyChangeSetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.auto_resize_)*/nullptr
+  , /*decltype(_impl_.banded_rows_)*/nullptr
+  , /*decltype(_impl_.banded_cell_fill_)*/nullptr
+  , /*decltype(_impl_.behaves_like_spreadsheet_)*/nullptr
+  , /*decltype(_impl_.body_horizontal_border_stroke_)*/nullptr
+  , /*decltype(_impl_.body_vertical_border_stroke_)*/nullptr
+  , /*decltype(_impl_.body_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.body_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_border_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_border_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.stroke_preset_list_object_)*/nullptr
+  , /*decltype(_impl_.vertical_strokes_visible_)*/nullptr
+  , /*decltype(_impl_.horizontal_strokes_visible_)*/nullptr
+  , /*decltype(_impl_.header_row_sep_visible_)*/nullptr
+  , /*decltype(_impl_.header_row_verticals_visible_)*/nullptr
+  , /*decltype(_impl_.header_col_sep_visible_)*/nullptr
+  , /*decltype(_impl_.header_col_horizontals_visible_)*/nullptr
+  , /*decltype(_impl_.footer_sep_visible_)*/nullptr
+  , /*decltype(_impl_.footer_verticals_visible_)*/nullptr
+  , /*decltype(_impl_.border_strokes_visible_)*/nullptr
+  , /*decltype(_impl_.master_font_family_)*/nullptr
+  , /*decltype(_impl_.writing_direction_)*/nullptr
+  , /*decltype(_impl_.category_level1_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_top_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_label_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_bottom_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level1_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level2_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level3_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level4_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.category_level5_interior_stroke_)*/nullptr
+  , /*decltype(_impl_.body_pivot_group_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.body_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.body_pivot_emphasis_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_group_horizontal_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_)*/nullptr
+  , /*decltype(_impl_.header_column_pivot_separator_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_)*/nullptr
+  , /*decltype(_impl_.header_row_pivot_title_stroke_)*/nullptr
+  , /*decltype(_impl_.footer_row_pivot_group_vertical_stroke_)*/nullptr
+  , /*decltype(_impl_.auto_resize_undefined_)*/false
+  , /*decltype(_impl_.banded_rows_undefined_)*/false
+  , /*decltype(_impl_.banded_cell_fill_undefined_)*/false
+  , /*decltype(_impl_.behaves_like_spreadsheet_undefined_)*/false
+  , /*decltype(_impl_.body_horizontal_border_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_vertical_border_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_border_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_border_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.footer_row_border_stroke_undefined_)*/false
+  , /*decltype(_impl_.footer_row_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.footer_row_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.footer_row_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.stroke_preset_list_object_undefined_)*/false
+  , /*decltype(_impl_.vertical_strokes_visible_undefined_)*/false
+  , /*decltype(_impl_.horizontal_strokes_visible_undefined_)*/false
+  , /*decltype(_impl_.header_row_sep_visible_undefined_)*/false
+  , /*decltype(_impl_.header_row_verticals_visible_undefined_)*/false
+  , /*decltype(_impl_.header_col_sep_visible_undefined_)*/false
+  , /*decltype(_impl_.header_col_horizontals_visible_undefined_)*/false
+  , /*decltype(_impl_.footer_sep_visible_undefined_)*/false
+  , /*decltype(_impl_.footer_verticals_visible_undefined_)*/false
+  , /*decltype(_impl_.border_strokes_visible_undefined_)*/false
+  , /*decltype(_impl_.master_font_family_undefined_)*/false
+  , /*decltype(_impl_.writing_direction_undefined_)*/false
+  , /*decltype(_impl_.category_level1_top_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level2_top_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level3_top_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level4_top_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level5_top_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level1_label_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level2_label_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level3_label_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level4_label_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level5_label_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level1_bottom_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level2_bottom_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level3_bottom_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level4_bottom_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level5_bottom_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level1_interior_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level2_interior_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level3_interior_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level4_interior_stroke_undefined_)*/false
+  , /*decltype(_impl_.category_level5_interior_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_pivot_group_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_pivot_group_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.body_pivot_emphasis_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_pivot_group_horizontal_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_column_pivot_separator_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_pivot_group_vertical_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_undefined_)*/false
+  , /*decltype(_impl_.header_row_pivot_title_stroke_undefined_)*/false
+  , /*decltype(_impl_.footer_row_pivot_group_vertical_stroke_undefined_)*/false} {}
 struct TableStylePropertyChangeSetArchiveDefaultTypeInternal {
-  constexpr TableStylePropertyChangeSetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR TableStylePropertyChangeSetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~TableStylePropertyChangeSetArchiveDefaultTypeInternal() {}
   union {
     TableStylePropertyChangeSetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TableStylePropertyChangeSetArchiveDefaultTypeInternal _TableStylePropertyChangeSetArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 TableStylePropertyChangeSetArchiveDefaultTypeInternal _TableStylePropertyChangeSetArchive_default_instance_;
 }  // namespace TSTSOS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSTArchives_2esos_2eproto[4];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TSTArchives_2esos_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSTArchives_2esos_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSTArchives_2esos_2eproto[4];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_TSTArchives_2esos_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSTArchives_2esos_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, _has_bits_),
+const uint32_t TableStruct_TSTArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, table_stroke_preset_list_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, _impl_.table_stroke_preset_list_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecSetTableStrokePresetListArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecTableStrokePresetListArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecTableStrokePresetListArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecTableStrokePresetListArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecTableStrokePresetListArchive, spec_set_table_stroke_preset_list_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::SpecTableStrokePresetListArchive, _impl_.spec_set_table_stroke_preset_list_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, text_wrap_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, text_wrap_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, type_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, type_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, fill_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, fill_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, vertical_alignment_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, vertical_alignment_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, padding_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, padding_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.text_wrap_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.text_wrap_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.type_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.type_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.fill_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.fill_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.vertical_alignment_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.vertical_alignment_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.padding_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableCellStylePropertyChangeSetArchive, _impl_.padding_undefined_),
   0,
   5,
   1,
@@ -225,232 +262,277 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSTArchives_2esos_2eproto::off
   8,
   4,
   9,
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, auto_resize_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, auto_resize_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, banded_rows_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, banded_rows_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, banded_cell_fill_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, banded_cell_fill_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, behaves_like_spreadsheet_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, behaves_like_spreadsheet_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_horizontal_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_horizontal_border_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_vertical_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_vertical_border_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_horizontal_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, body_vertical_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_border_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_vertical_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_horizontal_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_column_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_border_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_horizontal_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_vertical_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_border_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_border_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_horizontal_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_horizontal_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_vertical_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_vertical_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_row_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, stroke_preset_list_object_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, stroke_preset_list_object_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, vertical_strokes_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, vertical_strokes_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, horizontal_strokes_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, horizontal_strokes_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_sep_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_sep_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_verticals_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_row_verticals_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_col_sep_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_col_sep_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_col_horizontals_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, header_col_horizontals_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_sep_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_sep_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_verticals_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, footer_verticals_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, border_strokes_visible_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, border_strokes_visible_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, master_font_family_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, master_font_family_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, writing_direction_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, writing_direction_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_top_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_top_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_top_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_top_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_top_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_top_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_label_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_label_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_label_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_label_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_label_separator_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_label_separator_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_bottom_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_bottom_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_bottom_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_bottom_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_bottom_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_bottom_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level1_interior_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level2_interior_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level3_interior_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level4_interior_stroke_undefined_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_interior_stroke_),
-  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, category_level5_interior_stroke_undefined_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.auto_resize_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.auto_resize_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.banded_rows_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.banded_rows_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.banded_cell_fill_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.banded_cell_fill_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.behaves_like_spreadsheet_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.behaves_like_spreadsheet_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_horizontal_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_horizontal_border_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_vertical_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_vertical_border_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_border_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_border_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_border_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_border_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.stroke_preset_list_object_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.stroke_preset_list_object_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.vertical_strokes_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.vertical_strokes_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.horizontal_strokes_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.horizontal_strokes_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_sep_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_sep_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_verticals_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_verticals_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_col_sep_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_col_sep_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_col_horizontals_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_col_horizontals_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_sep_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_sep_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_verticals_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_verticals_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.border_strokes_visible_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.border_strokes_visible_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.master_font_family_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.master_font_family_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.writing_direction_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.writing_direction_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_top_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_top_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_top_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_top_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_top_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_top_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_label_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_label_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_label_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_label_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_label_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_label_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_bottom_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_bottom_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_bottom_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_bottom_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_bottom_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_bottom_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level1_interior_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level2_interior_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level3_interior_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level4_interior_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_interior_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.category_level5_interior_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_group_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_group_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_group_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_group_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_de_emphasis_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_emphasis_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.body_pivot_emphasis_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_group_horizontal_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_group_horizontal_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_group_de_emphasis_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_group_de_emphasis_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_separator_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_column_pivot_separator_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_group_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_group_vertical_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_group_de_emphasis_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_group_de_emphasis_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_title_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.header_row_pivot_title_stroke_undefined_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_pivot_group_vertical_stroke_),
+  PROTOBUF_FIELD_OFFSET(::TSTSOS::TableStylePropertyChangeSetArchive, _impl_.footer_row_pivot_group_vertical_stroke_undefined_),
   0,
-  52,
-  1,
-  53,
-  2,
-  54,
-  3,
-  55,
-  4,
-  56,
-  5,
-  57,
-  6,
-  58,
-  7,
-  59,
-  8,
-  60,
-  9,
-  61,
-  10,
-  62,
-  11,
   63,
-  12,
+  1,
   64,
-  13,
+  2,
   65,
-  14,
+  3,
   66,
-  15,
+  4,
   67,
-  16,
+  5,
   68,
-  17,
+  6,
   69,
-  18,
+  7,
   70,
-  19,
+  8,
   71,
-  20,
+  9,
   72,
-  21,
+  10,
   73,
-  22,
+  11,
   74,
-  23,
+  12,
   75,
-  24,
+  13,
   76,
-  25,
+  14,
   77,
-  26,
+  15,
   78,
-  27,
+  16,
   79,
-  28,
+  17,
   80,
-  29,
+  18,
   81,
-  30,
+  19,
   82,
-  31,
+  20,
   83,
-  32,
+  21,
   84,
-  33,
+  22,
   85,
-  34,
+  23,
   86,
-  35,
+  24,
   87,
-  36,
+  25,
   88,
-  37,
+  26,
   89,
-  38,
+  27,
   90,
-  39,
+  28,
   91,
-  40,
+  29,
   92,
-  41,
+  30,
   93,
-  42,
+  31,
   94,
-  43,
+  32,
   95,
-  44,
+  33,
   96,
-  45,
+  34,
   97,
-  46,
+  35,
   98,
-  47,
+  36,
   99,
-  48,
+  37,
   100,
-  49,
+  38,
   101,
-  50,
+  39,
   102,
-  51,
+  40,
   103,
+  41,
+  104,
+  42,
+  105,
+  43,
+  106,
+  44,
+  107,
+  45,
+  108,
+  46,
+  109,
+  47,
+  110,
+  48,
+  111,
+  49,
+  112,
+  50,
+  113,
+  51,
+  114,
+  52,
+  115,
+  53,
+  116,
+  54,
+  117,
+  55,
+  118,
+  56,
+  119,
+  57,
+  120,
+  58,
+  121,
+  59,
+  122,
+  60,
+  123,
+  61,
+  124,
+  62,
+  125,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::TSTSOS::SpecSetTableStrokePresetListArchive)},
-  { 9, 15, sizeof(::TSTSOS::SpecTableStrokePresetListArchive)},
-  { 16, 31, sizeof(::TSTSOS::TableCellStylePropertyChangeSetArchive)},
-  { 41, 150, sizeof(::TSTSOS::TableStylePropertyChangeSetArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 8, -1, sizeof(::TSTSOS::SpecSetTableStrokePresetListArchive)},
+  { 10, 17, -1, sizeof(::TSTSOS::SpecTableStrokePresetListArchive)},
+  { 18, 34, -1, sizeof(::TSTSOS::TableCellStylePropertyChangeSetArchive)},
+  { 44, 176, -1, sizeof(::TSTSOS::TableStylePropertyChangeSetArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSTSOS::_SpecSetTableStrokePresetListArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSTSOS::_SpecTableStrokePresetListArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSTSOS::_TableCellStylePropertyChangeSetArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSTSOS::_TableStylePropertyChangeSetArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSTSOS::_SpecSetTableStrokePresetListArchive_default_instance_._instance,
+  &::TSTSOS::_SpecTableStrokePresetListArchive_default_instance_._instance,
+  &::TSTSOS::_TableCellStylePropertyChangeSetArchive_default_instance_._instance,
+  &::TSTSOS::_TableStylePropertyChangeSetArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSTArchives_2esos_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -473,7 +555,7 @@ const char descriptor_table_protodef_TSTArchives_2esos_2eproto[] PROTOBUF_SECTIO
   "ent\030\007 \001(\0132\032.TSSSOS.SpecIntegerArchive\022$\n"
   "\034vertical_alignment_undefined\030\010 \001(\010\022,\n\007p"
   "adding\030\t \001(\0132\033.TSWPSOS.SpecPaddingArchiv"
-  "e\022\031\n\021padding_undefined\030\n \001(\010\"\374,\n\"TableSt"
+  "e\022\031\n\021padding_undefined\030\n \001(\010\"\2438\n\"TableSt"
   "ylePropertyChangeSetArchive\022,\n\013auto_resi"
   "ze\030\001 \001(\0132\027.TSSSOS.SpecBoolArchive\022\035\n\025aut"
   "o_resize_undefined\030\002 \001(\010\022,\n\013banded_rows\030"
@@ -617,34 +699,72 @@ const char descriptor_table_protodef_TSTArchives_2esos_2eproto[] PROTOBUF_SECTIO
   "erior_stroke_undefined\030f \001(\010\022B\n\037category"
   "_level5_interior_stroke\030g \001(\0132\031.TSDSOS.S"
   "pecStrokeArchive\0221\n)category_level5_inte"
-  "rior_stroke_undefined\030h \001(\010"
+  "rior_stroke_undefined\030h \001(\010\022E\n\"body_pivo"
+  "t_group_horizontal_stroke\030i \001(\0132\031.TSDSOS"
+  ".SpecStrokeArchive\0224\n,body_pivot_group_h"
+  "orizontal_stroke_undefined\030j \001(\010\022C\n body"
+  "_pivot_group_vertical_stroke\030k \001(\0132\031.TSD"
+  "SOS.SpecStrokeArchive\0222\n*body_pivot_grou"
+  "p_vertical_stroke_undefined\030l \001(\010\022K\n(bod"
+  "y_pivot_de_emphasis_horizontal_stroke\030m "
+  "\001(\0132\031.TSDSOS.SpecStrokeArchive\022:\n2body_p"
+  "ivot_de_emphasis_horizontal_stroke_undef"
+  "ined\030n \001(\010\022F\n#body_pivot_emphasis_vertic"
+  "al_stroke\030o \001(\0132\031.TSDSOS.SpecStrokeArchi"
+  "ve\0225\n-body_pivot_emphasis_vertical_strok"
+  "e_undefined\030p \001(\010\022N\n+header_column_pivot"
+  "_group_horizontal_stroke\030q \001(\0132\031.TSDSOS."
+  "SpecStrokeArchive\022=\n5header_column_pivot"
+  "_group_horizontal_stroke_undefined\030r \001(\010"
+  "\022O\n,header_column_pivot_group_de_emphasi"
+  "s_stroke\030s \001(\0132\031.TSDSOS.SpecStrokeArchiv"
+  "e\022>\n6header_column_pivot_group_de_emphas"
+  "is_stroke_undefined\030t \001(\010\022G\n$header_colu"
+  "mn_pivot_separator_stroke\030u \001(\0132\031.TSDSOS"
+  ".SpecStrokeArchive\0226\n.header_column_pivo"
+  "t_separator_stroke_undefined\030v \001(\010\022I\n&he"
+  "ader_row_pivot_group_vertical_stroke\030w \001"
+  "(\0132\031.TSDSOS.SpecStrokeArchive\0228\n0header_"
+  "row_pivot_group_vertical_stroke_undefine"
+  "d\030x \001(\010\022L\n)header_row_pivot_group_de_emp"
+  "hasis_stroke\030y \001(\0132\031.TSDSOS.SpecStrokeAr"
+  "chive\022;\n3header_row_pivot_group_de_empha"
+  "sis_stroke_undefined\030z \001(\010\022@\n\035header_row"
+  "_pivot_title_stroke\030{ \001(\0132\031.TSDSOS.SpecS"
+  "trokeArchive\022/\n\'header_row_pivot_title_s"
+  "troke_undefined\030| \001(\010\022I\n&footer_row_pivo"
+  "t_group_vertical_stroke\030} \001(\0132\031.TSDSOS.S"
+  "pecStrokeArchive\0228\n0footer_row_pivot_gro"
+  "up_vertical_stroke_undefined\030~ \001(\010"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSTArchives_2esos_2eproto_deps[4] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSTArchives_2esos_2eproto_deps[4] = {
   &::descriptor_table_TSDArchives_2esos_2eproto,
   &::descriptor_table_TSSArchives_2esos_2eproto,
   &::descriptor_table_TSTStylePropertyArchiving_2eproto,
   &::descriptor_table_TSWPArchives_2esos_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSTArchives_2esos_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSTArchives_2esos_2eproto = {
-  false, false, 6547, descriptor_table_protodef_TSTArchives_2esos_2eproto, "TSTArchives.sos.proto", 
-  &descriptor_table_TSTArchives_2esos_2eproto_once, descriptor_table_TSTArchives_2esos_2eproto_deps, 4, 4,
-  schemas, file_default_instances, TableStruct_TSTArchives_2esos_2eproto::offsets,
-  file_level_metadata_TSTArchives_2esos_2eproto, file_level_enum_descriptors_TSTArchives_2esos_2eproto, file_level_service_descriptors_TSTArchives_2esos_2eproto,
+static ::_pbi::once_flag descriptor_table_TSTArchives_2esos_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSTArchives_2esos_2eproto = {
+    false, false, 7994, descriptor_table_protodef_TSTArchives_2esos_2eproto,
+    "TSTArchives.sos.proto",
+    &descriptor_table_TSTArchives_2esos_2eproto_once, descriptor_table_TSTArchives_2esos_2eproto_deps, 4, 4,
+    schemas, file_default_instances, TableStruct_TSTArchives_2esos_2eproto::offsets,
+    file_level_metadata_TSTArchives_2esos_2eproto, file_level_enum_descriptors_TSTArchives_2esos_2eproto,
+    file_level_service_descriptors_TSTArchives_2esos_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSTArchives_2esos_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSTArchives_2esos_2eproto_getter() {
   return &descriptor_table_TSTArchives_2esos_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSTArchives_2esos_2eproto(&descriptor_table_TSTArchives_2esos_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSTArchives_2esos_2eproto(&descriptor_table_TSTArchives_2esos_2eproto);
 namespace TSTSOS {
 
 // ===================================================================
 
 class SpecSetTableStrokePresetListArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetTableStrokePresetListArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetTableStrokePresetListArchive>()._impl_._has_bits_);
   static const ::TST::StrokePresetListArchive& table_stroke_preset_list(const SpecSetTableStrokePresetListArchive* msg);
   static void set_has_table_stroke_preset_list(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -659,148 +779,151 @@ class SpecSetTableStrokePresetListArchive::_Internal {
 
 const ::TST::StrokePresetListArchive&
 SpecSetTableStrokePresetListArchive::_Internal::table_stroke_preset_list(const SpecSetTableStrokePresetListArchive* msg) {
-  return *msg->table_stroke_preset_list_;
+  return *msg->_impl_.table_stroke_preset_list_;
 }
 void SpecSetTableStrokePresetListArchive::clear_table_stroke_preset_list() {
-  if (table_stroke_preset_list_ != nullptr) table_stroke_preset_list_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.table_stroke_preset_list_ != nullptr) _impl_.table_stroke_preset_list_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 SpecSetTableStrokePresetListArchive::SpecSetTableStrokePresetListArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSTSOS.SpecSetTableStrokePresetListArchive)
 }
 SpecSetTableStrokePresetListArchive::SpecSetTableStrokePresetListArchive(const SpecSetTableStrokePresetListArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetTableStrokePresetListArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.table_stroke_preset_list_){nullptr}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_table_stroke_preset_list()) {
-    table_stroke_preset_list_ = new ::TST::StrokePresetListArchive(*from.table_stroke_preset_list_);
-  } else {
-    table_stroke_preset_list_ = nullptr;
+    _this->_impl_.table_stroke_preset_list_ = new ::TST::StrokePresetListArchive(*from._impl_.table_stroke_preset_list_);
   }
-  unset_ = from.unset_;
+  _this->_impl_.unset_ = from._impl_.unset_;
   // @@protoc_insertion_point(copy_constructor:TSTSOS.SpecSetTableStrokePresetListArchive)
 }
 
-inline void SpecSetTableStrokePresetListArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&table_stroke_preset_list_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&table_stroke_preset_list_)) + sizeof(unset_));
+inline void SpecSetTableStrokePresetListArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.table_stroke_preset_list_){nullptr}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetTableStrokePresetListArchive::~SpecSetTableStrokePresetListArchive() {
   // @@protoc_insertion_point(destructor:TSTSOS.SpecSetTableStrokePresetListArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetTableStrokePresetListArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete table_stroke_preset_list_;
+  if (this != internal_default_instance()) delete _impl_.table_stroke_preset_list_;
 }
 
-void SpecSetTableStrokePresetListArchive::ArenaDtor(void* object) {
-  SpecSetTableStrokePresetListArchive* _this = reinterpret_cast< SpecSetTableStrokePresetListArchive* >(object);
-  (void)_this;
-}
-void SpecSetTableStrokePresetListArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetTableStrokePresetListArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetTableStrokePresetListArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSTSOS.SpecSetTableStrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(table_stroke_preset_list_ != nullptr);
-    table_stroke_preset_list_->Clear();
+    GOOGLE_DCHECK(_impl_.table_stroke_preset_list_ != nullptr);
+    _impl_.table_stroke_preset_list_->Clear();
   }
-  unset_ = false;
-  _has_bits_.Clear();
+  _impl_.unset_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetTableStrokePresetListArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetTableStrokePresetListArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TST.StrokePresetListArchive table_stroke_preset_list = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_table_stroke_preset_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetTableStrokePresetListArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetTableStrokePresetListArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSTSOS.SpecSetTableStrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TST.StrokePresetListArchive table_stroke_preset_list = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::table_stroke_preset_list(this), target, stream);
+      InternalWriteMessage(1, _Internal::table_stroke_preset_list(this),
+        _Internal::table_stroke_preset_list(this).GetCachedSize(), target, stream);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSTSOS.SpecSetTableStrokePresetListArchive)
@@ -815,57 +938,48 @@ size_t SpecSetTableStrokePresetListArchive::ByteSizeLong() const {
   if (_internal_has_unset()) {
     total_size += 1 + 1;
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TST.StrokePresetListArchive table_stroke_preset_list = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *table_stroke_preset_list_);
+        *_impl_.table_stroke_preset_list_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetTableStrokePresetListArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetTableStrokePresetListArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetTableStrokePresetListArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetTableStrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetTableStrokePresetListArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetTableStrokePresetListArchive &>(from));
-}
 
-
-void SpecSetTableStrokePresetListArchive::MergeFrom(const SpecSetTableStrokePresetListArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.SpecSetTableStrokePresetListArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetTableStrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetTableStrokePresetListArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetTableStrokePresetListArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.SpecSetTableStrokePresetListArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_table_stroke_preset_list()->::TST::StrokePresetListArchive::MergeFrom(from._internal_table_stroke_preset_list());
+      _this->_internal_mutable_table_stroke_preset_list()->::TST::StrokePresetListArchive::MergeFrom(
+          from._internal_table_stroke_preset_list());
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetTableStrokePresetListArchive::CopyFrom(const SpecSetTableStrokePresetListArchive& from) {
@@ -876,9 +990,9 @@ void SpecSetTableStrokePresetListArchive::CopyFrom(const SpecSetTableStrokePrese
 }
 
 bool SpecSetTableStrokePresetListArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_table_stroke_preset_list()) {
-    if (!table_stroke_preset_list_->IsInitialized()) return false;
+    if (!_impl_.table_stroke_preset_list_->IsInitialized()) return false;
   }
   return true;
 }
@@ -886,17 +1000,17 @@ bool SpecSetTableStrokePresetListArchive::IsInitialized() const {
 void SpecSetTableStrokePresetListArchive::InternalSwap(SpecSetTableStrokePresetListArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetTableStrokePresetListArchive, unset_)
-      + sizeof(SpecSetTableStrokePresetListArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetTableStrokePresetListArchive, table_stroke_preset_list_)>(
-          reinterpret_cast<char*>(&table_stroke_preset_list_),
-          reinterpret_cast<char*>(&other->table_stroke_preset_list_));
+      PROTOBUF_FIELD_OFFSET(SpecSetTableStrokePresetListArchive, _impl_.unset_)
+      + sizeof(SpecSetTableStrokePresetListArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetTableStrokePresetListArchive, _impl_.table_stroke_preset_list_)>(
+          reinterpret_cast<char*>(&_impl_.table_stroke_preset_list_),
+          reinterpret_cast<char*>(&other->_impl_.table_stroke_preset_list_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetTableStrokePresetListArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTArchives_2esos_2eproto_getter, &descriptor_table_TSTArchives_2esos_2eproto_once,
       file_level_metadata_TSTArchives_2esos_2eproto[0]);
 }
@@ -905,7 +1019,7 @@ void SpecSetTableStrokePresetListArchive::InternalSwap(SpecSetTableStrokePresetL
 
 class SpecTableStrokePresetListArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecTableStrokePresetListArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecTableStrokePresetListArchive>()._impl_._has_bits_);
   static const ::TSTSOS::SpecSetTableStrokePresetListArchive& spec_set_table_stroke_preset_list(const SpecTableStrokePresetListArchive* msg);
   static void set_has_spec_set_table_stroke_preset_list(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -914,125 +1028,128 @@ class SpecTableStrokePresetListArchive::_Internal {
 
 const ::TSTSOS::SpecSetTableStrokePresetListArchive&
 SpecTableStrokePresetListArchive::_Internal::spec_set_table_stroke_preset_list(const SpecTableStrokePresetListArchive* msg) {
-  return *msg->spec_set_table_stroke_preset_list_;
+  return *msg->_impl_.spec_set_table_stroke_preset_list_;
 }
 SpecTableStrokePresetListArchive::SpecTableStrokePresetListArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSTSOS.SpecTableStrokePresetListArchive)
 }
 SpecTableStrokePresetListArchive::SpecTableStrokePresetListArchive(const SpecTableStrokePresetListArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecTableStrokePresetListArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_table_stroke_preset_list_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_table_stroke_preset_list()) {
-    spec_set_table_stroke_preset_list_ = new ::TSTSOS::SpecSetTableStrokePresetListArchive(*from.spec_set_table_stroke_preset_list_);
-  } else {
-    spec_set_table_stroke_preset_list_ = nullptr;
+    _this->_impl_.spec_set_table_stroke_preset_list_ = new ::TSTSOS::SpecSetTableStrokePresetListArchive(*from._impl_.spec_set_table_stroke_preset_list_);
   }
   // @@protoc_insertion_point(copy_constructor:TSTSOS.SpecTableStrokePresetListArchive)
 }
 
-inline void SpecTableStrokePresetListArchive::SharedCtor() {
-spec_set_table_stroke_preset_list_ = nullptr;
+inline void SpecTableStrokePresetListArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_table_stroke_preset_list_){nullptr}
+  };
 }
 
 SpecTableStrokePresetListArchive::~SpecTableStrokePresetListArchive() {
   // @@protoc_insertion_point(destructor:TSTSOS.SpecTableStrokePresetListArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecTableStrokePresetListArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_table_stroke_preset_list_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_table_stroke_preset_list_;
 }
 
-void SpecTableStrokePresetListArchive::ArenaDtor(void* object) {
-  SpecTableStrokePresetListArchive* _this = reinterpret_cast< SpecTableStrokePresetListArchive* >(object);
-  (void)_this;
-}
-void SpecTableStrokePresetListArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecTableStrokePresetListArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecTableStrokePresetListArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSTSOS.SpecTableStrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_table_stroke_preset_list_ != nullptr);
-    spec_set_table_stroke_preset_list_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_table_stroke_preset_list_ != nullptr);
+    _impl_.spec_set_table_stroke_preset_list_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecTableStrokePresetListArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecTableStrokePresetListArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSTSOS.SpecSetTableStrokePresetListArchive spec_set_table_stroke_preset_list = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_table_stroke_preset_list(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecTableStrokePresetListArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecTableStrokePresetListArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSTSOS.SpecTableStrokePresetListArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSTSOS.SpecSetTableStrokePresetListArchive spec_set_table_stroke_preset_list = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_table_stroke_preset_list(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_table_stroke_preset_list(this),
+        _Internal::spec_set_table_stroke_preset_list(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSTSOS.SpecTableStrokePresetListArchive)
@@ -1043,50 +1160,41 @@ size_t SpecTableStrokePresetListArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSTSOS.SpecTableStrokePresetListArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSTSOS.SpecSetTableStrokePresetListArchive spec_set_table_stroke_preset_list = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_table_stroke_preset_list_);
+        *_impl_.spec_set_table_stroke_preset_list_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecTableStrokePresetListArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecTableStrokePresetListArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecTableStrokePresetListArchive::GetClassData() const { return &_class_data_; }
 
-void SpecTableStrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecTableStrokePresetListArchive *>(to)->MergeFrom(
-      static_cast<const SpecTableStrokePresetListArchive &>(from));
-}
 
-
-void SpecTableStrokePresetListArchive::MergeFrom(const SpecTableStrokePresetListArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.SpecTableStrokePresetListArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecTableStrokePresetListArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecTableStrokePresetListArchive*>(&to_msg);
+  auto& from = static_cast<const SpecTableStrokePresetListArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.SpecTableStrokePresetListArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_table_stroke_preset_list()) {
-    _internal_mutable_spec_set_table_stroke_preset_list()->::TSTSOS::SpecSetTableStrokePresetListArchive::MergeFrom(from._internal_spec_set_table_stroke_preset_list());
+    _this->_internal_mutable_spec_set_table_stroke_preset_list()->::TSTSOS::SpecSetTableStrokePresetListArchive::MergeFrom(
+        from._internal_spec_set_table_stroke_preset_list());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecTableStrokePresetListArchive::CopyFrom(const SpecTableStrokePresetListArchive& from) {
@@ -1098,7 +1206,7 @@ void SpecTableStrokePresetListArchive::CopyFrom(const SpecTableStrokePresetListA
 
 bool SpecTableStrokePresetListArchive::IsInitialized() const {
   if (_internal_has_spec_set_table_stroke_preset_list()) {
-    if (!spec_set_table_stroke_preset_list_->IsInitialized()) return false;
+    if (!_impl_.spec_set_table_stroke_preset_list_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1106,12 +1214,12 @@ bool SpecTableStrokePresetListArchive::IsInitialized() const {
 void SpecTableStrokePresetListArchive::InternalSwap(SpecTableStrokePresetListArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_table_stroke_preset_list_, other->spec_set_table_stroke_preset_list_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_table_stroke_preset_list_, other->_impl_.spec_set_table_stroke_preset_list_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecTableStrokePresetListArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTArchives_2esos_2eproto_getter, &descriptor_table_TSTArchives_2esos_2eproto_once,
       file_level_metadata_TSTArchives_2esos_2eproto[1]);
 }
@@ -1120,7 +1228,7 @@ void SpecTableStrokePresetListArchive::InternalSwap(SpecTableStrokePresetListArc
 
 class TableCellStylePropertyChangeSetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TableCellStylePropertyChangeSetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TableCellStylePropertyChangeSetArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecBoolArchive& text_wrap(const TableCellStylePropertyChangeSetArchive* msg);
   static void set_has_text_wrap(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1160,349 +1268,364 @@ class TableCellStylePropertyChangeSetArchive::_Internal {
 
 const ::TSSSOS::SpecBoolArchive&
 TableCellStylePropertyChangeSetArchive::_Internal::text_wrap(const TableCellStylePropertyChangeSetArchive* msg) {
-  return *msg->text_wrap_;
+  return *msg->_impl_.text_wrap_;
 }
 const ::TSSSOS::SpecIntegerArchive&
 TableCellStylePropertyChangeSetArchive::_Internal::type(const TableCellStylePropertyChangeSetArchive* msg) {
-  return *msg->type_;
+  return *msg->_impl_.type_;
 }
 const ::TSDSOS::SpecFillArchive&
 TableCellStylePropertyChangeSetArchive::_Internal::fill(const TableCellStylePropertyChangeSetArchive* msg) {
-  return *msg->fill_;
+  return *msg->_impl_.fill_;
 }
 const ::TSSSOS::SpecIntegerArchive&
 TableCellStylePropertyChangeSetArchive::_Internal::vertical_alignment(const TableCellStylePropertyChangeSetArchive* msg) {
-  return *msg->vertical_alignment_;
+  return *msg->_impl_.vertical_alignment_;
 }
 const ::TSWPSOS::SpecPaddingArchive&
 TableCellStylePropertyChangeSetArchive::_Internal::padding(const TableCellStylePropertyChangeSetArchive* msg) {
-  return *msg->padding_;
+  return *msg->_impl_.padding_;
 }
 void TableCellStylePropertyChangeSetArchive::clear_text_wrap() {
-  if (text_wrap_ != nullptr) text_wrap_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.text_wrap_ != nullptr) _impl_.text_wrap_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void TableCellStylePropertyChangeSetArchive::clear_type() {
-  if (type_ != nullptr) type_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.type_ != nullptr) _impl_.type_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void TableCellStylePropertyChangeSetArchive::clear_fill() {
-  if (fill_ != nullptr) fill_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.fill_ != nullptr) _impl_.fill_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void TableCellStylePropertyChangeSetArchive::clear_vertical_alignment() {
-  if (vertical_alignment_ != nullptr) vertical_alignment_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.vertical_alignment_ != nullptr) _impl_.vertical_alignment_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void TableCellStylePropertyChangeSetArchive::clear_padding() {
-  if (padding_ != nullptr) padding_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.padding_ != nullptr) _impl_.padding_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 TableCellStylePropertyChangeSetArchive::TableCellStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSTSOS.TableCellStylePropertyChangeSetArchive)
 }
 TableCellStylePropertyChangeSetArchive::TableCellStylePropertyChangeSetArchive(const TableCellStylePropertyChangeSetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TableCellStylePropertyChangeSetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.text_wrap_){nullptr}
+    , decltype(_impl_.type_){nullptr}
+    , decltype(_impl_.fill_){nullptr}
+    , decltype(_impl_.vertical_alignment_){nullptr}
+    , decltype(_impl_.padding_){nullptr}
+    , decltype(_impl_.text_wrap_undefined_){}
+    , decltype(_impl_.type_undefined_){}
+    , decltype(_impl_.fill_undefined_){}
+    , decltype(_impl_.vertical_alignment_undefined_){}
+    , decltype(_impl_.padding_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_text_wrap()) {
-    text_wrap_ = new ::TSSSOS::SpecBoolArchive(*from.text_wrap_);
-  } else {
-    text_wrap_ = nullptr;
+    _this->_impl_.text_wrap_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.text_wrap_);
   }
   if (from._internal_has_type()) {
-    type_ = new ::TSSSOS::SpecIntegerArchive(*from.type_);
-  } else {
-    type_ = nullptr;
+    _this->_impl_.type_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.type_);
   }
   if (from._internal_has_fill()) {
-    fill_ = new ::TSDSOS::SpecFillArchive(*from.fill_);
-  } else {
-    fill_ = nullptr;
+    _this->_impl_.fill_ = new ::TSDSOS::SpecFillArchive(*from._impl_.fill_);
   }
   if (from._internal_has_vertical_alignment()) {
-    vertical_alignment_ = new ::TSSSOS::SpecIntegerArchive(*from.vertical_alignment_);
-  } else {
-    vertical_alignment_ = nullptr;
+    _this->_impl_.vertical_alignment_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.vertical_alignment_);
   }
   if (from._internal_has_padding()) {
-    padding_ = new ::TSWPSOS::SpecPaddingArchive(*from.padding_);
-  } else {
-    padding_ = nullptr;
+    _this->_impl_.padding_ = new ::TSWPSOS::SpecPaddingArchive(*from._impl_.padding_);
   }
-  ::memcpy(&text_wrap_undefined_, &from.text_wrap_undefined_,
-    static_cast<size_t>(reinterpret_cast<char*>(&padding_undefined_) -
-    reinterpret_cast<char*>(&text_wrap_undefined_)) + sizeof(padding_undefined_));
+  ::memcpy(&_impl_.text_wrap_undefined_, &from._impl_.text_wrap_undefined_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.padding_undefined_) -
+    reinterpret_cast<char*>(&_impl_.text_wrap_undefined_)) + sizeof(_impl_.padding_undefined_));
   // @@protoc_insertion_point(copy_constructor:TSTSOS.TableCellStylePropertyChangeSetArchive)
 }
 
-inline void TableCellStylePropertyChangeSetArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&text_wrap_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&padding_undefined_) -
-    reinterpret_cast<char*>(&text_wrap_)) + sizeof(padding_undefined_));
+inline void TableCellStylePropertyChangeSetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.text_wrap_){nullptr}
+    , decltype(_impl_.type_){nullptr}
+    , decltype(_impl_.fill_){nullptr}
+    , decltype(_impl_.vertical_alignment_){nullptr}
+    , decltype(_impl_.padding_){nullptr}
+    , decltype(_impl_.text_wrap_undefined_){false}
+    , decltype(_impl_.type_undefined_){false}
+    , decltype(_impl_.fill_undefined_){false}
+    , decltype(_impl_.vertical_alignment_undefined_){false}
+    , decltype(_impl_.padding_undefined_){false}
+  };
 }
 
 TableCellStylePropertyChangeSetArchive::~TableCellStylePropertyChangeSetArchive() {
   // @@protoc_insertion_point(destructor:TSTSOS.TableCellStylePropertyChangeSetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TableCellStylePropertyChangeSetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete text_wrap_;
-  if (this != internal_default_instance()) delete type_;
-  if (this != internal_default_instance()) delete fill_;
-  if (this != internal_default_instance()) delete vertical_alignment_;
-  if (this != internal_default_instance()) delete padding_;
+  if (this != internal_default_instance()) delete _impl_.text_wrap_;
+  if (this != internal_default_instance()) delete _impl_.type_;
+  if (this != internal_default_instance()) delete _impl_.fill_;
+  if (this != internal_default_instance()) delete _impl_.vertical_alignment_;
+  if (this != internal_default_instance()) delete _impl_.padding_;
 }
 
-void TableCellStylePropertyChangeSetArchive::ArenaDtor(void* object) {
-  TableCellStylePropertyChangeSetArchive* _this = reinterpret_cast< TableCellStylePropertyChangeSetArchive* >(object);
-  (void)_this;
-}
-void TableCellStylePropertyChangeSetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TableCellStylePropertyChangeSetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TableCellStylePropertyChangeSetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSTSOS.TableCellStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(text_wrap_ != nullptr);
-      text_wrap_->Clear();
+      GOOGLE_DCHECK(_impl_.text_wrap_ != nullptr);
+      _impl_.text_wrap_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(type_ != nullptr);
-      type_->Clear();
+      GOOGLE_DCHECK(_impl_.type_ != nullptr);
+      _impl_.type_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(fill_ != nullptr);
-      fill_->Clear();
+      GOOGLE_DCHECK(_impl_.fill_ != nullptr);
+      _impl_.fill_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(vertical_alignment_ != nullptr);
-      vertical_alignment_->Clear();
+      GOOGLE_DCHECK(_impl_.vertical_alignment_ != nullptr);
+      _impl_.vertical_alignment_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(padding_ != nullptr);
-      padding_->Clear();
+      GOOGLE_DCHECK(_impl_.padding_ != nullptr);
+      _impl_.padding_->Clear();
     }
   }
   if (cached_has_bits & 0x000000e0u) {
-    ::memset(&text_wrap_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&fill_undefined_) -
-        reinterpret_cast<char*>(&text_wrap_undefined_)) + sizeof(fill_undefined_));
+    ::memset(&_impl_.text_wrap_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.fill_undefined_) -
+        reinterpret_cast<char*>(&_impl_.text_wrap_undefined_)) + sizeof(_impl_.fill_undefined_));
   }
   if (cached_has_bits & 0x00000300u) {
-    ::memset(&vertical_alignment_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&padding_undefined_) -
-        reinterpret_cast<char*>(&vertical_alignment_undefined_)) + sizeof(padding_undefined_));
+    ::memset(&_impl_.vertical_alignment_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.padding_undefined_) -
+        reinterpret_cast<char*>(&_impl_.vertical_alignment_undefined_)) + sizeof(_impl_.padding_undefined_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TableCellStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TableCellStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecBoolArchive text_wrap = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_text_wrap(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool text_wrap_undefined = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_text_wrap_undefined(&has_bits);
-          text_wrap_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.text_wrap_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecIntegerArchive type = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_type(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool type_undefined = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_type_undefined(&has_bits);
-          type_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.type_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecFillArchive fill = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_fill(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool fill_undefined = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_fill_undefined(&has_bits);
-          fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecIntegerArchive vertical_alignment = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_vertical_alignment(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool vertical_alignment_undefined = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
           _Internal::set_has_vertical_alignment_undefined(&has_bits);
-          vertical_alignment_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.vertical_alignment_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSWPSOS.SpecPaddingArchive padding = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_padding(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool padding_undefined = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
           _Internal::set_has_padding_undefined(&has_bits);
-          padding_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.padding_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TableCellStylePropertyChangeSetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TableCellStylePropertyChangeSetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSTSOS.TableCellStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecBoolArchive text_wrap = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::text_wrap(this), target, stream);
+      InternalWriteMessage(1, _Internal::text_wrap(this),
+        _Internal::text_wrap(this).GetCachedSize(), target, stream);
   }
 
   // optional bool text_wrap_undefined = 2;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_text_wrap_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_text_wrap_undefined(), target);
   }
 
   // optional .TSSSOS.SpecIntegerArchive type = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::type(this), target, stream);
+      InternalWriteMessage(3, _Internal::type(this),
+        _Internal::type(this).GetCachedSize(), target, stream);
   }
 
   // optional bool type_undefined = 4;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_type_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_type_undefined(), target);
   }
 
   // optional .TSDSOS.SpecFillArchive fill = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::fill(this), target, stream);
+      InternalWriteMessage(5, _Internal::fill(this),
+        _Internal::fill(this).GetCachedSize(), target, stream);
   }
 
   // optional bool fill_undefined = 6;
   if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_fill_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_fill_undefined(), target);
   }
 
   // optional .TSSSOS.SpecIntegerArchive vertical_alignment = 7;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::vertical_alignment(this), target, stream);
+      InternalWriteMessage(7, _Internal::vertical_alignment(this),
+        _Internal::vertical_alignment(this).GetCachedSize(), target, stream);
   }
 
   // optional bool vertical_alignment_undefined = 8;
   if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_vertical_alignment_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_vertical_alignment_undefined(), target);
   }
 
   // optional .TSWPSOS.SpecPaddingArchive padding = 9;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::padding(this), target, stream);
+      InternalWriteMessage(9, _Internal::padding(this),
+        _Internal::padding(this).GetCachedSize(), target, stream);
   }
 
   // optional bool padding_undefined = 10;
   if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_padding_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(10, this->_internal_padding_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSTSOS.TableCellStylePropertyChangeSetArchive)
@@ -1513,45 +1636,45 @@ size_t TableCellStylePropertyChangeSetArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSTSOS.TableCellStylePropertyChangeSetArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSSSOS.SpecBoolArchive text_wrap = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *text_wrap_);
+          *_impl_.text_wrap_);
     }
 
     // optional .TSSSOS.SpecIntegerArchive type = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *type_);
+          *_impl_.type_);
     }
 
     // optional .TSDSOS.SpecFillArchive fill = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *fill_);
+          *_impl_.fill_);
     }
 
     // optional .TSSSOS.SpecIntegerArchive vertical_alignment = 7;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *vertical_alignment_);
+          *_impl_.vertical_alignment_);
     }
 
     // optional .TSWPSOS.SpecPaddingArchive padding = 9;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *padding_);
+          *_impl_.padding_);
     }
 
     // optional bool text_wrap_undefined = 2;
@@ -1582,72 +1705,67 @@ size_t TableCellStylePropertyChangeSetArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TableCellStylePropertyChangeSetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TableCellStylePropertyChangeSetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TableCellStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
 
-void TableCellStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TableCellStylePropertyChangeSetArchive *>(to)->MergeFrom(
-      static_cast<const TableCellStylePropertyChangeSetArchive &>(from));
-}
 
-
-void TableCellStylePropertyChangeSetArchive::MergeFrom(const TableCellStylePropertyChangeSetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.TableCellStylePropertyChangeSetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TableCellStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TableCellStylePropertyChangeSetArchive*>(&to_msg);
+  auto& from = static_cast<const TableCellStylePropertyChangeSetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.TableCellStylePropertyChangeSetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_text_wrap()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_text_wrap());
+      _this->_internal_mutable_text_wrap()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_text_wrap());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_type()->::TSSSOS::SpecIntegerArchive::MergeFrom(from._internal_type());
+      _this->_internal_mutable_type()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_type());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_fill()->::TSDSOS::SpecFillArchive::MergeFrom(from._internal_fill());
+      _this->_internal_mutable_fill()->::TSDSOS::SpecFillArchive::MergeFrom(
+          from._internal_fill());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_vertical_alignment()->::TSSSOS::SpecIntegerArchive::MergeFrom(from._internal_vertical_alignment());
+      _this->_internal_mutable_vertical_alignment()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_vertical_alignment());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_padding()->::TSWPSOS::SpecPaddingArchive::MergeFrom(from._internal_padding());
+      _this->_internal_mutable_padding()->::TSWPSOS::SpecPaddingArchive::MergeFrom(
+          from._internal_padding());
     }
     if (cached_has_bits & 0x00000020u) {
-      text_wrap_undefined_ = from.text_wrap_undefined_;
+      _this->_impl_.text_wrap_undefined_ = from._impl_.text_wrap_undefined_;
     }
     if (cached_has_bits & 0x00000040u) {
-      type_undefined_ = from.type_undefined_;
+      _this->_impl_.type_undefined_ = from._impl_.type_undefined_;
     }
     if (cached_has_bits & 0x00000080u) {
-      fill_undefined_ = from.fill_undefined_;
+      _this->_impl_.fill_undefined_ = from._impl_.fill_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00000300u) {
     if (cached_has_bits & 0x00000100u) {
-      vertical_alignment_undefined_ = from.vertical_alignment_undefined_;
+      _this->_impl_.vertical_alignment_undefined_ = from._impl_.vertical_alignment_undefined_;
     }
     if (cached_has_bits & 0x00000200u) {
-      padding_undefined_ = from.padding_undefined_;
+      _this->_impl_.padding_undefined_ = from._impl_.padding_undefined_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TableCellStylePropertyChangeSetArchive::CopyFrom(const TableCellStylePropertyChangeSetArchive& from) {
@@ -1659,19 +1777,19 @@ void TableCellStylePropertyChangeSetArchive::CopyFrom(const TableCellStyleProper
 
 bool TableCellStylePropertyChangeSetArchive::IsInitialized() const {
   if (_internal_has_text_wrap()) {
-    if (!text_wrap_->IsInitialized()) return false;
+    if (!_impl_.text_wrap_->IsInitialized()) return false;
   }
   if (_internal_has_type()) {
-    if (!type_->IsInitialized()) return false;
+    if (!_impl_.type_->IsInitialized()) return false;
   }
   if (_internal_has_fill()) {
-    if (!fill_->IsInitialized()) return false;
+    if (!_impl_.fill_->IsInitialized()) return false;
   }
   if (_internal_has_vertical_alignment()) {
-    if (!vertical_alignment_->IsInitialized()) return false;
+    if (!_impl_.vertical_alignment_->IsInitialized()) return false;
   }
   if (_internal_has_padding()) {
-    if (!padding_->IsInitialized()) return false;
+    if (!_impl_.padding_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1679,17 +1797,17 @@ bool TableCellStylePropertyChangeSetArchive::IsInitialized() const {
 void TableCellStylePropertyChangeSetArchive::InternalSwap(TableCellStylePropertyChangeSetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TableCellStylePropertyChangeSetArchive, padding_undefined_)
-      + sizeof(TableCellStylePropertyChangeSetArchive::padding_undefined_)
-      - PROTOBUF_FIELD_OFFSET(TableCellStylePropertyChangeSetArchive, text_wrap_)>(
-          reinterpret_cast<char*>(&text_wrap_),
-          reinterpret_cast<char*>(&other->text_wrap_));
+      PROTOBUF_FIELD_OFFSET(TableCellStylePropertyChangeSetArchive, _impl_.padding_undefined_)
+      + sizeof(TableCellStylePropertyChangeSetArchive::_impl_.padding_undefined_)
+      - PROTOBUF_FIELD_OFFSET(TableCellStylePropertyChangeSetArchive, _impl_.text_wrap_)>(
+          reinterpret_cast<char*>(&_impl_.text_wrap_),
+          reinterpret_cast<char*>(&other->_impl_.text_wrap_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TableCellStylePropertyChangeSetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTArchives_2esos_2eproto_getter, &descriptor_table_TSTArchives_2esos_2eproto_once,
       file_level_metadata_TSTArchives_2esos_2eproto[2]);
 }
@@ -1698,3064 +1816,3877 @@ void TableCellStylePropertyChangeSetArchive::InternalSwap(TableCellStyleProperty
 
 class TableStylePropertyChangeSetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<TableStylePropertyChangeSetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<TableStylePropertyChangeSetArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecBoolArchive& auto_resize(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_auto_resize(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
   static void set_has_auto_resize_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 1048576u;
+    (*has_bits)[1] |= 2147483648u;
   }
   static const ::TSSSOS::SpecBoolArchive& banded_rows(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_banded_rows(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
   static void set_has_banded_rows_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 2097152u;
+    (*has_bits)[2] |= 1u;
   }
   static const ::TSDSOS::SpecFillArchive& banded_cell_fill(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_banded_cell_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
   static void set_has_banded_cell_fill_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 4194304u;
+    (*has_bits)[2] |= 2u;
   }
   static const ::TSSSOS::SpecBoolArchive& behaves_like_spreadsheet(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_behaves_like_spreadsheet(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
   static void set_has_behaves_like_spreadsheet_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 8388608u;
+    (*has_bits)[2] |= 4u;
   }
   static const ::TSDSOS::SpecStrokeArchive& body_horizontal_border_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_body_horizontal_border_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
   static void set_has_body_horizontal_border_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 16777216u;
+    (*has_bits)[2] |= 8u;
   }
   static const ::TSDSOS::SpecStrokeArchive& body_vertical_border_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_body_vertical_border_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 32u;
   }
   static void set_has_body_vertical_border_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 33554432u;
+    (*has_bits)[2] |= 16u;
   }
   static const ::TSDSOS::SpecStrokeArchive& body_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_body_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 64u;
   }
   static void set_has_body_horizontal_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 67108864u;
+    (*has_bits)[2] |= 32u;
   }
   static const ::TSDSOS::SpecStrokeArchive& body_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_body_vertical_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 128u;
   }
   static void set_has_body_vertical_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 134217728u;
+    (*has_bits)[2] |= 64u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_column_border_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_column_border_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 256u;
   }
   static void set_has_header_column_border_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 268435456u;
+    (*has_bits)[2] |= 128u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_column_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_column_vertical_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 512u;
   }
   static void set_has_header_column_vertical_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 536870912u;
+    (*has_bits)[2] |= 256u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_column_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_column_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 1024u;
   }
   static void set_has_header_column_horizontal_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 1073741824u;
+    (*has_bits)[2] |= 512u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_column_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_column_separator_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 2048u;
   }
   static void set_has_header_column_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[1] |= 2147483648u;
+    (*has_bits)[2] |= 1024u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_row_border_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_border_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 4096u;
   }
   static void set_has_header_row_border_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 1u;
+    (*has_bits)[2] |= 2048u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_row_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 8192u;
   }
   static void set_has_header_row_horizontal_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 2u;
+    (*has_bits)[2] |= 4096u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_row_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_vertical_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 16384u;
   }
   static void set_has_header_row_vertical_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 4u;
+    (*has_bits)[2] |= 8192u;
   }
   static const ::TSDSOS::SpecStrokeArchive& header_row_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_separator_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 32768u;
   }
   static void set_has_header_row_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 8u;
+    (*has_bits)[2] |= 16384u;
   }
   static const ::TSDSOS::SpecStrokeArchive& footer_row_border_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_row_border_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 65536u;
   }
   static void set_has_footer_row_border_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 16u;
+    (*has_bits)[2] |= 32768u;
   }
   static const ::TSDSOS::SpecStrokeArchive& footer_row_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_row_horizontal_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 131072u;
   }
   static void set_has_footer_row_horizontal_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 32u;
+    (*has_bits)[2] |= 65536u;
   }
   static const ::TSDSOS::SpecStrokeArchive& footer_row_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_row_vertical_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 262144u;
   }
   static void set_has_footer_row_vertical_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 64u;
+    (*has_bits)[2] |= 131072u;
   }
   static const ::TSDSOS::SpecStrokeArchive& footer_row_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_row_separator_stroke(HasBits* has_bits) {
     (*has_bits)[0] |= 524288u;
   }
   static void set_has_footer_row_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 128u;
+    (*has_bits)[2] |= 262144u;
   }
   static const ::TSTSOS::SpecTableStrokePresetListArchive& stroke_preset_list_object(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_stroke_preset_list_object(HasBits* has_bits) {
     (*has_bits)[0] |= 1048576u;
   }
   static void set_has_stroke_preset_list_object_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 256u;
+    (*has_bits)[2] |= 524288u;
   }
   static const ::TSSSOS::SpecBoolArchive& vertical_strokes_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_vertical_strokes_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 2097152u;
   }
   static void set_has_vertical_strokes_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 512u;
+    (*has_bits)[2] |= 1048576u;
   }
   static const ::TSSSOS::SpecBoolArchive& horizontal_strokes_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_horizontal_strokes_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 4194304u;
   }
   static void set_has_horizontal_strokes_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 1024u;
+    (*has_bits)[2] |= 2097152u;
   }
   static const ::TSSSOS::SpecBoolArchive& header_row_sep_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_sep_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 8388608u;
   }
   static void set_has_header_row_sep_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 2048u;
+    (*has_bits)[2] |= 4194304u;
   }
   static const ::TSSSOS::SpecBoolArchive& header_row_verticals_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_row_verticals_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 16777216u;
   }
   static void set_has_header_row_verticals_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 4096u;
+    (*has_bits)[2] |= 8388608u;
   }
   static const ::TSSSOS::SpecBoolArchive& header_col_sep_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_col_sep_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 33554432u;
   }
   static void set_has_header_col_sep_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 8192u;
+    (*has_bits)[2] |= 16777216u;
   }
   static const ::TSSSOS::SpecBoolArchive& header_col_horizontals_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_header_col_horizontals_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 67108864u;
   }
   static void set_has_header_col_horizontals_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 16384u;
+    (*has_bits)[2] |= 33554432u;
   }
   static const ::TSSSOS::SpecBoolArchive& footer_sep_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_sep_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 134217728u;
   }
   static void set_has_footer_sep_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 32768u;
+    (*has_bits)[2] |= 67108864u;
   }
   static const ::TSSSOS::SpecBoolArchive& footer_verticals_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_footer_verticals_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 268435456u;
   }
   static void set_has_footer_verticals_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 65536u;
+    (*has_bits)[2] |= 134217728u;
   }
   static const ::TSSSOS::SpecBoolArchive& border_strokes_visible(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_border_strokes_visible(HasBits* has_bits) {
     (*has_bits)[0] |= 536870912u;
   }
   static void set_has_border_strokes_visible_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 131072u;
+    (*has_bits)[2] |= 268435456u;
   }
   static const ::TSSSOS::SpecStringArchive& master_font_family(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_master_font_family(HasBits* has_bits) {
     (*has_bits)[0] |= 1073741824u;
   }
   static void set_has_master_font_family_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 262144u;
+    (*has_bits)[2] |= 536870912u;
   }
   static const ::TSSSOS::SpecIntegerArchive& writing_direction(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_writing_direction(HasBits* has_bits) {
     (*has_bits)[0] |= 2147483648u;
   }
   static void set_has_writing_direction_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 524288u;
+    (*has_bits)[2] |= 1073741824u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level1_top_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level1_top_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 1u;
   }
   static void set_has_category_level1_top_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 1048576u;
+    (*has_bits)[2] |= 2147483648u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level2_top_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level2_top_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 2u;
   }
   static void set_has_category_level2_top_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 2097152u;
+    (*has_bits)[3] |= 1u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level3_top_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level3_top_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 4u;
   }
   static void set_has_category_level3_top_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 4194304u;
+    (*has_bits)[3] |= 2u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level4_top_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level4_top_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 8u;
   }
   static void set_has_category_level4_top_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 8388608u;
+    (*has_bits)[3] |= 4u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level5_top_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level5_top_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 16u;
   }
   static void set_has_category_level5_top_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 16777216u;
+    (*has_bits)[3] |= 8u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level1_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level1_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 32u;
   }
   static void set_has_category_level1_label_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 33554432u;
+    (*has_bits)[3] |= 16u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level2_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level2_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 64u;
   }
   static void set_has_category_level2_label_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 67108864u;
+    (*has_bits)[3] |= 32u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level3_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level3_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 128u;
   }
   static void set_has_category_level3_label_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 134217728u;
+    (*has_bits)[3] |= 64u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level4_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level4_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 256u;
   }
   static void set_has_category_level4_label_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 268435456u;
+    (*has_bits)[3] |= 128u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level5_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level5_label_separator_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 512u;
   }
   static void set_has_category_level5_label_separator_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 536870912u;
+    (*has_bits)[3] |= 256u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level1_bottom_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level1_bottom_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 1024u;
   }
   static void set_has_category_level1_bottom_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 1073741824u;
+    (*has_bits)[3] |= 512u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level2_bottom_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level2_bottom_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 2048u;
   }
   static void set_has_category_level2_bottom_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[2] |= 2147483648u;
+    (*has_bits)[3] |= 1024u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level3_bottom_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level3_bottom_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 4096u;
   }
   static void set_has_category_level3_bottom_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 1u;
+    (*has_bits)[3] |= 2048u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level4_bottom_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level4_bottom_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 8192u;
   }
   static void set_has_category_level4_bottom_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 2u;
+    (*has_bits)[3] |= 4096u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level5_bottom_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level5_bottom_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 16384u;
   }
   static void set_has_category_level5_bottom_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 4u;
+    (*has_bits)[3] |= 8192u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level1_interior_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level1_interior_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 32768u;
   }
   static void set_has_category_level1_interior_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 8u;
+    (*has_bits)[3] |= 16384u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level2_interior_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level2_interior_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 65536u;
   }
   static void set_has_category_level2_interior_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 16u;
+    (*has_bits)[3] |= 32768u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level3_interior_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level3_interior_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 131072u;
   }
   static void set_has_category_level3_interior_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 32u;
+    (*has_bits)[3] |= 65536u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level4_interior_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level4_interior_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 262144u;
   }
   static void set_has_category_level4_interior_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 64u;
+    (*has_bits)[3] |= 131072u;
   }
   static const ::TSDSOS::SpecStrokeArchive& category_level5_interior_stroke(const TableStylePropertyChangeSetArchive* msg);
   static void set_has_category_level5_interior_stroke(HasBits* has_bits) {
     (*has_bits)[1] |= 524288u;
   }
   static void set_has_category_level5_interior_stroke_undefined(HasBits* has_bits) {
-    (*has_bits)[3] |= 128u;
+    (*has_bits)[3] |= 262144u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& body_pivot_group_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_body_pivot_group_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 1048576u;
+  }
+  static void set_has_body_pivot_group_horizontal_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 524288u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& body_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_body_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 2097152u;
+  }
+  static void set_has_body_pivot_group_vertical_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 1048576u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& body_pivot_de_emphasis_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_body_pivot_de_emphasis_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 4194304u;
+  }
+  static void set_has_body_pivot_de_emphasis_horizontal_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 2097152u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& body_pivot_emphasis_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_body_pivot_emphasis_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 8388608u;
+  }
+  static void set_has_body_pivot_emphasis_vertical_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 4194304u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_column_pivot_group_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_column_pivot_group_horizontal_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 16777216u;
+  }
+  static void set_has_header_column_pivot_group_horizontal_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 8388608u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_column_pivot_group_de_emphasis_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_column_pivot_group_de_emphasis_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 33554432u;
+  }
+  static void set_has_header_column_pivot_group_de_emphasis_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 16777216u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_column_pivot_separator_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_column_pivot_separator_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 67108864u;
+  }
+  static void set_has_header_column_pivot_separator_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 33554432u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_row_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_row_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 134217728u;
+  }
+  static void set_has_header_row_pivot_group_vertical_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 67108864u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_row_pivot_group_de_emphasis_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_row_pivot_group_de_emphasis_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 268435456u;
+  }
+  static void set_has_header_row_pivot_group_de_emphasis_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 134217728u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& header_row_pivot_title_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_header_row_pivot_title_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 536870912u;
+  }
+  static void set_has_header_row_pivot_title_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 268435456u;
+  }
+  static const ::TSDSOS::SpecStrokeArchive& footer_row_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg);
+  static void set_has_footer_row_pivot_group_vertical_stroke(HasBits* has_bits) {
+    (*has_bits)[1] |= 1073741824u;
+  }
+  static void set_has_footer_row_pivot_group_vertical_stroke_undefined(HasBits* has_bits) {
+    (*has_bits)[3] |= 536870912u;
   }
 };
 
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::auto_resize(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->auto_resize_;
+  return *msg->_impl_.auto_resize_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::banded_rows(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->banded_rows_;
+  return *msg->_impl_.banded_rows_;
 }
 const ::TSDSOS::SpecFillArchive&
 TableStylePropertyChangeSetArchive::_Internal::banded_cell_fill(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->banded_cell_fill_;
+  return *msg->_impl_.banded_cell_fill_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::behaves_like_spreadsheet(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->behaves_like_spreadsheet_;
+  return *msg->_impl_.behaves_like_spreadsheet_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::body_horizontal_border_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->body_horizontal_border_stroke_;
+  return *msg->_impl_.body_horizontal_border_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::body_vertical_border_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->body_vertical_border_stroke_;
+  return *msg->_impl_.body_vertical_border_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::body_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->body_horizontal_stroke_;
+  return *msg->_impl_.body_horizontal_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::body_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->body_vertical_stroke_;
+  return *msg->_impl_.body_vertical_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_column_border_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_column_border_stroke_;
+  return *msg->_impl_.header_column_border_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_column_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_column_vertical_stroke_;
+  return *msg->_impl_.header_column_vertical_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_column_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_column_horizontal_stroke_;
+  return *msg->_impl_.header_column_horizontal_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_column_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_column_separator_stroke_;
+  return *msg->_impl_.header_column_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_border_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_border_stroke_;
+  return *msg->_impl_.header_row_border_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_horizontal_stroke_;
+  return *msg->_impl_.header_row_horizontal_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_vertical_stroke_;
+  return *msg->_impl_.header_row_vertical_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_separator_stroke_;
+  return *msg->_impl_.header_row_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_row_border_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_row_border_stroke_;
+  return *msg->_impl_.footer_row_border_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_row_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_row_horizontal_stroke_;
+  return *msg->_impl_.footer_row_horizontal_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_row_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_row_vertical_stroke_;
+  return *msg->_impl_.footer_row_vertical_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_row_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_row_separator_stroke_;
+  return *msg->_impl_.footer_row_separator_stroke_;
 }
 const ::TSTSOS::SpecTableStrokePresetListArchive&
 TableStylePropertyChangeSetArchive::_Internal::stroke_preset_list_object(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->stroke_preset_list_object_;
+  return *msg->_impl_.stroke_preset_list_object_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::vertical_strokes_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->vertical_strokes_visible_;
+  return *msg->_impl_.vertical_strokes_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::horizontal_strokes_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->horizontal_strokes_visible_;
+  return *msg->_impl_.horizontal_strokes_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_sep_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_sep_visible_;
+  return *msg->_impl_.header_row_sep_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_row_verticals_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_row_verticals_visible_;
+  return *msg->_impl_.header_row_verticals_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_col_sep_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_col_sep_visible_;
+  return *msg->_impl_.header_col_sep_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::header_col_horizontals_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->header_col_horizontals_visible_;
+  return *msg->_impl_.header_col_horizontals_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_sep_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_sep_visible_;
+  return *msg->_impl_.footer_sep_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::footer_verticals_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->footer_verticals_visible_;
+  return *msg->_impl_.footer_verticals_visible_;
 }
 const ::TSSSOS::SpecBoolArchive&
 TableStylePropertyChangeSetArchive::_Internal::border_strokes_visible(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->border_strokes_visible_;
+  return *msg->_impl_.border_strokes_visible_;
 }
 const ::TSSSOS::SpecStringArchive&
 TableStylePropertyChangeSetArchive::_Internal::master_font_family(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->master_font_family_;
+  return *msg->_impl_.master_font_family_;
 }
 const ::TSSSOS::SpecIntegerArchive&
 TableStylePropertyChangeSetArchive::_Internal::writing_direction(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->writing_direction_;
+  return *msg->_impl_.writing_direction_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level1_top_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level1_top_stroke_;
+  return *msg->_impl_.category_level1_top_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level2_top_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level2_top_stroke_;
+  return *msg->_impl_.category_level2_top_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level3_top_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level3_top_stroke_;
+  return *msg->_impl_.category_level3_top_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level4_top_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level4_top_stroke_;
+  return *msg->_impl_.category_level4_top_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level5_top_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level5_top_stroke_;
+  return *msg->_impl_.category_level5_top_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level1_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level1_label_separator_stroke_;
+  return *msg->_impl_.category_level1_label_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level2_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level2_label_separator_stroke_;
+  return *msg->_impl_.category_level2_label_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level3_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level3_label_separator_stroke_;
+  return *msg->_impl_.category_level3_label_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level4_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level4_label_separator_stroke_;
+  return *msg->_impl_.category_level4_label_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level5_label_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level5_label_separator_stroke_;
+  return *msg->_impl_.category_level5_label_separator_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level1_bottom_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level1_bottom_stroke_;
+  return *msg->_impl_.category_level1_bottom_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level2_bottom_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level2_bottom_stroke_;
+  return *msg->_impl_.category_level2_bottom_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level3_bottom_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level3_bottom_stroke_;
+  return *msg->_impl_.category_level3_bottom_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level4_bottom_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level4_bottom_stroke_;
+  return *msg->_impl_.category_level4_bottom_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level5_bottom_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level5_bottom_stroke_;
+  return *msg->_impl_.category_level5_bottom_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level1_interior_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level1_interior_stroke_;
+  return *msg->_impl_.category_level1_interior_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level2_interior_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level2_interior_stroke_;
+  return *msg->_impl_.category_level2_interior_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level3_interior_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level3_interior_stroke_;
+  return *msg->_impl_.category_level3_interior_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level4_interior_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level4_interior_stroke_;
+  return *msg->_impl_.category_level4_interior_stroke_;
 }
 const ::TSDSOS::SpecStrokeArchive&
 TableStylePropertyChangeSetArchive::_Internal::category_level5_interior_stroke(const TableStylePropertyChangeSetArchive* msg) {
-  return *msg->category_level5_interior_stroke_;
+  return *msg->_impl_.category_level5_interior_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::body_pivot_group_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.body_pivot_group_horizontal_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::body_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.body_pivot_group_vertical_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::body_pivot_de_emphasis_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.body_pivot_de_emphasis_horizontal_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::body_pivot_emphasis_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.body_pivot_emphasis_vertical_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_column_pivot_group_horizontal_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_column_pivot_group_horizontal_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_column_pivot_group_de_emphasis_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_column_pivot_group_de_emphasis_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_column_pivot_separator_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_column_pivot_separator_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_row_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_row_pivot_group_vertical_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_row_pivot_group_de_emphasis_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_row_pivot_group_de_emphasis_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::header_row_pivot_title_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.header_row_pivot_title_stroke_;
+}
+const ::TSDSOS::SpecStrokeArchive&
+TableStylePropertyChangeSetArchive::_Internal::footer_row_pivot_group_vertical_stroke(const TableStylePropertyChangeSetArchive* msg) {
+  return *msg->_impl_.footer_row_pivot_group_vertical_stroke_;
 }
 void TableStylePropertyChangeSetArchive::clear_auto_resize() {
-  if (auto_resize_ != nullptr) auto_resize_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.auto_resize_ != nullptr) _impl_.auto_resize_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void TableStylePropertyChangeSetArchive::clear_banded_rows() {
-  if (banded_rows_ != nullptr) banded_rows_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.banded_rows_ != nullptr) _impl_.banded_rows_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void TableStylePropertyChangeSetArchive::clear_banded_cell_fill() {
-  if (banded_cell_fill_ != nullptr) banded_cell_fill_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.banded_cell_fill_ != nullptr) _impl_.banded_cell_fill_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void TableStylePropertyChangeSetArchive::clear_behaves_like_spreadsheet() {
-  if (behaves_like_spreadsheet_ != nullptr) behaves_like_spreadsheet_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.behaves_like_spreadsheet_ != nullptr) _impl_.behaves_like_spreadsheet_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void TableStylePropertyChangeSetArchive::clear_body_horizontal_border_stroke() {
-  if (body_horizontal_border_stroke_ != nullptr) body_horizontal_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.body_horizontal_border_stroke_ != nullptr) _impl_.body_horizontal_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 void TableStylePropertyChangeSetArchive::clear_body_vertical_border_stroke() {
-  if (body_vertical_border_stroke_ != nullptr) body_vertical_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000020u;
+  if (_impl_.body_vertical_border_stroke_ != nullptr) _impl_.body_vertical_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 void TableStylePropertyChangeSetArchive::clear_body_horizontal_stroke() {
-  if (body_horizontal_stroke_ != nullptr) body_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000040u;
+  if (_impl_.body_horizontal_stroke_ != nullptr) _impl_.body_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000040u;
 }
 void TableStylePropertyChangeSetArchive::clear_body_vertical_stroke() {
-  if (body_vertical_stroke_ != nullptr) body_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000080u;
+  if (_impl_.body_vertical_stroke_ != nullptr) _impl_.body_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000080u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_column_border_stroke() {
-  if (header_column_border_stroke_ != nullptr) header_column_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000100u;
+  if (_impl_.header_column_border_stroke_ != nullptr) _impl_.header_column_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000100u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_column_vertical_stroke() {
-  if (header_column_vertical_stroke_ != nullptr) header_column_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000200u;
+  if (_impl_.header_column_vertical_stroke_ != nullptr) _impl_.header_column_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000200u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_column_horizontal_stroke() {
-  if (header_column_horizontal_stroke_ != nullptr) header_column_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000400u;
+  if (_impl_.header_column_horizontal_stroke_ != nullptr) _impl_.header_column_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000400u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_column_separator_stroke() {
-  if (header_column_separator_stroke_ != nullptr) header_column_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x00000800u;
+  if (_impl_.header_column_separator_stroke_ != nullptr) _impl_.header_column_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000800u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_border_stroke() {
-  if (header_row_border_stroke_ != nullptr) header_row_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00001000u;
+  if (_impl_.header_row_border_stroke_ != nullptr) _impl_.header_row_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00001000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_horizontal_stroke() {
-  if (header_row_horizontal_stroke_ != nullptr) header_row_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00002000u;
+  if (_impl_.header_row_horizontal_stroke_ != nullptr) _impl_.header_row_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00002000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_vertical_stroke() {
-  if (header_row_vertical_stroke_ != nullptr) header_row_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00004000u;
+  if (_impl_.header_row_vertical_stroke_ != nullptr) _impl_.header_row_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00004000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_separator_stroke() {
-  if (header_row_separator_stroke_ != nullptr) header_row_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x00008000u;
+  if (_impl_.header_row_separator_stroke_ != nullptr) _impl_.header_row_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00008000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_row_border_stroke() {
-  if (footer_row_border_stroke_ != nullptr) footer_row_border_stroke_->Clear();
-  _has_bits_[0] &= ~0x00010000u;
+  if (_impl_.footer_row_border_stroke_ != nullptr) _impl_.footer_row_border_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00010000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_row_horizontal_stroke() {
-  if (footer_row_horizontal_stroke_ != nullptr) footer_row_horizontal_stroke_->Clear();
-  _has_bits_[0] &= ~0x00020000u;
+  if (_impl_.footer_row_horizontal_stroke_ != nullptr) _impl_.footer_row_horizontal_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00020000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_row_vertical_stroke() {
-  if (footer_row_vertical_stroke_ != nullptr) footer_row_vertical_stroke_->Clear();
-  _has_bits_[0] &= ~0x00040000u;
+  if (_impl_.footer_row_vertical_stroke_ != nullptr) _impl_.footer_row_vertical_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00040000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_row_separator_stroke() {
-  if (footer_row_separator_stroke_ != nullptr) footer_row_separator_stroke_->Clear();
-  _has_bits_[0] &= ~0x00080000u;
+  if (_impl_.footer_row_separator_stroke_ != nullptr) _impl_.footer_row_separator_stroke_->Clear();
+  _impl_._has_bits_[0] &= ~0x00080000u;
 }
 void TableStylePropertyChangeSetArchive::clear_vertical_strokes_visible() {
-  if (vertical_strokes_visible_ != nullptr) vertical_strokes_visible_->Clear();
-  _has_bits_[0] &= ~0x00200000u;
+  if (_impl_.vertical_strokes_visible_ != nullptr) _impl_.vertical_strokes_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x00200000u;
 }
 void TableStylePropertyChangeSetArchive::clear_horizontal_strokes_visible() {
-  if (horizontal_strokes_visible_ != nullptr) horizontal_strokes_visible_->Clear();
-  _has_bits_[0] &= ~0x00400000u;
+  if (_impl_.horizontal_strokes_visible_ != nullptr) _impl_.horizontal_strokes_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x00400000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_sep_visible() {
-  if (header_row_sep_visible_ != nullptr) header_row_sep_visible_->Clear();
-  _has_bits_[0] &= ~0x00800000u;
+  if (_impl_.header_row_sep_visible_ != nullptr) _impl_.header_row_sep_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x00800000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_row_verticals_visible() {
-  if (header_row_verticals_visible_ != nullptr) header_row_verticals_visible_->Clear();
-  _has_bits_[0] &= ~0x01000000u;
+  if (_impl_.header_row_verticals_visible_ != nullptr) _impl_.header_row_verticals_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x01000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_col_sep_visible() {
-  if (header_col_sep_visible_ != nullptr) header_col_sep_visible_->Clear();
-  _has_bits_[0] &= ~0x02000000u;
+  if (_impl_.header_col_sep_visible_ != nullptr) _impl_.header_col_sep_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x02000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_header_col_horizontals_visible() {
-  if (header_col_horizontals_visible_ != nullptr) header_col_horizontals_visible_->Clear();
-  _has_bits_[0] &= ~0x04000000u;
+  if (_impl_.header_col_horizontals_visible_ != nullptr) _impl_.header_col_horizontals_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x04000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_sep_visible() {
-  if (footer_sep_visible_ != nullptr) footer_sep_visible_->Clear();
-  _has_bits_[0] &= ~0x08000000u;
+  if (_impl_.footer_sep_visible_ != nullptr) _impl_.footer_sep_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x08000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_footer_verticals_visible() {
-  if (footer_verticals_visible_ != nullptr) footer_verticals_visible_->Clear();
-  _has_bits_[0] &= ~0x10000000u;
+  if (_impl_.footer_verticals_visible_ != nullptr) _impl_.footer_verticals_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x10000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_border_strokes_visible() {
-  if (border_strokes_visible_ != nullptr) border_strokes_visible_->Clear();
-  _has_bits_[0] &= ~0x20000000u;
+  if (_impl_.border_strokes_visible_ != nullptr) _impl_.border_strokes_visible_->Clear();
+  _impl_._has_bits_[0] &= ~0x20000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_master_font_family() {
-  if (master_font_family_ != nullptr) master_font_family_->Clear();
-  _has_bits_[0] &= ~0x40000000u;
+  if (_impl_.master_font_family_ != nullptr) _impl_.master_font_family_->Clear();
+  _impl_._has_bits_[0] &= ~0x40000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_writing_direction() {
-  if (writing_direction_ != nullptr) writing_direction_->Clear();
-  _has_bits_[0] &= ~0x80000000u;
+  if (_impl_.writing_direction_ != nullptr) _impl_.writing_direction_->Clear();
+  _impl_._has_bits_[0] &= ~0x80000000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level1_top_stroke() {
-  if (category_level1_top_stroke_ != nullptr) category_level1_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000001u;
+  if (_impl_.category_level1_top_stroke_ != nullptr) _impl_.category_level1_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000001u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level2_top_stroke() {
-  if (category_level2_top_stroke_ != nullptr) category_level2_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000002u;
+  if (_impl_.category_level2_top_stroke_ != nullptr) _impl_.category_level2_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000002u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level3_top_stroke() {
-  if (category_level3_top_stroke_ != nullptr) category_level3_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000004u;
+  if (_impl_.category_level3_top_stroke_ != nullptr) _impl_.category_level3_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000004u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level4_top_stroke() {
-  if (category_level4_top_stroke_ != nullptr) category_level4_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000008u;
+  if (_impl_.category_level4_top_stroke_ != nullptr) _impl_.category_level4_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000008u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level5_top_stroke() {
-  if (category_level5_top_stroke_ != nullptr) category_level5_top_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000010u;
+  if (_impl_.category_level5_top_stroke_ != nullptr) _impl_.category_level5_top_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000010u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level1_label_separator_stroke() {
-  if (category_level1_label_separator_stroke_ != nullptr) category_level1_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000020u;
+  if (_impl_.category_level1_label_separator_stroke_ != nullptr) _impl_.category_level1_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000020u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level2_label_separator_stroke() {
-  if (category_level2_label_separator_stroke_ != nullptr) category_level2_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000040u;
+  if (_impl_.category_level2_label_separator_stroke_ != nullptr) _impl_.category_level2_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000040u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level3_label_separator_stroke() {
-  if (category_level3_label_separator_stroke_ != nullptr) category_level3_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000080u;
+  if (_impl_.category_level3_label_separator_stroke_ != nullptr) _impl_.category_level3_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000080u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level4_label_separator_stroke() {
-  if (category_level4_label_separator_stroke_ != nullptr) category_level4_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000100u;
+  if (_impl_.category_level4_label_separator_stroke_ != nullptr) _impl_.category_level4_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000100u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level5_label_separator_stroke() {
-  if (category_level5_label_separator_stroke_ != nullptr) category_level5_label_separator_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000200u;
+  if (_impl_.category_level5_label_separator_stroke_ != nullptr) _impl_.category_level5_label_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000200u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level1_bottom_stroke() {
-  if (category_level1_bottom_stroke_ != nullptr) category_level1_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000400u;
+  if (_impl_.category_level1_bottom_stroke_ != nullptr) _impl_.category_level1_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000400u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level2_bottom_stroke() {
-  if (category_level2_bottom_stroke_ != nullptr) category_level2_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00000800u;
+  if (_impl_.category_level2_bottom_stroke_ != nullptr) _impl_.category_level2_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00000800u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level3_bottom_stroke() {
-  if (category_level3_bottom_stroke_ != nullptr) category_level3_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00001000u;
+  if (_impl_.category_level3_bottom_stroke_ != nullptr) _impl_.category_level3_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00001000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level4_bottom_stroke() {
-  if (category_level4_bottom_stroke_ != nullptr) category_level4_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00002000u;
+  if (_impl_.category_level4_bottom_stroke_ != nullptr) _impl_.category_level4_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00002000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level5_bottom_stroke() {
-  if (category_level5_bottom_stroke_ != nullptr) category_level5_bottom_stroke_->Clear();
-  _has_bits_[1] &= ~0x00004000u;
+  if (_impl_.category_level5_bottom_stroke_ != nullptr) _impl_.category_level5_bottom_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00004000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level1_interior_stroke() {
-  if (category_level1_interior_stroke_ != nullptr) category_level1_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00008000u;
+  if (_impl_.category_level1_interior_stroke_ != nullptr) _impl_.category_level1_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00008000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level2_interior_stroke() {
-  if (category_level2_interior_stroke_ != nullptr) category_level2_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00010000u;
+  if (_impl_.category_level2_interior_stroke_ != nullptr) _impl_.category_level2_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00010000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level3_interior_stroke() {
-  if (category_level3_interior_stroke_ != nullptr) category_level3_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00020000u;
+  if (_impl_.category_level3_interior_stroke_ != nullptr) _impl_.category_level3_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00020000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level4_interior_stroke() {
-  if (category_level4_interior_stroke_ != nullptr) category_level4_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00040000u;
+  if (_impl_.category_level4_interior_stroke_ != nullptr) _impl_.category_level4_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00040000u;
 }
 void TableStylePropertyChangeSetArchive::clear_category_level5_interior_stroke() {
-  if (category_level5_interior_stroke_ != nullptr) category_level5_interior_stroke_->Clear();
-  _has_bits_[1] &= ~0x00080000u;
+  if (_impl_.category_level5_interior_stroke_ != nullptr) _impl_.category_level5_interior_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00080000u;
+}
+void TableStylePropertyChangeSetArchive::clear_body_pivot_group_horizontal_stroke() {
+  if (_impl_.body_pivot_group_horizontal_stroke_ != nullptr) _impl_.body_pivot_group_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00100000u;
+}
+void TableStylePropertyChangeSetArchive::clear_body_pivot_group_vertical_stroke() {
+  if (_impl_.body_pivot_group_vertical_stroke_ != nullptr) _impl_.body_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00200000u;
+}
+void TableStylePropertyChangeSetArchive::clear_body_pivot_de_emphasis_horizontal_stroke() {
+  if (_impl_.body_pivot_de_emphasis_horizontal_stroke_ != nullptr) _impl_.body_pivot_de_emphasis_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00400000u;
+}
+void TableStylePropertyChangeSetArchive::clear_body_pivot_emphasis_vertical_stroke() {
+  if (_impl_.body_pivot_emphasis_vertical_stroke_ != nullptr) _impl_.body_pivot_emphasis_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x00800000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_column_pivot_group_horizontal_stroke() {
+  if (_impl_.header_column_pivot_group_horizontal_stroke_ != nullptr) _impl_.header_column_pivot_group_horizontal_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x01000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_column_pivot_group_de_emphasis_stroke() {
+  if (_impl_.header_column_pivot_group_de_emphasis_stroke_ != nullptr) _impl_.header_column_pivot_group_de_emphasis_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x02000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_column_pivot_separator_stroke() {
+  if (_impl_.header_column_pivot_separator_stroke_ != nullptr) _impl_.header_column_pivot_separator_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x04000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_row_pivot_group_vertical_stroke() {
+  if (_impl_.header_row_pivot_group_vertical_stroke_ != nullptr) _impl_.header_row_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x08000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_row_pivot_group_de_emphasis_stroke() {
+  if (_impl_.header_row_pivot_group_de_emphasis_stroke_ != nullptr) _impl_.header_row_pivot_group_de_emphasis_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x10000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_header_row_pivot_title_stroke() {
+  if (_impl_.header_row_pivot_title_stroke_ != nullptr) _impl_.header_row_pivot_title_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x20000000u;
+}
+void TableStylePropertyChangeSetArchive::clear_footer_row_pivot_group_vertical_stroke() {
+  if (_impl_.footer_row_pivot_group_vertical_stroke_ != nullptr) _impl_.footer_row_pivot_group_vertical_stroke_->Clear();
+  _impl_._has_bits_[1] &= ~0x40000000u;
 }
 TableStylePropertyChangeSetArchive::TableStylePropertyChangeSetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSTSOS.TableStylePropertyChangeSetArchive)
 }
 TableStylePropertyChangeSetArchive::TableStylePropertyChangeSetArchive(const TableStylePropertyChangeSetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  TableStylePropertyChangeSetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.auto_resize_){nullptr}
+    , decltype(_impl_.banded_rows_){nullptr}
+    , decltype(_impl_.banded_cell_fill_){nullptr}
+    , decltype(_impl_.behaves_like_spreadsheet_){nullptr}
+    , decltype(_impl_.body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_border_stroke_){nullptr}
+    , decltype(_impl_.header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_border_stroke_){nullptr}
+    , decltype(_impl_.header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.stroke_preset_list_object_){nullptr}
+    , decltype(_impl_.vertical_strokes_visible_){nullptr}
+    , decltype(_impl_.horizontal_strokes_visible_){nullptr}
+    , decltype(_impl_.header_row_sep_visible_){nullptr}
+    , decltype(_impl_.header_row_verticals_visible_){nullptr}
+    , decltype(_impl_.header_col_sep_visible_){nullptr}
+    , decltype(_impl_.header_col_horizontals_visible_){nullptr}
+    , decltype(_impl_.footer_sep_visible_){nullptr}
+    , decltype(_impl_.footer_verticals_visible_){nullptr}
+    , decltype(_impl_.border_strokes_visible_){nullptr}
+    , decltype(_impl_.master_font_family_){nullptr}
+    , decltype(_impl_.writing_direction_){nullptr}
+    , decltype(_impl_.category_level1_top_stroke_){nullptr}
+    , decltype(_impl_.category_level2_top_stroke_){nullptr}
+    , decltype(_impl_.category_level3_top_stroke_){nullptr}
+    , decltype(_impl_.category_level4_top_stroke_){nullptr}
+    , decltype(_impl_.category_level5_top_stroke_){nullptr}
+    , decltype(_impl_.category_level1_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level2_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level3_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level4_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level5_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level1_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level2_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level3_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level4_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level5_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level1_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level2_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level3_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level4_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level5_interior_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_emphasis_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_title_stroke_){nullptr}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.auto_resize_undefined_){}
+    , decltype(_impl_.banded_rows_undefined_){}
+    , decltype(_impl_.banded_cell_fill_undefined_){}
+    , decltype(_impl_.behaves_like_spreadsheet_undefined_){}
+    , decltype(_impl_.body_horizontal_border_stroke_undefined_){}
+    , decltype(_impl_.body_vertical_border_stroke_undefined_){}
+    , decltype(_impl_.body_horizontal_stroke_undefined_){}
+    , decltype(_impl_.body_vertical_stroke_undefined_){}
+    , decltype(_impl_.header_column_border_stroke_undefined_){}
+    , decltype(_impl_.header_column_vertical_stroke_undefined_){}
+    , decltype(_impl_.header_column_horizontal_stroke_undefined_){}
+    , decltype(_impl_.header_column_separator_stroke_undefined_){}
+    , decltype(_impl_.header_row_border_stroke_undefined_){}
+    , decltype(_impl_.header_row_horizontal_stroke_undefined_){}
+    , decltype(_impl_.header_row_vertical_stroke_undefined_){}
+    , decltype(_impl_.header_row_separator_stroke_undefined_){}
+    , decltype(_impl_.footer_row_border_stroke_undefined_){}
+    , decltype(_impl_.footer_row_horizontal_stroke_undefined_){}
+    , decltype(_impl_.footer_row_vertical_stroke_undefined_){}
+    , decltype(_impl_.footer_row_separator_stroke_undefined_){}
+    , decltype(_impl_.stroke_preset_list_object_undefined_){}
+    , decltype(_impl_.vertical_strokes_visible_undefined_){}
+    , decltype(_impl_.horizontal_strokes_visible_undefined_){}
+    , decltype(_impl_.header_row_sep_visible_undefined_){}
+    , decltype(_impl_.header_row_verticals_visible_undefined_){}
+    , decltype(_impl_.header_col_sep_visible_undefined_){}
+    , decltype(_impl_.header_col_horizontals_visible_undefined_){}
+    , decltype(_impl_.footer_sep_visible_undefined_){}
+    , decltype(_impl_.footer_verticals_visible_undefined_){}
+    , decltype(_impl_.border_strokes_visible_undefined_){}
+    , decltype(_impl_.master_font_family_undefined_){}
+    , decltype(_impl_.writing_direction_undefined_){}
+    , decltype(_impl_.category_level1_top_stroke_undefined_){}
+    , decltype(_impl_.category_level2_top_stroke_undefined_){}
+    , decltype(_impl_.category_level3_top_stroke_undefined_){}
+    , decltype(_impl_.category_level4_top_stroke_undefined_){}
+    , decltype(_impl_.category_level5_top_stroke_undefined_){}
+    , decltype(_impl_.category_level1_label_separator_stroke_undefined_){}
+    , decltype(_impl_.category_level2_label_separator_stroke_undefined_){}
+    , decltype(_impl_.category_level3_label_separator_stroke_undefined_){}
+    , decltype(_impl_.category_level4_label_separator_stroke_undefined_){}
+    , decltype(_impl_.category_level5_label_separator_stroke_undefined_){}
+    , decltype(_impl_.category_level1_bottom_stroke_undefined_){}
+    , decltype(_impl_.category_level2_bottom_stroke_undefined_){}
+    , decltype(_impl_.category_level3_bottom_stroke_undefined_){}
+    , decltype(_impl_.category_level4_bottom_stroke_undefined_){}
+    , decltype(_impl_.category_level5_bottom_stroke_undefined_){}
+    , decltype(_impl_.category_level1_interior_stroke_undefined_){}
+    , decltype(_impl_.category_level2_interior_stroke_undefined_){}
+    , decltype(_impl_.category_level3_interior_stroke_undefined_){}
+    , decltype(_impl_.category_level4_interior_stroke_undefined_){}
+    , decltype(_impl_.category_level5_interior_stroke_undefined_){}
+    , decltype(_impl_.body_pivot_group_horizontal_stroke_undefined_){}
+    , decltype(_impl_.body_pivot_group_vertical_stroke_undefined_){}
+    , decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_){}
+    , decltype(_impl_.body_pivot_emphasis_vertical_stroke_undefined_){}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_undefined_){}
+    , decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_){}
+    , decltype(_impl_.header_column_pivot_separator_stroke_undefined_){}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_undefined_){}
+    , decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_undefined_){}
+    , decltype(_impl_.header_row_pivot_title_stroke_undefined_){}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_undefined_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_auto_resize()) {
-    auto_resize_ = new ::TSSSOS::SpecBoolArchive(*from.auto_resize_);
-  } else {
-    auto_resize_ = nullptr;
+    _this->_impl_.auto_resize_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.auto_resize_);
   }
   if (from._internal_has_banded_rows()) {
-    banded_rows_ = new ::TSSSOS::SpecBoolArchive(*from.banded_rows_);
-  } else {
-    banded_rows_ = nullptr;
+    _this->_impl_.banded_rows_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.banded_rows_);
   }
   if (from._internal_has_banded_cell_fill()) {
-    banded_cell_fill_ = new ::TSDSOS::SpecFillArchive(*from.banded_cell_fill_);
-  } else {
-    banded_cell_fill_ = nullptr;
+    _this->_impl_.banded_cell_fill_ = new ::TSDSOS::SpecFillArchive(*from._impl_.banded_cell_fill_);
   }
   if (from._internal_has_behaves_like_spreadsheet()) {
-    behaves_like_spreadsheet_ = new ::TSSSOS::SpecBoolArchive(*from.behaves_like_spreadsheet_);
-  } else {
-    behaves_like_spreadsheet_ = nullptr;
+    _this->_impl_.behaves_like_spreadsheet_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.behaves_like_spreadsheet_);
   }
   if (from._internal_has_body_horizontal_border_stroke()) {
-    body_horizontal_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.body_horizontal_border_stroke_);
-  } else {
-    body_horizontal_border_stroke_ = nullptr;
+    _this->_impl_.body_horizontal_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_horizontal_border_stroke_);
   }
   if (from._internal_has_body_vertical_border_stroke()) {
-    body_vertical_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.body_vertical_border_stroke_);
-  } else {
-    body_vertical_border_stroke_ = nullptr;
+    _this->_impl_.body_vertical_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_vertical_border_stroke_);
   }
   if (from._internal_has_body_horizontal_stroke()) {
-    body_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.body_horizontal_stroke_);
-  } else {
-    body_horizontal_stroke_ = nullptr;
+    _this->_impl_.body_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_horizontal_stroke_);
   }
   if (from._internal_has_body_vertical_stroke()) {
-    body_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.body_vertical_stroke_);
-  } else {
-    body_vertical_stroke_ = nullptr;
+    _this->_impl_.body_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_vertical_stroke_);
   }
   if (from._internal_has_header_column_border_stroke()) {
-    header_column_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_column_border_stroke_);
-  } else {
-    header_column_border_stroke_ = nullptr;
+    _this->_impl_.header_column_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_border_stroke_);
   }
   if (from._internal_has_header_column_vertical_stroke()) {
-    header_column_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_column_vertical_stroke_);
-  } else {
-    header_column_vertical_stroke_ = nullptr;
+    _this->_impl_.header_column_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_vertical_stroke_);
   }
   if (from._internal_has_header_column_horizontal_stroke()) {
-    header_column_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_column_horizontal_stroke_);
-  } else {
-    header_column_horizontal_stroke_ = nullptr;
+    _this->_impl_.header_column_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_horizontal_stroke_);
   }
   if (from._internal_has_header_column_separator_stroke()) {
-    header_column_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_column_separator_stroke_);
-  } else {
-    header_column_separator_stroke_ = nullptr;
+    _this->_impl_.header_column_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_separator_stroke_);
   }
   if (from._internal_has_header_row_border_stroke()) {
-    header_row_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_row_border_stroke_);
-  } else {
-    header_row_border_stroke_ = nullptr;
+    _this->_impl_.header_row_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_border_stroke_);
   }
   if (from._internal_has_header_row_horizontal_stroke()) {
-    header_row_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_row_horizontal_stroke_);
-  } else {
-    header_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.header_row_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_horizontal_stroke_);
   }
   if (from._internal_has_header_row_vertical_stroke()) {
-    header_row_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_row_vertical_stroke_);
-  } else {
-    header_row_vertical_stroke_ = nullptr;
+    _this->_impl_.header_row_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_vertical_stroke_);
   }
   if (from._internal_has_header_row_separator_stroke()) {
-    header_row_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.header_row_separator_stroke_);
-  } else {
-    header_row_separator_stroke_ = nullptr;
+    _this->_impl_.header_row_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_separator_stroke_);
   }
   if (from._internal_has_footer_row_border_stroke()) {
-    footer_row_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.footer_row_border_stroke_);
-  } else {
-    footer_row_border_stroke_ = nullptr;
+    _this->_impl_.footer_row_border_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.footer_row_border_stroke_);
   }
   if (from._internal_has_footer_row_horizontal_stroke()) {
-    footer_row_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.footer_row_horizontal_stroke_);
-  } else {
-    footer_row_horizontal_stroke_ = nullptr;
+    _this->_impl_.footer_row_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.footer_row_horizontal_stroke_);
   }
   if (from._internal_has_footer_row_vertical_stroke()) {
-    footer_row_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.footer_row_vertical_stroke_);
-  } else {
-    footer_row_vertical_stroke_ = nullptr;
+    _this->_impl_.footer_row_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.footer_row_vertical_stroke_);
   }
   if (from._internal_has_footer_row_separator_stroke()) {
-    footer_row_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.footer_row_separator_stroke_);
-  } else {
-    footer_row_separator_stroke_ = nullptr;
+    _this->_impl_.footer_row_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.footer_row_separator_stroke_);
   }
   if (from._internal_has_stroke_preset_list_object()) {
-    stroke_preset_list_object_ = new ::TSTSOS::SpecTableStrokePresetListArchive(*from.stroke_preset_list_object_);
-  } else {
-    stroke_preset_list_object_ = nullptr;
+    _this->_impl_.stroke_preset_list_object_ = new ::TSTSOS::SpecTableStrokePresetListArchive(*from._impl_.stroke_preset_list_object_);
   }
   if (from._internal_has_vertical_strokes_visible()) {
-    vertical_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from.vertical_strokes_visible_);
-  } else {
-    vertical_strokes_visible_ = nullptr;
+    _this->_impl_.vertical_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.vertical_strokes_visible_);
   }
   if (from._internal_has_horizontal_strokes_visible()) {
-    horizontal_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from.horizontal_strokes_visible_);
-  } else {
-    horizontal_strokes_visible_ = nullptr;
+    _this->_impl_.horizontal_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.horizontal_strokes_visible_);
   }
   if (from._internal_has_header_row_sep_visible()) {
-    header_row_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from.header_row_sep_visible_);
-  } else {
-    header_row_sep_visible_ = nullptr;
+    _this->_impl_.header_row_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.header_row_sep_visible_);
   }
   if (from._internal_has_header_row_verticals_visible()) {
-    header_row_verticals_visible_ = new ::TSSSOS::SpecBoolArchive(*from.header_row_verticals_visible_);
-  } else {
-    header_row_verticals_visible_ = nullptr;
+    _this->_impl_.header_row_verticals_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.header_row_verticals_visible_);
   }
   if (from._internal_has_header_col_sep_visible()) {
-    header_col_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from.header_col_sep_visible_);
-  } else {
-    header_col_sep_visible_ = nullptr;
+    _this->_impl_.header_col_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.header_col_sep_visible_);
   }
   if (from._internal_has_header_col_horizontals_visible()) {
-    header_col_horizontals_visible_ = new ::TSSSOS::SpecBoolArchive(*from.header_col_horizontals_visible_);
-  } else {
-    header_col_horizontals_visible_ = nullptr;
+    _this->_impl_.header_col_horizontals_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.header_col_horizontals_visible_);
   }
   if (from._internal_has_footer_sep_visible()) {
-    footer_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from.footer_sep_visible_);
-  } else {
-    footer_sep_visible_ = nullptr;
+    _this->_impl_.footer_sep_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.footer_sep_visible_);
   }
   if (from._internal_has_footer_verticals_visible()) {
-    footer_verticals_visible_ = new ::TSSSOS::SpecBoolArchive(*from.footer_verticals_visible_);
-  } else {
-    footer_verticals_visible_ = nullptr;
+    _this->_impl_.footer_verticals_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.footer_verticals_visible_);
   }
   if (from._internal_has_border_strokes_visible()) {
-    border_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from.border_strokes_visible_);
-  } else {
-    border_strokes_visible_ = nullptr;
+    _this->_impl_.border_strokes_visible_ = new ::TSSSOS::SpecBoolArchive(*from._impl_.border_strokes_visible_);
   }
   if (from._internal_has_master_font_family()) {
-    master_font_family_ = new ::TSSSOS::SpecStringArchive(*from.master_font_family_);
-  } else {
-    master_font_family_ = nullptr;
+    _this->_impl_.master_font_family_ = new ::TSSSOS::SpecStringArchive(*from._impl_.master_font_family_);
   }
   if (from._internal_has_writing_direction()) {
-    writing_direction_ = new ::TSSSOS::SpecIntegerArchive(*from.writing_direction_);
-  } else {
-    writing_direction_ = nullptr;
+    _this->_impl_.writing_direction_ = new ::TSSSOS::SpecIntegerArchive(*from._impl_.writing_direction_);
   }
   if (from._internal_has_category_level1_top_stroke()) {
-    category_level1_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level1_top_stroke_);
-  } else {
-    category_level1_top_stroke_ = nullptr;
+    _this->_impl_.category_level1_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level1_top_stroke_);
   }
   if (from._internal_has_category_level2_top_stroke()) {
-    category_level2_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level2_top_stroke_);
-  } else {
-    category_level2_top_stroke_ = nullptr;
+    _this->_impl_.category_level2_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level2_top_stroke_);
   }
   if (from._internal_has_category_level3_top_stroke()) {
-    category_level3_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level3_top_stroke_);
-  } else {
-    category_level3_top_stroke_ = nullptr;
+    _this->_impl_.category_level3_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level3_top_stroke_);
   }
   if (from._internal_has_category_level4_top_stroke()) {
-    category_level4_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level4_top_stroke_);
-  } else {
-    category_level4_top_stroke_ = nullptr;
+    _this->_impl_.category_level4_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level4_top_stroke_);
   }
   if (from._internal_has_category_level5_top_stroke()) {
-    category_level5_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level5_top_stroke_);
-  } else {
-    category_level5_top_stroke_ = nullptr;
+    _this->_impl_.category_level5_top_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level5_top_stroke_);
   }
   if (from._internal_has_category_level1_label_separator_stroke()) {
-    category_level1_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level1_label_separator_stroke_);
-  } else {
-    category_level1_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level1_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level1_label_separator_stroke_);
   }
   if (from._internal_has_category_level2_label_separator_stroke()) {
-    category_level2_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level2_label_separator_stroke_);
-  } else {
-    category_level2_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level2_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level2_label_separator_stroke_);
   }
   if (from._internal_has_category_level3_label_separator_stroke()) {
-    category_level3_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level3_label_separator_stroke_);
-  } else {
-    category_level3_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level3_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level3_label_separator_stroke_);
   }
   if (from._internal_has_category_level4_label_separator_stroke()) {
-    category_level4_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level4_label_separator_stroke_);
-  } else {
-    category_level4_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level4_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level4_label_separator_stroke_);
   }
   if (from._internal_has_category_level5_label_separator_stroke()) {
-    category_level5_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level5_label_separator_stroke_);
-  } else {
-    category_level5_label_separator_stroke_ = nullptr;
+    _this->_impl_.category_level5_label_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level5_label_separator_stroke_);
   }
   if (from._internal_has_category_level1_bottom_stroke()) {
-    category_level1_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level1_bottom_stroke_);
-  } else {
-    category_level1_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level1_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level1_bottom_stroke_);
   }
   if (from._internal_has_category_level2_bottom_stroke()) {
-    category_level2_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level2_bottom_stroke_);
-  } else {
-    category_level2_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level2_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level2_bottom_stroke_);
   }
   if (from._internal_has_category_level3_bottom_stroke()) {
-    category_level3_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level3_bottom_stroke_);
-  } else {
-    category_level3_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level3_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level3_bottom_stroke_);
   }
   if (from._internal_has_category_level4_bottom_stroke()) {
-    category_level4_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level4_bottom_stroke_);
-  } else {
-    category_level4_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level4_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level4_bottom_stroke_);
   }
   if (from._internal_has_category_level5_bottom_stroke()) {
-    category_level5_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level5_bottom_stroke_);
-  } else {
-    category_level5_bottom_stroke_ = nullptr;
+    _this->_impl_.category_level5_bottom_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level5_bottom_stroke_);
   }
   if (from._internal_has_category_level1_interior_stroke()) {
-    category_level1_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level1_interior_stroke_);
-  } else {
-    category_level1_interior_stroke_ = nullptr;
+    _this->_impl_.category_level1_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level1_interior_stroke_);
   }
   if (from._internal_has_category_level2_interior_stroke()) {
-    category_level2_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level2_interior_stroke_);
-  } else {
-    category_level2_interior_stroke_ = nullptr;
+    _this->_impl_.category_level2_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level2_interior_stroke_);
   }
   if (from._internal_has_category_level3_interior_stroke()) {
-    category_level3_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level3_interior_stroke_);
-  } else {
-    category_level3_interior_stroke_ = nullptr;
+    _this->_impl_.category_level3_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level3_interior_stroke_);
   }
   if (from._internal_has_category_level4_interior_stroke()) {
-    category_level4_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level4_interior_stroke_);
-  } else {
-    category_level4_interior_stroke_ = nullptr;
+    _this->_impl_.category_level4_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level4_interior_stroke_);
   }
   if (from._internal_has_category_level5_interior_stroke()) {
-    category_level5_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from.category_level5_interior_stroke_);
-  } else {
-    category_level5_interior_stroke_ = nullptr;
+    _this->_impl_.category_level5_interior_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.category_level5_interior_stroke_);
   }
-  ::memcpy(&auto_resize_undefined_, &from.auto_resize_undefined_,
-    static_cast<size_t>(reinterpret_cast<char*>(&category_level5_interior_stroke_undefined_) -
-    reinterpret_cast<char*>(&auto_resize_undefined_)) + sizeof(category_level5_interior_stroke_undefined_));
+  if (from._internal_has_body_pivot_group_horizontal_stroke()) {
+    _this->_impl_.body_pivot_group_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_pivot_group_horizontal_stroke_);
+  }
+  if (from._internal_has_body_pivot_group_vertical_stroke()) {
+    _this->_impl_.body_pivot_group_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_pivot_group_vertical_stroke_);
+  }
+  if (from._internal_has_body_pivot_de_emphasis_horizontal_stroke()) {
+    _this->_impl_.body_pivot_de_emphasis_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_pivot_de_emphasis_horizontal_stroke_);
+  }
+  if (from._internal_has_body_pivot_emphasis_vertical_stroke()) {
+    _this->_impl_.body_pivot_emphasis_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.body_pivot_emphasis_vertical_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_group_horizontal_stroke()) {
+    _this->_impl_.header_column_pivot_group_horizontal_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_pivot_group_horizontal_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_group_de_emphasis_stroke()) {
+    _this->_impl_.header_column_pivot_group_de_emphasis_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_pivot_group_de_emphasis_stroke_);
+  }
+  if (from._internal_has_header_column_pivot_separator_stroke()) {
+    _this->_impl_.header_column_pivot_separator_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_column_pivot_separator_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_group_vertical_stroke()) {
+    _this->_impl_.header_row_pivot_group_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_pivot_group_vertical_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_group_de_emphasis_stroke()) {
+    _this->_impl_.header_row_pivot_group_de_emphasis_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_pivot_group_de_emphasis_stroke_);
+  }
+  if (from._internal_has_header_row_pivot_title_stroke()) {
+    _this->_impl_.header_row_pivot_title_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.header_row_pivot_title_stroke_);
+  }
+  if (from._internal_has_footer_row_pivot_group_vertical_stroke()) {
+    _this->_impl_.footer_row_pivot_group_vertical_stroke_ = new ::TSDSOS::SpecStrokeArchive(*from._impl_.footer_row_pivot_group_vertical_stroke_);
+  }
+  ::memcpy(&_impl_.auto_resize_undefined_, &from._impl_.auto_resize_undefined_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.footer_row_pivot_group_vertical_stroke_undefined_) -
+    reinterpret_cast<char*>(&_impl_.auto_resize_undefined_)) + sizeof(_impl_.footer_row_pivot_group_vertical_stroke_undefined_));
   // @@protoc_insertion_point(copy_constructor:TSTSOS.TableStylePropertyChangeSetArchive)
 }
 
-inline void TableStylePropertyChangeSetArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&auto_resize_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&category_level5_interior_stroke_undefined_) -
-    reinterpret_cast<char*>(&auto_resize_)) + sizeof(category_level5_interior_stroke_undefined_));
+inline void TableStylePropertyChangeSetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.auto_resize_){nullptr}
+    , decltype(_impl_.banded_rows_){nullptr}
+    , decltype(_impl_.banded_cell_fill_){nullptr}
+    , decltype(_impl_.behaves_like_spreadsheet_){nullptr}
+    , decltype(_impl_.body_horizontal_border_stroke_){nullptr}
+    , decltype(_impl_.body_vertical_border_stroke_){nullptr}
+    , decltype(_impl_.body_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_border_stroke_){nullptr}
+    , decltype(_impl_.header_column_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_border_stroke_){nullptr}
+    , decltype(_impl_.header_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_separator_stroke_){nullptr}
+    , decltype(_impl_.footer_row_border_stroke_){nullptr}
+    , decltype(_impl_.footer_row_horizontal_stroke_){nullptr}
+    , decltype(_impl_.footer_row_vertical_stroke_){nullptr}
+    , decltype(_impl_.footer_row_separator_stroke_){nullptr}
+    , decltype(_impl_.stroke_preset_list_object_){nullptr}
+    , decltype(_impl_.vertical_strokes_visible_){nullptr}
+    , decltype(_impl_.horizontal_strokes_visible_){nullptr}
+    , decltype(_impl_.header_row_sep_visible_){nullptr}
+    , decltype(_impl_.header_row_verticals_visible_){nullptr}
+    , decltype(_impl_.header_col_sep_visible_){nullptr}
+    , decltype(_impl_.header_col_horizontals_visible_){nullptr}
+    , decltype(_impl_.footer_sep_visible_){nullptr}
+    , decltype(_impl_.footer_verticals_visible_){nullptr}
+    , decltype(_impl_.border_strokes_visible_){nullptr}
+    , decltype(_impl_.master_font_family_){nullptr}
+    , decltype(_impl_.writing_direction_){nullptr}
+    , decltype(_impl_.category_level1_top_stroke_){nullptr}
+    , decltype(_impl_.category_level2_top_stroke_){nullptr}
+    , decltype(_impl_.category_level3_top_stroke_){nullptr}
+    , decltype(_impl_.category_level4_top_stroke_){nullptr}
+    , decltype(_impl_.category_level5_top_stroke_){nullptr}
+    , decltype(_impl_.category_level1_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level2_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level3_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level4_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level5_label_separator_stroke_){nullptr}
+    , decltype(_impl_.category_level1_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level2_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level3_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level4_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level5_bottom_stroke_){nullptr}
+    , decltype(_impl_.category_level1_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level2_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level3_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level4_interior_stroke_){nullptr}
+    , decltype(_impl_.category_level5_interior_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_){nullptr}
+    , decltype(_impl_.body_pivot_emphasis_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_){nullptr}
+    , decltype(_impl_.header_column_pivot_separator_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_){nullptr}
+    , decltype(_impl_.header_row_pivot_title_stroke_){nullptr}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_){nullptr}
+    , decltype(_impl_.auto_resize_undefined_){false}
+    , decltype(_impl_.banded_rows_undefined_){false}
+    , decltype(_impl_.banded_cell_fill_undefined_){false}
+    , decltype(_impl_.behaves_like_spreadsheet_undefined_){false}
+    , decltype(_impl_.body_horizontal_border_stroke_undefined_){false}
+    , decltype(_impl_.body_vertical_border_stroke_undefined_){false}
+    , decltype(_impl_.body_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.body_vertical_stroke_undefined_){false}
+    , decltype(_impl_.header_column_border_stroke_undefined_){false}
+    , decltype(_impl_.header_column_vertical_stroke_undefined_){false}
+    , decltype(_impl_.header_column_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.header_column_separator_stroke_undefined_){false}
+    , decltype(_impl_.header_row_border_stroke_undefined_){false}
+    , decltype(_impl_.header_row_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.header_row_vertical_stroke_undefined_){false}
+    , decltype(_impl_.header_row_separator_stroke_undefined_){false}
+    , decltype(_impl_.footer_row_border_stroke_undefined_){false}
+    , decltype(_impl_.footer_row_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.footer_row_vertical_stroke_undefined_){false}
+    , decltype(_impl_.footer_row_separator_stroke_undefined_){false}
+    , decltype(_impl_.stroke_preset_list_object_undefined_){false}
+    , decltype(_impl_.vertical_strokes_visible_undefined_){false}
+    , decltype(_impl_.horizontal_strokes_visible_undefined_){false}
+    , decltype(_impl_.header_row_sep_visible_undefined_){false}
+    , decltype(_impl_.header_row_verticals_visible_undefined_){false}
+    , decltype(_impl_.header_col_sep_visible_undefined_){false}
+    , decltype(_impl_.header_col_horizontals_visible_undefined_){false}
+    , decltype(_impl_.footer_sep_visible_undefined_){false}
+    , decltype(_impl_.footer_verticals_visible_undefined_){false}
+    , decltype(_impl_.border_strokes_visible_undefined_){false}
+    , decltype(_impl_.master_font_family_undefined_){false}
+    , decltype(_impl_.writing_direction_undefined_){false}
+    , decltype(_impl_.category_level1_top_stroke_undefined_){false}
+    , decltype(_impl_.category_level2_top_stroke_undefined_){false}
+    , decltype(_impl_.category_level3_top_stroke_undefined_){false}
+    , decltype(_impl_.category_level4_top_stroke_undefined_){false}
+    , decltype(_impl_.category_level5_top_stroke_undefined_){false}
+    , decltype(_impl_.category_level1_label_separator_stroke_undefined_){false}
+    , decltype(_impl_.category_level2_label_separator_stroke_undefined_){false}
+    , decltype(_impl_.category_level3_label_separator_stroke_undefined_){false}
+    , decltype(_impl_.category_level4_label_separator_stroke_undefined_){false}
+    , decltype(_impl_.category_level5_label_separator_stroke_undefined_){false}
+    , decltype(_impl_.category_level1_bottom_stroke_undefined_){false}
+    , decltype(_impl_.category_level2_bottom_stroke_undefined_){false}
+    , decltype(_impl_.category_level3_bottom_stroke_undefined_){false}
+    , decltype(_impl_.category_level4_bottom_stroke_undefined_){false}
+    , decltype(_impl_.category_level5_bottom_stroke_undefined_){false}
+    , decltype(_impl_.category_level1_interior_stroke_undefined_){false}
+    , decltype(_impl_.category_level2_interior_stroke_undefined_){false}
+    , decltype(_impl_.category_level3_interior_stroke_undefined_){false}
+    , decltype(_impl_.category_level4_interior_stroke_undefined_){false}
+    , decltype(_impl_.category_level5_interior_stroke_undefined_){false}
+    , decltype(_impl_.body_pivot_group_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.body_pivot_group_vertical_stroke_undefined_){false}
+    , decltype(_impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.body_pivot_emphasis_vertical_stroke_undefined_){false}
+    , decltype(_impl_.header_column_pivot_group_horizontal_stroke_undefined_){false}
+    , decltype(_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_){false}
+    , decltype(_impl_.header_column_pivot_separator_stroke_undefined_){false}
+    , decltype(_impl_.header_row_pivot_group_vertical_stroke_undefined_){false}
+    , decltype(_impl_.header_row_pivot_group_de_emphasis_stroke_undefined_){false}
+    , decltype(_impl_.header_row_pivot_title_stroke_undefined_){false}
+    , decltype(_impl_.footer_row_pivot_group_vertical_stroke_undefined_){false}
+  };
 }
 
 TableStylePropertyChangeSetArchive::~TableStylePropertyChangeSetArchive() {
   // @@protoc_insertion_point(destructor:TSTSOS.TableStylePropertyChangeSetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void TableStylePropertyChangeSetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete auto_resize_;
-  if (this != internal_default_instance()) delete banded_rows_;
-  if (this != internal_default_instance()) delete banded_cell_fill_;
-  if (this != internal_default_instance()) delete behaves_like_spreadsheet_;
-  if (this != internal_default_instance()) delete body_horizontal_border_stroke_;
-  if (this != internal_default_instance()) delete body_vertical_border_stroke_;
-  if (this != internal_default_instance()) delete body_horizontal_stroke_;
-  if (this != internal_default_instance()) delete body_vertical_stroke_;
-  if (this != internal_default_instance()) delete header_column_border_stroke_;
-  if (this != internal_default_instance()) delete header_column_vertical_stroke_;
-  if (this != internal_default_instance()) delete header_column_horizontal_stroke_;
-  if (this != internal_default_instance()) delete header_column_separator_stroke_;
-  if (this != internal_default_instance()) delete header_row_border_stroke_;
-  if (this != internal_default_instance()) delete header_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete header_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete header_row_separator_stroke_;
-  if (this != internal_default_instance()) delete footer_row_border_stroke_;
-  if (this != internal_default_instance()) delete footer_row_horizontal_stroke_;
-  if (this != internal_default_instance()) delete footer_row_vertical_stroke_;
-  if (this != internal_default_instance()) delete footer_row_separator_stroke_;
-  if (this != internal_default_instance()) delete stroke_preset_list_object_;
-  if (this != internal_default_instance()) delete vertical_strokes_visible_;
-  if (this != internal_default_instance()) delete horizontal_strokes_visible_;
-  if (this != internal_default_instance()) delete header_row_sep_visible_;
-  if (this != internal_default_instance()) delete header_row_verticals_visible_;
-  if (this != internal_default_instance()) delete header_col_sep_visible_;
-  if (this != internal_default_instance()) delete header_col_horizontals_visible_;
-  if (this != internal_default_instance()) delete footer_sep_visible_;
-  if (this != internal_default_instance()) delete footer_verticals_visible_;
-  if (this != internal_default_instance()) delete border_strokes_visible_;
-  if (this != internal_default_instance()) delete master_font_family_;
-  if (this != internal_default_instance()) delete writing_direction_;
-  if (this != internal_default_instance()) delete category_level1_top_stroke_;
-  if (this != internal_default_instance()) delete category_level2_top_stroke_;
-  if (this != internal_default_instance()) delete category_level3_top_stroke_;
-  if (this != internal_default_instance()) delete category_level4_top_stroke_;
-  if (this != internal_default_instance()) delete category_level5_top_stroke_;
-  if (this != internal_default_instance()) delete category_level1_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level2_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level3_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level4_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level5_label_separator_stroke_;
-  if (this != internal_default_instance()) delete category_level1_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level2_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level3_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level4_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level5_bottom_stroke_;
-  if (this != internal_default_instance()) delete category_level1_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level2_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level3_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level4_interior_stroke_;
-  if (this != internal_default_instance()) delete category_level5_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.auto_resize_;
+  if (this != internal_default_instance()) delete _impl_.banded_rows_;
+  if (this != internal_default_instance()) delete _impl_.banded_cell_fill_;
+  if (this != internal_default_instance()) delete _impl_.behaves_like_spreadsheet_;
+  if (this != internal_default_instance()) delete _impl_.body_horizontal_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_vertical_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_border_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.stroke_preset_list_object_;
+  if (this != internal_default_instance()) delete _impl_.vertical_strokes_visible_;
+  if (this != internal_default_instance()) delete _impl_.horizontal_strokes_visible_;
+  if (this != internal_default_instance()) delete _impl_.header_row_sep_visible_;
+  if (this != internal_default_instance()) delete _impl_.header_row_verticals_visible_;
+  if (this != internal_default_instance()) delete _impl_.header_col_sep_visible_;
+  if (this != internal_default_instance()) delete _impl_.header_col_horizontals_visible_;
+  if (this != internal_default_instance()) delete _impl_.footer_sep_visible_;
+  if (this != internal_default_instance()) delete _impl_.footer_verticals_visible_;
+  if (this != internal_default_instance()) delete _impl_.border_strokes_visible_;
+  if (this != internal_default_instance()) delete _impl_.master_font_family_;
+  if (this != internal_default_instance()) delete _impl_.writing_direction_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_top_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_label_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_bottom_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level1_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level2_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level3_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level4_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.category_level5_interior_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_pivot_group_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_pivot_group_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_pivot_de_emphasis_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.body_pivot_emphasis_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_group_horizontal_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_group_de_emphasis_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_column_pivot_separator_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_group_vertical_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_group_de_emphasis_stroke_;
+  if (this != internal_default_instance()) delete _impl_.header_row_pivot_title_stroke_;
+  if (this != internal_default_instance()) delete _impl_.footer_row_pivot_group_vertical_stroke_;
 }
 
-void TableStylePropertyChangeSetArchive::ArenaDtor(void* object) {
-  TableStylePropertyChangeSetArchive* _this = reinterpret_cast< TableStylePropertyChangeSetArchive* >(object);
-  (void)_this;
-}
-void TableStylePropertyChangeSetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TableStylePropertyChangeSetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void TableStylePropertyChangeSetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSTSOS.TableStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(auto_resize_ != nullptr);
-      auto_resize_->Clear();
+      GOOGLE_DCHECK(_impl_.auto_resize_ != nullptr);
+      _impl_.auto_resize_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(banded_rows_ != nullptr);
-      banded_rows_->Clear();
+      GOOGLE_DCHECK(_impl_.banded_rows_ != nullptr);
+      _impl_.banded_rows_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(banded_cell_fill_ != nullptr);
-      banded_cell_fill_->Clear();
+      GOOGLE_DCHECK(_impl_.banded_cell_fill_ != nullptr);
+      _impl_.banded_cell_fill_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(behaves_like_spreadsheet_ != nullptr);
-      behaves_like_spreadsheet_->Clear();
+      GOOGLE_DCHECK(_impl_.behaves_like_spreadsheet_ != nullptr);
+      _impl_.behaves_like_spreadsheet_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(body_horizontal_border_stroke_ != nullptr);
-      body_horizontal_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.body_horizontal_border_stroke_ != nullptr);
+      _impl_.body_horizontal_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(body_vertical_border_stroke_ != nullptr);
-      body_vertical_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.body_vertical_border_stroke_ != nullptr);
+      _impl_.body_vertical_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(body_horizontal_stroke_ != nullptr);
-      body_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.body_horizontal_stroke_ != nullptr);
+      _impl_.body_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(body_vertical_stroke_ != nullptr);
-      body_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.body_vertical_stroke_ != nullptr);
+      _impl_.body_vertical_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(header_column_border_stroke_ != nullptr);
-      header_column_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_border_stroke_ != nullptr);
+      _impl_.header_column_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(header_column_vertical_stroke_ != nullptr);
-      header_column_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_vertical_stroke_ != nullptr);
+      _impl_.header_column_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(header_column_horizontal_stroke_ != nullptr);
-      header_column_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_horizontal_stroke_ != nullptr);
+      _impl_.header_column_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(header_column_separator_stroke_ != nullptr);
-      header_column_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_column_separator_stroke_ != nullptr);
+      _impl_.header_column_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(header_row_border_stroke_ != nullptr);
-      header_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_border_stroke_ != nullptr);
+      _impl_.header_row_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(header_row_horizontal_stroke_ != nullptr);
-      header_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_horizontal_stroke_ != nullptr);
+      _impl_.header_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(header_row_vertical_stroke_ != nullptr);
-      header_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_vertical_stroke_ != nullptr);
+      _impl_.header_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00008000u) {
-      GOOGLE_DCHECK(header_row_separator_stroke_ != nullptr);
-      header_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_separator_stroke_ != nullptr);
+      _impl_.header_row_separator_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      GOOGLE_DCHECK(footer_row_border_stroke_ != nullptr);
-      footer_row_border_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_border_stroke_ != nullptr);
+      _impl_.footer_row_border_stroke_->Clear();
     }
     if (cached_has_bits & 0x00020000u) {
-      GOOGLE_DCHECK(footer_row_horizontal_stroke_ != nullptr);
-      footer_row_horizontal_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_horizontal_stroke_ != nullptr);
+      _impl_.footer_row_horizontal_stroke_->Clear();
     }
     if (cached_has_bits & 0x00040000u) {
-      GOOGLE_DCHECK(footer_row_vertical_stroke_ != nullptr);
-      footer_row_vertical_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_vertical_stroke_ != nullptr);
+      _impl_.footer_row_vertical_stroke_->Clear();
     }
     if (cached_has_bits & 0x00080000u) {
-      GOOGLE_DCHECK(footer_row_separator_stroke_ != nullptr);
-      footer_row_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_row_separator_stroke_ != nullptr);
+      _impl_.footer_row_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00100000u) {
-      GOOGLE_DCHECK(stroke_preset_list_object_ != nullptr);
-      stroke_preset_list_object_->Clear();
+      GOOGLE_DCHECK(_impl_.stroke_preset_list_object_ != nullptr);
+      _impl_.stroke_preset_list_object_->Clear();
     }
     if (cached_has_bits & 0x00200000u) {
-      GOOGLE_DCHECK(vertical_strokes_visible_ != nullptr);
-      vertical_strokes_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.vertical_strokes_visible_ != nullptr);
+      _impl_.vertical_strokes_visible_->Clear();
     }
     if (cached_has_bits & 0x00400000u) {
-      GOOGLE_DCHECK(horizontal_strokes_visible_ != nullptr);
-      horizontal_strokes_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.horizontal_strokes_visible_ != nullptr);
+      _impl_.horizontal_strokes_visible_->Clear();
     }
     if (cached_has_bits & 0x00800000u) {
-      GOOGLE_DCHECK(header_row_sep_visible_ != nullptr);
-      header_row_sep_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_sep_visible_ != nullptr);
+      _impl_.header_row_sep_visible_->Clear();
     }
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      GOOGLE_DCHECK(header_row_verticals_visible_ != nullptr);
-      header_row_verticals_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.header_row_verticals_visible_ != nullptr);
+      _impl_.header_row_verticals_visible_->Clear();
     }
     if (cached_has_bits & 0x02000000u) {
-      GOOGLE_DCHECK(header_col_sep_visible_ != nullptr);
-      header_col_sep_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.header_col_sep_visible_ != nullptr);
+      _impl_.header_col_sep_visible_->Clear();
     }
     if (cached_has_bits & 0x04000000u) {
-      GOOGLE_DCHECK(header_col_horizontals_visible_ != nullptr);
-      header_col_horizontals_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.header_col_horizontals_visible_ != nullptr);
+      _impl_.header_col_horizontals_visible_->Clear();
     }
     if (cached_has_bits & 0x08000000u) {
-      GOOGLE_DCHECK(footer_sep_visible_ != nullptr);
-      footer_sep_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_sep_visible_ != nullptr);
+      _impl_.footer_sep_visible_->Clear();
     }
     if (cached_has_bits & 0x10000000u) {
-      GOOGLE_DCHECK(footer_verticals_visible_ != nullptr);
-      footer_verticals_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.footer_verticals_visible_ != nullptr);
+      _impl_.footer_verticals_visible_->Clear();
     }
     if (cached_has_bits & 0x20000000u) {
-      GOOGLE_DCHECK(border_strokes_visible_ != nullptr);
-      border_strokes_visible_->Clear();
+      GOOGLE_DCHECK(_impl_.border_strokes_visible_ != nullptr);
+      _impl_.border_strokes_visible_->Clear();
     }
     if (cached_has_bits & 0x40000000u) {
-      GOOGLE_DCHECK(master_font_family_ != nullptr);
-      master_font_family_->Clear();
+      GOOGLE_DCHECK(_impl_.master_font_family_ != nullptr);
+      _impl_.master_font_family_->Clear();
     }
     if (cached_has_bits & 0x80000000u) {
-      GOOGLE_DCHECK(writing_direction_ != nullptr);
-      writing_direction_->Clear();
+      GOOGLE_DCHECK(_impl_.writing_direction_ != nullptr);
+      _impl_.writing_direction_->Clear();
     }
   }
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(category_level1_top_stroke_ != nullptr);
-      category_level1_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_top_stroke_ != nullptr);
+      _impl_.category_level1_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(category_level2_top_stroke_ != nullptr);
-      category_level2_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_top_stroke_ != nullptr);
+      _impl_.category_level2_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(category_level3_top_stroke_ != nullptr);
-      category_level3_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_top_stroke_ != nullptr);
+      _impl_.category_level3_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(category_level4_top_stroke_ != nullptr);
-      category_level4_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_top_stroke_ != nullptr);
+      _impl_.category_level4_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(category_level5_top_stroke_ != nullptr);
-      category_level5_top_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_top_stroke_ != nullptr);
+      _impl_.category_level5_top_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(category_level1_label_separator_stroke_ != nullptr);
-      category_level1_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_label_separator_stroke_ != nullptr);
+      _impl_.category_level1_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000040u) {
-      GOOGLE_DCHECK(category_level2_label_separator_stroke_ != nullptr);
-      category_level2_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_label_separator_stroke_ != nullptr);
+      _impl_.category_level2_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000080u) {
-      GOOGLE_DCHECK(category_level3_label_separator_stroke_ != nullptr);
-      category_level3_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_label_separator_stroke_ != nullptr);
+      _impl_.category_level3_label_separator_stroke_->Clear();
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      GOOGLE_DCHECK(category_level4_label_separator_stroke_ != nullptr);
-      category_level4_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_label_separator_stroke_ != nullptr);
+      _impl_.category_level4_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000200u) {
-      GOOGLE_DCHECK(category_level5_label_separator_stroke_ != nullptr);
-      category_level5_label_separator_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_label_separator_stroke_ != nullptr);
+      _impl_.category_level5_label_separator_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000400u) {
-      GOOGLE_DCHECK(category_level1_bottom_stroke_ != nullptr);
-      category_level1_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_bottom_stroke_ != nullptr);
+      _impl_.category_level1_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00000800u) {
-      GOOGLE_DCHECK(category_level2_bottom_stroke_ != nullptr);
-      category_level2_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level2_bottom_stroke_ != nullptr);
+      _impl_.category_level2_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00001000u) {
-      GOOGLE_DCHECK(category_level3_bottom_stroke_ != nullptr);
-      category_level3_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level3_bottom_stroke_ != nullptr);
+      _impl_.category_level3_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00002000u) {
-      GOOGLE_DCHECK(category_level4_bottom_stroke_ != nullptr);
-      category_level4_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level4_bottom_stroke_ != nullptr);
+      _impl_.category_level4_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00004000u) {
-      GOOGLE_DCHECK(category_level5_bottom_stroke_ != nullptr);
-      category_level5_bottom_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level5_bottom_stroke_ != nullptr);
+      _impl_.category_level5_bottom_stroke_->Clear();
     }
     if (cached_has_bits & 0x00008000u) {
-      GOOGLE_DCHECK(category_level1_interior_stroke_ != nullptr);
-      category_level1_interior_stroke_->Clear();
+      GOOGLE_DCHECK(_impl_.category_level1_interior_stroke_ != nullptr);
+      _impl_.category_level1_interior_stroke_->Clear();
     }
-  }
-  if (cached_has_bits & 0x000f0000u) {
-    if (cached_has_bits & 0x00010000u) {
-      GOOGLE_DCHECK(category_level2_interior_stroke_ != nullptr);
-      category_level2_interior_stroke_->Clear();
-    }
-    if (cached_has_bits & 0x00020000u) {
-      GOOGLE_DCHECK(category_level3_interior_stroke_ != nullptr);
-      category_level3_interior_stroke_->Clear();
-    }
-    if (cached_has_bits & 0x00040000u) {
-      GOOGLE_DCHECK(category_level4_interior_stroke_ != nullptr);
-      category_level4_interior_stroke_->Clear();
-    }
-    if (cached_has_bits & 0x00080000u) {
-      GOOGLE_DCHECK(category_level5_interior_stroke_ != nullptr);
-      category_level5_interior_stroke_->Clear();
-    }
-  }
-  if (cached_has_bits & 0x00f00000u) {
-    ::memset(&auto_resize_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&behaves_like_spreadsheet_undefined_) -
-        reinterpret_cast<char*>(&auto_resize_undefined_)) + sizeof(behaves_like_spreadsheet_undefined_));
-  }
-  if (cached_has_bits & 0xff000000u) {
-    ::memset(&body_horizontal_border_stroke_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&header_column_separator_stroke_undefined_) -
-        reinterpret_cast<char*>(&body_horizontal_border_stroke_undefined_)) + sizeof(header_column_separator_stroke_undefined_));
-  }
-  cached_has_bits = _has_bits_[2];
-  if (cached_has_bits & 0x000000ffu) {
-    ::memset(&header_row_border_stroke_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&footer_row_separator_stroke_undefined_) -
-        reinterpret_cast<char*>(&header_row_border_stroke_undefined_)) + sizeof(footer_row_separator_stroke_undefined_));
-  }
-  if (cached_has_bits & 0x0000ff00u) {
-    ::memset(&stroke_preset_list_object_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&footer_sep_visible_undefined_) -
-        reinterpret_cast<char*>(&stroke_preset_list_object_undefined_)) + sizeof(footer_sep_visible_undefined_));
   }
   if (cached_has_bits & 0x00ff0000u) {
-    ::memset(&footer_verticals_visible_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&category_level4_top_stroke_undefined_) -
-        reinterpret_cast<char*>(&footer_verticals_visible_undefined_)) + sizeof(category_level4_top_stroke_undefined_));
+    if (cached_has_bits & 0x00010000u) {
+      GOOGLE_DCHECK(_impl_.category_level2_interior_stroke_ != nullptr);
+      _impl_.category_level2_interior_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00020000u) {
+      GOOGLE_DCHECK(_impl_.category_level3_interior_stroke_ != nullptr);
+      _impl_.category_level3_interior_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00040000u) {
+      GOOGLE_DCHECK(_impl_.category_level4_interior_stroke_ != nullptr);
+      _impl_.category_level4_interior_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00080000u) {
+      GOOGLE_DCHECK(_impl_.category_level5_interior_stroke_ != nullptr);
+      _impl_.category_level5_interior_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00100000u) {
+      GOOGLE_DCHECK(_impl_.body_pivot_group_horizontal_stroke_ != nullptr);
+      _impl_.body_pivot_group_horizontal_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00200000u) {
+      GOOGLE_DCHECK(_impl_.body_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.body_pivot_group_vertical_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00400000u) {
+      GOOGLE_DCHECK(_impl_.body_pivot_de_emphasis_horizontal_stroke_ != nullptr);
+      _impl_.body_pivot_de_emphasis_horizontal_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x00800000u) {
+      GOOGLE_DCHECK(_impl_.body_pivot_emphasis_vertical_stroke_ != nullptr);
+      _impl_.body_pivot_emphasis_vertical_stroke_->Clear();
+    }
+  }
+  if (cached_has_bits & 0x7f000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_group_horizontal_stroke_ != nullptr);
+      _impl_.header_column_pivot_group_horizontal_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x02000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_group_de_emphasis_stroke_ != nullptr);
+      _impl_.header_column_pivot_group_de_emphasis_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x04000000u) {
+      GOOGLE_DCHECK(_impl_.header_column_pivot_separator_stroke_ != nullptr);
+      _impl_.header_column_pivot_separator_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x08000000u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.header_row_pivot_group_vertical_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x10000000u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_group_de_emphasis_stroke_ != nullptr);
+      _impl_.header_row_pivot_group_de_emphasis_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x20000000u) {
+      GOOGLE_DCHECK(_impl_.header_row_pivot_title_stroke_ != nullptr);
+      _impl_.header_row_pivot_title_stroke_->Clear();
+    }
+    if (cached_has_bits & 0x40000000u) {
+      GOOGLE_DCHECK(_impl_.footer_row_pivot_group_vertical_stroke_ != nullptr);
+      _impl_.footer_row_pivot_group_vertical_stroke_->Clear();
+    }
+  }
+  _impl_.auto_resize_undefined_ = false;
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
+    ::memset(&_impl_.banded_rows_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.header_column_border_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.banded_rows_undefined_)) + sizeof(_impl_.header_column_border_stroke_undefined_));
+  }
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.header_column_vertical_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.footer_row_border_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.header_column_vertical_stroke_undefined_)) + sizeof(_impl_.footer_row_border_stroke_undefined_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.footer_row_horizontal_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.header_row_verticals_visible_undefined_) -
+        reinterpret_cast<char*>(&_impl_.footer_row_horizontal_stroke_undefined_)) + sizeof(_impl_.header_row_verticals_visible_undefined_));
   }
   if (cached_has_bits & 0xff000000u) {
-    ::memset(&category_level5_top_stroke_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&category_level2_bottom_stroke_undefined_) -
-        reinterpret_cast<char*>(&category_level5_top_stroke_undefined_)) + sizeof(category_level2_bottom_stroke_undefined_));
+    ::memset(&_impl_.header_col_sep_visible_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.category_level1_top_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.header_col_sep_visible_undefined_)) + sizeof(_impl_.category_level1_top_stroke_undefined_));
   }
-  cached_has_bits = _has_bits_[3];
+  cached_has_bits = _impl_._has_bits_[3];
   if (cached_has_bits & 0x000000ffu) {
-    ::memset(&category_level3_bottom_stroke_undefined_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&category_level5_interior_stroke_undefined_) -
-        reinterpret_cast<char*>(&category_level3_bottom_stroke_undefined_)) + sizeof(category_level5_interior_stroke_undefined_));
+    ::memset(&_impl_.category_level2_top_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.category_level4_label_separator_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.category_level2_top_stroke_undefined_)) + sizeof(_impl_.category_level4_label_separator_stroke_undefined_));
   }
-  _has_bits_.Clear();
+  if (cached_has_bits & 0x0000ff00u) {
+    ::memset(&_impl_.category_level5_label_separator_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.category_level2_interior_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.category_level5_label_separator_stroke_undefined_)) + sizeof(_impl_.category_level2_interior_stroke_undefined_));
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    ::memset(&_impl_.category_level3_interior_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.header_column_pivot_group_horizontal_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.category_level3_interior_stroke_undefined_)) + sizeof(_impl_.header_column_pivot_group_horizontal_stroke_undefined_));
+  }
+  if (cached_has_bits & 0x3f000000u) {
+    ::memset(&_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.footer_row_pivot_group_vertical_stroke_undefined_) -
+        reinterpret_cast<char*>(&_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_)) + sizeof(_impl_.footer_row_pivot_group_vertical_stroke_undefined_));
+  }
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* TableStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* TableStylePropertyChangeSetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecBoolArchive auto_resize = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_auto_resize(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool auto_resize_undefined = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _Internal::set_has_auto_resize_undefined(&_has_bits_);
-          auto_resize_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_auto_resize_undefined(&_impl_._has_bits_);
+          _impl_.auto_resize_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive banded_rows = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_banded_rows(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool banded_rows_undefined = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _Internal::set_has_banded_rows_undefined(&_has_bits_);
-          banded_rows_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_banded_rows_undefined(&_impl_._has_bits_);
+          _impl_.banded_rows_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecFillArchive banded_cell_fill = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_banded_cell_fill(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool banded_cell_fill_undefined = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          _Internal::set_has_banded_cell_fill_undefined(&_has_bits_);
-          banded_cell_fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_banded_cell_fill_undefined(&_impl_._has_bits_);
+          _impl_.banded_cell_fill_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive behaves_like_spreadsheet = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_behaves_like_spreadsheet(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool behaves_like_spreadsheet_undefined = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          _Internal::set_has_behaves_like_spreadsheet_undefined(&_has_bits_);
-          behaves_like_spreadsheet_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_behaves_like_spreadsheet_undefined(&_impl_._has_bits_);
+          _impl_.behaves_like_spreadsheet_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive body_horizontal_border_stroke = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_body_horizontal_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool body_horizontal_border_stroke_undefined = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          _Internal::set_has_body_horizontal_border_stroke_undefined(&_has_bits_);
-          body_horizontal_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_body_horizontal_border_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_horizontal_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive body_vertical_border_stroke = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_body_vertical_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool body_vertical_border_stroke_undefined = 12;
       case 12:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          _Internal::set_has_body_vertical_border_stroke_undefined(&_has_bits_);
-          body_vertical_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_body_vertical_border_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_vertical_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive body_horizontal_stroke = 13;
       case 13:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_body_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool body_horizontal_stroke_undefined = 14;
       case 14:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          _Internal::set_has_body_horizontal_stroke_undefined(&_has_bits_);
-          body_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_body_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive body_vertical_stroke = 15;
       case 15:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_body_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool body_vertical_stroke_undefined = 16;
       case 16:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 128)) {
-          _Internal::set_has_body_vertical_stroke_undefined(&_has_bits_);
-          body_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_body_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_column_border_stroke = 17;
       case 17:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_column_border_stroke_undefined = 18;
       case 18:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
-          _Internal::set_has_header_column_border_stroke_undefined(&_has_bits_);
-          header_column_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_header_column_border_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_column_vertical_stroke = 19;
       case 19:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_column_vertical_stroke_undefined = 20;
       case 20:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
-          _Internal::set_has_header_column_vertical_stroke_undefined(&_has_bits_);
-          header_column_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_header_column_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_column_horizontal_stroke = 21;
       case 21:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_column_horizontal_stroke_undefined = 22;
       case 22:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
-          _Internal::set_has_header_column_horizontal_stroke_undefined(&_has_bits_);
-          header_column_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_header_column_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_column_separator_stroke = 23;
       case 23:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_column_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_column_separator_stroke_undefined = 24;
       case 24:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
-          _Internal::set_has_header_column_separator_stroke_undefined(&_has_bits_);
-          header_column_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_header_column_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_row_border_stroke = 25;
       case 25:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_border_stroke_undefined = 26;
       case 26:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 208)) {
-          _Internal::set_has_header_row_border_stroke_undefined(&_has_bits_);
-          header_row_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_header_row_border_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_row_horizontal_stroke = 27;
       case 27:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_horizontal_stroke_undefined = 28;
       case 28:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 224)) {
-          _Internal::set_has_header_row_horizontal_stroke_undefined(&_has_bits_);
-          header_row_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_header_row_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_row_vertical_stroke = 29;
       case 29:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_vertical_stroke_undefined = 30;
       case 30:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 240)) {
-          _Internal::set_has_header_row_vertical_stroke_undefined(&_has_bits_);
-          header_row_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_header_row_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive header_row_separator_stroke = 31;
       case 31:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_separator_stroke_undefined = 32;
       case 32:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 0)) {
-          _Internal::set_has_header_row_separator_stroke_undefined(&_has_bits_);
-          header_row_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_header_row_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive footer_row_border_stroke = 33;
       case 33:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_border_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_row_border_stroke_undefined = 34;
       case 34:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _Internal::set_has_footer_row_border_stroke_undefined(&_has_bits_);
-          footer_row_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_footer_row_border_stroke_undefined(&_impl_._has_bits_);
+          _impl_.footer_row_border_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive footer_row_horizontal_stroke = 35;
       case 35:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_horizontal_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_row_horizontal_stroke_undefined = 36;
       case 36:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _Internal::set_has_footer_row_horizontal_stroke_undefined(&_has_bits_);
-          footer_row_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_footer_row_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.footer_row_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive footer_row_vertical_stroke = 37;
       case 37:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_vertical_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_row_vertical_stroke_undefined = 38;
       case 38:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          _Internal::set_has_footer_row_vertical_stroke_undefined(&_has_bits_);
-          footer_row_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_footer_row_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.footer_row_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive footer_row_separator_stroke = 39;
       case 39:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_row_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_row_separator_stroke_undefined = 40;
       case 40:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          _Internal::set_has_footer_row_separator_stroke_undefined(&_has_bits_);
-          footer_row_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_footer_row_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.footer_row_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSTSOS.SpecTableStrokePresetListArchive stroke_preset_list_object = 41;
       case 41:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_stroke_preset_list_object(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool stroke_preset_list_object_undefined = 42;
       case 42:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          _Internal::set_has_stroke_preset_list_object_undefined(&_has_bits_);
-          stroke_preset_list_object_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_stroke_preset_list_object_undefined(&_impl_._has_bits_);
+          _impl_.stroke_preset_list_object_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive vertical_strokes_visible = 43;
       case 43:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_vertical_strokes_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool vertical_strokes_visible_undefined = 44;
       case 44:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          _Internal::set_has_vertical_strokes_visible_undefined(&_has_bits_);
-          vertical_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_vertical_strokes_visible_undefined(&_impl_._has_bits_);
+          _impl_.vertical_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive horizontal_strokes_visible = 45;
       case 45:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_horizontal_strokes_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool horizontal_strokes_visible_undefined = 46;
       case 46:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          _Internal::set_has_horizontal_strokes_visible_undefined(&_has_bits_);
-          horizontal_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_horizontal_strokes_visible_undefined(&_impl_._has_bits_);
+          _impl_.horizontal_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive header_row_sep_visible = 47;
       case 47:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_sep_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_sep_visible_undefined = 48;
       case 48:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 128)) {
-          _Internal::set_has_header_row_sep_visible_undefined(&_has_bits_);
-          header_row_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_header_row_sep_visible_undefined(&_impl_._has_bits_);
+          _impl_.header_row_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive header_row_verticals_visible = 49;
       case 49:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_row_verticals_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_row_verticals_visible_undefined = 50;
       case 50:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
-          _Internal::set_has_header_row_verticals_visible_undefined(&_has_bits_);
-          header_row_verticals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_header_row_verticals_visible_undefined(&_impl_._has_bits_);
+          _impl_.header_row_verticals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive header_col_sep_visible = 51;
       case 51:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_col_sep_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_col_sep_visible_undefined = 52;
       case 52:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
-          _Internal::set_has_header_col_sep_visible_undefined(&_has_bits_);
-          header_col_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_header_col_sep_visible_undefined(&_impl_._has_bits_);
+          _impl_.header_col_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive header_col_horizontals_visible = 53;
       case 53:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
           ptr = ctx->ParseMessage(_internal_mutable_header_col_horizontals_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool header_col_horizontals_visible_undefined = 54;
       case 54:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
-          _Internal::set_has_header_col_horizontals_visible_undefined(&_has_bits_);
-          header_col_horizontals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_header_col_horizontals_visible_undefined(&_impl_._has_bits_);
+          _impl_.header_col_horizontals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive footer_sep_visible = 55;
       case 55:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_sep_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_sep_visible_undefined = 56;
       case 56:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
-          _Internal::set_has_footer_sep_visible_undefined(&_has_bits_);
-          footer_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_footer_sep_visible_undefined(&_impl_._has_bits_);
+          _impl_.footer_sep_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive footer_verticals_visible = 57;
       case 57:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_footer_verticals_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool footer_verticals_visible_undefined = 58;
       case 58:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 208)) {
-          _Internal::set_has_footer_verticals_visible_undefined(&_has_bits_);
-          footer_verticals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_footer_verticals_visible_undefined(&_impl_._has_bits_);
+          _impl_.footer_verticals_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecBoolArchive border_strokes_visible = 59;
       case 59:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_border_strokes_visible(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool border_strokes_visible_undefined = 60;
       case 60:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 224)) {
-          _Internal::set_has_border_strokes_visible_undefined(&_has_bits_);
-          border_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_border_strokes_visible_undefined(&_impl_._has_bits_);
+          _impl_.border_strokes_visible_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecStringArchive master_font_family = 61;
       case 61:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_master_font_family(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool master_font_family_undefined = 62;
       case 62:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 240)) {
-          _Internal::set_has_master_font_family_undefined(&_has_bits_);
-          master_font_family_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_master_font_family_undefined(&_impl_._has_bits_);
+          _impl_.master_font_family_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSSSOS.SpecIntegerArchive writing_direction = 63;
       case 63:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_writing_direction(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool writing_direction_undefined = 64;
       case 64:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 0)) {
-          _Internal::set_has_writing_direction_undefined(&_has_bits_);
-          writing_direction_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_writing_direction_undefined(&_impl_._has_bits_);
+          _impl_.writing_direction_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level1_top_stroke = 65;
       case 65:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level1_top_stroke_undefined = 66;
       case 66:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _Internal::set_has_category_level1_top_stroke_undefined(&_has_bits_);
-          category_level1_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_category_level1_top_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level1_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level2_top_stroke = 67;
       case 67:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level2_top_stroke_undefined = 68;
       case 68:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _Internal::set_has_category_level2_top_stroke_undefined(&_has_bits_);
-          category_level2_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_category_level2_top_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level2_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level3_top_stroke = 69;
       case 69:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level3_top_stroke_undefined = 70;
       case 70:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          _Internal::set_has_category_level3_top_stroke_undefined(&_has_bits_);
-          category_level3_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_category_level3_top_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level3_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level4_top_stroke = 71;
       case 71:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level4_top_stroke_undefined = 72;
       case 72:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          _Internal::set_has_category_level4_top_stroke_undefined(&_has_bits_);
-          category_level4_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_category_level4_top_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level4_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level5_top_stroke = 73;
       case 73:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_top_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level5_top_stroke_undefined = 74;
       case 74:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          _Internal::set_has_category_level5_top_stroke_undefined(&_has_bits_);
-          category_level5_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_category_level5_top_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level5_top_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level1_label_separator_stroke = 75;
       case 75:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level1_label_separator_stroke_undefined = 76;
       case 76:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          _Internal::set_has_category_level1_label_separator_stroke_undefined(&_has_bits_);
-          category_level1_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_category_level1_label_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level1_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level2_label_separator_stroke = 77;
       case 77:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level2_label_separator_stroke_undefined = 78;
       case 78:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          _Internal::set_has_category_level2_label_separator_stroke_undefined(&_has_bits_);
-          category_level2_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_category_level2_label_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level2_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level3_label_separator_stroke = 79;
       case 79:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level3_label_separator_stroke_undefined = 80;
       case 80:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 128)) {
-          _Internal::set_has_category_level3_label_separator_stroke_undefined(&_has_bits_);
-          category_level3_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_category_level3_label_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level3_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level4_label_separator_stroke = 81;
       case 81:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level4_label_separator_stroke_undefined = 82;
       case 82:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
-          _Internal::set_has_category_level4_label_separator_stroke_undefined(&_has_bits_);
-          category_level4_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_category_level4_label_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level4_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level5_label_separator_stroke = 83;
       case 83:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_label_separator_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level5_label_separator_stroke_undefined = 84;
       case 84:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
-          _Internal::set_has_category_level5_label_separator_stroke_undefined(&_has_bits_);
-          category_level5_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_category_level5_label_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level5_label_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level1_bottom_stroke = 85;
       case 85:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level1_bottom_stroke_undefined = 86;
       case 86:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
-          _Internal::set_has_category_level1_bottom_stroke_undefined(&_has_bits_);
-          category_level1_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_category_level1_bottom_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level1_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level2_bottom_stroke = 87;
       case 87:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level2_bottom_stroke_undefined = 88;
       case 88:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
-          _Internal::set_has_category_level2_bottom_stroke_undefined(&_has_bits_);
-          category_level2_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_category_level2_bottom_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level2_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level3_bottom_stroke = 89;
       case 89:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level3_bottom_stroke_undefined = 90;
       case 90:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 208)) {
-          _Internal::set_has_category_level3_bottom_stroke_undefined(&_has_bits_);
-          category_level3_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_category_level3_bottom_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level3_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level4_bottom_stroke = 91;
       case 91:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level4_bottom_stroke_undefined = 92;
       case 92:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 224)) {
-          _Internal::set_has_category_level4_bottom_stroke_undefined(&_has_bits_);
-          category_level4_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_category_level4_bottom_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level4_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level5_bottom_stroke = 93;
       case 93:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_bottom_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level5_bottom_stroke_undefined = 94;
       case 94:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 240)) {
-          _Internal::set_has_category_level5_bottom_stroke_undefined(&_has_bits_);
-          category_level5_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_category_level5_bottom_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level5_bottom_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level1_interior_stroke = 95;
       case 95:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level1_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level1_interior_stroke_undefined = 96;
       case 96:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 0)) {
-          _Internal::set_has_category_level1_interior_stroke_undefined(&_has_bits_);
-          category_level1_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 0)) {
+          _Internal::set_has_category_level1_interior_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level1_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level2_interior_stroke = 97;
       case 97:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level2_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level2_interior_stroke_undefined = 98;
       case 98:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _Internal::set_has_category_level2_interior_stroke_undefined(&_has_bits_);
-          category_level2_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
+          _Internal::set_has_category_level2_interior_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level2_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level3_interior_stroke = 99;
       case 99:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level3_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level3_interior_stroke_undefined = 100;
       case 100:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _Internal::set_has_category_level3_interior_stroke_undefined(&_has_bits_);
-          category_level3_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
+          _Internal::set_has_category_level3_interior_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level3_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level4_interior_stroke = 101;
       case 101:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level4_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level4_interior_stroke_undefined = 102;
       case 102:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          _Internal::set_has_category_level4_interior_stroke_undefined(&_has_bits_);
-          category_level4_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
+          _Internal::set_has_category_level4_interior_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level4_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSDSOS.SpecStrokeArchive category_level5_interior_stroke = 103;
       case 103:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_category_level5_interior_stroke(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool category_level5_interior_stroke_undefined = 104;
       case 104:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          _Internal::set_has_category_level5_interior_stroke_undefined(&_has_bits_);
-          category_level5_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 64)) {
+          _Internal::set_has_category_level5_interior_stroke_undefined(&_impl_._has_bits_);
+          _impl_.category_level5_interior_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
+      // optional .TSDSOS.SpecStrokeArchive body_pivot_group_horizontal_stroke = 105;
+      case 105:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
+          ptr = ctx->ParseMessage(_internal_mutable_body_pivot_group_horizontal_stroke(), ptr);
           CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
+        } else
+          goto handle_unusual;
         continue;
-      }
+      // optional bool body_pivot_group_horizontal_stroke_undefined = 106;
+      case 106:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 80)) {
+          _Internal::set_has_body_pivot_group_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_pivot_group_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive body_pivot_group_vertical_stroke = 107;
+      case 107:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
+          ptr = ctx->ParseMessage(_internal_mutable_body_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool body_pivot_group_vertical_stroke_undefined = 108;
+      case 108:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 96)) {
+          _Internal::set_has_body_pivot_group_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_pivot_group_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive body_pivot_de_emphasis_horizontal_stroke = 109;
+      case 109:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_body_pivot_de_emphasis_horizontal_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool body_pivot_de_emphasis_horizontal_stroke_undefined = 110;
+      case 110:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 112)) {
+          _Internal::set_has_body_pivot_de_emphasis_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive body_pivot_emphasis_vertical_stroke = 111;
+      case 111:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_body_pivot_emphasis_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool body_pivot_emphasis_vertical_stroke_undefined = 112;
+      case 112:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 128)) {
+          _Internal::set_has_body_pivot_emphasis_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.body_pivot_emphasis_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_horizontal_stroke = 113;
+      case 113:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 138)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_group_horizontal_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_column_pivot_group_horizontal_stroke_undefined = 114;
+      case 114:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 144)) {
+          _Internal::set_has_header_column_pivot_group_horizontal_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_pivot_group_horizontal_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_de_emphasis_stroke = 115;
+      case 115:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 154)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_group_de_emphasis_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_column_pivot_group_de_emphasis_stroke_undefined = 116;
+      case 116:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 160)) {
+          _Internal::set_has_header_column_pivot_group_de_emphasis_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_pivot_group_de_emphasis_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_column_pivot_separator_stroke = 117;
+      case 117:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 170)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_column_pivot_separator_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_column_pivot_separator_stroke_undefined = 118;
+      case 118:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 176)) {
+          _Internal::set_has_header_column_pivot_separator_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_column_pivot_separator_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_vertical_stroke = 119;
+      case 119:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 186)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_row_pivot_group_vertical_stroke_undefined = 120;
+      case 120:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 192)) {
+          _Internal::set_has_header_row_pivot_group_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_pivot_group_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_de_emphasis_stroke = 121;
+      case 121:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 202)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_group_de_emphasis_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_row_pivot_group_de_emphasis_stroke_undefined = 122;
+      case 122:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 208)) {
+          _Internal::set_has_header_row_pivot_group_de_emphasis_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_pivot_group_de_emphasis_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive header_row_pivot_title_stroke = 123;
+      case 123:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 218)) {
+          ptr = ctx->ParseMessage(_internal_mutable_header_row_pivot_title_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool header_row_pivot_title_stroke_undefined = 124;
+      case 124:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 224)) {
+          _Internal::set_has_header_row_pivot_title_stroke_undefined(&_impl_._has_bits_);
+          _impl_.header_row_pivot_title_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSDSOS.SpecStrokeArchive footer_row_pivot_group_vertical_stroke = 125;
+      case 125:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 234)) {
+          ptr = ctx->ParseMessage(_internal_mutable_footer_row_pivot_group_vertical_stroke(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional bool footer_row_pivot_group_vertical_stroke_undefined = 126;
+      case 126:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 240)) {
+          _Internal::set_has_footer_row_pivot_group_vertical_stroke_undefined(&_impl_._has_bits_);
+          _impl_.footer_row_pivot_group_vertical_stroke_undefined_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TableStylePropertyChangeSetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* TableStylePropertyChangeSetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSTSOS.TableStylePropertyChangeSetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecBoolArchive auto_resize = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::auto_resize(this), target, stream);
+      InternalWriteMessage(1, _Internal::auto_resize(this),
+        _Internal::auto_resize(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   // optional bool auto_resize_undefined = 2;
-  if (cached_has_bits & 0x00100000u) {
+  if (cached_has_bits & 0x80000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_auto_resize_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_auto_resize_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecBoolArchive banded_rows = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::banded_rows(this), target, stream);
+      InternalWriteMessage(3, _Internal::banded_rows(this),
+        _Internal::banded_rows(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool banded_rows_undefined = 4;
-  if (cached_has_bits & 0x00200000u) {
+  if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_banded_rows_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_banded_rows_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecFillArchive banded_cell_fill = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::banded_cell_fill(this), target, stream);
+      InternalWriteMessage(5, _Internal::banded_cell_fill(this),
+        _Internal::banded_cell_fill(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool banded_cell_fill_undefined = 6;
-  if (cached_has_bits & 0x00400000u) {
+  if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_banded_cell_fill_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_banded_cell_fill_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecBoolArchive behaves_like_spreadsheet = 7;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::behaves_like_spreadsheet(this), target, stream);
+      InternalWriteMessage(7, _Internal::behaves_like_spreadsheet(this),
+        _Internal::behaves_like_spreadsheet(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool behaves_like_spreadsheet_undefined = 8;
-  if (cached_has_bits & 0x00800000u) {
+  if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_behaves_like_spreadsheet_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(8, this->_internal_behaves_like_spreadsheet_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive body_horizontal_border_stroke = 9;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::body_horizontal_border_stroke(this), target, stream);
+      InternalWriteMessage(9, _Internal::body_horizontal_border_stroke(this),
+        _Internal::body_horizontal_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool body_horizontal_border_stroke_undefined = 10;
-  if (cached_has_bits & 0x01000000u) {
+  if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_body_horizontal_border_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(10, this->_internal_body_horizontal_border_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive body_vertical_border_stroke = 11;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::body_vertical_border_stroke(this), target, stream);
+      InternalWriteMessage(11, _Internal::body_vertical_border_stroke(this),
+        _Internal::body_vertical_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool body_vertical_border_stroke_undefined = 12;
-  if (cached_has_bits & 0x02000000u) {
+  if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_body_vertical_border_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(12, this->_internal_body_vertical_border_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive body_horizontal_stroke = 13;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        13, _Internal::body_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(13, _Internal::body_horizontal_stroke(this),
+        _Internal::body_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool body_horizontal_stroke_undefined = 14;
-  if (cached_has_bits & 0x04000000u) {
+  if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(14, this->_internal_body_horizontal_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(14, this->_internal_body_horizontal_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive body_vertical_stroke = 15;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        15, _Internal::body_vertical_stroke(this), target, stream);
+      InternalWriteMessage(15, _Internal::body_vertical_stroke(this),
+        _Internal::body_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool body_vertical_stroke_undefined = 16;
-  if (cached_has_bits & 0x08000000u) {
+  if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(16, this->_internal_body_vertical_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(16, this->_internal_body_vertical_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_column_border_stroke = 17;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        17, _Internal::header_column_border_stroke(this), target, stream);
+      InternalWriteMessage(17, _Internal::header_column_border_stroke(this),
+        _Internal::header_column_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_column_border_stroke_undefined = 18;
-  if (cached_has_bits & 0x10000000u) {
+  if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(18, this->_internal_header_column_border_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(18, this->_internal_header_column_border_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_column_vertical_stroke = 19;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        19, _Internal::header_column_vertical_stroke(this), target, stream);
+      InternalWriteMessage(19, _Internal::header_column_vertical_stroke(this),
+        _Internal::header_column_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_column_vertical_stroke_undefined = 20;
-  if (cached_has_bits & 0x20000000u) {
+  if (cached_has_bits & 0x00000100u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(20, this->_internal_header_column_vertical_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(20, this->_internal_header_column_vertical_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_column_horizontal_stroke = 21;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        21, _Internal::header_column_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(21, _Internal::header_column_horizontal_stroke(this),
+        _Internal::header_column_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_column_horizontal_stroke_undefined = 22;
-  if (cached_has_bits & 0x40000000u) {
+  if (cached_has_bits & 0x00000200u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(22, this->_internal_header_column_horizontal_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(22, this->_internal_header_column_horizontal_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_column_separator_stroke = 23;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        23, _Internal::header_column_separator_stroke(this), target, stream);
+      InternalWriteMessage(23, _Internal::header_column_separator_stroke(this),
+        _Internal::header_column_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_column_separator_stroke_undefined = 24;
-  if (cached_has_bits & 0x80000000u) {
+  if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(24, this->_internal_header_column_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(24, this->_internal_header_column_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_row_border_stroke = 25;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        25, _Internal::header_row_border_stroke(this), target, stream);
+      InternalWriteMessage(25, _Internal::header_row_border_stroke(this),
+        _Internal::header_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_row_border_stroke_undefined = 26;
-  if (cached_has_bits & 0x00000001u) {
+  if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(26, this->_internal_header_row_border_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(26, this->_internal_header_row_border_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_row_horizontal_stroke = 27;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        27, _Internal::header_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(27, _Internal::header_row_horizontal_stroke(this),
+        _Internal::header_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_row_horizontal_stroke_undefined = 28;
-  if (cached_has_bits & 0x00000002u) {
+  if (cached_has_bits & 0x00001000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(28, this->_internal_header_row_horizontal_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(28, this->_internal_header_row_horizontal_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_row_vertical_stroke = 29;
   if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        29, _Internal::header_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(29, _Internal::header_row_vertical_stroke(this),
+        _Internal::header_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_row_vertical_stroke_undefined = 30;
-  if (cached_has_bits & 0x00000004u) {
+  if (cached_has_bits & 0x00002000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(30, this->_internal_header_row_vertical_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(30, this->_internal_header_row_vertical_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive header_row_separator_stroke = 31;
   if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        31, _Internal::header_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(31, _Internal::header_row_separator_stroke(this),
+        _Internal::header_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool header_row_separator_stroke_undefined = 32;
-  if (cached_has_bits & 0x00000008u) {
+  if (cached_has_bits & 0x00004000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(32, this->_internal_header_row_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(32, this->_internal_header_row_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive footer_row_border_stroke = 33;
   if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        33, _Internal::footer_row_border_stroke(this), target, stream);
+      InternalWriteMessage(33, _Internal::footer_row_border_stroke(this),
+        _Internal::footer_row_border_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool footer_row_border_stroke_undefined = 34;
-  if (cached_has_bits & 0x00000010u) {
+  if (cached_has_bits & 0x00008000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(34, this->_internal_footer_row_border_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(34, this->_internal_footer_row_border_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive footer_row_horizontal_stroke = 35;
   if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        35, _Internal::footer_row_horizontal_stroke(this), target, stream);
+      InternalWriteMessage(35, _Internal::footer_row_horizontal_stroke(this),
+        _Internal::footer_row_horizontal_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool footer_row_horizontal_stroke_undefined = 36;
-  if (cached_has_bits & 0x00000020u) {
+  if (cached_has_bits & 0x00010000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(36, this->_internal_footer_row_horizontal_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(36, this->_internal_footer_row_horizontal_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive footer_row_vertical_stroke = 37;
   if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        37, _Internal::footer_row_vertical_stroke(this), target, stream);
+      InternalWriteMessage(37, _Internal::footer_row_vertical_stroke(this),
+        _Internal::footer_row_vertical_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool footer_row_vertical_stroke_undefined = 38;
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00020000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(38, this->_internal_footer_row_vertical_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(38, this->_internal_footer_row_vertical_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSDSOS.SpecStrokeArchive footer_row_separator_stroke = 39;
   if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        39, _Internal::footer_row_separator_stroke(this), target, stream);
+      InternalWriteMessage(39, _Internal::footer_row_separator_stroke(this),
+        _Internal::footer_row_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool footer_row_separator_stroke_undefined = 40;
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00040000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(40, this->_internal_footer_row_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(40, this->_internal_footer_row_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSTSOS.SpecTableStrokePresetListArchive stroke_preset_list_object = 41;
   if (cached_has_bits & 0x00100000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        41, _Internal::stroke_preset_list_object(this), target, stream);
+      InternalWriteMessage(41, _Internal::stroke_preset_list_object(this),
+        _Internal::stroke_preset_list_object(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool stroke_preset_list_object_undefined = 42;
-  if (cached_has_bits & 0x00000100u) {
+  if (cached_has_bits & 0x00080000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(42, this->_internal_stroke_preset_list_object_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(42, this->_internal_stroke_preset_list_object_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecBoolArchive vertical_strokes_visible = 43;
   if (cached_has_bits & 0x00200000u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        43, _Internal::vertical_strokes_visible(this), target, stream);
+      InternalWriteMessage(43, _Internal::vertical_strokes_visible(this),
+        _Internal::vertical_strokes_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
+  cached_has_bits = _impl_._has_bits_[2];
   // optional bool vertical_strokes_visible_undefined = 44;
-  if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(44, this->_internal_vertical_strokes_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive horizontal_strokes_visible = 45;
-  if (cached_has_bits & 0x00400000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        45, _Internal::horizontal_strokes_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool horizontal_strokes_visible_undefined = 46;
-  if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(46, this->_internal_horizontal_strokes_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive header_row_sep_visible = 47;
-  if (cached_has_bits & 0x00800000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        47, _Internal::header_row_sep_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool header_row_sep_visible_undefined = 48;
-  if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(48, this->_internal_header_row_sep_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive header_row_verticals_visible = 49;
-  if (cached_has_bits & 0x01000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        49, _Internal::header_row_verticals_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool header_row_verticals_visible_undefined = 50;
-  if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(50, this->_internal_header_row_verticals_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive header_col_sep_visible = 51;
-  if (cached_has_bits & 0x02000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        51, _Internal::header_col_sep_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool header_col_sep_visible_undefined = 52;
-  if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(52, this->_internal_header_col_sep_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive header_col_horizontals_visible = 53;
-  if (cached_has_bits & 0x04000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        53, _Internal::header_col_horizontals_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool header_col_horizontals_visible_undefined = 54;
-  if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(54, this->_internal_header_col_horizontals_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive footer_sep_visible = 55;
-  if (cached_has_bits & 0x08000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        55, _Internal::footer_sep_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool footer_sep_visible_undefined = 56;
-  if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(56, this->_internal_footer_sep_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive footer_verticals_visible = 57;
-  if (cached_has_bits & 0x10000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        57, _Internal::footer_verticals_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool footer_verticals_visible_undefined = 58;
-  if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(58, this->_internal_footer_verticals_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecBoolArchive border_strokes_visible = 59;
-  if (cached_has_bits & 0x20000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        59, _Internal::border_strokes_visible(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool border_strokes_visible_undefined = 60;
-  if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(60, this->_internal_border_strokes_visible_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecStringArchive master_font_family = 61;
-  if (cached_has_bits & 0x40000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        61, _Internal::master_font_family(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool master_font_family_undefined = 62;
-  if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(62, this->_internal_master_font_family_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[0];
-  // optional .TSSSOS.SpecIntegerArchive writing_direction = 63;
-  if (cached_has_bits & 0x80000000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        63, _Internal::writing_direction(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool writing_direction_undefined = 64;
-  if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(64, this->_internal_writing_direction_undefined(), target);
-  }
-
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level1_top_stroke = 65;
-  if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        65, _Internal::category_level1_top_stroke(this), target, stream);
-  }
-
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level1_top_stroke_undefined = 66;
   if (cached_has_bits & 0x00100000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(66, this->_internal_category_level1_top_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(44, this->_internal_vertical_strokes_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level2_top_stroke = 67;
-  if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive horizontal_strokes_visible = 45;
+  if (cached_has_bits & 0x00400000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        67, _Internal::category_level2_top_stroke(this), target, stream);
+      InternalWriteMessage(45, _Internal::horizontal_strokes_visible(this),
+        _Internal::horizontal_strokes_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level2_top_stroke_undefined = 68;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool horizontal_strokes_visible_undefined = 46;
   if (cached_has_bits & 0x00200000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(68, this->_internal_category_level2_top_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(46, this->_internal_horizontal_strokes_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level3_top_stroke = 69;
-  if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive header_row_sep_visible = 47;
+  if (cached_has_bits & 0x00800000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        69, _Internal::category_level3_top_stroke(this), target, stream);
+      InternalWriteMessage(47, _Internal::header_row_sep_visible(this),
+        _Internal::header_row_sep_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level3_top_stroke_undefined = 70;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool header_row_sep_visible_undefined = 48;
   if (cached_has_bits & 0x00400000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(70, this->_internal_category_level3_top_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(48, this->_internal_header_row_sep_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level4_top_stroke = 71;
-  if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive header_row_verticals_visible = 49;
+  if (cached_has_bits & 0x01000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        71, _Internal::category_level4_top_stroke(this), target, stream);
+      InternalWriteMessage(49, _Internal::header_row_verticals_visible(this),
+        _Internal::header_row_verticals_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level4_top_stroke_undefined = 72;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool header_row_verticals_visible_undefined = 50;
   if (cached_has_bits & 0x00800000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(72, this->_internal_category_level4_top_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(50, this->_internal_header_row_verticals_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level5_top_stroke = 73;
-  if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive header_col_sep_visible = 51;
+  if (cached_has_bits & 0x02000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        73, _Internal::category_level5_top_stroke(this), target, stream);
+      InternalWriteMessage(51, _Internal::header_col_sep_visible(this),
+        _Internal::header_col_sep_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level5_top_stroke_undefined = 74;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool header_col_sep_visible_undefined = 52;
   if (cached_has_bits & 0x01000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(74, this->_internal_category_level5_top_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(52, this->_internal_header_col_sep_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level1_label_separator_stroke = 75;
-  if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive header_col_horizontals_visible = 53;
+  if (cached_has_bits & 0x04000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        75, _Internal::category_level1_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(53, _Internal::header_col_horizontals_visible(this),
+        _Internal::header_col_horizontals_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level1_label_separator_stroke_undefined = 76;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool header_col_horizontals_visible_undefined = 54;
   if (cached_has_bits & 0x02000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(76, this->_internal_category_level1_label_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(54, this->_internal_header_col_horizontals_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level2_label_separator_stroke = 77;
-  if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive footer_sep_visible = 55;
+  if (cached_has_bits & 0x08000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        77, _Internal::category_level2_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(55, _Internal::footer_sep_visible(this),
+        _Internal::footer_sep_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level2_label_separator_stroke_undefined = 78;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool footer_sep_visible_undefined = 56;
   if (cached_has_bits & 0x04000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(78, this->_internal_category_level2_label_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(56, this->_internal_footer_sep_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level3_label_separator_stroke = 79;
-  if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive footer_verticals_visible = 57;
+  if (cached_has_bits & 0x10000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        79, _Internal::category_level3_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(57, _Internal::footer_verticals_visible(this),
+        _Internal::footer_verticals_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level3_label_separator_stroke_undefined = 80;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool footer_verticals_visible_undefined = 58;
   if (cached_has_bits & 0x08000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(80, this->_internal_category_level3_label_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(58, this->_internal_footer_verticals_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level4_label_separator_stroke = 81;
-  if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecBoolArchive border_strokes_visible = 59;
+  if (cached_has_bits & 0x20000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        81, _Internal::category_level4_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(59, _Internal::border_strokes_visible(this),
+        _Internal::border_strokes_visible(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level4_label_separator_stroke_undefined = 82;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool border_strokes_visible_undefined = 60;
   if (cached_has_bits & 0x10000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(82, this->_internal_category_level4_label_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(60, this->_internal_border_strokes_visible_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level5_label_separator_stroke = 83;
-  if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecStringArchive master_font_family = 61;
+  if (cached_has_bits & 0x40000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        83, _Internal::category_level5_label_separator_stroke(this), target, stream);
+      InternalWriteMessage(61, _Internal::master_font_family(this),
+        _Internal::master_font_family(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level5_label_separator_stroke_undefined = 84;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool master_font_family_undefined = 62;
   if (cached_has_bits & 0x20000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(84, this->_internal_category_level5_label_separator_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(62, this->_internal_master_font_family_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level1_bottom_stroke = 85;
-  if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[0];
+  // optional .TSSSOS.SpecIntegerArchive writing_direction = 63;
+  if (cached_has_bits & 0x80000000u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        85, _Internal::category_level1_bottom_stroke(this), target, stream);
+      InternalWriteMessage(63, _Internal::writing_direction(this),
+        _Internal::writing_direction(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level1_bottom_stroke_undefined = 86;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool writing_direction_undefined = 64;
   if (cached_has_bits & 0x40000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(86, this->_internal_category_level1_bottom_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(64, this->_internal_writing_direction_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level2_bottom_stroke = 87;
-  if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level1_top_stroke = 65;
+  if (cached_has_bits & 0x00000001u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        87, _Internal::category_level2_bottom_stroke(this), target, stream);
+      InternalWriteMessage(65, _Internal::category_level1_top_stroke(this),
+        _Internal::category_level1_top_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[2];
-  // optional bool category_level2_bottom_stroke_undefined = 88;
+  cached_has_bits = _impl_._has_bits_[2];
+  // optional bool category_level1_top_stroke_undefined = 66;
   if (cached_has_bits & 0x80000000u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(88, this->_internal_category_level2_bottom_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(66, this->_internal_category_level1_top_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level3_bottom_stroke = 89;
-  if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level2_top_stroke = 67;
+  if (cached_has_bits & 0x00000002u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        89, _Internal::category_level3_bottom_stroke(this), target, stream);
+      InternalWriteMessage(67, _Internal::category_level2_top_stroke(this),
+        _Internal::category_level2_top_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level3_bottom_stroke_undefined = 90;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level2_top_stroke_undefined = 68;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(90, this->_internal_category_level3_bottom_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(68, this->_internal_category_level2_top_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level4_bottom_stroke = 91;
-  if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level3_top_stroke = 69;
+  if (cached_has_bits & 0x00000004u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        91, _Internal::category_level4_bottom_stroke(this), target, stream);
+      InternalWriteMessage(69, _Internal::category_level3_top_stroke(this),
+        _Internal::category_level3_top_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level4_bottom_stroke_undefined = 92;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level3_top_stroke_undefined = 70;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(92, this->_internal_category_level4_bottom_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(70, this->_internal_category_level3_top_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level5_bottom_stroke = 93;
-  if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level4_top_stroke = 71;
+  if (cached_has_bits & 0x00000008u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        93, _Internal::category_level5_bottom_stroke(this), target, stream);
+      InternalWriteMessage(71, _Internal::category_level4_top_stroke(this),
+        _Internal::category_level4_top_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level5_bottom_stroke_undefined = 94;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level4_top_stroke_undefined = 72;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(94, this->_internal_category_level5_bottom_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(72, this->_internal_category_level4_top_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level1_interior_stroke = 95;
-  if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level5_top_stroke = 73;
+  if (cached_has_bits & 0x00000010u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        95, _Internal::category_level1_interior_stroke(this), target, stream);
+      InternalWriteMessage(73, _Internal::category_level5_top_stroke(this),
+        _Internal::category_level5_top_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level1_interior_stroke_undefined = 96;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level5_top_stroke_undefined = 74;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(96, this->_internal_category_level1_interior_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(74, this->_internal_category_level5_top_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level2_interior_stroke = 97;
-  if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level1_label_separator_stroke = 75;
+  if (cached_has_bits & 0x00000020u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        97, _Internal::category_level2_interior_stroke(this), target, stream);
+      InternalWriteMessage(75, _Internal::category_level1_label_separator_stroke(this),
+        _Internal::category_level1_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level2_interior_stroke_undefined = 98;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level1_label_separator_stroke_undefined = 76;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(98, this->_internal_category_level2_interior_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(76, this->_internal_category_level1_label_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level3_interior_stroke = 99;
-  if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level2_label_separator_stroke = 77;
+  if (cached_has_bits & 0x00000040u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        99, _Internal::category_level3_interior_stroke(this), target, stream);
+      InternalWriteMessage(77, _Internal::category_level2_label_separator_stroke(this),
+        _Internal::category_level2_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level3_interior_stroke_undefined = 100;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level2_label_separator_stroke_undefined = 78;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(100, this->_internal_category_level3_interior_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(78, this->_internal_category_level2_label_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level4_interior_stroke = 101;
-  if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level3_label_separator_stroke = 79;
+  if (cached_has_bits & 0x00000080u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        101, _Internal::category_level4_interior_stroke(this), target, stream);
+      InternalWriteMessage(79, _Internal::category_level3_label_separator_stroke(this),
+        _Internal::category_level3_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level4_interior_stroke_undefined = 102;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level3_label_separator_stroke_undefined = 80;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(102, this->_internal_category_level4_interior_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(80, this->_internal_category_level3_label_separator_stroke_undefined(), target);
   }
 
-  cached_has_bits = _has_bits_[1];
-  // optional .TSDSOS.SpecStrokeArchive category_level5_interior_stroke = 103;
-  if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level4_label_separator_stroke = 81;
+  if (cached_has_bits & 0x00000100u) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        103, _Internal::category_level5_interior_stroke(this), target, stream);
+      InternalWriteMessage(81, _Internal::category_level4_label_separator_stroke(this),
+        _Internal::category_level4_label_separator_stroke(this).GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[3];
-  // optional bool category_level5_interior_stroke_undefined = 104;
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level4_label_separator_stroke_undefined = 82;
   if (cached_has_bits & 0x00000080u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(104, this->_internal_category_level5_interior_stroke_undefined(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(82, this->_internal_category_level4_label_separator_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level5_label_separator_stroke = 83;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(83, _Internal::category_level5_label_separator_stroke(this),
+        _Internal::category_level5_label_separator_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level5_label_separator_stroke_undefined = 84;
+  if (cached_has_bits & 0x00000100u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(84, this->_internal_category_level5_label_separator_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level1_bottom_stroke = 85;
+  if (cached_has_bits & 0x00000400u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(85, _Internal::category_level1_bottom_stroke(this),
+        _Internal::category_level1_bottom_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level1_bottom_stroke_undefined = 86;
+  if (cached_has_bits & 0x00000200u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(86, this->_internal_category_level1_bottom_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level2_bottom_stroke = 87;
+  if (cached_has_bits & 0x00000800u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(87, _Internal::category_level2_bottom_stroke(this),
+        _Internal::category_level2_bottom_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level2_bottom_stroke_undefined = 88;
+  if (cached_has_bits & 0x00000400u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(88, this->_internal_category_level2_bottom_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level3_bottom_stroke = 89;
+  if (cached_has_bits & 0x00001000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(89, _Internal::category_level3_bottom_stroke(this),
+        _Internal::category_level3_bottom_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level3_bottom_stroke_undefined = 90;
+  if (cached_has_bits & 0x00000800u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(90, this->_internal_category_level3_bottom_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level4_bottom_stroke = 91;
+  if (cached_has_bits & 0x00002000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(91, _Internal::category_level4_bottom_stroke(this),
+        _Internal::category_level4_bottom_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level4_bottom_stroke_undefined = 92;
+  if (cached_has_bits & 0x00001000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(92, this->_internal_category_level4_bottom_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level5_bottom_stroke = 93;
+  if (cached_has_bits & 0x00004000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(93, _Internal::category_level5_bottom_stroke(this),
+        _Internal::category_level5_bottom_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level5_bottom_stroke_undefined = 94;
+  if (cached_has_bits & 0x00002000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(94, this->_internal_category_level5_bottom_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level1_interior_stroke = 95;
+  if (cached_has_bits & 0x00008000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(95, _Internal::category_level1_interior_stroke(this),
+        _Internal::category_level1_interior_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level1_interior_stroke_undefined = 96;
+  if (cached_has_bits & 0x00004000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(96, this->_internal_category_level1_interior_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level2_interior_stroke = 97;
+  if (cached_has_bits & 0x00010000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(97, _Internal::category_level2_interior_stroke(this),
+        _Internal::category_level2_interior_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level2_interior_stroke_undefined = 98;
+  if (cached_has_bits & 0x00008000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(98, this->_internal_category_level2_interior_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level3_interior_stroke = 99;
+  if (cached_has_bits & 0x00020000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(99, _Internal::category_level3_interior_stroke(this),
+        _Internal::category_level3_interior_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level3_interior_stroke_undefined = 100;
+  if (cached_has_bits & 0x00010000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(100, this->_internal_category_level3_interior_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level4_interior_stroke = 101;
+  if (cached_has_bits & 0x00040000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(101, _Internal::category_level4_interior_stroke(this),
+        _Internal::category_level4_interior_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level4_interior_stroke_undefined = 102;
+  if (cached_has_bits & 0x00020000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(102, this->_internal_category_level4_interior_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive category_level5_interior_stroke = 103;
+  if (cached_has_bits & 0x00080000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(103, _Internal::category_level5_interior_stroke(this),
+        _Internal::category_level5_interior_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool category_level5_interior_stroke_undefined = 104;
+  if (cached_has_bits & 0x00040000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(104, this->_internal_category_level5_interior_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive body_pivot_group_horizontal_stroke = 105;
+  if (cached_has_bits & 0x00100000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(105, _Internal::body_pivot_group_horizontal_stroke(this),
+        _Internal::body_pivot_group_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool body_pivot_group_horizontal_stroke_undefined = 106;
+  if (cached_has_bits & 0x00080000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(106, this->_internal_body_pivot_group_horizontal_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive body_pivot_group_vertical_stroke = 107;
+  if (cached_has_bits & 0x00200000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(107, _Internal::body_pivot_group_vertical_stroke(this),
+        _Internal::body_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool body_pivot_group_vertical_stroke_undefined = 108;
+  if (cached_has_bits & 0x00100000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(108, this->_internal_body_pivot_group_vertical_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive body_pivot_de_emphasis_horizontal_stroke = 109;
+  if (cached_has_bits & 0x00400000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(109, _Internal::body_pivot_de_emphasis_horizontal_stroke(this),
+        _Internal::body_pivot_de_emphasis_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool body_pivot_de_emphasis_horizontal_stroke_undefined = 110;
+  if (cached_has_bits & 0x00200000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(110, this->_internal_body_pivot_de_emphasis_horizontal_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive body_pivot_emphasis_vertical_stroke = 111;
+  if (cached_has_bits & 0x00800000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(111, _Internal::body_pivot_emphasis_vertical_stroke(this),
+        _Internal::body_pivot_emphasis_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool body_pivot_emphasis_vertical_stroke_undefined = 112;
+  if (cached_has_bits & 0x00400000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(112, this->_internal_body_pivot_emphasis_vertical_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_horizontal_stroke = 113;
+  if (cached_has_bits & 0x01000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(113, _Internal::header_column_pivot_group_horizontal_stroke(this),
+        _Internal::header_column_pivot_group_horizontal_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_column_pivot_group_horizontal_stroke_undefined = 114;
+  if (cached_has_bits & 0x00800000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(114, this->_internal_header_column_pivot_group_horizontal_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_de_emphasis_stroke = 115;
+  if (cached_has_bits & 0x02000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(115, _Internal::header_column_pivot_group_de_emphasis_stroke(this),
+        _Internal::header_column_pivot_group_de_emphasis_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_column_pivot_group_de_emphasis_stroke_undefined = 116;
+  if (cached_has_bits & 0x01000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(116, this->_internal_header_column_pivot_group_de_emphasis_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_column_pivot_separator_stroke = 117;
+  if (cached_has_bits & 0x04000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(117, _Internal::header_column_pivot_separator_stroke(this),
+        _Internal::header_column_pivot_separator_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_column_pivot_separator_stroke_undefined = 118;
+  if (cached_has_bits & 0x02000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(118, this->_internal_header_column_pivot_separator_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_vertical_stroke = 119;
+  if (cached_has_bits & 0x08000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(119, _Internal::header_row_pivot_group_vertical_stroke(this),
+        _Internal::header_row_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_row_pivot_group_vertical_stroke_undefined = 120;
+  if (cached_has_bits & 0x04000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(120, this->_internal_header_row_pivot_group_vertical_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_de_emphasis_stroke = 121;
+  if (cached_has_bits & 0x10000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(121, _Internal::header_row_pivot_group_de_emphasis_stroke(this),
+        _Internal::header_row_pivot_group_de_emphasis_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_row_pivot_group_de_emphasis_stroke_undefined = 122;
+  if (cached_has_bits & 0x08000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(122, this->_internal_header_row_pivot_group_de_emphasis_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive header_row_pivot_title_stroke = 123;
+  if (cached_has_bits & 0x20000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(123, _Internal::header_row_pivot_title_stroke(this),
+        _Internal::header_row_pivot_title_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool header_row_pivot_title_stroke_undefined = 124;
+  if (cached_has_bits & 0x10000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(124, this->_internal_header_row_pivot_title_stroke_undefined(), target);
+  }
+
+  cached_has_bits = _impl_._has_bits_[1];
+  // optional .TSDSOS.SpecStrokeArchive footer_row_pivot_group_vertical_stroke = 125;
+  if (cached_has_bits & 0x40000000u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(125, _Internal::footer_row_pivot_group_vertical_stroke(this),
+        _Internal::footer_row_pivot_group_vertical_stroke(this).GetCachedSize(), target, stream);
+  }
+
+  cached_has_bits = _impl_._has_bits_[3];
+  // optional bool footer_row_pivot_group_vertical_stroke_undefined = 126;
+  if (cached_has_bits & 0x20000000u) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(126, this->_internal_footer_row_pivot_group_vertical_stroke_undefined(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSTSOS.TableStylePropertyChangeSetArchive)
@@ -4766,66 +5697,66 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSTSOS.TableStylePropertyChangeSetArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSSSOS.SpecBoolArchive auto_resize = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *auto_resize_);
+          *_impl_.auto_resize_);
     }
 
     // optional .TSSSOS.SpecBoolArchive banded_rows = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *banded_rows_);
+          *_impl_.banded_rows_);
     }
 
     // optional .TSDSOS.SpecFillArchive banded_cell_fill = 5;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *banded_cell_fill_);
+          *_impl_.banded_cell_fill_);
     }
 
     // optional .TSSSOS.SpecBoolArchive behaves_like_spreadsheet = 7;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *behaves_like_spreadsheet_);
+          *_impl_.behaves_like_spreadsheet_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive body_horizontal_border_stroke = 9;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *body_horizontal_border_stroke_);
+          *_impl_.body_horizontal_border_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive body_vertical_border_stroke = 11;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *body_vertical_border_stroke_);
+          *_impl_.body_vertical_border_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive body_horizontal_stroke = 13;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *body_horizontal_stroke_);
+          *_impl_.body_horizontal_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive body_vertical_stroke = 15;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *body_vertical_stroke_);
+          *_impl_.body_vertical_stroke_);
     }
 
   }
@@ -4834,56 +5765,56 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_border_stroke_);
+          *_impl_.header_column_border_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_column_vertical_stroke = 19;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_vertical_stroke_);
+          *_impl_.header_column_vertical_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_column_horizontal_stroke = 21;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_horizontal_stroke_);
+          *_impl_.header_column_horizontal_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_column_separator_stroke = 23;
     if (cached_has_bits & 0x00000800u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_column_separator_stroke_);
+          *_impl_.header_column_separator_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_row_border_stroke = 25;
     if (cached_has_bits & 0x00001000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_border_stroke_);
+          *_impl_.header_row_border_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_row_horizontal_stroke = 27;
     if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_horizontal_stroke_);
+          *_impl_.header_row_horizontal_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_row_vertical_stroke = 29;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_vertical_stroke_);
+          *_impl_.header_row_vertical_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive header_row_separator_stroke = 31;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_separator_stroke_);
+          *_impl_.header_row_separator_stroke_);
     }
 
   }
@@ -4892,56 +5823,56 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_border_stroke_);
+          *_impl_.footer_row_border_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive footer_row_horizontal_stroke = 35;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_horizontal_stroke_);
+          *_impl_.footer_row_horizontal_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive footer_row_vertical_stroke = 37;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_vertical_stroke_);
+          *_impl_.footer_row_vertical_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive footer_row_separator_stroke = 39;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_row_separator_stroke_);
+          *_impl_.footer_row_separator_stroke_);
     }
 
     // optional .TSTSOS.SpecTableStrokePresetListArchive stroke_preset_list_object = 41;
     if (cached_has_bits & 0x00100000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *stroke_preset_list_object_);
+          *_impl_.stroke_preset_list_object_);
     }
 
     // optional .TSSSOS.SpecBoolArchive vertical_strokes_visible = 43;
     if (cached_has_bits & 0x00200000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *vertical_strokes_visible_);
+          *_impl_.vertical_strokes_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive horizontal_strokes_visible = 45;
     if (cached_has_bits & 0x00400000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *horizontal_strokes_visible_);
+          *_impl_.horizontal_strokes_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive header_row_sep_visible = 47;
     if (cached_has_bits & 0x00800000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_sep_visible_);
+          *_impl_.header_row_sep_visible_);
     }
 
   }
@@ -4950,115 +5881,115 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x01000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_row_verticals_visible_);
+          *_impl_.header_row_verticals_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive header_col_sep_visible = 51;
     if (cached_has_bits & 0x02000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_col_sep_visible_);
+          *_impl_.header_col_sep_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive header_col_horizontals_visible = 53;
     if (cached_has_bits & 0x04000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *header_col_horizontals_visible_);
+          *_impl_.header_col_horizontals_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive footer_sep_visible = 55;
     if (cached_has_bits & 0x08000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_sep_visible_);
+          *_impl_.footer_sep_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive footer_verticals_visible = 57;
     if (cached_has_bits & 0x10000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *footer_verticals_visible_);
+          *_impl_.footer_verticals_visible_);
     }
 
     // optional .TSSSOS.SpecBoolArchive border_strokes_visible = 59;
     if (cached_has_bits & 0x20000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *border_strokes_visible_);
+          *_impl_.border_strokes_visible_);
     }
 
     // optional .TSSSOS.SpecStringArchive master_font_family = 61;
     if (cached_has_bits & 0x40000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *master_font_family_);
+          *_impl_.master_font_family_);
     }
 
     // optional .TSSSOS.SpecIntegerArchive writing_direction = 63;
     if (cached_has_bits & 0x80000000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *writing_direction_);
+          *_impl_.writing_direction_);
     }
 
   }
-  cached_has_bits = _has_bits_[1];
+  cached_has_bits = _impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSDSOS.SpecStrokeArchive category_level1_top_stroke = 65;
     if (cached_has_bits & 0x00000001u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_top_stroke_);
+          *_impl_.category_level1_top_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level2_top_stroke = 67;
     if (cached_has_bits & 0x00000002u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_top_stroke_);
+          *_impl_.category_level2_top_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level3_top_stroke = 69;
     if (cached_has_bits & 0x00000004u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_top_stroke_);
+          *_impl_.category_level3_top_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level4_top_stroke = 71;
     if (cached_has_bits & 0x00000008u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_top_stroke_);
+          *_impl_.category_level4_top_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level5_top_stroke = 73;
     if (cached_has_bits & 0x00000010u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_top_stroke_);
+          *_impl_.category_level5_top_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level1_label_separator_stroke = 75;
     if (cached_has_bits & 0x00000020u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_label_separator_stroke_);
+          *_impl_.category_level1_label_separator_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level2_label_separator_stroke = 77;
     if (cached_has_bits & 0x00000040u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_label_separator_stroke_);
+          *_impl_.category_level2_label_separator_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level3_label_separator_stroke = 79;
     if (cached_has_bits & 0x00000080u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_label_separator_stroke_);
+          *_impl_.category_level3_label_separator_stroke_);
     }
 
   }
@@ -5067,56 +5998,56 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000100u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_label_separator_stroke_);
+          *_impl_.category_level4_label_separator_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level5_label_separator_stroke = 83;
     if (cached_has_bits & 0x00000200u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_label_separator_stroke_);
+          *_impl_.category_level5_label_separator_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level1_bottom_stroke = 85;
     if (cached_has_bits & 0x00000400u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_bottom_stroke_);
+          *_impl_.category_level1_bottom_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level2_bottom_stroke = 87;
     if (cached_has_bits & 0x00000800u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_bottom_stroke_);
+          *_impl_.category_level2_bottom_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level3_bottom_stroke = 89;
     if (cached_has_bits & 0x00001000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_bottom_stroke_);
+          *_impl_.category_level3_bottom_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level4_bottom_stroke = 91;
     if (cached_has_bits & 0x00002000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_bottom_stroke_);
+          *_impl_.category_level4_bottom_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level5_bottom_stroke = 93;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_bottom_stroke_);
+          *_impl_.category_level5_bottom_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level1_interior_stroke = 95;
     if (cached_has_bits & 0x00008000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level1_interior_stroke_);
+          *_impl_.category_level1_interior_stroke_);
     }
 
   }
@@ -5125,683 +6056,948 @@ size_t TableStylePropertyChangeSetArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00010000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level2_interior_stroke_);
+          *_impl_.category_level2_interior_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level3_interior_stroke = 99;
     if (cached_has_bits & 0x00020000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level3_interior_stroke_);
+          *_impl_.category_level3_interior_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level4_interior_stroke = 101;
     if (cached_has_bits & 0x00040000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level4_interior_stroke_);
+          *_impl_.category_level4_interior_stroke_);
     }
 
     // optional .TSDSOS.SpecStrokeArchive category_level5_interior_stroke = 103;
     if (cached_has_bits & 0x00080000u) {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *category_level5_interior_stroke_);
+          *_impl_.category_level5_interior_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive body_pivot_group_horizontal_stroke = 105;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.body_pivot_group_horizontal_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive body_pivot_group_vertical_stroke = 107;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.body_pivot_group_vertical_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive body_pivot_de_emphasis_horizontal_stroke = 109;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.body_pivot_de_emphasis_horizontal_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive body_pivot_emphasis_vertical_stroke = 111;
+    if (cached_has_bits & 0x00800000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.body_pivot_emphasis_vertical_stroke_);
+    }
+
+  }
+  if (cached_has_bits & 0xff000000u) {
+    // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_horizontal_stroke = 113;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_group_horizontal_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive header_column_pivot_group_de_emphasis_stroke = 115;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_group_de_emphasis_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive header_column_pivot_separator_stroke = 117;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_column_pivot_separator_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_vertical_stroke = 119;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_group_vertical_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive header_row_pivot_group_de_emphasis_stroke = 121;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_group_de_emphasis_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive header_row_pivot_title_stroke = 123;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.header_row_pivot_title_stroke_);
+    }
+
+    // optional .TSDSOS.SpecStrokeArchive footer_row_pivot_group_vertical_stroke = 125;
+    if (cached_has_bits & 0x40000000u) {
+      total_size += 2 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.footer_row_pivot_group_vertical_stroke_);
     }
 
     // optional bool auto_resize_undefined = 2;
-    if (cached_has_bits & 0x00100000u) {
+    if (cached_has_bits & 0x80000000u) {
       total_size += 1 + 1;
     }
 
+  }
+  cached_has_bits = _impl_._has_bits_[2];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bool banded_rows_undefined = 4;
-    if (cached_has_bits & 0x00200000u) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 1;
     }
 
     // optional bool banded_cell_fill_undefined = 6;
-    if (cached_has_bits & 0x00400000u) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 1;
     }
 
     // optional bool behaves_like_spreadsheet_undefined = 8;
-    if (cached_has_bits & 0x00800000u) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
-  }
-  if (cached_has_bits & 0xff000000u) {
     // optional bool body_horizontal_border_stroke_undefined = 10;
-    if (cached_has_bits & 0x01000000u) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
     // optional bool body_vertical_border_stroke_undefined = 12;
-    if (cached_has_bits & 0x02000000u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 1;
     }
 
     // optional bool body_horizontal_stroke_undefined = 14;
-    if (cached_has_bits & 0x04000000u) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 1;
     }
 
     // optional bool body_vertical_stroke_undefined = 16;
-    if (cached_has_bits & 0x08000000u) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_column_border_stroke_undefined = 18;
-    if (cached_has_bits & 0x10000000u) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0x0000ff00u) {
     // optional bool header_column_vertical_stroke_undefined = 20;
-    if (cached_has_bits & 0x20000000u) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_column_horizontal_stroke_undefined = 22;
-    if (cached_has_bits & 0x40000000u) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_column_separator_stroke_undefined = 24;
-    if (cached_has_bits & 0x80000000u) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 2 + 1;
     }
 
-  }
-  cached_has_bits = _has_bits_[2];
-  if (cached_has_bits & 0x000000ffu) {
     // optional bool header_row_border_stroke_undefined = 26;
-    if (cached_has_bits & 0x00000001u) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_row_horizontal_stroke_undefined = 28;
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_row_vertical_stroke_undefined = 30;
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_row_separator_stroke_undefined = 32;
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 1;
     }
 
     // optional bool footer_row_border_stroke_undefined = 34;
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0x00ff0000u) {
     // optional bool footer_row_horizontal_stroke_undefined = 36;
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 2 + 1;
     }
 
     // optional bool footer_row_vertical_stroke_undefined = 38;
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 1;
     }
 
     // optional bool footer_row_separator_stroke_undefined = 40;
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00040000u) {
       total_size += 2 + 1;
     }
 
-  }
-  if (cached_has_bits & 0x0000ff00u) {
     // optional bool stroke_preset_list_object_undefined = 42;
-    if (cached_has_bits & 0x00000100u) {
+    if (cached_has_bits & 0x00080000u) {
       total_size += 2 + 1;
     }
 
     // optional bool vertical_strokes_visible_undefined = 44;
-    if (cached_has_bits & 0x00000200u) {
+    if (cached_has_bits & 0x00100000u) {
       total_size += 2 + 1;
     }
 
     // optional bool horizontal_strokes_visible_undefined = 46;
-    if (cached_has_bits & 0x00000400u) {
+    if (cached_has_bits & 0x00200000u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_row_sep_visible_undefined = 48;
-    if (cached_has_bits & 0x00000800u) {
+    if (cached_has_bits & 0x00400000u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_row_verticals_visible_undefined = 50;
-    if (cached_has_bits & 0x00001000u) {
+    if (cached_has_bits & 0x00800000u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0xff000000u) {
     // optional bool header_col_sep_visible_undefined = 52;
-    if (cached_has_bits & 0x00002000u) {
+    if (cached_has_bits & 0x01000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool header_col_horizontals_visible_undefined = 54;
-    if (cached_has_bits & 0x00004000u) {
+    if (cached_has_bits & 0x02000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool footer_sep_visible_undefined = 56;
-    if (cached_has_bits & 0x00008000u) {
+    if (cached_has_bits & 0x04000000u) {
       total_size += 2 + 1;
     }
 
-  }
-  if (cached_has_bits & 0x00ff0000u) {
     // optional bool footer_verticals_visible_undefined = 58;
-    if (cached_has_bits & 0x00010000u) {
+    if (cached_has_bits & 0x08000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool border_strokes_visible_undefined = 60;
-    if (cached_has_bits & 0x00020000u) {
+    if (cached_has_bits & 0x10000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool master_font_family_undefined = 62;
-    if (cached_has_bits & 0x00040000u) {
+    if (cached_has_bits & 0x20000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool writing_direction_undefined = 64;
-    if (cached_has_bits & 0x00080000u) {
+    if (cached_has_bits & 0x40000000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level1_top_stroke_undefined = 66;
-    if (cached_has_bits & 0x00100000u) {
+    if (cached_has_bits & 0x80000000u) {
       total_size += 2 + 1;
     }
 
+  }
+  cached_has_bits = _impl_._has_bits_[3];
+  if (cached_has_bits & 0x000000ffu) {
     // optional bool category_level2_top_stroke_undefined = 68;
-    if (cached_has_bits & 0x00200000u) {
+    if (cached_has_bits & 0x00000001u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level3_top_stroke_undefined = 70;
-    if (cached_has_bits & 0x00400000u) {
+    if (cached_has_bits & 0x00000002u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level4_top_stroke_undefined = 72;
-    if (cached_has_bits & 0x00800000u) {
+    if (cached_has_bits & 0x00000004u) {
       total_size += 2 + 1;
     }
 
-  }
-  if (cached_has_bits & 0xff000000u) {
     // optional bool category_level5_top_stroke_undefined = 74;
-    if (cached_has_bits & 0x01000000u) {
+    if (cached_has_bits & 0x00000008u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level1_label_separator_stroke_undefined = 76;
-    if (cached_has_bits & 0x02000000u) {
+    if (cached_has_bits & 0x00000010u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level2_label_separator_stroke_undefined = 78;
-    if (cached_has_bits & 0x04000000u) {
+    if (cached_has_bits & 0x00000020u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level3_label_separator_stroke_undefined = 80;
-    if (cached_has_bits & 0x08000000u) {
+    if (cached_has_bits & 0x00000040u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level4_label_separator_stroke_undefined = 82;
-    if (cached_has_bits & 0x10000000u) {
+    if (cached_has_bits & 0x00000080u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0x0000ff00u) {
     // optional bool category_level5_label_separator_stroke_undefined = 84;
-    if (cached_has_bits & 0x20000000u) {
+    if (cached_has_bits & 0x00000100u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level1_bottom_stroke_undefined = 86;
-    if (cached_has_bits & 0x40000000u) {
+    if (cached_has_bits & 0x00000200u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level2_bottom_stroke_undefined = 88;
-    if (cached_has_bits & 0x80000000u) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 2 + 1;
     }
 
-  }
-  cached_has_bits = _has_bits_[3];
-  if (cached_has_bits & 0x000000ffu) {
     // optional bool category_level3_bottom_stroke_undefined = 90;
-    if (cached_has_bits & 0x00000001u) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level4_bottom_stroke_undefined = 92;
-    if (cached_has_bits & 0x00000002u) {
+    if (cached_has_bits & 0x00001000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level5_bottom_stroke_undefined = 94;
-    if (cached_has_bits & 0x00000004u) {
+    if (cached_has_bits & 0x00002000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level1_interior_stroke_undefined = 96;
-    if (cached_has_bits & 0x00000008u) {
+    if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level2_interior_stroke_undefined = 98;
-    if (cached_has_bits & 0x00000010u) {
+    if (cached_has_bits & 0x00008000u) {
       total_size += 2 + 1;
     }
 
+  }
+  if (cached_has_bits & 0x00ff0000u) {
     // optional bool category_level3_interior_stroke_undefined = 100;
-    if (cached_has_bits & 0x00000020u) {
+    if (cached_has_bits & 0x00010000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level4_interior_stroke_undefined = 102;
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00020000u) {
       total_size += 2 + 1;
     }
 
     // optional bool category_level5_interior_stroke_undefined = 104;
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00040000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool body_pivot_group_horizontal_stroke_undefined = 106;
+    if (cached_has_bits & 0x00080000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool body_pivot_group_vertical_stroke_undefined = 108;
+    if (cached_has_bits & 0x00100000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool body_pivot_de_emphasis_horizontal_stroke_undefined = 110;
+    if (cached_has_bits & 0x00200000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool body_pivot_emphasis_vertical_stroke_undefined = 112;
+    if (cached_has_bits & 0x00400000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool header_column_pivot_group_horizontal_stroke_undefined = 114;
+    if (cached_has_bits & 0x00800000u) {
       total_size += 2 + 1;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
+  if (cached_has_bits & 0x3f000000u) {
+    // optional bool header_column_pivot_group_de_emphasis_stroke_undefined = 116;
+    if (cached_has_bits & 0x01000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool header_column_pivot_separator_stroke_undefined = 118;
+    if (cached_has_bits & 0x02000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool header_row_pivot_group_vertical_stroke_undefined = 120;
+    if (cached_has_bits & 0x04000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool header_row_pivot_group_de_emphasis_stroke_undefined = 122;
+    if (cached_has_bits & 0x08000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool header_row_pivot_title_stroke_undefined = 124;
+    if (cached_has_bits & 0x10000000u) {
+      total_size += 2 + 1;
+    }
+
+    // optional bool footer_row_pivot_group_vertical_stroke_undefined = 126;
+    if (cached_has_bits & 0x20000000u) {
+      total_size += 2 + 1;
+    }
+
   }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData TableStylePropertyChangeSetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     TableStylePropertyChangeSetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*TableStylePropertyChangeSetArchive::GetClassData() const { return &_class_data_; }
 
-void TableStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<TableStylePropertyChangeSetArchive *>(to)->MergeFrom(
-      static_cast<const TableStylePropertyChangeSetArchive &>(from));
-}
 
-
-void TableStylePropertyChangeSetArchive::MergeFrom(const TableStylePropertyChangeSetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.TableStylePropertyChangeSetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void TableStylePropertyChangeSetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<TableStylePropertyChangeSetArchive*>(&to_msg);
+  auto& from = static_cast<const TableStylePropertyChangeSetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSTSOS.TableStylePropertyChangeSetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_auto_resize()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_auto_resize());
+      _this->_internal_mutable_auto_resize()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_auto_resize());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_banded_rows()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_banded_rows());
+      _this->_internal_mutable_banded_rows()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_banded_rows());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_banded_cell_fill()->::TSDSOS::SpecFillArchive::MergeFrom(from._internal_banded_cell_fill());
+      _this->_internal_mutable_banded_cell_fill()->::TSDSOS::SpecFillArchive::MergeFrom(
+          from._internal_banded_cell_fill());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_behaves_like_spreadsheet()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_behaves_like_spreadsheet());
+      _this->_internal_mutable_behaves_like_spreadsheet()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_behaves_like_spreadsheet());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_body_horizontal_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_body_horizontal_border_stroke());
+      _this->_internal_mutable_body_horizontal_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_horizontal_border_stroke());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_body_vertical_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_body_vertical_border_stroke());
+      _this->_internal_mutable_body_vertical_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_vertical_border_stroke());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_body_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_body_horizontal_stroke());
+      _this->_internal_mutable_body_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_body_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_body_vertical_stroke());
+      _this->_internal_mutable_body_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_vertical_stroke());
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_header_column_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_column_border_stroke());
+      _this->_internal_mutable_header_column_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_border_stroke());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_header_column_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_column_vertical_stroke());
+      _this->_internal_mutable_header_column_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_vertical_stroke());
     }
     if (cached_has_bits & 0x00000400u) {
-      _internal_mutable_header_column_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_column_horizontal_stroke());
+      _this->_internal_mutable_header_column_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_horizontal_stroke());
     }
     if (cached_has_bits & 0x00000800u) {
-      _internal_mutable_header_column_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_column_separator_stroke());
+      _this->_internal_mutable_header_column_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_separator_stroke());
     }
     if (cached_has_bits & 0x00001000u) {
-      _internal_mutable_header_row_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_row_border_stroke());
+      _this->_internal_mutable_header_row_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_border_stroke());
     }
     if (cached_has_bits & 0x00002000u) {
-      _internal_mutable_header_row_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_row_horizontal_stroke());
+      _this->_internal_mutable_header_row_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x00004000u) {
-      _internal_mutable_header_row_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_row_vertical_stroke());
+      _this->_internal_mutable_header_row_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_vertical_stroke());
     }
     if (cached_has_bits & 0x00008000u) {
-      _internal_mutable_header_row_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_header_row_separator_stroke());
+      _this->_internal_mutable_header_row_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_separator_stroke());
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _internal_mutable_footer_row_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_footer_row_border_stroke());
+      _this->_internal_mutable_footer_row_border_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_footer_row_border_stroke());
     }
     if (cached_has_bits & 0x00020000u) {
-      _internal_mutable_footer_row_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_footer_row_horizontal_stroke());
+      _this->_internal_mutable_footer_row_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_footer_row_horizontal_stroke());
     }
     if (cached_has_bits & 0x00040000u) {
-      _internal_mutable_footer_row_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_footer_row_vertical_stroke());
+      _this->_internal_mutable_footer_row_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_footer_row_vertical_stroke());
     }
     if (cached_has_bits & 0x00080000u) {
-      _internal_mutable_footer_row_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_footer_row_separator_stroke());
+      _this->_internal_mutable_footer_row_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_footer_row_separator_stroke());
     }
     if (cached_has_bits & 0x00100000u) {
-      _internal_mutable_stroke_preset_list_object()->::TSTSOS::SpecTableStrokePresetListArchive::MergeFrom(from._internal_stroke_preset_list_object());
+      _this->_internal_mutable_stroke_preset_list_object()->::TSTSOS::SpecTableStrokePresetListArchive::MergeFrom(
+          from._internal_stroke_preset_list_object());
     }
     if (cached_has_bits & 0x00200000u) {
-      _internal_mutable_vertical_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_vertical_strokes_visible());
+      _this->_internal_mutable_vertical_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_vertical_strokes_visible());
     }
     if (cached_has_bits & 0x00400000u) {
-      _internal_mutable_horizontal_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_horizontal_strokes_visible());
+      _this->_internal_mutable_horizontal_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_horizontal_strokes_visible());
     }
     if (cached_has_bits & 0x00800000u) {
-      _internal_mutable_header_row_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_header_row_sep_visible());
+      _this->_internal_mutable_header_row_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_header_row_sep_visible());
     }
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      _internal_mutable_header_row_verticals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_header_row_verticals_visible());
+      _this->_internal_mutable_header_row_verticals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_header_row_verticals_visible());
     }
     if (cached_has_bits & 0x02000000u) {
-      _internal_mutable_header_col_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_header_col_sep_visible());
+      _this->_internal_mutable_header_col_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_header_col_sep_visible());
     }
     if (cached_has_bits & 0x04000000u) {
-      _internal_mutable_header_col_horizontals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_header_col_horizontals_visible());
+      _this->_internal_mutable_header_col_horizontals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_header_col_horizontals_visible());
     }
     if (cached_has_bits & 0x08000000u) {
-      _internal_mutable_footer_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_footer_sep_visible());
+      _this->_internal_mutable_footer_sep_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_footer_sep_visible());
     }
     if (cached_has_bits & 0x10000000u) {
-      _internal_mutable_footer_verticals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_footer_verticals_visible());
+      _this->_internal_mutable_footer_verticals_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_footer_verticals_visible());
     }
     if (cached_has_bits & 0x20000000u) {
-      _internal_mutable_border_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(from._internal_border_strokes_visible());
+      _this->_internal_mutable_border_strokes_visible()->::TSSSOS::SpecBoolArchive::MergeFrom(
+          from._internal_border_strokes_visible());
     }
     if (cached_has_bits & 0x40000000u) {
-      _internal_mutable_master_font_family()->::TSSSOS::SpecStringArchive::MergeFrom(from._internal_master_font_family());
+      _this->_internal_mutable_master_font_family()->::TSSSOS::SpecStringArchive::MergeFrom(
+          from._internal_master_font_family());
     }
     if (cached_has_bits & 0x80000000u) {
-      _internal_mutable_writing_direction()->::TSSSOS::SpecIntegerArchive::MergeFrom(from._internal_writing_direction());
+      _this->_internal_mutable_writing_direction()->::TSSSOS::SpecIntegerArchive::MergeFrom(
+          from._internal_writing_direction());
     }
   }
-  cached_has_bits = from._has_bits_[1];
+  cached_has_bits = from._impl_._has_bits_[1];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_category_level1_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level1_top_stroke());
+      _this->_internal_mutable_category_level1_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level1_top_stroke());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_category_level2_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level2_top_stroke());
+      _this->_internal_mutable_category_level2_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level2_top_stroke());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_category_level3_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level3_top_stroke());
+      _this->_internal_mutable_category_level3_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level3_top_stroke());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_category_level4_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level4_top_stroke());
+      _this->_internal_mutable_category_level4_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level4_top_stroke());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_category_level5_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level5_top_stroke());
+      _this->_internal_mutable_category_level5_top_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level5_top_stroke());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_category_level1_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level1_label_separator_stroke());
+      _this->_internal_mutable_category_level1_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level1_label_separator_stroke());
     }
     if (cached_has_bits & 0x00000040u) {
-      _internal_mutable_category_level2_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level2_label_separator_stroke());
+      _this->_internal_mutable_category_level2_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level2_label_separator_stroke());
     }
     if (cached_has_bits & 0x00000080u) {
-      _internal_mutable_category_level3_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level3_label_separator_stroke());
+      _this->_internal_mutable_category_level3_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level3_label_separator_stroke());
     }
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      _internal_mutable_category_level4_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level4_label_separator_stroke());
+      _this->_internal_mutable_category_level4_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level4_label_separator_stroke());
     }
     if (cached_has_bits & 0x00000200u) {
-      _internal_mutable_category_level5_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level5_label_separator_stroke());
+      _this->_internal_mutable_category_level5_label_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level5_label_separator_stroke());
     }
     if (cached_has_bits & 0x00000400u) {
-      _internal_mutable_category_level1_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level1_bottom_stroke());
+      _this->_internal_mutable_category_level1_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level1_bottom_stroke());
     }
     if (cached_has_bits & 0x00000800u) {
-      _internal_mutable_category_level2_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level2_bottom_stroke());
+      _this->_internal_mutable_category_level2_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level2_bottom_stroke());
     }
     if (cached_has_bits & 0x00001000u) {
-      _internal_mutable_category_level3_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level3_bottom_stroke());
+      _this->_internal_mutable_category_level3_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level3_bottom_stroke());
     }
     if (cached_has_bits & 0x00002000u) {
-      _internal_mutable_category_level4_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level4_bottom_stroke());
+      _this->_internal_mutable_category_level4_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level4_bottom_stroke());
     }
     if (cached_has_bits & 0x00004000u) {
-      _internal_mutable_category_level5_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level5_bottom_stroke());
+      _this->_internal_mutable_category_level5_bottom_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level5_bottom_stroke());
     }
     if (cached_has_bits & 0x00008000u) {
-      _internal_mutable_category_level1_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level1_interior_stroke());
+      _this->_internal_mutable_category_level1_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level1_interior_stroke());
     }
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      _internal_mutable_category_level2_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level2_interior_stroke());
+      _this->_internal_mutable_category_level2_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level2_interior_stroke());
     }
     if (cached_has_bits & 0x00020000u) {
-      _internal_mutable_category_level3_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level3_interior_stroke());
+      _this->_internal_mutable_category_level3_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level3_interior_stroke());
     }
     if (cached_has_bits & 0x00040000u) {
-      _internal_mutable_category_level4_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level4_interior_stroke());
+      _this->_internal_mutable_category_level4_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level4_interior_stroke());
     }
     if (cached_has_bits & 0x00080000u) {
-      _internal_mutable_category_level5_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(from._internal_category_level5_interior_stroke());
+      _this->_internal_mutable_category_level5_interior_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_category_level5_interior_stroke());
     }
     if (cached_has_bits & 0x00100000u) {
-      auto_resize_undefined_ = from.auto_resize_undefined_;
+      _this->_internal_mutable_body_pivot_group_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_pivot_group_horizontal_stroke());
     }
     if (cached_has_bits & 0x00200000u) {
-      banded_rows_undefined_ = from.banded_rows_undefined_;
+      _this->_internal_mutable_body_pivot_group_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x00400000u) {
-      banded_cell_fill_undefined_ = from.banded_cell_fill_undefined_;
+      _this->_internal_mutable_body_pivot_de_emphasis_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_pivot_de_emphasis_horizontal_stroke());
     }
     if (cached_has_bits & 0x00800000u) {
-      behaves_like_spreadsheet_undefined_ = from.behaves_like_spreadsheet_undefined_;
+      _this->_internal_mutable_body_pivot_emphasis_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_body_pivot_emphasis_vertical_stroke());
     }
-    _has_bits_[1] |= cached_has_bits;
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      body_horizontal_border_stroke_undefined_ = from.body_horizontal_border_stroke_undefined_;
+      _this->_internal_mutable_header_column_pivot_group_horizontal_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_group_horizontal_stroke());
     }
     if (cached_has_bits & 0x02000000u) {
-      body_vertical_border_stroke_undefined_ = from.body_vertical_border_stroke_undefined_;
+      _this->_internal_mutable_header_column_pivot_group_de_emphasis_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_group_de_emphasis_stroke());
     }
     if (cached_has_bits & 0x04000000u) {
-      body_horizontal_stroke_undefined_ = from.body_horizontal_stroke_undefined_;
+      _this->_internal_mutable_header_column_pivot_separator_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_column_pivot_separator_stroke());
     }
     if (cached_has_bits & 0x08000000u) {
-      body_vertical_stroke_undefined_ = from.body_vertical_stroke_undefined_;
+      _this->_internal_mutable_header_row_pivot_group_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x10000000u) {
-      header_column_border_stroke_undefined_ = from.header_column_border_stroke_undefined_;
+      _this->_internal_mutable_header_row_pivot_group_de_emphasis_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_group_de_emphasis_stroke());
     }
     if (cached_has_bits & 0x20000000u) {
-      header_column_vertical_stroke_undefined_ = from.header_column_vertical_stroke_undefined_;
+      _this->_internal_mutable_header_row_pivot_title_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_header_row_pivot_title_stroke());
     }
     if (cached_has_bits & 0x40000000u) {
-      header_column_horizontal_stroke_undefined_ = from.header_column_horizontal_stroke_undefined_;
+      _this->_internal_mutable_footer_row_pivot_group_vertical_stroke()->::TSDSOS::SpecStrokeArchive::MergeFrom(
+          from._internal_footer_row_pivot_group_vertical_stroke());
     }
     if (cached_has_bits & 0x80000000u) {
-      header_column_separator_stroke_undefined_ = from.header_column_separator_stroke_undefined_;
+      _this->_impl_.auto_resize_undefined_ = from._impl_.auto_resize_undefined_;
     }
-    _has_bits_[1] |= cached_has_bits;
+    _this->_impl_._has_bits_[1] |= cached_has_bits;
   }
-  cached_has_bits = from._has_bits_[2];
+  cached_has_bits = from._impl_._has_bits_[2];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      header_row_border_stroke_undefined_ = from.header_row_border_stroke_undefined_;
+      _this->_impl_.banded_rows_undefined_ = from._impl_.banded_rows_undefined_;
     }
     if (cached_has_bits & 0x00000002u) {
-      header_row_horizontal_stroke_undefined_ = from.header_row_horizontal_stroke_undefined_;
+      _this->_impl_.banded_cell_fill_undefined_ = from._impl_.banded_cell_fill_undefined_;
     }
     if (cached_has_bits & 0x00000004u) {
-      header_row_vertical_stroke_undefined_ = from.header_row_vertical_stroke_undefined_;
+      _this->_impl_.behaves_like_spreadsheet_undefined_ = from._impl_.behaves_like_spreadsheet_undefined_;
     }
     if (cached_has_bits & 0x00000008u) {
-      header_row_separator_stroke_undefined_ = from.header_row_separator_stroke_undefined_;
+      _this->_impl_.body_horizontal_border_stroke_undefined_ = from._impl_.body_horizontal_border_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000010u) {
-      footer_row_border_stroke_undefined_ = from.footer_row_border_stroke_undefined_;
+      _this->_impl_.body_vertical_border_stroke_undefined_ = from._impl_.body_vertical_border_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000020u) {
-      footer_row_horizontal_stroke_undefined_ = from.footer_row_horizontal_stroke_undefined_;
+      _this->_impl_.body_horizontal_stroke_undefined_ = from._impl_.body_horizontal_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000040u) {
-      footer_row_vertical_stroke_undefined_ = from.footer_row_vertical_stroke_undefined_;
+      _this->_impl_.body_vertical_stroke_undefined_ = from._impl_.body_vertical_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000080u) {
-      footer_row_separator_stroke_undefined_ = from.footer_row_separator_stroke_undefined_;
+      _this->_impl_.header_column_border_stroke_undefined_ = from._impl_.header_column_border_stroke_undefined_;
     }
-    _has_bits_[2] |= cached_has_bits;
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
   }
   if (cached_has_bits & 0x0000ff00u) {
     if (cached_has_bits & 0x00000100u) {
-      stroke_preset_list_object_undefined_ = from.stroke_preset_list_object_undefined_;
+      _this->_impl_.header_column_vertical_stroke_undefined_ = from._impl_.header_column_vertical_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000200u) {
-      vertical_strokes_visible_undefined_ = from.vertical_strokes_visible_undefined_;
+      _this->_impl_.header_column_horizontal_stroke_undefined_ = from._impl_.header_column_horizontal_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000400u) {
-      horizontal_strokes_visible_undefined_ = from.horizontal_strokes_visible_undefined_;
+      _this->_impl_.header_column_separator_stroke_undefined_ = from._impl_.header_column_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000800u) {
-      header_row_sep_visible_undefined_ = from.header_row_sep_visible_undefined_;
+      _this->_impl_.header_row_border_stroke_undefined_ = from._impl_.header_row_border_stroke_undefined_;
     }
     if (cached_has_bits & 0x00001000u) {
-      header_row_verticals_visible_undefined_ = from.header_row_verticals_visible_undefined_;
+      _this->_impl_.header_row_horizontal_stroke_undefined_ = from._impl_.header_row_horizontal_stroke_undefined_;
     }
     if (cached_has_bits & 0x00002000u) {
-      header_col_sep_visible_undefined_ = from.header_col_sep_visible_undefined_;
+      _this->_impl_.header_row_vertical_stroke_undefined_ = from._impl_.header_row_vertical_stroke_undefined_;
     }
     if (cached_has_bits & 0x00004000u) {
-      header_col_horizontals_visible_undefined_ = from.header_col_horizontals_visible_undefined_;
+      _this->_impl_.header_row_separator_stroke_undefined_ = from._impl_.header_row_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00008000u) {
-      footer_sep_visible_undefined_ = from.footer_sep_visible_undefined_;
+      _this->_impl_.footer_row_border_stroke_undefined_ = from._impl_.footer_row_border_stroke_undefined_;
     }
-    _has_bits_[2] |= cached_has_bits;
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
   }
   if (cached_has_bits & 0x00ff0000u) {
     if (cached_has_bits & 0x00010000u) {
-      footer_verticals_visible_undefined_ = from.footer_verticals_visible_undefined_;
+      _this->_impl_.footer_row_horizontal_stroke_undefined_ = from._impl_.footer_row_horizontal_stroke_undefined_;
     }
     if (cached_has_bits & 0x00020000u) {
-      border_strokes_visible_undefined_ = from.border_strokes_visible_undefined_;
+      _this->_impl_.footer_row_vertical_stroke_undefined_ = from._impl_.footer_row_vertical_stroke_undefined_;
     }
     if (cached_has_bits & 0x00040000u) {
-      master_font_family_undefined_ = from.master_font_family_undefined_;
+      _this->_impl_.footer_row_separator_stroke_undefined_ = from._impl_.footer_row_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00080000u) {
-      writing_direction_undefined_ = from.writing_direction_undefined_;
+      _this->_impl_.stroke_preset_list_object_undefined_ = from._impl_.stroke_preset_list_object_undefined_;
     }
     if (cached_has_bits & 0x00100000u) {
-      category_level1_top_stroke_undefined_ = from.category_level1_top_stroke_undefined_;
+      _this->_impl_.vertical_strokes_visible_undefined_ = from._impl_.vertical_strokes_visible_undefined_;
     }
     if (cached_has_bits & 0x00200000u) {
-      category_level2_top_stroke_undefined_ = from.category_level2_top_stroke_undefined_;
+      _this->_impl_.horizontal_strokes_visible_undefined_ = from._impl_.horizontal_strokes_visible_undefined_;
     }
     if (cached_has_bits & 0x00400000u) {
-      category_level3_top_stroke_undefined_ = from.category_level3_top_stroke_undefined_;
+      _this->_impl_.header_row_sep_visible_undefined_ = from._impl_.header_row_sep_visible_undefined_;
     }
     if (cached_has_bits & 0x00800000u) {
-      category_level4_top_stroke_undefined_ = from.category_level4_top_stroke_undefined_;
+      _this->_impl_.header_row_verticals_visible_undefined_ = from._impl_.header_row_verticals_visible_undefined_;
     }
-    _has_bits_[2] |= cached_has_bits;
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
   }
   if (cached_has_bits & 0xff000000u) {
     if (cached_has_bits & 0x01000000u) {
-      category_level5_top_stroke_undefined_ = from.category_level5_top_stroke_undefined_;
+      _this->_impl_.header_col_sep_visible_undefined_ = from._impl_.header_col_sep_visible_undefined_;
     }
     if (cached_has_bits & 0x02000000u) {
-      category_level1_label_separator_stroke_undefined_ = from.category_level1_label_separator_stroke_undefined_;
+      _this->_impl_.header_col_horizontals_visible_undefined_ = from._impl_.header_col_horizontals_visible_undefined_;
     }
     if (cached_has_bits & 0x04000000u) {
-      category_level2_label_separator_stroke_undefined_ = from.category_level2_label_separator_stroke_undefined_;
+      _this->_impl_.footer_sep_visible_undefined_ = from._impl_.footer_sep_visible_undefined_;
     }
     if (cached_has_bits & 0x08000000u) {
-      category_level3_label_separator_stroke_undefined_ = from.category_level3_label_separator_stroke_undefined_;
+      _this->_impl_.footer_verticals_visible_undefined_ = from._impl_.footer_verticals_visible_undefined_;
     }
     if (cached_has_bits & 0x10000000u) {
-      category_level4_label_separator_stroke_undefined_ = from.category_level4_label_separator_stroke_undefined_;
+      _this->_impl_.border_strokes_visible_undefined_ = from._impl_.border_strokes_visible_undefined_;
     }
     if (cached_has_bits & 0x20000000u) {
-      category_level5_label_separator_stroke_undefined_ = from.category_level5_label_separator_stroke_undefined_;
+      _this->_impl_.master_font_family_undefined_ = from._impl_.master_font_family_undefined_;
     }
     if (cached_has_bits & 0x40000000u) {
-      category_level1_bottom_stroke_undefined_ = from.category_level1_bottom_stroke_undefined_;
+      _this->_impl_.writing_direction_undefined_ = from._impl_.writing_direction_undefined_;
     }
     if (cached_has_bits & 0x80000000u) {
-      category_level2_bottom_stroke_undefined_ = from.category_level2_bottom_stroke_undefined_;
+      _this->_impl_.category_level1_top_stroke_undefined_ = from._impl_.category_level1_top_stroke_undefined_;
     }
-    _has_bits_[2] |= cached_has_bits;
+    _this->_impl_._has_bits_[2] |= cached_has_bits;
   }
-  cached_has_bits = from._has_bits_[3];
+  cached_has_bits = from._impl_._has_bits_[3];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      category_level3_bottom_stroke_undefined_ = from.category_level3_bottom_stroke_undefined_;
+      _this->_impl_.category_level2_top_stroke_undefined_ = from._impl_.category_level2_top_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000002u) {
-      category_level4_bottom_stroke_undefined_ = from.category_level4_bottom_stroke_undefined_;
+      _this->_impl_.category_level3_top_stroke_undefined_ = from._impl_.category_level3_top_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000004u) {
-      category_level5_bottom_stroke_undefined_ = from.category_level5_bottom_stroke_undefined_;
+      _this->_impl_.category_level4_top_stroke_undefined_ = from._impl_.category_level4_top_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000008u) {
-      category_level1_interior_stroke_undefined_ = from.category_level1_interior_stroke_undefined_;
+      _this->_impl_.category_level5_top_stroke_undefined_ = from._impl_.category_level5_top_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000010u) {
-      category_level2_interior_stroke_undefined_ = from.category_level2_interior_stroke_undefined_;
+      _this->_impl_.category_level1_label_separator_stroke_undefined_ = from._impl_.category_level1_label_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000020u) {
-      category_level3_interior_stroke_undefined_ = from.category_level3_interior_stroke_undefined_;
+      _this->_impl_.category_level2_label_separator_stroke_undefined_ = from._impl_.category_level2_label_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000040u) {
-      category_level4_interior_stroke_undefined_ = from.category_level4_interior_stroke_undefined_;
+      _this->_impl_.category_level3_label_separator_stroke_undefined_ = from._impl_.category_level3_label_separator_stroke_undefined_;
     }
     if (cached_has_bits & 0x00000080u) {
-      category_level5_interior_stroke_undefined_ = from.category_level5_interior_stroke_undefined_;
+      _this->_impl_.category_level4_label_separator_stroke_undefined_ = from._impl_.category_level4_label_separator_stroke_undefined_;
     }
-    _has_bits_[3] |= cached_has_bits;
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (cached_has_bits & 0x0000ff00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_impl_.category_level5_label_separator_stroke_undefined_ = from._impl_.category_level5_label_separator_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_impl_.category_level1_bottom_stroke_undefined_ = from._impl_.category_level1_bottom_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.category_level2_bottom_stroke_undefined_ = from._impl_.category_level2_bottom_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.category_level3_bottom_stroke_undefined_ = from._impl_.category_level3_bottom_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00001000u) {
+      _this->_impl_.category_level4_bottom_stroke_undefined_ = from._impl_.category_level4_bottom_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00002000u) {
+      _this->_impl_.category_level5_bottom_stroke_undefined_ = from._impl_.category_level5_bottom_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00004000u) {
+      _this->_impl_.category_level1_interior_stroke_undefined_ = from._impl_.category_level1_interior_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00008000u) {
+      _this->_impl_.category_level2_interior_stroke_undefined_ = from._impl_.category_level2_interior_stroke_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x00ff0000u) {
+    if (cached_has_bits & 0x00010000u) {
+      _this->_impl_.category_level3_interior_stroke_undefined_ = from._impl_.category_level3_interior_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00020000u) {
+      _this->_impl_.category_level4_interior_stroke_undefined_ = from._impl_.category_level4_interior_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00040000u) {
+      _this->_impl_.category_level5_interior_stroke_undefined_ = from._impl_.category_level5_interior_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00080000u) {
+      _this->_impl_.body_pivot_group_horizontal_stroke_undefined_ = from._impl_.body_pivot_group_horizontal_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00100000u) {
+      _this->_impl_.body_pivot_group_vertical_stroke_undefined_ = from._impl_.body_pivot_group_vertical_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00200000u) {
+      _this->_impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_ = from._impl_.body_pivot_de_emphasis_horizontal_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00400000u) {
+      _this->_impl_.body_pivot_emphasis_vertical_stroke_undefined_ = from._impl_.body_pivot_emphasis_vertical_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x00800000u) {
+      _this->_impl_.header_column_pivot_group_horizontal_stroke_undefined_ = from._impl_.header_column_pivot_group_horizontal_stroke_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  if (cached_has_bits & 0x3f000000u) {
+    if (cached_has_bits & 0x01000000u) {
+      _this->_impl_.header_column_pivot_group_de_emphasis_stroke_undefined_ = from._impl_.header_column_pivot_group_de_emphasis_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x02000000u) {
+      _this->_impl_.header_column_pivot_separator_stroke_undefined_ = from._impl_.header_column_pivot_separator_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x04000000u) {
+      _this->_impl_.header_row_pivot_group_vertical_stroke_undefined_ = from._impl_.header_row_pivot_group_vertical_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x08000000u) {
+      _this->_impl_.header_row_pivot_group_de_emphasis_stroke_undefined_ = from._impl_.header_row_pivot_group_de_emphasis_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x10000000u) {
+      _this->_impl_.header_row_pivot_title_stroke_undefined_ = from._impl_.header_row_pivot_title_stroke_undefined_;
+    }
+    if (cached_has_bits & 0x20000000u) {
+      _this->_impl_.footer_row_pivot_group_vertical_stroke_undefined_ = from._impl_.footer_row_pivot_group_vertical_stroke_undefined_;
+    }
+    _this->_impl_._has_bits_[3] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void TableStylePropertyChangeSetArchive::CopyFrom(const TableStylePropertyChangeSetArchive& from) {
@@ -5813,160 +7009,193 @@ void TableStylePropertyChangeSetArchive::CopyFrom(const TableStylePropertyChange
 
 bool TableStylePropertyChangeSetArchive::IsInitialized() const {
   if (_internal_has_auto_resize()) {
-    if (!auto_resize_->IsInitialized()) return false;
+    if (!_impl_.auto_resize_->IsInitialized()) return false;
   }
   if (_internal_has_banded_rows()) {
-    if (!banded_rows_->IsInitialized()) return false;
+    if (!_impl_.banded_rows_->IsInitialized()) return false;
   }
   if (_internal_has_banded_cell_fill()) {
-    if (!banded_cell_fill_->IsInitialized()) return false;
+    if (!_impl_.banded_cell_fill_->IsInitialized()) return false;
   }
   if (_internal_has_behaves_like_spreadsheet()) {
-    if (!behaves_like_spreadsheet_->IsInitialized()) return false;
+    if (!_impl_.behaves_like_spreadsheet_->IsInitialized()) return false;
   }
   if (_internal_has_body_horizontal_border_stroke()) {
-    if (!body_horizontal_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.body_horizontal_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_body_vertical_border_stroke()) {
-    if (!body_vertical_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.body_vertical_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_body_horizontal_stroke()) {
-    if (!body_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.body_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_body_vertical_stroke()) {
-    if (!body_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.body_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_border_stroke()) {
-    if (!header_column_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_vertical_stroke()) {
-    if (!header_column_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_horizontal_stroke()) {
-    if (!header_column_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_column_separator_stroke()) {
-    if (!header_column_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_column_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_border_stroke()) {
-    if (!header_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_horizontal_stroke()) {
-    if (!header_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_vertical_stroke()) {
-    if (!header_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_separator_stroke()) {
-    if (!header_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.header_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_border_stroke()) {
-    if (!footer_row_border_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_border_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_horizontal_stroke()) {
-    if (!footer_row_horizontal_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_horizontal_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_vertical_stroke()) {
-    if (!footer_row_vertical_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_vertical_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_footer_row_separator_stroke()) {
-    if (!footer_row_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.footer_row_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_stroke_preset_list_object()) {
-    if (!stroke_preset_list_object_->IsInitialized()) return false;
+    if (!_impl_.stroke_preset_list_object_->IsInitialized()) return false;
   }
   if (_internal_has_vertical_strokes_visible()) {
-    if (!vertical_strokes_visible_->IsInitialized()) return false;
+    if (!_impl_.vertical_strokes_visible_->IsInitialized()) return false;
   }
   if (_internal_has_horizontal_strokes_visible()) {
-    if (!horizontal_strokes_visible_->IsInitialized()) return false;
+    if (!_impl_.horizontal_strokes_visible_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_sep_visible()) {
-    if (!header_row_sep_visible_->IsInitialized()) return false;
+    if (!_impl_.header_row_sep_visible_->IsInitialized()) return false;
   }
   if (_internal_has_header_row_verticals_visible()) {
-    if (!header_row_verticals_visible_->IsInitialized()) return false;
+    if (!_impl_.header_row_verticals_visible_->IsInitialized()) return false;
   }
   if (_internal_has_header_col_sep_visible()) {
-    if (!header_col_sep_visible_->IsInitialized()) return false;
+    if (!_impl_.header_col_sep_visible_->IsInitialized()) return false;
   }
   if (_internal_has_header_col_horizontals_visible()) {
-    if (!header_col_horizontals_visible_->IsInitialized()) return false;
+    if (!_impl_.header_col_horizontals_visible_->IsInitialized()) return false;
   }
   if (_internal_has_footer_sep_visible()) {
-    if (!footer_sep_visible_->IsInitialized()) return false;
+    if (!_impl_.footer_sep_visible_->IsInitialized()) return false;
   }
   if (_internal_has_footer_verticals_visible()) {
-    if (!footer_verticals_visible_->IsInitialized()) return false;
+    if (!_impl_.footer_verticals_visible_->IsInitialized()) return false;
   }
   if (_internal_has_border_strokes_visible()) {
-    if (!border_strokes_visible_->IsInitialized()) return false;
+    if (!_impl_.border_strokes_visible_->IsInitialized()) return false;
   }
   if (_internal_has_master_font_family()) {
-    if (!master_font_family_->IsInitialized()) return false;
+    if (!_impl_.master_font_family_->IsInitialized()) return false;
   }
   if (_internal_has_writing_direction()) {
-    if (!writing_direction_->IsInitialized()) return false;
+    if (!_impl_.writing_direction_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_top_stroke()) {
-    if (!category_level1_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_top_stroke()) {
-    if (!category_level2_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_top_stroke()) {
-    if (!category_level3_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_top_stroke()) {
-    if (!category_level4_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_top_stroke()) {
-    if (!category_level5_top_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_top_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_label_separator_stroke()) {
-    if (!category_level1_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_label_separator_stroke()) {
-    if (!category_level2_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_label_separator_stroke()) {
-    if (!category_level3_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_label_separator_stroke()) {
-    if (!category_level4_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_label_separator_stroke()) {
-    if (!category_level5_label_separator_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_label_separator_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_bottom_stroke()) {
-    if (!category_level1_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_bottom_stroke()) {
-    if (!category_level2_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_bottom_stroke()) {
-    if (!category_level3_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_bottom_stroke()) {
-    if (!category_level4_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_bottom_stroke()) {
-    if (!category_level5_bottom_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_bottom_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level1_interior_stroke()) {
-    if (!category_level1_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level1_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level2_interior_stroke()) {
-    if (!category_level2_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level2_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level3_interior_stroke()) {
-    if (!category_level3_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level3_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level4_interior_stroke()) {
-    if (!category_level4_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level4_interior_stroke_->IsInitialized()) return false;
   }
   if (_internal_has_category_level5_interior_stroke()) {
-    if (!category_level5_interior_stroke_->IsInitialized()) return false;
+    if (!_impl_.category_level5_interior_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_body_pivot_group_horizontal_stroke()) {
+    if (!_impl_.body_pivot_group_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_body_pivot_group_vertical_stroke()) {
+    if (!_impl_.body_pivot_group_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_body_pivot_de_emphasis_horizontal_stroke()) {
+    if (!_impl_.body_pivot_de_emphasis_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_body_pivot_emphasis_vertical_stroke()) {
+    if (!_impl_.body_pivot_emphasis_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_group_horizontal_stroke()) {
+    if (!_impl_.header_column_pivot_group_horizontal_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_group_de_emphasis_stroke()) {
+    if (!_impl_.header_column_pivot_group_de_emphasis_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_column_pivot_separator_stroke()) {
+    if (!_impl_.header_column_pivot_separator_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_group_vertical_stroke()) {
+    if (!_impl_.header_row_pivot_group_vertical_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_group_de_emphasis_stroke()) {
+    if (!_impl_.header_row_pivot_group_de_emphasis_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_header_row_pivot_title_stroke()) {
+    if (!_impl_.header_row_pivot_title_stroke_->IsInitialized()) return false;
+  }
+  if (_internal_has_footer_row_pivot_group_vertical_stroke()) {
+    if (!_impl_.footer_row_pivot_group_vertical_stroke_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5974,20 +7203,20 @@ bool TableStylePropertyChangeSetArchive::IsInitialized() const {
 void TableStylePropertyChangeSetArchive::InternalSwap(TableStylePropertyChangeSetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(_has_bits_[1], other->_has_bits_[1]);
-  swap(_has_bits_[2], other->_has_bits_[2]);
-  swap(_has_bits_[3], other->_has_bits_[3]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_._has_bits_[1], other->_impl_._has_bits_[1]);
+  swap(_impl_._has_bits_[2], other->_impl_._has_bits_[2]);
+  swap(_impl_._has_bits_[3], other->_impl_._has_bits_[3]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(TableStylePropertyChangeSetArchive, category_level5_interior_stroke_undefined_)
-      + sizeof(TableStylePropertyChangeSetArchive::category_level5_interior_stroke_undefined_)
-      - PROTOBUF_FIELD_OFFSET(TableStylePropertyChangeSetArchive, auto_resize_)>(
-          reinterpret_cast<char*>(&auto_resize_),
-          reinterpret_cast<char*>(&other->auto_resize_));
+      PROTOBUF_FIELD_OFFSET(TableStylePropertyChangeSetArchive, _impl_.footer_row_pivot_group_vertical_stroke_undefined_)
+      + sizeof(TableStylePropertyChangeSetArchive::_impl_.footer_row_pivot_group_vertical_stroke_undefined_)
+      - PROTOBUF_FIELD_OFFSET(TableStylePropertyChangeSetArchive, _impl_.auto_resize_)>(
+          reinterpret_cast<char*>(&_impl_.auto_resize_),
+          reinterpret_cast<char*>(&other->_impl_.auto_resize_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TableStylePropertyChangeSetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSTArchives_2esos_2eproto_getter, &descriptor_table_TSTArchives_2esos_2eproto_once,
       file_level_metadata_TSTArchives_2esos_2eproto[3]);
 }
@@ -5995,16 +7224,20 @@ void TableStylePropertyChangeSetArchive::InternalSwap(TableStylePropertyChangeSe
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSTSOS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSTSOS::SpecSetTableStrokePresetListArchive* Arena::CreateMaybeMessage< ::TSTSOS::SpecSetTableStrokePresetListArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSTSOS::SpecSetTableStrokePresetListArchive*
+Arena::CreateMaybeMessage< ::TSTSOS::SpecSetTableStrokePresetListArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSTSOS::SpecSetTableStrokePresetListArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSTSOS::SpecTableStrokePresetListArchive* Arena::CreateMaybeMessage< ::TSTSOS::SpecTableStrokePresetListArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSTSOS::SpecTableStrokePresetListArchive*
+Arena::CreateMaybeMessage< ::TSTSOS::SpecTableStrokePresetListArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSTSOS::SpecTableStrokePresetListArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSTSOS::TableCellStylePropertyChangeSetArchive* Arena::CreateMaybeMessage< ::TSTSOS::TableCellStylePropertyChangeSetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSTSOS::TableCellStylePropertyChangeSetArchive*
+Arena::CreateMaybeMessage< ::TSTSOS::TableCellStylePropertyChangeSetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSTSOS::TableCellStylePropertyChangeSetArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSTSOS::TableStylePropertyChangeSetArchive* Arena::CreateMaybeMessage< ::TSTSOS::TableStylePropertyChangeSetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSTSOS::TableStylePropertyChangeSetArchive*
+Arena::CreateMaybeMessage< ::TSTSOS::TableStylePropertyChangeSetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSTSOS::TableStylePropertyChangeSetArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

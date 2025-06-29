@@ -16,310 +16,355 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSS {
-constexpr StyleArchive::StyleArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , style_identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , parent_(nullptr)
-  , stylesheet_(nullptr)
-  , is_variation_(false){}
+PROTOBUF_CONSTEXPR StyleArchive::StyleArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.style_identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.parent_)*/nullptr
+  , /*decltype(_impl_.stylesheet_)*/nullptr
+  , /*decltype(_impl_.is_variation_)*/false} {}
 struct StyleArchiveDefaultTypeInternal {
-  constexpr StyleArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StyleArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StyleArchiveDefaultTypeInternal() {}
   union {
     StyleArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StyleArchiveDefaultTypeInternal _StyleArchive_default_instance_;
-constexpr StylesheetArchive_IdentifiedStyleEntry::StylesheetArchive_IdentifiedStyleEntry(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , style_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StyleArchiveDefaultTypeInternal _StyleArchive_default_instance_;
+PROTOBUF_CONSTEXPR StylesheetArchive_IdentifiedStyleEntry::StylesheetArchive_IdentifiedStyleEntry(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.style_)*/nullptr} {}
 struct StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal {
-  constexpr StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal() {}
   union {
     StylesheetArchive_IdentifiedStyleEntry _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal _StylesheetArchive_IdentifiedStyleEntry_default_instance_;
-constexpr StylesheetArchive_StyleChildrenEntry::StylesheetArchive_StyleChildrenEntry(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : children_()
-  , parent_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StylesheetArchive_IdentifiedStyleEntryDefaultTypeInternal _StylesheetArchive_IdentifiedStyleEntry_default_instance_;
+PROTOBUF_CONSTEXPR StylesheetArchive_StyleChildrenEntry::StylesheetArchive_StyleChildrenEntry(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.children_)*/{}
+  , /*decltype(_impl_.parent_)*/nullptr} {}
 struct StylesheetArchive_StyleChildrenEntryDefaultTypeInternal {
-  constexpr StylesheetArchive_StyleChildrenEntryDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StylesheetArchive_StyleChildrenEntryDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StylesheetArchive_StyleChildrenEntryDefaultTypeInternal() {}
   union {
     StylesheetArchive_StyleChildrenEntry _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StylesheetArchive_StyleChildrenEntryDefaultTypeInternal _StylesheetArchive_StyleChildrenEntry_default_instance_;
-constexpr StylesheetArchive_VersionedStyles::StylesheetArchive_VersionedStyles(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : styles_()
-  , identifier_to_style_map_()
-  , parent_to_children_style_map_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StylesheetArchive_StyleChildrenEntryDefaultTypeInternal _StylesheetArchive_StyleChildrenEntry_default_instance_;
+PROTOBUF_CONSTEXPR StylesheetArchive_VersionedStyles::StylesheetArchive_VersionedStyles(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.styles_)*/{}
+  , /*decltype(_impl_.identifier_to_style_map_)*/{}
+  , /*decltype(_impl_.parent_to_children_style_map_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct StylesheetArchive_VersionedStylesDefaultTypeInternal {
-  constexpr StylesheetArchive_VersionedStylesDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StylesheetArchive_VersionedStylesDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StylesheetArchive_VersionedStylesDefaultTypeInternal() {}
   union {
     StylesheetArchive_VersionedStyles _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StylesheetArchive_VersionedStylesDefaultTypeInternal _StylesheetArchive_VersionedStyles_default_instance_;
-constexpr StylesheetArchive::StylesheetArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : styles_()
-  , identifier_to_style_map_()
-  , parent_to_children_style_map_()
-  , parent_(nullptr)
-  , styles_for_10_0_(nullptr)
-  , styles_for_10_1_(nullptr)
-  , styles_for_10_2_(nullptr)
-  , styles_for_11_0_(nullptr)
-  , styles_for_11_1_(nullptr)
-  , can_cull_styles_(false)
-  , is_locked_(true){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StylesheetArchive_VersionedStylesDefaultTypeInternal _StylesheetArchive_VersionedStyles_default_instance_;
+PROTOBUF_CONSTEXPR StylesheetArchive::StylesheetArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.styles_)*/{}
+  , /*decltype(_impl_.identifier_to_style_map_)*/{}
+  , /*decltype(_impl_.parent_to_children_style_map_)*/{}
+  , /*decltype(_impl_.parent_)*/nullptr
+  , /*decltype(_impl_.styles_for_10_0_)*/nullptr
+  , /*decltype(_impl_.styles_for_10_1_)*/nullptr
+  , /*decltype(_impl_.styles_for_10_2_)*/nullptr
+  , /*decltype(_impl_.styles_for_11_0_)*/nullptr
+  , /*decltype(_impl_.styles_for_11_1_)*/nullptr
+  , /*decltype(_impl_.styles_for_11_2_)*/nullptr
+  , /*decltype(_impl_.styles_for_12_0_)*/nullptr
+  , /*decltype(_impl_.styles_for_12_1_)*/nullptr
+  , /*decltype(_impl_.styles_for_12_2_)*/nullptr
+  , /*decltype(_impl_.can_cull_styles_)*/false
+  , /*decltype(_impl_.is_locked_)*/true} {}
 struct StylesheetArchiveDefaultTypeInternal {
-  constexpr StylesheetArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StylesheetArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StylesheetArchiveDefaultTypeInternal() {}
   union {
     StylesheetArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StylesheetArchiveDefaultTypeInternal _StylesheetArchive_default_instance_;
-constexpr ThemeArchive::ThemeArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : old_uuids_for_preset_replacements_()
-  , new_uuids_for_preset_replacements_()
-  , color_presets_()
-  , theme_identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , legacy_stylesheet_(nullptr)
-  , document_stylesheet_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StylesheetArchiveDefaultTypeInternal _StylesheetArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeArchive::ThemeArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._extensions_)*/{}
+  , /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.old_uuids_for_preset_replacements_)*/{}
+  , /*decltype(_impl_.new_uuids_for_preset_replacements_)*/{}
+  , /*decltype(_impl_.color_presets_)*/{}
+  , /*decltype(_impl_.theme_identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.legacy_stylesheet_)*/nullptr
+  , /*decltype(_impl_.document_stylesheet_)*/nullptr} {}
 struct ThemeArchiveDefaultTypeInternal {
-  constexpr ThemeArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeArchiveDefaultTypeInternal() {}
   union {
     ThemeArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeArchiveDefaultTypeInternal _ThemeArchive_default_instance_;
-constexpr ApplyThemeCommandArchive::ApplyThemeCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : commands_()
-  , super_(nullptr)
-  , old_theme_(nullptr)
-  , new_theme_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeArchiveDefaultTypeInternal _ThemeArchive_default_instance_;
+PROTOBUF_CONSTEXPR ApplyThemeCommandArchive::ApplyThemeCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.commands_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.old_theme_)*/nullptr
+  , /*decltype(_impl_.new_theme_)*/nullptr} {}
 struct ApplyThemeCommandArchiveDefaultTypeInternal {
-  constexpr ApplyThemeCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ApplyThemeCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ApplyThemeCommandArchiveDefaultTypeInternal() {}
   union {
     ApplyThemeCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ApplyThemeCommandArchiveDefaultTypeInternal _ApplyThemeCommandArchive_default_instance_;
-constexpr ApplyThemeChildCommandArchive::ApplyThemeChildCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , parent_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ApplyThemeCommandArchiveDefaultTypeInternal _ApplyThemeCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ApplyThemeChildCommandArchive::ApplyThemeChildCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.parent_)*/nullptr} {}
 struct ApplyThemeChildCommandArchiveDefaultTypeInternal {
-  constexpr ApplyThemeChildCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ApplyThemeChildCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ApplyThemeChildCommandArchiveDefaultTypeInternal() {}
   union {
     ApplyThemeChildCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ApplyThemeChildCommandArchiveDefaultTypeInternal _ApplyThemeChildCommandArchive_default_instance_;
-constexpr StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , current_style_(nullptr)
-  , style_with_old_property_map_(nullptr)
-  , style_with_new_property_map_(nullptr)
-  , style_diff_(nullptr)
-  , notify_for_style_clients_(true){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ApplyThemeChildCommandArchiveDefaultTypeInternal _ApplyThemeChildCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.current_style_)*/nullptr
+  , /*decltype(_impl_.style_with_old_property_map_)*/nullptr
+  , /*decltype(_impl_.style_with_new_property_map_)*/nullptr
+  , /*decltype(_impl_.style_diff_)*/nullptr
+  , /*decltype(_impl_.notify_for_style_clients_)*/true} {}
 struct StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal {
-  constexpr StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal() {}
   union {
     StyleUpdatePropertyMapCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal _StyleUpdatePropertyMapCommandArchive_default_instance_;
-constexpr ThemeReplacePresetCommandArchive::ThemeReplacePresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , preset_(nullptr)
-  , oldpreset_(nullptr)
-  , index_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StyleUpdatePropertyMapCommandArchiveDefaultTypeInternal _StyleUpdatePropertyMapCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeReplacePresetCommandArchive::ThemeReplacePresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.preset_)*/nullptr
+  , /*decltype(_impl_.oldpreset_)*/nullptr
+  , /*decltype(_impl_.index_)*/0u} {}
 struct ThemeReplacePresetCommandArchiveDefaultTypeInternal {
-  constexpr ThemeReplacePresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeReplacePresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeReplacePresetCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeReplacePresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeReplacePresetCommandArchiveDefaultTypeInternal _ThemeReplacePresetCommandArchive_default_instance_;
-constexpr ThemeReplaceColorPresetCommandArchive::ThemeReplaceColorPresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , theme_(nullptr)
-  , color_(nullptr)
-  , old_color_(nullptr)
-  , index_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeReplacePresetCommandArchiveDefaultTypeInternal _ThemeReplacePresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeReplaceColorPresetCommandArchive::ThemeReplaceColorPresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.theme_)*/nullptr
+  , /*decltype(_impl_.color_)*/nullptr
+  , /*decltype(_impl_.old_color_)*/nullptr
+  , /*decltype(_impl_.index_)*/0u} {}
 struct ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal {
-  constexpr ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeReplaceColorPresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal _ThemeReplaceColorPresetCommandArchive_default_instance_;
-constexpr ThemeAddStylePresetCommandArchive::ThemeAddStylePresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : preset_kind_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , super_(nullptr)
-  , theme_(nullptr)
-  , preset_(nullptr)
-  , add_preset_to_stylesheet_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeReplaceColorPresetCommandArchiveDefaultTypeInternal _ThemeReplaceColorPresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeAddStylePresetCommandArchive::ThemeAddStylePresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.preset_kind_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.theme_)*/nullptr
+  , /*decltype(_impl_.preset_)*/nullptr
+  , /*decltype(_impl_.add_preset_to_stylesheet_)*/false} {}
 struct ThemeAddStylePresetCommandArchiveDefaultTypeInternal {
-  constexpr ThemeAddStylePresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeAddStylePresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeAddStylePresetCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeAddStylePresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeAddStylePresetCommandArchiveDefaultTypeInternal _ThemeAddStylePresetCommandArchive_default_instance_;
-constexpr ThemeRemoveStylePresetCommandArchive::ThemeRemoveStylePresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : preset_kind_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , super_(nullptr)
-  , theme_(nullptr)
-  , preset_(nullptr)
-  , replacement_preset_(nullptr)
-  , preset_index_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeAddStylePresetCommandArchiveDefaultTypeInternal _ThemeAddStylePresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeRemoveStylePresetCommandArchive::ThemeRemoveStylePresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.preset_kind_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.identifier_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.theme_)*/nullptr
+  , /*decltype(_impl_.preset_)*/nullptr
+  , /*decltype(_impl_.replacement_preset_)*/nullptr
+  , /*decltype(_impl_.preset_index_)*/0u} {}
 struct ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal {
-  constexpr ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeRemoveStylePresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal _ThemeRemoveStylePresetCommandArchive_default_instance_;
-constexpr ThemeMovePresetCommandArchive::ThemeMovePresetCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , theme_(nullptr)
-  , preset_id_(nullptr)
-  , new_index_(0u)
-  , old_index_(0u){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeRemoveStylePresetCommandArchiveDefaultTypeInternal _ThemeRemoveStylePresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeMovePresetCommandArchive::ThemeMovePresetCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.theme_)*/nullptr
+  , /*decltype(_impl_.preset_id_)*/nullptr
+  , /*decltype(_impl_.new_index_)*/0u
+  , /*decltype(_impl_.old_index_)*/0u} {}
 struct ThemeMovePresetCommandArchiveDefaultTypeInternal {
-  constexpr ThemeMovePresetCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeMovePresetCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeMovePresetCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeMovePresetCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeMovePresetCommandArchiveDefaultTypeInternal _ThemeMovePresetCommandArchive_default_instance_;
-constexpr ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : super_(nullptr)
-  , preset_(nullptr)
-  , replacement_preset_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeMovePresetCommandArchiveDefaultTypeInternal _ThemeMovePresetCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.super_)*/nullptr
+  , /*decltype(_impl_.preset_)*/nullptr
+  , /*decltype(_impl_.replacement_preset_)*/nullptr} {}
 struct ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal {
-  constexpr ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal() {}
   union {
     ThemeReplaceStylePresetAndDisconnectStylesCommandArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal _ThemeReplaceStylePresetAndDisconnectStylesCommandArchive_default_instance_;
-constexpr CommandPropertyEntryArchive::CommandPropertyEntryArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : string_value_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , tsp_reference_(nullptr)
-  , property_(0u)
-  , type_(0)
-  , integer_value_(0)
-  , float_value_(0)
-  , double_value_(0){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ThemeReplaceStylePresetAndDisconnectStylesCommandArchiveDefaultTypeInternal _ThemeReplaceStylePresetAndDisconnectStylesCommandArchive_default_instance_;
+PROTOBUF_CONSTEXPR CommandPropertyEntryArchive::CommandPropertyEntryArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._extensions_)*/{}
+  , /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.string_value_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.tsp_reference_)*/nullptr
+  , /*decltype(_impl_.property_)*/0u
+  , /*decltype(_impl_.type_)*/0
+  , /*decltype(_impl_.integer_value_)*/0
+  , /*decltype(_impl_.float_value_)*/0
+  , /*decltype(_impl_.double_value_)*/0} {}
 struct CommandPropertyEntryArchiveDefaultTypeInternal {
-  constexpr CommandPropertyEntryArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CommandPropertyEntryArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CommandPropertyEntryArchiveDefaultTypeInternal() {}
   union {
     CommandPropertyEntryArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CommandPropertyEntryArchiveDefaultTypeInternal _CommandPropertyEntryArchive_default_instance_;
-constexpr CommandPropertyMapArchive::CommandPropertyMapArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : property_entries_(){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CommandPropertyEntryArchiveDefaultTypeInternal _CommandPropertyEntryArchive_default_instance_;
+PROTOBUF_CONSTEXPR CommandPropertyMapArchive::CommandPropertyMapArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.property_entries_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
 struct CommandPropertyMapArchiveDefaultTypeInternal {
-  constexpr CommandPropertyMapArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR CommandPropertyMapArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~CommandPropertyMapArchiveDefaultTypeInternal() {}
   union {
     CommandPropertyMapArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT CommandPropertyMapArchiveDefaultTypeInternal _CommandPropertyMapArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CommandPropertyMapArchiveDefaultTypeInternal _CommandPropertyMapArchive_default_instance_;
 }  // namespace TSS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSSArchives_2eproto[17];
-static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_TSSArchives_2eproto[2];
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSSArchives_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSSArchives_2eproto[17];
+static const ::_pb::EnumDescriptor* file_level_enum_descriptors_TSSArchives_2eproto[2];
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSSArchives_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSSArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _has_bits_),
+const uint32_t TableStruct_TSSArchives_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, name_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, style_identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, parent_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, is_variation_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, stylesheet_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_.style_identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_.parent_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_.is_variation_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleArchive, _impl_.stylesheet_),
   0,
   1,
   2,
   4,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, style_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, _impl_.identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_IdentifiedStyleEntry, _impl_.style_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, parent_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, children_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, _impl_.parent_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_StyleChildrenEntry, _impl_.children_),
   0,
   ~0u,
   ~0u,  // no _has_bits_
@@ -327,149 +372,167 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSSArchives_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, styles_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, identifier_to_style_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, parent_to_children_style_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, _impl_.styles_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, _impl_.identifier_to_style_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive_VersionedStyles, _impl_.parent_to_children_style_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, identifier_to_style_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, parent_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, is_locked_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, parent_to_children_style_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, can_cull_styles_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_for_10_0_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_for_10_1_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_for_10_2_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_for_11_0_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, styles_for_11_1_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.identifier_to_style_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.parent_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.is_locked_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.parent_to_children_style_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.can_cull_styles_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_10_0_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_10_1_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_10_2_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_11_0_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_11_1_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_11_2_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_12_0_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_12_1_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StylesheetArchive, _impl_.styles_for_12_2_),
   ~0u,
   ~0u,
   0,
-  7,
+  11,
   ~0u,
-  6,
+  10,
   1,
   2,
   3,
   4,
   5,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _has_bits_),
+  6,
+  7,
+  8,
+  9,
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _internal_metadata_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _extensions_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_._extensions_),
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, legacy_stylesheet_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, theme_identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, document_stylesheet_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, old_uuids_for_preset_replacements_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, new_uuids_for_preset_replacements_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, color_presets_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.legacy_stylesheet_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.theme_identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.document_stylesheet_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.old_uuids_for_preset_replacements_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.new_uuids_for_preset_replacements_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeArchive, _impl_.color_presets_),
   1,
   0,
   2,
   ~0u,
   ~0u,
   ~0u,
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, commands_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, old_theme_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, new_theme_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _impl_.commands_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _impl_.old_theme_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeCommandArchive, _impl_.new_theme_),
   0,
   ~0u,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, parent_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ApplyThemeChildCommandArchive, _impl_.parent_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, current_style_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, style_with_old_property_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, style_with_new_property_map_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, style_diff_),
-  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, notify_for_style_clients_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.current_style_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.style_with_old_property_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.style_with_new_property_map_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.style_diff_),
+  PROTOBUF_FIELD_OFFSET(::TSS::StyleUpdatePropertyMapCommandArchive, _impl_.notify_for_style_clients_),
   0,
   1,
   2,
   3,
   4,
   5,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, preset_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, oldpreset_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, index_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _impl_.preset_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _impl_.oldpreset_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplacePresetCommandArchive, _impl_.index_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, theme_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, color_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, old_color_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, index_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_.theme_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_.color_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_.old_color_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceColorPresetCommandArchive, _impl_.index_),
   0,
   1,
   2,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, theme_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, preset_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, preset_kind_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, add_preset_to_stylesheet_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.theme_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.preset_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.preset_kind_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeAddStylePresetCommandArchive, _impl_.add_preset_to_stylesheet_),
   2,
   3,
   4,
   0,
   1,
   5,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, theme_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, preset_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, preset_index_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, preset_kind_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, identifier_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, replacement_preset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.theme_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.preset_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.preset_index_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.preset_kind_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.identifier_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeRemoveStylePresetCommandArchive, _impl_.replacement_preset_),
   2,
   3,
   4,
@@ -477,44 +540,47 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSSArchives_2eproto::offsets[]
   0,
   1,
   5,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, theme_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, preset_id_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, new_index_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, old_index_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_.theme_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_.preset_id_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_.new_index_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeMovePresetCommandArchive, _impl_.old_index_),
   0,
   1,
   2,
   3,
   4,
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, super_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, preset_),
-  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, replacement_preset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_.super_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_.preset_),
+  PROTOBUF_FIELD_OFFSET(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_.replacement_preset_),
   0,
   1,
   2,
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _internal_metadata_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _extensions_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_._extensions_),
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, property_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, type_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, integer_value_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, float_value_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, double_value_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, string_value_),
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, tsp_reference_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.property_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.type_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.integer_value_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.float_value_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.double_value_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.string_value_),
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyEntryArchive, _impl_.tsp_reference_),
   2,
   3,
   4,
@@ -527,46 +593,47 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSSArchives_2eproto::offsets[]
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyMapArchive, property_entries_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSS::CommandPropertyMapArchive, _impl_.property_entries_),
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 10, sizeof(::TSS::StyleArchive)},
-  { 15, 22, sizeof(::TSS::StylesheetArchive_IdentifiedStyleEntry)},
-  { 24, 31, sizeof(::TSS::StylesheetArchive_StyleChildrenEntry)},
-  { 33, -1, sizeof(::TSS::StylesheetArchive_VersionedStyles)},
-  { 41, 57, sizeof(::TSS::StylesheetArchive)},
-  { 68, 79, sizeof(::TSS::ThemeArchive)},
-  { 85, 94, sizeof(::TSS::ApplyThemeCommandArchive)},
-  { 98, 105, sizeof(::TSS::ApplyThemeChildCommandArchive)},
-  { 107, 118, sizeof(::TSS::StyleUpdatePropertyMapCommandArchive)},
-  { 124, 133, sizeof(::TSS::ThemeReplacePresetCommandArchive)},
-  { 137, 147, sizeof(::TSS::ThemeReplaceColorPresetCommandArchive)},
-  { 152, 163, sizeof(::TSS::ThemeAddStylePresetCommandArchive)},
-  { 169, 181, sizeof(::TSS::ThemeRemoveStylePresetCommandArchive)},
-  { 188, 198, sizeof(::TSS::ThemeMovePresetCommandArchive)},
-  { 203, 211, sizeof(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)},
-  { 214, 226, sizeof(::TSS::CommandPropertyEntryArchive)},
-  { 233, -1, sizeof(::TSS::CommandPropertyMapArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 11, -1, sizeof(::TSS::StyleArchive)},
+  { 16, 24, -1, sizeof(::TSS::StylesheetArchive_IdentifiedStyleEntry)},
+  { 26, 34, -1, sizeof(::TSS::StylesheetArchive_StyleChildrenEntry)},
+  { 36, -1, -1, sizeof(::TSS::StylesheetArchive_VersionedStyles)},
+  { 45, 66, -1, sizeof(::TSS::StylesheetArchive)},
+  { 81, 93, -1, sizeof(::TSS::ThemeArchive)},
+  { 99, 109, -1, sizeof(::TSS::ApplyThemeCommandArchive)},
+  { 113, 121, -1, sizeof(::TSS::ApplyThemeChildCommandArchive)},
+  { 123, 135, -1, sizeof(::TSS::StyleUpdatePropertyMapCommandArchive)},
+  { 141, 151, -1, sizeof(::TSS::ThemeReplacePresetCommandArchive)},
+  { 155, 166, -1, sizeof(::TSS::ThemeReplaceColorPresetCommandArchive)},
+  { 171, 183, -1, sizeof(::TSS::ThemeAddStylePresetCommandArchive)},
+  { 189, 202, -1, sizeof(::TSS::ThemeRemoveStylePresetCommandArchive)},
+  { 209, 220, -1, sizeof(::TSS::ThemeMovePresetCommandArchive)},
+  { 225, 234, -1, sizeof(::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)},
+  { 237, 250, -1, sizeof(::TSS::CommandPropertyEntryArchive)},
+  { 257, -1, -1, sizeof(::TSS::CommandPropertyMapArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StyleArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StylesheetArchive_IdentifiedStyleEntry_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StylesheetArchive_StyleChildrenEntry_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StylesheetArchive_VersionedStyles_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StylesheetArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ApplyThemeCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ApplyThemeChildCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_StyleUpdatePropertyMapCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeReplacePresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeReplaceColorPresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeAddStylePresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeRemoveStylePresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeMovePresetCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_ThemeReplaceStylePresetAndDisconnectStylesCommandArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_CommandPropertyEntryArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSS::_CommandPropertyMapArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSS::_StyleArchive_default_instance_._instance,
+  &::TSS::_StylesheetArchive_IdentifiedStyleEntry_default_instance_._instance,
+  &::TSS::_StylesheetArchive_StyleChildrenEntry_default_instance_._instance,
+  &::TSS::_StylesheetArchive_VersionedStyles_default_instance_._instance,
+  &::TSS::_StylesheetArchive_default_instance_._instance,
+  &::TSS::_ThemeArchive_default_instance_._instance,
+  &::TSS::_ApplyThemeCommandArchive_default_instance_._instance,
+  &::TSS::_ApplyThemeChildCommandArchive_default_instance_._instance,
+  &::TSS::_StyleUpdatePropertyMapCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeReplacePresetCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeReplaceColorPresetCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeAddStylePresetCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeRemoveStylePresetCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeMovePresetCommandArchive_default_instance_._instance,
+  &::TSS::_ThemeReplaceStylePresetAndDisconnectStylesCommandArchive_default_instance_._instance,
+  &::TSS::_CommandPropertyEntryArchive_default_instance_._instance,
+  &::TSS::_CommandPropertyMapArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSSArchives_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -575,7 +642,7 @@ const char descriptor_table_protodef_TSSArchives_2eproto[] PROTOBUF_SECTION_VARI
   "\014\n\004name\030\001 \001(\t\022\030\n\020style_identifier\030\002 \001(\t\022"
   "\036\n\006parent\030\003 \001(\0132\016.TSP.Reference\022\033\n\014is_va"
   "riation\030\004 \001(\010:\005false\022\"\n\nstylesheet\030\005 \001(\013"
-  "2\016.TSP.Reference\"\346\007\n\021StylesheetArchive\022\036"
+  "2\016.TSP.Reference\"\352\t\n\021StylesheetArchive\022\036"
   "\n\006styles\030\001 \003(\0132\016.TSP.Reference\022L\n\027identi"
   "fier_to_style_map\030\002 \003(\0132+.TSS.Stylesheet"
   "Archive.IdentifiedStyleEntry\022\036\n\006parent\030\003"
@@ -591,99 +658,107 @@ const char descriptor_table_protodef_TSSArchives_2eproto[] PROTOBUF_SECTION_VARI
   "les_for_11_0\030\n \001(\0132&.TSS.StylesheetArchi"
   "ve.VersionedStyles\022\?\n\017styles_for_11_1\030\013 "
   "\001(\0132&.TSS.StylesheetArchive.VersionedSty"
-  "les\032I\n\024IdentifiedStyleEntry\022\022\n\nidentifie"
-  "r\030\001 \002(\t\022\035\n\005style\030\002 \002(\0132\016.TSP.Reference\032V"
-  "\n\022StyleChildrenEntry\022\036\n\006parent\030\001 \002(\0132\016.T"
-  "SP.Reference\022 \n\010children\030\002 \003(\0132\016.TSP.Ref"
-  "erence\032\320\001\n\017VersionedStyles\022\036\n\006styles\030\001 \003"
-  "(\0132\016.TSP.Reference\022L\n\027identifier_to_styl"
-  "e_map\030\002 \003(\0132+.TSS.StylesheetArchive.Iden"
-  "tifiedStyleEntry\022O\n\034parent_to_children_s"
-  "tyle_map\030\003 \003(\0132).TSS.StylesheetArchive.S"
-  "tyleChildrenEntry\"\231\002\n\014ThemeArchive\022)\n\021le"
-  "gacy_stylesheet\030\001 \001(\0132\016.TSP.Reference\022\030\n"
-  "\020theme_identifier\030\003 \001(\t\022+\n\023document_styl"
-  "esheet\030\004 \001(\0132\016.TSP.Reference\0224\n!old_uuid"
-  "s_for_preset_replacements\030\005 \003(\0132\t.TSP.UU"
-  "ID\0224\n!new_uuids_for_preset_replacements\030"
-  "\006 \003(\0132\t.TSP.UUID\022!\n\rcolor_presets\030\n \003(\0132"
-  "\n.TSP.Color*\010\010d\020\200\200\200\200\002\"\246\001\n\030ApplyThemeComm"
-  "andArchive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandA"
-  "rchive\022 \n\010commands\030\002 \003(\0132\016.TSP.Reference"
-  "\022!\n\told_theme\030\003 \001(\0132\016.TSP.Reference\022!\n\tn"
-  "ew_theme\030\004 \001(\0132\016.TSP.Reference\"c\n\035ApplyT"
-  "hemeChildCommandArchive\022\"\n\005super\030\001 \002(\0132\023"
-  ".TSK.CommandArchive\022\036\n\006parent\030\002 \001(\0132\016.TS"
-  "P.Reference\"\247\002\n$StyleUpdatePropertyMapCo"
-  "mmandArchive\022\"\n\005super\030\001 \002(\0132\023.TSK.Comman"
-  "dArchive\022%\n\rcurrent_style\030\002 \002(\0132\016.TSP.Re"
-  "ference\0223\n\033style_with_old_property_map\030\003"
-  " \001(\0132\016.TSP.Reference\0223\n\033style_with_new_p"
-  "roperty_map\030\004 \001(\0132\016.TSP.Reference\022\"\n\nsty"
-  "le_diff\030\007 \001(\0132\016.TSP.Reference\022&\n\030notify_"
-  "for_style_clients\030\006 \001(\010:\004true\"\230\001\n ThemeR"
-  "eplacePresetCommandArchive\022\"\n\005super\030\001 \002("
-  "\0132\023.TSK.CommandArchive\022\036\n\006preset\030\003 \002(\0132\016"
-  ".TSP.Reference\022!\n\toldPreset\030\004 \001(\0132\016.TSP."
-  "Reference\022\r\n\005index\030\005 \002(\r\"\263\001\n%ThemeReplac"
-  "eColorPresetCommandArchive\022\"\n\005super\030\001 \002("
-  "\0132\023.TSK.CommandArchive\022\035\n\005theme\030\002 \002(\0132\016."
-  "TSP.Reference\022\031\n\005color\030\003 \002(\0132\n.TSP.Color"
-  "\022\035\n\told_color\030\004 \002(\0132\n.TSP.Color\022\r\n\005index"
-  "\030\005 \002(\r\"\321\001\n!ThemeAddStylePresetCommandArc"
-  "hive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchive"
-  "\022\035\n\005theme\030\002 \002(\0132\016.TSP.Reference\022\036\n\006prese"
-  "t\030\003 \002(\0132\016.TSP.Reference\022\023\n\013preset_kind\030\004"
-  " \002(\t\022\022\n\nidentifier\030\005 \001(\t\022 \n\030add_preset_t"
-  "o_stylesheet\030\006 \001(\010\"\364\001\n$ThemeRemoveStyleP"
-  "resetCommandArchive\022\"\n\005super\030\001 \002(\0132\023.TSK"
-  ".CommandArchive\022\035\n\005theme\030\002 \002(\0132\016.TSP.Ref"
-  "erence\022\036\n\006preset\030\003 \002(\0132\016.TSP.Reference\022\024"
-  "\n\014preset_index\030\004 \002(\r\022\023\n\013preset_kind\030\005 \002("
-  "\t\022\022\n\nidentifier\030\006 \001(\t\022*\n\022replacement_pre"
-  "set\030\007 \001(\0132\016.TSP.Reference\"\246\001\n\035ThemeMoveP"
-  "resetCommandArchive\022\"\n\005super\030\001 \002(\0132\023.TSK"
-  ".CommandArchive\022\035\n\005theme\030\002 \002(\0132\016.TSP.Ref"
-  "erence\022\034\n\tpreset_id\030\003 \002(\0132\t.TSP.UUID\022\021\n\t"
-  "new_index\030\004 \002(\r\022\021\n\told_index\030\005 \002(\r\"\252\001\n8T"
-  "hemeReplaceStylePresetAndDisconnectStyle"
-  "sCommandArchive\022\"\n\005super\030\001 \002(\0132\023.TSK.Com"
-  "mandArchive\022\036\n\006preset\030\002 \002(\0132\016.TSP.Refere"
-  "nce\022*\n\022replacement_preset\030\003 \002(\0132\016.TSP.Re"
-  "ference\"\303\001\n\033CommandPropertyEntryArchive\022"
-  "\020\n\010property\030\001 \002(\r\022\014\n\004type\030\002 \002(\005\022\025\n\rinteg"
-  "er_value\030\003 \001(\005\022\023\n\013float_value\030\004 \001(\002\022\024\n\014d"
-  "ouble_value\030\005 \001(\001\022\024\n\014string_value\030\006 \001(\t\022"
-  "%\n\rtsp_reference\030\007 \001(\0132\016.TSP.Reference*\005"
-  "\010\010\020\321\017\"W\n\031CommandPropertyMapArchive\022:\n\020pr"
-  "operty_entries\030\001 \003(\0132 .TSS.CommandProper"
-  "tyEntryArchive*G\n\tValueType\022\016\n\nObjectTyp"
-  "e\020\000\022\013\n\007IntType\020\001\022\r\n\tFloatType\020\002\022\016\n\nDoubl"
-  "eType\020\003*\272\001\n\014PropertyType\022\027\n\023InvalidPrope"
-  "rtyType\020\001\022\024\n\020NullPropertyType\020\002\022\027\n\023Integ"
-  "erPropertyType\020\003\022\025\n\021FloatPropertyType\020\004\022"
-  "\026\n\022DoublePropertyType\020\005\022\030\n\024NSStringPrope"
-  "rtyType\020\006\022\031\n\025TSPObjectPropertyType\020\007:;\n\005"
-  "color\022 .TSS.CommandPropertyEntryArchive\030"
-  "\010 \001(\0132\n.TSP.Color"
+  "les\022\?\n\017styles_for_11_2\030\014 \001(\0132&.TSS.Style"
+  "sheetArchive.VersionedStyles\022\?\n\017styles_f"
+  "or_12_0\030\r \001(\0132&.TSS.StylesheetArchive.Ve"
+  "rsionedStyles\022\?\n\017styles_for_12_1\030\016 \001(\0132&"
+  ".TSS.StylesheetArchive.VersionedStyles\022\?"
+  "\n\017styles_for_12_2\030\017 \001(\0132&.TSS.Stylesheet"
+  "Archive.VersionedStyles\032I\n\024IdentifiedSty"
+  "leEntry\022\022\n\nidentifier\030\001 \002(\t\022\035\n\005style\030\002 \002"
+  "(\0132\016.TSP.Reference\032V\n\022StyleChildrenEntry"
+  "\022\036\n\006parent\030\001 \002(\0132\016.TSP.Reference\022 \n\010chil"
+  "dren\030\002 \003(\0132\016.TSP.Reference\032\320\001\n\017Versioned"
+  "Styles\022\036\n\006styles\030\001 \003(\0132\016.TSP.Reference\022L"
+  "\n\027identifier_to_style_map\030\002 \003(\0132+.TSS.St"
+  "ylesheetArchive.IdentifiedStyleEntry\022O\n\034"
+  "parent_to_children_style_map\030\003 \003(\0132).TSS"
+  ".StylesheetArchive.StyleChildrenEntry\"\231\002"
+  "\n\014ThemeArchive\022)\n\021legacy_stylesheet\030\001 \001("
+  "\0132\016.TSP.Reference\022\030\n\020theme_identifier\030\003 "
+  "\001(\t\022+\n\023document_stylesheet\030\004 \001(\0132\016.TSP.R"
+  "eference\0224\n!old_uuids_for_preset_replace"
+  "ments\030\005 \003(\0132\t.TSP.UUID\0224\n!new_uuids_for_"
+  "preset_replacements\030\006 \003(\0132\t.TSP.UUID\022!\n\r"
+  "color_presets\030\n \003(\0132\n.TSP.Color*\010\010d\020\200\200\200\200"
+  "\002\"\246\001\n\030ApplyThemeCommandArchive\022\"\n\005super\030"
+  "\001 \002(\0132\023.TSK.CommandArchive\022 \n\010commands\030\002"
+  " \003(\0132\016.TSP.Reference\022!\n\told_theme\030\003 \001(\0132"
+  "\016.TSP.Reference\022!\n\tnew_theme\030\004 \001(\0132\016.TSP"
+  ".Reference\"c\n\035ApplyThemeChildCommandArch"
+  "ive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchive\022"
+  "\036\n\006parent\030\002 \001(\0132\016.TSP.Reference\"\247\002\n$Styl"
+  "eUpdatePropertyMapCommandArchive\022\"\n\005supe"
+  "r\030\001 \002(\0132\023.TSK.CommandArchive\022%\n\rcurrent_"
+  "style\030\002 \002(\0132\016.TSP.Reference\0223\n\033style_wit"
+  "h_old_property_map\030\003 \001(\0132\016.TSP.Reference"
+  "\0223\n\033style_with_new_property_map\030\004 \001(\0132\016."
+  "TSP.Reference\022\"\n\nstyle_diff\030\007 \001(\0132\016.TSP."
+  "Reference\022&\n\030notify_for_style_clients\030\006 "
+  "\001(\010:\004true\"\230\001\n ThemeReplacePresetCommandA"
+  "rchive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchi"
+  "ve\022\036\n\006preset\030\003 \002(\0132\016.TSP.Reference\022!\n\tol"
+  "dPreset\030\004 \001(\0132\016.TSP.Reference\022\r\n\005index\030\005"
+  " \002(\r\"\263\001\n%ThemeReplaceColorPresetCommandA"
+  "rchive\022\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchi"
+  "ve\022\035\n\005theme\030\002 \002(\0132\016.TSP.Reference\022\031\n\005col"
+  "or\030\003 \002(\0132\n.TSP.Color\022\035\n\told_color\030\004 \002(\0132"
+  "\n.TSP.Color\022\r\n\005index\030\005 \002(\r\"\321\001\n!ThemeAddS"
+  "tylePresetCommandArchive\022\"\n\005super\030\001 \002(\0132"
+  "\023.TSK.CommandArchive\022\035\n\005theme\030\002 \002(\0132\016.TS"
+  "P.Reference\022\036\n\006preset\030\003 \002(\0132\016.TSP.Refere"
+  "nce\022\023\n\013preset_kind\030\004 \002(\t\022\022\n\nidentifier\030\005"
+  " \001(\t\022 \n\030add_preset_to_stylesheet\030\006 \001(\010\"\364"
+  "\001\n$ThemeRemoveStylePresetCommandArchive\022"
+  "\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchive\022\035\n\005t"
+  "heme\030\002 \002(\0132\016.TSP.Reference\022\036\n\006preset\030\003 \002"
+  "(\0132\016.TSP.Reference\022\024\n\014preset_index\030\004 \002(\r"
+  "\022\023\n\013preset_kind\030\005 \002(\t\022\022\n\nidentifier\030\006 \001("
+  "\t\022*\n\022replacement_preset\030\007 \001(\0132\016.TSP.Refe"
+  "rence\"\246\001\n\035ThemeMovePresetCommandArchive\022"
+  "\"\n\005super\030\001 \002(\0132\023.TSK.CommandArchive\022\035\n\005t"
+  "heme\030\002 \002(\0132\016.TSP.Reference\022\034\n\tpreset_id\030"
+  "\003 \002(\0132\t.TSP.UUID\022\021\n\tnew_index\030\004 \002(\r\022\021\n\to"
+  "ld_index\030\005 \002(\r\"\252\001\n8ThemeReplaceStylePres"
+  "etAndDisconnectStylesCommandArchive\022\"\n\005s"
+  "uper\030\001 \002(\0132\023.TSK.CommandArchive\022\036\n\006prese"
+  "t\030\002 \002(\0132\016.TSP.Reference\022*\n\022replacement_p"
+  "reset\030\003 \002(\0132\016.TSP.Reference\"\303\001\n\033CommandP"
+  "ropertyEntryArchive\022\020\n\010property\030\001 \002(\r\022\014\n"
+  "\004type\030\002 \002(\005\022\025\n\rinteger_value\030\003 \001(\005\022\023\n\013fl"
+  "oat_value\030\004 \001(\002\022\024\n\014double_value\030\005 \001(\001\022\024\n"
+  "\014string_value\030\006 \001(\t\022%\n\rtsp_reference\030\007 \001"
+  "(\0132\016.TSP.Reference*\005\010\010\020\321\017\"W\n\031CommandProp"
+  "ertyMapArchive\022:\n\020property_entries\030\001 \003(\013"
+  "2 .TSS.CommandPropertyEntryArchive*G\n\tVa"
+  "lueType\022\016\n\nObjectType\020\000\022\013\n\007IntType\020\001\022\r\n\t"
+  "FloatType\020\002\022\016\n\nDoubleType\020\003*\272\001\n\014Property"
+  "Type\022\027\n\023InvalidPropertyType\020\001\022\024\n\020NullPro"
+  "pertyType\020\002\022\027\n\023IntegerPropertyType\020\003\022\025\n\021"
+  "FloatPropertyType\020\004\022\026\n\022DoublePropertyTyp"
+  "e\020\005\022\030\n\024NSStringPropertyType\020\006\022\031\n\025TSPObje"
+  "ctPropertyType\020\007:;\n\005color\022 .TSS.CommandP"
+  "ropertyEntryArchive\030\010 \001(\0132\n.TSP.Color"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSSArchives_2eproto_deps[2] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSSArchives_2eproto_deps[2] = {
   &::descriptor_table_TSKArchives_2eproto,
   &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSSArchives_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSSArchives_2eproto = {
-  false, false, 3817, descriptor_table_protodef_TSSArchives_2eproto, "TSSArchives.proto", 
-  &descriptor_table_TSSArchives_2eproto_once, descriptor_table_TSSArchives_2eproto_deps, 2, 17,
-  schemas, file_default_instances, TableStruct_TSSArchives_2eproto::offsets,
-  file_level_metadata_TSSArchives_2eproto, file_level_enum_descriptors_TSSArchives_2eproto, file_level_service_descriptors_TSSArchives_2eproto,
+static ::_pbi::once_flag descriptor_table_TSSArchives_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSSArchives_2eproto = {
+    false, false, 4077, descriptor_table_protodef_TSSArchives_2eproto,
+    "TSSArchives.proto",
+    &descriptor_table_TSSArchives_2eproto_once, descriptor_table_TSSArchives_2eproto_deps, 2, 17,
+    schemas, file_default_instances, TableStruct_TSSArchives_2eproto::offsets,
+    file_level_metadata_TSSArchives_2eproto, file_level_enum_descriptors_TSSArchives_2eproto,
+    file_level_service_descriptors_TSSArchives_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSSArchives_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSSArchives_2eproto_getter() {
   return &descriptor_table_TSSArchives_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSSArchives_2eproto(&descriptor_table_TSSArchives_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSSArchives_2eproto(&descriptor_table_TSSArchives_2eproto);
 namespace TSS {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ValueType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_TSSArchives_2eproto);
@@ -725,7 +800,7 @@ bool PropertyType_IsValid(int value) {
 
 class StyleArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StyleArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StyleArchive>()._impl_._has_bits_);
   static void set_has_name(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -747,201 +822,224 @@ class StyleArchive::_Internal {
 
 const ::TSP::Reference&
 StyleArchive::_Internal::parent(const StyleArchive* msg) {
-  return *msg->parent_;
+  return *msg->_impl_.parent_;
 }
 const ::TSP::Reference&
 StyleArchive::_Internal::stylesheet(const StyleArchive* msg) {
-  return *msg->stylesheet_;
+  return *msg->_impl_.stylesheet_;
 }
 void StyleArchive::clear_parent() {
-  if (parent_ != nullptr) parent_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.parent_ != nullptr) _impl_.parent_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void StyleArchive::clear_stylesheet() {
-  if (stylesheet_ != nullptr) stylesheet_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.stylesheet_ != nullptr) _impl_.stylesheet_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 StyleArchive::StyleArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StyleArchive)
 }
 StyleArchive::StyleArchive(const StyleArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StyleArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.style_identifier_){}
+    , decltype(_impl_.parent_){nullptr}
+    , decltype(_impl_.stylesheet_){nullptr}
+    , decltype(_impl_.is_variation_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_name()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArenaForAllocation());
+    _this->_impl_.name_.Set(from._internal_name(), 
+      _this->GetArenaForAllocation());
   }
-  style_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.style_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.style_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_style_identifier()) {
-    style_identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_style_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.style_identifier_.Set(from._internal_style_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_parent()) {
-    parent_ = new ::TSP::Reference(*from.parent_);
-  } else {
-    parent_ = nullptr;
+    _this->_impl_.parent_ = new ::TSP::Reference(*from._impl_.parent_);
   }
   if (from._internal_has_stylesheet()) {
-    stylesheet_ = new ::TSP::Reference(*from.stylesheet_);
-  } else {
-    stylesheet_ = nullptr;
+    _this->_impl_.stylesheet_ = new ::TSP::Reference(*from._impl_.stylesheet_);
   }
-  is_variation_ = from.is_variation_;
+  _this->_impl_.is_variation_ = from._impl_.is_variation_;
   // @@protoc_insertion_point(copy_constructor:TSS.StyleArchive)
 }
 
-inline void StyleArchive::SharedCtor() {
-name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-style_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&parent_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&is_variation_) -
-    reinterpret_cast<char*>(&parent_)) + sizeof(is_variation_));
+inline void StyleArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.name_){}
+    , decltype(_impl_.style_identifier_){}
+    , decltype(_impl_.parent_){nullptr}
+    , decltype(_impl_.stylesheet_){nullptr}
+    , decltype(_impl_.is_variation_){false}
+  };
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.style_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.style_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 StyleArchive::~StyleArchive() {
   // @@protoc_insertion_point(destructor:TSS.StyleArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StyleArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  style_identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete parent_;
-  if (this != internal_default_instance()) delete stylesheet_;
+  _impl_.name_.Destroy();
+  _impl_.style_identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.parent_;
+  if (this != internal_default_instance()) delete _impl_.stylesheet_;
 }
 
-void StyleArchive::ArenaDtor(void* object) {
-  StyleArchive* _this = reinterpret_cast< StyleArchive* >(object);
-  (void)_this;
-}
-void StyleArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StyleArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StyleArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StyleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      name_.ClearNonDefaultToEmpty();
+      _impl_.name_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      style_identifier_.ClearNonDefaultToEmpty();
+      _impl_.style_identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(parent_ != nullptr);
-      parent_->Clear();
+      GOOGLE_DCHECK(_impl_.parent_ != nullptr);
+      _impl_.parent_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(stylesheet_ != nullptr);
-      stylesheet_->Clear();
+      GOOGLE_DCHECK(_impl_.stylesheet_ != nullptr);
+      _impl_.stylesheet_->Clear();
     }
   }
-  is_variation_ = false;
-  _has_bits_.Clear();
+  _impl_.is_variation_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StyleArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StyleArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional string name = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.StyleArchive.name");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.StyleArchive.name");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional string style_identifier = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           auto str = _internal_mutable_style_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.StyleArchive.style_identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.StyleArchive.style_identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference parent = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_parent(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool is_variation = 4 [default = false];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_is_variation(&has_bits);
-          is_variation_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.is_variation_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference stylesheet = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_stylesheet(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StyleArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StyleArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StyleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional string name = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -964,28 +1062,26 @@ failure:
 
   // optional .TSP.Reference parent = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::parent(this), target, stream);
+      InternalWriteMessage(3, _Internal::parent(this),
+        _Internal::parent(this).GetCachedSize(), target, stream);
   }
 
   // optional bool is_variation = 4 [default = false];
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_is_variation(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_is_variation(), target);
   }
 
   // optional .TSP.Reference stylesheet = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        5, _Internal::stylesheet(this), target, stream);
+      InternalWriteMessage(5, _Internal::stylesheet(this),
+        _Internal::stylesheet(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StyleArchive)
@@ -996,11 +1092,11 @@ size_t StyleArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.StyleArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     // optional string name = 1;
     if (cached_has_bits & 0x00000001u) {
@@ -1020,14 +1116,14 @@ size_t StyleArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *parent_);
+          *_impl_.parent_);
     }
 
     // optional .TSP.Reference stylesheet = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *stylesheet_);
+          *_impl_.stylesheet_);
     }
 
     // optional bool is_variation = 4 [default = false];
@@ -1036,54 +1132,46 @@ size_t StyleArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StyleArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StyleArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StyleArchive::GetClassData() const { return &_class_data_; }
 
-void StyleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StyleArchive *>(to)->MergeFrom(
-      static_cast<const StyleArchive &>(from));
-}
 
-
-void StyleArchive::MergeFrom(const StyleArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StyleArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StyleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StyleArchive*>(&to_msg);
+  auto& from = static_cast<const StyleArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StyleArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_name(from._internal_name());
+      _this->_internal_set_name(from._internal_name());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_style_identifier(from._internal_style_identifier());
+      _this->_internal_set_style_identifier(from._internal_style_identifier());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_parent()->::TSP::Reference::MergeFrom(from._internal_parent());
+      _this->_internal_mutable_parent()->::TSP::Reference::MergeFrom(
+          from._internal_parent());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_stylesheet()->::TSP::Reference::MergeFrom(from._internal_stylesheet());
+      _this->_internal_mutable_stylesheet()->::TSP::Reference::MergeFrom(
+          from._internal_stylesheet());
     }
     if (cached_has_bits & 0x00000010u) {
-      is_variation_ = from.is_variation_;
+      _this->_impl_.is_variation_ = from._impl_.is_variation_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StyleArchive::CopyFrom(const StyleArchive& from) {
@@ -1095,38 +1183,38 @@ void StyleArchive::CopyFrom(const StyleArchive& from) {
 
 bool StyleArchive::IsInitialized() const {
   if (_internal_has_parent()) {
-    if (!parent_->IsInitialized()) return false;
+    if (!_impl_.parent_->IsInitialized()) return false;
   }
   if (_internal_has_stylesheet()) {
-    if (!stylesheet_->IsInitialized()) return false;
+    if (!_impl_.stylesheet_->IsInitialized()) return false;
   }
   return true;
 }
 
 void StyleArchive::InternalSwap(StyleArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &name_, GetArenaForAllocation(),
-      &other->name_, other->GetArenaForAllocation()
+      &_impl_.name_, lhs_arena,
+      &other->_impl_.name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &style_identifier_, GetArenaForAllocation(),
-      &other->style_identifier_, other->GetArenaForAllocation()
+      &_impl_.style_identifier_, lhs_arena,
+      &other->_impl_.style_identifier_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StyleArchive, is_variation_)
-      + sizeof(StyleArchive::is_variation_)
-      - PROTOBUF_FIELD_OFFSET(StyleArchive, parent_)>(
-          reinterpret_cast<char*>(&parent_),
-          reinterpret_cast<char*>(&other->parent_));
+      PROTOBUF_FIELD_OFFSET(StyleArchive, _impl_.is_variation_)
+      + sizeof(StyleArchive::_impl_.is_variation_)
+      - PROTOBUF_FIELD_OFFSET(StyleArchive, _impl_.parent_)>(
+          reinterpret_cast<char*>(&_impl_.parent_),
+          reinterpret_cast<char*>(&other->_impl_.parent_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StyleArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[0]);
 }
@@ -1135,7 +1223,7 @@ void StyleArchive::InternalSwap(StyleArchive* other) {
 
 class StylesheetArchive_IdentifiedStyleEntry::_Internal {
  public:
-  using HasBits = decltype(std::declval<StylesheetArchive_IdentifiedStyleEntry>()._has_bits_);
+  using HasBits = decltype(std::declval<StylesheetArchive_IdentifiedStyleEntry>()._impl_._has_bits_);
   static void set_has_identifier(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1150,142 +1238,155 @@ class StylesheetArchive_IdentifiedStyleEntry::_Internal {
 
 const ::TSP::Reference&
 StylesheetArchive_IdentifiedStyleEntry::_Internal::style(const StylesheetArchive_IdentifiedStyleEntry* msg) {
-  return *msg->style_;
+  return *msg->_impl_.style_;
 }
 void StylesheetArchive_IdentifiedStyleEntry::clear_style() {
-  if (style_ != nullptr) style_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.style_ != nullptr) _impl_.style_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 StylesheetArchive_IdentifiedStyleEntry::StylesheetArchive_IdentifiedStyleEntry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StylesheetArchive.IdentifiedStyleEntry)
 }
 StylesheetArchive_IdentifiedStyleEntry::StylesheetArchive_IdentifiedStyleEntry(const StylesheetArchive_IdentifiedStyleEntry& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StylesheetArchive_IdentifiedStyleEntry* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.style_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_identifier()) {
-    identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.identifier_.Set(from._internal_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_style()) {
-    style_ = new ::TSP::Reference(*from.style_);
-  } else {
-    style_ = nullptr;
+    _this->_impl_.style_ = new ::TSP::Reference(*from._impl_.style_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.StylesheetArchive.IdentifiedStyleEntry)
 }
 
-inline void StylesheetArchive_IdentifiedStyleEntry::SharedCtor() {
-identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-style_ = nullptr;
+inline void StylesheetArchive_IdentifiedStyleEntry::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.style_){nullptr}
+  };
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 StylesheetArchive_IdentifiedStyleEntry::~StylesheetArchive_IdentifiedStyleEntry() {
   // @@protoc_insertion_point(destructor:TSS.StylesheetArchive.IdentifiedStyleEntry)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StylesheetArchive_IdentifiedStyleEntry::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete style_;
+  _impl_.identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.style_;
 }
 
-void StylesheetArchive_IdentifiedStyleEntry::ArenaDtor(void* object) {
-  StylesheetArchive_IdentifiedStyleEntry* _this = reinterpret_cast< StylesheetArchive_IdentifiedStyleEntry* >(object);
-  (void)_this;
-}
-void StylesheetArchive_IdentifiedStyleEntry::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StylesheetArchive_IdentifiedStyleEntry::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StylesheetArchive_IdentifiedStyleEntry::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StylesheetArchive.IdentifiedStyleEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      identifier_.ClearNonDefaultToEmpty();
+      _impl_.identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(style_ != nullptr);
-      style_->Clear();
+      GOOGLE_DCHECK(_impl_.style_ != nullptr);
+      _impl_.style_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StylesheetArchive_IdentifiedStyleEntry::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StylesheetArchive_IdentifiedStyleEntry::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required string identifier = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.StylesheetArchive.IdentifiedStyleEntry.identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.StylesheetArchive.IdentifiedStyleEntry.identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference style = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_style(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StylesheetArchive_IdentifiedStyleEntry::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StylesheetArchive_IdentifiedStyleEntry::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StylesheetArchive.IdentifiedStyleEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required string identifier = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1298,14 +1399,13 @@ failure:
 
   // required .TSP.Reference style = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::style(this), target, stream);
+      InternalWriteMessage(2, _Internal::style(this),
+        _Internal::style(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StylesheetArchive.IdentifiedStyleEntry)
@@ -1327,7 +1427,7 @@ size_t StylesheetArchive_IdentifiedStyleEntry::RequiredFieldsByteSizeFallback() 
     // required .TSP.Reference style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *style_);
+        *_impl_.style_);
   }
 
   return total_size;
@@ -1336,7 +1436,7 @@ size_t StylesheetArchive_IdentifiedStyleEntry::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.StylesheetArchive.IdentifiedStyleEntry)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required string identifier = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -1345,53 +1445,44 @@ size_t StylesheetArchive_IdentifiedStyleEntry::ByteSizeLong() const {
     // required .TSP.Reference style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *style_);
+        *_impl_.style_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StylesheetArchive_IdentifiedStyleEntry::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StylesheetArchive_IdentifiedStyleEntry::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StylesheetArchive_IdentifiedStyleEntry::GetClassData() const { return &_class_data_; }
 
-void StylesheetArchive_IdentifiedStyleEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StylesheetArchive_IdentifiedStyleEntry *>(to)->MergeFrom(
-      static_cast<const StylesheetArchive_IdentifiedStyleEntry &>(from));
-}
 
-
-void StylesheetArchive_IdentifiedStyleEntry::MergeFrom(const StylesheetArchive_IdentifiedStyleEntry& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.IdentifiedStyleEntry)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StylesheetArchive_IdentifiedStyleEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StylesheetArchive_IdentifiedStyleEntry*>(&to_msg);
+  auto& from = static_cast<const StylesheetArchive_IdentifiedStyleEntry&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.IdentifiedStyleEntry)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_identifier(from._internal_identifier());
+      _this->_internal_set_identifier(from._internal_identifier());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_style()->::TSP::Reference::MergeFrom(from._internal_style());
+      _this->_internal_mutable_style()->::TSP::Reference::MergeFrom(
+          from._internal_style());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StylesheetArchive_IdentifiedStyleEntry::CopyFrom(const StylesheetArchive_IdentifiedStyleEntry& from) {
@@ -1402,27 +1493,28 @@ void StylesheetArchive_IdentifiedStyleEntry::CopyFrom(const StylesheetArchive_Id
 }
 
 bool StylesheetArchive_IdentifiedStyleEntry::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_style()) {
-    if (!style_->IsInitialized()) return false;
+    if (!_impl_.style_->IsInitialized()) return false;
   }
   return true;
 }
 
 void StylesheetArchive_IdentifiedStyleEntry::InternalSwap(StylesheetArchive_IdentifiedStyleEntry* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &identifier_, GetArenaForAllocation(),
-      &other->identifier_, other->GetArenaForAllocation()
+      &_impl_.identifier_, lhs_arena,
+      &other->_impl_.identifier_, rhs_arena
   );
-  swap(style_, other->style_);
+  swap(_impl_.style_, other->_impl_.style_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StylesheetArchive_IdentifiedStyleEntry::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[1]);
 }
@@ -1431,7 +1523,7 @@ void StylesheetArchive_IdentifiedStyleEntry::InternalSwap(StylesheetArchive_Iden
 
 class StylesheetArchive_StyleChildrenEntry::_Internal {
  public:
-  using HasBits = decltype(std::declval<StylesheetArchive_StyleChildrenEntry>()._has_bits_);
+  using HasBits = decltype(std::declval<StylesheetArchive_StyleChildrenEntry>()._impl_._has_bits_);
   static const ::TSP::Reference& parent(const StylesheetArchive_StyleChildrenEntry* msg);
   static void set_has_parent(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1443,97 +1535,102 @@ class StylesheetArchive_StyleChildrenEntry::_Internal {
 
 const ::TSP::Reference&
 StylesheetArchive_StyleChildrenEntry::_Internal::parent(const StylesheetArchive_StyleChildrenEntry* msg) {
-  return *msg->parent_;
+  return *msg->_impl_.parent_;
 }
 void StylesheetArchive_StyleChildrenEntry::clear_parent() {
-  if (parent_ != nullptr) parent_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.parent_ != nullptr) _impl_.parent_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void StylesheetArchive_StyleChildrenEntry::clear_children() {
-  children_.Clear();
+  _impl_.children_.Clear();
 }
 StylesheetArchive_StyleChildrenEntry::StylesheetArchive_StyleChildrenEntry(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  children_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StylesheetArchive.StyleChildrenEntry)
 }
 StylesheetArchive_StyleChildrenEntry::StylesheetArchive_StyleChildrenEntry(const StylesheetArchive_StyleChildrenEntry& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      children_(from.children_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StylesheetArchive_StyleChildrenEntry* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.children_){from._impl_.children_}
+    , decltype(_impl_.parent_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_parent()) {
-    parent_ = new ::TSP::Reference(*from.parent_);
-  } else {
-    parent_ = nullptr;
+    _this->_impl_.parent_ = new ::TSP::Reference(*from._impl_.parent_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.StylesheetArchive.StyleChildrenEntry)
 }
 
-inline void StylesheetArchive_StyleChildrenEntry::SharedCtor() {
-parent_ = nullptr;
+inline void StylesheetArchive_StyleChildrenEntry::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.children_){arena}
+    , decltype(_impl_.parent_){nullptr}
+  };
 }
 
 StylesheetArchive_StyleChildrenEntry::~StylesheetArchive_StyleChildrenEntry() {
   // @@protoc_insertion_point(destructor:TSS.StylesheetArchive.StyleChildrenEntry)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StylesheetArchive_StyleChildrenEntry::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete parent_;
+  _impl_.children_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.parent_;
 }
 
-void StylesheetArchive_StyleChildrenEntry::ArenaDtor(void* object) {
-  StylesheetArchive_StyleChildrenEntry* _this = reinterpret_cast< StylesheetArchive_StyleChildrenEntry* >(object);
-  (void)_this;
-}
-void StylesheetArchive_StyleChildrenEntry::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StylesheetArchive_StyleChildrenEntry::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StylesheetArchive_StyleChildrenEntry::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StylesheetArchive.StyleChildrenEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  children_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.children_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(parent_ != nullptr);
-    parent_->Clear();
+    GOOGLE_DCHECK(_impl_.parent_ != nullptr);
+    _impl_.parent_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StylesheetArchive_StyleChildrenEntry::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StylesheetArchive_StyleChildrenEntry::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSP.Reference parent = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_parent(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Reference children = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1541,57 +1638,57 @@ const char* StylesheetArchive_StyleChildrenEntry::_InternalParse(const char* ptr
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StylesheetArchive_StyleChildrenEntry::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StylesheetArchive_StyleChildrenEntry::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StylesheetArchive.StyleChildrenEntry)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSP.Reference parent = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::parent(this), target, stream);
+      InternalWriteMessage(1, _Internal::parent(this),
+        _Internal::parent(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Reference children = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_children_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_children_size()); i < n; i++) {
+    const auto& repfield = this->_internal_children(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_children(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StylesheetArchive.StyleChildrenEntry)
@@ -1606,52 +1703,43 @@ size_t StylesheetArchive_StyleChildrenEntry::ByteSizeLong() const {
   if (_internal_has_parent()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *parent_);
+        *_impl_.parent_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference children = 2;
   total_size += 1UL * this->_internal_children_size();
-  for (const auto& msg : this->children_) {
+  for (const auto& msg : this->_impl_.children_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StylesheetArchive_StyleChildrenEntry::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StylesheetArchive_StyleChildrenEntry::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StylesheetArchive_StyleChildrenEntry::GetClassData() const { return &_class_data_; }
 
-void StylesheetArchive_StyleChildrenEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StylesheetArchive_StyleChildrenEntry *>(to)->MergeFrom(
-      static_cast<const StylesheetArchive_StyleChildrenEntry &>(from));
-}
 
-
-void StylesheetArchive_StyleChildrenEntry::MergeFrom(const StylesheetArchive_StyleChildrenEntry& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.StyleChildrenEntry)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StylesheetArchive_StyleChildrenEntry::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StylesheetArchive_StyleChildrenEntry*>(&to_msg);
+  auto& from = static_cast<const StylesheetArchive_StyleChildrenEntry&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.StyleChildrenEntry)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  children_.MergeFrom(from.children_);
+  _this->_impl_.children_.MergeFrom(from._impl_.children_);
   if (from._internal_has_parent()) {
-    _internal_mutable_parent()->::TSP::Reference::MergeFrom(from._internal_parent());
+    _this->_internal_mutable_parent()->::TSP::Reference::MergeFrom(
+        from._internal_parent());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StylesheetArchive_StyleChildrenEntry::CopyFrom(const StylesheetArchive_StyleChildrenEntry& from) {
@@ -1662,10 +1750,11 @@ void StylesheetArchive_StyleChildrenEntry::CopyFrom(const StylesheetArchive_Styl
 }
 
 bool StylesheetArchive_StyleChildrenEntry::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(children_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.children_))
+    return false;
   if (_internal_has_parent()) {
-    if (!parent_->IsInitialized()) return false;
+    if (!_impl_.parent_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1673,13 +1762,13 @@ bool StylesheetArchive_StyleChildrenEntry::IsInitialized() const {
 void StylesheetArchive_StyleChildrenEntry::InternalSwap(StylesheetArchive_StyleChildrenEntry* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  children_.InternalSwap(&other->children_);
-  swap(parent_, other->parent_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.children_.InternalSwap(&other->_impl_.children_);
+  swap(_impl_.parent_, other->_impl_.parent_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StylesheetArchive_StyleChildrenEntry::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[2]);
 }
@@ -1691,74 +1780,80 @@ class StylesheetArchive_VersionedStyles::_Internal {
 };
 
 void StylesheetArchive_VersionedStyles::clear_styles() {
-  styles_.Clear();
+  _impl_.styles_.Clear();
 }
 StylesheetArchive_VersionedStyles::StylesheetArchive_VersionedStyles(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  styles_(arena),
-  identifier_to_style_map_(arena),
-  parent_to_children_style_map_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StylesheetArchive.VersionedStyles)
 }
 StylesheetArchive_VersionedStyles::StylesheetArchive_VersionedStyles(const StylesheetArchive_VersionedStyles& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      styles_(from.styles_),
-      identifier_to_style_map_(from.identifier_to_style_map_),
-      parent_to_children_style_map_(from.parent_to_children_style_map_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StylesheetArchive_VersionedStyles* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.styles_){from._impl_.styles_}
+    , decltype(_impl_.identifier_to_style_map_){from._impl_.identifier_to_style_map_}
+    , decltype(_impl_.parent_to_children_style_map_){from._impl_.parent_to_children_style_map_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TSS.StylesheetArchive.VersionedStyles)
 }
 
-inline void StylesheetArchive_VersionedStyles::SharedCtor() {
+inline void StylesheetArchive_VersionedStyles::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.styles_){arena}
+    , decltype(_impl_.identifier_to_style_map_){arena}
+    , decltype(_impl_.parent_to_children_style_map_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 StylesheetArchive_VersionedStyles::~StylesheetArchive_VersionedStyles() {
   // @@protoc_insertion_point(destructor:TSS.StylesheetArchive.VersionedStyles)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StylesheetArchive_VersionedStyles::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.styles_.~RepeatedPtrField();
+  _impl_.identifier_to_style_map_.~RepeatedPtrField();
+  _impl_.parent_to_children_style_map_.~RepeatedPtrField();
 }
 
-void StylesheetArchive_VersionedStyles::ArenaDtor(void* object) {
-  StylesheetArchive_VersionedStyles* _this = reinterpret_cast< StylesheetArchive_VersionedStyles* >(object);
-  (void)_this;
-}
-void StylesheetArchive_VersionedStyles::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StylesheetArchive_VersionedStyles::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StylesheetArchive_VersionedStyles::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StylesheetArchive.VersionedStyles)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  styles_.Clear();
-  identifier_to_style_map_.Clear();
-  parent_to_children_style_map_.Clear();
+  _impl_.styles_.Clear();
+  _impl_.identifier_to_style_map_.Clear();
+  _impl_.parent_to_children_style_map_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StylesheetArchive_VersionedStyles::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StylesheetArchive_VersionedStyles::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSP.Reference styles = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1766,11 +1861,12 @@ const char* StylesheetArchive_VersionedStyles::_InternalParse(const char* ptr, :
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1778,11 +1874,12 @@ const char* StylesheetArchive_VersionedStyles::_InternalParse(const char* ptr, :
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -1790,63 +1887,64 @@ const char* StylesheetArchive_VersionedStyles::_InternalParse(const char* ptr, :
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StylesheetArchive_VersionedStyles::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StylesheetArchive_VersionedStyles::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StylesheetArchive.VersionedStyles)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSP.Reference styles = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_styles_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_styles_size()); i < n; i++) {
+    const auto& repfield = this->_internal_styles(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_styles(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_identifier_to_style_map_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_identifier_to_style_map_size()); i < n; i++) {
+    const auto& repfield = this->_internal_identifier_to_style_map(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_identifier_to_style_map(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 3;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_parent_to_children_style_map_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_parent_to_children_style_map_size()); i < n; i++) {
+    const auto& repfield = this->_internal_parent_to_children_style_map(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_parent_to_children_style_map(i), target, stream);
+        InternalWriteMessage(3, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StylesheetArchive.VersionedStyles)
@@ -1857,63 +1955,53 @@ size_t StylesheetArchive_VersionedStyles::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.StylesheetArchive.VersionedStyles)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference styles = 1;
   total_size += 1UL * this->_internal_styles_size();
-  for (const auto& msg : this->styles_) {
+  for (const auto& msg : this->_impl_.styles_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
   total_size += 1UL * this->_internal_identifier_to_style_map_size();
-  for (const auto& msg : this->identifier_to_style_map_) {
+  for (const auto& msg : this->_impl_.identifier_to_style_map_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 3;
   total_size += 1UL * this->_internal_parent_to_children_style_map_size();
-  for (const auto& msg : this->parent_to_children_style_map_) {
+  for (const auto& msg : this->_impl_.parent_to_children_style_map_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StylesheetArchive_VersionedStyles::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StylesheetArchive_VersionedStyles::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StylesheetArchive_VersionedStyles::GetClassData() const { return &_class_data_; }
 
-void StylesheetArchive_VersionedStyles::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StylesheetArchive_VersionedStyles *>(to)->MergeFrom(
-      static_cast<const StylesheetArchive_VersionedStyles &>(from));
-}
 
-
-void StylesheetArchive_VersionedStyles::MergeFrom(const StylesheetArchive_VersionedStyles& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.VersionedStyles)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StylesheetArchive_VersionedStyles::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StylesheetArchive_VersionedStyles*>(&to_msg);
+  auto& from = static_cast<const StylesheetArchive_VersionedStyles&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive.VersionedStyles)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  styles_.MergeFrom(from.styles_);
-  identifier_to_style_map_.MergeFrom(from.identifier_to_style_map_);
-  parent_to_children_style_map_.MergeFrom(from.parent_to_children_style_map_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.styles_.MergeFrom(from._impl_.styles_);
+  _this->_impl_.identifier_to_style_map_.MergeFrom(from._impl_.identifier_to_style_map_);
+  _this->_impl_.parent_to_children_style_map_.MergeFrom(from._impl_.parent_to_children_style_map_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StylesheetArchive_VersionedStyles::CopyFrom(const StylesheetArchive_VersionedStyles& from) {
@@ -1924,22 +2012,25 @@ void StylesheetArchive_VersionedStyles::CopyFrom(const StylesheetArchive_Version
 }
 
 bool StylesheetArchive_VersionedStyles::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(styles_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(identifier_to_style_map_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(parent_to_children_style_map_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.styles_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.identifier_to_style_map_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.parent_to_children_style_map_))
+    return false;
   return true;
 }
 
 void StylesheetArchive_VersionedStyles::InternalSwap(StylesheetArchive_VersionedStyles* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  styles_.InternalSwap(&other->styles_);
-  identifier_to_style_map_.InternalSwap(&other->identifier_to_style_map_);
-  parent_to_children_style_map_.InternalSwap(&other->parent_to_children_style_map_);
+  _impl_.styles_.InternalSwap(&other->_impl_.styles_);
+  _impl_.identifier_to_style_map_.InternalSwap(&other->_impl_.identifier_to_style_map_);
+  _impl_.parent_to_children_style_map_.InternalSwap(&other->_impl_.parent_to_children_style_map_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StylesheetArchive_VersionedStyles::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[3]);
 }
@@ -1948,16 +2039,16 @@ void StylesheetArchive_VersionedStyles::InternalSwap(StylesheetArchive_Versioned
 
 class StylesheetArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StylesheetArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StylesheetArchive>()._impl_._has_bits_);
   static const ::TSP::Reference& parent(const StylesheetArchive* msg);
   static void set_has_parent(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
   static void set_has_is_locked(HasBits* has_bits) {
-    (*has_bits)[0] |= 128u;
+    (*has_bits)[0] |= 2048u;
   }
   static void set_has_can_cull_styles(HasBits* has_bits) {
-    (*has_bits)[0] |= 64u;
+    (*has_bits)[0] |= 1024u;
   }
   static const ::TSS::StylesheetArchive_VersionedStyles& styles_for_10_0(const StylesheetArchive* msg);
   static void set_has_styles_for_10_0(HasBits* has_bits) {
@@ -1979,183 +2070,263 @@ class StylesheetArchive::_Internal {
   static void set_has_styles_for_11_1(HasBits* has_bits) {
     (*has_bits)[0] |= 32u;
   }
+  static const ::TSS::StylesheetArchive_VersionedStyles& styles_for_11_2(const StylesheetArchive* msg);
+  static void set_has_styles_for_11_2(HasBits* has_bits) {
+    (*has_bits)[0] |= 64u;
+  }
+  static const ::TSS::StylesheetArchive_VersionedStyles& styles_for_12_0(const StylesheetArchive* msg);
+  static void set_has_styles_for_12_0(HasBits* has_bits) {
+    (*has_bits)[0] |= 128u;
+  }
+  static const ::TSS::StylesheetArchive_VersionedStyles& styles_for_12_1(const StylesheetArchive* msg);
+  static void set_has_styles_for_12_1(HasBits* has_bits) {
+    (*has_bits)[0] |= 256u;
+  }
+  static const ::TSS::StylesheetArchive_VersionedStyles& styles_for_12_2(const StylesheetArchive* msg);
+  static void set_has_styles_for_12_2(HasBits* has_bits) {
+    (*has_bits)[0] |= 512u;
+  }
 };
 
 const ::TSP::Reference&
 StylesheetArchive::_Internal::parent(const StylesheetArchive* msg) {
-  return *msg->parent_;
+  return *msg->_impl_.parent_;
 }
 const ::TSS::StylesheetArchive_VersionedStyles&
 StylesheetArchive::_Internal::styles_for_10_0(const StylesheetArchive* msg) {
-  return *msg->styles_for_10_0_;
+  return *msg->_impl_.styles_for_10_0_;
 }
 const ::TSS::StylesheetArchive_VersionedStyles&
 StylesheetArchive::_Internal::styles_for_10_1(const StylesheetArchive* msg) {
-  return *msg->styles_for_10_1_;
+  return *msg->_impl_.styles_for_10_1_;
 }
 const ::TSS::StylesheetArchive_VersionedStyles&
 StylesheetArchive::_Internal::styles_for_10_2(const StylesheetArchive* msg) {
-  return *msg->styles_for_10_2_;
+  return *msg->_impl_.styles_for_10_2_;
 }
 const ::TSS::StylesheetArchive_VersionedStyles&
 StylesheetArchive::_Internal::styles_for_11_0(const StylesheetArchive* msg) {
-  return *msg->styles_for_11_0_;
+  return *msg->_impl_.styles_for_11_0_;
 }
 const ::TSS::StylesheetArchive_VersionedStyles&
 StylesheetArchive::_Internal::styles_for_11_1(const StylesheetArchive* msg) {
-  return *msg->styles_for_11_1_;
+  return *msg->_impl_.styles_for_11_1_;
+}
+const ::TSS::StylesheetArchive_VersionedStyles&
+StylesheetArchive::_Internal::styles_for_11_2(const StylesheetArchive* msg) {
+  return *msg->_impl_.styles_for_11_2_;
+}
+const ::TSS::StylesheetArchive_VersionedStyles&
+StylesheetArchive::_Internal::styles_for_12_0(const StylesheetArchive* msg) {
+  return *msg->_impl_.styles_for_12_0_;
+}
+const ::TSS::StylesheetArchive_VersionedStyles&
+StylesheetArchive::_Internal::styles_for_12_1(const StylesheetArchive* msg) {
+  return *msg->_impl_.styles_for_12_1_;
+}
+const ::TSS::StylesheetArchive_VersionedStyles&
+StylesheetArchive::_Internal::styles_for_12_2(const StylesheetArchive* msg) {
+  return *msg->_impl_.styles_for_12_2_;
 }
 void StylesheetArchive::clear_styles() {
-  styles_.Clear();
+  _impl_.styles_.Clear();
 }
 void StylesheetArchive::clear_parent() {
-  if (parent_ != nullptr) parent_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.parent_ != nullptr) _impl_.parent_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 StylesheetArchive::StylesheetArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  styles_(arena),
-  identifier_to_style_map_(arena),
-  parent_to_children_style_map_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StylesheetArchive)
 }
 StylesheetArchive::StylesheetArchive(const StylesheetArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      styles_(from.styles_),
-      identifier_to_style_map_(from.identifier_to_style_map_),
-      parent_to_children_style_map_(from.parent_to_children_style_map_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StylesheetArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.styles_){from._impl_.styles_}
+    , decltype(_impl_.identifier_to_style_map_){from._impl_.identifier_to_style_map_}
+    , decltype(_impl_.parent_to_children_style_map_){from._impl_.parent_to_children_style_map_}
+    , decltype(_impl_.parent_){nullptr}
+    , decltype(_impl_.styles_for_10_0_){nullptr}
+    , decltype(_impl_.styles_for_10_1_){nullptr}
+    , decltype(_impl_.styles_for_10_2_){nullptr}
+    , decltype(_impl_.styles_for_11_0_){nullptr}
+    , decltype(_impl_.styles_for_11_1_){nullptr}
+    , decltype(_impl_.styles_for_11_2_){nullptr}
+    , decltype(_impl_.styles_for_12_0_){nullptr}
+    , decltype(_impl_.styles_for_12_1_){nullptr}
+    , decltype(_impl_.styles_for_12_2_){nullptr}
+    , decltype(_impl_.can_cull_styles_){}
+    , decltype(_impl_.is_locked_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_parent()) {
-    parent_ = new ::TSP::Reference(*from.parent_);
-  } else {
-    parent_ = nullptr;
+    _this->_impl_.parent_ = new ::TSP::Reference(*from._impl_.parent_);
   }
   if (from._internal_has_styles_for_10_0()) {
-    styles_for_10_0_ = new ::TSS::StylesheetArchive_VersionedStyles(*from.styles_for_10_0_);
-  } else {
-    styles_for_10_0_ = nullptr;
+    _this->_impl_.styles_for_10_0_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_10_0_);
   }
   if (from._internal_has_styles_for_10_1()) {
-    styles_for_10_1_ = new ::TSS::StylesheetArchive_VersionedStyles(*from.styles_for_10_1_);
-  } else {
-    styles_for_10_1_ = nullptr;
+    _this->_impl_.styles_for_10_1_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_10_1_);
   }
   if (from._internal_has_styles_for_10_2()) {
-    styles_for_10_2_ = new ::TSS::StylesheetArchive_VersionedStyles(*from.styles_for_10_2_);
-  } else {
-    styles_for_10_2_ = nullptr;
+    _this->_impl_.styles_for_10_2_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_10_2_);
   }
   if (from._internal_has_styles_for_11_0()) {
-    styles_for_11_0_ = new ::TSS::StylesheetArchive_VersionedStyles(*from.styles_for_11_0_);
-  } else {
-    styles_for_11_0_ = nullptr;
+    _this->_impl_.styles_for_11_0_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_11_0_);
   }
   if (from._internal_has_styles_for_11_1()) {
-    styles_for_11_1_ = new ::TSS::StylesheetArchive_VersionedStyles(*from.styles_for_11_1_);
-  } else {
-    styles_for_11_1_ = nullptr;
+    _this->_impl_.styles_for_11_1_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_11_1_);
   }
-  ::memcpy(&can_cull_styles_, &from.can_cull_styles_,
-    static_cast<size_t>(reinterpret_cast<char*>(&is_locked_) -
-    reinterpret_cast<char*>(&can_cull_styles_)) + sizeof(is_locked_));
+  if (from._internal_has_styles_for_11_2()) {
+    _this->_impl_.styles_for_11_2_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_11_2_);
+  }
+  if (from._internal_has_styles_for_12_0()) {
+    _this->_impl_.styles_for_12_0_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_12_0_);
+  }
+  if (from._internal_has_styles_for_12_1()) {
+    _this->_impl_.styles_for_12_1_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_12_1_);
+  }
+  if (from._internal_has_styles_for_12_2()) {
+    _this->_impl_.styles_for_12_2_ = new ::TSS::StylesheetArchive_VersionedStyles(*from._impl_.styles_for_12_2_);
+  }
+  ::memcpy(&_impl_.can_cull_styles_, &from._impl_.can_cull_styles_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.is_locked_) -
+    reinterpret_cast<char*>(&_impl_.can_cull_styles_)) + sizeof(_impl_.is_locked_));
   // @@protoc_insertion_point(copy_constructor:TSS.StylesheetArchive)
 }
 
-inline void StylesheetArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&parent_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&can_cull_styles_) -
-    reinterpret_cast<char*>(&parent_)) + sizeof(can_cull_styles_));
-is_locked_ = true;
+inline void StylesheetArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.styles_){arena}
+    , decltype(_impl_.identifier_to_style_map_){arena}
+    , decltype(_impl_.parent_to_children_style_map_){arena}
+    , decltype(_impl_.parent_){nullptr}
+    , decltype(_impl_.styles_for_10_0_){nullptr}
+    , decltype(_impl_.styles_for_10_1_){nullptr}
+    , decltype(_impl_.styles_for_10_2_){nullptr}
+    , decltype(_impl_.styles_for_11_0_){nullptr}
+    , decltype(_impl_.styles_for_11_1_){nullptr}
+    , decltype(_impl_.styles_for_11_2_){nullptr}
+    , decltype(_impl_.styles_for_12_0_){nullptr}
+    , decltype(_impl_.styles_for_12_1_){nullptr}
+    , decltype(_impl_.styles_for_12_2_){nullptr}
+    , decltype(_impl_.can_cull_styles_){false}
+    , decltype(_impl_.is_locked_){true}
+  };
 }
 
 StylesheetArchive::~StylesheetArchive() {
   // @@protoc_insertion_point(destructor:TSS.StylesheetArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StylesheetArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete parent_;
-  if (this != internal_default_instance()) delete styles_for_10_0_;
-  if (this != internal_default_instance()) delete styles_for_10_1_;
-  if (this != internal_default_instance()) delete styles_for_10_2_;
-  if (this != internal_default_instance()) delete styles_for_11_0_;
-  if (this != internal_default_instance()) delete styles_for_11_1_;
+  _impl_.styles_.~RepeatedPtrField();
+  _impl_.identifier_to_style_map_.~RepeatedPtrField();
+  _impl_.parent_to_children_style_map_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.parent_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_10_0_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_10_1_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_10_2_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_11_0_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_11_1_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_11_2_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_12_0_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_12_1_;
+  if (this != internal_default_instance()) delete _impl_.styles_for_12_2_;
 }
 
-void StylesheetArchive::ArenaDtor(void* object) {
-  StylesheetArchive* _this = reinterpret_cast< StylesheetArchive* >(object);
-  (void)_this;
-}
-void StylesheetArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StylesheetArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StylesheetArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StylesheetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  styles_.Clear();
-  identifier_to_style_map_.Clear();
-  parent_to_children_style_map_.Clear();
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 0x0000003fu) {
+  _impl_.styles_.Clear();
+  _impl_.identifier_to_style_map_.Clear();
+  _impl_.parent_to_children_style_map_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
+  if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(parent_ != nullptr);
-      parent_->Clear();
+      GOOGLE_DCHECK(_impl_.parent_ != nullptr);
+      _impl_.parent_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(styles_for_10_0_ != nullptr);
-      styles_for_10_0_->Clear();
+      GOOGLE_DCHECK(_impl_.styles_for_10_0_ != nullptr);
+      _impl_.styles_for_10_0_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(styles_for_10_1_ != nullptr);
-      styles_for_10_1_->Clear();
+      GOOGLE_DCHECK(_impl_.styles_for_10_1_ != nullptr);
+      _impl_.styles_for_10_1_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(styles_for_10_2_ != nullptr);
-      styles_for_10_2_->Clear();
+      GOOGLE_DCHECK(_impl_.styles_for_10_2_ != nullptr);
+      _impl_.styles_for_10_2_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(styles_for_11_0_ != nullptr);
-      styles_for_11_0_->Clear();
+      GOOGLE_DCHECK(_impl_.styles_for_11_0_ != nullptr);
+      _impl_.styles_for_11_0_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(styles_for_11_1_ != nullptr);
-      styles_for_11_1_->Clear();
+      GOOGLE_DCHECK(_impl_.styles_for_11_1_ != nullptr);
+      _impl_.styles_for_11_1_->Clear();
+    }
+    if (cached_has_bits & 0x00000040u) {
+      GOOGLE_DCHECK(_impl_.styles_for_11_2_ != nullptr);
+      _impl_.styles_for_11_2_->Clear();
+    }
+    if (cached_has_bits & 0x00000080u) {
+      GOOGLE_DCHECK(_impl_.styles_for_12_0_ != nullptr);
+      _impl_.styles_for_12_0_->Clear();
     }
   }
-  if (cached_has_bits & 0x000000c0u) {
-    can_cull_styles_ = false;
-    is_locked_ = true;
+  if (cached_has_bits & 0x00000300u) {
+    if (cached_has_bits & 0x00000100u) {
+      GOOGLE_DCHECK(_impl_.styles_for_12_1_ != nullptr);
+      _impl_.styles_for_12_1_->Clear();
+    }
+    if (cached_has_bits & 0x00000200u) {
+      GOOGLE_DCHECK(_impl_.styles_for_12_2_ != nullptr);
+      _impl_.styles_for_12_2_->Clear();
+    }
   }
-  _has_bits_.Clear();
+  if (cached_has_bits & 0x00000c00u) {
+    _impl_.can_cull_styles_ = false;
+    _impl_.is_locked_ = true;
+  }
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StylesheetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StylesheetArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSP.Reference styles = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2163,11 +2334,12 @@ const char* StylesheetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2175,26 +2347,29 @@ const char* StylesheetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference parent = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_parent(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool is_locked = 4 [default = true];
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_is_locked(&has_bits);
-          is_locked_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.is_locked_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2202,168 +2377,229 @@ const char* StylesheetArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool can_cull_styles = 6 [default = false];
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_can_cull_styles(&has_bits);
-          can_cull_styles_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.can_cull_styles_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_0 = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_styles_for_10_0(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_1 = 8;
       case 8:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_styles_for_10_1(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_2 = 9;
       case 9:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_styles_for_10_2(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_0 = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_styles_for_11_0(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_1 = 11;
       case 11:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_styles_for_11_1(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
+      // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_2 = 12;
+      case 12:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 98)) {
+          ptr = ctx->ParseMessage(_internal_mutable_styles_for_11_2(), ptr);
           CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
+        } else
+          goto handle_unusual;
         continue;
-      }
+      // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_0 = 13;
+      case 13:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 106)) {
+          ptr = ctx->ParseMessage(_internal_mutable_styles_for_12_0(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_1 = 14;
+      case 14:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 114)) {
+          ptr = ctx->ParseMessage(_internal_mutable_styles_for_12_1(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_2 = 15;
+      case 15:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 122)) {
+          ptr = ctx->ParseMessage(_internal_mutable_styles_for_12_2(), ptr);
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StylesheetArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StylesheetArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StylesheetArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSP.Reference styles = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_styles_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_styles_size()); i < n; i++) {
+    const auto& repfield = this->_internal_styles(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_styles(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_identifier_to_style_map_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_identifier_to_style_map_size()); i < n; i++) {
+    const auto& repfield = this->_internal_identifier_to_style_map(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_identifier_to_style_map(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Reference parent = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::parent(this), target, stream);
+      InternalWriteMessage(3, _Internal::parent(this),
+        _Internal::parent(this).GetCachedSize(), target, stream);
   }
 
   // optional bool is_locked = 4 [default = true];
-  if (cached_has_bits & 0x00000080u) {
+  if (cached_has_bits & 0x00000800u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_is_locked(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(4, this->_internal_is_locked(), target);
   }
 
   // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 5;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_parent_to_children_style_map_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_parent_to_children_style_map_size()); i < n; i++) {
+    const auto& repfield = this->_internal_parent_to_children_style_map(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_parent_to_children_style_map(i), target, stream);
+        InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional bool can_cull_styles = 6 [default = false];
-  if (cached_has_bits & 0x00000040u) {
+  if (cached_has_bits & 0x00000400u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_can_cull_styles(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_can_cull_styles(), target);
   }
 
   // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_0 = 7;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::styles_for_10_0(this), target, stream);
+      InternalWriteMessage(7, _Internal::styles_for_10_0(this),
+        _Internal::styles_for_10_0(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_1 = 8;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        8, _Internal::styles_for_10_1(this), target, stream);
+      InternalWriteMessage(8, _Internal::styles_for_10_1(this),
+        _Internal::styles_for_10_1(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_2 = 9;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        9, _Internal::styles_for_10_2(this), target, stream);
+      InternalWriteMessage(9, _Internal::styles_for_10_2(this),
+        _Internal::styles_for_10_2(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_0 = 10;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        10, _Internal::styles_for_11_0(this), target, stream);
+      InternalWriteMessage(10, _Internal::styles_for_11_0(this),
+        _Internal::styles_for_11_0(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_1 = 11;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        11, _Internal::styles_for_11_1(this), target, stream);
+      InternalWriteMessage(11, _Internal::styles_for_11_1(this),
+        _Internal::styles_for_11_1(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_2 = 12;
+  if (cached_has_bits & 0x00000040u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(12, _Internal::styles_for_11_2(this),
+        _Internal::styles_for_11_2(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_0 = 13;
+  if (cached_has_bits & 0x00000080u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(13, _Internal::styles_for_12_0(this),
+        _Internal::styles_for_12_0(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_1 = 14;
+  if (cached_has_bits & 0x00000100u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(14, _Internal::styles_for_12_1(this),
+        _Internal::styles_for_12_1(this).GetCachedSize(), target, stream);
+  }
+
+  // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_2 = 15;
+  if (cached_has_bits & 0x00000200u) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(15, _Internal::styles_for_12_2(this),
+        _Internal::styles_for_12_2(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StylesheetArchive)
@@ -2374,146 +2610,190 @@ size_t StylesheetArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.StylesheetArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference styles = 1;
   total_size += 1UL * this->_internal_styles_size();
-  for (const auto& msg : this->styles_) {
+  for (const auto& msg : this->_impl_.styles_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSS.StylesheetArchive.IdentifiedStyleEntry identifier_to_style_map = 2;
   total_size += 1UL * this->_internal_identifier_to_style_map_size();
-  for (const auto& msg : this->identifier_to_style_map_) {
+  for (const auto& msg : this->_impl_.identifier_to_style_map_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSS.StylesheetArchive.StyleChildrenEntry parent_to_children_style_map = 5;
   total_size += 1UL * this->_internal_parent_to_children_style_map_size();
-  for (const auto& msg : this->parent_to_children_style_map_) {
+  for (const auto& msg : this->_impl_.parent_to_children_style_map_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     // optional .TSP.Reference parent = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *parent_);
+          *_impl_.parent_);
     }
 
     // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_0 = 7;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *styles_for_10_0_);
+          *_impl_.styles_for_10_0_);
     }
 
     // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_1 = 8;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *styles_for_10_1_);
+          *_impl_.styles_for_10_1_);
     }
 
     // optional .TSS.StylesheetArchive.VersionedStyles styles_for_10_2 = 9;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *styles_for_10_2_);
+          *_impl_.styles_for_10_2_);
     }
 
     // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_0 = 10;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *styles_for_11_0_);
+          *_impl_.styles_for_11_0_);
     }
 
     // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_1 = 11;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *styles_for_11_1_);
+          *_impl_.styles_for_11_1_);
+    }
+
+    // optional .TSS.StylesheetArchive.VersionedStyles styles_for_11_2 = 12;
+    if (cached_has_bits & 0x00000040u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.styles_for_11_2_);
+    }
+
+    // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_0 = 13;
+    if (cached_has_bits & 0x00000080u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.styles_for_12_0_);
+    }
+
+  }
+  if (cached_has_bits & 0x00000f00u) {
+    // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_1 = 14;
+    if (cached_has_bits & 0x00000100u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.styles_for_12_1_);
+    }
+
+    // optional .TSS.StylesheetArchive.VersionedStyles styles_for_12_2 = 15;
+    if (cached_has_bits & 0x00000200u) {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.styles_for_12_2_);
     }
 
     // optional bool can_cull_styles = 6 [default = false];
-    if (cached_has_bits & 0x00000040u) {
+    if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 1;
     }
 
     // optional bool is_locked = 4 [default = true];
-    if (cached_has_bits & 0x00000080u) {
+    if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 1;
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StylesheetArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StylesheetArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StylesheetArchive::GetClassData() const { return &_class_data_; }
 
-void StylesheetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StylesheetArchive *>(to)->MergeFrom(
-      static_cast<const StylesheetArchive &>(from));
-}
 
-
-void StylesheetArchive::MergeFrom(const StylesheetArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StylesheetArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StylesheetArchive*>(&to_msg);
+  auto& from = static_cast<const StylesheetArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StylesheetArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  styles_.MergeFrom(from.styles_);
-  identifier_to_style_map_.MergeFrom(from.identifier_to_style_map_);
-  parent_to_children_style_map_.MergeFrom(from.parent_to_children_style_map_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.styles_.MergeFrom(from._impl_.styles_);
+  _this->_impl_.identifier_to_style_map_.MergeFrom(from._impl_.identifier_to_style_map_);
+  _this->_impl_.parent_to_children_style_map_.MergeFrom(from._impl_.parent_to_children_style_map_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_parent()->::TSP::Reference::MergeFrom(from._internal_parent());
+      _this->_internal_mutable_parent()->::TSP::Reference::MergeFrom(
+          from._internal_parent());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_styles_for_10_0()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(from._internal_styles_for_10_0());
+      _this->_internal_mutable_styles_for_10_0()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_10_0());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_styles_for_10_1()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(from._internal_styles_for_10_1());
+      _this->_internal_mutable_styles_for_10_1()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_10_1());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_styles_for_10_2()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(from._internal_styles_for_10_2());
+      _this->_internal_mutable_styles_for_10_2()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_10_2());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_styles_for_11_0()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(from._internal_styles_for_11_0());
+      _this->_internal_mutable_styles_for_11_0()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_11_0());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_styles_for_11_1()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(from._internal_styles_for_11_1());
+      _this->_internal_mutable_styles_for_11_1()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_11_1());
     }
     if (cached_has_bits & 0x00000040u) {
-      can_cull_styles_ = from.can_cull_styles_;
+      _this->_internal_mutable_styles_for_11_2()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_11_2());
     }
     if (cached_has_bits & 0x00000080u) {
-      is_locked_ = from.is_locked_;
+      _this->_internal_mutable_styles_for_12_0()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_12_0());
     }
-    _has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (cached_has_bits & 0x00000f00u) {
+    if (cached_has_bits & 0x00000100u) {
+      _this->_internal_mutable_styles_for_12_1()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_12_1());
+    }
+    if (cached_has_bits & 0x00000200u) {
+      _this->_internal_mutable_styles_for_12_2()->::TSS::StylesheetArchive_VersionedStyles::MergeFrom(
+          from._internal_styles_for_12_2());
+    }
+    if (cached_has_bits & 0x00000400u) {
+      _this->_impl_.can_cull_styles_ = from._impl_.can_cull_styles_;
+    }
+    if (cached_has_bits & 0x00000800u) {
+      _this->_impl_.is_locked_ = from._impl_.is_locked_;
+    }
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StylesheetArchive::CopyFrom(const StylesheetArchive& from) {
@@ -2524,26 +2804,41 @@ void StylesheetArchive::CopyFrom(const StylesheetArchive& from) {
 }
 
 bool StylesheetArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(styles_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(identifier_to_style_map_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(parent_to_children_style_map_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.styles_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.identifier_to_style_map_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.parent_to_children_style_map_))
+    return false;
   if (_internal_has_parent()) {
-    if (!parent_->IsInitialized()) return false;
+    if (!_impl_.parent_->IsInitialized()) return false;
   }
   if (_internal_has_styles_for_10_0()) {
-    if (!styles_for_10_0_->IsInitialized()) return false;
+    if (!_impl_.styles_for_10_0_->IsInitialized()) return false;
   }
   if (_internal_has_styles_for_10_1()) {
-    if (!styles_for_10_1_->IsInitialized()) return false;
+    if (!_impl_.styles_for_10_1_->IsInitialized()) return false;
   }
   if (_internal_has_styles_for_10_2()) {
-    if (!styles_for_10_2_->IsInitialized()) return false;
+    if (!_impl_.styles_for_10_2_->IsInitialized()) return false;
   }
   if (_internal_has_styles_for_11_0()) {
-    if (!styles_for_11_0_->IsInitialized()) return false;
+    if (!_impl_.styles_for_11_0_->IsInitialized()) return false;
   }
   if (_internal_has_styles_for_11_1()) {
-    if (!styles_for_11_1_->IsInitialized()) return false;
+    if (!_impl_.styles_for_11_1_->IsInitialized()) return false;
+  }
+  if (_internal_has_styles_for_11_2()) {
+    if (!_impl_.styles_for_11_2_->IsInitialized()) return false;
+  }
+  if (_internal_has_styles_for_12_0()) {
+    if (!_impl_.styles_for_12_0_->IsInitialized()) return false;
+  }
+  if (_internal_has_styles_for_12_1()) {
+    if (!_impl_.styles_for_12_1_->IsInitialized()) return false;
+  }
+  if (_internal_has_styles_for_12_2()) {
+    if (!_impl_.styles_for_12_2_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2551,21 +2846,21 @@ bool StylesheetArchive::IsInitialized() const {
 void StylesheetArchive::InternalSwap(StylesheetArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  styles_.InternalSwap(&other->styles_);
-  identifier_to_style_map_.InternalSwap(&other->identifier_to_style_map_);
-  parent_to_children_style_map_.InternalSwap(&other->parent_to_children_style_map_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.styles_.InternalSwap(&other->_impl_.styles_);
+  _impl_.identifier_to_style_map_.InternalSwap(&other->_impl_.identifier_to_style_map_);
+  _impl_.parent_to_children_style_map_.InternalSwap(&other->_impl_.parent_to_children_style_map_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StylesheetArchive, can_cull_styles_)
-      + sizeof(StylesheetArchive::can_cull_styles_)
-      - PROTOBUF_FIELD_OFFSET(StylesheetArchive, parent_)>(
-          reinterpret_cast<char*>(&parent_),
-          reinterpret_cast<char*>(&other->parent_));
-  swap(is_locked_, other->is_locked_);
+      PROTOBUF_FIELD_OFFSET(StylesheetArchive, _impl_.can_cull_styles_)
+      + sizeof(StylesheetArchive::_impl_.can_cull_styles_)
+      - PROTOBUF_FIELD_OFFSET(StylesheetArchive, _impl_.parent_)>(
+          reinterpret_cast<char*>(&_impl_.parent_),
+          reinterpret_cast<char*>(&other->_impl_.parent_));
+  swap(_impl_.is_locked_, other->_impl_.is_locked_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StylesheetArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[4]);
 }
@@ -2574,7 +2869,7 @@ void StylesheetArchive::InternalSwap(StylesheetArchive* other) {
 
 class ThemeArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeArchive>()._impl_._has_bits_);
   static const ::TSP::Reference& legacy_stylesheet(const ThemeArchive* msg);
   static void set_has_legacy_stylesheet(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
@@ -2590,163 +2885,179 @@ class ThemeArchive::_Internal {
 
 const ::TSP::Reference&
 ThemeArchive::_Internal::legacy_stylesheet(const ThemeArchive* msg) {
-  return *msg->legacy_stylesheet_;
+  return *msg->_impl_.legacy_stylesheet_;
 }
 const ::TSP::Reference&
 ThemeArchive::_Internal::document_stylesheet(const ThemeArchive* msg) {
-  return *msg->document_stylesheet_;
+  return *msg->_impl_.document_stylesheet_;
 }
 void ThemeArchive::clear_legacy_stylesheet() {
-  if (legacy_stylesheet_ != nullptr) legacy_stylesheet_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.legacy_stylesheet_ != nullptr) _impl_.legacy_stylesheet_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ThemeArchive::clear_document_stylesheet() {
-  if (document_stylesheet_ != nullptr) document_stylesheet_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.document_stylesheet_ != nullptr) _impl_.document_stylesheet_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ThemeArchive::clear_old_uuids_for_preset_replacements() {
-  old_uuids_for_preset_replacements_.Clear();
+  _impl_.old_uuids_for_preset_replacements_.Clear();
 }
 void ThemeArchive::clear_new_uuids_for_preset_replacements() {
-  new_uuids_for_preset_replacements_.Clear();
+  _impl_.new_uuids_for_preset_replacements_.Clear();
 }
 void ThemeArchive::clear_color_presets() {
-  color_presets_.Clear();
+  _impl_.color_presets_.Clear();
 }
 ThemeArchive::ThemeArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  _extensions_(arena),
-  old_uuids_for_preset_replacements_(arena),
-  new_uuids_for_preset_replacements_(arena),
-  color_presets_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeArchive)
 }
 ThemeArchive::ThemeArchive(const ThemeArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      old_uuids_for_preset_replacements_(from.old_uuids_for_preset_replacements_),
-      new_uuids_for_preset_replacements_(from.new_uuids_for_preset_replacements_),
-      color_presets_(from.color_presets_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._extensions_)*/{}
+    , decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_uuids_for_preset_replacements_){from._impl_.old_uuids_for_preset_replacements_}
+    , decltype(_impl_.new_uuids_for_preset_replacements_){from._impl_.new_uuids_for_preset_replacements_}
+    , decltype(_impl_.color_presets_){from._impl_.color_presets_}
+    , decltype(_impl_.theme_identifier_){}
+    , decltype(_impl_.legacy_stylesheet_){nullptr}
+    , decltype(_impl_.document_stylesheet_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _extensions_.MergeFrom(from._extensions_);
-  theme_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_._extensions_.MergeFrom(internal_default_instance(), from._impl_._extensions_);
+  _impl_.theme_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.theme_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_theme_identifier()) {
-    theme_identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_theme_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.theme_identifier_.Set(from._internal_theme_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_legacy_stylesheet()) {
-    legacy_stylesheet_ = new ::TSP::Reference(*from.legacy_stylesheet_);
-  } else {
-    legacy_stylesheet_ = nullptr;
+    _this->_impl_.legacy_stylesheet_ = new ::TSP::Reference(*from._impl_.legacy_stylesheet_);
   }
   if (from._internal_has_document_stylesheet()) {
-    document_stylesheet_ = new ::TSP::Reference(*from.document_stylesheet_);
-  } else {
-    document_stylesheet_ = nullptr;
+    _this->_impl_.document_stylesheet_ = new ::TSP::Reference(*from._impl_.document_stylesheet_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeArchive)
 }
 
-inline void ThemeArchive::SharedCtor() {
-theme_identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&legacy_stylesheet_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&document_stylesheet_) -
-    reinterpret_cast<char*>(&legacy_stylesheet_)) + sizeof(document_stylesheet_));
+inline void ThemeArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._extensions_)*/{::_pbi::ArenaInitialized(), arena}
+    , decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.old_uuids_for_preset_replacements_){arena}
+    , decltype(_impl_.new_uuids_for_preset_replacements_){arena}
+    , decltype(_impl_.color_presets_){arena}
+    , decltype(_impl_.theme_identifier_){}
+    , decltype(_impl_.legacy_stylesheet_){nullptr}
+    , decltype(_impl_.document_stylesheet_){nullptr}
+  };
+  _impl_.theme_identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.theme_identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ThemeArchive::~ThemeArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  theme_identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete legacy_stylesheet_;
-  if (this != internal_default_instance()) delete document_stylesheet_;
+  _impl_._extensions_.~ExtensionSet();
+  _impl_.old_uuids_for_preset_replacements_.~RepeatedPtrField();
+  _impl_.new_uuids_for_preset_replacements_.~RepeatedPtrField();
+  _impl_.color_presets_.~RepeatedPtrField();
+  _impl_.theme_identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.legacy_stylesheet_;
+  if (this != internal_default_instance()) delete _impl_.document_stylesheet_;
 }
 
-void ThemeArchive::ArenaDtor(void* object) {
-  ThemeArchive* _this = reinterpret_cast< ThemeArchive* >(object);
-  (void)_this;
-}
-void ThemeArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _extensions_.Clear();
-  old_uuids_for_preset_replacements_.Clear();
-  new_uuids_for_preset_replacements_.Clear();
-  color_presets_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_._extensions_.Clear();
+  _impl_.old_uuids_for_preset_replacements_.Clear();
+  _impl_.new_uuids_for_preset_replacements_.Clear();
+  _impl_.color_presets_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      theme_identifier_.ClearNonDefaultToEmpty();
+      _impl_.theme_identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(legacy_stylesheet_ != nullptr);
-      legacy_stylesheet_->Clear();
+      GOOGLE_DCHECK(_impl_.legacy_stylesheet_ != nullptr);
+      _impl_.legacy_stylesheet_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(document_stylesheet_ != nullptr);
-      document_stylesheet_->Clear();
+      GOOGLE_DCHECK(_impl_.document_stylesheet_ != nullptr);
+      _impl_.document_stylesheet_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Reference legacy_stylesheet = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_legacy_stylesheet(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string theme_identifier = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           auto str = _internal_mutable_theme_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.ThemeArchive.theme_identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.ThemeArchive.theme_identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference document_stylesheet = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_document_stylesheet(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUID old_uuids_for_preset_replacements = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2754,11 +3065,12 @@ const char* ThemeArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.UUID new_uuids_for_preset_replacements = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2766,11 +3078,12 @@ const char* ThemeArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Color color_presets = 10;
       case 10:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 82)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -2778,51 +3091,50 @@ const char* ThemeArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-      if ((800u <= tag)) {
-        ptr = _extensions_.ParseField(tag, ptr,
-            internal_default_instance(), &_internal_metadata_, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    if ((800u <= tag)) {
+      ptr = _impl_._extensions_.ParseField(tag, ptr, internal_default_instance(), &_internal_metadata_, ctx);
+      CHK_(ptr != nullptr);
+      continue;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Reference legacy_stylesheet = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::legacy_stylesheet(this), target, stream);
+      InternalWriteMessage(1, _Internal::legacy_stylesheet(this),
+        _Internal::legacy_stylesheet(this).GetCachedSize(), target, stream);
   }
 
   // optional string theme_identifier = 3;
@@ -2837,42 +3149,41 @@ failure:
 
   // optional .TSP.Reference document_stylesheet = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::document_stylesheet(this), target, stream);
+      InternalWriteMessage(4, _Internal::document_stylesheet(this),
+        _Internal::document_stylesheet(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.UUID old_uuids_for_preset_replacements = 5;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_old_uuids_for_preset_replacements_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_old_uuids_for_preset_replacements_size()); i < n; i++) {
+    const auto& repfield = this->_internal_old_uuids_for_preset_replacements(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_old_uuids_for_preset_replacements(i), target, stream);
+        InternalWriteMessage(5, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.UUID new_uuids_for_preset_replacements = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_new_uuids_for_preset_replacements_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_new_uuids_for_preset_replacements_size()); i < n; i++) {
+    const auto& repfield = this->_internal_new_uuids_for_preset_replacements(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_new_uuids_for_preset_replacements(i), target, stream);
+        InternalWriteMessage(6, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Color color_presets = 10;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_color_presets_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_color_presets_size()); i < n; i++) {
+    const auto& repfield = this->_internal_color_presets(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(10, this->_internal_color_presets(i), target, stream);
+        InternalWriteMessage(10, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // Extension range [100, 536870912)
-  target = _extensions_._InternalSerialize(
-      100, 536870912, target, stream);
+  target = _impl_._extensions_._InternalSerialize(
+  internal_default_instance(), 100, 536870912, target, stream);
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeArchive)
@@ -2883,34 +3194,34 @@ size_t ThemeArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeArchive)
   size_t total_size = 0;
 
-  total_size += _extensions_.ByteSize();
+  total_size += _impl_._extensions_.ByteSize();
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.UUID old_uuids_for_preset_replacements = 5;
   total_size += 1UL * this->_internal_old_uuids_for_preset_replacements_size();
-  for (const auto& msg : this->old_uuids_for_preset_replacements_) {
+  for (const auto& msg : this->_impl_.old_uuids_for_preset_replacements_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSP.UUID new_uuids_for_preset_replacements = 6;
   total_size += 1UL * this->_internal_new_uuids_for_preset_replacements_size();
-  for (const auto& msg : this->new_uuids_for_preset_replacements_) {
+  for (const auto& msg : this->_impl_.new_uuids_for_preset_replacements_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .TSP.Color color_presets = 10;
   total_size += 1UL * this->_internal_color_presets_size();
-  for (const auto& msg : this->color_presets_) {
+  for (const auto& msg : this->_impl_.color_presets_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     // optional string theme_identifier = 3;
     if (cached_has_bits & 0x00000001u) {
@@ -2923,62 +3234,54 @@ size_t ThemeArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *legacy_stylesheet_);
+          *_impl_.legacy_stylesheet_);
     }
 
     // optional .TSP.Reference document_stylesheet = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *document_stylesheet_);
+          *_impl_.document_stylesheet_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeArchive *>(to)->MergeFrom(
-      static_cast<const ThemeArchive &>(from));
-}
 
-
-void ThemeArchive::MergeFrom(const ThemeArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  old_uuids_for_preset_replacements_.MergeFrom(from.old_uuids_for_preset_replacements_);
-  new_uuids_for_preset_replacements_.MergeFrom(from.new_uuids_for_preset_replacements_);
-  color_presets_.MergeFrom(from.color_presets_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.old_uuids_for_preset_replacements_.MergeFrom(from._impl_.old_uuids_for_preset_replacements_);
+  _this->_impl_.new_uuids_for_preset_replacements_.MergeFrom(from._impl_.new_uuids_for_preset_replacements_);
+  _this->_impl_.color_presets_.MergeFrom(from._impl_.color_presets_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_theme_identifier(from._internal_theme_identifier());
+      _this->_internal_set_theme_identifier(from._internal_theme_identifier());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_legacy_stylesheet()->::TSP::Reference::MergeFrom(from._internal_legacy_stylesheet());
+      _this->_internal_mutable_legacy_stylesheet()->::TSP::Reference::MergeFrom(
+          from._internal_legacy_stylesheet());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_document_stylesheet()->::TSP::Reference::MergeFrom(from._internal_document_stylesheet());
+      _this->_internal_mutable_document_stylesheet()->::TSP::Reference::MergeFrom(
+          from._internal_document_stylesheet());
     }
   }
-  _extensions_.MergeFrom(from._extensions_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_._extensions_.MergeFrom(internal_default_instance(), from._impl_._extensions_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeArchive::CopyFrom(const ThemeArchive& from) {
@@ -2989,45 +3292,49 @@ void ThemeArchive::CopyFrom(const ThemeArchive& from) {
 }
 
 bool ThemeArchive::IsInitialized() const {
-  if (!_extensions_.IsInitialized()) {
+  if (!_impl_._extensions_.IsInitialized()) {
     return false;
   }
 
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(old_uuids_for_preset_replacements_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(new_uuids_for_preset_replacements_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(color_presets_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.old_uuids_for_preset_replacements_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.new_uuids_for_preset_replacements_))
+    return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.color_presets_))
+    return false;
   if (_internal_has_legacy_stylesheet()) {
-    if (!legacy_stylesheet_->IsInitialized()) return false;
+    if (!_impl_.legacy_stylesheet_->IsInitialized()) return false;
   }
   if (_internal_has_document_stylesheet()) {
-    if (!document_stylesheet_->IsInitialized()) return false;
+    if (!_impl_.document_stylesheet_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ThemeArchive::InternalSwap(ThemeArchive* other) {
   using std::swap;
-  _extensions_.InternalSwap(&other->_extensions_);
+  _impl_._extensions_.InternalSwap(&other->_impl_._extensions_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  old_uuids_for_preset_replacements_.InternalSwap(&other->old_uuids_for_preset_replacements_);
-  new_uuids_for_preset_replacements_.InternalSwap(&other->new_uuids_for_preset_replacements_);
-  color_presets_.InternalSwap(&other->color_presets_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.old_uuids_for_preset_replacements_.InternalSwap(&other->_impl_.old_uuids_for_preset_replacements_);
+  _impl_.new_uuids_for_preset_replacements_.InternalSwap(&other->_impl_.new_uuids_for_preset_replacements_);
+  _impl_.color_presets_.InternalSwap(&other->_impl_.color_presets_);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &theme_identifier_, GetArenaForAllocation(),
-      &other->theme_identifier_, other->GetArenaForAllocation()
+      &_impl_.theme_identifier_, lhs_arena,
+      &other->_impl_.theme_identifier_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeArchive, document_stylesheet_)
-      + sizeof(ThemeArchive::document_stylesheet_)
-      - PROTOBUF_FIELD_OFFSET(ThemeArchive, legacy_stylesheet_)>(
-          reinterpret_cast<char*>(&legacy_stylesheet_),
-          reinterpret_cast<char*>(&other->legacy_stylesheet_));
+      PROTOBUF_FIELD_OFFSET(ThemeArchive, _impl_.document_stylesheet_)
+      + sizeof(ThemeArchive::_impl_.document_stylesheet_)
+      - PROTOBUF_FIELD_OFFSET(ThemeArchive, _impl_.legacy_stylesheet_)>(
+          reinterpret_cast<char*>(&_impl_.legacy_stylesheet_),
+          reinterpret_cast<char*>(&other->_impl_.legacy_stylesheet_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[5]);
 }
@@ -3036,7 +3343,7 @@ void ThemeArchive::InternalSwap(ThemeArchive* other) {
 
 class ApplyThemeCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ApplyThemeCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ApplyThemeCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ApplyThemeCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3056,138 +3363,140 @@ class ApplyThemeCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ApplyThemeCommandArchive::_Internal::super(const ApplyThemeCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ApplyThemeCommandArchive::_Internal::old_theme(const ApplyThemeCommandArchive* msg) {
-  return *msg->old_theme_;
+  return *msg->_impl_.old_theme_;
 }
 const ::TSP::Reference&
 ApplyThemeCommandArchive::_Internal::new_theme(const ApplyThemeCommandArchive* msg) {
-  return *msg->new_theme_;
+  return *msg->_impl_.new_theme_;
 }
 void ApplyThemeCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ApplyThemeCommandArchive::clear_commands() {
-  commands_.Clear();
+  _impl_.commands_.Clear();
 }
 void ApplyThemeCommandArchive::clear_old_theme() {
-  if (old_theme_ != nullptr) old_theme_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.old_theme_ != nullptr) _impl_.old_theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ApplyThemeCommandArchive::clear_new_theme() {
-  if (new_theme_ != nullptr) new_theme_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.new_theme_ != nullptr) _impl_.new_theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 ApplyThemeCommandArchive::ApplyThemeCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  commands_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ApplyThemeCommandArchive)
 }
 ApplyThemeCommandArchive::ApplyThemeCommandArchive(const ApplyThemeCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_),
-      commands_(from.commands_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ApplyThemeCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.commands_){from._impl_.commands_}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_theme_){nullptr}
+    , decltype(_impl_.new_theme_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_old_theme()) {
-    old_theme_ = new ::TSP::Reference(*from.old_theme_);
-  } else {
-    old_theme_ = nullptr;
+    _this->_impl_.old_theme_ = new ::TSP::Reference(*from._impl_.old_theme_);
   }
   if (from._internal_has_new_theme()) {
-    new_theme_ = new ::TSP::Reference(*from.new_theme_);
-  } else {
-    new_theme_ = nullptr;
+    _this->_impl_.new_theme_ = new ::TSP::Reference(*from._impl_.new_theme_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.ApplyThemeCommandArchive)
 }
 
-inline void ApplyThemeCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&new_theme_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(new_theme_));
+inline void ApplyThemeCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.commands_){arena}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.old_theme_){nullptr}
+    , decltype(_impl_.new_theme_){nullptr}
+  };
 }
 
 ApplyThemeCommandArchive::~ApplyThemeCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ApplyThemeCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ApplyThemeCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete old_theme_;
-  if (this != internal_default_instance()) delete new_theme_;
+  _impl_.commands_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.old_theme_;
+  if (this != internal_default_instance()) delete _impl_.new_theme_;
 }
 
-void ApplyThemeCommandArchive::ArenaDtor(void* object) {
-  ApplyThemeCommandArchive* _this = reinterpret_cast< ApplyThemeCommandArchive* >(object);
-  (void)_this;
-}
-void ApplyThemeCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ApplyThemeCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ApplyThemeCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ApplyThemeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  commands_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_.commands_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(old_theme_ != nullptr);
-      old_theme_->Clear();
+      GOOGLE_DCHECK(_impl_.old_theme_ != nullptr);
+      _impl_.old_theme_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(new_theme_ != nullptr);
-      new_theme_->Clear();
+      GOOGLE_DCHECK(_impl_.new_theme_ != nullptr);
+      _impl_.new_theme_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ApplyThemeCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ApplyThemeCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // repeated .TSP.Reference commands = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -3195,87 +3504,87 @@ const char* ApplyThemeCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference old_theme = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference new_theme = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_new_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ApplyThemeCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ApplyThemeCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ApplyThemeCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // repeated .TSP.Reference commands = 2;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_commands_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_commands_size()); i < n; i++) {
+    const auto& repfield = this->_internal_commands(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_commands(i), target, stream);
+        InternalWriteMessage(2, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference old_theme = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::old_theme(this), target, stream);
+      InternalWriteMessage(3, _Internal::old_theme(this),
+        _Internal::old_theme(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference new_theme = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::new_theme(this), target, stream);
+      InternalWriteMessage(4, _Internal::new_theme(this),
+        _Internal::new_theme(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ApplyThemeCommandArchive)
@@ -3290,78 +3599,71 @@ size_t ApplyThemeCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSP.Reference commands = 2;
   total_size += 1UL * this->_internal_commands_size();
-  for (const auto& msg : this->commands_) {
+  for (const auto& msg : this->_impl_.commands_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000006u) {
     // optional .TSP.Reference old_theme = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *old_theme_);
+          *_impl_.old_theme_);
     }
 
     // optional .TSP.Reference new_theme = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *new_theme_);
+          *_impl_.new_theme_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ApplyThemeCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ApplyThemeCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ApplyThemeCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ApplyThemeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ApplyThemeCommandArchive *>(to)->MergeFrom(
-      static_cast<const ApplyThemeCommandArchive &>(from));
-}
 
-
-void ApplyThemeCommandArchive::MergeFrom(const ApplyThemeCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ApplyThemeCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ApplyThemeCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ApplyThemeCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ApplyThemeCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ApplyThemeCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  commands_.MergeFrom(from.commands_);
-  cached_has_bits = from._has_bits_[0];
+  _this->_impl_.commands_.MergeFrom(from._impl_.commands_);
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_old_theme()->::TSP::Reference::MergeFrom(from._internal_old_theme());
+      _this->_internal_mutable_old_theme()->::TSP::Reference::MergeFrom(
+          from._internal_old_theme());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_new_theme()->::TSP::Reference::MergeFrom(from._internal_new_theme());
+      _this->_internal_mutable_new_theme()->::TSP::Reference::MergeFrom(
+          from._internal_new_theme());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ApplyThemeCommandArchive::CopyFrom(const ApplyThemeCommandArchive& from) {
@@ -3372,16 +3674,17 @@ void ApplyThemeCommandArchive::CopyFrom(const ApplyThemeCommandArchive& from) {
 }
 
 bool ApplyThemeCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(commands_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.commands_))
+    return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_old_theme()) {
-    if (!old_theme_->IsInitialized()) return false;
+    if (!_impl_.old_theme_->IsInitialized()) return false;
   }
   if (_internal_has_new_theme()) {
-    if (!new_theme_->IsInitialized()) return false;
+    if (!_impl_.new_theme_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3389,18 +3692,18 @@ bool ApplyThemeCommandArchive::IsInitialized() const {
 void ApplyThemeCommandArchive::InternalSwap(ApplyThemeCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  commands_.InternalSwap(&other->commands_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  _impl_.commands_.InternalSwap(&other->_impl_.commands_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ApplyThemeCommandArchive, new_theme_)
-      + sizeof(ApplyThemeCommandArchive::new_theme_)
-      - PROTOBUF_FIELD_OFFSET(ApplyThemeCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ApplyThemeCommandArchive, _impl_.new_theme_)
+      + sizeof(ApplyThemeCommandArchive::_impl_.new_theme_)
+      - PROTOBUF_FIELD_OFFSET(ApplyThemeCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ApplyThemeCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[6]);
 }
@@ -3409,7 +3712,7 @@ void ApplyThemeCommandArchive::InternalSwap(ApplyThemeCommandArchive* other) {
 
 class ApplyThemeChildCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ApplyThemeChildCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ApplyThemeChildCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ApplyThemeChildCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3425,167 +3728,167 @@ class ApplyThemeChildCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ApplyThemeChildCommandArchive::_Internal::super(const ApplyThemeChildCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ApplyThemeChildCommandArchive::_Internal::parent(const ApplyThemeChildCommandArchive* msg) {
-  return *msg->parent_;
+  return *msg->_impl_.parent_;
 }
 void ApplyThemeChildCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ApplyThemeChildCommandArchive::clear_parent() {
-  if (parent_ != nullptr) parent_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.parent_ != nullptr) _impl_.parent_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 ApplyThemeChildCommandArchive::ApplyThemeChildCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ApplyThemeChildCommandArchive)
 }
 ApplyThemeChildCommandArchive::ApplyThemeChildCommandArchive(const ApplyThemeChildCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ApplyThemeChildCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.parent_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_parent()) {
-    parent_ = new ::TSP::Reference(*from.parent_);
-  } else {
-    parent_ = nullptr;
+    _this->_impl_.parent_ = new ::TSP::Reference(*from._impl_.parent_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.ApplyThemeChildCommandArchive)
 }
 
-inline void ApplyThemeChildCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&parent_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(parent_));
+inline void ApplyThemeChildCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.parent_){nullptr}
+  };
 }
 
 ApplyThemeChildCommandArchive::~ApplyThemeChildCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ApplyThemeChildCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ApplyThemeChildCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete parent_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.parent_;
 }
 
-void ApplyThemeChildCommandArchive::ArenaDtor(void* object) {
-  ApplyThemeChildCommandArchive* _this = reinterpret_cast< ApplyThemeChildCommandArchive* >(object);
-  (void)_this;
-}
-void ApplyThemeChildCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ApplyThemeChildCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ApplyThemeChildCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ApplyThemeChildCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(parent_ != nullptr);
-      parent_->Clear();
+      GOOGLE_DCHECK(_impl_.parent_ != nullptr);
+      _impl_.parent_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ApplyThemeChildCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ApplyThemeChildCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference parent = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_parent(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ApplyThemeChildCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ApplyThemeChildCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ApplyThemeChildCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference parent = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::parent(this), target, stream);
+      InternalWriteMessage(2, _Internal::parent(this),
+        _Internal::parent(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ApplyThemeChildCommandArchive)
@@ -3600,58 +3903,50 @@ size_t ApplyThemeChildCommandArchive::ByteSizeLong() const {
   if (_internal_has_super()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSP.Reference parent = 2;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *parent_);
+        *_impl_.parent_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ApplyThemeChildCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ApplyThemeChildCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ApplyThemeChildCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ApplyThemeChildCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ApplyThemeChildCommandArchive *>(to)->MergeFrom(
-      static_cast<const ApplyThemeChildCommandArchive &>(from));
-}
 
-
-void ApplyThemeChildCommandArchive::MergeFrom(const ApplyThemeChildCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ApplyThemeChildCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ApplyThemeChildCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ApplyThemeChildCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ApplyThemeChildCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ApplyThemeChildCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_parent()->::TSP::Reference::MergeFrom(from._internal_parent());
+      _this->_internal_mutable_parent()->::TSP::Reference::MergeFrom(
+          from._internal_parent());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ApplyThemeChildCommandArchive::CopyFrom(const ApplyThemeChildCommandArchive& from) {
@@ -3662,12 +3957,12 @@ void ApplyThemeChildCommandArchive::CopyFrom(const ApplyThemeChildCommandArchive
 }
 
 bool ApplyThemeChildCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_parent()) {
-    if (!parent_->IsInitialized()) return false;
+    if (!_impl_.parent_->IsInitialized()) return false;
   }
   return true;
 }
@@ -3675,17 +3970,17 @@ bool ApplyThemeChildCommandArchive::IsInitialized() const {
 void ApplyThemeChildCommandArchive::InternalSwap(ApplyThemeChildCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ApplyThemeChildCommandArchive, parent_)
-      + sizeof(ApplyThemeChildCommandArchive::parent_)
-      - PROTOBUF_FIELD_OFFSET(ApplyThemeChildCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ApplyThemeChildCommandArchive, _impl_.parent_)
+      + sizeof(ApplyThemeChildCommandArchive::_impl_.parent_)
+      - PROTOBUF_FIELD_OFFSET(ApplyThemeChildCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ApplyThemeChildCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[7]);
 }
@@ -3694,7 +3989,7 @@ void ApplyThemeChildCommandArchive::InternalSwap(ApplyThemeChildCommandArchive* 
 
 class StyleUpdatePropertyMapCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<StyleUpdatePropertyMapCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<StyleUpdatePropertyMapCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const StyleUpdatePropertyMapCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -3725,283 +4020,285 @@ class StyleUpdatePropertyMapCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 StyleUpdatePropertyMapCommandArchive::_Internal::super(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 StyleUpdatePropertyMapCommandArchive::_Internal::current_style(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->current_style_;
+  return *msg->_impl_.current_style_;
 }
 const ::TSP::Reference&
 StyleUpdatePropertyMapCommandArchive::_Internal::style_with_old_property_map(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->style_with_old_property_map_;
+  return *msg->_impl_.style_with_old_property_map_;
 }
 const ::TSP::Reference&
 StyleUpdatePropertyMapCommandArchive::_Internal::style_with_new_property_map(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->style_with_new_property_map_;
+  return *msg->_impl_.style_with_new_property_map_;
 }
 const ::TSP::Reference&
 StyleUpdatePropertyMapCommandArchive::_Internal::style_diff(const StyleUpdatePropertyMapCommandArchive* msg) {
-  return *msg->style_diff_;
+  return *msg->_impl_.style_diff_;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_current_style() {
-  if (current_style_ != nullptr) current_style_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.current_style_ != nullptr) _impl_.current_style_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_style_with_old_property_map() {
-  if (style_with_old_property_map_ != nullptr) style_with_old_property_map_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.style_with_old_property_map_ != nullptr) _impl_.style_with_old_property_map_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_style_with_new_property_map() {
-  if (style_with_new_property_map_ != nullptr) style_with_new_property_map_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.style_with_new_property_map_ != nullptr) _impl_.style_with_new_property_map_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void StyleUpdatePropertyMapCommandArchive::clear_style_diff() {
-  if (style_diff_ != nullptr) style_diff_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.style_diff_ != nullptr) _impl_.style_diff_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.StyleUpdatePropertyMapCommandArchive)
 }
 StyleUpdatePropertyMapCommandArchive::StyleUpdatePropertyMapCommandArchive(const StyleUpdatePropertyMapCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  StyleUpdatePropertyMapCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.current_style_){nullptr}
+    , decltype(_impl_.style_with_old_property_map_){nullptr}
+    , decltype(_impl_.style_with_new_property_map_){nullptr}
+    , decltype(_impl_.style_diff_){nullptr}
+    , decltype(_impl_.notify_for_style_clients_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_current_style()) {
-    current_style_ = new ::TSP::Reference(*from.current_style_);
-  } else {
-    current_style_ = nullptr;
+    _this->_impl_.current_style_ = new ::TSP::Reference(*from._impl_.current_style_);
   }
   if (from._internal_has_style_with_old_property_map()) {
-    style_with_old_property_map_ = new ::TSP::Reference(*from.style_with_old_property_map_);
-  } else {
-    style_with_old_property_map_ = nullptr;
+    _this->_impl_.style_with_old_property_map_ = new ::TSP::Reference(*from._impl_.style_with_old_property_map_);
   }
   if (from._internal_has_style_with_new_property_map()) {
-    style_with_new_property_map_ = new ::TSP::Reference(*from.style_with_new_property_map_);
-  } else {
-    style_with_new_property_map_ = nullptr;
+    _this->_impl_.style_with_new_property_map_ = new ::TSP::Reference(*from._impl_.style_with_new_property_map_);
   }
   if (from._internal_has_style_diff()) {
-    style_diff_ = new ::TSP::Reference(*from.style_diff_);
-  } else {
-    style_diff_ = nullptr;
+    _this->_impl_.style_diff_ = new ::TSP::Reference(*from._impl_.style_diff_);
   }
-  notify_for_style_clients_ = from.notify_for_style_clients_;
+  _this->_impl_.notify_for_style_clients_ = from._impl_.notify_for_style_clients_;
   // @@protoc_insertion_point(copy_constructor:TSS.StyleUpdatePropertyMapCommandArchive)
 }
 
-inline void StyleUpdatePropertyMapCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&style_diff_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(style_diff_));
-notify_for_style_clients_ = true;
+inline void StyleUpdatePropertyMapCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.current_style_){nullptr}
+    , decltype(_impl_.style_with_old_property_map_){nullptr}
+    , decltype(_impl_.style_with_new_property_map_){nullptr}
+    , decltype(_impl_.style_diff_){nullptr}
+    , decltype(_impl_.notify_for_style_clients_){true}
+  };
 }
 
 StyleUpdatePropertyMapCommandArchive::~StyleUpdatePropertyMapCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.StyleUpdatePropertyMapCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void StyleUpdatePropertyMapCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete current_style_;
-  if (this != internal_default_instance()) delete style_with_old_property_map_;
-  if (this != internal_default_instance()) delete style_with_new_property_map_;
-  if (this != internal_default_instance()) delete style_diff_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.current_style_;
+  if (this != internal_default_instance()) delete _impl_.style_with_old_property_map_;
+  if (this != internal_default_instance()) delete _impl_.style_with_new_property_map_;
+  if (this != internal_default_instance()) delete _impl_.style_diff_;
 }
 
-void StyleUpdatePropertyMapCommandArchive::ArenaDtor(void* object) {
-  StyleUpdatePropertyMapCommandArchive* _this = reinterpret_cast< StyleUpdatePropertyMapCommandArchive* >(object);
-  (void)_this;
-}
-void StyleUpdatePropertyMapCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void StyleUpdatePropertyMapCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void StyleUpdatePropertyMapCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.StyleUpdatePropertyMapCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(current_style_ != nullptr);
-      current_style_->Clear();
+      GOOGLE_DCHECK(_impl_.current_style_ != nullptr);
+      _impl_.current_style_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(style_with_old_property_map_ != nullptr);
-      style_with_old_property_map_->Clear();
+      GOOGLE_DCHECK(_impl_.style_with_old_property_map_ != nullptr);
+      _impl_.style_with_old_property_map_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(style_with_new_property_map_ != nullptr);
-      style_with_new_property_map_->Clear();
+      GOOGLE_DCHECK(_impl_.style_with_new_property_map_ != nullptr);
+      _impl_.style_with_new_property_map_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(style_diff_ != nullptr);
-      style_diff_->Clear();
+      GOOGLE_DCHECK(_impl_.style_diff_ != nullptr);
+      _impl_.style_diff_->Clear();
     }
-    notify_for_style_clients_ = true;
+    _impl_.notify_for_style_clients_ = true;
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StyleUpdatePropertyMapCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* StyleUpdatePropertyMapCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference current_style = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_current_style(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference style_with_old_property_map = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_style_with_old_property_map(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference style_with_new_property_map = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_style_with_new_property_map(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional bool notify_for_style_clients = 6 [default = true];
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_notify_for_style_clients(&has_bits);
-          notify_for_style_clients_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.notify_for_style_clients_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference style_diff = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_style_diff(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* StyleUpdatePropertyMapCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* StyleUpdatePropertyMapCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.StyleUpdatePropertyMapCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference current_style = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::current_style(this), target, stream);
+      InternalWriteMessage(2, _Internal::current_style(this),
+        _Internal::current_style(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference style_with_old_property_map = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::style_with_old_property_map(this), target, stream);
+      InternalWriteMessage(3, _Internal::style_with_old_property_map(this),
+        _Internal::style_with_old_property_map(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference style_with_new_property_map = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::style_with_new_property_map(this), target, stream);
+      InternalWriteMessage(4, _Internal::style_with_new_property_map(this),
+        _Internal::style_with_new_property_map(this).GetCachedSize(), target, stream);
   }
 
   // optional bool notify_for_style_clients = 6 [default = true];
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_notify_for_style_clients(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_notify_for_style_clients(), target);
   }
 
   // optional .TSP.Reference style_diff = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::style_diff(this), target, stream);
+      InternalWriteMessage(7, _Internal::style_diff(this),
+        _Internal::style_diff(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.StyleUpdatePropertyMapCommandArchive)
@@ -4016,14 +4313,14 @@ size_t StyleUpdatePropertyMapCommandArchive::RequiredFieldsByteSizeFallback() co
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_current_style()) {
     // required .TSP.Reference current_style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *current_style_);
+        *_impl_.current_style_);
   }
 
   return total_size;
@@ -4032,45 +4329,45 @@ size_t StyleUpdatePropertyMapCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.StyleUpdatePropertyMapCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference current_style = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *current_style_);
+        *_impl_.current_style_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003cu) {
     // optional .TSP.Reference style_with_old_property_map = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *style_with_old_property_map_);
+          *_impl_.style_with_old_property_map_);
     }
 
     // optional .TSP.Reference style_with_new_property_map = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *style_with_new_property_map_);
+          *_impl_.style_with_new_property_map_);
     }
 
     // optional .TSP.Reference style_diff = 7;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *style_diff_);
+          *_impl_.style_diff_);
     }
 
     // optional bool notify_for_style_clients = 6 [default = true];
@@ -4079,57 +4376,52 @@ size_t StyleUpdatePropertyMapCommandArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StyleUpdatePropertyMapCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     StyleUpdatePropertyMapCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StyleUpdatePropertyMapCommandArchive::GetClassData() const { return &_class_data_; }
 
-void StyleUpdatePropertyMapCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<StyleUpdatePropertyMapCommandArchive *>(to)->MergeFrom(
-      static_cast<const StyleUpdatePropertyMapCommandArchive &>(from));
-}
 
-
-void StyleUpdatePropertyMapCommandArchive::MergeFrom(const StyleUpdatePropertyMapCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.StyleUpdatePropertyMapCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void StyleUpdatePropertyMapCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<StyleUpdatePropertyMapCommandArchive*>(&to_msg);
+  auto& from = static_cast<const StyleUpdatePropertyMapCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.StyleUpdatePropertyMapCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_current_style()->::TSP::Reference::MergeFrom(from._internal_current_style());
+      _this->_internal_mutable_current_style()->::TSP::Reference::MergeFrom(
+          from._internal_current_style());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_style_with_old_property_map()->::TSP::Reference::MergeFrom(from._internal_style_with_old_property_map());
+      _this->_internal_mutable_style_with_old_property_map()->::TSP::Reference::MergeFrom(
+          from._internal_style_with_old_property_map());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_style_with_new_property_map()->::TSP::Reference::MergeFrom(from._internal_style_with_new_property_map());
+      _this->_internal_mutable_style_with_new_property_map()->::TSP::Reference::MergeFrom(
+          from._internal_style_with_new_property_map());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_style_diff()->::TSP::Reference::MergeFrom(from._internal_style_diff());
+      _this->_internal_mutable_style_diff()->::TSP::Reference::MergeFrom(
+          from._internal_style_diff());
     }
     if (cached_has_bits & 0x00000020u) {
-      notify_for_style_clients_ = from.notify_for_style_clients_;
+      _this->_impl_.notify_for_style_clients_ = from._impl_.notify_for_style_clients_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void StyleUpdatePropertyMapCommandArchive::CopyFrom(const StyleUpdatePropertyMapCommandArchive& from) {
@@ -4140,21 +4432,21 @@ void StyleUpdatePropertyMapCommandArchive::CopyFrom(const StyleUpdatePropertyMap
 }
 
 bool StyleUpdatePropertyMapCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_current_style()) {
-    if (!current_style_->IsInitialized()) return false;
+    if (!_impl_.current_style_->IsInitialized()) return false;
   }
   if (_internal_has_style_with_old_property_map()) {
-    if (!style_with_old_property_map_->IsInitialized()) return false;
+    if (!_impl_.style_with_old_property_map_->IsInitialized()) return false;
   }
   if (_internal_has_style_with_new_property_map()) {
-    if (!style_with_new_property_map_->IsInitialized()) return false;
+    if (!_impl_.style_with_new_property_map_->IsInitialized()) return false;
   }
   if (_internal_has_style_diff()) {
-    if (!style_diff_->IsInitialized()) return false;
+    if (!_impl_.style_diff_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4162,18 +4454,18 @@ bool StyleUpdatePropertyMapCommandArchive::IsInitialized() const {
 void StyleUpdatePropertyMapCommandArchive::InternalSwap(StyleUpdatePropertyMapCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StyleUpdatePropertyMapCommandArchive, style_diff_)
-      + sizeof(StyleUpdatePropertyMapCommandArchive::style_diff_)
-      - PROTOBUF_FIELD_OFFSET(StyleUpdatePropertyMapCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
-  swap(notify_for_style_clients_, other->notify_for_style_clients_);
+      PROTOBUF_FIELD_OFFSET(StyleUpdatePropertyMapCommandArchive, _impl_.style_diff_)
+      + sizeof(StyleUpdatePropertyMapCommandArchive::_impl_.style_diff_)
+      - PROTOBUF_FIELD_OFFSET(StyleUpdatePropertyMapCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
+  swap(_impl_.notify_for_style_clients_, other->_impl_.notify_for_style_clients_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata StyleUpdatePropertyMapCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[8]);
 }
@@ -4182,7 +4474,7 @@ void StyleUpdatePropertyMapCommandArchive::InternalSwap(StyleUpdatePropertyMapCo
 
 class ThemeReplacePresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeReplacePresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeReplacePresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeReplacePresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4205,216 +4497,219 @@ class ThemeReplacePresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeReplacePresetCommandArchive::_Internal::super(const ThemeReplacePresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeReplacePresetCommandArchive::_Internal::preset(const ThemeReplacePresetCommandArchive* msg) {
-  return *msg->preset_;
+  return *msg->_impl_.preset_;
 }
 const ::TSP::Reference&
 ThemeReplacePresetCommandArchive::_Internal::oldpreset(const ThemeReplacePresetCommandArchive* msg) {
-  return *msg->oldpreset_;
+  return *msg->_impl_.oldpreset_;
 }
 void ThemeReplacePresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ThemeReplacePresetCommandArchive::clear_preset() {
-  if (preset_ != nullptr) preset_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.preset_ != nullptr) _impl_.preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ThemeReplacePresetCommandArchive::clear_oldpreset() {
-  if (oldpreset_ != nullptr) oldpreset_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.oldpreset_ != nullptr) _impl_.oldpreset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 ThemeReplacePresetCommandArchive::ThemeReplacePresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeReplacePresetCommandArchive)
 }
 ThemeReplacePresetCommandArchive::ThemeReplacePresetCommandArchive(const ThemeReplacePresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeReplacePresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.oldpreset_){nullptr}
+    , decltype(_impl_.index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_preset()) {
-    preset_ = new ::TSP::Reference(*from.preset_);
-  } else {
-    preset_ = nullptr;
+    _this->_impl_.preset_ = new ::TSP::Reference(*from._impl_.preset_);
   }
   if (from._internal_has_oldpreset()) {
-    oldpreset_ = new ::TSP::Reference(*from.oldpreset_);
-  } else {
-    oldpreset_ = nullptr;
+    _this->_impl_.oldpreset_ = new ::TSP::Reference(*from._impl_.oldpreset_);
   }
-  index_ = from.index_;
+  _this->_impl_.index_ = from._impl_.index_;
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeReplacePresetCommandArchive)
 }
 
-inline void ThemeReplacePresetCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(index_));
+inline void ThemeReplacePresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.oldpreset_){nullptr}
+    , decltype(_impl_.index_){0u}
+  };
 }
 
 ThemeReplacePresetCommandArchive::~ThemeReplacePresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeReplacePresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeReplacePresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete preset_;
-  if (this != internal_default_instance()) delete oldpreset_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.preset_;
+  if (this != internal_default_instance()) delete _impl_.oldpreset_;
 }
 
-void ThemeReplacePresetCommandArchive::ArenaDtor(void* object) {
-  ThemeReplacePresetCommandArchive* _this = reinterpret_cast< ThemeReplacePresetCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeReplacePresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeReplacePresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeReplacePresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeReplacePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(preset_ != nullptr);
-      preset_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_ != nullptr);
+      _impl_.preset_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(oldpreset_ != nullptr);
-      oldpreset_->Clear();
+      GOOGLE_DCHECK(_impl_.oldpreset_ != nullptr);
+      _impl_.oldpreset_->Clear();
     }
   }
-  index_ = 0u;
-  _has_bits_.Clear();
+  _impl_.index_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeReplacePresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeReplacePresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference preset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference oldPreset = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_oldpreset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 index = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_index(&has_bits);
-          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeReplacePresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeReplacePresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeReplacePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference preset = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::preset(this), target, stream);
+      InternalWriteMessage(3, _Internal::preset(this),
+        _Internal::preset(this).GetCachedSize(), target, stream);
   }
 
   // optional .TSP.Reference oldPreset = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::oldpreset(this), target, stream);
+      InternalWriteMessage(4, _Internal::oldpreset(this),
+        _Internal::oldpreset(this).GetCachedSize(), target, stream);
   }
 
   // required uint32 index = 5;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeReplacePresetCommandArchive)
@@ -4429,21 +4724,19 @@ size_t ThemeReplacePresetCommandArchive::RequiredFieldsByteSizeFallback() const 
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_preset()) {
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
   }
 
   if (_internal_has_index()) {
     // required uint32 index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_index());
   }
 
   return total_size;
@@ -4452,82 +4745,73 @@ size_t ThemeReplacePresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeReplacePresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000000b) ^ 0x0000000b) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000000b) ^ 0x0000000b) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
 
     // required uint32 index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_index());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSP.Reference oldPreset = 4;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000004u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *oldpreset_);
+        *_impl_.oldpreset_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeReplacePresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeReplacePresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeReplacePresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeReplacePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeReplacePresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeReplacePresetCommandArchive &>(from));
-}
 
-
-void ThemeReplacePresetCommandArchive::MergeFrom(const ThemeReplacePresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplacePresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeReplacePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeReplacePresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeReplacePresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplacePresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_preset()->::TSP::Reference::MergeFrom(from._internal_preset());
+      _this->_internal_mutable_preset()->::TSP::Reference::MergeFrom(
+          from._internal_preset());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_oldpreset()->::TSP::Reference::MergeFrom(from._internal_oldpreset());
+      _this->_internal_mutable_oldpreset()->::TSP::Reference::MergeFrom(
+          from._internal_oldpreset());
     }
     if (cached_has_bits & 0x00000008u) {
-      index_ = from.index_;
+      _this->_impl_.index_ = from._impl_.index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeReplacePresetCommandArchive::CopyFrom(const ThemeReplacePresetCommandArchive& from) {
@@ -4538,15 +4822,15 @@ void ThemeReplacePresetCommandArchive::CopyFrom(const ThemeReplacePresetCommandA
 }
 
 bool ThemeReplacePresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_preset()) {
-    if (!preset_->IsInitialized()) return false;
+    if (!_impl_.preset_->IsInitialized()) return false;
   }
   if (_internal_has_oldpreset()) {
-    if (!oldpreset_->IsInitialized()) return false;
+    if (!_impl_.oldpreset_->IsInitialized()) return false;
   }
   return true;
 }
@@ -4554,17 +4838,17 @@ bool ThemeReplacePresetCommandArchive::IsInitialized() const {
 void ThemeReplacePresetCommandArchive::InternalSwap(ThemeReplacePresetCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeReplacePresetCommandArchive, index_)
-      + sizeof(ThemeReplacePresetCommandArchive::index_)
-      - PROTOBUF_FIELD_OFFSET(ThemeReplacePresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeReplacePresetCommandArchive, _impl_.index_)
+      + sizeof(ThemeReplacePresetCommandArchive::_impl_.index_)
+      - PROTOBUF_FIELD_OFFSET(ThemeReplacePresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeReplacePresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[9]);
 }
@@ -4573,7 +4857,7 @@ void ThemeReplacePresetCommandArchive::InternalSwap(ThemeReplacePresetCommandArc
 
 class ThemeReplaceColorPresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeReplaceColorPresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeReplaceColorPresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeReplaceColorPresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -4600,249 +4884,252 @@ class ThemeReplaceColorPresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeReplaceColorPresetCommandArchive::_Internal::super(const ThemeReplaceColorPresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeReplaceColorPresetCommandArchive::_Internal::theme(const ThemeReplaceColorPresetCommandArchive* msg) {
-  return *msg->theme_;
+  return *msg->_impl_.theme_;
 }
 const ::TSP::Color&
 ThemeReplaceColorPresetCommandArchive::_Internal::color(const ThemeReplaceColorPresetCommandArchive* msg) {
-  return *msg->color_;
+  return *msg->_impl_.color_;
 }
 const ::TSP::Color&
 ThemeReplaceColorPresetCommandArchive::_Internal::old_color(const ThemeReplaceColorPresetCommandArchive* msg) {
-  return *msg->old_color_;
+  return *msg->_impl_.old_color_;
 }
 void ThemeReplaceColorPresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ThemeReplaceColorPresetCommandArchive::clear_theme() {
-  if (theme_ != nullptr) theme_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.theme_ != nullptr) _impl_.theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ThemeReplaceColorPresetCommandArchive::clear_color() {
-  if (color_ != nullptr) color_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.color_ != nullptr) _impl_.color_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ThemeReplaceColorPresetCommandArchive::clear_old_color() {
-  if (old_color_ != nullptr) old_color_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.old_color_ != nullptr) _impl_.old_color_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 ThemeReplaceColorPresetCommandArchive::ThemeReplaceColorPresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeReplaceColorPresetCommandArchive)
 }
 ThemeReplaceColorPresetCommandArchive::ThemeReplaceColorPresetCommandArchive(const ThemeReplaceColorPresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeReplaceColorPresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.color_){nullptr}
+    , decltype(_impl_.old_color_){nullptr}
+    , decltype(_impl_.index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_theme()) {
-    theme_ = new ::TSP::Reference(*from.theme_);
-  } else {
-    theme_ = nullptr;
+    _this->_impl_.theme_ = new ::TSP::Reference(*from._impl_.theme_);
   }
   if (from._internal_has_color()) {
-    color_ = new ::TSP::Color(*from.color_);
-  } else {
-    color_ = nullptr;
+    _this->_impl_.color_ = new ::TSP::Color(*from._impl_.color_);
   }
   if (from._internal_has_old_color()) {
-    old_color_ = new ::TSP::Color(*from.old_color_);
-  } else {
-    old_color_ = nullptr;
+    _this->_impl_.old_color_ = new ::TSP::Color(*from._impl_.old_color_);
   }
-  index_ = from.index_;
+  _this->_impl_.index_ = from._impl_.index_;
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeReplaceColorPresetCommandArchive)
 }
 
-inline void ThemeReplaceColorPresetCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&index_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(index_));
+inline void ThemeReplaceColorPresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.color_){nullptr}
+    , decltype(_impl_.old_color_){nullptr}
+    , decltype(_impl_.index_){0u}
+  };
 }
 
 ThemeReplaceColorPresetCommandArchive::~ThemeReplaceColorPresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeReplaceColorPresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeReplaceColorPresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete theme_;
-  if (this != internal_default_instance()) delete color_;
-  if (this != internal_default_instance()) delete old_color_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.theme_;
+  if (this != internal_default_instance()) delete _impl_.color_;
+  if (this != internal_default_instance()) delete _impl_.old_color_;
 }
 
-void ThemeReplaceColorPresetCommandArchive::ArenaDtor(void* object) {
-  ThemeReplaceColorPresetCommandArchive* _this = reinterpret_cast< ThemeReplaceColorPresetCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeReplaceColorPresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeReplaceColorPresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeReplaceColorPresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeReplaceColorPresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(theme_ != nullptr);
-      theme_->Clear();
+      GOOGLE_DCHECK(_impl_.theme_ != nullptr);
+      _impl_.theme_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(color_ != nullptr);
-      color_->Clear();
+      GOOGLE_DCHECK(_impl_.color_ != nullptr);
+      _impl_.color_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(old_color_ != nullptr);
-      old_color_->Clear();
+      GOOGLE_DCHECK(_impl_.old_color_ != nullptr);
+      _impl_.old_color_->Clear();
     }
   }
-  index_ = 0u;
-  _has_bits_.Clear();
+  _impl_.index_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeReplaceColorPresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeReplaceColorPresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference theme = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Color color = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Color old_color = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_old_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 index = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_index(&has_bits);
-          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeReplaceColorPresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeReplaceColorPresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeReplaceColorPresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference theme = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::theme(this), target, stream);
+      InternalWriteMessage(2, _Internal::theme(this),
+        _Internal::theme(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Color color = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::color(this), target, stream);
+      InternalWriteMessage(3, _Internal::color(this),
+        _Internal::color(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Color old_color = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::old_color(this), target, stream);
+      InternalWriteMessage(4, _Internal::old_color(this),
+        _Internal::old_color(this).GetCachedSize(), target, stream);
   }
 
   // required uint32 index = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeReplaceColorPresetCommandArchive)
@@ -4857,35 +5144,33 @@ size_t ThemeReplaceColorPresetCommandArchive::RequiredFieldsByteSizeFallback() c
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_theme()) {
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
   }
 
   if (_internal_has_color()) {
     // required .TSP.Color color = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *color_);
+        *_impl_.color_);
   }
 
   if (_internal_has_old_color()) {
     // required .TSP.Color old_color = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *old_color_);
+        *_impl_.old_color_);
   }
 
   if (_internal_has_index()) {
     // required uint32 index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_index());
   }
 
   return total_size;
@@ -4894,87 +5179,79 @@ size_t ThemeReplaceColorPresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeReplaceColorPresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
 
     // required .TSP.Color color = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *color_);
+        *_impl_.color_);
 
     // required .TSP.Color old_color = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *old_color_);
+        *_impl_.old_color_);
 
     // required uint32 index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_index());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeReplaceColorPresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeReplaceColorPresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeReplaceColorPresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeReplaceColorPresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeReplaceColorPresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeReplaceColorPresetCommandArchive &>(from));
-}
 
-
-void ThemeReplaceColorPresetCommandArchive::MergeFrom(const ThemeReplaceColorPresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplaceColorPresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeReplaceColorPresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeReplaceColorPresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeReplaceColorPresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplaceColorPresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_theme()->::TSP::Reference::MergeFrom(from._internal_theme());
+      _this->_internal_mutable_theme()->::TSP::Reference::MergeFrom(
+          from._internal_theme());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_color()->::TSP::Color::MergeFrom(from._internal_color());
+      _this->_internal_mutable_color()->::TSP::Color::MergeFrom(
+          from._internal_color());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_old_color()->::TSP::Color::MergeFrom(from._internal_old_color());
+      _this->_internal_mutable_old_color()->::TSP::Color::MergeFrom(
+          from._internal_old_color());
     }
     if (cached_has_bits & 0x00000010u) {
-      index_ = from.index_;
+      _this->_impl_.index_ = from._impl_.index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeReplaceColorPresetCommandArchive::CopyFrom(const ThemeReplaceColorPresetCommandArchive& from) {
@@ -4985,18 +5262,18 @@ void ThemeReplaceColorPresetCommandArchive::CopyFrom(const ThemeReplaceColorPres
 }
 
 bool ThemeReplaceColorPresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_theme()) {
-    if (!theme_->IsInitialized()) return false;
+    if (!_impl_.theme_->IsInitialized()) return false;
   }
   if (_internal_has_color()) {
-    if (!color_->IsInitialized()) return false;
+    if (!_impl_.color_->IsInitialized()) return false;
   }
   if (_internal_has_old_color()) {
-    if (!old_color_->IsInitialized()) return false;
+    if (!_impl_.old_color_->IsInitialized()) return false;
   }
   return true;
 }
@@ -5004,17 +5281,17 @@ bool ThemeReplaceColorPresetCommandArchive::IsInitialized() const {
 void ThemeReplaceColorPresetCommandArchive::InternalSwap(ThemeReplaceColorPresetCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeReplaceColorPresetCommandArchive, index_)
-      + sizeof(ThemeReplaceColorPresetCommandArchive::index_)
-      - PROTOBUF_FIELD_OFFSET(ThemeReplaceColorPresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeReplaceColorPresetCommandArchive, _impl_.index_)
+      + sizeof(ThemeReplaceColorPresetCommandArchive::_impl_.index_)
+      - PROTOBUF_FIELD_OFFSET(ThemeReplaceColorPresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeReplaceColorPresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[10]);
 }
@@ -5023,7 +5300,7 @@ void ThemeReplaceColorPresetCommandArchive::InternalSwap(ThemeReplaceColorPreset
 
 class ThemeAddStylePresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeAddStylePresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeAddStylePresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeAddStylePresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -5052,248 +5329,269 @@ class ThemeAddStylePresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeAddStylePresetCommandArchive::_Internal::super(const ThemeAddStylePresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeAddStylePresetCommandArchive::_Internal::theme(const ThemeAddStylePresetCommandArchive* msg) {
-  return *msg->theme_;
+  return *msg->_impl_.theme_;
 }
 const ::TSP::Reference&
 ThemeAddStylePresetCommandArchive::_Internal::preset(const ThemeAddStylePresetCommandArchive* msg) {
-  return *msg->preset_;
+  return *msg->_impl_.preset_;
 }
 void ThemeAddStylePresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ThemeAddStylePresetCommandArchive::clear_theme() {
-  if (theme_ != nullptr) theme_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.theme_ != nullptr) _impl_.theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void ThemeAddStylePresetCommandArchive::clear_preset() {
-  if (preset_ != nullptr) preset_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.preset_ != nullptr) _impl_.preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 ThemeAddStylePresetCommandArchive::ThemeAddStylePresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeAddStylePresetCommandArchive)
 }
 ThemeAddStylePresetCommandArchive::ThemeAddStylePresetCommandArchive(const ThemeAddStylePresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeAddStylePresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.preset_kind_){}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.add_preset_to_stylesheet_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  preset_kind_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.preset_kind_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.preset_kind_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_preset_kind()) {
-    preset_kind_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_preset_kind(), 
-      GetArenaForAllocation());
+    _this->_impl_.preset_kind_.Set(from._internal_preset_kind(), 
+      _this->GetArenaForAllocation());
   }
-  identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_identifier()) {
-    identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.identifier_.Set(from._internal_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_theme()) {
-    theme_ = new ::TSP::Reference(*from.theme_);
-  } else {
-    theme_ = nullptr;
+    _this->_impl_.theme_ = new ::TSP::Reference(*from._impl_.theme_);
   }
   if (from._internal_has_preset()) {
-    preset_ = new ::TSP::Reference(*from.preset_);
-  } else {
-    preset_ = nullptr;
+    _this->_impl_.preset_ = new ::TSP::Reference(*from._impl_.preset_);
   }
-  add_preset_to_stylesheet_ = from.add_preset_to_stylesheet_;
+  _this->_impl_.add_preset_to_stylesheet_ = from._impl_.add_preset_to_stylesheet_;
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeAddStylePresetCommandArchive)
 }
 
-inline void ThemeAddStylePresetCommandArchive::SharedCtor() {
-preset_kind_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&add_preset_to_stylesheet_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(add_preset_to_stylesheet_));
+inline void ThemeAddStylePresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.preset_kind_){}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.add_preset_to_stylesheet_){false}
+  };
+  _impl_.preset_kind_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.preset_kind_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ThemeAddStylePresetCommandArchive::~ThemeAddStylePresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeAddStylePresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeAddStylePresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  preset_kind_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete theme_;
-  if (this != internal_default_instance()) delete preset_;
+  _impl_.preset_kind_.Destroy();
+  _impl_.identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.theme_;
+  if (this != internal_default_instance()) delete _impl_.preset_;
 }
 
-void ThemeAddStylePresetCommandArchive::ArenaDtor(void* object) {
-  ThemeAddStylePresetCommandArchive* _this = reinterpret_cast< ThemeAddStylePresetCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeAddStylePresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeAddStylePresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeAddStylePresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeAddStylePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      preset_kind_.ClearNonDefaultToEmpty();
+      _impl_.preset_kind_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      identifier_.ClearNonDefaultToEmpty();
+      _impl_.identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(theme_ != nullptr);
-      theme_->Clear();
+      GOOGLE_DCHECK(_impl_.theme_ != nullptr);
+      _impl_.theme_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(preset_ != nullptr);
-      preset_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_ != nullptr);
+      _impl_.preset_->Clear();
     }
   }
-  add_preset_to_stylesheet_ = false;
-  _has_bits_.Clear();
+  _impl_.add_preset_to_stylesheet_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeAddStylePresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeAddStylePresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference theme = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference preset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required string preset_kind = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           auto str = _internal_mutable_preset_kind();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.ThemeAddStylePresetCommandArchive.preset_kind");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.ThemeAddStylePresetCommandArchive.preset_kind");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional string identifier = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.ThemeAddStylePresetCommandArchive.identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.ThemeAddStylePresetCommandArchive.identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional bool add_preset_to_stylesheet = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 48)) {
           _Internal::set_has_add_preset_to_stylesheet(&has_bits);
-          add_preset_to_stylesheet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.add_preset_to_stylesheet_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeAddStylePresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeAddStylePresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeAddStylePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference theme = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::theme(this), target, stream);
+      InternalWriteMessage(2, _Internal::theme(this),
+        _Internal::theme(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference preset = 3;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::preset(this), target, stream);
+      InternalWriteMessage(3, _Internal::preset(this),
+        _Internal::preset(this).GetCachedSize(), target, stream);
   }
 
   // required string preset_kind = 4;
@@ -5319,11 +5617,11 @@ failure:
   // optional bool add_preset_to_stylesheet = 6;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_add_preset_to_stylesheet(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(6, this->_internal_add_preset_to_stylesheet(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeAddStylePresetCommandArchive)
@@ -5345,21 +5643,21 @@ size_t ThemeAddStylePresetCommandArchive::RequiredFieldsByteSizeFallback() const
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_theme()) {
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
   }
 
   if (_internal_has_preset()) {
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
   }
 
   return total_size;
@@ -5368,7 +5666,7 @@ size_t ThemeAddStylePresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeAddStylePresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000001d) ^ 0x0000001d) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000001d) ^ 0x0000001d) == 0) {  // All required fields are present.
     // required string preset_kind = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -5377,27 +5675,27 @@ size_t ThemeAddStylePresetCommandArchive::ByteSizeLong() const {
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
 
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional string identifier = 5;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -5409,57 +5707,50 @@ size_t ThemeAddStylePresetCommandArchive::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeAddStylePresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeAddStylePresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeAddStylePresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeAddStylePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeAddStylePresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeAddStylePresetCommandArchive &>(from));
-}
 
-
-void ThemeAddStylePresetCommandArchive::MergeFrom(const ThemeAddStylePresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeAddStylePresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeAddStylePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeAddStylePresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeAddStylePresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeAddStylePresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_preset_kind(from._internal_preset_kind());
+      _this->_internal_set_preset_kind(from._internal_preset_kind());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_identifier(from._internal_identifier());
+      _this->_internal_set_identifier(from._internal_identifier());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_theme()->::TSP::Reference::MergeFrom(from._internal_theme());
+      _this->_internal_mutable_theme()->::TSP::Reference::MergeFrom(
+          from._internal_theme());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_preset()->::TSP::Reference::MergeFrom(from._internal_preset());
+      _this->_internal_mutable_preset()->::TSP::Reference::MergeFrom(
+          from._internal_preset());
     }
     if (cached_has_bits & 0x00000020u) {
-      add_preset_to_stylesheet_ = from.add_preset_to_stylesheet_;
+      _this->_impl_.add_preset_to_stylesheet_ = from._impl_.add_preset_to_stylesheet_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeAddStylePresetCommandArchive::CopyFrom(const ThemeAddStylePresetCommandArchive& from) {
@@ -5470,43 +5761,43 @@ void ThemeAddStylePresetCommandArchive::CopyFrom(const ThemeAddStylePresetComman
 }
 
 bool ThemeAddStylePresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_theme()) {
-    if (!theme_->IsInitialized()) return false;
+    if (!_impl_.theme_->IsInitialized()) return false;
   }
   if (_internal_has_preset()) {
-    if (!preset_->IsInitialized()) return false;
+    if (!_impl_.preset_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ThemeAddStylePresetCommandArchive::InternalSwap(ThemeAddStylePresetCommandArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &preset_kind_, GetArenaForAllocation(),
-      &other->preset_kind_, other->GetArenaForAllocation()
+      &_impl_.preset_kind_, lhs_arena,
+      &other->_impl_.preset_kind_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &identifier_, GetArenaForAllocation(),
-      &other->identifier_, other->GetArenaForAllocation()
+      &_impl_.identifier_, lhs_arena,
+      &other->_impl_.identifier_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeAddStylePresetCommandArchive, add_preset_to_stylesheet_)
-      + sizeof(ThemeAddStylePresetCommandArchive::add_preset_to_stylesheet_)
-      - PROTOBUF_FIELD_OFFSET(ThemeAddStylePresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeAddStylePresetCommandArchive, _impl_.add_preset_to_stylesheet_)
+      + sizeof(ThemeAddStylePresetCommandArchive::_impl_.add_preset_to_stylesheet_)
+      - PROTOBUF_FIELD_OFFSET(ThemeAddStylePresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeAddStylePresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[11]);
 }
@@ -5515,7 +5806,7 @@ void ThemeAddStylePresetCommandArchive::InternalSwap(ThemeAddStylePresetCommandA
 
 class ThemeRemoveStylePresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeRemoveStylePresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeRemoveStylePresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeRemoveStylePresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
@@ -5548,279 +5839,301 @@ class ThemeRemoveStylePresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeRemoveStylePresetCommandArchive::_Internal::super(const ThemeRemoveStylePresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeRemoveStylePresetCommandArchive::_Internal::theme(const ThemeRemoveStylePresetCommandArchive* msg) {
-  return *msg->theme_;
+  return *msg->_impl_.theme_;
 }
 const ::TSP::Reference&
 ThemeRemoveStylePresetCommandArchive::_Internal::preset(const ThemeRemoveStylePresetCommandArchive* msg) {
-  return *msg->preset_;
+  return *msg->_impl_.preset_;
 }
 const ::TSP::Reference&
 ThemeRemoveStylePresetCommandArchive::_Internal::replacement_preset(const ThemeRemoveStylePresetCommandArchive* msg) {
-  return *msg->replacement_preset_;
+  return *msg->_impl_.replacement_preset_;
 }
 void ThemeRemoveStylePresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 void ThemeRemoveStylePresetCommandArchive::clear_theme() {
-  if (theme_ != nullptr) theme_->Clear();
-  _has_bits_[0] &= ~0x00000008u;
+  if (_impl_.theme_ != nullptr) _impl_.theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000008u;
 }
 void ThemeRemoveStylePresetCommandArchive::clear_preset() {
-  if (preset_ != nullptr) preset_->Clear();
-  _has_bits_[0] &= ~0x00000010u;
+  if (_impl_.preset_ != nullptr) _impl_.preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000010u;
 }
 void ThemeRemoveStylePresetCommandArchive::clear_replacement_preset() {
-  if (replacement_preset_ != nullptr) replacement_preset_->Clear();
-  _has_bits_[0] &= ~0x00000020u;
+  if (_impl_.replacement_preset_ != nullptr) _impl_.replacement_preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000020u;
 }
 ThemeRemoveStylePresetCommandArchive::ThemeRemoveStylePresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeRemoveStylePresetCommandArchive)
 }
 ThemeRemoveStylePresetCommandArchive::ThemeRemoveStylePresetCommandArchive(const ThemeRemoveStylePresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeRemoveStylePresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.preset_kind_){}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.replacement_preset_){nullptr}
+    , decltype(_impl_.preset_index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  preset_kind_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.preset_kind_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.preset_kind_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_preset_kind()) {
-    preset_kind_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_preset_kind(), 
-      GetArenaForAllocation());
+    _this->_impl_.preset_kind_.Set(from._internal_preset_kind(), 
+      _this->GetArenaForAllocation());
   }
-  identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_identifier()) {
-    identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_identifier(), 
-      GetArenaForAllocation());
+    _this->_impl_.identifier_.Set(from._internal_identifier(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_theme()) {
-    theme_ = new ::TSP::Reference(*from.theme_);
-  } else {
-    theme_ = nullptr;
+    _this->_impl_.theme_ = new ::TSP::Reference(*from._impl_.theme_);
   }
   if (from._internal_has_preset()) {
-    preset_ = new ::TSP::Reference(*from.preset_);
-  } else {
-    preset_ = nullptr;
+    _this->_impl_.preset_ = new ::TSP::Reference(*from._impl_.preset_);
   }
   if (from._internal_has_replacement_preset()) {
-    replacement_preset_ = new ::TSP::Reference(*from.replacement_preset_);
-  } else {
-    replacement_preset_ = nullptr;
+    _this->_impl_.replacement_preset_ = new ::TSP::Reference(*from._impl_.replacement_preset_);
   }
-  preset_index_ = from.preset_index_;
+  _this->_impl_.preset_index_ = from._impl_.preset_index_;
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeRemoveStylePresetCommandArchive)
 }
 
-inline void ThemeRemoveStylePresetCommandArchive::SharedCtor() {
-preset_kind_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&preset_index_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(preset_index_));
+inline void ThemeRemoveStylePresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.preset_kind_){}
+    , decltype(_impl_.identifier_){}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.replacement_preset_){nullptr}
+    , decltype(_impl_.preset_index_){0u}
+  };
+  _impl_.preset_kind_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.preset_kind_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  _impl_.identifier_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.identifier_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 ThemeRemoveStylePresetCommandArchive::~ThemeRemoveStylePresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeRemoveStylePresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeRemoveStylePresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  preset_kind_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete theme_;
-  if (this != internal_default_instance()) delete preset_;
-  if (this != internal_default_instance()) delete replacement_preset_;
+  _impl_.preset_kind_.Destroy();
+  _impl_.identifier_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.theme_;
+  if (this != internal_default_instance()) delete _impl_.preset_;
+  if (this != internal_default_instance()) delete _impl_.replacement_preset_;
 }
 
-void ThemeRemoveStylePresetCommandArchive::ArenaDtor(void* object) {
-  ThemeRemoveStylePresetCommandArchive* _this = reinterpret_cast< ThemeRemoveStylePresetCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeRemoveStylePresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeRemoveStylePresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeRemoveStylePresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeRemoveStylePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000003fu) {
     if (cached_has_bits & 0x00000001u) {
-      preset_kind_.ClearNonDefaultToEmpty();
+      _impl_.preset_kind_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      identifier_.ClearNonDefaultToEmpty();
+      _impl_.identifier_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(theme_ != nullptr);
-      theme_->Clear();
+      GOOGLE_DCHECK(_impl_.theme_ != nullptr);
+      _impl_.theme_->Clear();
     }
     if (cached_has_bits & 0x00000010u) {
-      GOOGLE_DCHECK(preset_ != nullptr);
-      preset_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_ != nullptr);
+      _impl_.preset_->Clear();
     }
     if (cached_has_bits & 0x00000020u) {
-      GOOGLE_DCHECK(replacement_preset_ != nullptr);
-      replacement_preset_->Clear();
+      GOOGLE_DCHECK(_impl_.replacement_preset_ != nullptr);
+      _impl_.replacement_preset_->Clear();
     }
   }
-  preset_index_ = 0u;
-  _has_bits_.Clear();
+  _impl_.preset_index_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeRemoveStylePresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeRemoveStylePresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference theme = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference preset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 preset_index = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_preset_index(&has_bits);
-          preset_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.preset_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required string preset_kind = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           auto str = _internal_mutable_preset_kind();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.ThemeRemoveStylePresetCommandArchive.preset_kind");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.ThemeRemoveStylePresetCommandArchive.preset_kind");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional string identifier = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           auto str = _internal_mutable_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.ThemeRemoveStylePresetCommandArchive.identifier");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.ThemeRemoveStylePresetCommandArchive.identifier");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference replacement_preset = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_replacement_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeRemoveStylePresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeRemoveStylePresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeRemoveStylePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference theme = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::theme(this), target, stream);
+      InternalWriteMessage(2, _Internal::theme(this),
+        _Internal::theme(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference preset = 3;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::preset(this), target, stream);
+      InternalWriteMessage(3, _Internal::preset(this),
+        _Internal::preset(this).GetCachedSize(), target, stream);
   }
 
   // required uint32 preset_index = 4;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_preset_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_preset_index(), target);
   }
 
   // required string preset_kind = 5;
@@ -5845,14 +6158,13 @@ failure:
 
   // optional .TSP.Reference replacement_preset = 7;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::replacement_preset(this), target, stream);
+      InternalWriteMessage(7, _Internal::replacement_preset(this),
+        _Internal::replacement_preset(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeRemoveStylePresetCommandArchive)
@@ -5874,28 +6186,26 @@ size_t ThemeRemoveStylePresetCommandArchive::RequiredFieldsByteSizeFallback() co
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_theme()) {
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
   }
 
   if (_internal_has_preset()) {
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
   }
 
   if (_internal_has_preset_index()) {
     // required uint32 preset_index = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_preset_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_preset_index());
   }
 
   return total_size;
@@ -5904,7 +6214,7 @@ size_t ThemeRemoveStylePresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeRemoveStylePresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000005d) ^ 0x0000005d) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000005d) ^ 0x0000005d) == 0) {  // All required fields are present.
     // required string preset_kind = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -5913,32 +6223,30 @@ size_t ThemeRemoveStylePresetCommandArchive::ByteSizeLong() const {
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
 
     // required .TSP.Reference preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
 
     // required uint32 preset_index = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_preset_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_preset_index());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional string identifier = 6;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000002u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
@@ -5949,63 +6257,57 @@ size_t ThemeRemoveStylePresetCommandArchive::ByteSizeLong() const {
   if (cached_has_bits & 0x00000020u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *replacement_preset_);
+        *_impl_.replacement_preset_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeRemoveStylePresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeRemoveStylePresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeRemoveStylePresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeRemoveStylePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeRemoveStylePresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeRemoveStylePresetCommandArchive &>(from));
-}
 
-
-void ThemeRemoveStylePresetCommandArchive::MergeFrom(const ThemeRemoveStylePresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeRemoveStylePresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeRemoveStylePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeRemoveStylePresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeRemoveStylePresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeRemoveStylePresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_preset_kind(from._internal_preset_kind());
+      _this->_internal_set_preset_kind(from._internal_preset_kind());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_identifier(from._internal_identifier());
+      _this->_internal_set_identifier(from._internal_identifier());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_theme()->::TSP::Reference::MergeFrom(from._internal_theme());
+      _this->_internal_mutable_theme()->::TSP::Reference::MergeFrom(
+          from._internal_theme());
     }
     if (cached_has_bits & 0x00000010u) {
-      _internal_mutable_preset()->::TSP::Reference::MergeFrom(from._internal_preset());
+      _this->_internal_mutable_preset()->::TSP::Reference::MergeFrom(
+          from._internal_preset());
     }
     if (cached_has_bits & 0x00000020u) {
-      _internal_mutable_replacement_preset()->::TSP::Reference::MergeFrom(from._internal_replacement_preset());
+      _this->_internal_mutable_replacement_preset()->::TSP::Reference::MergeFrom(
+          from._internal_replacement_preset());
     }
     if (cached_has_bits & 0x00000040u) {
-      preset_index_ = from.preset_index_;
+      _this->_impl_.preset_index_ = from._impl_.preset_index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeRemoveStylePresetCommandArchive::CopyFrom(const ThemeRemoveStylePresetCommandArchive& from) {
@@ -6016,46 +6318,46 @@ void ThemeRemoveStylePresetCommandArchive::CopyFrom(const ThemeRemoveStylePreset
 }
 
 bool ThemeRemoveStylePresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_theme()) {
-    if (!theme_->IsInitialized()) return false;
+    if (!_impl_.theme_->IsInitialized()) return false;
   }
   if (_internal_has_preset()) {
-    if (!preset_->IsInitialized()) return false;
+    if (!_impl_.preset_->IsInitialized()) return false;
   }
   if (_internal_has_replacement_preset()) {
-    if (!replacement_preset_->IsInitialized()) return false;
+    if (!_impl_.replacement_preset_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ThemeRemoveStylePresetCommandArchive::InternalSwap(ThemeRemoveStylePresetCommandArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &preset_kind_, GetArenaForAllocation(),
-      &other->preset_kind_, other->GetArenaForAllocation()
+      &_impl_.preset_kind_, lhs_arena,
+      &other->_impl_.preset_kind_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &identifier_, GetArenaForAllocation(),
-      &other->identifier_, other->GetArenaForAllocation()
+      &_impl_.identifier_, lhs_arena,
+      &other->_impl_.identifier_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeRemoveStylePresetCommandArchive, preset_index_)
-      + sizeof(ThemeRemoveStylePresetCommandArchive::preset_index_)
-      - PROTOBUF_FIELD_OFFSET(ThemeRemoveStylePresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeRemoveStylePresetCommandArchive, _impl_.preset_index_)
+      + sizeof(ThemeRemoveStylePresetCommandArchive::_impl_.preset_index_)
+      - PROTOBUF_FIELD_OFFSET(ThemeRemoveStylePresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeRemoveStylePresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[12]);
 }
@@ -6064,7 +6366,7 @@ void ThemeRemoveStylePresetCommandArchive::InternalSwap(ThemeRemoveStylePresetCo
 
 class ThemeMovePresetCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeMovePresetCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeMovePresetCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeMovePresetCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6090,236 +6392,242 @@ class ThemeMovePresetCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeMovePresetCommandArchive::_Internal::super(const ThemeMovePresetCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeMovePresetCommandArchive::_Internal::theme(const ThemeMovePresetCommandArchive* msg) {
-  return *msg->theme_;
+  return *msg->_impl_.theme_;
 }
 const ::TSP::UUID&
 ThemeMovePresetCommandArchive::_Internal::preset_id(const ThemeMovePresetCommandArchive* msg) {
-  return *msg->preset_id_;
+  return *msg->_impl_.preset_id_;
 }
 void ThemeMovePresetCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ThemeMovePresetCommandArchive::clear_theme() {
-  if (theme_ != nullptr) theme_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.theme_ != nullptr) _impl_.theme_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ThemeMovePresetCommandArchive::clear_preset_id() {
-  if (preset_id_ != nullptr) preset_id_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.preset_id_ != nullptr) _impl_.preset_id_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 ThemeMovePresetCommandArchive::ThemeMovePresetCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeMovePresetCommandArchive)
 }
 ThemeMovePresetCommandArchive::ThemeMovePresetCommandArchive(const ThemeMovePresetCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeMovePresetCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_id_){nullptr}
+    , decltype(_impl_.new_index_){}
+    , decltype(_impl_.old_index_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_theme()) {
-    theme_ = new ::TSP::Reference(*from.theme_);
-  } else {
-    theme_ = nullptr;
+    _this->_impl_.theme_ = new ::TSP::Reference(*from._impl_.theme_);
   }
   if (from._internal_has_preset_id()) {
-    preset_id_ = new ::TSP::UUID(*from.preset_id_);
-  } else {
-    preset_id_ = nullptr;
+    _this->_impl_.preset_id_ = new ::TSP::UUID(*from._impl_.preset_id_);
   }
-  ::memcpy(&new_index_, &from.new_index_,
-    static_cast<size_t>(reinterpret_cast<char*>(&old_index_) -
-    reinterpret_cast<char*>(&new_index_)) + sizeof(old_index_));
+  ::memcpy(&_impl_.new_index_, &from._impl_.new_index_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.old_index_) -
+    reinterpret_cast<char*>(&_impl_.new_index_)) + sizeof(_impl_.old_index_));
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeMovePresetCommandArchive)
 }
 
-inline void ThemeMovePresetCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&old_index_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(old_index_));
+inline void ThemeMovePresetCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.theme_){nullptr}
+    , decltype(_impl_.preset_id_){nullptr}
+    , decltype(_impl_.new_index_){0u}
+    , decltype(_impl_.old_index_){0u}
+  };
 }
 
 ThemeMovePresetCommandArchive::~ThemeMovePresetCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeMovePresetCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeMovePresetCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete theme_;
-  if (this != internal_default_instance()) delete preset_id_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.theme_;
+  if (this != internal_default_instance()) delete _impl_.preset_id_;
 }
 
-void ThemeMovePresetCommandArchive::ArenaDtor(void* object) {
-  ThemeMovePresetCommandArchive* _this = reinterpret_cast< ThemeMovePresetCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeMovePresetCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeMovePresetCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeMovePresetCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeMovePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(theme_ != nullptr);
-      theme_->Clear();
+      GOOGLE_DCHECK(_impl_.theme_ != nullptr);
+      _impl_.theme_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(preset_id_ != nullptr);
-      preset_id_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_id_ != nullptr);
+      _impl_.preset_id_->Clear();
     }
   }
   if (cached_has_bits & 0x00000018u) {
-    ::memset(&new_index_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&old_index_) -
-        reinterpret_cast<char*>(&new_index_)) + sizeof(old_index_));
+    ::memset(&_impl_.new_index_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.old_index_) -
+        reinterpret_cast<char*>(&_impl_.new_index_)) + sizeof(_impl_.old_index_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeMovePresetCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeMovePresetCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference theme = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_theme(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.UUID preset_id = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset_id(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 new_index = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 32)) {
           _Internal::set_has_new_index(&has_bits);
-          new_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.new_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required uint32 old_index = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 40)) {
           _Internal::set_has_old_index(&has_bits);
-          old_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.old_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeMovePresetCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeMovePresetCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeMovePresetCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference theme = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::theme(this), target, stream);
+      InternalWriteMessage(2, _Internal::theme(this),
+        _Internal::theme(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.UUID preset_id = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::preset_id(this), target, stream);
+      InternalWriteMessage(3, _Internal::preset_id(this),
+        _Internal::preset_id(this).GetCachedSize(), target, stream);
   }
 
   // required uint32 new_index = 4;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_new_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(4, this->_internal_new_index(), target);
   }
 
   // required uint32 old_index = 5;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_old_index(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(5, this->_internal_old_index(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeMovePresetCommandArchive)
@@ -6334,35 +6642,31 @@ size_t ThemeMovePresetCommandArchive::RequiredFieldsByteSizeFallback() const {
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_theme()) {
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
   }
 
   if (_internal_has_preset_id()) {
     // required .TSP.UUID preset_id = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_id_);
+        *_impl_.preset_id_);
   }
 
   if (_internal_has_new_index()) {
     // required uint32 new_index = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_new_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_new_index());
   }
 
   if (_internal_has_old_index()) {
     // required uint32 old_index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_old_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_old_index());
   }
 
   return total_size;
@@ -6371,87 +6675,76 @@ size_t ThemeMovePresetCommandArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeMovePresetCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference theme = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *theme_);
+        *_impl_.theme_);
 
     // required .TSP.UUID preset_id = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_id_);
+        *_impl_.preset_id_);
 
     // required uint32 new_index = 4;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_new_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_new_index());
 
     // required uint32 old_index = 5;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_old_index());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_old_index());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeMovePresetCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeMovePresetCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeMovePresetCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeMovePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeMovePresetCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeMovePresetCommandArchive &>(from));
-}
 
-
-void ThemeMovePresetCommandArchive::MergeFrom(const ThemeMovePresetCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeMovePresetCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeMovePresetCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeMovePresetCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeMovePresetCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeMovePresetCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000001fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_theme()->::TSP::Reference::MergeFrom(from._internal_theme());
+      _this->_internal_mutable_theme()->::TSP::Reference::MergeFrom(
+          from._internal_theme());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_preset_id()->::TSP::UUID::MergeFrom(from._internal_preset_id());
+      _this->_internal_mutable_preset_id()->::TSP::UUID::MergeFrom(
+          from._internal_preset_id());
     }
     if (cached_has_bits & 0x00000008u) {
-      new_index_ = from.new_index_;
+      _this->_impl_.new_index_ = from._impl_.new_index_;
     }
     if (cached_has_bits & 0x00000010u) {
-      old_index_ = from.old_index_;
+      _this->_impl_.old_index_ = from._impl_.old_index_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeMovePresetCommandArchive::CopyFrom(const ThemeMovePresetCommandArchive& from) {
@@ -6462,15 +6755,15 @@ void ThemeMovePresetCommandArchive::CopyFrom(const ThemeMovePresetCommandArchive
 }
 
 bool ThemeMovePresetCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_theme()) {
-    if (!theme_->IsInitialized()) return false;
+    if (!_impl_.theme_->IsInitialized()) return false;
   }
   if (_internal_has_preset_id()) {
-    if (!preset_id_->IsInitialized()) return false;
+    if (!_impl_.preset_id_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6478,17 +6771,17 @@ bool ThemeMovePresetCommandArchive::IsInitialized() const {
 void ThemeMovePresetCommandArchive::InternalSwap(ThemeMovePresetCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeMovePresetCommandArchive, old_index_)
-      + sizeof(ThemeMovePresetCommandArchive::old_index_)
-      - PROTOBUF_FIELD_OFFSET(ThemeMovePresetCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeMovePresetCommandArchive, _impl_.old_index_)
+      + sizeof(ThemeMovePresetCommandArchive::_impl_.old_index_)
+      - PROTOBUF_FIELD_OFFSET(ThemeMovePresetCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeMovePresetCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[13]);
 }
@@ -6497,7 +6790,7 @@ void ThemeMovePresetCommandArchive::InternalSwap(ThemeMovePresetCommandArchive* 
 
 class ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<ThemeReplaceStylePresetAndDisconnectStylesCommandArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<ThemeReplaceStylePresetAndDisconnectStylesCommandArchive>()._impl_._has_bits_);
   static const ::TSK::CommandArchive& super(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* msg);
   static void set_has_super(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -6517,200 +6810,200 @@ class ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_Internal {
 
 const ::TSK::CommandArchive&
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_Internal::super(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* msg) {
-  return *msg->super_;
+  return *msg->_impl_.super_;
 }
 const ::TSP::Reference&
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_Internal::preset(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* msg) {
-  return *msg->preset_;
+  return *msg->_impl_.preset_;
 }
 const ::TSP::Reference&
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_Internal::replacement_preset(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* msg) {
-  return *msg->replacement_preset_;
+  return *msg->_impl_.replacement_preset_;
 }
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::clear_super() {
-  if (super_ != nullptr) super_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.super_ != nullptr) _impl_.super_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::clear_preset() {
-  if (preset_ != nullptr) preset_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.preset_ != nullptr) _impl_.preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::clear_replacement_preset() {
-  if (replacement_preset_ != nullptr) replacement_preset_->Clear();
-  _has_bits_[0] &= ~0x00000004u;
+  if (_impl_.replacement_preset_ != nullptr) _impl_.replacement_preset_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000004u;
 }
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
 }
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.replacement_preset_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_super()) {
-    super_ = new ::TSK::CommandArchive(*from.super_);
-  } else {
-    super_ = nullptr;
+    _this->_impl_.super_ = new ::TSK::CommandArchive(*from._impl_.super_);
   }
   if (from._internal_has_preset()) {
-    preset_ = new ::TSP::Reference(*from.preset_);
-  } else {
-    preset_ = nullptr;
+    _this->_impl_.preset_ = new ::TSP::Reference(*from._impl_.preset_);
   }
   if (from._internal_has_replacement_preset()) {
-    replacement_preset_ = new ::TSP::Reference(*from.replacement_preset_);
-  } else {
-    replacement_preset_ = nullptr;
+    _this->_impl_.replacement_preset_ = new ::TSP::Reference(*from._impl_.replacement_preset_);
   }
   // @@protoc_insertion_point(copy_constructor:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
 }
 
-inline void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&super_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&replacement_preset_) -
-    reinterpret_cast<char*>(&super_)) + sizeof(replacement_preset_));
+inline void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.super_){nullptr}
+    , decltype(_impl_.preset_){nullptr}
+    , decltype(_impl_.replacement_preset_){nullptr}
+  };
 }
 
 ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::~ThemeReplaceStylePresetAndDisconnectStylesCommandArchive() {
   // @@protoc_insertion_point(destructor:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete super_;
-  if (this != internal_default_instance()) delete preset_;
-  if (this != internal_default_instance()) delete replacement_preset_;
+  if (this != internal_default_instance()) delete _impl_.super_;
+  if (this != internal_default_instance()) delete _impl_.preset_;
+  if (this != internal_default_instance()) delete _impl_.replacement_preset_;
 }
 
-void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ArenaDtor(void* object) {
-  ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* _this = reinterpret_cast< ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* >(object);
-  (void)_this;
-}
-void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(super_ != nullptr);
-      super_->Clear();
+      GOOGLE_DCHECK(_impl_.super_ != nullptr);
+      _impl_.super_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(preset_ != nullptr);
-      preset_->Clear();
+      GOOGLE_DCHECK(_impl_.preset_ != nullptr);
+      _impl_.preset_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(replacement_preset_ != nullptr);
-      replacement_preset_->Clear();
+      GOOGLE_DCHECK(_impl_.replacement_preset_ != nullptr);
+      _impl_.replacement_preset_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required .TSK.CommandArchive super = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_super(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference preset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required .TSP.Reference replacement_preset = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_replacement_preset(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required .TSK.CommandArchive super = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::super(this), target, stream);
+      InternalWriteMessage(1, _Internal::super(this),
+        _Internal::super(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference preset = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::preset(this), target, stream);
+      InternalWriteMessage(2, _Internal::preset(this),
+        _Internal::preset(this).GetCachedSize(), target, stream);
   }
 
   // required .TSP.Reference replacement_preset = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::replacement_preset(this), target, stream);
+      InternalWriteMessage(3, _Internal::replacement_preset(this),
+        _Internal::replacement_preset(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
@@ -6725,21 +7018,21 @@ size_t ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::RequiredFieldsB
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
   }
 
   if (_internal_has_preset()) {
     // required .TSP.Reference preset = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
   }
 
   if (_internal_has_replacement_preset()) {
     // required .TSP.Reference replacement_preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *replacement_preset_);
+        *_impl_.replacement_preset_);
   }
 
   return total_size;
@@ -6748,70 +7041,63 @@ size_t ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::ByteSizeLong() 
 // @@protoc_insertion_point(message_byte_size_start:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required .TSK.CommandArchive super = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *super_);
+        *_impl_.super_);
 
     // required .TSP.Reference preset = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *preset_);
+        *_impl_.preset_);
 
     // required .TSP.Reference replacement_preset = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *replacement_preset_);
+        *_impl_.replacement_preset_);
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::GetClassData() const { return &_class_data_; }
 
-void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<ThemeReplaceStylePresetAndDisconnectStylesCommandArchive *>(to)->MergeFrom(
-      static_cast<const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive &>(from));
-}
 
-
-void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::MergeFrom(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<ThemeReplaceStylePresetAndDisconnectStylesCommandArchive*>(&to_msg);
+  auto& from = static_cast<const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.ThemeReplaceStylePresetAndDisconnectStylesCommandArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_super()->::TSK::CommandArchive::MergeFrom(from._internal_super());
+      _this->_internal_mutable_super()->::TSK::CommandArchive::MergeFrom(
+          from._internal_super());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_preset()->::TSP::Reference::MergeFrom(from._internal_preset());
+      _this->_internal_mutable_preset()->::TSP::Reference::MergeFrom(
+          from._internal_preset());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_replacement_preset()->::TSP::Reference::MergeFrom(from._internal_replacement_preset());
+      _this->_internal_mutable_replacement_preset()->::TSP::Reference::MergeFrom(
+          from._internal_replacement_preset());
     }
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::CopyFrom(const ThemeReplaceStylePresetAndDisconnectStylesCommandArchive& from) {
@@ -6822,15 +7108,15 @@ void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::CopyFrom(const Th
 }
 
 bool ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_super()) {
-    if (!super_->IsInitialized()) return false;
+    if (!_impl_.super_->IsInitialized()) return false;
   }
   if (_internal_has_preset()) {
-    if (!preset_->IsInitialized()) return false;
+    if (!_impl_.preset_->IsInitialized()) return false;
   }
   if (_internal_has_replacement_preset()) {
-    if (!replacement_preset_->IsInitialized()) return false;
+    if (!_impl_.replacement_preset_->IsInitialized()) return false;
   }
   return true;
 }
@@ -6838,17 +7124,17 @@ bool ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::IsInitialized() c
 void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::InternalSwap(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, replacement_preset_)
-      + sizeof(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::replacement_preset_)
-      - PROTOBUF_FIELD_OFFSET(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, super_)>(
-          reinterpret_cast<char*>(&super_),
-          reinterpret_cast<char*>(&other->super_));
+      PROTOBUF_FIELD_OFFSET(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_.replacement_preset_)
+      + sizeof(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::_impl_.replacement_preset_)
+      - PROTOBUF_FIELD_OFFSET(ThemeReplaceStylePresetAndDisconnectStylesCommandArchive, _impl_.super_)>(
+          reinterpret_cast<char*>(&_impl_.super_),
+          reinterpret_cast<char*>(&other->_impl_.super_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[14]);
 }
@@ -6857,7 +7143,7 @@ void ThemeReplaceStylePresetAndDisconnectStylesCommandArchive::InternalSwap(Them
 
 class CommandPropertyEntryArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<CommandPropertyEntryArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<CommandPropertyEntryArchive>()._impl_._has_bits_);
   static void set_has_property(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
@@ -6887,230 +7173,256 @@ class CommandPropertyEntryArchive::_Internal {
 
 const ::TSP::Reference&
 CommandPropertyEntryArchive::_Internal::tsp_reference(const CommandPropertyEntryArchive* msg) {
-  return *msg->tsp_reference_;
+  return *msg->_impl_.tsp_reference_;
 }
 void CommandPropertyEntryArchive::clear_tsp_reference() {
-  if (tsp_reference_ != nullptr) tsp_reference_->Clear();
-  _has_bits_[0] &= ~0x00000002u;
+  if (_impl_.tsp_reference_ != nullptr) _impl_.tsp_reference_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000002u;
 }
 CommandPropertyEntryArchive::CommandPropertyEntryArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  _extensions_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.CommandPropertyEntryArchive)
 }
 CommandPropertyEntryArchive::CommandPropertyEntryArchive(const CommandPropertyEntryArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CommandPropertyEntryArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._extensions_)*/{}
+    , decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.string_value_){}
+    , decltype(_impl_.tsp_reference_){nullptr}
+    , decltype(_impl_.property_){}
+    , decltype(_impl_.type_){}
+    , decltype(_impl_.integer_value_){}
+    , decltype(_impl_.float_value_){}
+    , decltype(_impl_.double_value_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _extensions_.MergeFrom(from._extensions_);
-  string_value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_._extensions_.MergeFrom(internal_default_instance(), from._impl_._extensions_);
+  _impl_.string_value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.string_value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_string_value()) {
-    string_value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_string_value(), 
-      GetArenaForAllocation());
+    _this->_impl_.string_value_.Set(from._internal_string_value(), 
+      _this->GetArenaForAllocation());
   }
   if (from._internal_has_tsp_reference()) {
-    tsp_reference_ = new ::TSP::Reference(*from.tsp_reference_);
-  } else {
-    tsp_reference_ = nullptr;
+    _this->_impl_.tsp_reference_ = new ::TSP::Reference(*from._impl_.tsp_reference_);
   }
-  ::memcpy(&property_, &from.property_,
-    static_cast<size_t>(reinterpret_cast<char*>(&double_value_) -
-    reinterpret_cast<char*>(&property_)) + sizeof(double_value_));
+  ::memcpy(&_impl_.property_, &from._impl_.property_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.double_value_) -
+    reinterpret_cast<char*>(&_impl_.property_)) + sizeof(_impl_.double_value_));
   // @@protoc_insertion_point(copy_constructor:TSS.CommandPropertyEntryArchive)
 }
 
-inline void CommandPropertyEntryArchive::SharedCtor() {
-string_value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&tsp_reference_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&double_value_) -
-    reinterpret_cast<char*>(&tsp_reference_)) + sizeof(double_value_));
+inline void CommandPropertyEntryArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      /*decltype(_impl_._extensions_)*/{::_pbi::ArenaInitialized(), arena}
+    , decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.string_value_){}
+    , decltype(_impl_.tsp_reference_){nullptr}
+    , decltype(_impl_.property_){0u}
+    , decltype(_impl_.type_){0}
+    , decltype(_impl_.integer_value_){0}
+    , decltype(_impl_.float_value_){0}
+    , decltype(_impl_.double_value_){0}
+  };
+  _impl_.string_value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.string_value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 CommandPropertyEntryArchive::~CommandPropertyEntryArchive() {
   // @@protoc_insertion_point(destructor:TSS.CommandPropertyEntryArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CommandPropertyEntryArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  string_value_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete tsp_reference_;
+  _impl_._extensions_.~ExtensionSet();
+  _impl_.string_value_.Destroy();
+  if (this != internal_default_instance()) delete _impl_.tsp_reference_;
 }
 
-void CommandPropertyEntryArchive::ArenaDtor(void* object) {
-  CommandPropertyEntryArchive* _this = reinterpret_cast< CommandPropertyEntryArchive* >(object);
-  (void)_this;
-}
-void CommandPropertyEntryArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CommandPropertyEntryArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CommandPropertyEntryArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.CommandPropertyEntryArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _extensions_.Clear();
-  cached_has_bits = _has_bits_[0];
+  _impl_._extensions_.Clear();
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      string_value_.ClearNonDefaultToEmpty();
+      _impl_.string_value_.ClearNonDefaultToEmpty();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(tsp_reference_ != nullptr);
-      tsp_reference_->Clear();
+      GOOGLE_DCHECK(_impl_.tsp_reference_ != nullptr);
+      _impl_.tsp_reference_->Clear();
     }
   }
   if (cached_has_bits & 0x0000007cu) {
-    ::memset(&property_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&double_value_) -
-        reinterpret_cast<char*>(&property_)) + sizeof(double_value_));
+    ::memset(&_impl_.property_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.double_value_) -
+        reinterpret_cast<char*>(&_impl_.property_)) + sizeof(_impl_.double_value_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CommandPropertyEntryArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CommandPropertyEntryArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 property = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_property(&has_bits);
-          property_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.property_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required int32 type = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_type(&has_bits);
-          type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.type_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional int32 integer_value = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 24)) {
           _Internal::set_has_integer_value(&has_bits);
-          integer_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.integer_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional float float_value = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 37)) {
           _Internal::set_has_float_value(&has_bits);
-          float_value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
+          _impl_.float_value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional double double_value = 5;
       case 5:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 41)) {
           _Internal::set_has_double_value(&has_bits);
-          double_value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.double_value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional string string_value = 6;
       case 6:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
           auto str = _internal_mutable_string_value();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSS.CommandPropertyEntryArchive.string_value");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSS.CommandPropertyEntryArchive.string_value");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // optional .TSP.Reference tsp_reference = 7;
       case 7:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_tsp_reference(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-      if ((64u <= tag && tag < 16008u)) {
-        ptr = _extensions_.ParseField(tag, ptr,
-            internal_default_instance(), &_internal_metadata_, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    if ((64u <= tag && tag < 16008u)) {
+      ptr = _impl_._extensions_.ParseField(tag, ptr, internal_default_instance(), &_internal_metadata_, ctx);
+      CHK_(ptr != nullptr);
+      continue;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CommandPropertyEntryArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CommandPropertyEntryArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.CommandPropertyEntryArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 property = 1;
   if (cached_has_bits & 0x00000004u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_property(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_property(), target);
   }
 
   // required int32 type = 2;
   if (cached_has_bits & 0x00000008u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_type(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(2, this->_internal_type(), target);
   }
 
   // optional int32 integer_value = 3;
   if (cached_has_bits & 0x00000010u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_integer_value(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(3, this->_internal_integer_value(), target);
   }
 
   // optional float float_value = 4;
   if (cached_has_bits & 0x00000020u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_float_value(), target);
+    target = ::_pbi::WireFormatLite::WriteFloatToArray(4, this->_internal_float_value(), target);
   }
 
   // optional double double_value = 5;
   if (cached_has_bits & 0x00000040u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_double_value(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_double_value(), target);
   }
 
   // optional string string_value = 6;
@@ -7125,18 +7437,17 @@ failure:
 
   // optional .TSP.Reference tsp_reference = 7;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        7, _Internal::tsp_reference(this), target, stream);
+      InternalWriteMessage(7, _Internal::tsp_reference(this),
+        _Internal::tsp_reference(this).GetCachedSize(), target, stream);
   }
 
   // Extension range [8, 2001)
-  target = _extensions_._InternalSerialize(
-      8, 2001, target, stream);
+  target = _impl_._extensions_._InternalSerialize(
+  internal_default_instance(), 8, 2001, target, stream);
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.CommandPropertyEntryArchive)
@@ -7149,16 +7460,12 @@ size_t CommandPropertyEntryArchive::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_property()) {
     // required uint32 property = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_property());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_property());
   }
 
   if (_internal_has_type()) {
     // required int32 type = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_type());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_type());
   }
 
   return total_size;
@@ -7167,27 +7474,23 @@ size_t CommandPropertyEntryArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.CommandPropertyEntryArchive)
   size_t total_size = 0;
 
-  total_size += _extensions_.ByteSize();
+  total_size += _impl_._extensions_.ByteSize();
 
-  if (((_has_bits_[0] & 0x0000000c) ^ 0x0000000c) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x0000000c) ^ 0x0000000c) == 0) {  // All required fields are present.
     // required uint32 property = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_property());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_property());
 
     // required int32 type = 2;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_type());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_type());
 
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     // optional string string_value = 6;
     if (cached_has_bits & 0x00000001u) {
@@ -7200,16 +7503,14 @@ size_t CommandPropertyEntryArchive::ByteSizeLong() const {
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *tsp_reference_);
+          *_impl_.tsp_reference_);
     }
 
   }
   if (cached_has_bits & 0x00000070u) {
     // optional int32 integer_value = 3;
     if (cached_has_bits & 0x00000010u) {
-      total_size += 1 +
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-          this->_internal_integer_value());
+      total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_integer_value());
     }
 
     // optional float float_value = 4;
@@ -7223,61 +7524,52 @@ size_t CommandPropertyEntryArchive::ByteSizeLong() const {
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandPropertyEntryArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CommandPropertyEntryArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandPropertyEntryArchive::GetClassData() const { return &_class_data_; }
 
-void CommandPropertyEntryArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CommandPropertyEntryArchive *>(to)->MergeFrom(
-      static_cast<const CommandPropertyEntryArchive &>(from));
-}
 
-
-void CommandPropertyEntryArchive::MergeFrom(const CommandPropertyEntryArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.CommandPropertyEntryArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CommandPropertyEntryArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CommandPropertyEntryArchive*>(&to_msg);
+  auto& from = static_cast<const CommandPropertyEntryArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.CommandPropertyEntryArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000007fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_string_value(from._internal_string_value());
+      _this->_internal_set_string_value(from._internal_string_value());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_tsp_reference()->::TSP::Reference::MergeFrom(from._internal_tsp_reference());
+      _this->_internal_mutable_tsp_reference()->::TSP::Reference::MergeFrom(
+          from._internal_tsp_reference());
     }
     if (cached_has_bits & 0x00000004u) {
-      property_ = from.property_;
+      _this->_impl_.property_ = from._impl_.property_;
     }
     if (cached_has_bits & 0x00000008u) {
-      type_ = from.type_;
+      _this->_impl_.type_ = from._impl_.type_;
     }
     if (cached_has_bits & 0x00000010u) {
-      integer_value_ = from.integer_value_;
+      _this->_impl_.integer_value_ = from._impl_.integer_value_;
     }
     if (cached_has_bits & 0x00000020u) {
-      float_value_ = from.float_value_;
+      _this->_impl_.float_value_ = from._impl_.float_value_;
     }
     if (cached_has_bits & 0x00000040u) {
-      double_value_ = from.double_value_;
+      _this->_impl_.double_value_ = from._impl_.double_value_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _extensions_.MergeFrom(from._extensions_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_._extensions_.MergeFrom(internal_default_instance(), from._impl_._extensions_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandPropertyEntryArchive::CopyFrom(const CommandPropertyEntryArchive& from) {
@@ -7288,37 +7580,38 @@ void CommandPropertyEntryArchive::CopyFrom(const CommandPropertyEntryArchive& fr
 }
 
 bool CommandPropertyEntryArchive::IsInitialized() const {
-  if (!_extensions_.IsInitialized()) {
+  if (!_impl_._extensions_.IsInitialized()) {
     return false;
   }
 
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_tsp_reference()) {
-    if (!tsp_reference_->IsInitialized()) return false;
+    if (!_impl_.tsp_reference_->IsInitialized()) return false;
   }
   return true;
 }
 
 void CommandPropertyEntryArchive::InternalSwap(CommandPropertyEntryArchive* other) {
   using std::swap;
-  _extensions_.InternalSwap(&other->_extensions_);
+  _impl_._extensions_.InternalSwap(&other->_impl_._extensions_);
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &string_value_, GetArenaForAllocation(),
-      &other->string_value_, other->GetArenaForAllocation()
+      &_impl_.string_value_, lhs_arena,
+      &other->_impl_.string_value_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(CommandPropertyEntryArchive, double_value_)
-      + sizeof(CommandPropertyEntryArchive::double_value_)
-      - PROTOBUF_FIELD_OFFSET(CommandPropertyEntryArchive, tsp_reference_)>(
-          reinterpret_cast<char*>(&tsp_reference_),
-          reinterpret_cast<char*>(&other->tsp_reference_));
+      PROTOBUF_FIELD_OFFSET(CommandPropertyEntryArchive, _impl_.double_value_)
+      + sizeof(CommandPropertyEntryArchive::_impl_.double_value_)
+      - PROTOBUF_FIELD_OFFSET(CommandPropertyEntryArchive, _impl_.tsp_reference_)>(
+          reinterpret_cast<char*>(&_impl_.tsp_reference_),
+          reinterpret_cast<char*>(&other->_impl_.tsp_reference_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CommandPropertyEntryArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[15]);
 }
@@ -7331,64 +7624,68 @@ class CommandPropertyMapArchive::_Internal {
 
 CommandPropertyMapArchive::CommandPropertyMapArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned),
-  property_entries_(arena) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSS.CommandPropertyMapArchive)
 }
 CommandPropertyMapArchive::CommandPropertyMapArchive(const CommandPropertyMapArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      property_entries_(from.property_entries_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  CommandPropertyMapArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.property_entries_){from._impl_.property_entries_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TSS.CommandPropertyMapArchive)
 }
 
-inline void CommandPropertyMapArchive::SharedCtor() {
+inline void CommandPropertyMapArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.property_entries_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
 }
 
 CommandPropertyMapArchive::~CommandPropertyMapArchive() {
   // @@protoc_insertion_point(destructor:TSS.CommandPropertyMapArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void CommandPropertyMapArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.property_entries_.~RepeatedPtrField();
 }
 
-void CommandPropertyMapArchive::ArenaDtor(void* object) {
-  CommandPropertyMapArchive* _this = reinterpret_cast< CommandPropertyMapArchive* >(object);
-  (void)_this;
-}
-void CommandPropertyMapArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void CommandPropertyMapArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void CommandPropertyMapArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSS.CommandPropertyMapArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  property_entries_.Clear();
+  _impl_.property_entries_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CommandPropertyMapArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* CommandPropertyMapArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // repeated .TSS.CommandPropertyEntryArchive property_entries = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
@@ -7396,47 +7693,48 @@ const char* CommandPropertyMapArchive::_InternalParse(const char* ptr, ::PROTOBU
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* CommandPropertyMapArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* CommandPropertyMapArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSS.CommandPropertyMapArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .TSS.CommandPropertyEntryArchive property_entries = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->_internal_property_entries_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_property_entries_size()); i < n; i++) {
+    const auto& repfield = this->_internal_property_entries(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_property_entries(i), target, stream);
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSS.CommandPropertyMapArchive)
@@ -7447,47 +7745,37 @@ size_t CommandPropertyMapArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSS.CommandPropertyMapArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .TSS.CommandPropertyEntryArchive property_entries = 1;
   total_size += 1UL * this->_internal_property_entries_size();
-  for (const auto& msg : this->property_entries_) {
+  for (const auto& msg : this->_impl_.property_entries_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CommandPropertyMapArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     CommandPropertyMapArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CommandPropertyMapArchive::GetClassData() const { return &_class_data_; }
 
-void CommandPropertyMapArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<CommandPropertyMapArchive *>(to)->MergeFrom(
-      static_cast<const CommandPropertyMapArchive &>(from));
-}
 
-
-void CommandPropertyMapArchive::MergeFrom(const CommandPropertyMapArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSS.CommandPropertyMapArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void CommandPropertyMapArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CommandPropertyMapArchive*>(&to_msg);
+  auto& from = static_cast<const CommandPropertyMapArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSS.CommandPropertyMapArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  property_entries_.MergeFrom(from.property_entries_);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_impl_.property_entries_.MergeFrom(from._impl_.property_entries_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void CommandPropertyMapArchive::CopyFrom(const CommandPropertyMapArchive& from) {
@@ -7498,77 +7786,95 @@ void CommandPropertyMapArchive::CopyFrom(const CommandPropertyMapArchive& from) 
 }
 
 bool CommandPropertyMapArchive::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(property_entries_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(_impl_.property_entries_))
+    return false;
   return true;
 }
 
 void CommandPropertyMapArchive::InternalSwap(CommandPropertyMapArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  property_entries_.InternalSwap(&other->property_entries_);
+  _impl_.property_entries_.InternalSwap(&other->_impl_.property_entries_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CommandPropertyMapArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2eproto_getter, &descriptor_table_TSSArchives_2eproto_once,
       file_level_metadata_TSSArchives_2eproto[16]);
 }
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::CommandPropertyEntryArchive,
-    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSP::Color >, 11, false >
-  color(kColorFieldNumber, ::TSP::Color::default_instance());
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 ::PROTOBUF_NAMESPACE_ID::internal::ExtensionIdentifier< ::TSS::CommandPropertyEntryArchive,
+    ::PROTOBUF_NAMESPACE_ID::internal::MessageTypeTraits< ::TSP::Color >, 11, false>
+  color(kColorFieldNumber, ::TSP::Color::default_instance(), nullptr);
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSS::StyleArchive* Arena::CreateMaybeMessage< ::TSS::StyleArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StyleArchive*
+Arena::CreateMaybeMessage< ::TSS::StyleArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StyleArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_IdentifiedStyleEntry* Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_IdentifiedStyleEntry >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_IdentifiedStyleEntry*
+Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_IdentifiedStyleEntry >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StylesheetArchive_IdentifiedStyleEntry >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_StyleChildrenEntry* Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_StyleChildrenEntry >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_StyleChildrenEntry*
+Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_StyleChildrenEntry >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StylesheetArchive_StyleChildrenEntry >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_VersionedStyles* Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_VersionedStyles >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive_VersionedStyles*
+Arena::CreateMaybeMessage< ::TSS::StylesheetArchive_VersionedStyles >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StylesheetArchive_VersionedStyles >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive* Arena::CreateMaybeMessage< ::TSS::StylesheetArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StylesheetArchive*
+Arena::CreateMaybeMessage< ::TSS::StylesheetArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StylesheetArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeArchive* Arena::CreateMaybeMessage< ::TSS::ThemeArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ApplyThemeCommandArchive* Arena::CreateMaybeMessage< ::TSS::ApplyThemeCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ApplyThemeCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ApplyThemeCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ApplyThemeCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ApplyThemeChildCommandArchive* Arena::CreateMaybeMessage< ::TSS::ApplyThemeChildCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ApplyThemeChildCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ApplyThemeChildCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ApplyThemeChildCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::StyleUpdatePropertyMapCommandArchive* Arena::CreateMaybeMessage< ::TSS::StyleUpdatePropertyMapCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::StyleUpdatePropertyMapCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::StyleUpdatePropertyMapCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::StyleUpdatePropertyMapCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeReplacePresetCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeReplacePresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeReplacePresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeReplacePresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeReplacePresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeReplaceColorPresetCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeReplaceColorPresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeReplaceColorPresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeReplaceColorPresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeReplaceColorPresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeAddStylePresetCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeAddStylePresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeAddStylePresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeAddStylePresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeAddStylePresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeRemoveStylePresetCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeRemoveStylePresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeRemoveStylePresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeRemoveStylePresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeRemoveStylePresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeMovePresetCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeMovePresetCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeMovePresetCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeMovePresetCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeMovePresetCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive* Arena::CreateMaybeMessage< ::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive*
+Arena::CreateMaybeMessage< ::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::ThemeReplaceStylePresetAndDisconnectStylesCommandArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::CommandPropertyEntryArchive* Arena::CreateMaybeMessage< ::TSS::CommandPropertyEntryArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::CommandPropertyEntryArchive*
+Arena::CreateMaybeMessage< ::TSS::CommandPropertyEntryArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::CommandPropertyEntryArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSS::CommandPropertyMapArchive* Arena::CreateMaybeMessage< ::TSS::CommandPropertyMapArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSS::CommandPropertyMapArchive*
+Arena::CreateMaybeMessage< ::TSS::CommandPropertyMapArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSS::CommandPropertyMapArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

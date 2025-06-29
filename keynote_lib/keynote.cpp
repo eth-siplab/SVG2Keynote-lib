@@ -14,8 +14,8 @@ std::string decodeAndEncode(std::string protobufString) {
     return convertListOfMessagesToProtoStream(objects);
 }
 
-std::string generateTSPNativeDataClipboardFromSVG(std::string filePath) {
-    std::vector<MessageWrapper *> objects = *convertSVGFileToKeynoteClipboard(filePath);
+std::string generateTSPNativeDataClipboardFromSVG(std::string svgData) {
+    std::vector<MessageWrapper *> objects = convertSVGFileToKeynoteClipboard(svgData); // Assign returned vector directly
     return convertListOfMessagesToProtoStream(objects);
 }
 std::string generateTSPNativeMetadataClipboard() {

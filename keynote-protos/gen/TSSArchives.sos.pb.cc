@@ -16,243 +16,277 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TSSSOS {
-constexpr SpecSetBoolArchive::SpecSetBoolArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : value_(false)
-  , unset_(false){}
+PROTOBUF_CONSTEXPR SpecSetBoolArchive::SpecSetBoolArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.value_)*/false
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetBoolArchiveDefaultTypeInternal {
-  constexpr SpecSetBoolArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetBoolArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetBoolArchiveDefaultTypeInternal() {}
   union {
     SpecSetBoolArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetBoolArchiveDefaultTypeInternal _SpecSetBoolArchive_default_instance_;
-constexpr SpecSetColorArchive::SpecSetColorArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : color_(nullptr)
-  , unset_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetBoolArchiveDefaultTypeInternal _SpecSetBoolArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecSetColorArchive::SpecSetColorArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.color_)*/nullptr
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetColorArchiveDefaultTypeInternal {
-  constexpr SpecSetColorArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetColorArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetColorArchiveDefaultTypeInternal() {}
   union {
     SpecSetColorArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetColorArchiveDefaultTypeInternal _SpecSetColorArchive_default_instance_;
-constexpr SpecSetDoubleArchive::SpecSetDoubleArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : value_(0)
-  , unset_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetColorArchiveDefaultTypeInternal _SpecSetColorArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecSetDoubleArchive::SpecSetDoubleArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.value_)*/0
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetDoubleArchiveDefaultTypeInternal {
-  constexpr SpecSetDoubleArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetDoubleArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetDoubleArchiveDefaultTypeInternal() {}
   union {
     SpecSetDoubleArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetDoubleArchiveDefaultTypeInternal _SpecSetDoubleArchive_default_instance_;
-constexpr SpecSetIntegerArchive::SpecSetIntegerArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : value_(0)
-  , unset_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetDoubleArchiveDefaultTypeInternal _SpecSetDoubleArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecSetIntegerArchive::SpecSetIntegerArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.value_)*/0
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetIntegerArchiveDefaultTypeInternal {
-  constexpr SpecSetIntegerArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetIntegerArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetIntegerArchiveDefaultTypeInternal() {}
   union {
     SpecSetIntegerArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetIntegerArchiveDefaultTypeInternal _SpecSetIntegerArchive_default_instance_;
-constexpr SpecSetStringArchive::SpecSetStringArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : value_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , unset_(false){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetIntegerArchiveDefaultTypeInternal _SpecSetIntegerArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecSetStringArchive::SpecSetStringArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.value_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.unset_)*/false} {}
 struct SpecSetStringArchiveDefaultTypeInternal {
-  constexpr SpecSetStringArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecSetStringArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecSetStringArchiveDefaultTypeInternal() {}
   union {
     SpecSetStringArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecSetStringArchiveDefaultTypeInternal _SpecSetStringArchive_default_instance_;
-constexpr SpecBoolArchive::SpecBoolArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_bool_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecSetStringArchiveDefaultTypeInternal _SpecSetStringArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecBoolArchive::SpecBoolArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_bool_)*/nullptr} {}
 struct SpecBoolArchiveDefaultTypeInternal {
-  constexpr SpecBoolArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecBoolArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecBoolArchiveDefaultTypeInternal() {}
   union {
     SpecBoolArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecBoolArchiveDefaultTypeInternal _SpecBoolArchive_default_instance_;
-constexpr SpecColorArchive::SpecColorArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_color_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecBoolArchiveDefaultTypeInternal _SpecBoolArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecColorArchive::SpecColorArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_color_)*/nullptr} {}
 struct SpecColorArchiveDefaultTypeInternal {
-  constexpr SpecColorArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecColorArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecColorArchiveDefaultTypeInternal() {}
   union {
     SpecColorArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecColorArchiveDefaultTypeInternal _SpecColorArchive_default_instance_;
-constexpr SpecDoubleArchive::SpecDoubleArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_double_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecColorArchiveDefaultTypeInternal _SpecColorArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecDoubleArchive::SpecDoubleArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_double_)*/nullptr} {}
 struct SpecDoubleArchiveDefaultTypeInternal {
-  constexpr SpecDoubleArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecDoubleArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecDoubleArchiveDefaultTypeInternal() {}
   union {
     SpecDoubleArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecDoubleArchiveDefaultTypeInternal _SpecDoubleArchive_default_instance_;
-constexpr SpecIntegerArchive::SpecIntegerArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_integer_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecDoubleArchiveDefaultTypeInternal _SpecDoubleArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecIntegerArchive::SpecIntegerArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_integer_)*/nullptr} {}
 struct SpecIntegerArchiveDefaultTypeInternal {
-  constexpr SpecIntegerArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecIntegerArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecIntegerArchiveDefaultTypeInternal() {}
   union {
     SpecIntegerArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecIntegerArchiveDefaultTypeInternal _SpecIntegerArchive_default_instance_;
-constexpr SpecStringArchive::SpecStringArchive(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : spec_set_string_(nullptr){}
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecIntegerArchiveDefaultTypeInternal _SpecIntegerArchive_default_instance_;
+PROTOBUF_CONSTEXPR SpecStringArchive::SpecStringArchive(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.spec_set_string_)*/nullptr} {}
 struct SpecStringArchiveDefaultTypeInternal {
-  constexpr SpecStringArchiveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  PROTOBUF_CONSTEXPR SpecStringArchiveDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
   ~SpecStringArchiveDefaultTypeInternal() {}
   union {
     SpecStringArchive _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SpecStringArchiveDefaultTypeInternal _SpecStringArchive_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecStringArchiveDefaultTypeInternal _SpecStringArchive_default_instance_;
 }  // namespace TSSSOS
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_TSSArchives_2esos_2eproto[10];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_TSSArchives_2esos_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_TSSArchives_2esos_2eproto = nullptr;
+static ::_pb::Metadata file_level_metadata_TSSArchives_2esos_2eproto[10];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_TSSArchives_2esos_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_TSSArchives_2esos_2eproto = nullptr;
 
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_TSSArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, _has_bits_),
+const uint32_t TableStruct_TSSArchives_2esos_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, value_),
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetBoolArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, color_),
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, _impl_.color_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetColorArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, value_),
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetDoubleArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, value_),
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetIntegerArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, value_),
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, unset_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecSetStringArchive, _impl_.unset_),
   0,
   1,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecBoolArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecBoolArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecBoolArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecBoolArchive, spec_set_bool_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecBoolArchive, _impl_.spec_set_bool_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecColorArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecColorArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecColorArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecColorArchive, spec_set_color_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecColorArchive, _impl_.spec_set_color_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecDoubleArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecDoubleArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecDoubleArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecDoubleArchive, spec_set_double_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecDoubleArchive, _impl_.spec_set_double_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecIntegerArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecIntegerArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecIntegerArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecIntegerArchive, spec_set_integer_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecIntegerArchive, _impl_.spec_set_integer_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecStringArchive, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecStringArchive, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecStringArchive, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecStringArchive, spec_set_string_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TSSSOS::SpecStringArchive, _impl_.spec_set_string_),
   0,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 7, sizeof(::TSSSOS::SpecSetBoolArchive)},
-  { 9, 16, sizeof(::TSSSOS::SpecSetColorArchive)},
-  { 18, 25, sizeof(::TSSSOS::SpecSetDoubleArchive)},
-  { 27, 34, sizeof(::TSSSOS::SpecSetIntegerArchive)},
-  { 36, 43, sizeof(::TSSSOS::SpecSetStringArchive)},
-  { 45, 51, sizeof(::TSSSOS::SpecBoolArchive)},
-  { 52, 58, sizeof(::TSSSOS::SpecColorArchive)},
-  { 59, 65, sizeof(::TSSSOS::SpecDoubleArchive)},
-  { 66, 72, sizeof(::TSSSOS::SpecIntegerArchive)},
-  { 73, 79, sizeof(::TSSSOS::SpecStringArchive)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 8, -1, sizeof(::TSSSOS::SpecSetBoolArchive)},
+  { 10, 18, -1, sizeof(::TSSSOS::SpecSetColorArchive)},
+  { 20, 28, -1, sizeof(::TSSSOS::SpecSetDoubleArchive)},
+  { 30, 38, -1, sizeof(::TSSSOS::SpecSetIntegerArchive)},
+  { 40, 48, -1, sizeof(::TSSSOS::SpecSetStringArchive)},
+  { 50, 57, -1, sizeof(::TSSSOS::SpecBoolArchive)},
+  { 58, 65, -1, sizeof(::TSSSOS::SpecColorArchive)},
+  { 66, 73, -1, sizeof(::TSSSOS::SpecDoubleArchive)},
+  { 74, 81, -1, sizeof(::TSSSOS::SpecIntegerArchive)},
+  { 82, 89, -1, sizeof(::TSSSOS::SpecStringArchive)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecSetBoolArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecSetColorArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecSetDoubleArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecSetIntegerArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecSetStringArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecBoolArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecColorArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecDoubleArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecIntegerArchive_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TSSSOS::_SpecStringArchive_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TSSSOS::_SpecSetBoolArchive_default_instance_._instance,
+  &::TSSSOS::_SpecSetColorArchive_default_instance_._instance,
+  &::TSSSOS::_SpecSetDoubleArchive_default_instance_._instance,
+  &::TSSSOS::_SpecSetIntegerArchive_default_instance_._instance,
+  &::TSSSOS::_SpecSetStringArchive_default_instance_._instance,
+  &::TSSSOS::_SpecBoolArchive_default_instance_._instance,
+  &::TSSSOS::_SpecColorArchive_default_instance_._instance,
+  &::TSSSOS::_SpecDoubleArchive_default_instance_._instance,
+  &::TSSSOS::_SpecIntegerArchive_default_instance_._instance,
+  &::TSSSOS::_SpecStringArchive_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_TSSArchives_2esos_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -275,29 +309,31 @@ const char descriptor_table_protodef_TSSArchives_2esos_2eproto[] PROTOBUF_SECTIO
   "ngArchive\0225\n\017spec_set_string\030\001 \001(\0132\034.TSS"
   "SOS.SpecSetStringArchive"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_TSSArchives_2esos_2eproto_deps[1] = {
+static const ::_pbi::DescriptorTable* const descriptor_table_TSSArchives_2esos_2eproto_deps[1] = {
   &::descriptor_table_TSPMessages_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_TSSArchives_2esos_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_TSSArchives_2esos_2eproto = {
-  false, false, 704, descriptor_table_protodef_TSSArchives_2esos_2eproto, "TSSArchives.sos.proto", 
-  &descriptor_table_TSSArchives_2esos_2eproto_once, descriptor_table_TSSArchives_2esos_2eproto_deps, 1, 10,
-  schemas, file_default_instances, TableStruct_TSSArchives_2esos_2eproto::offsets,
-  file_level_metadata_TSSArchives_2esos_2eproto, file_level_enum_descriptors_TSSArchives_2esos_2eproto, file_level_service_descriptors_TSSArchives_2esos_2eproto,
+static ::_pbi::once_flag descriptor_table_TSSArchives_2esos_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_TSSArchives_2esos_2eproto = {
+    false, false, 704, descriptor_table_protodef_TSSArchives_2esos_2eproto,
+    "TSSArchives.sos.proto",
+    &descriptor_table_TSSArchives_2esos_2eproto_once, descriptor_table_TSSArchives_2esos_2eproto_deps, 1, 10,
+    schemas, file_default_instances, TableStruct_TSSArchives_2esos_2eproto::offsets,
+    file_level_metadata_TSSArchives_2esos_2eproto, file_level_enum_descriptors_TSSArchives_2esos_2eproto,
+    file_level_service_descriptors_TSSArchives_2esos_2eproto,
 };
-PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_TSSArchives_2esos_2eproto_getter() {
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_TSSArchives_2esos_2eproto_getter() {
   return &descriptor_table_TSSArchives_2esos_2eproto;
 }
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_TSSArchives_2esos_2eproto(&descriptor_table_TSSArchives_2esos_2eproto);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_TSSArchives_2esos_2eproto(&descriptor_table_TSSArchives_2esos_2eproto);
 namespace TSSSOS {
 
 // ===================================================================
 
 class SpecSetBoolArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetBoolArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetBoolArchive>()._impl_._has_bits_);
   static void set_has_value(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -312,131 +348,137 @@ class SpecSetBoolArchive::_Internal {
 SpecSetBoolArchive::SpecSetBoolArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecSetBoolArchive)
 }
 SpecSetBoolArchive::SpecSetBoolArchive(const SpecSetBoolArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetBoolArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&value_, &from.value_,
-    static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+  ::memcpy(&_impl_.value_, &from._impl_.value_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.unset_) -
+    reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecSetBoolArchive)
 }
 
-inline void SpecSetBoolArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&value_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+inline void SpecSetBoolArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){false}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetBoolArchive::~SpecSetBoolArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecSetBoolArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetBoolArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SpecSetBoolArchive::ArenaDtor(void* object) {
-  SpecSetBoolArchive* _this = reinterpret_cast< SpecSetBoolArchive* >(object);
-  (void)_this;
-}
-void SpecSetBoolArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetBoolArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetBoolArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecSetBoolArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  ::memset(&value_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&unset_) -
-      reinterpret_cast<char*>(&value_)) + sizeof(unset_));
-  _has_bits_.Clear();
+  ::memset(&_impl_.value_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&_impl_.unset_) -
+      reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetBoolArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetBoolArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required bool value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_value(&has_bits);
-          value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetBoolArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetBoolArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecSetBoolArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required bool value = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_value(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(1, this->_internal_value(), target);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecSetBoolArchive)
@@ -463,7 +505,7 @@ size_t SpecSetBoolArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecSetBoolArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required bool value = 1;
     total_size += 1 + 1;
 
@@ -473,49 +515,39 @@ size_t SpecSetBoolArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetBoolArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetBoolArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetBoolArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetBoolArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetBoolArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetBoolArchive &>(from));
-}
 
-
-void SpecSetBoolArchive::MergeFrom(const SpecSetBoolArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetBoolArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetBoolArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetBoolArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetBoolArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetBoolArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      value_ = from.value_;
+      _this->_impl_.value_ = from._impl_.value_;
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetBoolArchive::CopyFrom(const SpecSetBoolArchive& from) {
@@ -526,24 +558,24 @@ void SpecSetBoolArchive::CopyFrom(const SpecSetBoolArchive& from) {
 }
 
 bool SpecSetBoolArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void SpecSetBoolArchive::InternalSwap(SpecSetBoolArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetBoolArchive, unset_)
-      + sizeof(SpecSetBoolArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetBoolArchive, value_)>(
-          reinterpret_cast<char*>(&value_),
-          reinterpret_cast<char*>(&other->value_));
+      PROTOBUF_FIELD_OFFSET(SpecSetBoolArchive, _impl_.unset_)
+      + sizeof(SpecSetBoolArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetBoolArchive, _impl_.value_)>(
+          reinterpret_cast<char*>(&_impl_.value_),
+          reinterpret_cast<char*>(&other->_impl_.value_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetBoolArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[0]);
 }
@@ -552,7 +584,7 @@ void SpecSetBoolArchive::InternalSwap(SpecSetBoolArchive* other) {
 
 class SpecSetColorArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetColorArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetColorArchive>()._impl_._has_bits_);
   static const ::TSP::Color& color(const SpecSetColorArchive* msg);
   static void set_has_color(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -567,148 +599,151 @@ class SpecSetColorArchive::_Internal {
 
 const ::TSP::Color&
 SpecSetColorArchive::_Internal::color(const SpecSetColorArchive* msg) {
-  return *msg->color_;
+  return *msg->_impl_.color_;
 }
 void SpecSetColorArchive::clear_color() {
-  if (color_ != nullptr) color_->Clear();
-  _has_bits_[0] &= ~0x00000001u;
+  if (_impl_.color_ != nullptr) _impl_.color_->Clear();
+  _impl_._has_bits_[0] &= ~0x00000001u;
 }
 SpecSetColorArchive::SpecSetColorArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecSetColorArchive)
 }
 SpecSetColorArchive::SpecSetColorArchive(const SpecSetColorArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetColorArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.color_){nullptr}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_color()) {
-    color_ = new ::TSP::Color(*from.color_);
-  } else {
-    color_ = nullptr;
+    _this->_impl_.color_ = new ::TSP::Color(*from._impl_.color_);
   }
-  unset_ = from.unset_;
+  _this->_impl_.unset_ = from._impl_.unset_;
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecSetColorArchive)
 }
 
-inline void SpecSetColorArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&color_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&color_)) + sizeof(unset_));
+inline void SpecSetColorArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.color_){nullptr}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetColorArchive::~SpecSetColorArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecSetColorArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetColorArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete color_;
+  if (this != internal_default_instance()) delete _impl_.color_;
 }
 
-void SpecSetColorArchive::ArenaDtor(void* object) {
-  SpecSetColorArchive* _this = reinterpret_cast< SpecSetColorArchive* >(object);
-  (void)_this;
-}
-void SpecSetColorArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetColorArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetColorArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecSetColorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(color_ != nullptr);
-    color_->Clear();
+    GOOGLE_DCHECK(_impl_.color_ != nullptr);
+    _impl_.color_->Clear();
   }
-  unset_ = false;
-  _has_bits_.Clear();
+  _impl_.unset_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetColorArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetColorArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSP.Color color = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetColorArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetColorArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecSetColorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSP.Color color = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::color(this), target, stream);
+      InternalWriteMessage(1, _Internal::color(this),
+        _Internal::color(this).GetCachedSize(), target, stream);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecSetColorArchive)
@@ -723,57 +758,48 @@ size_t SpecSetColorArchive::ByteSizeLong() const {
   if (_internal_has_unset()) {
     total_size += 1 + 1;
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSP.Color color = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *color_);
+        *_impl_.color_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetColorArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetColorArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetColorArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetColorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetColorArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetColorArchive &>(from));
-}
 
-
-void SpecSetColorArchive::MergeFrom(const SpecSetColorArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetColorArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetColorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetColorArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetColorArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetColorArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_color()->::TSP::Color::MergeFrom(from._internal_color());
+      _this->_internal_mutable_color()->::TSP::Color::MergeFrom(
+          from._internal_color());
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetColorArchive::CopyFrom(const SpecSetColorArchive& from) {
@@ -784,9 +810,9 @@ void SpecSetColorArchive::CopyFrom(const SpecSetColorArchive& from) {
 }
 
 bool SpecSetColorArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   if (_internal_has_color()) {
-    if (!color_->IsInitialized()) return false;
+    if (!_impl_.color_->IsInitialized()) return false;
   }
   return true;
 }
@@ -794,17 +820,17 @@ bool SpecSetColorArchive::IsInitialized() const {
 void SpecSetColorArchive::InternalSwap(SpecSetColorArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetColorArchive, unset_)
-      + sizeof(SpecSetColorArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetColorArchive, color_)>(
-          reinterpret_cast<char*>(&color_),
-          reinterpret_cast<char*>(&other->color_));
+      PROTOBUF_FIELD_OFFSET(SpecSetColorArchive, _impl_.unset_)
+      + sizeof(SpecSetColorArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetColorArchive, _impl_.color_)>(
+          reinterpret_cast<char*>(&_impl_.color_),
+          reinterpret_cast<char*>(&other->_impl_.color_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetColorArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[1]);
 }
@@ -813,7 +839,7 @@ void SpecSetColorArchive::InternalSwap(SpecSetColorArchive* other) {
 
 class SpecSetDoubleArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetDoubleArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetDoubleArchive>()._impl_._has_bits_);
   static void set_has_value(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -828,134 +854,140 @@ class SpecSetDoubleArchive::_Internal {
 SpecSetDoubleArchive::SpecSetDoubleArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecSetDoubleArchive)
 }
 SpecSetDoubleArchive::SpecSetDoubleArchive(const SpecSetDoubleArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetDoubleArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&value_, &from.value_,
-    static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+  ::memcpy(&_impl_.value_, &from._impl_.value_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.unset_) -
+    reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecSetDoubleArchive)
 }
 
-inline void SpecSetDoubleArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&value_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+inline void SpecSetDoubleArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){0}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetDoubleArchive::~SpecSetDoubleArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecSetDoubleArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetDoubleArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SpecSetDoubleArchive::ArenaDtor(void* object) {
-  SpecSetDoubleArchive* _this = reinterpret_cast< SpecSetDoubleArchive* >(object);
-  (void)_this;
-}
-void SpecSetDoubleArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetDoubleArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetDoubleArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecSetDoubleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    ::memset(&value_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&unset_) -
-        reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+    ::memset(&_impl_.value_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.unset_) -
+        reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetDoubleArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetDoubleArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required double value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 9)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 9)) {
           _Internal::set_has_value(&has_bits);
-          value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
+          _impl_.value_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr);
           ptr += sizeof(double);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetDoubleArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetDoubleArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecSetDoubleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required double value = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_value(), target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(1, this->_internal_value(), target);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecSetDoubleArchive)
@@ -982,7 +1014,7 @@ size_t SpecSetDoubleArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecSetDoubleArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required double value = 1;
     total_size += 1 + 8;
 
@@ -992,49 +1024,39 @@ size_t SpecSetDoubleArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetDoubleArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetDoubleArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetDoubleArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetDoubleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetDoubleArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetDoubleArchive &>(from));
-}
 
-
-void SpecSetDoubleArchive::MergeFrom(const SpecSetDoubleArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetDoubleArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetDoubleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetDoubleArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetDoubleArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetDoubleArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      value_ = from.value_;
+      _this->_impl_.value_ = from._impl_.value_;
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetDoubleArchive::CopyFrom(const SpecSetDoubleArchive& from) {
@@ -1045,24 +1067,24 @@ void SpecSetDoubleArchive::CopyFrom(const SpecSetDoubleArchive& from) {
 }
 
 bool SpecSetDoubleArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void SpecSetDoubleArchive::InternalSwap(SpecSetDoubleArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetDoubleArchive, unset_)
-      + sizeof(SpecSetDoubleArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetDoubleArchive, value_)>(
-          reinterpret_cast<char*>(&value_),
-          reinterpret_cast<char*>(&other->value_));
+      PROTOBUF_FIELD_OFFSET(SpecSetDoubleArchive, _impl_.unset_)
+      + sizeof(SpecSetDoubleArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetDoubleArchive, _impl_.value_)>(
+          reinterpret_cast<char*>(&_impl_.value_),
+          reinterpret_cast<char*>(&other->_impl_.value_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetDoubleArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[2]);
 }
@@ -1071,7 +1093,7 @@ void SpecSetDoubleArchive::InternalSwap(SpecSetDoubleArchive* other) {
 
 class SpecSetIntegerArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetIntegerArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetIntegerArchive>()._impl_._has_bits_);
   static void set_has_value(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1086,134 +1108,140 @@ class SpecSetIntegerArchive::_Internal {
 SpecSetIntegerArchive::SpecSetIntegerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecSetIntegerArchive)
 }
 SpecSetIntegerArchive::SpecSetIntegerArchive(const SpecSetIntegerArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetIntegerArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::memcpy(&value_, &from.value_,
-    static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+  ::memcpy(&_impl_.value_, &from._impl_.value_,
+    static_cast<size_t>(reinterpret_cast<char*>(&_impl_.unset_) -
+    reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecSetIntegerArchive)
 }
 
-inline void SpecSetIntegerArchive::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&value_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&unset_) -
-    reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+inline void SpecSetIntegerArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){0}
+    , decltype(_impl_.unset_){false}
+  };
 }
 
 SpecSetIntegerArchive::~SpecSetIntegerArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecSetIntegerArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetIntegerArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SpecSetIntegerArchive::ArenaDtor(void* object) {
-  SpecSetIntegerArchive* _this = reinterpret_cast< SpecSetIntegerArchive* >(object);
-  (void)_this;
-}
-void SpecSetIntegerArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetIntegerArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetIntegerArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecSetIntegerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
-    ::memset(&value_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&unset_) -
-        reinterpret_cast<char*>(&value_)) + sizeof(unset_));
+    ::memset(&_impl_.value_, 0, static_cast<size_t>(
+        reinterpret_cast<char*>(&_impl_.unset_) -
+        reinterpret_cast<char*>(&_impl_.value_)) + sizeof(_impl_.unset_));
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetIntegerArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetIntegerArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required int32 value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_value(&has_bits);
-          value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetIntegerArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetIntegerArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecSetIntegerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required int32 value = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_value(), target);
+    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_value(), target);
   }
 
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecSetIntegerArchive)
@@ -1226,9 +1254,7 @@ size_t SpecSetIntegerArchive::RequiredFieldsByteSizeFallback() const {
 
   if (_internal_has_value()) {
     // required int32 value = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_value());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_value());
   }
 
   if (_internal_has_unset()) {
@@ -1242,11 +1268,9 @@ size_t SpecSetIntegerArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecSetIntegerArchive)
   size_t total_size = 0;
 
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
+  if (((_impl_._has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required int32 value = 1;
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->_internal_value());
+    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_value());
 
     // required bool unset = 2;
     total_size += 1 + 1;
@@ -1254,49 +1278,39 @@ size_t SpecSetIntegerArchive::ByteSizeLong() const {
   } else {
     total_size += RequiredFieldsByteSizeFallback();
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetIntegerArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetIntegerArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetIntegerArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetIntegerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetIntegerArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetIntegerArchive &>(from));
-}
 
-
-void SpecSetIntegerArchive::MergeFrom(const SpecSetIntegerArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetIntegerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetIntegerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetIntegerArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetIntegerArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetIntegerArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      value_ = from.value_;
+      _this->_impl_.value_ = from._impl_.value_;
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetIntegerArchive::CopyFrom(const SpecSetIntegerArchive& from) {
@@ -1307,24 +1321,24 @@ void SpecSetIntegerArchive::CopyFrom(const SpecSetIntegerArchive& from) {
 }
 
 bool SpecSetIntegerArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void SpecSetIntegerArchive::InternalSwap(SpecSetIntegerArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SpecSetIntegerArchive, unset_)
-      + sizeof(SpecSetIntegerArchive::unset_)
-      - PROTOBUF_FIELD_OFFSET(SpecSetIntegerArchive, value_)>(
-          reinterpret_cast<char*>(&value_),
-          reinterpret_cast<char*>(&other->value_));
+      PROTOBUF_FIELD_OFFSET(SpecSetIntegerArchive, _impl_.unset_)
+      + sizeof(SpecSetIntegerArchive::_impl_.unset_)
+      - PROTOBUF_FIELD_OFFSET(SpecSetIntegerArchive, _impl_.value_)>(
+          reinterpret_cast<char*>(&_impl_.value_),
+          reinterpret_cast<char*>(&other->_impl_.value_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetIntegerArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[3]);
 }
@@ -1333,7 +1347,7 @@ void SpecSetIntegerArchive::InternalSwap(SpecSetIntegerArchive* other) {
 
 class SpecSetStringArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecSetStringArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecSetStringArchive>()._impl_._has_bits_);
   static void set_has_value(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1348,124 +1362,139 @@ class SpecSetStringArchive::_Internal {
 SpecSetStringArchive::SpecSetStringArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecSetStringArchive)
 }
 SpecSetStringArchive::SpecSetStringArchive(const SpecSetStringArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecSetStringArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.unset_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_value()) {
-    value_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_value(), 
-      GetArenaForAllocation());
+    _this->_impl_.value_.Set(from._internal_value(), 
+      _this->GetArenaForAllocation());
   }
-  unset_ = from.unset_;
+  _this->_impl_.unset_ = from._impl_.unset_;
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecSetStringArchive)
 }
 
-inline void SpecSetStringArchive::SharedCtor() {
-value_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-unset_ = false;
+inline void SpecSetStringArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.value_){}
+    , decltype(_impl_.unset_){false}
+  };
+  _impl_.value_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.value_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 SpecSetStringArchive::~SpecSetStringArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecSetStringArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecSetStringArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  value_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.value_.Destroy();
 }
 
-void SpecSetStringArchive::ArenaDtor(void* object) {
-  SpecSetStringArchive* _this = reinterpret_cast< SpecSetStringArchive* >(object);
-  (void)_this;
-}
-void SpecSetStringArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecSetStringArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecSetStringArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecSetStringArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    value_.ClearNonDefaultToEmpty();
+    _impl_.value_.ClearNonDefaultToEmpty();
   }
-  unset_ = false;
-  _has_bits_.Clear();
+  _impl_.unset_ = false;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecSetStringArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecSetStringArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional string value = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_value();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TSSSOS.SpecSetStringArchive.value");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TSSSOS.SpecSetStringArchive.value");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
       // required bool unset = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 16)) {
           _Internal::set_has_unset(&has_bits);
-          unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          _impl_.unset_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecSetStringArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecSetStringArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecSetStringArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional string value = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -1479,11 +1508,11 @@ failure:
   // required bool unset = 2;
   if (cached_has_bits & 0x00000002u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
+    target = ::_pbi::WireFormatLite::WriteBoolToArray(2, this->_internal_unset(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecSetStringArchive)
@@ -1498,57 +1527,47 @@ size_t SpecSetStringArchive::ByteSizeLong() const {
   if (_internal_has_unset()) {
     total_size += 1 + 1;
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional string value = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_value());
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecSetStringArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecSetStringArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecSetStringArchive::GetClassData() const { return &_class_data_; }
 
-void SpecSetStringArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecSetStringArchive *>(to)->MergeFrom(
-      static_cast<const SpecSetStringArchive &>(from));
-}
 
-
-void SpecSetStringArchive::MergeFrom(const SpecSetStringArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetStringArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecSetStringArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecSetStringArchive*>(&to_msg);
+  auto& from = static_cast<const SpecSetStringArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecSetStringArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_value(from._internal_value());
+      _this->_internal_set_value(from._internal_value());
     }
     if (cached_has_bits & 0x00000002u) {
-      unset_ = from.unset_;
+      _this->_impl_.unset_ = from._impl_.unset_;
     }
-    _has_bits_[0] |= cached_has_bits;
+    _this->_impl_._has_bits_[0] |= cached_has_bits;
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecSetStringArchive::CopyFrom(const SpecSetStringArchive& from) {
@@ -1559,24 +1578,25 @@ void SpecSetStringArchive::CopyFrom(const SpecSetStringArchive& from) {
 }
 
 bool SpecSetStringArchive::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void SpecSetStringArchive::InternalSwap(SpecSetStringArchive* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      &value_, GetArenaForAllocation(),
-      &other->value_, other->GetArenaForAllocation()
+      &_impl_.value_, lhs_arena,
+      &other->_impl_.value_, rhs_arena
   );
-  swap(unset_, other->unset_);
+  swap(_impl_.unset_, other->_impl_.unset_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecSetStringArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[4]);
 }
@@ -1585,7 +1605,7 @@ void SpecSetStringArchive::InternalSwap(SpecSetStringArchive* other) {
 
 class SpecBoolArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecBoolArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecBoolArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecSetBoolArchive& spec_set_bool(const SpecBoolArchive* msg);
   static void set_has_spec_set_bool(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1594,125 +1614,128 @@ class SpecBoolArchive::_Internal {
 
 const ::TSSSOS::SpecSetBoolArchive&
 SpecBoolArchive::_Internal::spec_set_bool(const SpecBoolArchive* msg) {
-  return *msg->spec_set_bool_;
+  return *msg->_impl_.spec_set_bool_;
 }
 SpecBoolArchive::SpecBoolArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecBoolArchive)
 }
 SpecBoolArchive::SpecBoolArchive(const SpecBoolArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecBoolArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_bool_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_bool()) {
-    spec_set_bool_ = new ::TSSSOS::SpecSetBoolArchive(*from.spec_set_bool_);
-  } else {
-    spec_set_bool_ = nullptr;
+    _this->_impl_.spec_set_bool_ = new ::TSSSOS::SpecSetBoolArchive(*from._impl_.spec_set_bool_);
   }
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecBoolArchive)
 }
 
-inline void SpecBoolArchive::SharedCtor() {
-spec_set_bool_ = nullptr;
+inline void SpecBoolArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_bool_){nullptr}
+  };
 }
 
 SpecBoolArchive::~SpecBoolArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecBoolArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecBoolArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_bool_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_bool_;
 }
 
-void SpecBoolArchive::ArenaDtor(void* object) {
-  SpecBoolArchive* _this = reinterpret_cast< SpecBoolArchive* >(object);
-  (void)_this;
-}
-void SpecBoolArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecBoolArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecBoolArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecBoolArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_bool_ != nullptr);
-    spec_set_bool_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_bool_ != nullptr);
+    _impl_.spec_set_bool_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecBoolArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecBoolArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecSetBoolArchive spec_set_bool = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_bool(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecBoolArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecBoolArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecBoolArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecSetBoolArchive spec_set_bool = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_bool(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_bool(this),
+        _Internal::spec_set_bool(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecBoolArchive)
@@ -1723,50 +1746,41 @@ size_t SpecBoolArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecBoolArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSSSOS.SpecSetBoolArchive spec_set_bool = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_bool_);
+        *_impl_.spec_set_bool_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecBoolArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecBoolArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecBoolArchive::GetClassData() const { return &_class_data_; }
 
-void SpecBoolArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecBoolArchive *>(to)->MergeFrom(
-      static_cast<const SpecBoolArchive &>(from));
-}
 
-
-void SpecBoolArchive::MergeFrom(const SpecBoolArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecBoolArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecBoolArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecBoolArchive*>(&to_msg);
+  auto& from = static_cast<const SpecBoolArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecBoolArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_bool()) {
-    _internal_mutable_spec_set_bool()->::TSSSOS::SpecSetBoolArchive::MergeFrom(from._internal_spec_set_bool());
+    _this->_internal_mutable_spec_set_bool()->::TSSSOS::SpecSetBoolArchive::MergeFrom(
+        from._internal_spec_set_bool());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecBoolArchive::CopyFrom(const SpecBoolArchive& from) {
@@ -1778,7 +1792,7 @@ void SpecBoolArchive::CopyFrom(const SpecBoolArchive& from) {
 
 bool SpecBoolArchive::IsInitialized() const {
   if (_internal_has_spec_set_bool()) {
-    if (!spec_set_bool_->IsInitialized()) return false;
+    if (!_impl_.spec_set_bool_->IsInitialized()) return false;
   }
   return true;
 }
@@ -1786,12 +1800,12 @@ bool SpecBoolArchive::IsInitialized() const {
 void SpecBoolArchive::InternalSwap(SpecBoolArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_bool_, other->spec_set_bool_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_bool_, other->_impl_.spec_set_bool_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecBoolArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[5]);
 }
@@ -1800,7 +1814,7 @@ void SpecBoolArchive::InternalSwap(SpecBoolArchive* other) {
 
 class SpecColorArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecColorArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecColorArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecSetColorArchive& spec_set_color(const SpecColorArchive* msg);
   static void set_has_spec_set_color(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -1809,125 +1823,128 @@ class SpecColorArchive::_Internal {
 
 const ::TSSSOS::SpecSetColorArchive&
 SpecColorArchive::_Internal::spec_set_color(const SpecColorArchive* msg) {
-  return *msg->spec_set_color_;
+  return *msg->_impl_.spec_set_color_;
 }
 SpecColorArchive::SpecColorArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecColorArchive)
 }
 SpecColorArchive::SpecColorArchive(const SpecColorArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecColorArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_color_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_color()) {
-    spec_set_color_ = new ::TSSSOS::SpecSetColorArchive(*from.spec_set_color_);
-  } else {
-    spec_set_color_ = nullptr;
+    _this->_impl_.spec_set_color_ = new ::TSSSOS::SpecSetColorArchive(*from._impl_.spec_set_color_);
   }
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecColorArchive)
 }
 
-inline void SpecColorArchive::SharedCtor() {
-spec_set_color_ = nullptr;
+inline void SpecColorArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_color_){nullptr}
+  };
 }
 
 SpecColorArchive::~SpecColorArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecColorArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecColorArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_color_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_color_;
 }
 
-void SpecColorArchive::ArenaDtor(void* object) {
-  SpecColorArchive* _this = reinterpret_cast< SpecColorArchive* >(object);
-  (void)_this;
-}
-void SpecColorArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecColorArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecColorArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecColorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_color_ != nullptr);
-    spec_set_color_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_color_ != nullptr);
+    _impl_.spec_set_color_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecColorArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecColorArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecSetColorArchive spec_set_color = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_color(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecColorArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecColorArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecColorArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecSetColorArchive spec_set_color = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_color(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_color(this),
+        _Internal::spec_set_color(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecColorArchive)
@@ -1938,50 +1955,41 @@ size_t SpecColorArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecColorArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSSSOS.SpecSetColorArchive spec_set_color = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_color_);
+        *_impl_.spec_set_color_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecColorArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecColorArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecColorArchive::GetClassData() const { return &_class_data_; }
 
-void SpecColorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecColorArchive *>(to)->MergeFrom(
-      static_cast<const SpecColorArchive &>(from));
-}
 
-
-void SpecColorArchive::MergeFrom(const SpecColorArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecColorArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecColorArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecColorArchive*>(&to_msg);
+  auto& from = static_cast<const SpecColorArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecColorArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_color()) {
-    _internal_mutable_spec_set_color()->::TSSSOS::SpecSetColorArchive::MergeFrom(from._internal_spec_set_color());
+    _this->_internal_mutable_spec_set_color()->::TSSSOS::SpecSetColorArchive::MergeFrom(
+        from._internal_spec_set_color());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecColorArchive::CopyFrom(const SpecColorArchive& from) {
@@ -1993,7 +2001,7 @@ void SpecColorArchive::CopyFrom(const SpecColorArchive& from) {
 
 bool SpecColorArchive::IsInitialized() const {
   if (_internal_has_spec_set_color()) {
-    if (!spec_set_color_->IsInitialized()) return false;
+    if (!_impl_.spec_set_color_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2001,12 +2009,12 @@ bool SpecColorArchive::IsInitialized() const {
 void SpecColorArchive::InternalSwap(SpecColorArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_color_, other->spec_set_color_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_color_, other->_impl_.spec_set_color_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecColorArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[6]);
 }
@@ -2015,7 +2023,7 @@ void SpecColorArchive::InternalSwap(SpecColorArchive* other) {
 
 class SpecDoubleArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecDoubleArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecDoubleArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecSetDoubleArchive& spec_set_double(const SpecDoubleArchive* msg);
   static void set_has_spec_set_double(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -2024,125 +2032,128 @@ class SpecDoubleArchive::_Internal {
 
 const ::TSSSOS::SpecSetDoubleArchive&
 SpecDoubleArchive::_Internal::spec_set_double(const SpecDoubleArchive* msg) {
-  return *msg->spec_set_double_;
+  return *msg->_impl_.spec_set_double_;
 }
 SpecDoubleArchive::SpecDoubleArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecDoubleArchive)
 }
 SpecDoubleArchive::SpecDoubleArchive(const SpecDoubleArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecDoubleArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_double_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_double()) {
-    spec_set_double_ = new ::TSSSOS::SpecSetDoubleArchive(*from.spec_set_double_);
-  } else {
-    spec_set_double_ = nullptr;
+    _this->_impl_.spec_set_double_ = new ::TSSSOS::SpecSetDoubleArchive(*from._impl_.spec_set_double_);
   }
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecDoubleArchive)
 }
 
-inline void SpecDoubleArchive::SharedCtor() {
-spec_set_double_ = nullptr;
+inline void SpecDoubleArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_double_){nullptr}
+  };
 }
 
 SpecDoubleArchive::~SpecDoubleArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecDoubleArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecDoubleArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_double_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_double_;
 }
 
-void SpecDoubleArchive::ArenaDtor(void* object) {
-  SpecDoubleArchive* _this = reinterpret_cast< SpecDoubleArchive* >(object);
-  (void)_this;
-}
-void SpecDoubleArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecDoubleArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecDoubleArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecDoubleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_double_ != nullptr);
-    spec_set_double_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_double_ != nullptr);
+    _impl_.spec_set_double_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecDoubleArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecDoubleArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecSetDoubleArchive spec_set_double = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_double(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecDoubleArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecDoubleArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecDoubleArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecSetDoubleArchive spec_set_double = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_double(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_double(this),
+        _Internal::spec_set_double(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecDoubleArchive)
@@ -2153,50 +2164,41 @@ size_t SpecDoubleArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecDoubleArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSSSOS.SpecSetDoubleArchive spec_set_double = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_double_);
+        *_impl_.spec_set_double_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecDoubleArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecDoubleArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecDoubleArchive::GetClassData() const { return &_class_data_; }
 
-void SpecDoubleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecDoubleArchive *>(to)->MergeFrom(
-      static_cast<const SpecDoubleArchive &>(from));
-}
 
-
-void SpecDoubleArchive::MergeFrom(const SpecDoubleArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecDoubleArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecDoubleArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecDoubleArchive*>(&to_msg);
+  auto& from = static_cast<const SpecDoubleArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecDoubleArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_double()) {
-    _internal_mutable_spec_set_double()->::TSSSOS::SpecSetDoubleArchive::MergeFrom(from._internal_spec_set_double());
+    _this->_internal_mutable_spec_set_double()->::TSSSOS::SpecSetDoubleArchive::MergeFrom(
+        from._internal_spec_set_double());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecDoubleArchive::CopyFrom(const SpecDoubleArchive& from) {
@@ -2208,7 +2210,7 @@ void SpecDoubleArchive::CopyFrom(const SpecDoubleArchive& from) {
 
 bool SpecDoubleArchive::IsInitialized() const {
   if (_internal_has_spec_set_double()) {
-    if (!spec_set_double_->IsInitialized()) return false;
+    if (!_impl_.spec_set_double_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2216,12 +2218,12 @@ bool SpecDoubleArchive::IsInitialized() const {
 void SpecDoubleArchive::InternalSwap(SpecDoubleArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_double_, other->spec_set_double_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_double_, other->_impl_.spec_set_double_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecDoubleArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[7]);
 }
@@ -2230,7 +2232,7 @@ void SpecDoubleArchive::InternalSwap(SpecDoubleArchive* other) {
 
 class SpecIntegerArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecIntegerArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecIntegerArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecSetIntegerArchive& spec_set_integer(const SpecIntegerArchive* msg);
   static void set_has_spec_set_integer(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -2239,125 +2241,128 @@ class SpecIntegerArchive::_Internal {
 
 const ::TSSSOS::SpecSetIntegerArchive&
 SpecIntegerArchive::_Internal::spec_set_integer(const SpecIntegerArchive* msg) {
-  return *msg->spec_set_integer_;
+  return *msg->_impl_.spec_set_integer_;
 }
 SpecIntegerArchive::SpecIntegerArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecIntegerArchive)
 }
 SpecIntegerArchive::SpecIntegerArchive(const SpecIntegerArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecIntegerArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_integer_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_integer()) {
-    spec_set_integer_ = new ::TSSSOS::SpecSetIntegerArchive(*from.spec_set_integer_);
-  } else {
-    spec_set_integer_ = nullptr;
+    _this->_impl_.spec_set_integer_ = new ::TSSSOS::SpecSetIntegerArchive(*from._impl_.spec_set_integer_);
   }
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecIntegerArchive)
 }
 
-inline void SpecIntegerArchive::SharedCtor() {
-spec_set_integer_ = nullptr;
+inline void SpecIntegerArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_integer_){nullptr}
+  };
 }
 
 SpecIntegerArchive::~SpecIntegerArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecIntegerArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecIntegerArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_integer_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_integer_;
 }
 
-void SpecIntegerArchive::ArenaDtor(void* object) {
-  SpecIntegerArchive* _this = reinterpret_cast< SpecIntegerArchive* >(object);
-  (void)_this;
-}
-void SpecIntegerArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecIntegerArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecIntegerArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecIntegerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_integer_ != nullptr);
-    spec_set_integer_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_integer_ != nullptr);
+    _impl_.spec_set_integer_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecIntegerArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecIntegerArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecSetIntegerArchive spec_set_integer = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_integer(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecIntegerArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecIntegerArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecIntegerArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecSetIntegerArchive spec_set_integer = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_integer(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_integer(this),
+        _Internal::spec_set_integer(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecIntegerArchive)
@@ -2368,50 +2373,41 @@ size_t SpecIntegerArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecIntegerArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSSSOS.SpecSetIntegerArchive spec_set_integer = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_integer_);
+        *_impl_.spec_set_integer_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecIntegerArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecIntegerArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecIntegerArchive::GetClassData() const { return &_class_data_; }
 
-void SpecIntegerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecIntegerArchive *>(to)->MergeFrom(
-      static_cast<const SpecIntegerArchive &>(from));
-}
 
-
-void SpecIntegerArchive::MergeFrom(const SpecIntegerArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecIntegerArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecIntegerArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecIntegerArchive*>(&to_msg);
+  auto& from = static_cast<const SpecIntegerArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecIntegerArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_integer()) {
-    _internal_mutable_spec_set_integer()->::TSSSOS::SpecSetIntegerArchive::MergeFrom(from._internal_spec_set_integer());
+    _this->_internal_mutable_spec_set_integer()->::TSSSOS::SpecSetIntegerArchive::MergeFrom(
+        from._internal_spec_set_integer());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecIntegerArchive::CopyFrom(const SpecIntegerArchive& from) {
@@ -2423,7 +2419,7 @@ void SpecIntegerArchive::CopyFrom(const SpecIntegerArchive& from) {
 
 bool SpecIntegerArchive::IsInitialized() const {
   if (_internal_has_spec_set_integer()) {
-    if (!spec_set_integer_->IsInitialized()) return false;
+    if (!_impl_.spec_set_integer_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2431,12 +2427,12 @@ bool SpecIntegerArchive::IsInitialized() const {
 void SpecIntegerArchive::InternalSwap(SpecIntegerArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_integer_, other->spec_set_integer_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_integer_, other->_impl_.spec_set_integer_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecIntegerArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[8]);
 }
@@ -2445,7 +2441,7 @@ void SpecIntegerArchive::InternalSwap(SpecIntegerArchive* other) {
 
 class SpecStringArchive::_Internal {
  public:
-  using HasBits = decltype(std::declval<SpecStringArchive>()._has_bits_);
+  using HasBits = decltype(std::declval<SpecStringArchive>()._impl_._has_bits_);
   static const ::TSSSOS::SpecSetStringArchive& spec_set_string(const SpecStringArchive* msg);
   static void set_has_spec_set_string(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -2454,125 +2450,128 @@ class SpecStringArchive::_Internal {
 
 const ::TSSSOS::SpecSetStringArchive&
 SpecStringArchive::_Internal::spec_set_string(const SpecStringArchive* msg) {
-  return *msg->spec_set_string_;
+  return *msg->_impl_.spec_set_string_;
 }
 SpecStringArchive::SpecStringArchive(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
-  SharedCtor();
-  if (!is_message_owned) {
-    RegisterArenaDtor(arena);
-  }
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TSSSOS.SpecStringArchive)
 }
 SpecStringArchive::SpecStringArchive(const SpecStringArchive& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SpecStringArchive* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_string_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_spec_set_string()) {
-    spec_set_string_ = new ::TSSSOS::SpecSetStringArchive(*from.spec_set_string_);
-  } else {
-    spec_set_string_ = nullptr;
+    _this->_impl_.spec_set_string_ = new ::TSSSOS::SpecSetStringArchive(*from._impl_.spec_set_string_);
   }
   // @@protoc_insertion_point(copy_constructor:TSSSOS.SpecStringArchive)
 }
 
-inline void SpecStringArchive::SharedCtor() {
-spec_set_string_ = nullptr;
+inline void SpecStringArchive::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.spec_set_string_){nullptr}
+  };
 }
 
 SpecStringArchive::~SpecStringArchive() {
   // @@protoc_insertion_point(destructor:TSSSOS.SpecStringArchive)
-  if (GetArenaForAllocation() != nullptr) return;
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 inline void SpecStringArchive::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete spec_set_string_;
+  if (this != internal_default_instance()) delete _impl_.spec_set_string_;
 }
 
-void SpecStringArchive::ArenaDtor(void* object) {
-  SpecStringArchive* _this = reinterpret_cast< SpecStringArchive* >(object);
-  (void)_this;
-}
-void SpecStringArchive::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SpecStringArchive::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
 
 void SpecStringArchive::Clear() {
 // @@protoc_insertion_point(message_clear_start:TSSSOS.SpecStringArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    GOOGLE_DCHECK(spec_set_string_ != nullptr);
-    spec_set_string_->Clear();
+    GOOGLE_DCHECK(_impl_.spec_set_string_ != nullptr);
+    _impl_.spec_set_string_->Clear();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecStringArchive::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SpecStringArchive::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TSSSOS.SpecSetStringArchive spec_set_string = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_spec_set_string(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag == 0) || ((tag & 7) == 4)) {
-          CHK_(ptr);
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SpecStringArchive::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SpecStringArchive::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TSSSOS.SpecStringArchive)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TSSSOS.SpecSetStringArchive spec_set_string = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::spec_set_string(this), target, stream);
+      InternalWriteMessage(1, _Internal::spec_set_string(this),
+        _Internal::spec_set_string(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TSSSOS.SpecStringArchive)
@@ -2583,50 +2582,41 @@ size_t SpecStringArchive::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TSSSOS.SpecStringArchive)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // optional .TSSSOS.SpecSetStringArchive spec_set_string = 1;
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *spec_set_string_);
+        *_impl_.spec_set_string_);
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecStringArchive::_class_data_ = {
-    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
     SpecStringArchive::MergeImpl
 };
 const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecStringArchive::GetClassData() const { return &_class_data_; }
 
-void SpecStringArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message*to,
-                      const ::PROTOBUF_NAMESPACE_ID::Message&from) {
-  static_cast<SpecStringArchive *>(to)->MergeFrom(
-      static_cast<const SpecStringArchive &>(from));
-}
 
-
-void SpecStringArchive::MergeFrom(const SpecStringArchive& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecStringArchive)
-  GOOGLE_DCHECK_NE(&from, this);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+void SpecStringArchive::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SpecStringArchive*>(&to_msg);
+  auto& from = static_cast<const SpecStringArchive&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TSSSOS.SpecStringArchive)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_spec_set_string()) {
-    _internal_mutable_spec_set_string()->::TSSSOS::SpecSetStringArchive::MergeFrom(from._internal_spec_set_string());
+    _this->_internal_mutable_spec_set_string()->::TSSSOS::SpecSetStringArchive::MergeFrom(
+        from._internal_spec_set_string());
   }
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SpecStringArchive::CopyFrom(const SpecStringArchive& from) {
@@ -2638,7 +2628,7 @@ void SpecStringArchive::CopyFrom(const SpecStringArchive& from) {
 
 bool SpecStringArchive::IsInitialized() const {
   if (_internal_has_spec_set_string()) {
-    if (!spec_set_string_->IsInitialized()) return false;
+    if (!_impl_.spec_set_string_->IsInitialized()) return false;
   }
   return true;
 }
@@ -2646,12 +2636,12 @@ bool SpecStringArchive::IsInitialized() const {
 void SpecStringArchive::InternalSwap(SpecStringArchive* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(spec_set_string_, other->spec_set_string_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.spec_set_string_, other->_impl_.spec_set_string_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SpecStringArchive::GetMetadata() const {
-  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+  return ::_pbi::AssignDescriptors(
       &descriptor_table_TSSArchives_2esos_2eproto_getter, &descriptor_table_TSSArchives_2esos_2eproto_once,
       file_level_metadata_TSSArchives_2esos_2eproto[9]);
 }
@@ -2659,34 +2649,44 @@ void SpecStringArchive::InternalSwap(SpecStringArchive* other) {
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace TSSSOS
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetBoolArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecSetBoolArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetBoolArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecSetBoolArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecSetBoolArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetColorArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecSetColorArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetColorArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecSetColorArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecSetColorArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetDoubleArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecSetDoubleArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetDoubleArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecSetDoubleArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecSetDoubleArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetIntegerArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecSetIntegerArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetIntegerArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecSetIntegerArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecSetIntegerArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetStringArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecSetStringArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecSetStringArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecSetStringArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecSetStringArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecBoolArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecBoolArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecBoolArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecBoolArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecBoolArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecColorArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecColorArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecColorArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecColorArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecColorArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecDoubleArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecDoubleArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecDoubleArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecDoubleArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecDoubleArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecIntegerArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecIntegerArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecIntegerArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecIntegerArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecIntegerArchive >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TSSSOS::SpecStringArchive* Arena::CreateMaybeMessage< ::TSSSOS::SpecStringArchive >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TSSSOS::SpecStringArchive*
+Arena::CreateMaybeMessage< ::TSSSOS::SpecStringArchive >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TSSSOS::SpecStringArchive >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

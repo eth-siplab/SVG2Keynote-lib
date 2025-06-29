@@ -1,5 +1,7 @@
 #! /bin/bash
-
+dir=${0%/*}; if [ "$dir" = "$0" ]; then dir="."; fi; cd "$dir"; 
+# The `proto-dump` tool is from https://github.com/obriensp/proto-dump
+echo "Dumping protos..."
 PROTO_DUMP=$(pwd)/proto-dump
 keynote="/Applications/Keynote.app"
 
